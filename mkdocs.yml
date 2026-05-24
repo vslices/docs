@@ -1,1 +1,97 @@
-site_name: My Docs
+site_name: VSlices
+site_description: Documentation for VSlices Method, Design, Docs Standard and Framework
+site_author: VSlices
+repo_url: https://github.com/vslices/docs
+repo_name: vslices/docs
+
+docs_dir: docs
+
+theme:
+  name: readthedocs
+
+nav:
+    - How to start?:
+        - Overview: start-here/index.md
+        - What is VSlices?: start-here/what-is-vslices.md
+        - Why VSlices exists: start-here/why-vslices-exists.md
+        - Suite overview: start-here/suite-overview.md
+        - Adoption paths: start-here/adoption-paths.md
+ 
+    - Products:
+        - Overview: products/index.md
+        - VSlices Method:
+            - Overview: products/method/index.md
+            - Work in progress: products/method/work-in-progress.md
+        - VSlices Design:
+            - Overview: products/design/index.md
+            - Glossary: 
+                - Overview: products/design/glossary/index.md  
+                - Business process: products/design/glossary/business-progress.md
+                - Service capability: products/design/glossary/service-capability.md
+                - Work in progress: products/design/glossary/work-in-progress.md
+            - Modalities:
+                - Overview: products/design/modalities/index.md
+                - Context first: products/design/modalities/context-first.md
+                - Problem first: products/design/modalities/problem-first.md
+                - Slice first: products/design/modalities/slice-first.md
+                - Work in progress: products/design/modalities/work-in-progress.md
+            - Work in progress: products/design/work-in-progress.md
+        - VSlices Docs Standard:
+            - Overview: products/docs-standard/index.md
+            - Document types: products/docs-standard/document-types.md
+            - Work in progress: products/docs-standard/work-in-progress.md
+        - VSlices Framework: 
+            - Overview: products/framework/index.md
+            - Getting started: products/framework/getting-started.md
+            - Design patterns:
+                - Overview: products/framework/design-patterns/index.md
+                - Error as values: products/framework/design-patterns/errors-as-values.md
+                - Traits: products/framework/design-patterns/traits.md
+                - Capability: products/framework/design-patterns/capabilities.md
+                - Work in progress: products/framework/design-patterns/work-in-progress.md
+            - Build-in components: 
+                - Overview: products/framework/components/index.md
+                - Flow monad: products/framework/components/flow.md
+                - Errors: products/framework/components/errors.md
+                - For domain: 
+                    - Overview: products/framework/components/domain/index.md
+                    - Algebraic types: products/framework/components/domain/algebraic-types.md
+                    - Domain types: products/framework/components/domain/domain-types.md
+                    - Capabilities: products/framework/components/domain/capabilities.md
+                    - Work in progress: products/framework/components/domain/work-in-progress.md
+                - For application: 
+                    - Overview: products/framework/components/application/index.md
+                    - Feature: products/framework/components/application/feature.md
+                    - Capabilities: products/framework/components/application/capabilities.md
+                    - Work in progress: products/framework/components/application/work-in-progress.md
+                - Work in progress: products/framework/components/work-in-progress.md
+            - Adapters:
+                - Overview: products/framework/adapters/index.md
+                - Work in progress: products/framework/adapters/work-in-progress.md
+            - Batteries:
+                - Overview: products/framework/batteries/index.md
+                - Work in progress: products/framework/batteries/work-in-progress.md
+            - Testing: 
+                - Overview: products/framework/testing/index.md
+                - Work in progress: producets/framework/testing/work-in-progress.md
+            - Work in progress: products/framework/work-in-progress.md
+
+    - Guides:
+        - Overview: guides/index.md
+        - Work in progress: guides/work-in-progress.md
+
+    - Alive lab: 
+        - Overview: alive-lab/index.md
+        - Domus Orbis:
+            - Overview: alive-lab/domus-orbis/index.md
+            - Project Context: alive-lab/domus-orbis/project-context.md
+            - Modeling notes: alive-lab/domus-orbis/modeling-notes.md
+            - Implementation notes: alive-lab/domus-orbis/implementation-notes.md
+
+    - Decisions:
+        - Overview: decisions/index.md
+        - First-iteration:
+            - Use read the docs: decisions/first-iteration/0001-use-read-the-docs.md
+            - Documentations first repository: decisions/first-iteration/0002-documentation-first-repository.md
+            - Use Domus Orbis as validation project: decisions/first-iteration/0003-use-domus-orbis-as-validation-project.md
+            - Keep products separated but connected: decisions/first-iteration/0004-keep-products-separated-but-connected.md
