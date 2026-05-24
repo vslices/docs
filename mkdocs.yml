@@ -10,6 +10,8 @@ theme:
   name: readthedocs
 
 nav:
+    - Home: index.md
+
     - How to start?:
         - Overview: start-here/index.md
         - What is VSlices?: start-here/what-is-vslices.md
@@ -26,7 +28,7 @@ nav:
             - Overview: products/design/index.md
             - Glossary: 
                 - Overview: products/design/glossary/index.md  
-                - Business process: products/design/glossary/business-progress.md
+                - Business process: products/design/glossary/business-process.md
                 - Service capability: products/design/glossary/service-capability.md
                 - Work in progress: products/design/glossary/work-in-progress.md
             - Modalities:
@@ -49,7 +51,7 @@ nav:
                 - Traits: products/framework/design-patterns/traits.md
                 - Capability: products/framework/design-patterns/capabilities.md
                 - Work in progress: products/framework/design-patterns/work-in-progress.md
-            - Build-in components: 
+            - Built-in components: 
                 - Overview: products/framework/components/index.md
                 - Flow monad: products/framework/components/flow.md
                 - Errors: products/framework/components/errors.md
@@ -73,7 +75,7 @@ nav:
                 - Work in progress: products/framework/batteries/work-in-progress.md
             - Testing: 
                 - Overview: products/framework/testing/index.md
-                - Work in progress: producets/framework/testing/work-in-progress.md
+                - Work in progress: products/framework/testing/work-in-progress.md
             - Work in progress: products/framework/work-in-progress.md
 
     - Guides:
@@ -92,6 +94,6 @@ nav:
         - Overview: decisions/index.md
         - First-iteration:
             - Use read the docs: decisions/first-iteration/0001-use-read-the-docs.md
-            - Documentations first repository: decisions/first-iteration/0002-documentation-first-repository.md
+            - Documentation-first repository: decisions/first-iteration/0002-documentation-first-repository.md
             - Use Domus Orbis as validation project: decisions/first-iteration/0003-use-domus-orbis-as-validation-project.md
             - Keep products separated but connected: decisions/first-iteration/0004-keep-products-separated-but-connected.md
