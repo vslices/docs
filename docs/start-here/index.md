@@ -1,14 +1,5 @@
 # How to start?
 
-VSlices is composed of four connected products:
-
-- **Method**
-- **Design**
-- **Docs Standard**
-- **Framework**
-
-Each product can be understood independently, but they make more sense when seen as parts of the same continuity model.
-
 The goal of this section is to help you understand what VSlices is, why it exists, how its products relate to each other, and how it can be adopted progressively.
 
 ## Recommended reading order

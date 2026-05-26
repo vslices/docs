@@ -2,13 +2,6 @@
 
 **VSlices** is a progressive software engineering suite focused on preserving continuity between domain discovery, documentation, architecture, implementation, and system evolution.
 
-It is composed of four connected products that, together, aim to help teams keep software structurally close to the domain it represents:
-
-- **VSlices Method**
-- **VSlices Design**
-- **VSlices Docs Standard**
-- **VSlices Framework**
-
 ## Start here
 
 If you are new to VSlices, these pages are the best entry point, they will act as anchors for the rest of the documentation:
