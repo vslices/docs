@@ -13,6 +13,7 @@ It is composed of four connected products that, together, aim to help teams keep
 
 If you are new to VSlices, these pages are the best entry point, they will act as anchors for the rest of the documentation:
 
+- [How to start?](start-here/index.md.md) 
 - [What is VSlices?](start-here/what-is-vslices.md)
 - [Why VSlices exists?](start-here/why-vslices-exists.md)
 - [Suite overview](start-here/suite-overview.md)
