@@ -12,6 +12,12 @@ If you are new to VSlices, these pages are the best entry point, they will act a
 - [Suite overview](start-here/suite-overview.md)
 - [Adoption paths](start-here/adoption-paths.md)
 
+If you only want to understand the idea, start with “What is VSlices?”.
+
+If you want to apply it gradually, start with “Adoption paths”.
+
+If you want to see how it is validated, go to “Alive Lab”.
+
 ## What's next? 
 
 VSlices is being defined and validated through real software design and implementation work. We document that process in the [Alive Lab section](alive-lab/index.md), while methodology and product decisions are recorded explicitly in the [Decisions section](decisions/index.md).
