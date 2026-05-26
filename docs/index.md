@@ -1,17 +1,27 @@
-# Welcome to MkDocs
+# VSlices
 
-For full documentation visit [mkdocs.org](https://www.mkdocs.org).
+**VSlices** is a progressive software engineering suite focused on preserving continuity between domain discovery, documentation, architecture, implementation, and system evolution.
 
-## Commands
+It is composed of four connected products that, together, aim to help teams keep software structurally close to the domain it represents:
 
-* `mkdocs new [dir-name]` - Create a new project.
-* `mkdocs serve` - Start the live-reloading docs server.
-* `mkdocs build` - Build the documentation site.
-* `mkdocs -h` - Print help message and exit.
+- **VSlices Method**
+- **VSlices Design**
+- **VSlices Docs Standard**
+- **VSlices Framework**
 
-## Project layout
+## Start here
 
-    mkdocs.yml    # The configuration file.
-    docs/
-        index.md  # The documentation homepage.
-        ...       # Other markdown pages, images and other files.
+If you are new to VSlices, these pages are the best entry point, they will act as anchors for the rest of the documentation:
+
+- [What is VSlices?](start-here/what-is-vslices.md)
+- [Why VSlices exists?](start-here/why-vslices-exists.md)
+- [Suite overview](start-here/suite-overview.md)
+- [Adoption paths](start-here/adoption-paths.md)
+
+## What's next? 
+
+VSlices is being defined and validated through real software design and implementation work. We document that process in the [Alive Lab section](alive-lab/index.md), while methodology and product decisions are recorded explicitly in the [Decisions section](decisions/index.md).
+
+The purpose of the **Alive Lab** and **Decisions** sections is not only to present polished examples or architectural decisions, but to preserve the reasoning, tradeoffs, and modeling discoveries that shape VSlices over time.
+
+The current validation project is [Domus Orbis](alive-lab/domus-orbis/index.md), a software project that aims to help manage the processes involved in household management.
