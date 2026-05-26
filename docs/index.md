@@ -12,11 +12,11 @@ If you are new to VSlices, these pages are the best entry point, they will act a
 - [Suite overview](start-here/suite-overview.md)
 - [Adoption paths](start-here/adoption-paths.md)
 
-If you only want to understand the idea, start with “What is VSlices?”.
+If you only want to understand the idea, start with "What is VSlices?".
 
-If you want to apply it gradually, start with “Adoption paths”.
+If you want to apply it gradually, start with "Adoption paths".
 
-If you want to see how it is validated, go to “Alive Lab”.
+If you want to see how it is validated, go to "Alive Lab".
 
 ## What's next? 
 
