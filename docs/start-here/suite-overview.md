@@ -133,15 +133,3 @@ Each product can be adopted independently. A team may use:
 * **Method** to guide how the pieces fit together
 
 Adopting VSlices does not require adopting the entire suite at once. The suite is intended to be progressive and composable.
-
-## Current state
-
-VSlices is still being defined and validated.
-
-Some products are more concrete than others.
-
-The Framework already has foundational abstractions and implementation direction.
-
-Design, Docs Standard, and Method are being formalized through real work, especially through the Alive Lab and Domus Orbis.
-
-This overview describes the intended shape of the suite, not a claim that every part is complete.
