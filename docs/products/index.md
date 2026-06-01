@@ -1,17 +1,38 @@
-# Welcome to MkDocs
+# Products
 
-For full documentation visit [mkdocs.org](https://www.mkdocs.org).
+VSlices is composed of four connected products:
 
-## Commands
+- **VSlices Method**
+- **VSlices Design**
+- **VSlices Docs Standard**
+- **VSlices Framework**
 
-* `mkdocs new [dir-name]` - Create a new project.
-* `mkdocs serve` - Start the live-reloading docs server.
-* `mkdocs build` - Build the documentation site.
-* `mkdocs -h` - Print help message and exit.
+Each product focuses on a different aspect of the software engineering lifecycle. This section contains the individual documentation for each product.
 
-## Project layout
+## VSlices Method
 
-    mkdocs.yml    # The configuration file.
-    docs/
-        index.md  # The documentation homepage.
-        ...       # Other markdown pages, images and other files.
+The overarching engineering method. Focuses on preserving continuity across discovery, documentation, architecture, implementation, and evolution.
+
+[Explore VSlices Method](method/index.md)
+
+## VSlices Design
+
+The software design and domain understanding product. Focuses on modeling, domain reasoning, responsibilities, boundaries, and processes.
+
+[Explore VSlices Design](design/index.md)
+
+## VSlices Docs Standard
+
+The documentation structure product. Focuses on preserving system intent and engineering reasoning through structured documentation.
+
+[Explore VSlices Docs Standard](docs-standard/index.md)
+
+## VSlices Framework
+
+The .NET implementation product. Focuses on domain-oriented software, explicit behavior, low ceremony, and progressive architecture.
+
+[Explore VSlices Framework](framework/index.md)
+
+## Current state
+
+The products are still evolving and being validated through real work, especially through the Alive Lab and Domus Orbis.

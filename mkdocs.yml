@@ -47,9 +47,11 @@ nav:
             - Getting started: products/framework/getting-started.md
             - Design patterns:
                 - Overview: products/framework/design-patterns/index.md
-                - Error as values: products/framework/design-patterns/errors-as-values.md
-                - Traits: products/framework/design-patterns/traits.md
-                - Capability: products/framework/design-patterns/capabilities.md
+                - Feature model: products/framework/design-patterns/feature-model.md
+                - Explicit errors: products/framework/design-patterns/explicit-errors.md
+                - Runtime Capabilities: products/framework/design-patterns/runtime-capabilities.md
+                - Domain Types: products/framework/design-patterns/domain-types.md
+                - Trait composition: products/framework/design-patterns/trait-composition.md
                 - Work in progress: products/framework/design-patterns/work-in-progress.md
             - Built-in components: 
                 - Overview: products/framework/components/index.md
