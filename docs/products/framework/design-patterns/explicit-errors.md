@@ -1,0 +1,1 @@
+# Explicit errors - Design Pattern

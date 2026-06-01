@@ -1,0 +1,1 @@
+# Domain Types - Design Pattern
