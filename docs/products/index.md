@@ -11,25 +11,25 @@ Each product focuses on a different aspect of the software engineering lifecycle
 
 ## VSlices Method
 
-The overarching engineering method. Focuses on preserving continuity across discovery, documentation, architecture, implementation, and evolution.
+The _overarching engineering_ method. Focuses on preserving continuity across discovery, documentation, architecture, implementation, and evolution.
 
 [Explore VSlices Method](method/index.md)
 
 ## VSlices Design
 
-The software design and domain understanding product. Focuses on modeling, domain reasoning, responsibilities, boundaries, and processes.
+The _software design_ and _domain understanding_ product. Focuses on modeling, domain reasoning, responsibilities, boundaries, and processes. 
 
 [Explore VSlices Design](design/index.md)
 
 ## VSlices Docs Standard
 
-The documentation structure product. Focuses on preserving system intent and engineering reasoning through structured documentation.
+The _documentation structure_ product. Focuses on preserving system intent and engineering reasoning through structured documentation.
 
 [Explore VSlices Docs Standard](docs-standard/index.md)
 
 ## VSlices Framework
 
-The .NET implementation product. Focuses on domain-oriented software, explicit behavior, low ceremony, and progressive architecture.
+The _.NET implementation_ product. Focuses on domain-oriented software, explicit behavior, low ceremony, and progressive architecture.
 
 [Explore VSlices Framework](framework/index.md)
 

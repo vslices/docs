@@ -80,6 +80,25 @@ nav:
                 - Work in progress: products/framework/testing/work-in-progress.md
             - Work in progress: products/framework/work-in-progress.md
 
+        - VSlices Field Notes:
+            - Overview: products/field-notes/index.md
+            - Human Factors:
+                - Overview: products/field-notes/human-factors/index.md
+                - Candles bring light even in the sun: products/field-notes/human-factors/candles-bring-light-even-in-the-sun.md
+                - Self immolation through overcommitment: products/field-notes/human-factors/self-immolation-through-overcommitment.md
+                - The organization you wish exist: products/field-notes/human-factors/the-organization-you-wish-exist.md
+                - RAM limits in the human brain: products/field-notes/human-factors/ram-limits-in-the-human-brain.md
+            - Organization factors:
+                - Overview: products/field-notes/organization-factors/index.md
+                - Wait.. Is that child drinking vodka?!: products/field-notes/organization-factors/wait-is-that-child-drinking-vodka.md
+                - Why is there nothing?: products/field-notes/organization-factors/why-is-there-nothing.md
+                - The human brain is not a database: products/field-notes/organization-factors/the-human-brain-is-not-a-database.md
+            - Team factors:
+                - Overview: products/field-notes/team-factors/index.md
+                - All the power in those hands...: products/field-notes/team-factors/all-the-power-in-those-hands.md
+                - Why aren't cookies in the jar anymore?: products/field-notes/team-factors/why-arent-cookies-in-the-jar-anymore.md
+            - Direction: products/field-notes/direction.md
+
     - Guides:
         - Overview: guides/index.md
         - Work in progress: guides/work-in-progress.md
