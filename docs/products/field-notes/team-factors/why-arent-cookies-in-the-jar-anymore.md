@@ -38,7 +38,7 @@ The engineer knew enough to perform the task successfully. But not to predict it
 Possible indicators that this pattern is occurring:
 
 - "Just make the change, it will be a 5 minutes work, like half a story-point."
- - "In fact, why is that a jira story? It does not merit that"
+    - "In fact, why is that a jira story? It does not merit that"
 - Production access granted early without supervision.
 - Lack of review for infrastructure or security changes.
 - Critical operations performed by a single inexperienced engineer.
