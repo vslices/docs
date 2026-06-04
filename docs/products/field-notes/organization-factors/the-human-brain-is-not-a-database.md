@@ -1,5 +1,7 @@
 # The Human Brain Is Not A Database
 
+_When organizational knowledge lives in memory instead of structure_
+
 ## Definition
 
 > A pattern where organizations gradually accumulate enough knowledge, rules, processes, exceptions and dependencies that successful operation depends primarily on what people remember rather than what the system explicitly communicates.

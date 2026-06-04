@@ -1,5 +1,7 @@
 # Candles Bring Light Even In The Sun
 
+_When value feels invalid because work feels natural_
+
 ## Definition
 
 > A pattern where an engineer struggles to recognize the value of their own contributions because the work feels natural, intuitive or effortless compared to the effort it appears to require from others.

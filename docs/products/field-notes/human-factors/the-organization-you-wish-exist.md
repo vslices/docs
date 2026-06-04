@@ -2,6 +2,9 @@
 
 > Is not that one
 
+_When vision outruns organizational purpose_
+
+
 ## Definition
 
 > A pattern where an engineer evaluates an organization against an idealized version of what it could become, rather than what it currently is.

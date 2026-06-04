@@ -1,5 +1,7 @@
 # RAM Limits In The Human Brain
 
+_When capability exceeds available attention_
+
 ## Definition
 
 > A pattern where an individual attempts to simultaneously maintain more responsibilities, contexts, decisions, concerns and commitments than can be reasonably sustained.

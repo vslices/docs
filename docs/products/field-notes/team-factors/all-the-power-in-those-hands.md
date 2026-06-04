@@ -2,6 +2,8 @@
 
 > *Get a unsolicited hand amputation*
 
+_When one expert becomes team infrastructure_
+
 ## Definition
 
 > A pattern where a highly capable team member gradually becomes the default solution for an increasing number of problems.

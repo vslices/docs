@@ -2,6 +2,8 @@
 
 > Are You Even Doing Anything?!
 
+_When invisible engineering work is mistaken for no progress_
+
 ## Definition
 
 > A pattern where valuable engineering work becomes difficult to recognize because its results are not immediately visible to non-technical stakeholders.

@@ -2,6 +2,8 @@
 
 > What do you mean by "_again_"?!
 
+_When responsibility grows faster than mentorship_
+
 ## Definition
 
 > A pattern where inexperienced engineers are expected to make decisions, operate systems, solve problems and assume responsibilities beyond their current level of understanding without the guidance required to safely develop those capabilities.

@@ -1,5 +1,7 @@
 # Why Aren't Cookies In The Jar Anymore?
 
+_When autonomy is granted without safety boundaries_
+
 ## Definition
 
 > A pattern where inexperienced engineers are given responsibilities, permissions or autonomy beyond their current understanding without sufficient supervision, review or safety mechanisms.

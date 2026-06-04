@@ -1,5 +1,7 @@
 # Self-Immolation Through Overcommitment
 
+_When personal sacrifice is used to compensate for misalignment_
+
 ## Definition
 
 > A pattern where an engineer repeatedly accepts commitments beyond sustainable capacity in an attempt to:
