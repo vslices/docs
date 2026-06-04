@@ -29,11 +29,30 @@ The result of this, may not always visible at first, but over time, the system b
 
 VSlices exists to reduce that gap.
 
+## An AI context problem
+
+Software engineering is entering a period where code is no longer written exclusively by humans. Large Language Models can generate architectures, implementations, tests, documentation and design proposals in seconds.
+
+This changes how software is produced, but it does not eliminate the need for engineering. Even in many cases, it increases it because AI systems generate outputs based on:
+
+- their training
+- the information available in the current context
+- and the constraints explicitly provided
+
+When domain knowledge, architectural intent, business rules and engineering decisions are implicit, fragmented or undocumented, AI systems are forced to fill the gaps using assumptions. Sometimes those assumptions are useful and sometimes they are not.
+
+The challenge is not that AI generates code, but to ensure that the generated code reflects the actual needs, constraints and intentions of the system being built.
+
+VSlices exists to make those intentions more explicit.
+
 ## A progressive complexity problem
 
 Software projects often move between two extremes.
-- Some projects introduce too much architecture too early. They start with layers, patterns, abstractions, conventions, and infrastructure decisions before the domain has shown that those decisions are necessary.
-- Other projects avoid structure for too long. They start simple, but as the system grows, behavior becomes implicit, boundaries become blurry, and changes become harder to reason about.
+
+- Some projects introduce too much architecture too early
+> They start with layers, patterns, abstractions, conventions, and infrastructure decisions before the domain has shown that those decisions are necessary.
+- Other projects avoid structure for too long.
+> They start simple, but as the system grows, behavior becomes implicit, boundaries become blurry, and changes become harder to reason about.
 
 Most of the time, the problem is not that teams make bad decisions on purpose. The problem is that they cannot fully know how the domain will grow.
 
@@ -44,6 +63,7 @@ VSlices exists to support progressive complexity.
 ## A hidden behavior problem
 
 In many systems, important behavior is not explicit. 
+
 - Business rules may be hidden inside services.
 - Expected errors may be represented as runtime exceptions.
 - Dependencies may be assumed instead of declared.
@@ -52,3 +72,4 @@ In many systems, important behavior is not explicit.
 Over time, this makes the system harder to understand and harder to change safely.
 
 VSlices exists to make behavior more explicit.
+

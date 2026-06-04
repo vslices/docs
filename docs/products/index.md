@@ -36,3 +36,19 @@ The _.NET implementation_ product. Focuses on domain-oriented software, explicit
 ## Current state
 
 The products are still evolving and being validated through real work, especially through the Alive Lab and Domus Orbis.
+
+## Beyond The Products
+
+VSlices also contains collections of observations, experiences and lessons learned from real projects.
+
+These collections are not official products and should not be considered methodologies or frameworks.
+
+Their purpose is to preserve knowledge, identify recurring patterns and validate ideas before they become formal parts of the suite.
+
+Current examples include:
+
+- [Field Notes](field-notes/index.md)
+
+These efforts represent an important part of the VSlices philosophy:
+
+> Observe first, Formalize later.
