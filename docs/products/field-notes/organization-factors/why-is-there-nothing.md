@@ -93,6 +93,43 @@ Possible indicators that this pattern is occurring:
 
 Ironically, the work that enables future delivery is often the work most vulnerable to being questioned.
 
+## Engineering Impact
+
+- Foundational work may be deprioritized because its value is not immediately visible.
+- Engineers may feel pressured to produce visible artifacts before the system is ready to support them.
+- Architectural shortcuts become more attractive when invisible progress is interpreted as delay.
+- Technical debt increases when teams skip infrastructure, testing, documentation or integration work to create visible movement.
+- Stakeholders may lose confidence because they cannot distinguish between lack of progress and lack of visibility.
+- Planning becomes distorted when demonstrations are treated as the primary evidence of delivery.
+- Technical teams may spend increasing time justifying work instead of explaining its relationship to future outcomes.
+- Important dependencies may be ignored because they do not produce user-facing changes.
+- Delivery expectations become misaligned when enabling work is not represented in plans, milestones or communication.
+- Engineers may avoid necessary refactoring or foundation work because it is difficult to defend.
+- Product decisions may be made using incomplete signals about technical readiness.
+- The organization may reward visible output over sustainable progress.
+
+When invisible engineering work is not made understandable, the organization learns to distrust the parts of delivery it cannot see. The result is not only communication friction; it is a structural bias toward short-term visibility over long-term capability.
+
+## Possible Interventions
+
+- Make foundational work explicit in plans, milestones and progress updates.
+- Explain what future outcomes depend on the current invisible work.
+- Separate "not visible yet" from "not progressing."
+- Translate technical progress into stakeholder-facing language without pretending it is user-facing functionality.
+- Use lightweight progress artifacts such as architecture notes, integration checklists, migration status or testing coverage summaries.
+- Show dependency maps that explain why certain work must happen before visible features can emerge.
+- Define intermediate milestones for backend, infrastructure, modeling, documentation or integration work.
+- Communicate risks that would appear if the invisible work were skipped.
+- Demonstrate small technical outcomes when possible, without forcing artificial demos.
+- Connect technical foundations to delivery speed, reliability, maintainability or future feature capacity.
+- Include foundational work in estimates instead of treating it as background effort.
+- Avoid hiding technical preparation inside vague tasks such as "setup" or "implementation."
+- Ask stakeholders what kind of evidence would help them trust progress before visible output exists.
+- Review whether pressure for visibility is causing architectural shortcuts.
+- Treat progress communication as part of engineering work, not as a distraction from it.
+
+A useful intervention is to ask: "What must become true before visible progress can safely appear?". That question helps explain invisible work as preparation for delivery, not as absence of delivery.
+
 ## Reflection Questions
 
 - How is progress currently being measured?

@@ -97,6 +97,44 @@ Possible indicators that this pattern is occurring:
 
 Ironically, the more capable the individual becomes, the more difficult it becomes for the team to operate without them.
 
+## Engineering Impact
+
+- Critical knowledge becomes concentrated in one person instead of being distributed across the team.
+- Delivery depends on the availability, attention and judgment of a specific individual.
+- Reviews become bottlenecks when important decisions require the same person's approval.
+- Architectural evolution slows down because fewer people understand the trade-offs behind the system.
+- Team members may stop developing judgment if difficult problems are consistently routed to the expert.
+- The expert becomes overloaded by implementation, review, mentoring, coordination and decision-making at the same time.
+- Onboarding becomes weaker because new knowledge flows through one person instead of through shared artifacts and practices.
+- Incidents become harder to resolve when the person with the most context is unavailable.
+- Planning becomes distorted because the team assumes expert-level speed as normal delivery capacity.
+- Ownership becomes unclear when everyone depends on the expert but few areas are truly owned by the team.
+- The team may appear highly productive while becoming structurally fragile.
+- The organization may confuse individual excellence with team capability.
+
+When one expert becomes team infrastructure, the system works because a person is always compensating for missing distribution of knowledge, ownership and judgment. That can create impressive short-term output, but it also creates a single human dependency behind many technical decisions.
+
+## Posible intervertions
+
+- Identify which tasks, decisions or systems depend on one specific person.
+- Make critical knowledge visible through documentation, diagrams, decision records or examples.
+- Rotate ownership of important areas instead of routing all difficult work to the same individual.
+- Pair the expert with other team members on high-context work.
+- Ask the expert to explain reasoning, not only deliver solutions.
+- Convert repeated expert answers into shared references or team practices.
+- Protect time for teaching, review and knowledge transfer instead of treating them as optional.
+- Assign difficult tasks with support rather than automatically assigning them to the fastest person.
+- Create backup owners for critical systems, processes and decisions.
+- Review whether the expert is unblocking the team or becoming the only path through the work.
+- Measure team growth by increasing independent capability, not only by immediate delivery speed.
+- Avoid using the expert's personal capacity as the team's default safety mechanism.
+- Encourage the expert to delegate before overload makes delegation urgent.
+- Make vacations, absences and handoffs explicit tests of knowledge distribution.
+- Ask after each critical task: "Did the team become more capable, or did one person become more necessary?"
+
+A useful intervention is to shift from "Who can solve this fastest?" to "Who should learn to solve this next?"
+That question protects delivery without sacrificing future team capability.
+
 ## Reflection Questions
 
 - Who would perform this task if this person was unavailable for a month?
@@ -107,8 +145,6 @@ Ironically, the more capable the individual becomes, the more difficult it becom
 - Is this person creating independence or creating dependency?
 - What happens when this person takes a vacation?
 - What happens when this person leaves?
-
----
 
 ## Final Reflection
 

@@ -86,6 +86,44 @@ Possible indicators that this pattern is occurring:
 
 Ironically, the engineer often learns the lesson, but the organization rarely learns its own.
 
+## Engineering Impact
+
+- Production systems become fragile when critical actions can be performed without adequate review, context or safeguards.
+- Incidents become more likely when permissions are granted faster than understanding is developed.
+- Seemingly simple changes may produce unexpected consequences because hidden dependencies are not visible.
+- Junior engineers may lose confidence when normal learning mistakes create disproportionate damage.
+- Senior engineers are pulled into emergency recovery instead of planned mentoring or design work.
+- Teams may become more restrictive after incidents, reducing autonomy instead of improving safety.
+- Ownership becomes confusing when people are responsible for systems they do not yet understand deeply.
+- Reviews lose effectiveness when risky changes are treated as too small to deserve attention.
+- Operational knowledge remains tribal because the mistake reveals knowledge that should have been explicit earlier.
+- Delivery slows down after avoidable incidents because trust must be rebuilt.
+- The organization may blame the person who triggered the failure instead of fixing the system that allowed it to be dangerous.
+- Learning becomes associated with fear when mistakes are punished instead of contained.
+
+When autonomy is granted without safety boundaries, the organization is not accelerating growth. It is increasing the blast radius of inexperience. The goal should not be to prevent junior engineers from making mistakes, but to prevent ordinary mistakes from becoming serious incidents.
+
+## Posible intervertion
+
+- Define which actions require supervision, review or approval before execution.
+- Grant permissions progressively according to understanding, recoverability and risk.
+- Use staging, sandboxes or test environments before allowing production changes.
+- Require rollback plans for infrastructure, data, security or production operations.
+- Add checklists for recurring risky tasks such as deployments, migrations or configuration changes.
+- Pair inexperienced engineers with senior engineers for high-impact changes.
+- Document hidden dependencies, operational constraints and known risks close to the affected system.
+- Treat "simple changes" as risky when their impact is not fully understood.
+- Make ownership boundaries explicit before assigning responsibility.
+- Use code review, change review or operational review as safety mechanisms, not as signs of distrust.
+- Design systems so common mistakes are recoverable.
+- After an incident, ask what guardrail would have reduced the blast radius.
+- Avoid granting access merely because someone needs to complete a task quickly.
+- Teach the consequences of actions before expecting independent execution.
+- Replace blame with system improvement: what made this mistake possible, dangerous or hard to detect?
+
+A useful intervention is to ask: "What is the worst reasonable outcome if this person makes a normal learning mistake here?"
+That question helps design autonomy with boundaries instead of autonomy through abandonment.
+
 ## Reflection Questions
 
 - Who reviewed this decision?
@@ -96,11 +134,9 @@ Ironically, the engineer often learns the lesson, but the organization rarely le
 - What prevented this mistake from being caught earlier?
 - If this failure was predictable, why was the system exposed to it?
 
----
-
 ## Final Reflection
 
-Having you own junior engineer is like having a child, __don't abandon them__. When you aren't seeing them, they are eating cookies... I mean, breaking production.
+Having your own junior engineer is like having a child, __don't abandon them__. When you aren't seeing them, they are eating cookies... I mean, breaking production.
 
 Then immediate reaction is often:
 

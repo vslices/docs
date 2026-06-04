@@ -99,6 +99,44 @@ Possible indicators that this pattern is occurring:
 
 Ironically, the organization often saves time by avoiding mentorship. It later spends significantly more time recovering from the consequences.
 
+## Engineering Impact
+
+- Critical changes become riskier because the people executing them may not understand the surrounding context.
+- Mistakes become more likely when responsibility is assigned without matching knowledge, review or support.
+- Production incidents may be treated as individual failures even though the system made them predictable.
+- Senior engineers remain overloaded because mentorship was postponed until problems became urgent.
+- Junior engineers may become afraid of ownership after being exposed to consequences they were not prepared to handle.
+- Knowledge silos become stronger when senior engineers are too busy to teach and junior engineers are expected to infer context.
+- Code reviews become insufficient if reviewers assume knowledge that was never taught.
+- Delivery speed becomes fragile because short-term delegation creates long-term rework.
+- Architecture becomes harder to evolve when only a few people understand why the system works the way it does.
+- Team capacity appears to increase, but actual capability remains underdeveloped.
+- Onboarding becomes inconsistent because growth depends on luck, proximity and informal conversations.
+- The organization may confuse exposure to responsibility with development of competence.
+
+When mentorship is absent, the system does not stop teaching. It simply teaches through mistakes, incidents, fear and rework. That kind of learning is expensive, uneven and often damaging.
+
+## Possible interventions
+
+- Define which responsibilities are safe for the engineer to take independently.
+- Identify which responsibilities require pairing, review or supervision.
+- Make mentorship an explicit responsibility, not an accidental side effect of delivery.
+- Create progressive responsibility levels instead of assigning critical ownership all at once.
+- Pair junior engineers with experienced engineers on high-context or high-risk work.
+- Document the context needed to make safe decisions in critical areas.
+- Encourage questions before mistakes become the only source of feedback.
+- Replace "ask if you have questions" with scheduled guidance, checkpoints and review moments.
+- Treat repeated mistakes as signals of missing support, not only individual performance issues.
+- Give access progressively and connect access with understanding, recoverability and review.
+- Use checklists for dangerous operations, deployments, migrations or production changes.
+- Make senior engineers' mentoring load visible when planning capacity.
+- Protect time for teaching before lack of teaching becomes rework.
+- After an incident, ask what knowledge, guardrail or guidance would have made the mistake less likely.
+- Measure growth by increasing judgment, not only by increasing task assignment.
+
+A useful intervention is to ask: "What would this person need to understand before this responsibility becomes safe?"
+That question shifts the focus from blame to capability development.
+
 ## Reflection Questions
 
 - Who is responsible for teaching this engineer?

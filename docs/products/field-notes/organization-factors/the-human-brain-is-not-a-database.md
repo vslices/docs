@@ -93,6 +93,41 @@ Ironically, the organization often believes it is saving time by avoiding docume
 
 It later spends far more time searching for information than it originally saved.
 
+## Engineering Impact
+
+- Changes become slower because understanding the system requires conversations before implementation can begin.
+- Engineers avoid modifying parts of the system because the real rules are not visible in code, tests or documentation.
+- Onboarding becomes dependent on oral transmission instead of structured learning paths.
+- Technical decisions lose their original reasoning, making future changes harder to evaluate.
+- Similar problems are solved repeatedly because previous knowledge is not easy to find.
+- Architecture becomes harder to evolve because hidden dependencies and historical exceptions are not explicit.
+- Reviews become less reliable because reviewers may not know which invisible rules apply.
+- Incidents take longer to diagnose when operational knowledge is distributed across people instead of artifacts.
+- Bus factor increases as specific individuals become living indexes for the organization.
+- Teams begin treating complexity as inevitable because nobody can see where the complexity came from.
+
+When knowledge lives only in memory, the real system becomes larger than the codebase. The software may be executable, but the organization itself is not understandable without interviewing the people who survived its history.
+
+## Possible Interventions
+
+- Identify the knowledge that is repeatedly asked, rediscovered or explained verbally.
+- Start documenting from friction points instead of trying to document everything.
+- Replace "ask this person" with "read this first, then ask if something is missing."
+- Capture the reasoning behind important decisions, not only the final decision.
+- Document exceptions, special cases and historical constraints close to the process or system they affect.
+- Create lightweight onboarding paths for the most common areas of confusion.
+- Turn repeated explanations into living documentation.
+- Use decision records for choices whose context may be forgotten later.
+- Make hidden dependencies explicit in diagrams, notes, tests or code structure.
+- Review documentation during real work, not as a separate ceremonial activity.
+- Treat outdated documentation as a system defect, not as a personal failure.
+- Pair knowledge holders with others before critical knowledge becomes urgent.
+- Prefer small, maintainable documents over large documents nobody trusts.
+- Connect documentation to ownership, so people know who can clarify or evolve each area.
+- Ask after every incident, handoff or difficult change: "What did we need to know that was not written anywhere?"
+
+The goal is not to move the entire organization into documents. The goal is to prevent critical knowledge from depending on memory alone.
+
 ## Reflection Questions
 
 - How much critical knowledge exists only in people's heads?

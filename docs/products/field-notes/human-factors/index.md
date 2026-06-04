@@ -11,7 +11,7 @@ Unlike technical challenges, these patterns are often difficult to recognize whi
 - responsibility
 - ambition
 - growth
-- profesional identity
+- professional identity
 - personal identity
 
 Human Factors does not attempt to provide psychological guidance, therapy or coaching; it focuses on observations gathered from real software projects and professional experience.

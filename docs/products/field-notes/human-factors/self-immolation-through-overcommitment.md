@@ -12,8 +12,8 @@ _When personal sacrifice is used to compensate for misalignment_
 > - To feel indispensable
 > 
 > This behavior is often motivated by:
-> - Deep empathy and low disconfort tolerance
-> - Expanded sense of responsability
+> - Deep empathy and low discomfort tolerance
+> - Expanded sense of responsibility
 > - Genuine desire to contribute
 > 
 > Over time, the accumulated commitments become impossible to sustain, resulting in:
@@ -92,6 +92,44 @@ Possible indicators that this pattern is occurring:
 - Personal exhaustion
 
 Ironically, the attempt to reduce pressure often creates more pressure later.
+
+## Engineering Impact
+
+- Estimates become unreliable because they are shaped by pressure, optimism or guilt instead of evidence.
+- Delivery predictability decreases as commitments drift away from actual capacity.
+- Technical concerns are postponed until they become larger, more expensive or unavoidable.
+- Architectural decisions become reactive because immediate delivery promises consume the attention needed for design.
+- Quality decreases when testing, documentation, review or refactoring are sacrificed to protect commitments.
+- Stakeholders receive a distorted view of project health because personal sacrifice hides the real constraints.
+- Teams lose trust in timelines when repeated commitments are followed by repeated renegotiations.
+- Engineers may avoid raising risks early because doing so feels like failing the team.
+- Dependencies, blockers and uncertainty remain invisible until they become delays.
+- Sustainable planning becomes harder because the organization learns to rely on extraordinary effort instead of observable capacity.
+- The engineer becomes a temporary buffer between the organization and reality.
+- The system accumulates technical and emotional debt at the same time.
+
+When overcommitment becomes the default response to pressure, the organization stops receiving accurate feedback. The project may appear protected for a while, but the information needed to make better decisions is being burned along with the person absorbing the pressure.
+
+## Posible intervertions
+
+- Separate willingness to help from available capacity.
+- Communicate uncertainty before converting it into a commitment.
+- Base estimates on evidence, constraints and known unknowns instead of desired outcomes.
+- Make blockers, risks and dependencies visible as early as possible.
+- Renegotiate commitments when new information changes the situation.
+- Ask whether additional effort is solving the problem or hiding the problem.
+- Treat realistic timelines as useful information, not as a personal failure.
+- Avoid compensating for organizational misalignment through personal sacrifice.
+- Define which responsibilities belong to the engineer, the team, stakeholders or leadership.
+- Protect technical quality gates such as testing, review, documentation and design discussion.
+- Replace heroic delivery promises with smaller, verifiable milestones.
+- Use capacity checks before accepting additional work.
+- Make tradeoffs explicit when scope, time and quality cannot all be preserved.
+- Ask what would need to change in the system for this commitment to become realistic.
+- Prefer early disappointment over late failure.
+
+A useful intervention is to say: "I want to help, but I do not want to hide the real shape of the problem."
+That sentence preserves empathy without turning the engineer into fuel.
 
 ## Reflection Questions
 

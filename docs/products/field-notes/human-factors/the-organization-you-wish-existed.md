@@ -1,4 +1,4 @@
-# The Organization You Wish Exist
+# The Organization You Wish Existed
 
 > Is not that one
 
@@ -91,6 +91,44 @@ Possible indicators that this pattern is occurring:
 - Persistent feeling that effort is not producing meaningful change.
 
 In some cases, the engineer concludes that the organization is the problem. In others, the organization concludes that the engineer is the problem. Neither conclusion is correct, just they weren't a good fit.
+
+## Engineering Impact
+
+- Improvement efforts may target problems the organization does not currently consider important.
+- Architectural proposals may fail because they optimize for values the organization is not prioritizing.
+- Technical discussions become emotionally charged when disagreement is interpreted as lack of vision.
+- Engineers may spend increasing energy advocating for change instead of delivering within the current constraints.
+- Valid technical concerns may lose influence when they are presented as attempts to redefine the organization.
+- Decision-making becomes frustrating because organizational trade-offs are treated as temporary mistakes.
+- Delivery may slow down when engineers resist working within constraints they do not personally agree with.
+- Trust can erode between engineers, leadership and stakeholders when each side believes the other is missing the obvious.
+- Technical strategy may become disconnected from business reality, operational risk, compliance or organizational maturity.
+- The engineer may overinvest in solutions that have little chance of adoption under the current incentives.
+- The organization may lose valuable improvement signals because they arrive wrapped in frustration.
+- The gap between personal standards and organizational priorities can turn legitimate engineering judgment into chronic dissatisfaction.
+
+When vision outruns organizational purpose, engineering effort starts solving for an imagined environment. The ideas may be good, but they are being offered to an organization that is not ready, willing or structured to use them.
+
+## Posible intervertions
+
+- Identify what the organization is actually optimizing for before proposing change.
+- Separate technical correctness from organizational fit.
+- Ask whether the problem is recognized by the people who would need to support the solution.
+- Translate improvements into the organization's current priorities, such as stability, predictability, risk reduction or operational continuity.
+- Start with smaller changes that fit existing constraints before advocating for larger transformation.
+- Distinguish between resistance caused by misunderstanding and resistance caused by intentional trade-offs.
+- Clarify the level of influence available before investing heavily in change efforts.
+- Look for evidence that the organization wants to change, not only evidence that it could improve.
+- Present proposals as options with trade-offs, not as proof that the current organization is wrong.
+- Decide which constraints can be influenced, which must be accepted and which make the environment a poor fit.
+- Preserve useful observations without turning every gap into a personal battle.
+- Align improvement work with real organizational incentives instead of ideal engineering values alone.
+- Ask what success would look like in this organization, not in the organization you wish existed.
+- Consider whether staying requires accepting the organization as it is, not only hoping it becomes something else.
+- Leave room for the possibility that the idea is good and the environment is still not the right place for it.
+
+A useful intervention is to ask: "Am I trying to improve this organization from within its purpose, or am I trying to replace its purpose with mine?"
+That question can prevent good engineering judgment from becoming a long fight against reality.
 
 ## Reflection Questions
 

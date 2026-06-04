@@ -2,7 +2,7 @@
 
 Organizational Factors explores patterns that emerge between people, teams, leadership structures and organizations.
 
-Unlike Human Factors, the primary focus is not the individual. The focus is the corporative environment surrounding the individual.
+Unlike Human Factors, the primary focus is not the individual. The focus is the organizational/corporate environment surrounding the individual.
 
 Many expensive failures in software development are not caused by technical limitations. They emerge from:
 

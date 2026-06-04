@@ -87,6 +87,35 @@ Possible indicators that this pattern is occurring:
 
 Ironically, the engineer often becomes respected precisely because of the abilities they struggle to acknowledge.
 
+## Engineering Impact
+
+- Valuable work may be underestimated because it feels too natural to the person performing it.
+- Estimates may become distorted when the engineer assumes that tasks are easier than they are for most people.
+- Knowledge transfer may suffer if the engineer forgets that others do not share the same intuition, context or experience.
+- Mentoring may become impatient or unclear when difficulty is mistaken for lack of effort.
+- The engineer may accept increasingly complex responsibilities to feel that their contribution is legitimate.
+- Teams may become dependent on invisible strengths that are not recognized, documented or distributed.
+- Important architectural, technical or product contributions may be dismissed as "obvious" and therefore left unexplained.
+- Sustainable delivery may be replaced by a constant search for harder challenges, larger responsibilities or personal sacrifice.
+
+When natural ability is not recognized as a real engineering asset, it becomes difficult to manage, teach, protect or scale. The team benefits from the output, but the capability behind that output remains invisible.
+
+## Posible intervertions
+
+- Separate the value of an outcome from the amount of effort required to produce it.
+- Compare the contribution against the problem it solved, not against how difficult it felt.
+- Ask whether the same work would be considered valuable if another person had produced it.
+- Make implicit strengths explicit by documenting decisions, heuristics and reasoning paths.
+- Use mentoring moments to explain what felt obvious instead of assuming it should be obvious to others.
+- Treat ease as a signal of developed capability, not as evidence that the work lacked value.
+- Calibrate estimates with other people instead of relying only on personal intuition.
+- Accept recognition as information about impact, not as a demand for suffering.
+- Look for growth through intentional learning, not through unnecessary self-punishment.
+- Protect sustainable capacity by refusing to use overcommitment as proof of worth.
+
+A useful intervention is to ask: "What became easier because I was involved?"
+That question shifts attention from effort to impact, and from self-justification to engineering value.
+
 ## Reflection Questions
 
 - Am I measuring value through effort or outcomes?
