@@ -23,21 +23,21 @@ nav:
         - Overview: products/index.md
         - VSlices Method:
             - Overview: products/method/index.md
-            - Work in progress: products/method/work-in-progress.md
+            - Collaboration model: products/method/collaboration-model.md
         - VSlices Design:
             - Overview: products/design/index.md
-            - Glossary: 
-                - Overview: products/design/glossary/index.md  
-                - Business process: products/design/glossary/business-process.md
-                - Service capability: products/design/glossary/service-capability.md
-                - Work in progress: products/design/glossary/work-in-progress.md
+            - Principles: products/design/principles.md
+            - Iteration flow: products/design/iteration-flow.md
             - Modalities:
-                - Overview: products/design/modalities/index.md
-                - Context first: products/design/modalities/context-first.md
-                - Problem first: products/design/modalities/problem-first.md
-                - Slice first: products/design/modalities/slice-first.md
-                - Work in progress: products/design/modalities/work-in-progress.md
-            - Work in progress: products/design/work-in-progress.md
+                - Context first:
+                    - Introduction: products/design/modalities/context-first/index.md
+                    - Emphasis: products/design/modalities/context-first/emphasis.md
+                - Problem first: 
+                    - Introduction: products/design/modalities/problem-first/index.md
+                    - Emphasis: products/design/modalities/problem-first/emphasis.md
+                - Slice first:
+                    - Introduction: products/design/modalities/slice-first/index.md
+                    - Emphasis: products/design/modalities/slice-first/emphasis.md
         - VSlices Docs Standard:
             - Overview: products/docs-standard/index.md
             - Document types: products/docs-standard/document-types.md

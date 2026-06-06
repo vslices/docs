@@ -1,4 +1,4 @@
-# Understanding VSlices Design
+# Understanding the principles of VSlices Design
 
 VSlices Design uses modalities to adapt the design process to different kinds of uncertainty.
 
