@@ -4,7 +4,7 @@ VSlices Design is the design product of the VSlices Suite.
 
 It provides design modalities, reasoning tools, and modeling heuristics to help teams move from domain understanding to software decisions without losing continuity.
 
-VSlices Design is intentionally independent from VSlices Framework, yuu do not need to use it to apply VSlices Design.
+VSlices Design is intentionally independent from VSlices Framework, you do not need to use it to apply VSlices Design.
 
 The purpose of VSlices Design is to help teams understand:
 
