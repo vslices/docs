@@ -38,6 +38,7 @@ nav:
                 - Slice first:
                     - Introduction: products/design/modalities/slice-first/index.md
                     - Emphasis: products/design/modalities/slice-first/emphasis.md
+                - Comparasions: products/design/modalities/comparisons.md
         - VSlices Docs Standard:
             - Overview: products/docs-standard/index.md
             - Document types: products/docs-standard/document-types.md
