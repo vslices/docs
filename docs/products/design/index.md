@@ -171,7 +171,7 @@ VSlices Design is not a universal methodology. It does not claim that every syst
 - fast implementation is always better
 - documentation is valuable by default
 
-The right approach depends on the uncertainty, risk, domain maturity, and business urgency of the situation.
+VSlices Design values documentation only when it preserves intent, reduces ambiguity, or improves continuity across decisions. The right approach depends on the uncertainty, risk, domain maturity, and business urgency of the situation.
 
 ## Relationship with the VSlices Suite
 

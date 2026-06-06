@@ -10,8 +10,6 @@ A team does not need to permanently identify with one of them. The same project 
 
 The purpose of this comparison is to help teams decide where to start.
 
----
-
 ## Overview
 
 | Modality      | Use when                                                                                              | Main uncertainty                                                                                     | Main risk if skipped                                                                                 |
@@ -141,6 +139,13 @@ VSlices Design uses modalities to answer that question without forcing every pro
 ---
 
 ## Summary
+
+| Modality      | Use when                                                     | Main risk reduced                   |
+| ------------- | ------------------------------------------------------------ | ----------------------------------- |
+| Context-First | the business/domain is unclear or fragmented                 | building the wrong abstraction      |
+| Problem-First | the domain exists but a specific problem needs clarification | solving symptoms instead of causes  |
+| Slice-First   | uncertainty is best reduced through implementation feedback  | over-planning before reality checks |
+
 
 | If the team says...                                                      | Consider...                    |
 | ------------------------------------------------------------------------ | ------------------------------ |
