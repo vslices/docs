@@ -1,10 +1,12 @@
 # VSlices Design
 
-VSlices Design is the design product of the VSlices Suite.
+VSlices Design helps teams decide how much domain understanding is needed before turning business knowledge into software. 
 
-It provides design modalities, reasoning tools, and modeling heuristics to help teams move from domain understanding to software decisions without losing continuity.
+It provides design modalities, reasoning tools, and modeling heuristics for moving from unclear business material to clearer software decisions without losing continuity. 
 
-VSlices Design is intentionally independent from VSlices Framework, you do not need to use it to apply VSlices Design.
+VSlices Design is intentionally independent from VSlices Framework. You do not need to use VSlices Framework to apply VSlices Design. 
+
+The Framework can later help implement some of the ideas discovered through Design, but Design itself is a stack-agnostic reasoning product.
 
 The purpose of VSlices Design is to help teams understand:
 
@@ -38,6 +40,29 @@ When the domain is unclear, fragmented, manual, legacy-driven, or organizational
 VSlices Design exists to reduce that risk.
 
 Its purpose is to help teams choose the right amount of understanding, context, planning, and implementation feedback before moving forward.
+
+## What problem does it solve? 
+
+Many teams start software design from the first visible artifact: 
+
+- a screen 
+- a user story 
+- an endpoint 
+- a database table 
+- a technical task 
+- a requested feature 
+
+Those artifacts are useful, but they often appear after important domain questions have already been skipped.
+
+VSlices Design helps teams pause before committing too early to a structure. 
+
+Its main question is: ``` Do we understand enough of the business material to safely shape the software?```
+
+> Sometimes the answer requires broad contextual discovery. 
+> Sometimes it requires focused problem analysis. 
+> Sometimes it requires building a small vertical slice to learn from implementation feedback. 
+
+VSlices Design helps teams choose the right starting point for the uncertainty they are actually facing.
 
 ## When should I use VSlices Design?
 
@@ -97,13 +122,31 @@ These modalities share the same general iteration flow:
 Understanding -> Contextualizing -> Planning -> Building -> Understanding
 ```
 
+| Modality | Useful when | Starting question | Typical direction | 
+| --- | --- | --- | --- | 
+| Context-First | The domain is unclear, fragmented, manual, legacy-driven, or organizationally complex. | What business world are we entering? | Explore actors, processes, concepts, boundaries, language, responsibilities, and constraints. | 
+| Problem-First | The pain is visible, but the underlying cause or correct solution is still unclear. | What problem are we actually solving? | Clarify the problem, affected people, constraints, impact, alternatives, and candidate capabilities. | 
+| Slice-First | The team has enough clarity to build a small behavior and learn from it. | What useful behavior can we safely build now? | Implement a narrow vertical slice, validate assumptions, and use feedback to refine understanding. |
+
 What changes is the emphasis.
 
 ## Same flow, different emphasis
 
 The modalities do not compete, they respond to different kinds of uncertainty.
 
-The modality can change between iterations, starting with one modality does not force the team to keep using it forever.
+A team __is not__ “Context-First”, “Problem-First”, or “Slice-First”. A team __may use__ Context-First in one iteration, Problem-First __in the next one__, and Slice-First __once enough uncertainty has been reduced__.
+
+The shared iteration flow remains the same:
+
+```text
+Understanding -> Contextualizing -> Planning -> Building -> Understanding
+```
+
+What changes is the emphasis.
+
+- Context-First emphasizes understanding the business environment before narrowing the solution.
+- Problem-First emphasizes clarifying a specific pain before deciding what should be built.
+- Slice-First emphasizes learning from a small implementation before expanding the model.
 
 VSlices Design treats modalities as strategies. Not identities.
 
@@ -136,29 +179,19 @@ Their purpose is to help teams understand how knowledge behaves before deciding 
 
 ### Example: regulated approval flow
 
-Consider a system that manages approval requests in a regulated industry.
+### A small example 
 
-At first, the team may think about the domain as a pyramid: they collect business knowledge, identify concepts, define processes, and eventually transform that understanding into software structure.
+Imagine a team is asked to automate appointment scheduling for a small clinic network. At first, the request may sound simple: 
 
-But the knowledge does not move freely from discovery to implementation.
+> “We need a screen where patients can book appointments.” 
 
-Legal rules, audit requirements, external contracts, and compliance responsibilities filter what the team is allowed to build.
+But the right starting point depends on the uncertainty. 
 
-> Some flows are not valid, even if users want them.
-> Some data cannot be exposed, even if it would simplify the interface.
-> Some decisions must be recorded, even if the business process would be faster without that traceability.
-
-In this case, a prism may be a better geometry than a simple pyramid.
-
-The prism represents the constraints that reshape domain knowledge before it becomes software. The team is not only asking:
-
-> What does the business need?
-
-It is also asking:
-
-> Which constraints transform, block, or reshape what the software is allowed to do?
-
-This keeps the metaphor practical. A knowledge geometry is not decoration. It is a way to make visible how understanding moves, changes, or gets constrained before becoming architecture and implementation.
+| Situation | Better starting modality | Why | 
+| --- | --- | --- | 
+| The team does not understand how clinics, professionals, rooms, availability, cancellations, and patient types interact. | Context-First | The domain is still unclear. Starting from a screen may hide important business rules. | 
+| The team knows the process, but the real pain is that patients miss appointments or staff spend too much time rescheduling manually. | Problem-First | The business problem is visible, but the solution should not be assumed too early. | 
+| The team already understands enough and wants to validate one useful behavior, such as sending a reminder 24 hours before an appointment. | Slice-First | A small behavior can be built safely and used to learn from real feedback. | The goal is not to delay implementation. The goal is to avoid building software from the wrong starting point.
 
 ## What VSlices Design is not
 
