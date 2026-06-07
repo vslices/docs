@@ -1,0 +1,18 @@
+site_name: VSlices
+site_description: Suite de ingeniería de software progresiva
+site_author: VSlices
+repo_url: https://github.com/vslices/docs
+repo_name: vslices/docs
+
+docs_dir: docs/es 
+
+theme:
+    name: readthedocs
+    locale: es
+
+plugins: 
+    - search:
+        lang: es
+
+nav:
+    - Inicio: index.md

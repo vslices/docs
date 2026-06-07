@@ -1,13 +1,18 @@
 site_name: VSlices
-site_description: Documentation for VSlices Method, Design, Docs Standard and Framework
+site_description: Progressive software engineering suite
 site_author: VSlices
 repo_url: https://github.com/vslices/docs
 repo_name: vslices/docs
 
-docs_dir: docs
+docs_dir: docs/en
 
 theme:
-  name: readthedocs
+    name: readthedocs
+    locale: en
+
+plugins: 
+    - search:
+        lang: en
 
 nav:
     - Home: index.md
@@ -164,3 +169,7 @@ nav:
             - Documentation-first repository: decisions/first-iteration/0002-documentation-first-repository.md
             - Use Domus Orbis as validation project: decisions/first-iteration/0003-use-domus-orbis-as-validation-project.md
             - Keep products separated but connected: decisions/first-iteration/0004-keep-products-separated-but-connected.md
+            - First-class language support definition: decisions/first-iteration/0005-first-class-language-support-definition.md
+            - pResolver as an abstraction from vSlices: decisions/first-iteration/0006-presolver-as-an-abstraction-from-vslices.md
+            - Use a insurance company project as adaptation case: decisions/first-iteration/0007-use-insurance-company-project-as-adoption-case.md
+            
