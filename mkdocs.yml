@@ -46,15 +46,16 @@ nav:
             - Principles: products/docs-standard/principles.md
             - Modeling: products/docs-standard/modeling.md
             - Anti-bureaucracy-rules: products/docs-standard/anti-bureaucracy-rules.md
-            - Documents:
-                - Domain vocabulary: products/docs-standard/documents/domain-vocabulary.md
-                - Context document: products/docs-standard/documents/context-document.md
-                - Process document: products/docs-standard/documents/process-document.md
-                - Use-case document: products/docs-standard/documents/use-case-document.md
-                - Capability document: products/docs-standard/documents/capability-document.md
-                - Decision record: products/docs-standard/documents/decision-record.md
-                - Validation note: products/docs-standard/documents/validation-note.md
-                - Support note: products/docs-standard/documents/support-note.md
+            - Taxonomy:
+                - Overview: products/docs-standard/taxonomy/index.md
+                - Domain vocabulary: products/docs-standard/taxonomy/domain-vocabulary.md
+                - Context document: products/docs-standard/taxonomy/context-document.md
+                - Process document: products/docs-standard/taxonomy/process-document.md
+                - Use-case document: products/docs-standard/taxonomy/use-case-document.md
+                - Capability document: products/docs-standard/taxonomy/capability-document.md
+                - Decision record: products/docs-standard/taxonomy/decision-record.md
+                - Validation note: products/docs-standard/taxonomy/validation-note.md
+                - Support note: products/docs-standard/taxonomy/support-note.md
             - Continuity: products/docs-standard/continuity-paths.md
         - VSlices Framework: 
             - Overview: products/framework/index.md
