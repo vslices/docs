@@ -21,9 +21,11 @@ nav:
  
     - Products:
         - Overview: products/index.md
+        - Glossary: products/glossary.md
         - VSlices Method:
             - Overview: products/method/index.md
             - Collaboration model: products/method/collaboration-model.md
+            - Document-Stage affinity: products/method/document-stage-affinity.md
         - VSlices Design:
             - Overview: products/design/index.md
             - Principles: products/design/principles.md
@@ -41,8 +43,19 @@ nav:
                 - Comparisons: products/design/modalities/comparisons.md
         - VSlices Docs Standard:
             - Overview: products/docs-standard/index.md
-            - Document types: products/docs-standard/document-types.md
-            - Work in progress: products/docs-standard/work-in-progress.md
+            - Principles: products/docs-standard/principles.md
+            - Modeling: products/docs-standard/modeling.md
+            - Anti-bureaucracy-rules: products/docs-standard/anti-bureaucracy-rules.md
+            - Documents:
+                - Domain vocabulary: products/docs-standard/documents/domain-vocabulary.md
+                - Context document: products/docs-standard/documents/context-document.md
+                - Process document: products/docs-standard/documents/process-document.md
+                - Use-case document: products/docs-standard/documents/use-case-document.md
+                - Capability document: products/docs-standard/documents/capability-document.md
+                - Decision record: products/docs-standard/documents/decision-record.md
+                - Validation note: products/docs-standard/documents/validation-note.md
+                - Support note: products/docs-standard/documents/support-note.md
+            - Continuity: products/docs-standard/continuity-paths.md
         - VSlices Framework: 
             - Overview: products/framework/index.md
             - Getting started: products/framework/getting-started.md
