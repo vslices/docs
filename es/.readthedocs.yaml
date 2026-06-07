@@ -12,7 +12,7 @@ build:
 
 # Build documentation with Mkdocs
 mkdocs:
-  configuration: mkdocs.en.yml
+  configuration: mkdocs.ess.yml
   
 python:
   install:
