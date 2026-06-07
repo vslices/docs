@@ -32,7 +32,7 @@ It is useful when the team needs to preserve something without deciding where it
 
 A note may be resolved, archived, merged into a document, or promoted into a formal document.
 
-## L1 - Minimal Document
+### L1 - Minimal Document
 
 A minimal document captures the smallest useful structure for a document type. It should be enough to support a real iteration without becoming heavy.
 
@@ -42,7 +42,7 @@ Use this level when the team knows the knowledge matters, but does not need a co
 - __minimal Use Case Document__: enough to explain behavior, consequence, and validations.
 - __minimal Decision Record__: enough to explain what was chosen and why.
 
-## L2 - Expanded Document
+### L2 - Expanded Document
 
 An expanded document adds more explicit structure. 
 
@@ -54,7 +54,7 @@ Use this level when the document must support higher complexity, risk, ambiguity
 
 A document should become larger because the domain requires it, not because the template allows it.
 
-## L3 - Reference Document
+### L3 - Reference Document
 
 A reference document is maintained as a stable source of truth for future work.
 
