@@ -1,27 +1,66 @@
 # VSlices
 
-**VSlices** is a progressive software engineering suite focused on preserving continuity between domain discovery, documentation, architecture, implementation, and system evolution.
+**VSlices** is a progressive software engineering suite focused on preserving continuity between domain discovery, documentation, design reasoning, architecture, implementation, and system evolution.
+
+It is composed of:
+
+* **VSlices Framework**, for implementation support.
+* **VSlices Design**, for design reasoning and modeling techniques.
+* **VSlices Docs Standard**, for living documentation structures.
+* **VSlices Method**, for connecting discovery, documentation, design, architecture, and implementation.
+
+VSlices exists to reduce accidental complexity and preserve architectural intent as a system evolves.
 
 ## Start here
 
-If you are new to VSlices, these pages are the best entry point, they will act as anchors for the rest of the documentation:
+If you are new to VSlices, start with these pages:
 
-- [How to start?](start-here/index.md) 
-- [What is VSlices?](start-here/what-is-vslices.md)
-- [Why VSlices exists?](start-here/why-vslices-exists.md)
-- [Suite overview](start-here/suite-overview.md)
-- [Adoption paths](start-here/adoption-paths.md)
+* [How to start?](start-here/index.md)
+* [What is VSlices?](start-here/what-is-vslices.md)
+* [Why VSlices exists?](start-here/why-vslices-exists.md)
+* [Suite overview](start-here/suite-overview.md)
+* [Adoption paths](start-here/adoption-paths.md)
 
-If you only want to understand the idea, start with "What is VSlices?".
+If you only want to understand the core idea, start with [What is VSlices?](start-here/what-is-vslices.md).
 
-If you want to apply it gradually, start with "Adoption paths".
+If you want to understand why VSlices exists, read [Why VSlices exists?](start-here/why-vslices-exists.md).
 
-If you want to see how it is validated, go to "Alive Lab".
+If you want to understand how the products relate to each other, read [Suite overview](start-here/suite-overview.md).
 
-## What's next? 
+If you want to apply VSlices gradually, read [Adoption paths](start-here/adoption-paths.md).
 
-VSlices is being defined and validated through real software design and implementation work. We document that process in the [Alive Lab section](alive-lab/index.md), while methodology and product decisions are recorded explicitly in the [Decisions section](decisions/index.md).
+## Products
 
-The purpose of the **Alive Lab** and **Decisions** sections is not only to present polished examples or architectural decisions, but to preserve the reasoning, tradeoffs, and modeling discoveries that shape VSlices over time.
+VSlices is documented as a suite of connected products:
 
-The current validation project is [Domus Orbis](alive-lab/project-stories/domus-orbis/index.md), a software project that aims to help manage the processes involved in household management.
+* [VSlices Framework](products/framework/index.md) explains the implementation-oriented foundations.
+* [VSlices Design](products/design/index.md) explains how we reason about software design.
+* [VSlices Docs Standard](products/docs-standard/index.md) explains how we preserve knowledge through documentation.
+* [VSlices Method](products/method/index.md) explains how the products connect across the software lifecycle.
+
+Each product can evolve independently, but all of them share the same goal: preserving continuity between understanding, documenting, designing, building, and evolving software.
+
+## Validation
+
+VSlices is being defined and validated through real software design and implementation work.
+
+The [Alive Lab](alive-lab/index.md) preserves experiments, project stories, modeling discoveries, and field observations that shape VSlices over time.
+
+The current primary validation project is [Domus Orbis](alive-lab/project-stories/domus-orbis/index.md), a software project focused on supporting household management processes.
+
+## Decisions
+
+Important methodology, product, and documentation decisions are recorded in the [Decisions section](decisions/index.md). These records preserve:
+
+* why a decision was made
+* which tradeoffs were accepted
+* what remains uncertain
+* how VSlices evolves from real design pressure
+
+## Current state
+
+VSlices is currently in an early foundational stage.
+
+The documentation represents the first public structure of the suite, not a finished methodology or complete framework ecosystem.
+
+Some ideas are stable enough to document as part of v0.1. Other ideas remain experimental and are intentionally kept inside the Alive Lab until they are validated further.
