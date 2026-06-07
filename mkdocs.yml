@@ -149,7 +149,11 @@ nav:
             - Direction: alive-lab/field-notes/direction.md
         - Theories:
             - Overview: alive-lab/theories/index.md
-            - Geometry knowledge: alive-lab/theories/geometry-knowledge.md
+            - Relational surreal modeling:
+                - Latests: alive-lab/theories/relational-surreal-modeling/v1.md
+            - Knowledge geometry:
+                - Latests:  alive-lab/theories/knowledge-geometry/v2.md
+                - V1: alive-lab/theories/knowledge-geometry/v1.md
 
     - Decisions:
         - Overview: decisions/index.md
