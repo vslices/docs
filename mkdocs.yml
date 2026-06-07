@@ -24,7 +24,23 @@ nav:
         - Glossary: products/glossary.md
         - VSlices Method:
             - Overview: products/method/index.md
-            - Collaboration model: products/method/collaboration-model.md
+
+            - Patterns:
+                - Overview: products/method/patterns/index.md
+                - Collaboration model: products/method/patterns/collaboration-model.md
+                - Modality selection: products/method/patterns/modality-selection.md
+                - Modality Switching: products/method/patterns/modality-switching.md
+                - Learning loop: products/method/patterns/learning-loop.md
+
+            - Context Guides:
+                - Overview: products/method/context-guides/index.md
+                - Already using VSlices:
+                    - Joining existing project: products/method/context-guides/joining-existing-project.md
+                - Not using VSlices:
+                    - Introducing Method in on-going projects: products/method/context-guides/introducing-method.md
+                    - Start in a digitalized scenario: products/method/context-guides/digitalized-scenario.md
+                    - Start in a non-digitalized scenario: products/method/context-guides/non-digitalized-scenario.md
+            
             - Document-Stage affinity: products/method/document-stage-affinity.md
         - VSlices Design:
             - Overview: products/design/index.md
@@ -95,36 +111,45 @@ nav:
                 - Work in progress: products/framework/testing/work-in-progress.md
             - Work in progress: products/framework/work-in-progress.md
 
-        - VSlices Field Notes:
-            - Overview: products/field-notes/index.md
-            - Human Factors:
-                - Overview: products/field-notes/human-factors/index.md
-                - Candles bring light even in the sun: products/field-notes/human-factors/candles-bring-light-even-in-the-sun.md
-                - Self immolation through overcommitment: products/field-notes/human-factors/self-immolation-through-overcommitment.md
-                - The organization you wish existed: products/field-notes/human-factors/the-organization-you-wish-existed.md
-                - RAM limits in the human brain: products/field-notes/human-factors/ram-limits-in-the-human-brain.md
-            - Organization factors:
-                - Overview: products/field-notes/organization-factors/index.md
-                - Wait.. Is that child drinking vodka?!: products/field-notes/organization-factors/wait-is-that-child-drinking-vodka.md
-                - Why is there nothing?: products/field-notes/organization-factors/why-is-there-nothing.md
-                - The human brain is not a database: products/field-notes/organization-factors/the-human-brain-is-not-a-database.md
-            - Team factors:
-                - Overview: products/field-notes/team-factors/index.md
-                - All the power in those hands...: products/field-notes/team-factors/all-the-power-in-those-hands.md
-                - Why aren't cookies in the jar anymore?: products/field-notes/team-factors/why-arent-cookies-in-the-jar-anymore.md
-            - Direction: products/field-notes/direction.md
-
     - Guides:
         - Overview: guides/index.md
         - Work in progress: guides/work-in-progress.md
 
     - Alive lab: 
         - Overview: alive-lab/index.md
-        - Domus Orbis:
-            - Overview: alive-lab/domus-orbis/index.md
-            - Project Context: alive-lab/domus-orbis/project-context.md
-            - Modeling notes: alive-lab/domus-orbis/modeling-notes.md
-            - Implementation notes: alive-lab/domus-orbis/implementation-notes.md
+        - Project stories:
+            - Overview: alive-lab/project-stories/index.md
+            - Domus Orbis:
+                - Overview: alive-lab/project-stories/domus-orbis/index.md
+                - Project Context: alive-lab/project-stories/domus-orbis/project-context.md
+                - Modeling notes: alive-lab/project-stories/domus-orbis/modeling-notes.md
+                - Implementation notes: alive-lab/project-stories/domus-orbis/implementation-notes.md
+            - A insurance company:
+                - Overview: alive-lab/project-stories/insurance-company/index.md
+                - Project Context: alive-lab/project-stories/insurance-company/project-context.md
+                - Modeling notes: alive-lab/project-stories/insurance-company/modeling-notes.md
+                - Implementation notes: alive-lab/project-stories/insurance-company/implementation-notes.md
+        - Field Notes:
+            - Overview: alive-lab/field-notes/index.md
+            - Human Factors:
+                - Overview: alive-lab/field-notes/human-factors/index.md
+                - Candles bring light even in the sun: alive-lab/field-notes/human-factors/candles-bring-light-even-in-the-sun.md
+                - Self immolation through overcommitment: alive-lab/field-notes/human-factors/self-immolation-through-overcommitment.md
+                - The organization you wish existed: alive-lab/field-notes/human-factors/the-organization-you-wish-existed.md
+                - RAM limits in the human brain: alive-lab/field-notes/human-factors/ram-limits-in-the-human-brain.md
+            - Organization factors:
+                - Overview: alive-lab/field-notes/organization-factors/index.md
+                - Wait.. Is that child drinking vodka?!: alive-lab/field-notes/organization-factors/wait-is-that-child-drinking-vodka.md
+                - Why is there nothing?: alive-lab/field-notes/organization-factors/why-is-there-nothing.md
+                - The human brain is not a database: alive-lab/field-notes/organization-factors/the-human-brain-is-not-a-database.md
+            - Team factors:
+                - Overview: alive-lab/field-notes/team-factors/index.md
+                - All the power in those hands...: alive-lab/field-notes/team-factors/all-the-power-in-those-hands.md
+                - Why aren't cookies in the jar anymore?: alive-lab/field-notes/team-factors/why-arent-cookies-in-the-jar-anymore.md
+            - Direction: alive-lab/field-notes/direction.md
+        - Theories:
+            - Overview: alive-lab/theories/index.md
+            - Geometry knowledge: alive-lab/theories/geometry-knowledge.md
 
     - Decisions:
         - Overview: decisions/index.md

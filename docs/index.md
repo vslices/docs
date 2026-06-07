@@ -24,4 +24,4 @@ VSlices is being defined and validated through real software design and implemen
 
 The purpose of the **Alive Lab** and **Decisions** sections is not only to present polished examples or architectural decisions, but to preserve the reasoning, tradeoffs, and modeling discoveries that shape VSlices over time.
 
-The current validation project is [Domus Orbis](alive-lab/domus-orbis/index.md), a software project that aims to help manage the processes involved in household management.
+The current validation project is [Domus Orbis](alive-lab/project-stories/domus-orbis/index.md), a software project that aims to help manage the processes involved in household management.

@@ -59,5 +59,5 @@ The current implementation work should be treated as exploratory engineering wor
 - [Design patterns](design-patterns/index.md)
 - [Built-in components](components/index.md)
 - [Alive Lab](../../alive-lab/index.md)
-- [Domus Orbis](../../alive-lab/domus-orbis/index.md)
+- [Domus Orbis](../../alive-lab/project-stories/domus-orbis/index.md)
 - [Decisions](../../decisions/index.md)

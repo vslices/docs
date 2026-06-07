@@ -39,15 +39,15 @@ The products are still evolving and being validated through real work, especiall
 
 ## Beyond The Products
 
-VSlices also contains collections of observations, experiences and lessons learned from real projects.
+VSlices also contains collections of observations, experiences and lessons learned from real projects or theory implementation.
 
 These collections are not official products and should not be considered methodologies or frameworks.
 
-Their purpose is to preserve knowledge, identify recurring patterns and validate ideas before they become formal parts of the suite.
+Their purpose is to preserve knowledge, identify recurring patterns and validate ideas before they become formal parts of the suite. Current examples include:
 
-Current examples include:
-
-- [Field Notes](field-notes/index.md)
+- [Field Notes](../alive-lab/field-notes/index.md)
+- [Project Stories](../alive-lab/project-stories/index.md)
+- [Theories](../alive-lab/theories/index.md)
 
 These efforts represent an important part of the VSlices philosophy:
 
