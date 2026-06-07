@@ -154,6 +154,8 @@ nav:
             - Knowledge geometry:
                 - Latests:  alive-lab/theories/knowledge-geometry/v2.md
                 - V1: alive-lab/theories/knowledge-geometry/v1.md
+            - PResolver, a methodology for problem resolution:
+                - Latests: alive-lab/theories/presolver/v1.md
 
     - Decisions:
         - Overview: decisions/index.md
