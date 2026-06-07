@@ -73,6 +73,4 @@ The taxonomy follows one principle:
 
 > Choose documents by the knowledge they preserve, not by the ceremony they suggest.
 
-A document is useful when it protects continuity.
-
-If the knowledge can be preserved with a smaller artifact, use the smaller artifact.
+A document is useful when it protects continuity. If the knowledge can be preserved with a smaller artifact, use the smaller artifact.
