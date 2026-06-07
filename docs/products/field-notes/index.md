@@ -45,7 +45,7 @@ Field Notes is not:
 
 The notes represent lessons learned from specific situations. They should be treated as engineering reflections rather than prescriptions.
 
-## Relationship With VSlices
+## Relationship with the VSlices Suite
 
 The rest of the VSlices suite focuses on preserving continuity between:
 
