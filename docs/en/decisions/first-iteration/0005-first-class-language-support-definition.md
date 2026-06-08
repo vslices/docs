@@ -45,7 +45,7 @@ docs/
     products/
 ```
 
-Each language may have its own MkDocs configuration:
+Each language may have its own ReadTheDocs and MkDocs configuration:
 
 ```text
 mkdocs.en.yml
@@ -61,37 +61,15 @@ vslices-es   -> Spanish translation project
 
 Both Read the Docs projects may point to the same repository.
 
-The active MkDocs configuration will be selected through a Read the Docs project variable:
+The active MkDocs configuration will be selected through a specific `.readthedocs.yaml`. Local development may use three configurations:
 
 ```text
-MKDOCS_CONFIG_FILE=mkdocs.en.yml
-MKDOCS_CONFIG_FILE=mkdocs.es.yml
-```
+es/.readthedocs.yaml -> spanish docs
+.readthedocs.yaml    -> english docs
 
-The shared `.readthedocs.yaml` will reference that variable:
-
-```yaml
-version: 2
-
-build:
-  os: ubuntu-24.04
-  tools:
-    python: "3.11"
-
-mkdocs:
-  configuration: ${MKDOCS_CONFIG_FILE}
-
-python:
-  install:
-    - requirements: requirements.txt
-```
-
-Local development may use three configurations:
-
-```text
-mkdocs.yml       -> multilingual local preview
+mkdocs.local.yml -> multilingual local preview
 mkdocs.en.yml    -> English-only preview
-mkdocs.es.yml    -> Spanish-only preview
+mkdocs.ess.yml   -> Spanish-only preview
 ```
 
 ## Rationale
