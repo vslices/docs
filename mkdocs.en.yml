@@ -62,9 +62,10 @@ nav:
                 - Comparisons: products/design/modalities/comparisons.md
         - VSlices Docs Standard:
             - Overview: products/docs-standard/index.md
-            - Principles: products/docs-standard/principles.md
-            - Modeling: products/docs-standard/modeling.md
-            - Anti bureaucracy rules: products/docs-standard/anti-bureaucracy-rules.md
+            - How to use:
+                - Principles: products/docs-standard/how-to-use/principles.md
+                - Modeling: products/docs-standard/how-to-use/modeling.md
+                - Anti bureaucracy rules: products/docs-standard/how-to-use/anti-bureaucracy-rules.md
             - Taxonomy:
                 - Overview: products/docs-standard/taxonomy/index.md
                 - Domain vocabulary: products/docs-standard/taxonomy/domain-vocabulary.md
@@ -76,6 +77,7 @@ nav:
                 - Validation note: products/docs-standard/taxonomy/validation-note.md
                 - Support note: products/docs-standard/taxonomy/support-note.md
             - Continuity: products/docs-standard/continuity-paths.md
+            - Compliance support: products/docs-standard/compliance-support.md
         - VSlices Framework:
             - Overview: products/framework/index.md
 
