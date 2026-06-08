@@ -1,0 +1,154 @@
+site_name: VSlices
+site_description: Progressive software engineering suite
+site_author: VSlices
+repo_url: https://github.com/vslices/docs
+repo_name: vslices/docs
+
+theme:
+    name: readthedocs
+
+plugins: 
+    - search
+    - i18n:
+        docs_structure: folder
+        fallback_to_default: true
+        languages:
+            - locale: en
+              default: true
+              name: English
+              build: true
+              site_name: VSlices
+              theme: 
+                locale: en
+            - locale: es
+              default: false
+              name: Español
+              build: true
+              site_name: VSlices
+              theme: 
+                locale: es
+
+
+
+nav:
+    - Home: index.md
+
+    - How to start?:
+        - Overview: start-here/index.md
+        - What is VSlices?: start-here/what-is-vslices.md
+        - Why VSlices exists?: start-here/why-vslices-exists.md
+        - Suite overview: start-here/suite-overview.md
+        - Adoption paths: start-here/adoption-paths.md
+ 
+    - Products:
+        - Overview: products/index.md
+        - Glossary: products/glossary.md
+        - VSlices Method:
+            - Overview: products/method/index.md
+
+            - Patterns:
+                - Overview: products/method/patterns/index.md
+                - Collaboration model: products/method/patterns/collaboration-model.md
+                - Modality selection: products/method/patterns/modality-selection.md
+                - Modality Switching: products/method/patterns/modality-switching.md
+                - Learning loop: products/method/patterns/learning-loop.md
+
+            - Context Guides:
+                - Overview: products/method/context-guides/index.md
+                - Already using VSlices:
+                    - Joining existing project: products/method/context-guides/joining-existing-project.md
+                - Not using VSlices:
+                    - Introducing Method in on-going projects: products/method/context-guides/introducing-method.md
+                    - Start in a digitalized scenario: products/method/context-guides/digitalized-scenario.md
+                    - Start in a non-digitalized scenario: products/method/context-guides/non-digitalized-scenario.md
+            
+            - Document-Stage affinity: products/method/document-stage-affinity.md
+        - VSlices Design:
+            - Overview: products/design/index.md
+            - Principles: products/design/principles.md
+            - Iteration flow: products/design/iteration-flow.md
+            - Modalities:
+                - Context first:
+                    - Introduction: products/design/modalities/context-first/index.md
+                    - Emphasis: products/design/modalities/context-first/emphasis.md
+                - Problem first: 
+                    - Introduction: products/design/modalities/problem-first/index.md
+                    - Emphasis: products/design/modalities/problem-first/emphasis.md
+                - Slice first:
+                    - Introduction: products/design/modalities/slice-first/index.md
+                    - Emphasis: products/design/modalities/slice-first/emphasis.md
+                - Comparisons: products/design/modalities/comparisons.md
+        - VSlices Docs Standard:
+            - Overview: products/docs-standard/index.md
+            - Principles: products/docs-standard/principles.md
+            - Modeling: products/docs-standard/modeling.md
+            - Anti-bureaucracy-rules: products/docs-standard/anti-bureaucracy-rules.md
+            - Taxonomy:
+                - Overview: products/docs-standard/taxonomy/index.md
+                - Domain vocabulary: products/docs-standard/taxonomy/domain-vocabulary.md
+                - Context document: products/docs-standard/taxonomy/context-document.md
+                - Process document: products/docs-standard/taxonomy/process-document.md
+                - Use-case document: products/docs-standard/taxonomy/use-case-document.md
+                - Capability document: products/docs-standard/taxonomy/capability-document.md
+                - Decision record: products/docs-standard/taxonomy/decision-record.md
+                - Validation note: products/docs-standard/taxonomy/validation-note.md
+                - Support note: products/docs-standard/taxonomy/support-note.md
+            - Continuity: products/docs-standard/continuity-paths.md
+        - VSlices Framework: 
+            - Overview: products/framework/index.md
+
+    - Guides:
+        - Overview: guides/index.md
+        - Work in progress: guides/work-in-progress.md
+
+    - Alive lab: 
+        - Overview: alive-lab/index.md
+        - Project stories:
+            - Overview: alive-lab/project-stories/index.md
+            - Domus Orbis:
+                - Overview: alive-lab/project-stories/domus-orbis/index.md
+                - Project Context: alive-lab/project-stories/domus-orbis/project-context.md
+                - Modeling notes: alive-lab/project-stories/domus-orbis/modeling-notes.md
+                - Implementation notes: alive-lab/project-stories/domus-orbis/implementation-notes.md
+            - A insurance company:
+                - Overview: alive-lab/project-stories/insurance-company/index.md
+                - Project Context: alive-lab/project-stories/insurance-company/project-context.md
+                - Modeling notes: alive-lab/project-stories/insurance-company/modeling-notes.md
+                - Implementation notes: alive-lab/project-stories/insurance-company/implementation-notes.md
+        - Field Notes:
+            - Overview: alive-lab/field-notes/index.md
+            - Human Factors:
+                - Overview: alive-lab/field-notes/human-factors/index.md
+                - Candles bring light even in the sun: alive-lab/field-notes/human-factors/candles-bring-light-even-in-the-sun.md
+                - Self immolation through overcommitment: alive-lab/field-notes/human-factors/self-immolation-through-overcommitment.md
+                - The organization you wish existed: alive-lab/field-notes/human-factors/the-organization-you-wish-existed.md
+                - RAM limits in the human brain: alive-lab/field-notes/human-factors/ram-limits-in-the-human-brain.md
+            - Organization factors:
+                - Overview: alive-lab/field-notes/organization-factors/index.md
+                - Wait.. Is that child drinking vodka?!: alive-lab/field-notes/organization-factors/wait-is-that-child-drinking-vodka.md
+                - Why is there nothing?: alive-lab/field-notes/organization-factors/why-is-there-nothing.md
+                - The human brain is not a database: alive-lab/field-notes/organization-factors/the-human-brain-is-not-a-database.md
+            - Team factors:
+                - Overview: alive-lab/field-notes/team-factors/index.md
+                - All the power in those hands...: alive-lab/field-notes/team-factors/all-the-power-in-those-hands.md
+                - Why aren't cookies in the jar anymore?: alive-lab/field-notes/team-factors/why-arent-cookies-in-the-jar-anymore.md
+            - Direction: alive-lab/field-notes/direction.md
+        - Theories:
+            - Overview: alive-lab/theories/index.md
+            - Relational surreal modeling:
+                - Latests: alive-lab/theories/relational-surreal-modeling/v1.md
+            - Knowledge geometry:
+                - Latests:  alive-lab/theories/knowledge-geometry/v2.md
+                - V1: alive-lab/theories/knowledge-geometry/v1.md
+            - PResolver, a methodology for problem resolution:
+                - Latests: alive-lab/theories/presolver/v1.md
+
+    - Decisions:
+        - Overview: decisions/index.md
+        - First-iteration:
+            - Use read the docs: decisions/first-iteration/0001-use-read-the-docs.md
+            - Documentation-first repository: decisions/first-iteration/0002-documentation-first-repository.md
+            - Use Domus Orbis as validation project: decisions/first-iteration/0003-use-domus-orbis-as-validation-project.md
+            - Keep products separated but connected: decisions/first-iteration/0004-keep-products-separated-but-connected.md
+            - Use multiple languages: decisions/first-iteration/0005-use-multiple-languages.md
+            

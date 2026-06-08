@@ -1,5 +1,7 @@
 # Validation Note
 
+> You can access the [validation note template here](https://github.com/vslices/docs-standard/blob/main/templates/validation-note.md)
+
 A Validation Note preserves evidence gathered after testing, building, reviewing, observing, or using something.
 
 Its purpose is to capture what was confirmed, rejected, changed, or learned so future work can start from better understanding. A Validation Note answers:

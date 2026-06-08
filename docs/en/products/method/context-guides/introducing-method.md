@@ -87,16 +87,16 @@ A seam is useful when it helps real work continue with less guessing.
 
 Documents may support the introduction of Method, but only when they solve a current continuity problem.
 
-| Continuity gap                                    | Useful document         |
-| ------------------------------------------------- | ----------------------- |
-| People use the same term with different meanings. | [Domain Vocabulary](../../docs-standard/taxonomy/domain-vocabulary.md)   |
-| A task lacks surrounding context.                 | [Context Document](../../docs-standard/taxonomy/context-document.md)    |
-| A workflow or handoff is misunderstood.           | [Process Document](../../docs-standard/taxonomy/process-document.md)    |
-| A behavior needs clearer intent.                  | [Use Case Document](../../docs-standard/taxonomy/use-case-document.md)   |
-| A stable ability needs to be named.               | [Capability Document](../../docs-standard/taxonomy/capability-document.md) |
-| A decision may affect future work.                | [Decision Record](../../docs-standard/taxonomy/decision-record.md)     |
-| Feedback should change what happens next.         | [Validation Note](../../docs-standard/taxonomy/validation-note.md)     |
-| An observation is useful but still uncertain.     | [Support Note](../../docs-standard/taxonomy/support-note.md)        |
+| Continuity gap                                    | Useful document                                                                                                                                                                         |
+| ------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| People use the same term with different meanings. | Domain Vocabulary — [Taxonomy](../../docs-standard/taxonomy/domain-vocabulary.md) · [Template](https://github.com/vslices/docs-standard/blob/main/templates/domain-vocabulary.md)       |
+| A task lacks surrounding context.                 | Context Document — [Taxonomy](../../docs-standard/taxonomy/context-document.md) · [Template](https://github.com/vslices/docs-standard/blob/main/templates/context-document.md)          |
+| A workflow or handoff is misunderstood.           | Process Document — [Taxonomy](../../docs-standard/taxonomy/process-document.md) · [Template](https://github.com/vslices/docs-standard/blob/main/templates/process-document.md)          |
+| A behavior needs clearer intent.                  | Use Case Document — [Taxonomy](../../docs-standard/taxonomy/use-case-document.md) · [Template](https://github.com/vslices/docs-standard/blob/main/templates/use-case-document.md)       |
+| A stable ability needs to be named.               | Capability Document — [Taxonomy](../../docs-standard/taxonomy/capability-document.md) · [Template](https://github.com/vslices/docs-standard/blob/main/templates/capability-document.md) |
+| A decision may affect future work.                | Decision Record — [Taxonomy](../../docs-standard/taxonomy/decision-record.md) · [Template](https://github.com/vslices/docs-standard/blob/main/templates/decision-record.md)             |
+| Feedback should change what happens next.         | Validation Note — [Taxonomy](../../docs-standard/taxonomy/validation-note.md) · [Template](https://github.com/vslices/docs-standard/blob/main/templates/validation-note.md)             |
+| An observation is useful but still uncertain.     | Support Note — [Taxonomy](../../docs-standard/taxonomy/support-note.md) · [Template](https://github.com/vslices/docs-standard/blob/main/templates/support-note.md)                      |
 
 Do not introduce documents as a package. Introduce the smallest document that protects the work currently at risk.
 

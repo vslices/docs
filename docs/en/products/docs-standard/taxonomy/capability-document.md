@@ -1,5 +1,7 @@
 # Capability Document
 
+> You can access the [capability document template here](https://github.com/vslices/docs-standard/blob/main/templates/capability-document.md)
+
 A Capability Document preserves a stable ability required by the business or system.
 
 Its purpose is to describe what must be possible without deciding too early how it must be implemented. A Capability Document answers:

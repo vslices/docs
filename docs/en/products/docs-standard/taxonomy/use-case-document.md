@@ -1,5 +1,7 @@
 # Use Case Document
 
+> You can access the [use case document template here](https://github.com/vslices/docs-standard/blob/main/templates/use-case-document.md)
+
 A Use Case Document preserves the meaning of a behavior inside a domain context.
 
 Its purpose is to describe what an interaction, operation, or expected behavior means, what consequence it produces, and what must be valid for that behavior to make sense. A Use Case Document answers:

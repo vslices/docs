@@ -96,18 +96,16 @@ Newcomers often expose implicit knowledge. Those questions should not be treated
 
 ## Document support
 
-Documents may help a person or team join without restarting discovery.
-
-| Knowledge need                                      | Useful document         |
-| --------------------------------------------------- | ----------------------- |
-| Terms are unclear to newcomers.                     | [Domain Vocabulary](../../docs-standard/taxonomy/domain-vocabulary.md)   |
-| The surrounding scenario needs orientation.         | [Context Document](../../docs-standard/taxonomy/context-document.md)    |
-| Current work depends on workflows or handoffs.      | [Process Document](../../docs-standard/taxonomy/process-document.md)    |
-| A behavior needs intent and consequences clarified. | [Use Case Document](../../docs-standard/taxonomy/use-case-document.md)   |
-| A stable ability explains several related changes.  | [Capability Document](../../docs-standard/taxonomy/capability-document.md) |
-| Existing direction depends on past tradeoffs.       | [Decision Record](../../docs-standard/taxonomy/decision-record.md)     |
-| Recent feedback changed current understanding.      | [Validation Note](../../docs-standard/taxonomy/validation-note.md)     |
-| Questions or observations are still uncertain.      | [Support Note](../../docs-standard/taxonomy/support-note.md)        |
+| Knowledge need                                      | Useful document                                                                                                                                                                         |
+| --------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Terms are unclear to newcomers.                     | Domain Vocabulary — [Taxonomy](../../docs-standard/taxonomy/domain-vocabulary.md) · [Template](https://github.com/vslices/docs-standard/blob/main/templates/domain-vocabulary.md)       |
+| The surrounding scenario needs orientation.         | Context Document — [Taxonomy](../../docs-standard/taxonomy/context-document.md) · [Template](https://github.com/vslices/docs-standard/blob/main/templates/context-document.md)          |
+| Current work depends on workflows or handoffs.      | Process Document — [Taxonomy](../../docs-standard/taxonomy/process-document.md) · [Template](https://github.com/vslices/docs-standard/blob/main/templates/process-document.md)          |
+| A behavior needs intent and consequences clarified. | Use Case Document — [Taxonomy](../../docs-standard/taxonomy/use-case-document.md) · [Template](https://github.com/vslices/docs-standard/blob/main/templates/use-case-document.md)       |
+| A stable ability explains several related changes.  | Capability Document — [Taxonomy](../../docs-standard/taxonomy/capability-document.md) · [Template](https://github.com/vslices/docs-standard/blob/main/templates/capability-document.md) |
+| Existing direction depends on past tradeoffs.       | Decision Record — [Taxonomy](../../docs-standard/taxonomy/decision-record.md) · [Template](https://github.com/vslices/docs-standard/blob/main/templates/decision-record.md)             |
+| Recent feedback changed current understanding.      | Validation Note — [Taxonomy](../../docs-standard/taxonomy/validation-note.md) · [Template](https://github.com/vslices/docs-standard/blob/main/templates/validation-note.md)             |
+| Questions or observations are still uncertain.      | Support Note — [Taxonomy](../../docs-standard/taxonomy/support-note.md) · [Template](https://github.com/vslices/docs-standard/blob/main/templates/support-note.md)                      |
 
 Use documents to join the work, not to audit the whole project.
 

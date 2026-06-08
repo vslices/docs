@@ -1,5 +1,7 @@
 # Domain Vocabulary
 
+> You can access the [domain vocabulary template here](https://github.com/vslices/docs-standard/blob/main/templates/domain-vocabulary.md)
+
 A Domain Vocabulary preserves the language used inside a business area, system, process, or capability.
 
 Its purpose is to make important terms explicit so that discovery, documentation, design, implementation, and validation do not drift into different meanings.

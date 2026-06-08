@@ -93,16 +93,16 @@ Do not preserve every observation. Preserve what future work should not have to 
 
 Documents may help make implicit work visible.
 
-| Knowledge need                                        | Useful document         |
-| ----------------------------------------------------- | ----------------------- |
-| People use terms inconsistently.                      | [Domain Vocabulary](../../docs-standard/taxonomy/domain-vocabulary.md)   |
-| The surrounding scenario needs to be understood.      | [Context Document](../../docs-standard/taxonomy/context-document.md)    |
-| Work depends on steps, handoffs or responsibilities.  | [Process Document](../../docs-standard/taxonomy/process-document.md)    |
-| A behavior should be supported by software.           | [Use Case Document](../../docs-standard/taxonomy/use-case-document.md)   |
-| A stable business ability is emerging.                | [Capability Document](../../docs-standard/taxonomy/capability-document.md) |
-| A direction must be chosen under tradeoffs.           | [Decision Record](../../docs-standard/taxonomy/decision-record.md)     |
-| Early evidence changes what the team believes.        | [Validation Note](../../docs-standard/taxonomy/validation-note.md)     |
-| Observations are still uncertain, local or temporary. | [Support Note](../../docs-standard/taxonomy/support-note.md)        |
+| Knowledge need                                        | Useful document                                                                                                                                                                         |
+| ----------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| People use terms inconsistently.                      | Domain Vocabulary — [Taxonomy](../../docs-standard/taxonomy/domain-vocabulary.md) · [Template](https://github.com/vslices/docs-standard/blob/main/templates/domain-vocabulary.md)       |
+| The surrounding scenario needs to be understood.      | Context Document — [Taxonomy](../../docs-standard/taxonomy/context-document.md) · [Template](https://github.com/vslices/docs-standard/blob/main/templates/context-document.md)          |
+| Work depends on steps, handoffs or responsibilities.  | Process Document — [Taxonomy](../../docs-standard/taxonomy/process-document.md) · [Template](https://github.com/vslices/docs-standard/blob/main/templates/process-document.md)          |
+| A behavior should be supported by software.           | Use Case Document — [Taxonomy](../../docs-standard/taxonomy/use-case-document.md) · [Template](https://github.com/vslices/docs-standard/blob/main/templates/use-case-document.md)       |
+| A stable business ability is emerging.                | Capability Document — [Taxonomy](../../docs-standard/taxonomy/capability-document.md) · [Template](https://github.com/vslices/docs-standard/blob/main/templates/capability-document.md) |
+| A direction must be chosen under tradeoffs.           | Decision Record — [Taxonomy](../../docs-standard/taxonomy/decision-record.md) · [Template](https://github.com/vslices/docs-standard/blob/main/templates/decision-record.md)             |
+| Early evidence changes what the team believes.        | Validation Note — [Taxonomy](../../docs-standard/taxonomy/validation-note.md) · [Template](https://github.com/vslices/docs-standard/blob/main/templates/validation-note.md)             |
+| Observations are still uncertain, local or temporary. | Support Note — [Taxonomy](../../docs-standard/taxonomy/support-note.md) · [Template](https://github.com/vslices/docs-standard/blob/main/templates/support-note.md)                      |
 
 Use documents to preserve understanding, not to formalize everything too early.
 

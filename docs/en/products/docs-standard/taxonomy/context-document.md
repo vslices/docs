@@ -1,5 +1,7 @@
 # Context Document
 
+> You can access the [context document template here](https://github.com/vslices/docs-standard/blob/main/templates/context-document.md)
+
 A Context Document preserves the scenario where the team is working.
 
 Its purpose is to make the relevant business, organizational, operational, or system context visible enough to support better decisions. A Context Document answers:

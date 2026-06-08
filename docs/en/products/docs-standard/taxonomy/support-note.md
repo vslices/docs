@@ -1,5 +1,7 @@
 # Support Note
 
+> > You can access the [support note template here](https://github.com/vslices/docs-standard/blob/main/templates/support-note.md)
+
 A Support Note preserves useful knowledge that is not ready or important enough to become a formal document.
 
 Its purpose is to capture concepts, assumptions, risks, questions, feedback, implementation details, or improvement ideas without adding unnecessary structure. A Support Note answers:

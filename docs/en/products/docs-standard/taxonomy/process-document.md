@@ -1,5 +1,7 @@
 # Process Document
 
+> You can access the [process document template here](https://github.com/vslices/docs-standard/blob/main/templates/process-document.md)
+
 A Process Document preserves how a work line operates.
 
 Its purpose is to make responsibilities, roles, coordination rules, workflows, handoffs, and outcomes visible enough to support better design and implementation decisions.

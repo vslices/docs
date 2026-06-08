@@ -1,5 +1,7 @@
 # Decision Record
 
+> You can access the [decision record template here](https://github.com/vslices/docs-standard/blob/main/templates/decision-record.md)
+
 A Decision Record preserves an important decision, the context that shaped it, and the consequences the team accepted.
 
 Its purpose is to explain why a direction was chosen so future work can understand, review, or change that decision deliberately. A Decision Record answers:
