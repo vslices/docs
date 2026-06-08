@@ -78,6 +78,8 @@ nav:
                 - Validation note: products/docs-standard/taxonomy/validation-note.md
                 - Support note: products/docs-standard/taxonomy/support-note.md
             - Continuity: products/docs-standard/continuity-paths.md
+        - VSlices Framework:
+            - Overview: products/framework/index.md
 
     - Guides:
         - Overview: guides/index.md
