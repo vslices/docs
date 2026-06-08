@@ -32,13 +32,21 @@ It does not directly implement them. It is to be honest about:
 
 ## How to use this
 
-Use this document as a mapping aid. Do not treat it as proof of compliance. For compliance-oriented work:
+Use this document to understand how VSlices Docs Standard can support alignment with external standards, architecture templates, customer policies, audit expectations, or regulatory requirements.
 
-* **start with VSlices Docs Standard**: preserve continuity between domain, documentation, decisions, implementation, and validation.
-* **identify the target standard**: clarify which external standard, framework, customer requirement, or regulatory expectation applies.
-* **map VSlices documents to required artifacts**: reuse existing knowledge instead of rewriting everything from scratch.
-* **add missing controls**: include required approvals, traceability, evidence, review cycles, formats, or diagrams.
-* **keep continuity visible**: avoid producing compliance artifacts that become disconnected from real engineering knowledge.
+VSlices documents may contain knowledge that those external requirements also need. However, VSlices Docs Standard does not make that knowledge compliant by itself.
+
+When a team needs to align with an external requirement:
+
+- __start with VSlices Docs Standard__: preserve the real engineering knowledge first, including context, processes, behavior, capabilities, decisions, validation, and evolution.
+- __identify the target requirement__: clarify which standard, framework, customer policy, audit expectation, or regulatory requirement must be satisfied.
+- __map existing documents__: connect VSlices documents to the artifacts requested by the target requirement.
+- __identify missing evidence or controls__: find what the target requirement needs that VSlices does not provide by default, such as approvals, review cycles, formal traceability, required diagrams, audit evidence, or specific formats.
+- __extend without disconnecting__: add the required compliance material while keeping it linked to the original engineering knowledge.
+
+The purpose is to reuse VSlices documentation as a continuity base.
+
+It is not to claim compliance automatically.
 
 ## Principle
 
