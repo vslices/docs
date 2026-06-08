@@ -1,1 +1,0 @@
-# Runtime capabilities - Design Pattern

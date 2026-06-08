@@ -1,1 +1,0 @@
-# Feature model - Design Pattern
