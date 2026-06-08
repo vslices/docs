@@ -34,17 +34,9 @@ VSlices Method follows one working principle: __Use the smallest useful working 
 
 This means Method should not ask teams to document everything. It should help teams notice what knowledge may be lost if they move forward without preserving it.
 
-The question is not:
+The question is not: **Which documents are required by this stage?**
 
-```text
-Which documents are required by this stage?
-```
-
-The better question is:
-
-```text
-What knowledge do we need to preserve to make the next responsible decision?
-```
+The better question is: **What knowledge do we need to preserve to make the next responsible decision?**
 
 ## Relationship with other VSlices products
 
@@ -53,9 +45,7 @@ VSlices Method depends conceptually on:
 * **VSlices Design**, which defines design modalities and the shared iteration flow.
 * **VSlices Docs Standard**, which defines document types for preserving knowledge.
 
-VSlices Framework may later implement some ideas in code, but Method does not depend on it.
-
-Method should remain useful even when no VSlices Framework code is involved.
+VSlices Framework may later implement some ideas in code, but Method does not depend on it. Method should remain useful even when no VSlices Framework code is involved.
 
 ## Structure
 
