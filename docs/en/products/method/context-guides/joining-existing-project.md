@@ -1,18 +1,19 @@
 # Joining Existing Project
 
-A joining existing project scenario is a working context where a person or team enters work that is already in progress.
-
-The project may already use VSlices Method, or it may use another way of working.
+A joining existing project scenario is a working context where a person or team enters work that is already in progress. The project may already use VSlices Method, or it may use another way of working.
 
 The goal is not to restart the project. It is to join the current continuity path before changing the work.
 
 ## Core idea
 
-Joining an existing project should not start only from tasks. Tasks describe what someone should do.
+Joining an existing project should not start only from tasks. Tasks describe what someone should do. But, they do not always explain:
 
-They do not always explain why the work matters, what context supports it, what decisions shaped it or what feedback changed it.
+- Why the work matters
+- What context supports it
+- What decisions shaped it
+- What feedback changed it
 
-The question is not "_What tasks should we take?_", it is: "__What continuity path are these tasks part of?__".
+The question is not _What tasks should we take?_, it is: __What continuity path are these tasks part of?__.
 
 ## When this guide applies
 
@@ -41,25 +42,20 @@ The main risk is entering through execution without understanding intent. This m
 * feedback that is disconnected from current work
 * local improvements that weaken the whole system
 
-A project in progress already has history. 
-
-- Some of that history is useful knowledge.
-- Some of it may be outdated or accidental.
+A project in progress already has history, some of that history is useful knowledge, some of it may be outdated or accidental.
 
 The team should understand enough to tell the difference.
 
 ## Useful starting modality
 
-Joining an existing project does not always require choosing a new modality.
-
-First, identify the current work context.
+Joining an existing project does not always require choosing a new modality. First, identify the current work context.
 
 | Situation                                                                            | Useful modality               | Reason                                                                     |
 | ------------------------------------------------------------------------------------ | ----------------------------- | -------------------------------------------------------------------------- |
-| The project context, boundaries or history are unclear.                              | **Context-First**             | The team needs to understand the surrounding continuity before acting.     |
-| The current work is centered on a known pain or active decision.                     | **Problem-First**             | The team needs to understand the problem behind the tasks.                 |
-| The project has enough context and a small contribution can safely produce feedback. | **Slice-First**               | The team can learn by contributing a narrow change.                        |
-| The project already has an active modality.                                          | Continue the current modality | The team should join the current continuity path before changing emphasis. |
+| The project context, boundaries<br/>or history are unclear.                              | [**Context-First**](../../design/modalities/context-first/index.md)             | The team needs to understand the<br/>surrounding continuity before acting.     |
+| The current work is centered<br/>on a known pain or active decision.                     | [**Problem-First**](../../design/modalities/problem-first/index.md)             | The team needs to understand the<br/>problem behind the tasks.                 |
+| The project has enough context<br/>and a small contribution can safely<br/>produce feedback. | [**Slice-First**](../../design/modalities/slice-first/index.md)               | The team can learn by contributing<br/>a narrow change.                        |
+| The project already has an active<br/> modality.                                          | Continue the<br/> current modality | The team should join the current<br/>continuity path before changing<br/>emphasis. |
 
 The first responsibility is orientation. Changing modality too early may restart work unnecessarily.
 
@@ -96,9 +92,7 @@ Preserve knowledge when it helps new contributors or future work avoid guessing.
 * onboarding questions that reveal hidden knowledge
 * outdated knowledge that should be reviewed
 
-Newcomers often expose implicit knowledge. Those questions should not be treated as interruptions.
-
-They are signals of where continuity may need support.
+Newcomers often expose implicit knowledge. Those questions should not be treated as interruptions. They are signals of __where continuity may need support__.
 
 ## Document support
 
@@ -106,22 +100,22 @@ Documents may help a person or team join without restarting discovery.
 
 | Knowledge need                                      | Useful document         |
 | --------------------------------------------------- | ----------------------- |
-| Terms are unclear to newcomers.                     | **Domain Vocabulary**   |
-| The surrounding scenario needs orientation.         | **Context Document**    |
-| Current work depends on workflows or handoffs.      | **Process Document**    |
-| A behavior needs intent and consequences clarified. | **Use Case Document**   |
-| A stable ability explains several related changes.  | **Capability Document** |
-| Existing direction depends on past tradeoffs.       | **Decision Record**     |
-| Recent feedback changed current understanding.      | **Validation Note**     |
-| Questions or observations are still uncertain.      | **Support Note**        |
+| Terms are unclear to newcomers.                     | [Domain Vocabulary](../../docs-standard/taxonomy/domain-vocabulary.md)   |
+| The surrounding scenario needs orientation.         | [Context Document](../../docs-standard/taxonomy/context-document.md)    |
+| Current work depends on workflows or handoffs.      | [Process Document](../../docs-standard/taxonomy/process-document.md)    |
+| A behavior needs intent and consequences clarified. | [Use Case Document](../../docs-standard/taxonomy/use-case-document.md)   |
+| A stable ability explains several related changes.  | [Capability Document](../../docs-standard/taxonomy/capability-document.md) |
+| Existing direction depends on past tradeoffs.       | [Decision Record](../../docs-standard/taxonomy/decision-record.md)     |
+| Recent feedback changed current understanding.      | [Validation Note](../../docs-standard/taxonomy/validation-note.md)     |
+| Questions or observations are still uncertain.      | [Support Note](../../docs-standard/taxonomy/support-note.md)        |
 
 Use documents to join the work, not to audit the whole project.
 
+> Document affinity by iteration stage is described in the [Document-Stage affinity](../document-stage-affinity.md) page.
+
 ## Suggested approach
 
-Start with the active work.
-
-Do not try to understand everything before contributing. A useful approach is:
+Start with the active work. Do not try to understand everything before contributing. A useful approach is:
 
 1. Identify the current work item, use case, capability or work line.
 2. Find the context and decisions that explain why it exists.
@@ -151,8 +145,6 @@ Existing projects need respect and curiosity. Not blind obedience. Not heroic re
 
 ## Guiding principle
 
-Join the continuity path before joining the task list.
-
-Understand enough context, decisions, behavior and feedback to contribute without breaking intent.
+Join the continuity path before joining the task list. Understand enough context, decisions, behavior and feedback to contribute without breaking intent.
 
 Preserve the knowledge that helped you join, so the next person does not need to rediscover it.

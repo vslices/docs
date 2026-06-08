@@ -6,19 +6,9 @@ The goal is not to adopt the whole method at once. It is to introduce one useful
 
 ## Core idea
 
-VSlices Method should be introduced through real work. A team should not start by changing its whole process.
+VSlices Method should be introduced through real work. A team should not start by changing its whole process. It should start by preserving one piece of knowledge that current or future work depends on. 
 
-It should start by preserving one piece of knowledge that current or future work depends on. The question is not:
-
-```text
-How do we adopt VSlices Method?
-```
-
-The better question is:
-
-```text
-Where is continuity currently being lost?
-```
+The question is not _How do we adopt VSlices Method?_, it is: __Where is continuity currently being lost?__
 
 ## When this guide applies
 
@@ -56,9 +46,9 @@ Introducing Method usually starts with **Problem-First** or **Slice-First**.
 
 | Situation                                                                    | Useful modality   | Reason                                                                            |
 | ---------------------------------------------------------------------------- | ----------------- | --------------------------------------------------------------------------------- |
-| The team feels repeated pain but does not know where continuity is breaking. | **Problem-First** | The team needs to understand the loss of continuity before changing how it works. |
-| One small artifact or practice can improve ongoing work immediately.         | **Slice-First**   | The team can validate Method through a narrow improvement.                        |
-| The surrounding work context is too unclear to intervene safely.             | **Context-First** | The team needs broader understanding before introducing a change.                 |
+| The team feels repeated pain<br/>but does not know where<br/>continuity is breaking. | [**Context-First**](../../design/modalities/context-first/index.md) | The team needs to understand<br/>the loss of continuity before<br/>changing how it works. |
+| One small artifact or practice<br/>can improve ongoing work<br/>immediately.         | [**Problem-First**](../../design/modalities/problem-first/index.md)   | The team can validate Method<br/>through a narrow improvement.                        |
+| The surrounding work context<br/>is too unclear to intervene<br/>safely.             | [**Slice-First**](../../design/modalities/slice-first/index.md) | The team needs broader<br/>understanding before introducing<br/>a change.                 |
 
 The selected modality should match the adoption uncertainty, not personal preference.
 
@@ -99,22 +89,23 @@ Documents may support the introduction of Method, but only when they solve a cur
 
 | Continuity gap                                    | Useful document         |
 | ------------------------------------------------- | ----------------------- |
-| People use the same term with different meanings. | **Domain Vocabulary**   |
-| A task lacks surrounding context.                 | **Context Document**    |
-| A workflow or handoff is misunderstood.           | **Process Document**    |
-| A behavior needs clearer intent.                  | **Use Case Document**   |
-| A stable ability needs to be named.               | **Capability Document** |
-| A decision may affect future work.                | **Decision Record**     |
-| Feedback should change what happens next.         | **Validation Note**     |
-| An observation is useful but still uncertain.     | **Support Note**        |
+| People use the same term with different meanings. | [Domain Vocabulary](../../docs-standard/taxonomy/domain-vocabulary.md)   |
+| A task lacks surrounding context.                 | [Context Document](../../docs-standard/taxonomy/context-document.md)    |
+| A workflow or handoff is misunderstood.           | [Process Document](../../docs-standard/taxonomy/process-document.md)    |
+| A behavior needs clearer intent.                  | [Use Case Document](../../docs-standard/taxonomy/use-case-document.md)   |
+| A stable ability needs to be named.               | [Capability Document](../../docs-standard/taxonomy/capability-document.md) |
+| A decision may affect future work.                | [Decision Record](../../docs-standard/taxonomy/decision-record.md)     |
+| Feedback should change what happens next.         | [Validation Note](../../docs-standard/taxonomy/validation-note.md)     |
+| An observation is useful but still uncertain.     | [Support Note](../../docs-standard/taxonomy/support-note.md)        |
 
 Do not introduce documents as a package. Introduce the smallest document that protects the work currently at risk.
 
+> Document affinity by iteration stage is described in the [Document-Stage affinity](../document-stage-affinity.md) page.
+
+
 ## Suggested approach
 
-Start with ongoing work.
-
-Do not pause the project to introduce Method. A useful approach is:
+Start with ongoing work. Do not pause the project to introduce Method. A useful approach is:
 
 1. Choose one active work item, problem or decision.
 2. Identify where continuity is weak.

@@ -34,19 +34,6 @@ Do not apply a pattern only because it exists. A pattern is useful when it helps
 
 If a pattern creates more ceremony than clarity, do not use it.
 
-## Available patterns
-
-* **Collaboration Model** explains how responsibilities collaborate without losing continuity.
-* **Learning Loop** explains how feedback from real work returns to understanding.
-* **Modality Selection** explains how to choose a VSlices Design modality for the current uncertainty.
-* **Modality Switching** explains when and why a team may move from one modality to another.
-
-## Relationship with Design and Docs Standard
-
-Patterns do not redefine VSlices Design. They use Design concepts such as modalities and the shared iteration flow.
-
-Patterns do not redefine VSlices Docs Standard. They use documents as support structures when preserving knowledge helps the next responsible decision.
-
 ## Guiding principle
 
 Method Patterns follow the same principle as VSlices Method:

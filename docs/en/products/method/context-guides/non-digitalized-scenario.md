@@ -45,11 +45,11 @@ If the team starts by designing software too early, it may turn temporary habits
 
 A non-digitalized scenario usually starts with **Context-First**.
 
-| Situation                                                         | Useful modality   | Reason                                                                         |
+| Situation                                                         | Modality   | Reason                                                                         |
 | ----------------------------------------------------------------- | ----------------- | ------------------------------------------------------------------------------ |
-| The team does not understand how work currently happens.          | **Context-First** | The next decision needs broader domain and process understanding.              |
-| A clear pain exists inside the manual work.                       | **Problem-First** | The team can focus on understanding the problem without assuming the solution. |
-| A small experiment can safely reveal how people react to support. | **Slice-First**   | The team can learn through a narrow prototype or vertical slice.               |
+| The team does not understand how work<br/>currently happens.          | [**Context-First**](../../design/modalities/context-first/index.md) | The next decision needs broader<br/>domain and process understanding.              |
+| A clear pain exists inside the manual<br/>work.                       | [**Problem-First**](../../design/modalities/problem-first/index.md) | The team can focus on understanding<br/>the problem without assuming the<br/>solution. |
+| A small experiment can safely reveal how<br/>people react to support. | [**Slice-First**](../../design/modalities/slice-first/index.md)   | The team can learn through a narrow<br/>prototype or vertical slice.               |
 
 Slice-First should be used carefully. A small slice is useful only when it helps learning without pretending the whole context is understood.
 
@@ -95,16 +95,18 @@ Documents may help make implicit work visible.
 
 | Knowledge need                                        | Useful document         |
 | ----------------------------------------------------- | ----------------------- |
-| People use terms inconsistently.                      | **Domain Vocabulary**   |
-| The surrounding scenario needs to be understood.      | **Context Document**    |
-| Work depends on steps, handoffs or responsibilities.  | **Process Document**    |
-| A behavior should be supported by software.           | **Use Case Document**   |
-| A stable business ability is emerging.                | **Capability Document** |
-| A direction must be chosen under tradeoffs.           | **Decision Record**     |
-| Early evidence changes what the team believes.        | **Validation Note**     |
-| Observations are still uncertain, local or temporary. | **Support Note**        |
+| People use terms inconsistently.                      | [Domain Vocabulary](../../docs-standard/taxonomy/domain-vocabulary.md)   |
+| The surrounding scenario needs to be understood.      | [Context Document](../../docs-standard/taxonomy/context-document.md)    |
+| Work depends on steps, handoffs or responsibilities.  | [Process Document](../../docs-standard/taxonomy/process-document.md)    |
+| A behavior should be supported by software.           | [Use Case Document](../../docs-standard/taxonomy/use-case-document.md)   |
+| A stable business ability is emerging.                | [Capability Document](../../docs-standard/taxonomy/capability-document.md) |
+| A direction must be chosen under tradeoffs.           | [Decision Record](../../docs-standard/taxonomy/decision-record.md)     |
+| Early evidence changes what the team believes.        | [Validation Note](../../docs-standard/taxonomy/validation-note.md)     |
+| Observations are still uncertain, local or temporary. | [Support Note](../../docs-standard/taxonomy/support-note.md)        |
 
 Use documents to preserve understanding, not to formalize everything too early.
+
+> Document affinity by iteration stage is described in the [Document-Stage affinity](../document-stage-affinity.md) page.
 
 ## Suggested approach
 
