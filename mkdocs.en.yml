@@ -20,7 +20,7 @@ nav:
     - How to start?:
         - Overview: start-here/index.md
         - What is VSlices?: start-here/what-is-vslices.md
-        - Why VSlices exists?: start-here/why-vslices-exists.md
+        - Why VSlices exists: start-here/why-vslices-exists.md
         - Suite overview: start-here/suite-overview.md
         - Adoption paths: start-here/adoption-paths.md
  
@@ -66,7 +66,7 @@ nav:
             - Overview: products/docs-standard/index.md
             - Principles: products/docs-standard/principles.md
             - Modeling: products/docs-standard/modeling.md
-            - Anti-bureaucracy-rules: products/docs-standard/anti-bureaucracy-rules.md
+            - Anti bureaucracy rules: products/docs-standard/anti-bureaucracy-rules.md
             - Taxonomy:
                 - Overview: products/docs-standard/taxonomy/index.md
                 - Domain vocabulary: products/docs-standard/taxonomy/domain-vocabulary.md
@@ -120,12 +120,12 @@ nav:
         - Theories:
             - Overview: alive-lab/theories/index.md
             - Relational surreal modeling:
-                - Latests: alive-lab/theories/relational-surreal-modeling/v1.md
+                - Latest: alive-lab/theories/relational-surreal-modeling/v1.md
             - Knowledge geometry:
-                - Latests:  alive-lab/theories/knowledge-geometry/v2.md
+                - Latest:  alive-lab/theories/knowledge-geometry/v2.md
                 - V1: alive-lab/theories/knowledge-geometry/v1.md
             - PResolver, a methodology for problem resolution:
-                - Latests: alive-lab/theories/presolver/v1.md
+                - Latest: alive-lab/theories/presolver/v1.md
 
     - Decisions:
         - Overview: decisions/index.md
@@ -135,6 +135,6 @@ nav:
             - Use Domus Orbis as validation project: decisions/first-iteration/0003-use-domus-orbis-as-validation-project.md
             - Keep products separated but connected: decisions/first-iteration/0004-keep-products-separated-but-connected.md
             - First-class language support definition: decisions/first-iteration/0005-first-class-language-support-definition.md
-            - pResolver as an abstraction from vSlices: decisions/first-iteration/0006-presolver-as-an-abstraction-from-vslices.md
-            - Use a insurance company project as adaptation case: decisions/first-iteration/0007-use-insurance-company-project-as-adoption-case.md
+            - PResolver as an abstraction from VSlices: decisions/first-iteration/0006-presolver-as-an-abstraction-from-vslices.md
+            - Use an insurance company project as adaptation case: decisions/first-iteration/0007-use-insurance-company-project-as-adoption-case.md
             

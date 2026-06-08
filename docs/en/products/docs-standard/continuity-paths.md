@@ -4,7 +4,7 @@ VSlices Docs Standard uses continuity paths to explain how knowledge moves betwe
 
 A continuity path shows how one piece of knowledge can be discovered, documented, shaped into decisions, reflected in implementation, validated, and evolved.
 
-The goal is not to force every document into a fixed sequence, the goal is to keep important knowledge connected.
+The goal is not to force every document into a fixed sequence. It is to keep important knowledge connected.
 
 ## Core idea
 

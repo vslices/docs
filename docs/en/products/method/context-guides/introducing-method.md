@@ -2,7 +2,7 @@
 
 An introducing Method scenario is a working context where a team or organization does not currently use VSlices Method, but is open to improving how knowledge, decisions, implementation and feedback stay connected.
 
-The goal is not to adopt the whole method at once. Is to introduce one useful continuity seam.
+The goal is not to adopt the whole method at once. It is to introduce one useful continuity seam.
 
 ## Core idea
 

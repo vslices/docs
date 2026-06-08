@@ -33,7 +33,7 @@ So, the team asks:
 - Which concepts seem foundational?
 - Which stories are repeated by different people?
 
-The goal is not to model the whole business, is to understand enough to continue with better questions.
+The goal is not to model the whole business. It is to understand enough to continue with better questions.
 
 ## Common supporting artifacts
 

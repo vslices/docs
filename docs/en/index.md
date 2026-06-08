@@ -11,6 +11,24 @@ It is composed of:
 
 VSlices exists to reduce accidental complexity and preserve architectural intent as a system evolves.
 
+## Current maturity
+
+VSlices is currently in a __beta prerelease__ stage.
+
+This documentation is being shared early to validate whether the suite communicates its ideas clearly, preserves conceptual continuity across its products, and helps people reason about software engineering without adding unnecessary ceremony.
+
+The current version should be read as a foundational snapshot, not as a final product specification.
+
+| Area | Current maturity | What to expect |
+| --- | --- | --- |
+| VSlices Design | Beta prerelease | The main design ideas, principles, and modeling modalities are available for early feedback. Some techniques may still evolve as they are validated in real projects. |
+| VSlices Docs Standard | Beta prerelease | The documentation model, document types, and continuity principles are available for early feedback. Templates and examples may become more concrete over time. |
+| VSlices Method | Beta prerelease | The method currently connects design reasoning, documentation, and implementation intent. Its collaboration and continuity models are available for review and refinement. |
+| VSlices Framework | Experimental | Framework documentation is intentionally limited while the concepts from Design, Docs Standard, and Method are reviewed together. Its implementation model may change as alignment improves. |
+| Alive Lab | Exploratory | Field notes, project stories, theories, and decisions preserve learning in progress. These materials may influence VSlices, but they are not all official product guidance. |
+
+The goal of this prerelease is not to present VSlices as complete. It is to make the current thinking visible, receive feedback, and improve the suite before expanding the Framework documentation and translating the full documentation into Spanish.
+
 ## Start here
 
 If you are new to VSlices, start with these pages:
@@ -23,7 +41,7 @@ If you are new to VSlices, start with these pages:
 
 If you only want to understand the core idea, start with [What is VSlices?](start-here/what-is-vslices.md).
 
-If you want to understand why VSlices exists, read [Why VSlices exists?](start-here/why-vslices-exists.md).
+If you want to understand why VSlices exists, read [Why VSlices exists](start-here/why-vslices-exists.md).
 
 If you want to understand how the products relate to each other, read [Suite overview](start-here/suite-overview.md).
 

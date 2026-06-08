@@ -52,7 +52,7 @@ The team asks:
 - What assumptions are we making?
 - What do we still not understand?
 
-The goal is not to model everything, it is to understand enough to continue with better questions.
+The goal is not to model everything. It is to understand enough to continue with better questions.
 
 ### Common supporting artifacts
 
@@ -85,7 +85,7 @@ The objective is to make the current context understandable, and it may include:
 - relevant business language
 - relationships between concepts
 
-Contextualizing does not define the final solution, its purpose to make the current situation visible enough to support better decisions.
+Contextualizing does not define the final solution, its purpose is to make the current situation visible enough to support better decisions.
 
 The team asks:
 

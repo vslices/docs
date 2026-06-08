@@ -126,7 +126,7 @@ When knowledge lives only in memory, the real system becomes larger than the cod
 - Connect documentation to ownership, so people know who can clarify or evolve each area.
 - Ask after every incident, handoff or difficult change: "What did we need to know that was not written anywhere?"
 
-The goal is not to move the entire organization into documents. The goal is to prevent critical knowledge from depending on memory alone.
+The goal is not to move the entire organization into documents. It is to prevent critical knowledge from depending on memory alone.
 
 ## Reflection Questions
 

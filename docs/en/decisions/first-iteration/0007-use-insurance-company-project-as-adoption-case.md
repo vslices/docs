@@ -78,7 +78,7 @@ This adoption case should validate lightweight use of VSlices practices. The foc
 
 The work should avoid introducing unnecessary ceremony.
 
-The goal is not to convert the project into a VSlices project, is to observe where VSlices helps.
+The goal is not to convert the project into a VSlices project. It is to observe where VSlices helps.
 
 ## Non-goals
 

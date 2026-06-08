@@ -35,7 +35,7 @@ So, the team asks:
 - Is this problem a symptom of something deeper?
 - What would happen if we did nothing?
 
-The goal is not to fully model the domain, is to understand the problem clearly enough to avoid solving the wrong thing.
+The goal is not to fully model the domain. It is to understand the problem clearly enough to avoid solving the wrong thing.
 
 ## Common supporting artifacts
 

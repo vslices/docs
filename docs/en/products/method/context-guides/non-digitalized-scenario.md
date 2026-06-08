@@ -10,7 +10,7 @@ This does not mean the work is simple. It means the knowledge needed to support 
 
 In a non-digitalized scenario, VSlices Method helps the team understand how work currently happens before deciding what should become software.
 
-The goal is not to document everything. Is to discover enough domain, process and decision context to avoid automating a misunderstood reality.
+The goal is not to document everything. It is to discover enough domain, process and decision context to avoid automating a misunderstood reality.
 
 ## When this guide applies
 

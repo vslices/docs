@@ -18,7 +18,7 @@ base / height -> small
 
 This means the team invests only enough effort in Understanding and Contextualizing to avoid blind implementation, then moves quickly into Planning and Building.
 
-The goal is not to skip understanding, is to learn through implementation while keeping the slice small enough to limit risk.
+The goal is not to skip understanding. It is to learn through implementation while keeping the slice small enough to limit risk.
 
 ## When to use it
 

@@ -12,7 +12,7 @@ In a digitalized scenario, VSlices Method helps the team separate three things:
 * how the current software represents that work
 * how people have adapted their work around the software
 
-The goal is not to reverse-engineer the whole system. Is to recover enough continuity to make the next responsible decision.
+The goal is not to reverse-engineer the whole system. It is to recover enough continuity to make the next responsible decision.
 
 ## When this guide applies
 

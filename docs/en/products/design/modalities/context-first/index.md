@@ -20,9 +20,7 @@ base / height -> large
 
 This means the team invests more effort in Understanding and Contextualizing before Planning and Building.
 
-The goal is not to analyze forever.
-
-The goal is to reduce contextual uncertainty enough to make implementation decisions safer, clearer, and more traceable.
+The goal is not to analyze forever. It is to reduce contextual uncertainty enough to make implementation decisions safer, clearer, and more traceable.
 
 ## When to use it
 

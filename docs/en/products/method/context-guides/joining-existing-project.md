@@ -4,7 +4,7 @@ A joining existing project scenario is a working context where a person or team 
 
 The project may already use VSlices Method, or it may use another way of working.
 
-The goal is not to restart the project. Is to join the current continuity path before changing the work.
+The goal is not to restart the project. It is to join the current continuity path before changing the work.
 
 ## Core idea
 

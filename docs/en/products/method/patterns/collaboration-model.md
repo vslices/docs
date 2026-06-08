@@ -4,7 +4,7 @@ The Collaboration Model explains how people or teams can work through VSlices Me
 
 VSlices Method does not require fixed roles. It describes responsibilities that may be held by one person, shared by a small team, or distributed across specialized teams.
 
-The goal is not to define an organization chart. The goal is to preserve intent as work moves between discovery, documentation, design, implementation, validation and evolution.
+The goal is not to define an organization chart. It is to preserve intent as work moves between discovery, documentation, design, implementation, validation and evolution.
 
 ## Core idea
 

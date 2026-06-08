@@ -16,7 +16,7 @@ A Domain Vocabulary helps the team preserve:
 - __ambiguity__: terms that are used differently by different people or areas.
 - __implementation alignment__: names that may later appear in use cases, capabilities, code, tests, or documentation.
 
-The goal is not to force language too early, is to make important language visible before it silently becomes system behavior.
+The goal is not to force language too early. It is to make important language visible before it silently becomes system behavior.
 
 ## When to use it
 

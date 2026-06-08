@@ -2,7 +2,7 @@
 
 Modality Selection explains how to choose a VSlices Design modality for the current iteration.
 
-The goal is not to choose the best modality in general. Is to choose the modality that helps the team reduce the uncertainty that currently threatens continuity.
+The goal is not to choose the best modality in general. It is to choose the modality that helps the team reduce the uncertainty that currently threatens continuity.
 
 ## Core idea
 

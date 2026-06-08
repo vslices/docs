@@ -49,9 +49,7 @@ It is especially useful when a team is entering a new domain, replacing a legacy
 
 Context-First can become too broad if the team keeps exploring without deciding what needs to be built.
 
-The goal is not to understand everything.
-
-The goal is to understand enough to make safer design decisions.
+The goal is not to understand everything. It is to understand enough to make safer design decisions.
 
 ---
 
@@ -116,9 +114,7 @@ It is especially useful when the team already has enough understanding to try so
 
 Slice-First can create accidental architecture if the team treats the first slice as the final structure of the system.
 
-The goal is not to build fast at any cost.
-
-The goal is to learn through a controlled piece of implementation.
+The goal is not to build fast at any cost. It is to learn through a controlled piece of implementation.
 
 ---
 

@@ -60,7 +60,7 @@ Understanding in Slice-First should explicitly identify what is being ignored or
 - risks that would make the slice unsafe
 - conditions that require switching to Problem-First or Context-First
 
-The goal is not to eliminate those risks, is to know which risks are being accepted.
+The goal is not to eliminate those risks. It is to know which risks are being accepted.
 
 # Contextualizing in Slice-First
 

@@ -69,7 +69,7 @@ Useful knowledge to preserve may include:
 * a new risk discovered during implementation or operation
 * a possible new Work Line
 
-The goal is not to record everything. Is to avoid rediscovering the same learning later.
+The goal is not to record everything. It is to avoid rediscovering the same learning later.
 
 ## Document support
 

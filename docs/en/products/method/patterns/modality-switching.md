@@ -90,7 +90,7 @@ Documents may help preserve why a modality changed. Use documentation only when 
 * **Use Case Documents** can preserve behavior clarified after switching.
 * **Process Documents** can preserve workflow knowledge revealed by the switch.
 
-The goal is not to document every switch. The goal is to avoid losing the learning that made the switch necessary.
+The goal is not to document every switch. It is to avoid losing the learning that made the switch necessary.
 
 ## Common mistakes
 

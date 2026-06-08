@@ -83,7 +83,7 @@ Domus Orbis should be used to answer questions such as:
 
 If Domus Orbis exposes friction, the friction should be treated as design feedback.
 
-The goal is not to force Domus Orbis to fit VSlices. The goal is to let Domus Orbis reveal where VSlices is useful, incomplete, unclear, or overdesigned.
+The goal is not to force Domus Orbis to fit VSlices. It is to let Domus Orbis reveal where VSlices is useful, incomplete, unclear, or overdesigned.
 
 ## Consequences
 
