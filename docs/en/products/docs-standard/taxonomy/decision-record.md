@@ -107,6 +107,19 @@ Use the expanded version when the decision is risky, disputed, architectural, or
 ## Review conditions
 ```
 
+## Standard affinity
+
+This document can support alignment with existing standards and documentation practices. It does not make the documentation compliant by itself.
+
+| Standard or practice | Affinity | Supports | Missing for stricter alignment |
+| -------------------- | -------- | -------- | ------------------------------ |
+| ADR | High | Decision, rationale, options, tradeoffs, consequences, and review conditions. | A strict ADR template, numbering scheme, and governance workflow. |
+| arc42 | High | Architecture decisions, risks, constraints, and rationale. | Complete arc42 architecture documentation structure. |
+| ISO/IEC/IEEE 42010 | Medium / High | Architecture rationale, concerns, decisions, relationships, and consequences. | Formal architecture decision model inside a conforming architecture description. |
+| ISO/IEC/IEEE 29148 | Medium | Requirements-related decisions, assumptions, validation impact, and traceability. | Formal requirements management and verification structure. |
+| 4+1 View Model | Medium | Decisions affecting scenarios, logical structure, process, development, or physical views. | Complete 4+1 view model. |
+| C4 Model | Medium | Decisions that may affect context, container, component, or code diagrams. | Diagram notation and visual model hierarchy. |
+
 ## Related artifacts
 
 A Decision Record may support or be supported by:

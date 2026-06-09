@@ -111,6 +111,19 @@ Use the expanded version when validation affects important decisions, risky assu
 ## Related artifacts
 ```
 
+## Standard affinity
+
+This document can support alignment with existing standards and documentation practices. It does not make the documentation compliant by itself.
+
+| Standard or practice | Affinity | Supports | Missing for stricter alignment |
+| -------------------- | -------- | -------- | ------------------------------ |
+| ISO/IEC/IEEE 29148 | High | Validation, evidence, assumptions, feedback, impact, and traceability. | Formal verification plan, requirement verification method, audit-grade evidence controls, and requirements management workflow. |
+| ADR | Medium | Reviewing whether previous decisions were confirmed, challenged, or superseded. | Formal architecture decision lifecycle and governance process. |
+| ISO/IEC/IEEE 42010 | Medium | Rationale updates, architecture learning, and relationships between evidence and decisions. | Formal architecture description, viewpoints, views, and correspondence rules. |
+| arc42 | Medium | Risks, decisions, quality feedback, and evolution notes. | Complete arc42 structure and formal quality scenario integration. |
+| 4+1 View Model | Low / Medium | Scenario feedback and behavior validation. | Complete architecture view model and view-specific validation structure. |
+| C4 Model | Low | Feedback that may affect boundaries or architecture diagrams. | Diagram notation and visual hierarchy. |
+
 ## Related artifacts
 
 A Validation Note may support or be supported by:

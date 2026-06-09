@@ -7,7 +7,7 @@ A Context Document preserves the scenario where the team is working.
 Its purpose is to make the relevant business, organizational, operational, or system context visible enough to support better decisions. A Context Document answers:
 
 - Where are we working?
--  What does this area offer, operate, or maintain?
+- What does this area offer, operate, or maintain?
 
 A Context Document is not a complete map of the business. It captures the context that matters for understanding what may need to be designed, improved, automated, integrated, or preserved.
 
@@ -128,6 +128,19 @@ Use the expanded version when the scenario is broad, risky, fragmented, or likel
 
 ## Related artifacts
 ```
+
+## Standard affinity
+
+This document can support alignment with existing standards and documentation practices. It does not make the documentation compliant by itself.
+
+| Standard or practice | Affinity | Supports | Missing for stricter alignment |
+| -------------------- | -------- | -------- | ------------------------------ |
+| ISO/IEC/IEEE 42010 | High | Context, concerns, stakeholders, boundaries, relationships, and rationale inputs. | Formal architecture description, viewpoints, views, and correspondence model. |
+| C4 Model | High | System context thinking, actors, systems, and boundary awareness. | Container, component, code views, and diagram notation. |
+| arc42 | High | Context and scope, external interfaces, constraints, risks, and glossary connections. | Complete arc42 structure by default. |
+| ISO/IEC/IEEE 29148 | Medium | Context for requirements, assumptions, risks, and traceability. | Formal requirements specification and management process. |
+| 4+1 View Model | Medium | Scenario and context grounding for later views. | Complete architecture view model. |
+| ADR | Low / Medium | Context for decisions and tradeoffs. | Decision-specific structure and governance. |
 
 ## Related artifacts
 

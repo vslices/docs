@@ -139,6 +139,20 @@ A Use Case Document may support or be supported by:
 - __Validation Note__: captures evidence about whether the behavior worked as expected.
 - __Support Note__: captures uncertain rules, examples, errors, or assumptions.
 
+## Standard affinity
+
+This document can support alignment with existing standards and documentation practices. It does not make the documentation compliant by itself.
+
+| Standard or practice | Affinity | Supports                                                                                         | Missing for stricter alignment                                                                                   |
+| -------------------- | -------- | ------------------------------------------------------------------------------------------------ | ---------------------------------------------------------------------------------------------------------------- |
+| ISO/IEC/IEEE 29148   | High     | Requirements-related language, behavior meaning, validations, expected errors, and traceability. | Formal requirement statements, requirement attributes, verification method, and requirements management process. |
+| 4+1 View Model       | High     | Scenario and use-case-oriented thinking.                                                         | Complete 4+1 view model and connection to logical, process, development, and physical views.                     |
+| ISO/IEC/IEEE 42010   | Medium   | Concerns, behavior rationale, relationships, and decision impact.                                | Formal viewpoint, view, correspondence, and architecture description model.                                      |
+| arc42                | Medium   | Runtime behavior, risks, decisions, and glossary connections.                                    | Complete arc42 structure, especially runtime and building block integration.                                     |
+| ADR                  | Medium   | Decisions related to behavior, rules, and tradeoffs.                                             | Architecture-specific decision lifecycle and governance.                                                         |
+| C4 Model             | Low      | Context and boundary awareness around the behavior.                                              | Visual model hierarchy, container, component, and code views.                                                    |
+
+
 ## Common mistakes
 
 Common mistakes include:

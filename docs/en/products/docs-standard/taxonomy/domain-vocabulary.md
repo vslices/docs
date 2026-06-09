@@ -81,6 +81,19 @@ Use the expanded version when terms are ambiguous, reused, business-critical, or
 - __Status__: draft, active, superseded, or archived.
 ```
 
+## Standard affinity
+
+This document can support alignment with existing standards and documentation practices. It does not make the documentation compliant by itself.
+
+| Standard or practice | Affinity | Supports | Missing for stricter alignment |
+| -------------------- | -------- | -------- | ------------------------------ |
+| arc42 | High | Glossary, terminology, aliases, examples, and shared language. | Formal glossary governance and complete arc42 structure. |
+| ISO/IEC/IEEE 29148 | Medium | Requirement terminology, definitions, ambiguity reduction, and traceability. | Formal requirements terminology controls and requirements management. |
+| ISO/IEC/IEEE 42010 | Medium | Consistent terms for stakeholders, concerns, views, decisions, and architecture descriptions. | Formal architecture description language or controlled vocabulary model. |
+| C4 Model | Low / Medium | Naming consistency for systems, containers, components, and boundaries. | Diagram model and structural hierarchy. |
+| 4+1 View Model | Low / Medium | Shared language across scenarios and architecture views. | Complete architecture view model. |
+| ADR | Low / Medium | Naming choices that may influence decisions. | Decision-specific rationale and governance. |
+
 ## Related artifacts
 
 A Domain Vocabulary may support or be supported by:

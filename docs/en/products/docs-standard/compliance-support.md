@@ -44,9 +44,7 @@ When a team needs to align with an external requirement:
 - __identify missing evidence or controls__: find what the target requirement needs that VSlices does not provide by default, such as approvals, review cycles, formal traceability, required diagrams, audit evidence, or specific formats.
 - __extend without disconnecting__: add the required compliance material while keeping it linked to the original engineering knowledge.
 
-The purpose is to reuse VSlices documentation as a continuity base.
-
-It is not to claim compliance automatically.
+The purpose is to reuse VSlices documentation as a continuity base. It is not to claim compliance automatically.
 
 ## Principle
 

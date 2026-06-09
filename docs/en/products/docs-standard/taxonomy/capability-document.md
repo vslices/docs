@@ -121,6 +121,19 @@ Use the expanded version when the capability is important, reused, risky, or lik
 ## Evolution notes
 ```
 
+## Standard affinity
+
+This document can support alignment with existing standards and documentation practices. It does not make the documentation compliant by itself.
+
+| Standard or practice | Affinity | Supports | Missing for stricter alignment |
+| -------------------- | -------- | -------- | ------------------------------ |
+| ISO/IEC/IEEE 42010 | Medium / High | Architecture concerns, boundaries, rationale, and relationships between capabilities and decisions. | Formal viewpoint, view, model kind, and architecture description framework. |
+| arc42 | Medium / High | Building block thinking, responsibilities, boundaries, risks, and decisions. | Complete building block view, runtime view, deployment view, and quality requirements structure. |
+| ISO/IEC/IEEE 29148 | Medium | Capability-related requirements, constraints, expected outcomes, and traceability. | Formal requirement statements, requirement attributes, and verification methods. |
+| C4 Model | Medium | Boundary awareness that may later influence container or component views. | Visual model hierarchy and diagram notation. |
+| 4+1 View Model | Medium | Logical and process-oriented architecture thinking. | Complete logical, process, development, and physical views. |
+| ADR | Medium | Decisions about capability shape, split, ownership, or implementation direction. | Formal ADR lifecycle and governance process. |
+
 ## Related artifacts
 
 A Capability Document may support or be supported by:

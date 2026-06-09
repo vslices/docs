@@ -89,6 +89,19 @@ Open, active, resolved, superseded, or archived.
 Which documents, decisions, or notes are connected?
 ```
 
+## Standard affinity
+
+This document can support alignment with existing standards and documentation practices. It does not make the documentation compliant by itself.
+
+| Standard or practice | Affinity | Supports | Missing for stricter alignment |
+| -------------------- | -------- | -------- | ------------------------------ |
+| ISO/IEC/IEEE 29148 | Medium | Assumptions, risks, open questions, feedback, and early requirement inputs. | Formal requirement statements, attributes, verification, and requirements management. |
+| ISO/IEC/IEEE 42010 | Medium | Early concerns, stakeholder notes, rationale inputs, and relationships. | Formal viewpoints, views, correspondences, and architecture description framework. |
+| arc42 | Medium | Risks, constraints, open questions, glossary candidates, and decision inputs. | Complete arc42 structure and formal section placement. |
+| ADR | Medium | Early decision inputs, options, assumptions, and risks. | Formal decision record and governance lifecycle. |
+| C4 Model | Low | Early notes about boundaries, systems, and responsibilities. | Diagram notation and model hierarchy. |
+| 4+1 View Model | Low | Early scenario, behavior, or view-related notes. | Complete architecture view model. |
+
 ## Common mistakes
 
 Common mistakes include:
