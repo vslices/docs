@@ -24,6 +24,10 @@ nav:
         - Suite overview: start-here/suite-overview.md
         - Adoption paths: start-here/adoption-paths.md
  
+    - Continuity of knowledge: philosophy/continuity-of-knowledge.md
+
+    - Comparisions with other approaches: comparisons/development-methodologies.md
+
     - Products:
         - Overview: products/index.md
         - Glossary: products/glossary.md
