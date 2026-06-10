@@ -1,135 +1,150 @@
 # Suite overview
 
-VSlices is composed of four connected products:
+VSlices is a software engineering suite composed of four connected products:
 
-- **VSlices Method**
-- **VSlices Design**
-- **VSlices Docs Standard**
-- **VSlices Framework**
+- VSlices Method
+- VSlices Design
+- VSlices Docs Standard
+- VSlices Framework
 
-Each product can be used independently, but they are designed to work together as part of the same continuity model.
+Each product can be used independently, but they are designed to work together around the same continuity model.
 
-The purpose of the suite is to reduce the distance between what a team discovers, documents, designs, implements, and evolves.
+The purpose of the suite is to reduce the distance between what a team discovers, documents, designs, implements, validates, and evolves.
 
 ## The continuity model
 
-VSlices is organized around a simple idea:
+VSlices is organized around one core idea:
 
-> Domain understanding should remain visible across documentation, architecture, and code.
+> Domain understanding should remain visible across documentation, architecture, implementation, and evolution.
 
-The suite attempts to preserve continuity between:
+Software systems often lose clarity when these activities evolve separately. A team may discover the domain in one place, document decisions somewhere else, discuss architecture in meetings, and implement behavior in code that no longer preserves the original reasoning.
+
+VSlices attempts to reduce that fragmentation by keeping important knowledge connected across:
 
 - discovery
-- design
+- design reasoning
 - documentation
 - architecture
 - implementation
+- validation
 - evolution
 
 The four products support different parts of that continuity.
 
-## VSlices Method
+## How the suite connects
 
-**VSlices Method** is the overarching engineering method.
+VSlices can be understood as a continuity loop.
 
-It defines how the other products are meant to work together across the software lifecycle. Its role is to help teams preserve continuity between:
-
-- what they discover
-- what they decide
-- what they document
-- what they design
-- what they implement
-- what they evolve
-
-Method is not meant to be a rigid process. It should provide guidance for making engineering work more coherent without forcing every team to follow the same workflow.
-
-## VSlices Design
-
-**VSlices Design** is the product focused on software design and domain understanding. It provides concepts, techniques, and language for reasoning about:
-
-- business processes
-- service capabilities
-- domain boundaries
-- use cases
-- problems
-- slices
-- system responsibilities
-
-Design is intentionally independent from Framework.
-
-A team should be able to use VSlices Design even if they never use VSlices Framework. Its purpose is to help teams understand what they are building before deciding how to implement it.
-
-## VSlices Docs Standard
-
-**VSlices Docs Standard** is the product focused on documentation structure.
-
-It defines how to document important software concepts in a way that remains connected to design and implementation. It may include documents for:
-
-- contexts
-- use cases
-- capabilities
-- decisions
-- processes
-- views
-- invariants
-- expected errors
-
-Docs Standard exists because documentation should not be a disconnected artifact. Its purpose is to preserve system intent and make important reasoning easier to find, review, and evolve.
-
-## VSlices Framework
-
-**VSlices Framework** is the .NET implementation product.
-
-It provides libraries, primitives, patterns, and eventually batteries for building domain-oriented software with low ceremony and progressive architecture. The Framework currently focuses on concepts such as:
-
-- flows
-- features
-- explicit errors
-- runtime requirements
-- domain types
-- traits
-- capabilities
-- functional composition
-
-The Framework is not meant to hide engineering concepts. It is meant to make useful patterns easier to compose, standardize, and evolve.
-
-## How they work together
-
-The products are connected, but they do not depend on each other in the same way. A simplified flow looks like this:
-
-```txt
-Method
-  guides how we move through the lifecycle
-
-Design
-  helps us understand and model the domain
-
-Docs Standard
-  preserves the intent and structure of that understanding
-
-Framework
-  helps implement that intent in executable software
+```text
+Discovery
+  -> Design reasoning
+  -> Living documentation
+  -> Implementation
+  -> Validation
+  -> Evolution
+  -> Better understanding
+  -> More Discovery
 ```
 
-Another way to visualize it:
+This is not a rigid sequence. A team may start from a business context, a problem, a document, a slice of implementation, a decision, or a piece of validation feedback.
 
-```txt
-Discovery -> Design -> Documentation -> Implementation -> Evolution
-     |          |             |                 |             |
-   Method     Design     Docs Standard      Framework      Method
-```
+The important part is not where the team starts. It is that knowledge does not become disconnected as the system evolves.
 
-> This does not mean every project must follow a strict sequence.
+## Product roles
 
-In practice, teams may move back and forth between these activities. VSlices only tries to make those movements explicit and easier to preserve.
+### VSlices Design
+
+VSlices Design helps teams understand the business material before committing too early to software structure.
+
+It provides design modalities, reasoning tools, and modeling heuristics for working with different kinds of uncertainty. Design helps answer questions such as:
+
+* What business context are we working in?
+* What problem are we actually solving?
+* Do we understand enough to build safely?
+* Should we explore broadly, analyze a specific problem, or build a small slice to learn?
+
+Design is intentionally independent from VSlices Framework, Docs Standard and Method. A team can use VSlices Design even if it never uses either of them.
+
+### VSlices Docs Standard
+
+VSlices Docs Standard helps preserve important knowledge through living documentation structures.
+
+It defines document types for knowledge such as:
+
+* domain language
+* contexts
+* processes
+* use cases
+* capabilities
+* decisions
+* validation
+* support notes
+
+Docs Standard does not exist to make teams produce more documents. It exists to help teams preserve the knowledge that future work depends on.
+
+### VSlices Method
+
+VSlices Method explains how Design and Docs Standard can be used during real work. 
+
+It helps teams decide:
+
+* what kind of context they are working in
+* which design modality fits the current uncertainty
+* what knowledge should be preserved
+* how documentation supports decisions
+* how implementation feedback returns to understanding
+
+Method is not a rigid process.
+
+It provides guidance for preserving continuity while the team moves through uncertainty.
+
+### VSlices Framework
+
+VSlices Framework is the .NET implementation product. It provides libraries, primitives, and patterns for reflecting domain-oriented knowledge in executable software.
+
+The Framework may include concepts such as:
+
+* flows
+* features
+* explicit errors
+* runtime requirements
+* domain types
+* traits
+* capabilities
+* functional composition
+
+The Framework should not hide engineering concepts. It should make useful patterns easier to compose, standardize, test, and evolve.
+
+## A simplified example
+
+A team may start with an unclear business process.
+
+- VSlices Design helps the team understand the context, responsibilities, language, and uncertainty.
+- VSlices Docs Standard helps preserve that understanding through context documents, process documents, use case documents, decision records, or validation notes.
+- VSlices Method helps the team decide how much structure is useful for the current iteration.
+- VSlices Framework may later help implement the behavior with explicit flows, expected errors, domain types, and capabilities.
+
+After implementation, validation may reveal that the original understanding was incomplete. That learning should return to the documents, decisions, design model, and future implementation.
+
+This is the continuity loop.
 
 ## Independent adoption
 
-Each product can be adopted independently. A team may use:
+A team does not need to adopt the whole suite at once. A team may use:
 
-* **Design** to improve modeling and discovery work
-* **Docs Standard** to improve documentation structure
-* **Framework** to build .NET applications with VSlices primitives
-* **Method** to guide how the pieces fit together
+* VSlices Design to improve discovery and modeling.
+* VSlices Docs Standard to improve documentation structure.
+* VSlices Method to guide collaboration and learning.
+* VSlices Framework to implement domain-oriented .NET software.
+ 
+The suite is progressive and composable. Adoption should follow real need, not product completeness.
 
-Adopting VSlices does not require adopting the entire suite at once. The suite is intended to be progressive and composable.
+## Core principle
+
+The four products share one principle:
+
+> Use the smallest useful structure that preserves the knowledge future work depends on.
+
+VSlices does not try to make every team follow the same workflow, architecture, or documentation process.
+
+It tries to help teams keep domain intent, decisions, documentation, implementation, and learning connected as the system changes.

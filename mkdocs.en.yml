@@ -26,7 +26,8 @@ nav:
  
     - Continuity of knowledge: philosophy/continuity-of-knowledge.md
 
-    - Comparisions with other approaches: comparisons/development-methodologies.md
+    - Comparisons: 
+        - With development methodologies: comparisons/development-methodologies.md
 
     - Products:
         - Overview: products/index.md

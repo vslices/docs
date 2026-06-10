@@ -75,6 +75,7 @@ In this case, documentation does not preserve continuity. It preserves a snapsho
 ## Encapsulated knowledge
 
 The opposite failure is documenting nothing and trusting that code will be enough. This creates encapsulated knowledge, a knowledge that still exists, but it is locked inside:
+
 - Implementation details
 - Implicit assumptions
 - Naming conventions
@@ -91,7 +92,7 @@ Code can execute a decision, show what happens, suggest how something works. But
 * what tradeoff was chosen
 * what future change should be handled carefully
 
-But when the consequences of forgotten knowledge comes, most of the engineers realize:
+But when the consequences of forgotten knowledge appear, most of the engineers realize:
 
 - Instructing software is not the same as teaching people. 
 - Coding is not the same as speaking.
@@ -109,7 +110,7 @@ The rise of AI makes documentation easier to produce than ever before. A team ca
 * examples
 * technical documentation
 
-With much less writing effort than before. This is useful. But easier writing does not automatically create better knowledge continuity. IA can help with: writting, organization or even summarization.
+With much less writing effort than before. This is useful. But easier writing does not automatically create better knowledge continuity. IA can help with writting, organization or even summarization.
 
 But AI does not remove the engineering responsibility of deciding:
 

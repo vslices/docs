@@ -18,7 +18,7 @@ This order introduces VSlices from the general idea to practical adoption.
 After the initial overview, these pages explain the deeper reasoning behind VSlices:
 
 * [The Continuity of Knowledge](../philosophy/continuity-of-knowledge.md) explains why VSlices treats software as a continuity problem between business knowledge, documentation, architecture, implementation, and evolution.
-* [VSlices and Development Methodologies](../comparisons/development-methodologies.md) explains how VSlices relates to Agile, Scrum, Extreme Programming, Lean, Domain-Driven Design, Clean Architecture, Vertical Slice Architecture, and other approaches.
+* [VSlices and Development Methodologies](../comparisons/development-methodologies.md) explains how VSlices relates to Agile, Scrum, Extreme Programming, Lean, Domain-Driven Design, Waterfall, and other development approaches.
 
 These pages are not required before reading the product documentation, but they help clarify what VSlices is trying to preserve and how it differs from existing methodologies.
 
@@ -26,6 +26,7 @@ These pages are not required before reading the product documentation, but they 
 
 - If you want to understand the full picture, follow the recommended reading order.
 - If you want to understand the philosophical foundation of VSlices, read [The Continuity of Knowledge](../philosophy/continuity-of-knowledge.md).
+- If you want to understand the boundaries of VSlices, read [What is VSlices?](what-is-vslices.md#what-vslices-is-not).
 - If you want to compare VSlices with other development methodologies, read [VSlices and Development Methodologies](../comparisons/development-methodologies.md).
 - If you want to design software before implementation, read [VSlices Design](../products/design/index.md).
 - If you want to document a system, read [VSlices Docs Standard](../products/docs-standard/index.md).

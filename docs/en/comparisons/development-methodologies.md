@@ -39,6 +39,14 @@ The central question is:
 
 > How do we preserve domain intent, architectural meaning, documented knowledge, and executable behavior as the system evolves?
 
+## Scope
+
+This document compares VSlices with development methodologies and delivery-oriented approaches.
+
+It does not compare VSlices with architectural styles or implementation patterns.
+
+Architectural approaches such as Clean Architecture, Hexagonal Architecture, CQRS, Event Sourcing, microservices, modular monoliths, or Vertical Slice Architecture should be discussed separately.
+
 ## VSlices and Agile
 
 VSlices is highly compatible with Agile principles. Both value:
@@ -123,21 +131,6 @@ However, VSlices does not reject documentation or upfront thinking. The problem 
 VSlices prefers living documentation that evolves with implementation and preserves architectural meaning over time. 
 
 Waterfall tends to ask: _What should be specified before implementation begins?_, VSlices asks: _What knowledge must remain visible and evolvable while the system changes?_.
-
-## VSlices and architecture frameworks
-
-VSlices does not attempt to impose a universal architecture. It does not require:
-
-* CQRS
-* Event Sourcing
-* Clean Architecture
-* microservices
-* hexagonal architecture
-* a specific infrastructure style
-
-These approaches may be useful when the domain, scale, team, or operational context justifies them.
-
-VSlices treats architecture as progressive. Complexity should appear when the domain requires it. Not before.
 
 ## Comparative summary
 
