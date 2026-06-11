@@ -86,24 +86,10 @@ nav:
         - VSlices Framework:
             - Overview: products/framework/index.md
 
-    - Guides:
-        - Overview: guides/index.md
-        - Work in progress: guides/work-in-progress.md
-
     - Alive lab: 
         - Overview: alive-lab/index.md
         - Project stories:
             - Overview: alive-lab/project-stories/index.md
-            - Domus Orbis:
-                - Overview: alive-lab/project-stories/domus-orbis/index.md
-                - Project Context: alive-lab/project-stories/domus-orbis/project-context.md
-                - Modeling notes: alive-lab/project-stories/domus-orbis/modeling-notes.md
-                - Implementation notes: alive-lab/project-stories/domus-orbis/implementation-notes.md
-            - A insurance company:
-                - Overview: alive-lab/project-stories/insurance-company/index.md
-                - Project Context: alive-lab/project-stories/insurance-company/project-context.md
-                - Modeling notes: alive-lab/project-stories/insurance-company/modeling-notes.md
-                - Implementation notes: alive-lab/project-stories/insurance-company/implementation-notes.md
         - Field Notes:
             - Overview: alive-lab/field-notes/index.md
             - Human Factors:
@@ -142,4 +128,6 @@ nav:
             - First-class language support definition: decisions/first-iteration/0005-first-class-language-support-definition.md
             - PResolver as an abstraction from VSlices: decisions/first-iteration/0006-presolver-as-an-abstraction-from-vslices.md
             - Use an insurance company project as adaptation case: decisions/first-iteration/0007-use-insurance-company-project-as-adoption-case.md
+            - Use template generation as Slice-First sample: decisions/first-iteration/0008-use-template-generation-as-slice-first-sample.md
+            - Finish Method before expanding Framework docs: decisions/first-iteration/0009-finish-method-before-expanding-framework-docs.md
             
