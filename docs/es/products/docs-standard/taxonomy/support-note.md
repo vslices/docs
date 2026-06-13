@@ -4,7 +4,7 @@
 
 Una Nota de soporte preserva conocimiento útil que todavía no está listo o no es lo bastante importante como para convertirse en un documento formal.
 
-Su propósito es capturar conceptos, supuestos, riesgos, preguntas, feedback, detalles de implementación o ideas de mejora sin añadir estructura innecesaria. Una Nota de soporte responde:
+Su propósito es capturar conceptos, supuestos, riesgos, preguntas, _feedback_, detalles de implementación o ideas de mejora sin añadir estructura innecesaria. Una Nota de soporte responde:
 
 > ¿Qué no deberíamos perder todavía?
 
@@ -17,7 +17,7 @@ Una Nota de soporte ayuda al equipo a preservar:
 - __early knowledge__: ideas, observaciones o hallazgos que todavía se están formando.
 - __uncertainty__: supuestos, riesgos, preguntas abiertas y conceptos poco claros.
 - __local detail__: información útil en un contexto específico pero no lo bastante amplia para un documento completo.
-- __temporary learning__: feedback, notas de implementación o descubrimientos que quizá importen más adelante.
+- __temporary learning__: _feedback_, notas de implementación o descubrimientos que quizá importen más adelante.
 - __future candidates__: conocimiento que puede convertirse en parte de un Documento de contexto, Documento de proceso, Documento de caso de uso, Documento de capacidad, Registro de decisión o Nota de validación.
 
 El objetivo es preservar conocimiento útil sin forzar una estructura prematura.
@@ -30,8 +30,8 @@ Las Notas de soporte pueden incluir:
 - __Assumption Note__: captura algo que el equipo cree verdadero pero todavía no ha validado.
 - __Risk Note__: captura una posible fuente de falla, malentendido, retraso, retrabajo o complejidad accidental.
 - __Open Question__: captura algo que el equipo todavía necesita entender.
-- __Feature Note__: captura una idea temprana de feature antes de que su caso de uso, capacidad o alcance estén claros.
-- __Feedback Note__: captura input de usuarios, expertos del dominio, stakeholders, implementación u operación.
+- __Feature Note__: captura una idea temprana de _feature_ antes de que su caso de uso, capacidad o alcance estén claros.
+- __Feedback Note__: captura _input_ de usuarios, expertos del dominio, stakeholders, implementación u operación.
 - __Implementation Note__: captura detalle técnico útil que todavía no es un registro de decisión.
 - __Scope Note__: captura lo que puede estar incluido, excluido, pospuesto o intencionalmente ignorado.
 - __Improvement Note__: captura una posible mejora antes de que se convierta en un cambio planificado.
@@ -95,7 +95,7 @@ Este documento puede apoyar la alineación con estándares y prácticas de docum
 
 | Standard or practice | Affinity | Supports | Missing for stricter alignment |
 | --- | --- | --- | --- |
-| ISO/IEC/IEEE 29148 | Medium | Assumptions, risks, open questions, feedback, and early requirement inputs. | Formal requirement statements, attributes, verification, and requirements management. |
+| ISO/IEC/IEEE 29148 | Medium | Assumptions, risks, open questions, _feedback_, and early requirement inputs. | Formal requirement statements, attributes, verification, and requirements management. |
 | ISO/IEC/IEEE 42010 | Medium | Early concerns, stakeholder notes, rationale inputs, and relationships. | Formal viewpoints, views, correspondences, and architecture description framework. |
 | arc42 | Medium | Risks, constraints, open questions, glossary candidates, and decision inputs. | Complete arc42 structure and formal section placement. |
 | ADR | Medium | Early decision inputs, options, assumptions, and risks. | Formal decision record and governance lifecycle. |
@@ -118,7 +118,7 @@ Errores comunes incluyen:
 Una Nota de soporte debería ayudar a responder:
 
 - ¿Qué conocimiento útil no deberíamos perder?
-- ¿Es esto un concepto, supuesto, riesgo, pregunta, feedback, detalle de implementación, nota de alcance o idea de mejora?
+- ¿Es esto un concepto, supuesto, riesgo, pregunta, _feedback_, detalle de implementación, nota de alcance o idea de mejora?
 - ¿Dónde apareció este conocimiento?
 - ¿Por qué podría importar más adelante?
 - ¿Sigue abierto, activo, resuelto, reemplazado o archivado?

@@ -8,7 +8,7 @@ Su propósito es capturar qué se confirmó, rechazó, cambió o aprendió para 
 
 > ¿Qué aprendimos?
 
-La validación no es solo pruebas. Puede venir de feedback de implementación, feedback de usuarios, revisión de expertos del dominio, comportamiento en producción, experimentos, prototipos u observación operativa.
+La validación no es solo pruebas. Puede venir de _feedback_ de implementación, _feedback_ de usuarios, revisión de expertos del dominio, comportamiento en producción, experimentos, prototipos u observación operativa.
 
 ## Propósito
 
@@ -29,7 +29,7 @@ El objetivo es evitar que el aprendizaje desaparezca después de la implementaci
 Usa una Nota de validación cuando la evidencia cambie o confirme conocimiento del que dependerá el trabajo futuro. Es especialmente útil cuando:
 
 - __an assumption was tested__: el equipo necesita registrar si sobrevivió.
-- __a behavior was validated__: un caso de uso, feature o workflow se comprobó contra la realidad.
+- __a behavior was validated__: un caso de uso, _feature_ o _workflow_ se comprobó contra la realidad.
 - __implementation revealed constraints__: construir expuso límites técnicos, operativos o del dominio.
 - __feedback changed understanding__: usuarios, stakeholders o expertos del dominio aclararon algo importante.
 - __a decision needs review__: la evidencia confirma, cuestiona o invalida una decisión previa.
@@ -130,11 +130,11 @@ Una Nota de validación puede apoyar o ser apoyada por:
 
 - __Documento de contexto__: actualiza el scenario después de que aparece nueva evidencia.
 - __Documento de proceso__: confirma o cuestiona cómo se realiza realmente el trabajo.
-- __Documento de caso de uso__: valida comportamiento esperado, consecuencias, errores o reglas.
+- __Documento de caso de uso__: valida comportamiento esperado, consecuencia, errores o reglas.
 - __Documento de capacidad__: confirma si una capacidad apoya necesidades reales.
 - __Registro de decisión__: valida, cuestiona o reemplaza una decisión.
 - __Vocabulario de dominio__: actualiza términos cuando la evidencia aclara el lenguaje.
-- __Nota de soporte__: captura feedback temprano antes de que se convierta en aprendizaje validado.
+- __Nota de soporte__: captura _feedback_ temprano antes de que se convierta en aprendizaje validado.
 
 ## Errores comunes
 

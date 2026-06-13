@@ -10,7 +10,7 @@ Estos términos ayudan a describir qué tipo de conocimiento debe documentarse, 
 
 ## Conceptos de documentación
 
-- __Documentación viva (_Living Documentation_ en inglés)__: documentación que evoluciona junto con el sistema, las decisiones, la comprensión del dominio, la implementación, la validación y el feedback.
+- __Documentación viva (_Living Documentation_ en inglés)__: documentación que evoluciona junto con el sistema, las decisiones, la comprensión del dominio, la implementación, la validación y el _feedback_.
 
 - __Estructura de documento (_Document Structure_ en inglés)__: la forma esperada de un documento, incluyendo su propósito, secciones, relaciones y uso previsto.
 

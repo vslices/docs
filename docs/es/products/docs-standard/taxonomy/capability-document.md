@@ -8,7 +8,7 @@ Su propósito es describir qué debe ser posible sin decidir demasiado pronto c�
 
 > ¿Qué debe poder hacer este negocio o sistema?
 
-Una capacidad no es una feature, endpoint, screen, service o componente técnico. Es una habilidad que puede apoyar varios casos de uso, workflows, procesos o decisiones.
+Una capacidad no es una _feature_, _endpoint_, _screen_, _service_ o componente técnico. Es una habilidad que puede apoyar varios casos de uso, _workflows_, procesos o decisiones.
 
 ## Propósito
 
@@ -16,7 +16,7 @@ Un Documento de capacidad ayuda al equipo a preservar:
 
 - __stable ability__: qué debe poder hacer el negocio o sistema.
 - __business value__: por qué importa esta capacidad.
-- __supported behavior__: qué casos de uso o workflows dependen de la capacidad.
+- __supported behavior__: qué casos de uso o _workflows_ dependen de la capacidad.
 - __boundaries__: qué incluye y qué excluye la capacidad.
 - __rules and constraints__: qué da forma o limita la capacidad.
 - __expected outcomes__: qué permite esta capacidad.
@@ -62,7 +62,7 @@ Usa la versión mínima cuando el equipo necesite una definición ligera de la c
 
 ## Supported behavior
 
-¿Qué casos de uso, workflows o procesos dependen de ella?
+¿Qué casos de uso, _workflows_ o procesos dependen de ella?
 
 ## Boundaries
 
@@ -150,7 +150,7 @@ Un Documento de capacidad puede apoyar o ser apoyado por:
 
 Errores comunes incluyen:
 
-- __confundir capacidad con feature__: una feature entrega un comportamiento concreto, mientras que una capacidad describe una habilidad estable.
+- __confundir capacidad con _feature___: una _feature_ entrega un comportamiento concreto, mientras que una capacidad describe una habilidad estable.
 - __confundir capacidad con componente__: el documento se convierte en arquitectura antes de que la necesidad del dominio sea clara.
 - __nombrar demasiado pronto__: el equipo asigna nombres formales a habilidades que todavía son vagas.
 - __hacerla demasiado amplia__: la capacidad se convierte en un contenedor para comportamiento no relacionado.
@@ -164,7 +164,7 @@ Un Documento de capacidad debería ayudar a responder:
 
 - ¿Qué debe poder hacer el negocio o el sistema?
 - ¿Por qué importa esta capacidad?
-- ¿Qué casos de uso, workflows o procesos dependen de ella?
+- ¿Qué casos de uso, _workflows_ o procesos dependen de ella?
 - ¿Qué incluye esta capacidad?
 - ¿Qué queda fuera de esta capacidad?
 - ¿Qué reglas, restricciones o resultados la moldean?

@@ -10,12 +10,12 @@ VSlices Docs Standard no existe para hacer que los equipos produzcan más docume
 
 VSlices Docs Standard proporciona:
 
-- __principles__: las ideas que guían cómo debe usarse la documentación.
-- __document modeling__: cómo funcionan las notas, los documentos, las referencias, los estados y las relaciones.
-- __taxonomy__: cómo se agrupan los documentos según el tipo de conocimiento que preservan.
-- __continuity paths__: cómo se mueve el conocimiento entre documentos, decisiones, implementación y aprendizaje.
-- __anti-bureaucracy rules__: cómo evitar convertir la documentación en ceremonia.
-- __document structures__: formatos reutilizables para tipos comunes de conocimiento de ingeniería.
+- __principios__: las ideas que guían cómo debe usarse la documentación.
+- __modelado de documentos__: cómo funcionan las notas, los documentos, las referencias, los estados y las relaciones.
+- __taxonomía__: cómo se agrupan los documentos según el tipo de conocimiento que preservan.
+- __caminos de continuidad__: cómo se mueve el conocimiento entre documentos, decisiones, implementación y aprendizaje.
+- __reglas contra la burocracia__: cómo evitar convertir la documentación en ceremonia.
+- __estructuras de documento__: formatos reutilizables para tipos comunes de conocimiento de ingeniería.
 
 El estándar es intencionalmente progresivo. Un equipo debe usar la estructura más pequeña útil que preserve el conocimiento del que depende el trabajo futuro.
 
@@ -38,8 +38,8 @@ Empieza por el conocimiento que necesitas preservar.
 * **Usa un Documento de contexto (_Context Document_ en inglés)** cuando el equipo necesite preservar dónde ocurre el trabajo.
 * **Usa un Documento de proceso (_Process Document_ en inglés)** cuando las responsabilidades, la coordinación, los _workflows_ o las reglas operativas importen.
 * **Usa un Documento de caso de uso (_Use Case Document_ en inglés)** cuando el comportamiento necesite significado explícito, consecuencias, validaciones o errores esperados.
-* **Usa un Documento de capacidad (_Capability Document_ en inglés)** cuando varios comportamientos o procesos dependen de una capacidad estable.
-* **Usa un Registro de decisión (_Decision Record_ en inglés)** cuando una elección tenga tradeoffs, consecuencias o impacto futuro significativos.
+* **Usa un Documento de capacidad (_Capability Document_ en inglés)** cuando varios comportamientos o procesos dependan de una capacidad estable.
+* **Usa un Registro de decisión (_Decision Record_ en inglés)** cuando una elección tenga _tradeoffs_, consecuencias o impacto futuro significativos.
 * **Usa una Nota de validación (_Validation Note_ en inglés)** cuando la evidencia cambie o confirme conocimiento del que dependerá el trabajo futuro.
 
 No crees un documento porque el estándar lo contiene. Créalo porque preserva conocimiento útil.

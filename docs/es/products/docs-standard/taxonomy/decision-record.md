@@ -138,7 +138,7 @@ Errores comunes incluyen:
 
 - __registrarlo todo__: el equipo crea registros de decisión para elecciones sin impacto real.
 - __escribir solo la respuesta final__: los lectores futuros no pueden entender por qué se tomó la decisión.
-- __ocultar tradeoffs__: el registro finge que la opción elegida no tuvo costo.
+- __ocultar _tradeoffs___: el registro finge que la opción elegida no tuvo costo.
 - __ignorar opciones rechazadas__: luego se vuelven a debatir las mismas alternativas.
 - __usar decisiones como autoridad__: el registro se convierte en una forma de detener la discusión en lugar de preservar el razonamiento.
 - __no revisar decisiones antiguas__: el contexto cambió e invalidó la decisión, pero el registro permanece activo.
