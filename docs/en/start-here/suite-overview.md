@@ -33,7 +33,33 @@ The four products support different parts of that continuity.
 
 ## How the suite connects
 
-VSlices can be understood as a continuity loop.
+The suite is composed of four connected products.
+
+VSlices Method provides the overarching continuity guidance. VSlices Design helps teams reason about systems, uncertainty, boundaries, and business behavior. VSlices Docs Standard helps preserve knowledge through living documentation structures. VSlices Framework may support implementation when executable software is needed, but it is not required for using the rest of the suite.
+
+```mermaid
+flowchart LR
+    Method["VSlices Method<br/>Guides real work"]
+
+    Design["VSlices Design<br/>Reasoning and modeling"]
+    Docs["VSlices Docs Standard<br/>Living documentation"]
+    Framework["VSlices Framework<br/>Implementation support"]
+
+    Method --> Design
+    Method --> Docs
+    Method -. "optional implementation support" .-> Framework
+
+    Design -. "does not require" .-> Framework
+    Docs -. "can inform" .-> Framework
+```
+
+This relationship is intentionally lightweight. The suite is connected by a shared continuity model, not by a rigid dependency structure.
+
+A team can use VSlices Design without VSlices Framework. A team can use VSlices Docs Standard without adopting a specific architecture. VSlices Method can guide real work even when the implementation uses plain .NET, another framework, or no software framework at all.
+
+## The continuity loop
+
+VSlices can also be understood as a continuity loop.
 
 ```text
 Discovery
@@ -63,7 +89,7 @@ It provides design modalities, reasoning tools, and modeling heuristics for work
 * Do we understand enough to build safely?
 * Should we explore broadly, analyze a specific problem, or build a small slice to learn?
 
-Design is intentionally independent from VSlices Framework, Docs Standard and Method. A team can use VSlices Design even if it never uses either of them.
+Design is intentionally independent from VSlices Framework, Docs Standard, and Method. A team can use VSlices Design even if it never uses the rest of the suite.
 
 ### VSlices Docs Standard
 
@@ -84,9 +110,7 @@ Docs Standard does not exist to make teams produce more documents. It exists to 
 
 ### VSlices Method
 
-VSlices Method explains how Design and Docs Standard can be used during real work. 
-
-It helps teams decide:
+VSlices Method explains how Design and Docs Standard can be used during real work. It helps teams decide:
 
 * what kind of context they are working in
 * which design modality fits the current uncertainty
@@ -94,9 +118,7 @@ It helps teams decide:
 * how documentation supports decisions
 * how implementation feedback returns to understanding
 
-Method is not a rigid process.
-
-It provides guidance for preserving continuity while the team moves through uncertainty.
+Method is not a rigid process. It provides guidance for preserving continuity while the team moves through uncertainty.
 
 ### VSlices Framework
 
@@ -119,10 +141,10 @@ The Framework should not hide engineering concepts. It should make useful patter
 
 A team may start with an unclear business process.
 
-- VSlices Design helps the team understand the context, responsibilities, language, and uncertainty.
-- VSlices Docs Standard helps preserve that understanding through context documents, process documents, use case documents, decision records, or validation notes.
-- VSlices Method helps the team decide how much structure is useful for the current iteration.
-- VSlices Framework may later help implement the behavior with explicit flows, expected errors, domain types, and capabilities.
+* VSlices Design helps the team understand the context, responsibilities, language, and uncertainty.
+* VSlices Docs Standard helps preserve that understanding through context documents, process documents, use case documents, decision records, or validation notes.
+* VSlices Method helps the team decide how much structure is useful for the current iteration.
+* VSlices Framework may later help implement the behavior with explicit flows, expected errors, domain types, and capabilities.
 
 After implementation, validation may reveal that the original understanding was incomplete. That learning should return to the documents, decisions, design model, and future implementation.
 
@@ -136,7 +158,7 @@ A team does not need to adopt the whole suite at once. A team may use:
 * VSlices Docs Standard to improve documentation structure.
 * VSlices Method to guide collaboration and learning.
 * VSlices Framework to implement domain-oriented .NET software.
- 
+
 The suite is progressive and composable. Adoption should follow real need, not product completeness.
 
 ## Core principle

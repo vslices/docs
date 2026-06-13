@@ -79,4 +79,4 @@ Ideas should move from Alive Lab into official VSlices guidance only when they h
 
 Alive Lab is still early.
 
-For now, it mainly exists to preserve the space where future project learning, theories, and experiments can live. More content will be added as VSlices is tested through concrete work.
+For now, it mainly exists to preserve the space where future project learning, theories, and theories can live. More content will be added as VSlices is tested through concrete work.

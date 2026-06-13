@@ -13,6 +13,8 @@ theme:
 plugins: 
     - search:
         lang: en
+    - mermaid2:
+        version: 10.0.2
 
 nav:
     - Home: index.md

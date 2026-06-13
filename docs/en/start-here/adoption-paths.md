@@ -1,12 +1,10 @@
-# Adoption paths
+# Future adoption paths
 
 > **This page is a work in progress**.
 
 VSlices is still being defined and validated through real software design and implementation work. Because of that, this documentation does not yet provide official adoption paths.
 
 Defining adoption paths too early would create a false sense of maturity. VSlices is intended to be progressive and composable, but the recommended ways to adopt it should emerge from real usage, not from assumptions.
-
-The current validation project is [Domus Orbis](../alive-lab/project-stories/domus-orbis/index.md). As Domus Orbis evolves, this page will collect practical adoption paths based on real experience.
 
 ## What this page will eventually describe
 
@@ -32,5 +30,3 @@ Start by reading:
 Then follow the work being done in:
 
 - [Alive Lab](../alive-lab/index.md)
-- [Domus Orbis](../alive-lab/project-stories/domus-orbis/index.md)
-- [Decisions](../decisions/index.md)

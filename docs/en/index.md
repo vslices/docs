@@ -37,15 +37,13 @@ If you are new to VSlices, start with these pages:
 * [What is VSlices?](start-here/what-is-vslices.md)
 * [Why VSlices exists?](start-here/why-vslices-exists.md)
 * [Suite overview](start-here/suite-overview.md)
-* [Adoption paths](start-here/adoption-paths.md)
+* [Adoption paths - WIP](start-here/adoption-paths.md)
 
 If you only want to understand the core idea, start with [What is VSlices?](start-here/what-is-vslices.md).
 
 If you want to understand why VSlices exists, read [Why VSlices exists](start-here/why-vslices-exists.md).
 
 If you want to understand how the products relate to each other, read [Suite overview](start-here/suite-overview.md).
-
-If you want to apply VSlices gradually, read [Adoption paths](start-here/adoption-paths.md).
 
 ## Products
 
@@ -63,8 +61,6 @@ Each product can evolve independently, but all of them share the same goal: pres
 VSlices is being defined and validated through real software design and implementation work.
 
 The [Alive Lab](alive-lab/index.md) preserves experiments, project stories, modeling discoveries, and field observations that shape VSlices over time.
-
-The current primary validation project is [Domus Orbis](alive-lab/project-stories/domus-orbis/index.md), a software project focused on supporting household management processes.
 
 ## Decisions
 
