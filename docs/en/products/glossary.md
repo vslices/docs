@@ -52,7 +52,7 @@ These terms help connect domain discovery, documentation, architecture, implemen
 
 - __Decision__: a selected direction made under a specific context, with accepted tradeoffs and consequences.
 
-- __Validation__: evidence gathered to confirm, reject, or refine an assumption, decision, behavior, or implementation.
+- __Validation__: evidence gathered to confirm, reject, or refine an assumption, decision, behavior, document, implementation, or product idea.
 
 - __Feedback__: knowledge produced after a document, decision, feature, workflow, or implementation is used, reviewed, tested, or delivered.
 
@@ -70,8 +70,8 @@ Scenario
 
 This does not mean every iteration must document all levels. The sequence only describes how knowledge can become more specific.
 
-- A team may start from a scenario when the domain is unclear.
-- A team may start from a workflow when the work is already visible.
-- A team may start from a use case when the expected behavior is already known.
+* A team may start from a scenario when the domain is unclear.
+* A team may start from a workflow when the work is already visible.
+* A team may start from a use case when the expected behavior is already known.
 
 The important part is to keep the chosen concept connected to the knowledge that supports it.

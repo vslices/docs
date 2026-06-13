@@ -24,7 +24,7 @@ These terms help describe how design work can begin from different kinds of avai
 
 - __Uncertainty__: a lack of reliable understanding about the domain, problem, behavior, responsibility, risk, or expected outcome.
 
-- __Boundary reasoning__: the act of identifying where concepts, responsibilities, decisions, systems, actors, or ownership areas should be separated.
+- __Boundary reasoning__: the act of using boundaries as reasoning objects to identify where concepts, responsibilities, decisions, systems, actors, or ownership areas should be separated.
 
 - __Progressive understanding__: the gradual improvement of domain and system knowledge through discovery, documentation, modeling, implementation, validation, and feedback.
 

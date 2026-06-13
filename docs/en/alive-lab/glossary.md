@@ -1,3 +1,5 @@
+# docs/en/alive-lab/glossary.md
+
 # Alive Lab glossary
 
 This glossary defines terms used by Alive Lab.
@@ -10,23 +12,19 @@ These terms help preserve the relationship between observation, validation, lear
 
 - __Alive Lab__: a real project, scenario, or working environment used to validate VSlices ideas, patterns, documents, methods, and abstractions before treating them as stable product concepts.
 
-- __Validation__: evidence gathered to confirm, reject, or refine an assumption, decision, behavior, document, pattern, method, or implementation.
+- __Validation__: evidence gathered to confirm, reject, or refine an assumption, decision, behavior, document, pattern, method, implementation, or product idea.
 
 - __Evidence__: observable information produced by real work, usage, feedback, implementation, documentation, failure, or review.
 
 - __Learning__: knowledge produced after observing, validating, implementing, reviewing, or evolving something in a real context.
 
-- __Experiment__: a limited attempt to test whether an idea, document, abstraction, pattern, method, or implementation direction is useful in practice.
-
-> In Alive Lab, an experiment is a validation attempt, not a required documentation section.
+- __Experiment__: a limited validation attempt used to test whether an idea, document, abstraction, pattern, method, or implementation direction is useful in practice. In Alive Lab, an experiment is not a required documentation section.
 
 ## Knowledge artifacts
 
-- __Field Note__: a lightweight artifact used to preserve an observed lesson, pattern, risk, failure, tension, or recurring situation that is useful but not yet formal enough for stronger guidance.
+- __Field Note__: a lightweight learning artifact used to preserve observations from real work before they become stronger guidance.
 
-- __Project Story__: a narrative artifact that explains how a project evolved, what was learned, and how decisions, problems, validations, and implementation feedback shaped its direction.
-
-- __Validation Note__: an artifact used to preserve evidence that confirms, rejects, changes, or improves knowledge future work depends on.
+- __Project Story__: a narrative artifact used to preserve how real work evolved, what was learned, and what evidence shaped the direction.
 
 - __Observation__: something noticed during real work that may reveal a pattern, risk, learning opportunity, design tension, documentation need, or product improvement.
 

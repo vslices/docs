@@ -71,4 +71,3 @@ Work entry point
 This is not a mandatory sequence. A team may begin from context, a problem, a slice, a document, an existing implementation, a decision, or validation feedback.
 
 The important part is that the work remains connected to the knowledge that explains why it exists, how it should evolve, and what future work depends on.
-

@@ -60,4 +60,3 @@ Useful knowledge
 This is not a requirement to document everything. A team should document the knowledge that future work depends on, using the smallest structure that preserves enough meaning, context, and intent.
 
 The goal is not more documentation. The goal is less knowledge loss.
-

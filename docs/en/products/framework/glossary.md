@@ -12,17 +12,17 @@ These terms help connect domain knowledge, application behavior, runtime require
 
 - __Feature__: a concrete behavior, action, or vertical slice that delivers value or supports a validated need inside a domain context.
 
-- __Step__: a small unit of executable behavior inside a flow, usually responsible for one meaningful transformation, validation, decision, or side effect.
+- __Step__: a small unit of executable behavior inside a flow, usually responsible for one meaningful transformation, runtime validation, decision, or side effect.
 
-- __Pipeline__: an ordered composition of steps, behaviors, effects, validations, or transformations that produce a result.
+- __Pipeline__: an ordered composition of steps, behaviors, effects, runtime validations, or transformations that produce a result.
 
 ## Domain modeling concepts
 
-- __Domain Type__: a strongly modeled value that represents a domain concept with explicit validation, meaning, and invariants.
+- __Domain Type__: a strongly modeled value that represents a domain concept with explicit runtime validation, meaning, and invariants.
 
 - __Invariant__: a rule that must remain true for a domain type, behavior, capability, or state to be considered valid.
 
-- __Runtime Validation__: the act of checking whether a value, behavior, command, request, or state satisfies expected rules before continuing.
+- __Runtime validation__: the act of checking whether a value, behavior, command, request, or state satisfies expected rules before continuing.
 
 - __Expected error__: a known failure condition that belongs to the domain or application flow and should be modeled explicitly instead of treated as an unexpected exception.
 
@@ -36,7 +36,7 @@ These terms help connect domain knowledge, application behavior, runtime require
 
 - __Effect__: an explicit representation of work that may require dependencies, produce results, fail, or interact with the outside world.
 
-- __Functional composition__: the practice of building behavior by composing smaller functions, effects, validations, and transformations into larger executable structures.
+- __Functional composition__: the practice of building behavior by composing smaller functions, effects, runtime validations, and transformations into larger executable structures.
 
 - __Runtime requirement__: an explicit dependency or environmental requirement needed by a flow, feature, effect, or operation during execution.
 
@@ -48,7 +48,7 @@ These terms help connect domain knowledge, application behavior, runtime require
 
 - __Provider__: an external or internal capability source used by an adapter, feature, integration, or runtime behavior.
 
-- __Port__: a contract that describes what a feature, capability, adapter, or external dependency needs without binding the domain behavior to a specific technology.
+- __Port__: an explicit contract that describes an interaction need between a feature, capability, adapter, provider, or runtime boundary without forcing the domain behavior to depend on a specific technology or infrastructure style.
 
 ## Error and result concepts
 
@@ -56,9 +56,9 @@ These terms help connect domain knowledge, application behavior, runtime require
 
 - __Error as value__: the practice of representing expected failures as explicit values that can be composed, returned, matched, logged, tested, and documented.
 
-- __Failure path__: the route an operation takes when an expected error, validation failure, dependency issue, or unexpected problem prevents normal completion.
+- __Failure path__: the route an operation takes when an expected error, runtime validation failure, dependency issue, or unexpected problem prevents normal completion.
 
-- __Success path__: the route an operation takes when all required validations, dependencies, decisions, and effects complete as expected.
+- __Success path__: the route an operation takes when all required runtime validations, dependencies, decisions, and effects complete as expected.
 
 ## Relationship between the terms
 
