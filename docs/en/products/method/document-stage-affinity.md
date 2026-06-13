@@ -32,14 +32,14 @@ The same document may support more than one stage.
 
 | Document                | Strongest affinity                       | Useful when                                                                           |
 | ----------------------- | ---------------------------------------- | ------------------------------------------------------------------------------------- |
-| **Domain Vocabulary**   | Understanding and Contextualizing.       | Language appears, changes, conflicts or becomes important for decisions.              |
-| **Context Document**    | Contextualizing.                         | The team needs to preserve the scenario, actors, boundaries or current situation.     |
-| **Process Document**    | Contextualizing.                         | Work depends on responsibilities, workflows, handoffs or repeated operations.         |
-| **Use Case Document**   | Planning and Building.                   | Behavior, consequences, validations or expected errors need to guide implementation.  |
-| **Capability Document** | Planning and Building.                   | A stable business or system ability needs to be named and preserved.                  |
-| **Decision Record**     | Planning and Building.                   | A direction, tradeoff, accepted risk or rejected option may affect future work.       |
-| **Validation Note**     | Building and Returning to Understanding. | Evidence from implementation, review, usage or operation changes what the team knows. |
-| **Support Note**        | All stages.                              | Knowledge is useful but still early, local, uncertain or temporary.                   |
+| [**Domain Vocabulary**](../docs-standard/taxonomy/domain-vocabulary.md)   | Understanding and Contextualizing.       | Language appears, changes, conflicts or becomes important for decisions.              |
+| [**Context Document**](../docs-standard/taxonomy/context-document.md)    | Contextualizing.                         | The team needs to preserve the scenario, actors, boundaries or current situation.     |
+| [**Process Document**](../docs-standard/taxonomy/process-document.md)    | Contextualizing.                         | Work depends on responsibilities, workflows, handoffs or repeated operations.         |
+| [**Use Case Document**](../docs-standard/taxonomy/use-case-document.md)   | Planning and Building.                   | Behavior, consequences, validations or expected errors need to guide implementation.  |
+| [**Capability Document**](../docs-standard/taxonomy/capability-document.md) | Planning and Building.                   | A stable business or system ability needs to be named and preserved.                  |
+| [**Decision Record**](../docs-standard/taxonomy/decision-record.md)     | Planning and Building.                   | A direction, tradeoff, accepted risk or rejected option may affect future work.       |
+| [**Validation Note**](../docs-standard/taxonomy/validation-note.md)     | Building and Returning to Understanding. | Evidence from implementation, review, usage or operation changes what the team knows. |
+| [**Support Note**](../docs-standard/taxonomy/support-note.md)        | All stages.                              | Knowledge is useful but still early, local, uncertain or temporary.                   |
 
 ## Using affinity
 

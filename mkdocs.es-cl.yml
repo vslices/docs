@@ -41,12 +41,12 @@ nav:
 
             - Guías de contexto:
                 - Introducción: products/method/context-guides/index.md
-                - Comenzar en un escenario no digitalizado: products/method/context-guides/non-digitalized-scenario.md
-                - Comenzar en un escenario digitalizado: products/method/context-guides/digitalized-scenario.md
-                - Unirse a un proyecto existente: products/method/context-guides/joining-existing-project.md
-                - Introducir el método en proyectos en curso: products/method/context-guides/introducing-method.md
+                - Escenario "No digitalizado": products/method/context-guides/non-digitalized-scenario.md
+                - Escenario "Digitalizado": products/method/context-guides/digitalized-scenario.md
+                - Escenario "Unirse a un proyecto existente": products/method/context-guides/joining-existing-project.md
+                - Escenario "Introducir Method en proyectos en curso": products/method/context-guides/introducing-method.md
 
-            - Afinidad entre documentos y etapas: products/method/document-stage-affinity.md
+            - Afinidad Documento-Etapa: products/method/document-stage-affinity.md
 
         - VSlices Design:
             - Introducción: products/design/index.md

@@ -1,6 +1,6 @@
-# Digitalized Scenario
+# "Digitalized" Scenario
 
-A digitalized scenario is a working context where software already represents part of the business, process or organization.
+A "Digitalized" scenario is a working context where software already represents part of the business, process or organization.
 
 This does not mean the domain is already understood. Existing software is evidence, it is not automatically domain truth.
 

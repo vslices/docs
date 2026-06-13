@@ -1,6 +1,6 @@
-# Non-Digitalized Scenario
+# "Non-Digitalized" Scenario
 
-A non-digitalized scenario is a working context where important work is not yet represented by software.
+A "Non-Digitalized" scenario is a working context where important work is not yet represented by software.
 
 The work may happen through conversations, spreadsheets, paper documents, messages, meetings, manual coordination or informal routines.
 
