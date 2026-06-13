@@ -6,6 +6,14 @@ Its purpose is to preserve a common language between VSlices Design, VSlices Doc
 
 These terms help connect domain discovery, documentation, architecture, implementation, and evolution without forcing every product to redefine the same concepts.
 
+## Suite concepts
+
+- __Continuity__: the preservation of understanding across discovery, documentation, design, architecture, implementation, validation, and evolution.
+
+- __Architectural intent__: the reasoning behind architectural structure, boundaries, decisions, and tradeoffs that should remain understandable as the system evolves.
+
+- __Progressive architecture__: an approach where architectural structure is introduced gradually as the domain, risks, and implementation needs justify it.
+
 ## Core domain-to-software terms
 
 - __Scenario__: answers _where are we working?_ It represents the business, organizational, operational, or system context where knowledge is being observed. A scenario may include companies, ecosystems, departments, systems, constraints, people, and surrounding conditions.

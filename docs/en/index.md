@@ -60,7 +60,7 @@ Each product can evolve independently, but all of them share the same goal: pres
 
 VSlices is being defined and validated through real software design and implementation work.
 
-The [Alive Lab](alive-lab/index.md) preserves experiments, project stories, modeling discoveries, and field observations that shape VSlices over time.
+The [Alive Lab](alive-lab/index.md) preserves theories, project stories, modeling discoveries, and field observations that shape VSlices over time.
 
 ## Decisions
 

@@ -11,7 +11,7 @@ If you are new to VSlices, start with these pages:
 3. [Suite overview](suite-overview.md)
 4. [Adoption paths - WIP](adoption-paths.md)
 
-This order introduces VSlices from the general idea to practical adoption.
+This order introduces VSlices from the general idea.
 
 ## Foundational readings
 

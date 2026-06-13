@@ -68,7 +68,6 @@ Alive Lab may influence any VSlices product.
 
 - A project story may reveal a documentation need.
 - A theory may suggest a design technique.
-- An experiment may expose a framework primitive.
 - A repeated observation may eventually become part of VSlices Method.
 
 However, Alive Lab does not automatically define product direction.
@@ -79,4 +78,4 @@ Ideas should move from Alive Lab into official VSlices guidance only when they h
 
 Alive Lab is still early.
 
-For now, it mainly exists to preserve the space where future project learning, experiments, and theories can live. More content will be added as VSlices is tested through concrete work.
+For now, it mainly exists to preserve the space where future project learning, field notes, and theories can live. More content will be added as VSlices is tested through concrete work.

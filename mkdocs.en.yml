@@ -36,7 +36,7 @@ nav:
         - Glossary: products/glossary.md
         - VSlices Method:
             - Overview: products/method/index.md
-
+            - Glossary: products/method/glossary.md
             - Patterns:
                 - Overview: products/method/patterns/index.md
                 - Collaboration model: products/method/patterns/collaboration-model.md
@@ -54,6 +54,7 @@ nav:
             - Document-Stage affinity: products/method/document-stage-affinity.md
         - VSlices Design:
             - Overview: products/design/index.md
+            - Glossary: products/design/glossary.md
             - Principles: products/design/principles.md
             - Iteration flow: products/design/iteration-flow.md
             - Modalities:
@@ -67,8 +68,10 @@ nav:
                     - Introduction: products/design/modalities/slice-first/index.md
                     - Emphasis: products/design/modalities/slice-first/emphasis.md
                 - Comparisons: products/design/modalities/comparisons.md
+        
         - VSlices Docs Standard:
             - Overview: products/docs-standard/index.md
+            - Glossary: products/docs-standard/glossary.md
             - How to use:
                 - Principles: products/docs-standard/how-to-use/principles.md
                 - Modeling: products/docs-standard/how-to-use/modeling.md
@@ -85,11 +88,14 @@ nav:
                 - Support note: products/docs-standard/taxonomy/support-note.md
             - Continuity: products/docs-standard/continuity-paths.md
             - Compliance support: products/docs-standard/compliance-support.md
+        
         - VSlices Framework:
             - Overview: products/framework/index.md
+            - Glossary: products/framework/glossary.md
 
     - Alive lab: 
         - Overview: alive-lab/index.md
+        - Glossary: alive-lab/glossary.md
         - Project stories:
             - Overview: alive-lab/project-stories/index.md
         - Field Notes:
