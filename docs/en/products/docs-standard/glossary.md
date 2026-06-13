@@ -1,8 +1,10 @@
 # VSlices Docs Standard glossary
 
-This glossary defines terms used by VSlices Docs Standard.
+This glossary defines concepts used by VSlices Docs Standard.
 
 VSlices Docs Standard focuses on preserving useful knowledge through living documentation structures.
+
+This glossary does not redefine every document type. Specific document types are explained in the Docs Standard taxonomy and in their own pages.
 
 These terms help describe what kind of knowledge should be documented, why it matters, and how documents can remain connected to real work.
 

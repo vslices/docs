@@ -18,6 +18,8 @@ These terms help preserve the relationship between observation, validation, lear
 
 - __Experiment__: a limited attempt to test whether an idea, document, abstraction, pattern, method, or implementation direction is useful in practice.
 
+> In Alive Lab, an experiment is a validation attempt, not a required documentation section.
+
 ## Knowledge artifacts
 
 - __Field Note__: a lightweight artifact used to preserve an observed lesson, pattern, risk, failure, tension, or recurring situation that is useful but not yet formal enough for stronger guidance.

@@ -1,4 +1,4 @@
-# Glossary
+# Shared glossary
 
 This glossary defines shared terms used across VSlices products.
 

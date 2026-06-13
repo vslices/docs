@@ -22,7 +22,7 @@ These terms help connect domain knowledge, application behavior, runtime require
 
 - __Invariant__: a rule that must remain true for a domain type, behavior, capability, or state to be considered valid.
 
-- __Validation__: the act of checking whether a value, behavior, command, request, or state satisfies expected rules before continuing.
+- __Runtime Validation__: the act of checking whether a value, behavior, command, request, or state satisfies expected rules before continuing.
 
 - __Expected error__: a known failure condition that belongs to the domain or application flow and should be modeled explicitly instead of treated as an unexpected exception.
 

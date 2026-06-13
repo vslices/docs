@@ -1,6 +1,6 @@
 # How to start?
 
-The goal of this section is to help you understand what VSlices is, why it exists, how its products relate to each other, and how it can be adopted progressively.
+The goal of this section is to help you understand what VSlices is, why it exists, how its products relate to each other, and what is intentionally still being validated.
 
 ## Recommended reading order
 
@@ -9,16 +9,16 @@ If you are new to VSlices, start with these pages:
 1. [What is VSlices?](what-is-vslices.md)
 2. [Why VSlices exists](why-vslices-exists.md)
 3. [Suite overview](suite-overview.md)
-4. [Adoption paths - WIP](adoption-paths.md)
+4. [Adoption paths are postponed](adoption-paths.md)
 
-This order introduces VSlices from the general idea.
+This order introduces VSlices from the general idea before moving into product-specific documentation.
 
 ## Foundational readings
 
 After the initial overview, these pages explain the deeper reasoning behind VSlices:
 
-* [The Continuity of Knowledge](../philosophy/continuity-of-knowledge.md) explains why VSlices treats software as a continuity problem between business knowledge, documentation, architecture, implementation, and evolution.
-* [VSlices and Development Methodologies](../comparisons/development-methodologies.md) explains how VSlices relates to Agile, Scrum, Extreme Programming, Lean, Domain-Driven Design, Waterfall, and other development approaches.
+- [The Continuity of Knowledge](../philosophy/continuity-of-knowledge.md) explains why VSlices treats software as a continuity problem between business knowledge, documentation, architecture, implementation, and evolution.
+- [VSlices and Development Methodologies](../comparisons/development-methodologies.md) explains how VSlices relates to Agile, Scrum, Extreme Programming, Lean, Domain-Driven Design, Waterfall, and other development approaches.
 
 These pages are not required before reading the product documentation, but they help clarify what VSlices is trying to preserve and how it differs from existing methodologies.
 
@@ -38,4 +38,6 @@ These pages are not required before reading the product documentation, but they 
 
 VSlices is still being defined and validated.
 
-Some pages are intentionally marked as work in progress. This documentation is expected to evolve as the products become clearer through real design and implementation work.
+Some pages are intentionally marked as work in progress. Other areas, such as adoption paths, are intentionally postponed until there is enough validation from real work.
+
+This documentation is expected to evolve as the products become clearer through real design, documentation, validation, and implementation work.
