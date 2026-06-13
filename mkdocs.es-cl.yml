@@ -25,3 +25,66 @@ nav:
         - Porque VSlices existe: start-here/why-vslices-exists.md
         - Descripción de la suite: start-here/suite-overview.md
         - Caminos de adopción: start-here/adoption-paths.md
+
+    - Productos:
+        - Introducción: products/index.md
+        - Glosario: products/Glosario.md
+        - VSlices Method:
+            - Introducción: products/method/index.md
+            - Glosario: products/method/Glosario.md
+            - Patrones:
+                - Introducción: products/method/patterns/index.md
+                - Modelo de colaboración: products/method/patterns/collaboration-model.md
+                - Selección de modalidad: products/method/patterns/modality-selection.md
+                - Cambio de modalidad: products/method/patterns/modality-switching.md
+                - Bucle de aprendizaje: products/method/patterns/learning-loop.md
+
+            - Guías de contexto:
+                - Introducción: products/method/context-guides/index.md
+                - Comenzar en un escenario no digitalizado: products/method/context-guides/non-digitalized-scenario.md
+                - Comenzar en un escenario digitalizado: products/method/context-guides/digitalized-scenario.md
+                - Unirse a un proyecto existente: products/method/context-guides/joining-existing-project.md
+                - Introducir el método en proyectos en curso: products/method/context-guides/introducing-method.md
+
+            - Afinidad entre documentos y etapas: products/method/document-stage-affinity.md
+
+        - VSlices Design:
+            - Introducción: products/design/index.md
+            - Glosario: products/design/Glosario.md
+            - Principios: products/design/principles.md
+            - Flujo de iteración: products/design/iteration-flow.md
+            - Modalidades:
+                - Context-first:
+                    - Introduction: products/design/modalities/context-first/index.md
+                    - Enfasis: products/design/modalities/context-first/emphasis.md
+                - Problem-first: 
+                    - Introduction: products/design/modalities/problem-first/index.md
+                    - Enfasis: products/design/modalities/problem-first/emphasis.md
+                - Slice-first:
+                    - Introduction: products/design/modalities/slice-first/index.md
+                    - Enfasis: products/design/modalities/slice-first/emphasis.md
+                - Comparaciones: products/design/modalities/comparisons.md
+        
+        - VSlices Docs Standard:
+            - Introducción: products/docs-standard/index.md
+            - Glosario: products/docs-standard/Glosario.md
+            - Como utilizar:
+                - Principios: products/docs-standard/how-to-use/principles.md
+                - Modelado: products/docs-standard/how-to-use/modeling.md
+                - Reglas anti burocracia: products/docs-standard/how-to-use/anti-bureaucracy-rules.md
+            - Taxonomy:
+                - Introducción: products/docs-standard/taxonomy/index.md
+                - Vocabulario de dominio: products/docs-standard/taxonomy/domain-vocabulary.md
+                - Documento de contexto: products/docs-standard/taxonomy/context-document.md
+                - Documento de proceso: products/docs-standard/taxonomy/process-document.md
+                - Documento de caso de uso: products/docs-standard/taxonomy/use-case-document.md
+                - Documento de capacidad: products/docs-standard/taxonomy/capability-document.md
+                - Registro de decisión: products/docs-standard/taxonomy/decision-record.md
+                - Nota de validación: products/docs-standard/taxonomy/validation-note.md
+                - Nota de soporte: products/docs-standard/taxonomy/support-note.md
+            - Continuidad: products/docs-standard/continuity-paths.md
+            - Soporte de Compliance: products/docs-standard/compliance-support.md
+        
+        - VSlices Framework:
+            - Introducción: products/framework/index.md
+            - Glosario: products/framework/Glosario.md
