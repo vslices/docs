@@ -19,19 +19,19 @@ plugins:
 nav:
     - Inicio: index.md
 
-    - Como empezar:
+    - Cómo empezar:
         - Introducción: start-here/index.md
-        - Que es VSlices: start-here/what-is-vslices.md
-        - Porque VSlices existe: start-here/why-vslices-exists.md
+        - Qué es VSlices: start-here/what-is-vslices.md
+        - Por qué VSlices existe: start-here/why-vslices-exists.md
         - Descripción de la suite: start-here/suite-overview.md
         - Caminos de adopción: start-here/adoption-paths.md
 
     - Productos:
         - Introducción: products/index.md
-        - Glosario: products/Glosario.md
+        - Glosario: products/glossary.md
         - VSlices Method:
             - Introducción: products/method/index.md
-            - Glosario: products/method/Glosario.md
+            - Glosario: products/method/glossary.md
             - Patrones:
                 - Introducción: products/method/patterns/index.md
                 - Modelo de colaboración: products/method/patterns/collaboration-model.md
@@ -50,29 +50,29 @@ nav:
 
         - VSlices Design:
             - Introducción: products/design/index.md
-            - Glosario: products/design/Glosario.md
+            - Glosario: products/design/glossary.md
             - Principios: products/design/principles.md
             - Flujo de iteración: products/design/iteration-flow.md
             - Modalidades:
                 - Context-first:
-                    - Introduction: products/design/modalities/context-first/index.md
-                    - Enfasis: products/design/modalities/context-first/emphasis.md
+                    - Introducción: products/design/modalities/context-first/index.md
+                    - Énfasis: products/design/modalities/context-first/emphasis.md
                 - Problem-first: 
-                    - Introduction: products/design/modalities/problem-first/index.md
-                    - Enfasis: products/design/modalities/problem-first/emphasis.md
+                    - Introducción: products/design/modalities/problem-first/index.md
+                    - Énfasis: products/design/modalities/problem-first/emphasis.md
                 - Slice-first:
-                    - Introduction: products/design/modalities/slice-first/index.md
-                    - Enfasis: products/design/modalities/slice-first/emphasis.md
+                    - Introducción: products/design/modalities/slice-first/index.md
+                    - Énfasis: products/design/modalities/slice-first/emphasis.md
                 - Comparaciones: products/design/modalities/comparisons.md
         
         - VSlices Docs Standard:
             - Introducción: products/docs-standard/index.md
-            - Glosario: products/docs-standard/Glosario.md
-            - Como utilizar:
+            - Glosario: products/docs-standard/glossary.md
+            - Cómo utilizar:
                 - Principios: products/docs-standard/how-to-use/principles.md
                 - Modelado: products/docs-standard/how-to-use/modeling.md
                 - Reglas anti burocracia: products/docs-standard/how-to-use/anti-bureaucracy-rules.md
-            - Taxonomy:
+            - Taxonomía:
                 - Introducción: products/docs-standard/taxonomy/index.md
                 - Vocabulario de dominio: products/docs-standard/taxonomy/domain-vocabulary.md
                 - Documento de contexto: products/docs-standard/taxonomy/context-document.md
@@ -87,4 +87,4 @@ nav:
         
         - VSlices Framework:
             - Introducción: products/framework/index.md
-            - Glosario: products/framework/Glosario.md
+            - Glosario: products/framework/glossary.md

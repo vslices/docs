@@ -16,15 +16,25 @@ These terms help connect domain discovery, documentation, architecture, implemen
 
 ## Core domain-to-software terms
 
-- __Scenario__: answers _where are we working?_ It represents the business, organizational, operational, or system context where knowledge is being observed. A scenario may include companies, ecosystems, departments, systems, constraints, people, and surrounding conditions.
+- __Scenario__: answers _where are we working?_ It represents the business, organizational, operational, or system context where knowledge is being observed. 
 
-- __Work Line__: answers _what do we offer or operate?_ It represents an area, department, service, business line, value stream, or stable offering inside a scenario. A work line helps identify what the organization provides or maintains.
+> A scenario may include companies, ecosystems, departments, systems, constraints, people, and surrounding conditions.
 
-- __Work Process__: answers _how do we do it?_ It represents the responsibilities, roles, coordination rules, and operational structure used to perform a work line. A work process explains how people, areas, or systems organize work to produce value.
+- __Work Line__: answers _what do we offer or operate?_ It represents an area, department, service, business line, value stream, or stable offering inside a scenario. 
 
-- __Workflow__: answers _what is done?_ It represents the concrete sequence of steps, decisions, handoffs, and responsible participants inside a work process. A workflow makes visible how work moves from one state, actor, system, or responsibility to another.
+> A work line helps identify what the organization provides or maintains.
 
-- __Use Case__: answers _what does this behavior mean?_ It represents the expected consequence, validations, rules, outcomes, and domain meaning of an interaction or operation. A use case explains why a behavior matters and what must be true for it to be valid.
+- __Work Process__: answers _how do we do it?_ It represents the responsibilities, roles, coordination rules, and operational structure used to perform a work line.
+
+> A work process explains how people, areas, or systems organize work to produce value.
+
+- __Workflow__: answers _what is done?_ It represents the concrete sequence of steps, decisions, handoffs, and responsible participants inside a work process. 
+
+> A workflow makes visible how work moves from one state, actor, system, or responsibility to another.
+
+- __Use Case__: answers _what does this behavior mean?_ It represents the expected consequence, validations, rules, outcomes, and domain meaning of an interaction or operation. 
+
+> A use case explains why a behavior matters and what must be true for it to be valid.
 
 ## Supporting concepts
 

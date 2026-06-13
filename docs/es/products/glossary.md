@@ -16,15 +16,25 @@ Estos términos ayudan a conectar el descubrimiento del dominio, la documentaci�
 
 ## Términos centrales de dominio a software
 
-- __Scenario__: responde _¿dónde estamos trabajando?_. Representa el contexto de negocio, organizacional, operativo o del sistema donde se está observando conocimiento. Un scenario puede incluir empresas, ecosistemas, departamentos, sistemas, restricciones, personas y condiciones circundantes.
+- __Scenario__: responde _¿dónde estamos trabajando?_. Representa el contexto de negocio, organizacional, operativo o del sistema donde se está observando conocimiento. 
 
-- __Work Line__: responde _¿qué ofrecemos u operamos?_. Representa un área, departamento, servicio, línea de negocio, flujo de valor u oferta estable dentro de un scenario. Un work line ayuda a identificar lo que la organización proporciona o mantiene.
+> Un scenario puede incluir empresas, ecosistemas, departamentos, sistemas, restricciones, personas y condiciones circundantes.
 
-- __Work Process__: responde _¿cómo lo hacemos?_. Representa las responsabilidades, roles, reglas de coordinación y estructura operativa usadas para ejecutar un work line. Un work process explica cómo personas, áreas o sistemas organizan el trabajo para producir valor.
+- __Work Line__: responde _¿qué ofrecemos u operamos?_. Representa un área, departamento, servicio, línea de negocio, flujo de valor u oferta estable dentro de un scenario.
 
-- __Workflow__: responde _¿qué se hace?_. Representa la secuencia concreta de pasos, decisiones, transferencias y participantes responsables dentro de un work process. Un workflow hace visible cómo el trabajo pasa de un estado, actor, sistema o responsabilidad a otro.
+> Un work line ayuda a identificar lo que la organización proporciona o mantiene.
 
-- __Use Case__: responde _¿qué significa este comportamiento?_. Representa la consecuencia esperada, las validaciones, reglas, resultados y significado de dominio de una interacción u operación. Un use case explica por qué un comportamiento importa y qué debe ser verdadero para que sea válido.
+- __Work Process__: responde _¿cómo lo hacemos?_. Representa las responsabilidades, roles, reglas de coordinación y estructura operativa usadas para ejecutar un work line.
+
+> Un work process explica cómo personas, áreas o sistemas organizan el trabajo para producir valor.
+
+- __Workflow__: responde _¿qué se hace?_. Representa la secuencia concreta de pasos, decisiones, transferencias y participantes responsables dentro de un work process. 
+
+> Un workflow hace visible cómo el trabajo pasa de un estado, actor, sistema o responsabilidad a otro.
+
+- __Use Case__: responde _¿qué significa este comportamiento?_. Representa la consecuencia esperada, las validaciones, reglas, resultados y significado de dominio de una interacción u operación.
+
+> Un use case explica por qué un comportamiento importa y qué debe ser verdadero para que sea válido.
 
 ## Conceptos de apoyo
 
@@ -40,7 +50,10 @@ Estos términos ayudan a conectar el descubrimiento del dominio, la documentaci�
 
 - __Feature__: un comportamiento, acción o vertical slice concreto que entrega valor o apoya una necesidad validada dentro de un contexto de dominio.
 
-- __Flow__: un movimiento dirigido de trabajo, datos, comportamiento o control a través de un sistema o proceso. En documentación, un flow puede describir movimiento de negocio. En implementación, puede convertirse en una estructura ejecutable.
+- __Flow__: un movimiento dirigido de trabajo, datos, comportamiento o control a través de un sistema o proceso. 
+
+> En documentación, un flow puede describir movimiento de negocio. 
+> En implementación, puede convertirse en una estructura ejecutable.
 
 ## Conceptos de conocimiento
 
