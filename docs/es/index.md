@@ -64,7 +64,7 @@ El [Alive Lab](alive-lab/index.md) preserva teorías, historias de proyectos, de
 
 ## Decisiones
 
-Las decisiones importantes de metodología, producto y documentación se registran en la [sección de Decisions](decisions/index.md). Estos registros preservan:
+Las decisiones importantes de metodología, producto y documentación se registran en la [sección de Decisiones](decisions/index.md). Estos registros preservan:
 
 * por qué se tomó una decisión
 * qué tradeoffs fueron aceptados
