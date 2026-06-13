@@ -9,8 +9,8 @@ The suite should grow from real or simulated project work, concrete problems, re
 Alive Lab helps preserve learning while it is still evolving. Its purpose is to capture:
 
 * project experience
-* design experiments
-* documentation experiments
+* design explorations
+* documentation explorations
 * architectural observations
 * framework exploration
 * early theories
@@ -79,4 +79,4 @@ Ideas should move from Alive Lab into official VSlices guidance only when they h
 
 Alive Lab is still early.
 
-For now, it mainly exists to preserve the space where future project learning, theories, and theories can live. More content will be added as VSlices is tested through concrete work.
+For now, it mainly exists to preserve the space where future project learning, experiments, and theories can live. More content will be added as VSlices is tested through concrete work.

@@ -137,6 +137,8 @@ The Framework may include concepts such as:
 
 The Framework should not hide engineering concepts. It should make useful patterns easier to compose, standardize, test, and evolve.
 
+> VSlices Framework is currently experimental, and its public documentation is intentionally limited during v0.1-beta.
+
 ## A simplified example
 
 A team may start with an unclear business process.

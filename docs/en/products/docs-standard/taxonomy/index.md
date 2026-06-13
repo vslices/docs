@@ -4,7 +4,7 @@ VSlices Docs Standard organizes documents by the kind of knowledge they preserve
 
 The goal of this taxonomy is to help teams choose the right document based on what they need to protect from being lost.
 
-This taxonomy does not define a workflow. It does not say which document must be created first.It only explains what each document is best suited to preserve.
+This taxonomy does not define a workflow. It does not say which document must be created first. It only explains what each document is best suited to preserve.
 
 ## Core idea
 

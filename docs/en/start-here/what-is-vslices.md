@@ -74,3 +74,4 @@ Docs Standard defines documentation structures that preserve system intent. The 
 
 Framework provides .NET libraries, primitives, and development patterns for implementing domain-oriented software with low ceremony and progressive architecture.
 
+> VSlices Framework is currently experimental, and its public documentation is intentionally limited during v0.1-beta.
