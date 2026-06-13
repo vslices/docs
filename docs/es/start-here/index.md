@@ -9,7 +9,7 @@ Si eres nuevo en VSlices, comienza con estas páginas:
 1. [¿Qué es VSlices?](what-is-vslices.md)
 2. [Por qué existe VSlices](why-vslices-exists.md)
 3. [Vista general de la suite](suite-overview.md)
-4. [Las rutas de adopción están pospuestas](adoption-paths.md)
+4. [Rutas de adopción futuras](adoption-paths.md)
 
 Este orden introduce VSlices desde la idea general antes de pasar a la documentación específica de producto.
 

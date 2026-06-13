@@ -13,6 +13,15 @@ theme:
 plugins: 
     - search:
         lang: es
+    - mermaid2:
+        version: 10.0.2
 
 nav:
     - Inicio: index.md
+
+    - Como empezar:
+        - Introducción: start-here/index.md
+        - Que es VSlices: start-here/what-is-vslices.md
+        - Porque VSlices existe: start-here/why-vslices-exists.md
+        - Descripción de la suite: start-here/suite-overview.md
+        - Caminos de adopción: start-here/adoption-paths.md

@@ -9,7 +9,7 @@ If you are new to VSlices, start with these pages:
 1. [What is VSlices?](what-is-vslices.md)
 2. [Why VSlices exists](why-vslices-exists.md)
 3. [Suite overview](suite-overview.md)
-4. [Adoption paths are postponed](adoption-paths.md)
+4. [Future adoption paths](adoption-paths.md)
 
 This order introduces VSlices from the general idea before moving into product-specific documentation.
 
