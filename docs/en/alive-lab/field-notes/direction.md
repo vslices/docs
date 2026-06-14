@@ -1,4 +1,4 @@
-# Future Direction: VSlices Human Factors
+# Future Direction: VSlices Exp. Continuity
 
 ## Status
 
@@ -21,7 +21,7 @@ Several Field Notes explore recurring patterns related to:
 
 Over time, these observations may reveal consistent patterns that justify a more structured body of knowledge.
 
-## Why Human Factors Is Not A Product Today
+## Why Exp. Continuity Is Not A Product Today
 
 The current collection is primarily based on personal experience and a limited number of observed projects.
 
@@ -45,7 +45,7 @@ No attempt is being made to prescribe behavior. The objective is to learn before
 
 ## Possible Future Evolution
 
-If enough recurring patterns emerge, Field Notes may eventually contribute to a dedicated VSlices Human Factors initiative.
+If enough recurring patterns emerge, Field Notes may eventually contribute to a dedicated VSlices Exp. Continuity initiative.
 
 Potential areas include:
 
@@ -62,6 +62,6 @@ At that point, the focus would shift from isolated observations toward validated
 
 ## Guiding Principle
 
-Human Factors should emerge from Field Notes and they should not be written to justify Human Factors.
+Exp. Continuity should emerge from Field Notes and they should not be written to justify Exp. Continuity.
 
 Observations come first, the product, __if it ever exists__, comes later.

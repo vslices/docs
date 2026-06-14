@@ -58,8 +58,6 @@ _Alive Lab_ explica cómo puede surgir parte de esa guía.
 
 ## Secciones
 
-## Secciones
-
 | Sección | Propósito |
 | --- | --- |
 | [Historias de proyecto](project-stories/index.md) | Preservar aprendizajes de proyectos concretos o escenarios similares a proyectos. |

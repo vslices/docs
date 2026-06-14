@@ -10,7 +10,7 @@ Una Historia de proyecto puede mostrar cómo VSlices se usa para comprender un d
 
 VSlices no debe evolucionar solo a partir de ideas abstractas.
 
-Antes de que un patrón, estructura de documento, técnica de diseño o primitive del framework se convierta en parte de la suite, debe observarse mediante trabajo de proyecto. Las Historias de proyecto ayudan a preservar:
+Antes de que un patrón, estructura de documento, técnica de diseño o primitiva del _framework_ se convierta en parte de la suite, debe observarse mediante trabajo de proyecto. Las Historias de proyecto ayudan a preservar:
 
 * qué problema o contexto se estaba explorando
 * qué conceptos de VSlices fueron útiles

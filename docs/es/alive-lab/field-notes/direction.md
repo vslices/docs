@@ -8,7 +8,7 @@ No es un producto oficial de VSlices.
 
 ## Antecedentes
 
-Varias Notas de campo exploran patrones recurrentes relacionados con:
+Varias Notas de Campo exploran patrones recurrentes relacionados con:
 
 - agotamiento
 - sobrecompromiso
