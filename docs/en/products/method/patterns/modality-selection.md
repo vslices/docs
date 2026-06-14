@@ -77,9 +77,9 @@ A useful selection usually starts by naming the dominant uncertainty.
 
 | Current signal | Start with | Why |
 | --- | --- | --- |
-| The team does not understand the surrounding context. | __Context-First__ | The next decision needs broader understanding before choosing what to build. |
-| The team understands the area, but not the problem. | __Problem-First__ | The next decision needs problem clarity before choosing a solution. |
-| The team understands enough to learn through delivery. | __Slice-First__ | The next decision can be made safer by validating a small vertical slice. |
+| The team does not understand the surrounding context. | __[Context-First](../../design/modalities/context-first/index.md)__ | The next decision needs broader understanding before choosing what to build. |
+| The team understands the area, but not the problem. | __[Problem-First](../../design/modalities/problem-first/index.md)__ | The next decision needs problem clarity before choosing a solution. |
+| The team understands enough to learn through delivery. | __[Slice-First](../../design/modalities/slice-first/index.md)__ | The next decision can be made safer by validating a small vertical slice. |
 
 The selected modality should reduce uncertainty. It should not become the identity of the iteration.
 

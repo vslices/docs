@@ -1,15 +1,33 @@
 # VSlices
 
-**VSlices** es una suite progresiva de ingeniería de software enfocada en preservar continuidad entre el descubrimiento del dominio, la documentación, el razonamiento de diseño, la arquitectura, la implementación y la evolución del sistema.
+__VSlices__ es una suite progresiva de ingeniería de software enfocada en preservar continuidad entre el descubrimiento del dominio, la documentación, el razonamiento de diseño, la arquitectura, la implementación y la evolución del sistema.
 
 Está compuesta por:
 
-* **VSlices Framework**, para apoyar la implementación.
-* **VSlices Design**, para el razonamiento de diseño y las técnicas de modelado.
-* **VSlices Docs Standard**, para estructuras de documentación viva.
-* **VSlices Method**, para conectar descubrimiento, documentación, diseño, arquitectura e implementación.
+* __VSlices Framework__, para apoyar la implementación.
+* __VSlices Design__, para el razonamiento de diseño y las técnicas de modelado.
+* __VSlices Docs Standard__, para estructuras de documentación viva.
+* __VSlices Method__, para conectar descubrimiento, documentación, diseño, arquitectura e implementación.
 
 VSlices existe para reducir complejidad accidental y preservar la intención arquitectónica a medida que un sistema evoluciona.
+
+## Estado actual de madurez
+
+VSlices se encuentra actualmente en una etapa de __beta prerelease__.
+
+Esta documentación se comparte temprano para validar si la suite comunica sus ideas con claridad, preserva la continuidad conceptual entre sus productos y ayuda a las personas a razonar sobre ingeniería de software sin añadir ceremonia innecesaria.
+
+La versión actual debe leerse como una instantánea fundacional, no como una especificación final del producto.
+
+| Área | Estado actual | Qué esperar |
+| --- | --- | --- |
+| VSlices Design | Beta prerelease | Las ideas principales de diseño, los principios y las<br/>modalidades de modelado están disponibles para<br/>comentarios tempranos.<br/><br/>Algunas técnicas pueden seguir evolucionando a medida<br/>que se validan en proyectos reales. |
+| VSlices Docs Standard | Beta prerelease | El modelo de documentación, los tipos de documento y<br/>los principios de continuidad están disponibles para<br/>comentarios tempranos.<br/><br/>Las plantillas y ejemplos pueden volverse más concretos<br/>con el tiempo. |
+| VSlices Method | Beta prerelease | El método conecta actualmente el razonamiento de<br/>diseño, la documentación y la intención de<br/>implementación.<br/><br/>Sus modelos de colaboración y continuidad están<br/>disponibles para revisión y refinamiento. |
+| VSlices Framework | Experimental | La documentación de Framework está intencionalmente<br/>limitada mientras los conceptos de Design, Docs<br/>Standard y Method se revisan juntos.<br/><br/>Su modelo de implementación puede cambiar a medida<br/>que mejore el alineamiento. |
+| Alive Lab | Exploratory | Las field notes, project stories, theories y decisiones<br/>preservan el aprendizaje en curso.<br/><br/>Estos materiales pueden influir en VSlices, pero no todos<br/>son orientación oficial del producto. |
+
+El objetivo de este prerelease no es presentar VSlices como completo. Es hacer visible el pensamiento actual, recibir comentarios y mejorar la suite antes de expandir la documentación de Framework y traducir la documentación completa al español.
 
 ## Comienza aquí
 
@@ -17,17 +35,15 @@ Si eres nuevo en VSlices, comienza con estas páginas:
 
 * [¿Cómo empezar?](start-here/index.md)
 * [¿Qué es VSlices?](start-here/what-is-vslices.md)
-* [¿Por qué existe VSlices?](start-here/why-vslices-exists.md)
+* [Por qué existe VSlices](start-here/why-vslices-exists.md)
 * [Vista general de la suite](start-here/suite-overview.md)
-* [Rutas de adopción](start-here/adoption-paths.md)
+* [Rutas de adopción - WIP](start-here/adoption-paths.md)
 
 Si solo quieres entender la idea central, comienza con [¿Qué es VSlices?](start-here/what-is-vslices.md).
 
-Si quieres entender por qué existe VSlices, lee [¿Por qué existe VSlices?](start-here/why-vslices-exists.md).
+Si quieres entender por qué existe VSlices, lee [Por qué existe VSlices](start-here/why-vslices-exists.md).
 
 Si quieres entender cómo se relacionan los productos entre sí, lee [Vista general de la suite](start-here/suite-overview.md).
-
-Si quieres aplicar VSlices gradualmente, lee [Rutas de adopción](start-here/adoption-paths.md).
 
 ## Productos
 
@@ -44,9 +60,7 @@ Cada producto puede evolucionar independientemente, pero todos comparten el mism
 
 VSlices está siendo definido y validado mediante trabajo real de diseño e implementación de software.
 
-El [Alive Lab](alive-lab/index.md) preserva experimentos, historias de proyectos, descubrimientos de modelado y observaciones de campo que dan forma a VSlices con el tiempo.
-
-El principal proyecto de validación actual es [Domus Orbis](alive-lab/project-stories/domus-orbis/index.md), un proyecto de software enfocado en apoyar los procesos involucrados en la gestión del hogar.
+El [Alive Lab](alive-lab/index.md) preserva teorías, historias de proyectos, descubrimientos de modelado y observaciones de campo que dan forma a VSlices con el tiempo.
 
 ## Decisiones
 

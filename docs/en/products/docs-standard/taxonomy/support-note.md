@@ -26,15 +26,18 @@ The goal is to preserve useful knowledge without forcing premature structure.
 
 Support Notes may include:
 
-- __Concept Note__: captures an early concept before it becomes part of the Domain Vocabulary or another document.
-- __Assumption Note__: captures something the team believes to be true but has not validated yet.
-- __Risk Note__: captures a possible source of failure, misunderstanding, delay, rework, or accidental complexity.
-- __Open Question__: captures something the team still needs to understand.
-- __Feature Note__: captures an early feature idea before its use case, capability, or scope is clear.
-- __Feedback Note__: captures input from users, domain experts, stakeholders, implementation, or operation.
-- __Implementation Note__: captures useful technical detail that is not yet a decision record.
-- __Scope Note__: captures what may be included, excluded, postponed, or intentionally ignored.
-- __Improvement Note__: captures a possible improvement before it becomes a planned change.
+| Type                | When to use it                                                                        | Use                                                                                                       |
+| ------------------- | ------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------- |
+| Concept Note        | When an idea appears but is still<br/>immature.                                       | Captures an early concept before it<br/>becomes part of the Domain<br/>Vocabulary or another document.    |
+| Assumption Note     | When something seems true, but<br/>has not been validated yet.                        | Captures something the team believes<br/>to be true, but has not validated yet.                           |
+| Risk Note           | When something could fail, cause<br/>delay, or introduce accidental<br/>complexity.       | Captures a possible source of failure,<br/>misunderstanding, delay, rework, or<br/>accidental complexity. |
+| Open Question       | When the team still needs to<br/>understand something.                                | Captures something the team still<br/>needs to understand.                                                |
+| Feature Note        | When a *feature* idea appears<br/>before the use case, capability,<br/>or scope is clear. | Captures an early *feature* idea before<br/>its use case, capability, or scope is<br/>clear.                  |
+| Feedback Note       | When someone provides input<br/>that may change understanding<br/>or direction.           | Captures input from users, domain<br/>experts, stakeholders, implementation,<br/>or operation.                |
+| Implementation Note | When useful technical detail<br/>appears, but there is no decision<br/>yet.               | Captures useful technical detail that is<br/>not yet a Decision Record.                                   |
+| Scope Note          | When something may be included,<br/>excluded, postponed, or<br/>intentionally ignored.    | Captures what may be included,<br/>excluded, postponed, or intentionally<br/>ignored.                         |
+| Improvement Note    | When a possible improvement<br/>appears, but is not yet a planned<br/>change.             | Captures a possible improvement<br/>before it becomes a planned<br/>change.                                   |
+
 
 ## When to use it
 
@@ -93,14 +96,17 @@ Which documents, decisions, or notes are connected?
 
 This document can support alignment with existing standards and documentation practices. It does not make the documentation compliant by itself.
 
-| Standard or practice | Affinity | Supports | Missing for stricter alignment |
-| -------------------- | -------- | -------- | ------------------------------ |
-| ISO/IEC/IEEE 29148 | Medium | Assumptions, risks, open questions, feedback, and early requirement inputs. | Formal requirement statements, attributes, verification, and requirements management. |
-| ISO/IEC/IEEE 42010 | Medium | Early concerns, stakeholder notes, rationale inputs, and relationships. | Formal viewpoints, views, correspondences, and architecture description framework. |
-| arc42 | Medium | Risks, constraints, open questions, glossary candidates, and decision inputs. | Complete arc42 structure and formal section placement. |
-| ADR | Medium | Early decision inputs, options, assumptions, and risks. | Formal decision record and governance lifecycle. |
-| C4 Model | Low | Early notes about boundaries, systems, and responsibilities. | Diagram notation and model hierarchy. |
-| 4+1 View Model | Low | Early scenario, behavior, or view-related notes. | Complete architecture view model. |
+| Standard | Affinity | Supports |
+| --- | --- | --- |
+| ISO/IEC/IEEE 29148 | Medium | <ul><li>Assumptions</li><li>Risks</li><li>Open questions</li><li>Feedback</li><li>Early requirement inputs</li></ul> |
+| ISO/IEC/IEEE 42010 | Medium | <ul><li>Early concerns</li><li>Stakeholder notes</li><li>Rationale inputs</li><li>Relationships</li></ul> |
+
+| Practice | Affinity | Supports |
+| --- | --- | --- |
+| arc42 | Medium | <ul><li>Risks</li><li>Constraints</li><li>Open questions</li><li>Glossary candidates</li><li>Decision inputs</li></ul> |
+| C4 Model | Low | Early notes about: <ul><li>Boundaries</li><li>Systems</li><li>Responsibilities</li></ul> |
+| 4+1 Model | Low | <ul><li>Early scenario</li><li>Behavior</li><li>View-related notes</li></ul> |
+| ADR | Medium | <ul><li>Early decision inputs</li><li>Options</li><li>Assumptions</li><li>Risks</li></ul> |
 
 ## Common mistakes
 

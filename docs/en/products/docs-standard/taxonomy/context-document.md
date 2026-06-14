@@ -133,26 +133,31 @@ Use the expanded version when the scenario is broad, risky, fragmented, or likel
 
 This document can support alignment with existing standards and documentation practices. It does not make the documentation compliant by itself.
 
-| Standard or practice | Affinity | Supports | Missing for stricter alignment |
-| -------------------- | -------- | -------- | ------------------------------ |
-| ISO/IEC/IEEE 42010 | High | Context, concerns, stakeholders, boundaries, relationships, and rationale inputs. | Formal architecture description, viewpoints, views, and correspondence model. |
-| C4 Model | High | System context thinking, actors, systems, and boundary awareness. | Container, component, code views, and diagram notation. |
-| arc42 | High | Context and scope, external interfaces, constraints, risks, and glossary connections. | Complete arc42 structure by default. |
-| ISO/IEC/IEEE 29148 | Medium | Context for requirements, assumptions, risks, and traceability. | Formal requirements specification and management process. |
-| 4+1 View Model | Medium | Scenario and context grounding for later views. | Complete architecture view model. |
-| ADR | Low / Medium | Context for decisions and tradeoffs. | Decision-specific structure and governance. |
+| Standard | Affinity | Supports |
+| -------------------- | -------- | -------- |
+| ISO/IEC/IEEE 29148 | Medium | Context for:<ul><li>Requirements</li><li>Assumptions</li><li>Risks</li><li>Traceability</li></ul> |
+| ISO/IEC/IEEE 42010 | High | <ul><li>Context</li><li>Concerns</li><li>Stakeholders</li><li>Boundaries</li><li>Relationships</li><li>Rationale inputs</li></ul> |
+
+| Practice | Affinity | Supports |
+| -------------------- | -------- | -------- |
+| C4 Model | High | <ul><li>System context thinking</li><li>Actors</li><li>Systems</li><li>Boundary awareness</li></ul> |
+| arc42 | High | <ul><li>Context and scope</li><li>External interfaces</li><li>Constraints</li><li>Risks</li><li>Glossary connections</li></ul> |
+| 4+1 Model | Medium | Scenario and context grounding for later views. |
+| ADR | Low / Medium | Context for decisions and tradeoffs. |
 
 ## Related artifacts
 
 A Context Document may support or be supported by:
 
-- __Domain Vocabulary__: preserves important terms discovered inside the scenario.
-- __Process Document__: describes how work lines operate through responsibilities and workflows.
-- __Use Case Document__: defines expected behavior supported by the scenario.
-- __Capability Document__: identifies stable abilities needed inside the scenario or work line.
-- __Decision Record__: explains decisions made because of contextual constraints.
-- __Validation Note__: captures learning that changes or confirms the scenario.
-- __Support Note__: captures early findings before they become part of the context.
+| Artifact                                      | Relationship                                                             |
+| --------------------------------------------- | ------------------------------------------------------------------------ |
+| [Domain Vocabulary](domain-vocabulary.md)     | Preserves important terms discovered inside the scenario.                |
+| [Process Document](process-document.md)       | Describes how work lines operate through responsibilities and workflows. |
+| [Use Case Document](use-case-document.md)     | Defines expected behavior supported by the scenario.                     |
+| [Capability Document](capability-document.md) | Identifies stable abilities needed inside the scenario or work line.     |
+| [Decision Record](decision-record.md)         | Explains decisions made because of contextual constraints.               |
+| [Validation Note](validation-note.md)         | Captures learning that changes or confirms the scenario.                 |
+| [Support Note](support-note.md)               | Captures early findings before they become part of the context.          |
 
 ## Common mistakes
 

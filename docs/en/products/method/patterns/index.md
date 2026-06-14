@@ -1,6 +1,6 @@
 # Method Patterns
 
-Method Patterns describe recurring working decisions inside VSlices Method.
+Method Patterns describe recurring working patterns and decision models inside VSlices Method.
 
 They help teams preserve continuity while moving through uncertainty, collaboration, documentation, implementation and feedback.
 

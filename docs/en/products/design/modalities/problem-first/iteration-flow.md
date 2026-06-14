@@ -4,10 +4,10 @@ Problem-First gives more attention to Planning while keeping enough Understandin
 
 | Stage           | Emphasis      | Objective                                                                        |
 | --------------- | ------------- | -------------------------------------------------------------------------------- |
-| Understanding   | Medium        | Understand the problem and the domain concepts directly around it.               |
-| Contextualizing | Medium        | Place the problem inside its surrounding flow and responsibilities.              |
+| Understanding   | Medium        | Understand the problem and the domain concepts directly<br/>around it.               |
+| Contextualizing | Medium        | Place the problem inside its surrounding flow and<br/>responsibilities.              |
 | Planning        | High          | Define the most effective improvement and make risks explicit.                   |
-| Building        | Medium / High | Implement the improvement and validate whether the problem was actually reduced. |
+| Building        | Medium / High | Implement the improvement and validate whether the problem<br/>was actually reduced. |
 
 Problem-First does not require the broadest possible base.
 
@@ -241,40 +241,3 @@ The team should watch for:
 If Building reveals that the problem was misunderstood, the iteration should return to Understanding.
 
 That is not failure, it is learning.
-
-# Risks and tradeoffs
-
-Problem-First is useful, but it can fail when the team treats the initial problem statement as complete truth. Common risks include:
-
-- local optimization
-- symptom solving
-- weak surrounding context
-- hidden dependencies
-- incomplete risk analysis
-- unclear success criteria
-- overfitting the solution to one visible case
-- ignoring affected responsibilities
-- building too quickly from a problem label
-- turning a business problem into a technical task too early
-
-To avoid these risks, the team should keep the problem connected to its context. The team should ask:
-
-- Do we understand the problem or only its label?
-- Are we solving a cause or a symptom?
-- What surrounding flow could change the decision?
-- What risks are we accepting?
-- What would prove that the problem improved?
-- Are we keeping the solution proportional to the problem?
-- Are we documenting because it helps, or because it feels safe?
-- Do we have enough context to build responsibly?
-
-Problem-First should create focused progress. It should not become a shortcut for shallow understanding.
-
-# Relationship with other modalities
-
-Problem-First is not always the best modality, it is best when there is a clear problem and enough context can be gathered around it.
-
-- A team may start with Context-First to understand a broad domain, then move to Problem-First when a valuable problem becomes clear.
-- A team may also move from Problem-First to Slice-First when the best way to validate the improvement is to build a small vertical slice quickly.
-
-The modalities can be combined across iterations. They are not identities, they are strategies.

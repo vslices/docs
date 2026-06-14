@@ -71,3 +71,13 @@ Decisions are being documented progressively. Some decisions may describe stable
 Others may describe temporary choices made to keep the current iteration focused.
 
 For now, this section should be read as a record of how VSlices is being shaped, not as a complete history of every discussion behind it.
+
+## Historical note
+
+The first decisions in this section are intentionally brief.
+
+They were written during the earliest stage of VSlices, before the documentation structure and decision-record style became more explicit.
+
+They are preserved as historical records, not rewritten to match later documentation maturity.
+
+Later decisions may contain more context, rationale, consequences, and tradeoffs because the project progressively improved how architectural intent was documented.

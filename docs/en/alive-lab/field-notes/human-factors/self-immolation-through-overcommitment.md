@@ -5,6 +5,7 @@ _When personal sacrifice is used to compensate for misalignment_
 ## Definition
 
 > A pattern where an engineer repeatedly accepts commitments beyond sustainable capacity in an attempt to:
+> 
 > - Help a team member (More complex that it seems)
 > - Reduce pressure from stakeholders 
 > - Accelerate outcomes
@@ -12,20 +13,22 @@ _When personal sacrifice is used to compensate for misalignment_
 > - To feel indispensable
 > 
 > This behavior is often motivated by:
+>
 > - Deep empathy and low discomfort tolerance
 > - Expanded sense of responsibility
 > - Genuine desire to contribute
 > 
 > Over time, the accumulated commitments become impossible to sustain, resulting in:
+>
 > - Exhaustion and burnout 
 > - Reduced predictability
 > - Delayed deliveries (further than an early renegotiation would have)
 
 ## Context
 
-This pattern was observed within a large and highly structured organization.
+This pattern was observed within a large and highly structured organization. The engineer involved was accustomed to environments where challenging assumptions, proposing improvements, and driving change were actively encouraged. 
 
-The engineer involved was accustomed to environments where challenging assumptions, proposing improvements, and driving change were actively encouraged. However, the organization prioritized:
+However, the organization prioritized:
 
 - predictability
 - process adherence
@@ -108,7 +111,9 @@ Ironically, the attempt to reduce pressure often creates more pressure later.
 - The engineer becomes a temporary buffer between the organization and reality.
 - The system accumulates technical and emotional debt at the same time.
 
-When overcommitment becomes the default response to pressure, the organization stops receiving accurate feedback. The project may appear protected for a while, but the information needed to make better decisions is being burned along with the person absorbing the pressure.
+When overcommitment becomes the default response to pressure, the organization stops receiving accurate feedback.
+
+The project may appear protected for a while, but the information needed to make better decisions is being burned along with the person absorbing the pressure.
 
 ## Posible intervertions
 
@@ -129,7 +134,8 @@ When overcommitment becomes the default response to pressure, the organization s
 - Prefer early disappointment over late failure.
 
 A useful intervention is to say: "I want to help, but I do not want to hide the real shape of the problem."
-That sentence preserves empathy without turning the engineer into fuel.
+
+> That sentence preserves empathy without turning the engineer into fuel.
 
 ## Reflection Questions
 
@@ -148,6 +154,7 @@ That sentence preserves empathy without turning the engineer into fuel.
 The most painful lesson from this experience was not the fire. It was realizing that they wanted a campfire, not a personfire:
 
 - The objective was never to deliver faster, the objective was to reduce pressure on people who were already under pressure.
-- The engineer attempted to solve an organizational problem through personal sacrifice. At the end of the day, the sacrifice was real, but the problem remained.
+- The engineer attempted to solve an organizational problem through personal sacrifice.
+- At the end of the day, the sacrifice was real, but the problem remained.
 
 More effort can compensate for many things. But most of the time, misalignment is not one of them.

@@ -103,7 +103,9 @@ Ironically, the more capable the individual becomes, the easier it becomes to ex
 - Documentation and knowledge sharing are postponed because immediate coordination consumes available focus.
 - The team may mistake constant responsiveness for sustainable productivity.
 
-When one person holds too many active contexts, the system may appear coordinated, but the coordination is running on human attention instead of explicit structure. That works for a while, until the person becomes slower, forgetful, reactive or exhausted.
+When one person holds too many active contexts, the system may appear coordinated, but the coordination is running on human attention instead of explicit structure.
+
+That works for a while, until the person becomes slower, forgetful, reactive or exhausted.
 
 ## Posible intervertions
 
