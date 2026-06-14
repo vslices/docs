@@ -111,26 +111,31 @@ Use the expanded version when the decision is risky, disputed, architectural, or
 
 This document can support alignment with existing standards and documentation practices. It does not make the documentation compliant by itself.
 
-| Standard or practice | Affinity | Supports | Missing for stricter alignment |
-| -------------------- | -------- | -------- | ------------------------------ |
-| ADR | High | Decision, rationale, options, tradeoffs, consequences, and review conditions. | A strict ADR template, numbering scheme, and governance workflow. |
-| arc42 | High | Architecture decisions, risks, constraints, and rationale. | Complete arc42 architecture documentation structure. |
-| ISO/IEC/IEEE 42010 | Medium / High | Architecture rationale, concerns, decisions, relationships, and consequences. | Formal architecture decision model inside a conforming architecture description. |
-| ISO/IEC/IEEE 29148 | Medium | Requirements-related decisions, assumptions, validation impact, and traceability. | Formal requirements management and verification structure. |
-| 4+1 View Model | Medium | Decisions affecting scenarios, logical structure, process, development, or physical views. | Complete 4+1 view model. |
-| C4 Model | Medium | Decisions that may affect context, container, component, or code diagrams. | Diagram notation and visual model hierarchy. |
+| Standard | Affinity | Supports |
+| -------------------- | -------- | -------- | |
+| ISO/IEC/IEEE 29148 | Medium | Requirements-related decisions, assumptions, validation impact, and traceability. |
+| ISO/IEC/IEEE 42010 | Medium / High | Architecture rationale, concerns, decisions, relationships, and consequences. |
+
+| Practice | Affinity | Supports |
+| -------------------- | -------- | -------- |
+| arc42 | High | Architecture decisions, risks, constraints, and rationale. |
+| 4+1 View Model | Medium | Decisions affecting scenarios, logical structure, process, development, or physical views. |
+| C4 Model | Medium | Decisions that may affect context, container, component, or code diagrams. |
+| ADR | High | Decision, rationale, options, tradeoffs, consequences, and review conditions. |
 
 ## Related artifacts
 
 A Decision Record may support or be supported by:
 
-- __Context Document__: explains the scenario or constraint behind the decision.
-- __Process Document__: shows process conditions that influenced the decision.
-- __Use Case Document__: describes behavior affected by the decision.
-- __Capability Document__: explains abilities shaped by the decision.
-- __Domain Vocabulary__: preserves language decisions or naming choices.
-- __Validation Note__: confirms, challenges, or updates the decision.
-- __Support Note__: captures early options, risks, or assumptions before a decision is made.
+| Artifact                                      | Relationship                                                             |
+| --------------------------------------------- | ------------------------------------------------------------------------ |
+| [Context Document](context-document.md)       | Explains the scenario or constraint behind the decision.                 |
+| [Process Document](process-document.md)       | Shows process conditions that influenced the decision.                   |
+| [Use Case Document](use-case-document.md)     | Describes behavior affected by the decision.                             |
+| [Capability Document](capability-document.md) | Explains abilities shaped by the decision.                               |
+| [Domain Vocabulary](domain-vocabulary.md)     | Preserves language decisions or naming choices.                          |
+| [Validation Note](validation-note.md)         | Confirms, challenges, or updates the decision.                           |
+| [Support Note](support-note.md)               | Captures early options, risks, or assumptions before a decision is made. |
 
 ## Common mistakes
 

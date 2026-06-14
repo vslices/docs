@@ -85,25 +85,31 @@ Use the expanded version when terms are ambiguous, reused, business-critical, or
 
 This document can support alignment with existing standards and documentation practices. It does not make the documentation compliant by itself.
 
-| Standard or practice | Affinity | Supports | Missing for stricter alignment |
-| -------------------- | -------- | -------- | ------------------------------ |
-| arc42 | High | Glossary, terminology, aliases, examples, and shared language. | Formal glossary governance and complete arc42 structure. |
+| Standard | Affinity | Supports |
+| -------------------- | -------- | -------- |
 | ISO/IEC/IEEE 29148 | Medium | Requirement terminology, definitions, ambiguity reduction, and traceability. | Formal requirements terminology controls and requirements management. |
 | ISO/IEC/IEEE 42010 | Medium | Consistent terms for stakeholders, concerns, views, decisions, and architecture descriptions. | Formal architecture description language or controlled vocabulary model. |
-| C4 Model | Low / Medium | Naming consistency for systems, containers, components, and boundaries. | Diagram model and structural hierarchy. |
-| 4+1 View Model | Low / Medium | Shared language across scenarios and architecture views. | Complete architecture view model. |
-| ADR | Low / Medium | Naming choices that may influence decisions. | Decision-specific rationale and governance. |
+
+| Practice | Affinity | Supports |
+| -------------------- | -------- | -------- |
+| arc42 | High | Glossary, terminology, aliases, examples, and shared language. |
+| C4 Model | Low / Medium | Naming consistency for systems, containers, components, and boundaries. |
+| 4+1 View Model | Low / Medium | Shared language across scenarios and architecture views. |
+| ADR | Low / Medium | Naming choices that may influence decisions. |
 
 ## Related artifacts
 
 A Domain Vocabulary may support or be supported by:
 
-- __Context Document__: explains where the language appears.
-- __Process Document__: shows how terms are used inside business flows.
-- __Use Case Document__: depends on clear terms to define expected behavior.
-- __Capability Document__: may reuse vocabulary to name stable business abilities.
-- __Decision Record__: may explain why one term or interpretation was chosen.
-- __Support Note__: may capture early, uncertain, or disputed terms before they become vocabulary entries.
+| Artifact                                      | Relationship                                                                           |
+| --------------------------------------------- | -------------------------------------------------------------------------------------- |
+| [Context Document](context-document.md)       | Explains where the language appears.                                                   |
+| [Process Document](process-document.md)       | Shows how terms are used inside business flows.                                        |
+| [Use Case Document](use-case-document.md)     | Depends on clear terms to define expected behavior.                                    |
+| [Capability Document](capability-document.md) | May reuse vocabulary to name stable business abilities.                                |
+| [Decision Record](decision-record.md)         | May explain why one term or interpretation was chosen.                                 |
+| [Support Note](support-note.md)               | May capture early, uncertain, or disputed terms before they become vocabulary entries. |
+
 
 ## Common mistakes
 

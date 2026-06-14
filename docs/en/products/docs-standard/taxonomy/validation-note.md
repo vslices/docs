@@ -115,26 +115,26 @@ Use the expanded version when validation affects important decisions, risky assu
 
 This document can support alignment with existing standards and documentation practices. It does not make the documentation compliant by itself.
 
-| Standard or practice | Affinity | Supports | Missing for stricter alignment |
-| -------------------- | -------- | -------- | ------------------------------ |
-| ISO/IEC/IEEE 29148 | High | Validation, evidence, assumptions, feedback, impact, and traceability. | Formal verification plan, requirement verification method, audit-grade evidence controls, and requirements management workflow. |
-| ADR | Medium | Reviewing whether previous decisions were confirmed, challenged, or superseded. | Formal architecture decision lifecycle and governance process. |
-| ISO/IEC/IEEE 42010 | Medium | Rationale updates, architecture learning, and relationships between evidence and decisions. | Formal architecture description, viewpoints, views, and correspondence rules. |
-| arc42 | Medium | Risks, decisions, quality feedback, and evolution notes. | Complete arc42 structure and formal quality scenario integration. |
-| 4+1 View Model | Low / Medium | Scenario feedback and behavior validation. | Complete architecture view model and view-specific validation structure. |
-| C4 Model | Low | Feedback that may affect boundaries or architecture diagrams. | Diagram notation and visual hierarchy. |
-
-## Related artifacts
+| Standard or practice | Affinity | Supports |
+| -------------------- | -------- | -------- |
+| ISO/IEC/IEEE 29148 | High | Validation, evidence, assumptions, feedback, impact, and traceability. |
+| ADR | Medium | Reviewing whether previous decisions were confirmed, challenged, or superseded. |
+| ISO/IEC/IEEE 42010 | Medium | Rationale updates, architecture learning, and relationships between evidence and decisions. |
+| arc42 | Medium | Risks, decisions, quality feedback, and evolution notes. |
+| 4+1 View Model | Low / Medium | Scenario feedback and behavior validation. |
+| C4 Model | Low | Feedback that may affect boundaries or architecture diagrams. |## Related artifacts
 
 A Validation Note may support or be supported by:
 
-- __Context Document__: updates the scenario after new evidence appears.
-- __Process Document__: confirms or challenges how work is actually performed.
-- __Use Case Document__: validates expected behavior, consequence, errors, or rules.
-- __Capability Document__: confirms whether an ability supports real needs.
-- __Decision Record__: validates, challenges, or supersedes a decision.
-- __Domain Vocabulary__: updates terms when evidence clarifies language.
-- __Support Note__: captures early feedback before it becomes validated learning.
+| Artifact                                      | Relationship                                                  |
+| --------------------------------------------- | ------------------------------------------------------------- |
+| [Context Document](context-document.md)       | Updates the scenario after new evidence appears.              |
+| [Process Document](process-document.md)       | Confirms or challenges how work is actually performed.        |
+| [Use Case Document](use-case-document.md)     | Validates expected behavior, consequence, errors, or rules.   |
+| [Capability Document](capability-document.md) | Confirms whether an ability supports real needs.              |
+| [Decision Record](decision-record.md)         | Validates, challenges, or supersedes a decision.              |
+| [Domain Vocabulary](domain-vocabulary.md)     | Updates terms when evidence clarifies language.               |
+| [Support Note](support-note.md)               | Captures early feedback before it becomes validated learning. |
 
 ## Common mistakes
 

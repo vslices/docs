@@ -2,31 +2,27 @@
 
 > Puedes acceder a la [plantilla de documento de proceso aquí](https://github.com/vslices/docs-standard/blob/main/templates/process-document.md)
 
-Un Documento de proceso preserva cómo opera un work line.
+Un Documento de proceso (*Process Document* en inglés) preserva cómo opera una línea de trabajo.
 
-Su propósito es hacer visibles las responsabilidades, roles, reglas de coordinación, workflows, _handoffs_ y resultados lo suficiente como para apoyar mejores decisiones de diseño e implementación.
+Su propósito es hacer visibles responsabilidades, roles, reglas de coordinación, flujos de trabajo, traspasos y resultados lo suficiente como para apoyar mejores decisiones de diseño e implementación.
 
-Un Documento de proceso responde:
+Un Documento de proceso responde: __¿Cómo lo hacemos? ¿Qué se hace?__
 
-> ¿Cómo lo hacemos?
->
-> ¿Qué se hace?
-
-Un Documento de proceso no es un manual operativo completo. Describe el conocimiento de proceso que importa para entender, mejorar, automatizar o preservar cómo se realiza el trabajo.
+Un Documento de proceso no es un manual operacional completo. Describe el conocimiento del proceso que importa para entender, mejorar, automatizar o preservar cómo se realiza el trabajo.
 
 ## Propósito
 
 Un Documento de proceso ayuda al equipo a preservar:
 
-* **work process**: cómo se realiza un work line en la práctica.
-* **responsibilities**: quién posee, ejecuta, aprueba, apoya o reacciona al trabajo.
-* **roles and positions**: qué cargos, equipos, áreas o sistemas participan.
-* **coordination rules**: cómo los participantes organizan el trabajo entre ellos.
-* **workflows**: secuencias concretas de pasos, decisiones, _handoffs_ y participantes responsables.
-* **exceptions**: rutas alternativas, fallos, retrabajo o casos poco comunes.
-* **friction**: retrasos, ambigüedad, duplicación, trabajo manual o coordinación frágil.
+* **proceso de trabajo**: cómo se realiza una línea de trabajo en la práctica.
+* **responsabilidades**: quién posee, ejecuta, aprueba, apoya o reacciona al trabajo.
+* **roles y cargos**: qué cargos, equipos, áreas o sistemas participan.
+* **reglas de coordinación**: cómo los participantes organizan el trabajo entre ellos.
+* **flujos de trabajo**: secuencias concretas de pasos, decisiones, traspasos y participantes responsables.
+* **excepciones**: caminos alternativos, fallas, retrabajo o casos inusuales.
+* **fricción**: retrasos, ambigüedad, duplicación, trabajo manual o coordinación frágil.
 
-El objetivo es entender cómo está organizado el trabajo antes de cambiarlo o automatizarlo.
+El objetivo es entender cómo se organiza el trabajo antes de cambiarlo o automatizarlo.
 
 ## Cuándo usarlo
 
@@ -34,35 +30,35 @@ Usa un Documento de proceso cuando la forma en que se realiza el trabajo afecte 
 
 Es especialmente útil cuando:
 
-- __the work line needs operational clarity__: el equipo necesita entender cómo se produce actualmente el valor.
-- __responsibilities are important__: los roles, la propiedad, las aprobaciones o las reacciones afectan el proceso.
-- __coordination is fragile__: el trabajo depende de _handoffs_, tiempo, comunicación o acuerdos implícitos.
-- __several workflows exist__: el proceso contiene múltiples rutas, variantes o casos operativos.
-- __rules shape the process__: las condiciones de negocio afectan lo que puede ocurrir y quién debe actuar.
-- __automation is being considered__: el software puede apoyar, reemplazar o modificar el trabajo existente.
-- __current behavior is inconsistent__: distintas personas describen el proceso de manera diferente.
+* **la línea de trabajo necesita claridad operacional**: el equipo necesita entender cómo se produce valor actualmente.
+* **las responsabilidades son importantes**: roles, propiedad, aprobaciones o reacciones afectan el proceso.
+* **la coordinación es frágil**: el trabajo depende de traspasos, tiempos, comunicación o acuerdos implícitos.
+* **existen varios flujos de trabajo**: el proceso contiene múltiples caminos, variantes o casos operacionales.
+* **las reglas moldean el proceso**: condiciones de negocio afectan qué puede ocurrir y quién debe actuar.
+* **se está considerando automatización**: el *software* puede apoyar, reemplazar o modificar trabajo existente.
+* **el comportamiento actual es inconsistente**: distintas personas describen el proceso de forma diferente.
 
 ## Cuándo no usarlo
 
 Un Documento de proceso puede ser innecesario cuando:
 
-- __the process is trivial__: la forma en que se realiza el trabajo no afecta decisiones de diseño.
-- __the scenario is still unclear__: primero puede necesitarse un Documento de contexto o una Nota de soporte.
-- __only one interaction matters__: un Documento de caso de uso puede ser suficiente.
-- __only a sequence of steps matters__: una pequeña nota de workflow puede ser suficiente.
-- __the team is documenting every operational detail__: el documento se convierte en un manual de procedimiento exhaustivo.
-- __the process is too unstable__: puede ser mejor una Nota de soporte hasta que el work process sea más claro.
+* **el proceso es trivial**: la forma en que se realiza el trabajo no afecta decisiones de diseño.
+* **el escenario todavía no está claro**: puede necesitarse primero un Documento de contexto o una Nota de soporte.
+* **solo importa una interacción**: un Documento de caso de uso puede ser suficiente.
+* **solo importa una secuencia de pasos**: una pequeña nota de flujo de trabajo puede ser suficiente.
+* **el equipo está documentando cada detalle operacional**: el documento se vuelve un manual de procedimiento exhaustivo.
+* **el proceso es demasiado inestable**: una Nota de soporte puede ser mejor hasta que el proceso de trabajo sea más claro.
 
 ## Versión mínima
 
 Usa la versión mínima cuando el equipo necesite una descripción ligera de cómo se realiza el trabajo.
 
 ```md
-# Documento de proceso
+# Process Document
 
 ## Work process
 
-¿Cómo se realiza este work line?
+¿Cómo se realiza esta línea de trabajo?
 
 ## Purpose
 
@@ -74,9 +70,9 @@ Usa la versión mínima cuando el equipo necesite una descripción ligera de có
 
 ## Main workflow
 
-- Step 1.
-- Step 2.
-- Step 3.
+- Paso 1.
+- Paso 2.
+- Paso 3.
 
 ## Outcome
 
@@ -87,25 +83,12 @@ Usa la versión mínima cuando el equipo necesite una descripción ligera de có
 ¿Qué hace que este proceso sea frágil, lento, poco claro o riesgoso?
 ```
 
-## Afinidad con estándares
-
-Este documento puede apoyar la alineación con estándares y prácticas de documentación existentes. No vuelve la documentación conforme por sí mismo.
-
-| Standard or practice | Affinity | Supports | Missing for stricter alignment |
-| --- | --- | --- | --- |
-| arc42 | Medium / High | Runtime behavior, process movement, risks, responsibilities, and operational concerns. | Complete runtime view, building block view, and deployment integration. |
-| ISO/IEC/IEEE 29148 | Medium | Process-related requirements, assumptions, business rules, and validation inputs. | Formal requirement statements, attributes, verification methods, and requirements management. |
-| 4+1 View Model | Medium | Process-oriented view thinking and scenario support. | Complete process view and relationship with other architecture views. |
-| ISO/IEC/IEEE 42010 | Medium | Concerns, relationships, and process constraints that may shape architecture. | Formal viewpoints, views, correspondence rules, and architecture description framework. |
-| C4 Model | Low / Medium | Boundary and interaction awareness. | Visual model hierarchy and structural diagrams. |
-| ADR | Low / Medium | Process constraints that may justify decisions. | Formal decision record lifecycle. |
-
 ## Versión ampliada
 
-Usa la versión ampliada cuando el proceso sea complejo, riesgoso, transversal o probable de guiar la implementación.
+Usa la versión ampliada cuando el proceso sea complejo, riesgoso, transversal o probable de guiar implementación.
 
 ```md
-# Documento de proceso
+# Process Document
 
 ## Work process
 
@@ -144,56 +127,74 @@ Usa la versión ampliada cuando el proceso sea complejo, riesgoso, transversal o
 ## Related artifacts
 ```
 
+## Afinidad con estándares
+
+Este documento puede apoyar la alineación con estándares y prácticas de documentación existentes. No vuelve la documentación conforme por sí mismo.
+
+| Estándar           | Afinidad | Soporta                                                                                                                           |
+| ------------------ | -------- | --------------------------------------------------------------------------------------------------------------------------------- |
+| ISO/IEC/IEEE 29148 | Media    | <ul><li>Requisitos relacionados con procesos</li><li>Supuestos</li><li>Reglas de negocio</li><li>Entradas de validación</li></ul> |
+| ISO/IEC/IEEE 42010 | Media    | <ul><li>Intereses</li><li>Relaciones</li><li>Restricciones de proceso que pueden moldear la arquitectura</li></ul>                |
+
+| Práctica  | Afinidad     | Soporta                                                                                                                                                          |
+| --------- | ------------ | ---------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| arc42     | Media / Alta | <ul><li>Comportamiento en tiempo de ejecución</li><li>Movimiento del proceso</li><li>Riesgos</li><li>Responsabilidades</li><li>Intereses operacionales</li></ul> |
+| C4 Model  | Baja / Media | <ul><li>Conciencia de límites</li><li>Conciencia de interacciones</li></ul>                                                                                      |
+| 4+1 Model | Media        | <ul><li>Razonamiento orientado a vistas de proceso</li><li>Soporte de escenarios</li></ul>                                                                       |
+| ADR       | Baja / Media | <ul><li>Restricciones de proceso que pueden justificar decisiones</li></ul>                                                                                      |
+
 ## Artefactos relacionados
 
 Un Documento de proceso puede apoyar o ser apoyado por:
 
-- __Documento de contexto__: explica el scenario y el work line donde existe el proceso.
-- __Vocabulario de dominio__: preserva términos usados dentro del proceso.
-- __Documento de caso de uso__: describe el significado, las consecuencias y las validaciones de un comportamiento específico.
-- __Documento de capacidad__: identifica capacidades estables necesarias para realizar o mejorar el proceso.
-- __Registro de decisión__: explica elecciones tomadas por restricciones del proceso.
-- __Nota de validación__: captura lo aprendido después de cambiar o probar el proceso.
-- __Nota de soporte__: captura responsabilidades inciertas, variantes de workflow, riesgos, supuestos o preguntas abiertas.
+| Artefacto                                        | Relación                                                                                                     |
+| ------------------------------------------------ | ------------------------------------------------------------------------------------------------------------ |
+| [Documento de contexto](context-document.md)     | Explica el escenario y la línea de trabajo donde existe el proceso.                                          |
+| [Vocabulario de dominio](domain-vocabulary.md)   | Preserva términos usados dentro del proceso.                                                                 |
+| [Documento de caso de uso](use-case-document.md) | Describe el significado, consecuencias y validaciones de<br/>comportamientos específicos.                        |
+| [Documento de capacidad](capability-document.md) | Identifica capacidades estables requeridas para realizar o mejorar el<br/>proceso.                               |
+| [Registro de decisión](decision-record.md)       | Explica elecciones tomadas debido a restricciones del proceso.                                               |
+| [Nota de validación](validation-note.md)         | Captura lo aprendido después de cambiar o probar el proceso.                                                 |
+| [Nota de soporte](support-note.md)               | Captura responsabilidades inciertas, variantes de flujo de trabajo,<br/>riesgos, supuestos o preguntas abiertas. |
 
 ## Errores comunes
 
 Errores comunes incluyen:
 
-- __confundir proceso con workflow__: el documento solo enumera pasos y omite responsabilidades o coordinación.
-- __documentarlo todo__: el proceso se vuelve demasiado grande para guiar decisiones.
-- __escribir solo el camino feliz__: las excepciones y el retrabajo permanecen invisibles.
-- __ignorar _handoffs___: las partes más frágiles del proceso desaparecen.
-- __mezclar comportamiento actual y objetivo__: los lectores no pueden distinguir qué existe hoy y qué se propone.
-- __ocultar la propiedad__: las responsabilidades permanecen implícitas.
-- __saltar a la automatización__: el equipo diseña software antes de entender el trabajo.
-- __no actualizar después del cambio__: el proceso documentado ya no coincide con la realidad.
+* **confundir proceso con flujo de trabajo**: el documento solo lista pasos y omite responsabilidades o coordinación.
+* **documentar cada detalle**: el proceso se vuelve demasiado grande para guiar decisiones.
+* **escribir solo el camino feliz**: las excepciones y el retrabajo permanecen invisibles.
+* **ignorar traspasos**: las partes más frágiles del proceso desaparecen.
+* **mezclar comportamiento actual y objetivo**: los lectores no pueden distinguir qué existe hoy y qué se propone.
+* **ocultar propiedad**: las responsabilidades permanecen implícitas.
+* **saltar a automatización**: el equipo diseña *software* antes de entender el trabajo.
+* **no actualizar después del cambio**: el proceso documentado ya no coincide con la realidad.
 
 ## Preguntas de ejemplo
 
 Un Documento de proceso debería ayudar a responder:
 
-- ¿Cómo se realiza este work line?
-- ¿Por qué existe este proceso?
-- ¿Quién participa y de qué es responsable?
-- ¿Cómo coordinan el trabajo los participantes?
-- ¿Qué workflows existen dentro de este proceso?
-- ¿Qué ocurre primero, después y al final?
-- ¿Dónde se mueve el trabajo entre personas, áreas, sistemas o herramientas?
-- ¿Qué hace que el proceso sea lento, frágil, riesgoso o poco claro?
-- ¿Qué casos de uso, capacidades o decisiones dependen de este proceso?
+* ¿Cómo se realiza esta línea de trabajo?
+* ¿Por qué existe este proceso?
+* ¿Quién participa y de qué es responsable?
+* ¿Cómo coordinan el trabajo los participantes?
+* ¿Qué flujos de trabajo existen dentro de este proceso?
+* ¿Qué ocurre primero, después y al final?
+* ¿Dónde se mueve el trabajo entre personas, áreas, sistemas o herramientas?
+* ¿Qué hace que el proceso sea lento, frágil, riesgoso o poco claro?
+* ¿Qué casos de uso, capacidades o decisiones dependen de este proceso?
 
 ## Continuidad
 
-Un Documento de proceso preserva continuidad entre la estructura operativa y el comportamiento del software.
+Un Documento de proceso preserva continuidad entre estructura operacional y comportamiento de *software*.
 
 ```text
-work line
--> work process
--> responsibilities and workflows
--> use cases and capabilities
--> decisions and implementation
--> validation and evolution
+Línea de trabajo
+-> Proceso de trabajo
+-> Responsabilidades y flujos de trabajo
+-> Casos de uso y capacidades
+-> Decisiones e implementación
+-> Validación y evolución
 ```
 
-Cuando el comportamiento del proceso sigue siendo explícito, es menos probable que el equipo construya software que funcione técnicamente pero falle operacionalmente.
+Cuando el comportamiento del proceso permanece explícito, es menos probable que el equipo construya *software* que funciona técnicamente pero falla operacionalmente.

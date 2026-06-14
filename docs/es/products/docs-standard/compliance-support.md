@@ -18,17 +18,18 @@ No las implementa directamente. Se trata de ser honesto sobre:
 
 ## Resumen de soporte por estándar/práctica
 
-| Standard | Supports | Partially supports | Does not provide |
+| Estándar | Soporta | Soporta parcialmente | No provee |
 | --- | --- | --- | --- |
-| ISO/IEC/IEEE<br/>42010 | <ul><li>Context</li><li>Concerns</li><li>Rationale</li><li>Decisions</li><li>Relationships</li></ul> | <ul><li>Viewpoints</li><li>Views</li><li>Correspondences</li><li>Architecture<br/>descriptions</li></ul> | Full conforming architecture<br/>description framework |
-| ISO/IEC/IEEE<br/>29148 | <ul><li>Behavior</li><li>Validation</li><li>Assumptions</li><li>Expected errors</li><li>Traceability</li></ul> | <ul><li>Requirement quality<br/>attributes</li><li>Verification links</li></ul> | Full requirements specification<br/>and management process |
+| ISO/IEC/IEEE<br/>42010 | <ul><li>Contexto</li><li>Intereses</li><li>Justificación</li><li>Decisiones</li><li>Relaciones</li></ul> | <ul><li>Puntos de vista</li><li>Vistas</li><li>Correspondencias</li><li>Descripciones de<br/>arquitectura</li></ul> | Un framework completo y<br/>conforme para descripción<br/>de arquitectura |
+| ISO/IEC/IEEE<br/>29148 | <ul><li>Comportamiento</li><li>Validación</li><li>Supuestos</li><li>Errores esperados</li><li>Trazabilidad</li></ul> | <ul><li>Atributos de calidad<br/>de requisitos</li><li>Enlaces de verificación</li></ul> | Un proceso completo de<br/>especificación y gestión de<br/>requisitos |
 
-| Practice | Supports | Partially supports | Does not provide |
+
+| Práctica | Soporta | Soporta parcialmente | No provee |
 | --- | --- | --- | --- |
-| arc42 | <ul><li>Context</li><li>Decisions</li><li>Risks</li><li>Glossary</li><li>Continuity</li></ul> | <ul><li>Runtime</li><li>Deployment</li><li>Building block views</li></ul> | Complete arc42 structure<br/>by default |
-| C4 Model | <ul><li>Context-level thinking</li><li>Boundary awareness</li></ul> | <ul><li>Container</li><li>Component</li><li>Code views</li></ul> | Diagram notation and visual<br/>model hierarchy |
-| ADR | <ul><li>Decision reasoning</li><li>Tradeoffs</li><li>Consequences</li></ul> | <ul><li>Architecture-specific<br/>decision lifecycle</li></ul> | A strict ADR template or<br/>governance process |
-| 4+1 View<br/>Model | <ul><li>Scenarios</li><li>Use-case<br/>oriented thinking</li></ul> | <ul><li>Logical</li><li>Process</li><li>Development</li><li>Physical views</li></ul> | Complete 4+1 architecture<br/>view model |
+| arc42 | <ul><li>Contexto</li><li>Decisiones</li><li>Riesgos</li><li>Glosario</li><li>Continuidad</li></ul> | <ul><li>Tiempo de ejecución</li><li>Despliegue</li><li>Vistas de bloques<br/>de construcción</li></ul> | La estructura completa de<br/>arc42 por defecto |
+| C4 Model | <ul><li>Razonamiento a<br/>nivel de contexto</li><li>Conciencia de<br/>límites</li></ul> | <ul><li>Contenedor</li><li>Componente</li><li>Vistas de código</li></ul> | Notación de diagramas y<br/>jerarquía visual de modelos |
+| ADR | <ul><li>Razonamiento<br/>de decisión</li><li>Tradeoffs</li><li>Consecuencias</li></ul> | <ul><li>Ciclo de vida de<br/>decisiones específicas<br/>de arquitectura</li></ul> | Un template ADR estricto o<br/>proceso de gobernanza |
+| 4+1 Model | <ul><li>Escenarios</li><li>Razonamiento<br/>orientado a<br/>casos de uso</li></ul> | <ul><li>Vistas lógicas</li><li>Vistas de proceso</li><li>Vistas de desarrollo</li><li>Vistas físicas</li></ul> | Un modelo completo de vistas<br/>arquitectónicas 4+1 |
 
 ## Cómo usar esto
 

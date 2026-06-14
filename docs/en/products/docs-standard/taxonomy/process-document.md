@@ -87,19 +87,6 @@ What does this process produce?
 What makes this process fragile, slow, unclear, or risky?
 ```
 
-## Standard affinity
-
-This document can support alignment with existing standards and documentation practices. It does not make the documentation compliant by itself.
-
-| Standard or practice | Affinity | Supports | Missing for stricter alignment |
-| -------------------- | -------- | -------- | ------------------------------ |
-| arc42 | Medium / High | Runtime behavior, process movement, risks, responsibilities, and operational concerns. | Complete runtime view, building block view, and deployment integration. |
-| ISO/IEC/IEEE 29148 | Medium | Process-related requirements, assumptions, business rules, and validation inputs. | Formal requirement statements, attributes, verification methods, and requirements management. |
-| 4+1 View Model | Medium | Process-oriented view thinking and scenario support. | Complete process view and relationship with other architecture views. |
-| ISO/IEC/IEEE 42010 | Medium | Concerns, relationships, and process constraints that may shape architecture. | Formal viewpoints, views, correspondence rules, and architecture description framework. |
-| C4 Model | Low / Medium | Boundary and interaction awareness. | Visual model hierarchy and structural diagrams. |
-| ADR | Low / Medium | Process constraints that may justify decisions. | Formal decision record lifecycle. |
-
 ## Expanded version
 
 Use the expanded version when the process is complex, risky, cross-functional, or likely to guide implementation.
@@ -143,6 +130,22 @@ Use the expanded version when the process is complex, risky, cross-functional, o
 
 ## Related artifacts
 ```
+
+## Standard affinity
+
+This document can support alignment with existing standards and documentation practices. It does not make the documentation compliant by itself.
+
+| Standard | Affinity | Supports |
+| -------------------- | -------- | -------- |
+| ISO/IEC/IEEE 29148 | Medium | Process-related requirements, assumptions, business rules, and validation inputs. |
+| ISO/IEC/IEEE 42010 | Medium | Concerns, relationships, and process constraints that may shape architecture. |
+
+| Practice | Affinity | Supports |
+| -------------------- | -------- | -------- |
+| arc42 | Medium / High | Runtime behavior, process movement, risks, responsibilities, and operational concerns. |
+| 4+1 View Model | Medium | Process-oriented view thinking and scenario support. |
+| C4 Model | Low / Medium | Boundary and interaction awareness. |
+| ADR | Low / Medium | Process constraints that may justify decisions. |
 
 ## Related artifacts
 

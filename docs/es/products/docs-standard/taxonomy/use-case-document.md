@@ -2,61 +2,61 @@
 
 > Puedes acceder a la [plantilla de documento de caso de uso aquí](https://github.com/vslices/docs-standard/blob/main/templates/use-case-document.md)
 
-Un Documento de caso de uso preserva el significado de un comportamiento dentro de un contexto de dominio.
+Un Documento de caso de uso (*Use Case Document* en inglés) preserva el significado de un comportamiento dentro de un contexto de dominio.
 
 Su propósito es describir qué significa una interacción, operación o comportamiento esperado, qué consecuencia produce y qué debe ser válido para que ese comportamiento tenga sentido. Un Documento de caso de uso responde:
 
 > ¿Qué significa este comportamiento?
 
-Un caso de uso no es solo una secuencia de pasos. Explica el resultado esperado, las reglas de negocio, las validaciones, las consecuencias y los errores relevantes alrededor de un comportamiento.
+Un caso de uso no es solo una secuencia de pasos. Explica el resultado esperado, reglas de negocio, validaciones, consecuencias y errores relevantes alrededor de un comportamiento.
 
 ## Propósito
 
 Un Documento de caso de uso ayuda al equipo a preservar:
 
-- __domain meaning__: por qué este comportamiento importa dentro del dominio.
-- __actor intention__: quién necesita el comportamiento y qué intenta lograr.
-- __expected consequence__: qué debería cambiar cuando el comportamiento tiene éxito.
-- __validations__: qué debe ser verdadero antes o durante el comportamiento.
-- __business rules__: condiciones que moldean lo permitido o denegado.
-- __expected errors__: casos de fallo conocidos que pertenecen al dominio.
-- __related context__: scenario, process, workflow o capability que da significado al comportamiento.
+* **significado de dominio**: por qué este comportamiento importa dentro del dominio.
+* **intención del actor**: quién necesita el comportamiento y qué intenta lograr.
+* **consecuencia esperada**: qué debería cambiar después de que el comportamiento tenga éxito.
+* **validaciones**: qué debe ser verdadero antes o durante el comportamiento.
+* **reglas de negocio**: condiciones que moldean qué está permitido o denegado.
+* **errores esperados**: casos de falla conocidos que pertenecen al dominio.
+* **contexto relacionado**: escenario, proceso, flujo de trabajo o capacidad que da significado al comportamiento.
 
 El objetivo es hacer explícito el comportamiento esperado antes o durante la implementación.
 
 ## Cuándo usarlo
 
-Usa un Documento de caso de uso cuando el comportamiento necesite suficiente claridad para guiar diseño, implementación o validación.
+Usa un Documento de caso de uso cuando un comportamiento necesite suficiente claridad para guiar diseño, implementación o validación.
 
 Es especialmente útil cuando:
 
-- __the behavior has domain meaning__: la acción cambia algo importante en el negocio.
-- __validations matter__: el sistema debe rechazar o permitir el comportamiento según reglas explícitas.
-- __consequences matter__: el éxito cambia estado, responsabilidad, disponibilidad, compromiso o visibilidad.
-- __errors are expected__: algunos fallos forman parte del dominio y deben modelarse explícitamente.
-- __implementation needs guidance__: los desarrolladores necesitan más que un nombre de feature o una tarea corta.
-- __validation needs clarity__: el equipo necesita saber qué demuestra que el comportamiento funciona.
+* **el comportamiento tiene significado de dominio**: la acción cambia algo importante en el negocio.
+* **las validaciones importan**: el sistema debe rechazar o permitir comportamiento según reglas explícitas.
+* **las consecuencias importan**: el éxito cambia estado, responsabilidad, disponibilidad, compromiso o visibilidad.
+* **los errores son esperados**: algunas fallas son parte del dominio y deberían modelarse explícitamente.
+* **la implementación necesita guía**: los desarrolladores necesitan más que un nombre de *feature* o una tarea corta.
+* **la validación necesita claridad**: el equipo necesita saber qué demuestra que el comportamiento funciona.
 
 ## Cuándo no usarlo
 
 Un Documento de caso de uso puede ser innecesario cuando:
 
-- __the behavior is trivial__: el resultado esperado es obvio y de bajo riesgo.
-- __the context is still unclear__: primero puede necesitarse un Documento de contexto o un Documento de proceso.
-- __only a process needs explanation__: el equipo intenta describir cómo se realiza el trabajo.
-- __only a technical task exists__: el trabajo todavía no tiene comportamiento de dominio significativo.
-- __a support note is enough__: el comportamiento sigue siendo temprano, incierto o exploratorio.
+* **el comportamiento es trivial**: el resultado esperado es obvio y de bajo riesgo.
+* **el contexto todavía no está claro**: puede necesitarse primero un Documento de contexto o Documento de proceso.
+* **solo necesita explicación un proceso**: el equipo intenta describir cómo se realiza el trabajo.
+* **solo existe una tarea técnica**: el trabajo todavía no tiene comportamiento de dominio significativo.
+* **basta con una Nota de soporte**: el comportamiento todavía es temprano, incierto o exploratorio.
 
 ## Versión mínima
 
-Usa la versión mínima cuando el equipo necesite una definición ligera del comportamiento.
+Usa la versión mínima cuando el equipo necesite una definición ligera de comportamiento.
 
 ```md
-# Documento de caso de uso
+# Use Case Document
 
 ## Use case
 
-¿Qué comportamiento se describe?
+¿Qué comportamiento se está describiendo?
 
 ## Meaning
 
@@ -64,7 +64,7 @@ Usa la versión mínima cuando el equipo necesite una definición ligera del com
 
 ## Actor
 
-¿Quién necesita o activa este comportamiento?
+¿Quién necesita o dispara este comportamiento?
 
 ## Expected consequence
 
@@ -80,15 +80,15 @@ Usa la versión mínima cuando el equipo necesite una definición ligera del com
 
 ## Related artifacts
 
-¿Qué scenario, process, workflow, capability o decision apoya este caso de uso?
+¿Qué escenario, proceso, flujo de trabajo, capacidad o decisión apoya este caso de uso?
 ```
 
 ## Versión ampliada
 
-Usa la versión ampliada cuando el comportamiento sea complejo, riesgoso, pesado en reglas o crítico para la implementación.
+Usa la versión ampliada cuando el comportamiento sea complejo, riesgoso, cargado de reglas o crítico para la implementación.
 
 ```md
-# Documento de caso de uso
+# Use Case Document
 
 ## Use case
 
@@ -127,67 +127,72 @@ Usa la versión ampliada cuando el comportamiento sea complejo, riesgoso, pesado
 ## Validation notes
 ```
 
-## Artefactos relacionados
-
-Un Documento de caso de uso puede apoyar o ser apoyado por:
-
-- __Documento de contexto__: explica el scenario donde importa el comportamiento.
-- __Documento de proceso__: explica el proceso o workflow donde aparece el comportamiento.
-- __Vocabulario de dominio__: preserva términos necesarios para entender el comportamiento.
-- __Documento de capacidad__: identifica capacidades estables requeridas por el caso de uso.
-- __Registro de decisión__: explica elecciones tomadas por comportamiento, reglas o _tradeoffs_.
-- __Nota de validación__: captura evidencia sobre si el comportamiento funcionó como se esperaba.
-- __Nota de soporte__: captura reglas, ejemplos, errores o supuestos inciertos.
-
 ## Afinidad con estándares
 
 Este documento puede apoyar la alineación con estándares y prácticas de documentación existentes. No vuelve la documentación conforme por sí mismo.
 
-| Standard or practice | Affinity | Supports | Missing for stricter alignment |
-| --- | --- | --- | --- |
-| ISO/IEC/IEEE 29148 | High | Requirements-related language, behavior meaning, validations, expected errors, and traceability. | Formal requirement statements, requirement attributes, verification method, and requirements management process. |
-| 4+1 View Model | High | Scenario and use-case-oriented thinking. | Complete 4+1 view model and connection to logical, process, development, and physical views. |
-| ISO/IEC/IEEE 42010 | Medium | Concerns, behavior rationale, relationships, and decision impact. | Formal viewpoint, view, correspondence, and architecture description model. |
-| arc42 | Medium | Runtime behavior, risks, decisions, and glossary connections. | Complete arc42 structure, especially runtime and building block integration. |
-| ADR | Medium | Decisions related to behavior, rules, and _tradeoffs_. | Architecture-specific decision lifecycle and governance. |
-| C4 Model | Low | Context and boundary awareness around the behavior. | Visual model hierarchy, container, component, and code views. |
+| Estándar           | Afinidad | Soporta                                                                                                                                                          |
+| ------------------ | -------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| ISO/IEC/IEEE 29148 | Alta     | <ul><li>Lenguaje relacionado con requisitos</li><li>Significado del comportamiento</li><li>Validaciones</li><li>Errores esperados</li><li>Trazabilidad</li></ul> |
+| ISO/IEC/IEEE 42010 | Media    | <ul><li>Intereses</li><li>Justificación del comportamiento</li><li>Relaciones</li><li>Impacto de decisiones</li></ul>                                            |
+
+| Práctica  | Afinidad | Soporta                                                                                                                    |
+| --------- | -------- | -------------------------------------------------------------------------------------------------------------------------- |
+| arc42     | Media    | <ul><li>Comportamiento en tiempo de ejecución</li><li>Riesgos</li><li>Decisiones</li><li>Conexiones con glosario</li></ul> |
+| C4 Model  | Baja     | <ul><li>Conciencia de contexto</li><li>Conciencia de límites alrededor del comportamiento</li></ul>                        |
+| 4+1 Model | Alta     | <ul><li>Escenarios</li><li>Razonamiento orientado a casos de uso</li></ul>                                                 |
+| ADR       | Media    | <ul><li>Decisiones relacionadas con comportamiento</li><li>Reglas</li><li>*Tradeoffs*</li></ul>                            |
+
+## Artefactos relacionados
+
+Un Documento de caso de uso puede apoyar o ser apoyado por:
+
+| Artefacto                                        | Relación                                                                   |
+| ------------------------------------------------ | -------------------------------------------------------------------------- |
+| [Documento de contexto](context-document.md)     | Explica el escenario donde importa el comportamiento.                      |
+| [Documento de proceso](process-document.md)      | Explica el proceso o flujo de trabajo donde aparece el comportamiento.     |
+| [Vocabulario de dominio](domain-vocabulary.md)   | Preserva términos necesarios para entender el comportamiento.              |
+| [Documento de capacidad](capability-document.md) | Identifica capacidades estables requeridas por el caso de uso.             |
+| [Registro de decisión](decision-record.md)       | Explica elecciones tomadas debido al comportamiento, reglas o *tradeoffs*. |
+| [Nota de validación](validation-note.md)         | Captura evidencia sobre si el comportamiento funcionó como se esperaba.    |
+| [Nota de soporte](support-note.md)               | Captura reglas, ejemplos, errores o supuestos inciertos.                   |
 
 ## Errores comunes
 
 Errores comunes incluyen:
 
-- __describir solo pasos__: el documento omite consecuencia, validación y significado.
-- __escribir tareas técnicas como casos de uso__: el comportamiento no tiene propósito de dominio visible.
-- __ignorar errores esperados__: los fallos del dominio se convierten en excepciones ocultas o lógica ad hoc.
-- __ocultar validaciones__: las reglas permanecen implícitas hasta la implementación.
-- __olvidar la intención del actor__: el documento dice qué pasa, pero no por qué importa.
-- __mezclar proceso con caso de uso__: el documento explica toda la forma de trabajar en lugar de un solo comportamiento significativo.
-- __tratar el éxito como obvio__: la consecuencia esperada nunca se explicita.
+* **describir solo pasos**: el documento omite consecuencia, validación y significado.
+* **escribir tareas técnicas como casos de uso**: el comportamiento no tiene propósito de dominio visible.
+* **ignorar errores esperados**: las fallas de dominio se convierten en excepciones ocultas o lógica improvisada.
+* **ocultar validaciones**: las reglas permanecen implícitas hasta la implementación.
+* **olvidar la intención del actor**: el documento dice qué ocurre, pero no por qué importa.
+* **mezclar proceso con caso de uso**: el documento explica toda la forma de trabajar en vez de un comportamiento significativo.
+* **tratar el éxito como obvio**: la consecuencia esperada nunca se vuelve explícita.
 
 ## Preguntas de ejemplo
 
 Un Documento de caso de uso debería ayudar a responder:
 
-- ¿Qué comportamiento estamos describiendo?
-- ¿Qué significa este comportamiento en el dominio?
-- ¿Quién lo necesita, lo activa o se beneficia de él?
-- ¿Qué debería cambiar cuando tiene éxito?
-- ¿Qué debe ser válido antes o durante la ejecución?
-- ¿Qué errores esperados pueden ocurrir?
-- ¿Qué reglas de negocio moldean el comportamiento?
-- ¿Qué capacidad, proceso o decisión depende de este caso de uso?
+* ¿Qué comportamiento estamos describiendo?
+* ¿Qué significa este comportamiento en el dominio?
+* ¿Quién lo necesita, lo dispara o se beneficia de él?
+* ¿Qué debería cambiar cuando tiene éxito?
+* ¿Qué debe ser válido antes o durante la ejecución?
+* ¿Qué errores esperados pueden ocurrir?
+* ¿Qué reglas de negocio moldean el comportamiento?
+* ¿Qué capacidad, proceso o decisión depende de este caso de uso?
 
 ## Continuidad
 
-Un Documento de caso de uso preserva continuidad entre el comportamiento del dominio y el comportamiento de la implementación.
+Un Documento de caso de uso preserva continuidad entre comportamiento de dominio y comportamiento de implementación.
 
 ```text
-scenario or process
--> meaningful behavior
--> validations and consequences
--> capabilities and decisions
--> implementation and tests
--> validation and evolution
+Escenario o proceso
+-> Comportamiento significativo
+-> Validaciones y consecuencias
+-> Capacidades y decisiones
+-> Implementación y pruebas
+-> Validación y evolución
 ```
 
-Cuando los casos de uso siguen siendo explícitos, es menos probable que el equipo implemente acciones que funcionen técnicamente pero no representen correctamente el dominio.
+Cuando los casos de uso permanecen explícitos, es menos probable que el equipo implemente acciones que funcionan técnicamente pero no representan correctamente el dominio.

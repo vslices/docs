@@ -127,30 +127,35 @@ Use the expanded version when behavior is complex, risky, rule-heavy, or impleme
 ## Validation notes
 ```
 
-## Related artifacts
-
-A Use Case Document may support or be supported by:
-
-- __Context Document__: explains the scenario where the behavior matters.
-- __Process Document__: explains the process or workflow where the behavior appears.
-- __Domain Vocabulary__: preserves terms needed to understand the behavior.
-- __Capability Document__: identifies stable abilities required by the use case.
-- __Decision Record__: explains choices made because of behavior, rules, or tradeoffs.
-- __Validation Note__: captures evidence about whether the behavior worked as expected.
-- __Support Note__: captures uncertain rules, examples, errors, or assumptions.
-
 ## Standard affinity
 
 This document can support alignment with existing standards and documentation practices. It does not make the documentation compliant by itself.
 
-| Standard or practice | Affinity | Supports                                                                                         | Missing for stricter alignment                                                                                   |
-| -------------------- | -------- | ------------------------------------------------------------------------------------------------ | ---------------------------------------------------------------------------------------------------------------- |
-| ISO/IEC/IEEE 29148   | High     | Requirements-related language, behavior meaning, validations, expected errors, and traceability. | Formal requirement statements, requirement attributes, verification method, and requirements management process. |
-| 4+1 View Model       | High     | Scenario and use-case-oriented thinking.                                                         | Complete 4+1 view model and connection to logical, process, development, and physical views.                     |
-| ISO/IEC/IEEE 42010   | Medium   | Concerns, behavior rationale, relationships, and decision impact.                                | Formal viewpoint, view, correspondence, and architecture description model.                                      |
-| arc42                | Medium   | Runtime behavior, risks, decisions, and glossary connections.                                    | Complete arc42 structure, especially runtime and building block integration.                                     |
-| ADR                  | Medium   | Decisions related to behavior, rules, and tradeoffs.                                             | Architecture-specific decision lifecycle and governance.                                                         |
-| C4 Model             | Low      | Context and boundary awareness around the behavior.                                              | Visual model hierarchy, container, component, and code views.                                                    |
+| Standard or practice | Affinity | Supports                                                                                         |                                                                  |
+| -------------------- | -------- | ------------------------------------------------------------------------------------------------ |
+| ISO/IEC/IEEE 29148   | High     | Requirements-related language, behavior meaning, validations, expected errors, and traceability. |
+| ISO/IEC/IEEE 42010   | Medium   | Concerns, behavior rationale, relationships, and decision impact.                                |
+
+| Standard or practice | Affinity | Supports                                                                                         |                                                                  |
+| -------------------- | -------- | ------------------------------------------------------------------------------------------------ |
+| arc42                | Medium   | Runtime behavior, risks, decisions, and glossary connections.                                    |
+| C4 Model             | Low      | Context and boundary awareness around the behavior.                                              |
+| 4+1 View Model       | High     | Scenario and use-case-oriented thinking.                                                         |
+| ADR                  | Medium   | Decisions related to behavior, rules, and tradeoffs.     
+
+## Related artifacts
+
+A Use Case Document may support or be supported by:
+
+| Artifact                                      | Relationship                                                     |
+| --------------------------------------------- | ---------------------------------------------------------------- |
+| [Context Document](context-document.md)       | Explains the scenario where the behavior matters.                |
+| [Process Document](process-document.md)       | Explains the process or workflow where the behavior appears.     |
+| [Domain Vocabulary](domain-vocabulary.md)     | Preserves terms needed to understand the behavior.               |
+| [Capability Document](capability-document.md) | Identifies stable abilities required by the use case.            |
+| [Decision Record](decision-record.md)         | Explains choices made because of behavior, rules, or tradeoffs.  |
+| [Validation Note](validation-note.md)         | Captures evidence about whether the behavior worked as expected. |
+| [Support Note](support-note.md)               | Captures uncertain rules, examples, errors, or assumptions.      |                                        |
 
 
 ## Common mistakes
