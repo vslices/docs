@@ -43,3 +43,9 @@ Slice-First
 -> partir desde una pequeña implementación o slice de validación útil
 
 ```
+
+No son niveles de madurez y no son una secuencia fija.
+
+Un equipo puede empezar con Context-First cuando el entorno es poco claro, con Problem-First cuando una tensión específica es visible, o con Slice-First cuando construir una pieza pequeña es la forma más segura de aprender.
+
+Lo importante es elegir la modalidad que coincide con la incertidumbre del trabajo actual.

@@ -159,7 +159,7 @@ Una modalidad puede entenderse mediante la relación entre base y altura:
 
 ```text
 base / height
-````
+```
 
 Context-First tiende hacia una base grande:
 

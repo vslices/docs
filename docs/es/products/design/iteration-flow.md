@@ -4,7 +4,7 @@ VSlices Design usa un flujo de iteración recurrente:
 
 ```text
 Understanding -> Contextualizing -> Planning -> Building -> Understanding
-````
+```
 
 Este flujo es compartido por todas las modalidades de VSlices Design. Las etapas siempre son las mismas entre modalidades, pero el énfasis cambia.
 
