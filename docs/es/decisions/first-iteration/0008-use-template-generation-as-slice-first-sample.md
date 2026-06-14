@@ -2,7 +2,7 @@
 
 ## Estado
 
-Accepted
+Aceptada
 
 ## Contexto
 
