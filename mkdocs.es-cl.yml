@@ -51,8 +51,11 @@ nav:
         - VSlices Design:
             - Introducción: products/design/index.md
             - Glosario: products/design/glossary.md
-            - Principios: products/design/principles.md
-            - Flujo de iteración: products/design/iteration-flow.md
+            - Flujo de iteración: 
+                - Principios: products/design/iteration-flow/principles.md
+                - Introducción a las etapas: products/design/iteration-flow/stage-intro.md
+                - Etapas en profundidad: products/design/iteration-flow/stage-detail.md
+                - Enfasis de cada modalidad: products/design/iteration-flow/emphasis.md
             - Modalidades:
                 - Context-first:
                     - Introducción: products/design/modalities/context-first/index.md

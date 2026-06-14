@@ -4,10 +4,10 @@ _Context-First_ da más atención a Understanding y Contextualizing.
 
 | Etapa           | Énfasis           | Objetivo                                                                             |
 | --------------- | ----------------- | ------------------------------------------------------------------------------------ |
-| Understanding   | Alto              | Descubrir suficiente conocimiento de dominio para entender el área de negocio.       |
-| Contextualizing | Alto              | Construir un escenario base amplio de flujos actuales, actores, conceptos y límites. |
+| Understanding   | Alto              | Descubrir suficiente conocimiento de dominio para entender el área<br/>de negocio.       |
+| Contextualizing | Alto              | Construir un escenario base amplio de flujos actuales, actores,<br/>conceptos y límites. |
 | Planning        | Medio             | Seleccionar la mejora más valiosa respaldada por la base contextual.                 |
-| Building        | Medio / posterior | Implementar la mejora sin perder trazabilidad hacia el contexto descubierto.         |
+| Building        | Medio<br/>(_posterior_) | Implementar la mejora sin perder trazabilidad hacia el contexto<br/>descubierto.         |
 
 Las etapas tempranas son intencionalmente más fuertes porque _Context-First_ asume que un contexto débil crea decisiones de implementación inestables.
 

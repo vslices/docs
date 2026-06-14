@@ -6,17 +6,9 @@ El objetivo no es elegir la mejor modalidad en general. Es elegir la modalidad q
 
 ## Idea central
 
-Elige la modalidad según la incertidumbre que más importa ahora. La pregunta no es:
+Elige la modalidad según la incertidumbre que más importa ahora. 
 
-```text
-¿Qué modalidad preferimos?
-```
-
-La mejor pregunta es:
-
-```text
-¿Qué tipo de incertidumbre haría insegura la siguiente decisión?
-```
+La pregunta no es: _¿Qué modalidad preferimos?_, si no _¿Qué tipo de incertidumbre haría insegura la siguiente decisión?
 
 _VSlices Method_ usa las modalidades definidas por _VSlices Design_:
 
@@ -77,9 +69,9 @@ Una selección útil normalmente comienza nombrando la incertidumbre dominante.
 
 | Señal actual                                                          | Comienza con      | Por qué                                                                                   |
 | --------------------------------------------------------------------- | ----------------- | ----------------------------------------------------------------------------------------- |
-| El equipo no entiende el contexto circundante.                        | **[Context-First](../../design/modalities/context-first/index.md)** | La siguiente decisión necesita un entendimiento más amplio antes de elegir qué construir. |
-| El equipo entiende el área, pero no el problema.                      | **[Problem-First](../../design/modalities/problem-first/index.md)** | La siguiente decisión necesita claridad del problema antes de elegir una solución.        |
-| El equipo entiende lo suficiente como para aprender mediante entrega. | **[Slice-First](../../design/modalities/slice-first/index.md)**   | La siguiente decisión puede hacerse más segura validando una _vertical slice_ pequeña.      |
+| El equipo no entiende el<br/>contexto circundante.                        | **[Context-First](../../design/modalities/context-first/index.md)** | La siguiente decisión necesita un entendimiento<br/>más amplio antes de elegir qué construir. |
+| El equipo entiende el área,<br/>pero no el problema.                      | **[Problem-First](../../design/modalities/problem-first/index.md)** | La siguiente decisión necesita claridad del problema<br/>antes de elegir una solución.        |
+| El equipo entiende lo<br/>suficiente como para<br/>aprender mediante entrega. | **[Slice-First](../../design/modalities/slice-first/index.md)**   | La siguiente decisión puede hacerse más segura<br/>validando una _vertical slice_ pequeña.      |
 
 La modalidad seleccionada debería reducir incertidumbre. No debería convertirse en la identidad de la iteración.
 

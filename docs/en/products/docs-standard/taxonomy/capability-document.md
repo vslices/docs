@@ -49,7 +49,7 @@ A Capability Document may be unnecessary when:
 
 Use the minimal version when the team needs a lightweight capability definition.
 
-```md id="i55iqq"
+```md
 # Capability Document
 
 ## Capability
@@ -127,15 +127,15 @@ This document can support alignment with existing standards and documentation pr
 
 | Standard | Affinity | Supports |
 | -------------------- | -------- | -------- |
-| ISO/IEC/IEEE 42010 | Medium / High | Architecture concerns, boundaries, rationale, and relationships between capabilities and decisions. |
-| ISO/IEC/IEEE 29148 | Medium | Capability-related requirements, constraints, expected outcomes, and traceability. |
+| ISO/IEC/IEEE 29148 | Medium | Capability-related:<ul><li>Requirements</li><li>Constraints</li><li>Expected outcomes</li><li>Traceability</li></ul> |
+| ISO/IEC/IEEE 42010 | Medium / High | Architecture:<ul><li>Concerns</li><li>Boundaries</li><li>Rationale</li><li>Relationships between capabilities</li><li>Decisions</li></ul> |
 
 | Practice | Affinity | Supports |
 | -------------------- | -------- | -------- |
-| arc42 | Medium / High | Building block thinking, responsibilities, boundaries, risks, and decisions. |
-| C4 Model | Medium | Boundary awareness that may later influence container or component views. |
-| 4+1 View Model | Medium | Logical and process-oriented architecture thinking. |
-| ADR | Medium | Decisions about capability shape, split, ownership, or implementation direction. |
+| arc42 | Medium / High | <ul><li>Building block thinking</li><li>Responsibilities</li><li>Boundaries</li><li>Risks</li><li>Decisions</li></ul> |
+| C4 Model | Medium | Boundary awareness that may later influence:<ul><li>Container</li><li>Component views</li></ul> |
+| 4+1 Model | Medium | Logical and process-oriented architecture thinking. |
+| ADR | Medium | Decisions about capability:<ul><li>Shape</li><li>Split</li><li>Ownership</li><li>Implementation direction</li></ul> |
 
 ## Related artifacts
 
@@ -147,7 +147,7 @@ A Capability Document may support or be supported by:
 | [Process Document](process-document.md)   | Shows which processes require the capability.                                            |
 | [Use Case Document](use-case-document.md) | Describes behaviors enabled by the capability.                                           |
 | [Domain Vocabulary](domain-vocabulary.md) | Preserves the language used to name and explain the capability.                          |
-| [Decision Record](decision-record.md)     | Explains why the capability was shaped, split, merged, or implemented in a specific way. |
+| [Decision Record](decision-record.md)     | Explains why the capability was shaped, split, merged, or implemented in<br/>a specific way. |
 | [Validation Note](validation-note.md)     | Captures evidence about whether the capability supports real needs.                      |
 | [Support Note](support-note.md)           | Captures early ability ideas before they become stable capabilities.                     |
 

@@ -2,7 +2,7 @@
 
 *VSlices Method* explica cómo aplicar *VSlices Design* y *VSlices Docs Standard* dentro de contextos de trabajo reales. Se enfoca en preservar continuidad entre:
 
-```text id="v4l3b8"
+```text 
 descubrimiento del dominio
 -> documentación
 -> razonamiento de diseño

@@ -7,7 +7,7 @@ Slice-First gives more attention to Building and feedback.
 | Understanding   | Low / Medium | Understand only enough to avoid blind implementation.              |
 | Contextualizing | Low          | Define the minimum context needed for a safe slice.                |
 | Planning        | Medium       | Choose a small vertical slice that can produce learning.           |
-| Building        | High         | Build, validate, and use feedback as the main discovery mechanism. |
+| Building        | High         | Build, validate, and use feedback as the main discovery<br/>mechanism. |
 
 Slice-First does not require the broadest possible base, just the smallest responsible base that can support the slice.
 

@@ -115,14 +115,19 @@ Use the expanded version when validation affects important decisions, risky assu
 
 This document can support alignment with existing standards and documentation practices. It does not make the documentation compliant by itself.
 
-| Standard or practice | Affinity | Supports |
-| -------------------- | -------- | -------- |
-| ISO/IEC/IEEE 29148 | High | Validation, evidence, assumptions, feedback, impact, and traceability. |
-| ADR | Medium | Reviewing whether previous decisions were confirmed, challenged, or superseded. |
-| ISO/IEC/IEEE 42010 | Medium | Rationale updates, architecture learning, and relationships between evidence and decisions. |
-| arc42 | Medium | Risks, decisions, quality feedback, and evolution notes. |
-| 4+1 View Model | Low / Medium | Scenario feedback and behavior validation. |
-| C4 Model | Low | Feedback that may affect boundaries or architecture diagrams. |## Related artifacts
+| Standard | Affinity | Supports |
+| --- | --- | --- |
+| ISO/IEC/IEEE 29148 | High | <ul><li>Validation</li><li>Evidence</li><li>Assumptions</li><li>Feedback</li><li>Impact</li><li>Traceability</li></ul> |
+| ISO/IEC/IEEE 42010 | Medium | <ul><li>Rationale updates</li><li>Architecture learning</li><li>Relationships between evidence and decisions</li></ul> |
+
+| Practice | Affinity | Supports |
+| --- | --- | --- |
+| arc42 | Medium | <ul><li>Risks</li><li>Decisions</li><li>Quality feedback</li><li>Evolution notes</li></ul> |
+| C4 Model | Low | Feedback that may affect boundaries or architecture diagrams. |
+| 4+1 Model | Low / Medium | Scenario feedback and behavior validation. |
+| ADR | Medium | Reviewing whether previous decisions were confirmed, challenged,<br/>or superseded. |
+
+## Related artifacts
 
 A Validation Note may support or be supported by:
 

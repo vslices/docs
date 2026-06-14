@@ -135,14 +135,14 @@ This document can support alignment with existing standards and documentation pr
 
 | Standard | Affinity | Supports |
 | -------------------- | -------- | -------- |
-| ISO/IEC/IEEE 29148 | Medium | Context for requirements, assumptions, risks, and traceability. |
-| ISO/IEC/IEEE 42010 | High | Context, concerns, stakeholders, boundaries, relationships, and rationale inputs. |
+| ISO/IEC/IEEE 29148 | Medium | Context for:<ul><li>Requirements</li><li>Assumptions</li><li>Risks</li><li>Traceability</li></ul> |
+| ISO/IEC/IEEE 42010 | High | <ul><li>Context</li><li>Concerns</li><li>Stakeholders</li><li>Boundaries</li><li>Relationships</li><li>Rationale inputs</li></ul> |
 
 | Practice | Affinity | Supports |
 | -------------------- | -------- | -------- |
-| C4 Model | High | System context thinking, actors, systems, and boundary awareness. |
-| arc42 | High | Context and scope, external interfaces, constraints, risks, and glossary connections. |
-| 4+1 View Model | Medium | Scenario and context grounding for later views. |
+| C4 Model | High | <ul><li>System context thinking</li><li>Actors</li><li>Systems</li><li>Boundary awareness</li></ul> |
+| arc42 | High | <ul><li>Context and scope</li><li>External interfaces</li><li>Constraints</li><li>Risks</li><li>Glossary connections</li></ul> |
+| 4+1 Model | Medium | Scenario and context grounding for later views. |
 | ADR | Low / Medium | Context for decisions and tradeoffs. |
 
 ## Related artifacts

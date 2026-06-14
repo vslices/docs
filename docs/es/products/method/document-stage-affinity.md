@@ -14,17 +14,18 @@ Cada etapa crea o cambia un tipo distinto de conocimiento. Algunos documentos ap
 
 Esta afinidad es solo una guía. Un equipo puede crear, actualizar, omitir, fusionar o volver a visitar documentos cuando la iteración lo requiera.
 
-La pregunta no es _¿Qué documentos requiere esta etapa?_, es: **¿Qué conocimiento necesitamos preservar para tomar la siguiente decisión responsable?**.
+La pregunta no es _¿Qué documentos requiere esta etapa?_, si no: **¿Qué conocimiento necesitamos preservar para tomar la siguiente decisión responsable?**.
 
 ## Afinidad por etapa
 
-| Etapa | Conocimiento que se está manejando | Documentos útiles | Riesgo principal evitado |
-| --- | --- | --- | --- |
-| **Understanding** | Señales tempranas del dominio, lenguaje, supuestos, riesgos y preguntas abiertas. | **Domain Vocabulary**, **Support Note**, **Context Document** temprano. | Diseñar artefactos de _software_ antes de entender el mundo al que pertenecen. |
-| **Contextualizing** | Escenario, actores, límites, líneas de trabajo, _workflows_ y contexto circundante. | **Context Document**, **Process Document**, **Domain Vocabulary**, **Support Note**. | Tratar un problema, caso de uso o _feature_ como si estuviera aislado de su contexto. |
-| **Planning** | Mejora esperada, comportamiento, capacidades, alcance, decisiones y _tradeoffs_. | **Use Case Document**, **Capability Document**, **Decision Record**, **Support Note**. | Resolver un problema técnico atractivo en vez del problema de negocio relevante. |
-| **Building** | Comportamiento de implementación, validaciones, errores esperados, restricciones y _feedback_ de entrega. | **Use Case Document**, **Capability Document**, **Decision Record**, **Validation Note**, **Support Note**. | Tratar la implementación como el final del aprendizaje. |
-| **Returning to Understanding** | Evidencia, aprendizaje, supuestos cambiados, contexto actualizado y nueva incertidumbre. | **Validation Note**, **Context Document**, **Process Document**, **Use Case Document**, **Decision Record**, **Support Note**. | Ignorar lo que el sistema enseñó después de ser construido. |
+| Etapa                               | Conocimiento a manejar                                                                                                                                | Documentos útiles                                                                                                                                                                  | Riesgo evitado                                                              |
+| ----------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------- |
+| **Understanding**                   | <ul><li>Señales tempranas<br/>del dominio</li><li>Lenguaje</li><li>Supuestos</li><li>Riesgos</li><li>Preguntas abiertas</li></ul>                         | <ul><li>**Domain Vocabulary**</li><li>**Support Note**</li><li>**Context Document**<br/>temprano</li></ul>                                                                             | Diseñar artefactos<br/>de *software* antes<br/>de entender el mundo<br/>al que pertenecen.        |
+| **Contextualizing**                 | <ul><li>Escenario</li><li>Actores</li><li>Límites</li><li>Líneas de trabajo</li><li>*workflows*</li><li>Contexto circundante</li></ul>                | <ul><li>**Context Document**</li><li>**Process Document**</li><li>**Domain Vocabulary**</li><li>**Support Note**</li></ul>                                                         | Tratar un problema,<br/>caso de uso o *feature*<br/>como si estuviera<br/>aisladode su contexto. |
+| **Planning**                        | <ul><li>Mejora esperada</li><li>Comportamiento</li><li>Capacidades</li><li>Alcance</li><li>Decisiones</li><li>*tradeoffs*</li></ul>                   | <ul><li>**Use Case Document**</li><li>**Capability Document**</li><li>**Decision Record**</li><li>**Support Note**</li></ul>                                                       | Resolver un problema<br/>técnico atractivo en<br/>vez del problema de<br/>negocio relevante.      |
+| **Building**                        | <ul><li>Comportamiento de<br/>implementación</li><li>Validaciones</li><li>Errores esperados</li><li>Restricciones</li><li>*feedback* de entrega</li></ul> | <ul><li>**Use Case Document**</li><li>**Capability Document**</li><li>**Decision Record**</li><li>**Validation Note**</li><li>**Support Note**</li></ul>                           | Tratar la <br/>implementación como<br/>el final del<br/>aprendizaje.                               |
+| **Returning to<br/> Understanding** | <ul><li>Evidencia</li><li>Aprendizaje</li><li>Supuestos cambiados</li><li>Contexto actualizado</li><li>Nueva incertidumbre</li></ul>                  | <ul><li>**Validation Note**</li><li>**Context Document**</li><li>**Process Document**</li><li>**Use Case Document**</li><li>**Decision Record**</li><li>**Support Note**</li></ul> | Ignorar lo que el<br/>sistema enseñó<br/>después de ser<br/>construido.                           |
+
 
 ## Afinidad por documento
 
@@ -32,14 +33,14 @@ El mismo documento puede apoyar más de una etapa.
 
 | Documento | Afinidad más fuerte | Útil cuando |
 | --- | --- | --- |
-| [**Vocabulario de Dominio**](../docs-standard/taxonomy/domain-vocabulary.md) | **Understanding** y **Contextualizing**. | El lenguaje aparece, cambia, entra en conflicto o se vuelve importante para las decisiones. |
-| [**Documento de Contexto**](../docs-standard/taxonomy/context-document.md) | **Contextualizing**. | El equipo necesita preservar el escenario, los actores, los límites o la situación actual. |
-| [**Documento de Proceso**](../docs-standard/taxonomy/process-document.md) | **Contextualizing**. | El trabajo depende de responsabilidades, _workflows_, _handoffs_ u operaciones repetidas. |
-| [**Documento de Caso de Uso**](../docs-standard/taxonomy/use-case-document.md) | **Planning** y **Building**. | Comportamiento, consecuencias, validaciones o errores esperados necesitan guiar la implementación. |
-| [**Documento de Capacidad**](../docs-standard/taxonomy/capability-document.md) | **Planning** y **Building**. | Una capacidad estable de negocio o sistema necesita ser nombrada y preservada. |
-| [**Registro de decisión**](../docs-standard/taxonomy/decision-record.md) | **Planning** y **Building**. | Una dirección, _tradeoff_, riesgo aceptado u opción rechazada puede afectar trabajo futuro. |
-| [**Nota de Validación**](../docs-standard/taxonomy/validation-note.md) | **Building** y **Returning to Understanding**. | Evidencia desde implementación, revisión, uso u operación cambia lo que el equipo sabe. |
-| [**Nota de soporte**](../docs-standard/taxonomy/support-note.md) | Todas las etapas. | El conocimiento es útil, pero todavía temprano, local, incierto o temporal. |
+| [**Vocabulario de Dominio**](../docs-standard/taxonomy/domain-vocabulary.md) | **Understanding** y<br/>**Contextualizing**. | El lenguaje aparece, cambia, entra en<br/>conflicto o se vuelve importante para las<br/>decisiones. |
+| [**Documento de Contexto**](../docs-standard/taxonomy/context-document.md) | **Contextualizing**. | El equipo necesita preservar el escenario,<br/>los actores, los límites o la situación actual. |
+| [**Documento de Proceso**](../docs-standard/taxonomy/process-document.md) | **Contextualizing**. | El trabajo depende de responsabilidades,<br/>_workflows_, _handoffs_ u operaciones repetidas. |
+| [**Documento de Caso de Uso**](../docs-standard/taxonomy/use-case-document.md) | **Planning** y **Building**. | Comportamiento, consecuencias, validaciones<br/>o errores esperados necesitan guiar la<br/>implementación. |
+| [**Documento de Capacidad**](../docs-standard/taxonomy/capability-document.md) | **Planning** y **Building**. | Una capacidad estable de negocio o sistema<br/>necesita ser nombrada y preservada. |
+| [**Registro de decisión**](../docs-standard/taxonomy/decision-record.md) | **Planning** y **Building**. | Una dirección, _tradeoff_, riesgo aceptado u<br/>opción rechazada puede afectar trabajo<br/>futuro. |
+| [**Nota de Validación**](../docs-standard/taxonomy/validation-note.md) | **Building** y **Returning<br/>to Understanding**. | Evidencia desde implementación, revisión,<br/>uso u operación cambia lo que el equipo sabe. |
+| [**Nota de soporte**](../docs-standard/taxonomy/support-note.md) | Todas las etapas. | El conocimiento es útil, pero todavía<br/>temprano, local, incierto o temporal. |
 
 ## Uso de la afinidad
 

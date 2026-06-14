@@ -112,16 +112,16 @@ Use the expanded version when the decision is risky, disputed, architectural, or
 This document can support alignment with existing standards and documentation practices. It does not make the documentation compliant by itself.
 
 | Standard | Affinity | Supports |
-| -------------------- | -------- | -------- | |
-| ISO/IEC/IEEE 29148 | Medium | Requirements-related decisions, assumptions, validation impact, and traceability. |
-| ISO/IEC/IEEE 42010 | Medium / High | Architecture rationale, concerns, decisions, relationships, and consequences. |
+| --- | --- | --- |
+| ISO/IEC/IEEE 29148 | Medium | Requirements-related:<ul><li>Decisions</li><li>Assumptions</li><li>Validation impact</li><li>Traceability</li></ul> |
+| ISO/IEC/IEEE 42010 | Medium / High | Architecture:<ul><li>Rationale</li><li>Concerns</li><li>Decisions</li><li>Relationships</li><li>Consequences</li></ul> |
 
 | Practice | Affinity | Supports |
-| -------------------- | -------- | -------- |
-| arc42 | High | Architecture decisions, risks, constraints, and rationale. |
-| 4+1 View Model | Medium | Decisions affecting scenarios, logical structure, process, development, or physical views. |
-| C4 Model | Medium | Decisions that may affect context, container, component, or code diagrams. |
-| ADR | High | Decision, rationale, options, tradeoffs, consequences, and review conditions. |
+| --- | --- | --- |
+| arc42 | High | Architecture:<ul><li>Decisions</li><li>Risks</li><li>Constraints</li><li>Rationale</li></ul> |
+| 4+1 Model | Medium | Decisions affecting:<ul><li>Scenarios</li><li>Logical structure</li><li>Process</li><li>Development</li><li>Physical views</li></ul> |
+| C4 Model | Medium | Decisions that may affect:<ul><li>Context</li><li>Container</li><li>Component</li><li>Code diagrams</li></ul> |
+| ADR | High | <ul><li>Decision</li><li>Rationale</li><li>Options</li><li>Tradeoffs</li><li>Consequences</li><li>Review conditions</li></ul> |
 
 ## Related artifacts
 

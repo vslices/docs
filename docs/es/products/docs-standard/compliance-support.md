@@ -8,9 +8,9 @@ Los equipos que necesiten cumplimiento formal deberían usar VSlices Docs Standa
 
 ## Posición
 
-VSlices Docs Standard está influido por prácticas existentes de documentación y arquitectura.
+VSlices Docs Standard está influido por prácticas existentes de documentación y arquitectura. No las implementa directamente.
 
-No las implementa directamente. Se trata de ser honesto sobre:
+Se trata de ser honesto sobre:
 
 * **qué soporta VSlices**: áreas en las que los documentos de VSlices ya proporcionan una estructura útil.
 * **qué soporta parcialmente VSlices**: áreas en las que VSlices proporciona conocimiento relacionado, pero no la forma completa requerida.

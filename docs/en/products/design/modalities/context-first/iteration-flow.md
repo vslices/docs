@@ -5,9 +5,9 @@ Context-First gives more attention to Understanding and Contextualizing.
 | Stage           | Emphasis       | Objective                                                                        |
 | --------------- | -------------- | -------------------------------------------------------------------------------- |
 | Understanding   | High           | Discover enough domain knowledge to understand the business area.                |
-| Contextualizing | High           | Build a broad base scenario of current flows, actors, concepts, and boundaries.  |
-| Planning        | Medium         | Select the most valuable improvement supported by the contextual base.           |
-| Building        | Medium / later | Implement the improvement without losing traceability to the discovered context. |
+| Contextualizing | High           | Build a broad base scenario of current flows, actors, concepts, and<br/>boundaries.  |
+| Planning        | Medium         | Select the most valuable improvement supported by the contextual<br/>base.           |
+| Building        | Medium<br/>(_later_) | Implement the improvement without losing traceability to the<br/>discovered context. |
 
 The early stages are intentionally stronger because Context-First assumes that weak context creates unstable implementation decisions.
 

@@ -56,11 +56,7 @@ Esos artefactos son útiles, pero normalmente aparecen después de que preguntas
 
 VSlices Design ayuda a los equipos a pausar antes de comprometerse demasiado pronto con una estructura.
 
-Su pregunta principal es:
-
-```text
-¿Entendemos suficiente del material de negocio para dar forma al software de manera segura?
-```
+Su pregunta principal es: _¿Entendemos suficiente del material de negocio para dar forma al software de manera segura?_.
 
 > A veces la respuesta requiere descubrimiento contextual amplio.
 > A veces requiere análisis enfocado de un problema.
@@ -116,13 +112,10 @@ Se conecta con los otros productos, pero permanece independiente.
 
 El objetivo es la continuidad.
 
-El entendimiento de dominio no debería desaparecer cuando el equipo empieza a documentar.
-
-La documentación no debería quedar desconectada de la arquitectura.
-
-La arquitectura no debería quedar desconectada de la implementación.
-
-La implementación debería permanecer trazable hacia la intención de negocio que la justificó.
+- El entendimiento de dominio no debería desaparecer cuando el equipo empieza a documentar.
+- La documentación no debería quedar desconectada de la arquitectura.
+- La arquitectura no debería quedar desconectada de la implementación.
+- La implementación debería permanecer trazable hacia la intención de negocio que la justificó.
 
 ## Principio central
 

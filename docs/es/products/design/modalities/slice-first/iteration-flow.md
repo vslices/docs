@@ -7,7 +7,7 @@ _Slice-First_ da más atención a Building y *feedback*.
 | Understanding   | Bajo / Medio | Entender solo lo suficiente para evitar implementación ciega.                    |
 | Contextualizing | Bajo         | Definir el contexto mínimo necesario para una *slice* segura.                    |
 | Planning        | Medio        | Elegir una pequeña *vertical slice* que pueda producir aprendizaje.              |
-| Building        | Alto         | Construir, validar y usar *feedback* como mecanismo principal de descubrimiento. |
+| Building        | Alto         | Construir, validar y usar *feedback* como mecanismo principal de<br/>descubrimiento. |
 
 _Slice-First_ no requiere la base más amplia posible, solo la base responsable más pequeña que pueda sostener la *slice*.
 

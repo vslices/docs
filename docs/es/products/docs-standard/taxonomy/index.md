@@ -28,18 +28,18 @@ Pero también, si el conocimiento sigue siendo temprano, incierto, local o tempo
 
 ## Taxonomía de documentos
 
-| Conocimiento preservado | Documento | Pregunta principal | Ejemplos |
-| --- | --- | --- | --- |
-| Lenguaje | Vocabulario de dominio (_Domain Vocabulary_ en inglés) | ¿Qué significa esto? | Términos, alias, significados en conflicto, ejemplos |
-| Scenario | Documento de contexto (_Context Document_ en inglés) | ¿Dónde estamos trabajando? | Organización, área, actores, límites, puntos de dolor |
-| Work line | Documento de contexto (_Context Document_ en inglés) | ¿Qué ofrecemos u operamos? | Departamentos, servicios, líneas de negocio, _value streams_ |
-| Work process | Documento de proceso (_Process Document_ en inglés) | ¿Cómo lo hacemos? | Responsabilidades, roles, coordinación, estructura operativa |
-| Workflow | Documento de proceso (_Process Document_ en inglés) | ¿Qué se hace? | Pasos, _handoffs_, decisiones, participantes responsables |
-| Comportamiento | Documento de caso de uso (_Use Case Document_ en inglés) | ¿Qué significa este comportamiento? | Consecuencias, validaciones, errores esperados, reglas |
-| Capacidad | Documento de capacidad (_Capability Document_ en inglés) | ¿Qué debe ser posible? | Capacidades estables del negocio o del sistema |
-| Decisión | Registro de decisión (_Decision Record_ en inglés) | ¿Por qué elegimos esto? | Opciones, razonamiento, _tradeoffs_, consecuencias |
-| Aprendizaje | Nota de validación (_Validation Note_ en inglés) | ¿Qué aprendimos? | Evidencia, resultados, _feedback_, preguntas siguientes |
-| Conocimiento emergente | Nota de soporte (_Support Note_ en inglés) | ¿Qué no deberíamos perder todavía? | Conceptos, supuestos, riesgos, preguntas, _feedback_ |
+| Preserva                   | Documento                    | Pregunta principal                      | Ejemplos                                                                                                |
+| -------------------------- | ---------------------------- | --------------------------------------- | ------------------------------------------------------------------------------------------------------- |
+| Lenguaje                   | Vocabulario<br/>de dominio   | ¿Qué significa esto?                    | <ul><li>Términos</li><li>alias</li><li>significados en<br/>conflicto</li><li>ejemplos</li></ul>         |
+| Scenario                   | Documento de<br/>contexto    | ¿Dónde estamos<br/>trabajando?          | <ul><li>Organización</li><li>área</li><li>actores</li><li>límites</li><li>puntos de dolor</li></ul>     |
+| Work line                  | Documento de<br/>contexto    | ¿Qué ofrecemos u<br/>operamos?          | <ul><li>Departamentos</li><li>servicios</li><li>líneas de negocio</li><li>_value streams_</li></ul>     |
+| Work process               | Documento de<br/>proceso     | ¿Cómo lo hacemos?                       | <ul><li>Responsabilidades</li><li>roles</li><li>coordinación</li><li>estructura<br/>operativa</li></ul> |
+| Workflow                   | Documento de<br/>proceso     | ¿Qué se hace?                           | <ul><li>Pasos</li><li>_handoffs_</li><li>decisiones</li><li>participantes responsables</li></ul>        |
+| Comportamiento             | Documento de<br/>caso de uso | ¿Qué significa este<br/>comportamiento? | <ul><li>Consecuencias</li><li>validaciones</li><li>errores esperados</li><li>reglas</li></ul>           |
+| Capacidad                  | Documento de<br/>capacidad   | ¿Qué debe ser<br/>posible?              | Capacidades estables del negocio<br/>o del sistema                                                      |
+| Decisión                   | Registro de<br/>decisión     | ¿Por qué elegimos<br/>esto?             | <ul><li>Opciones</li><li>razonamiento</li><li>_tradeoffs_</li><li>consecuencias</li></ul>               |
+| Aprendizaje                | Nota de<br/>validación       | ¿Qué aprendimos?                        | <ul><li>Evidencia</li><li>resultados</li><li>_feedback_</li><li>preguntas siguientes</li></ul>          |
+| Conocimiento<br/>emergente | Nota de soporte              | ¿Qué no deberíamos<br/>perder todavía?  | <ul><li>Conceptos</li><li>supuestos</li><li>riesgos</li><li>preguntas</li><li>_feedback_</li></ul>      |
 
 ## Grupos de taxonomía
 

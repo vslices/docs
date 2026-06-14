@@ -21,11 +21,11 @@ The current version should be read as a foundational snapshot, not as a final pr
 
 | Area | Current maturity | What to expect |
 | --- | --- | --- |
-| VSlices Design | Beta prerelease | The main design ideas, principles, and modeling modalities are available for early feedback. Some techniques may still evolve as they are validated in real projects. |
-| VSlices Docs Standard | Beta prerelease | The documentation model, document types, and continuity principles are available for early feedback. Templates and examples may become more concrete over time. |
-| VSlices Method | Beta prerelease | The method currently connects design reasoning, documentation, and implementation intent. Its collaboration and continuity models are available for review and refinement. |
-| VSlices Framework | Experimental | Framework documentation is intentionally limited while the concepts from Design, Docs Standard, and Method are reviewed together. Its implementation model may change as alignment improves. |
-| Alive Lab | Exploratory | Field notes, project stories, theories, and decisions preserve learning in progress. These materials may influence VSlices, but they are not all official product guidance. |
+| VSlices Design | Beta prerelease | The main design ideas, principles, and modeling<br/>modalities are available for early feedback.<br/><br/>Some techniques may still evolve as they are validated<br/>in real projects. |
+| VSlices Docs Standard | Beta prerelease | The documentation model, document types, and<br/>continuity principles are available for early feedback.<br/><br/>Templates and examples may become more concrete<br/>over time. |
+| VSlices Method | Beta prerelease | The method currently connects design reasoning,<br/>documentation, and implementation intent.<br/><br/>Its collaboration and continuity models are available for<br/>review and refinement. |
+| VSlices Framework | Experimental | Framework documentation is intentionally limited<br/>while the concepts from Design, Docs Standard, and<br/>Method are reviewed together.<br/><br/>Its implementation model may change as alignment<br/>improves. |
+| Alive Lab | Exploratory | Field notes, project stories, theories, and decisions<br/>preserve learning in progress.<br/><br/>These materials may influence VSlices, but they are not<br/>all official product guidance. |
 
 The goal of this prerelease is not to present VSlices as complete. It is to make the current thinking visible, receive feedback, and improve the suite before expanding the Framework documentation and translating the full documentation into Spanish.
 

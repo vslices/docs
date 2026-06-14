@@ -131,17 +131,17 @@ Use the expanded version when behavior is complex, risky, rule-heavy, or impleme
 
 This document can support alignment with existing standards and documentation practices. It does not make the documentation compliant by itself.
 
-| Standard or practice | Affinity | Supports                                                                                         |                                                                  |
-| -------------------- | -------- | ------------------------------------------------------------------------------------------------ |
-| ISO/IEC/IEEE 29148   | High     | Requirements-related language, behavior meaning, validations, expected errors, and traceability. |
-| ISO/IEC/IEEE 42010   | Medium   | Concerns, behavior rationale, relationships, and decision impact.                                |
+| Standard | Affinity | Supports |
+| --- | --- | --- |
+| ISO/IEC/IEEE 29148 | High | Requirements-related: <ul><li>Language</li><li>Behavior meaning</li><li>Validations</li><li>Expected errors</li><li>Traceability</li></ul> |
+| ISO/IEC/IEEE 42010 | Medium | <ul><li>Concerns</li><li>Behavior rationale</li><li>Relationships</li><li>Decision impact</li></ul> |
 
-| Standard or practice | Affinity | Supports                                                                                         |                                                                  |
-| -------------------- | -------- | ------------------------------------------------------------------------------------------------ |
-| arc42                | Medium   | Runtime behavior, risks, decisions, and glossary connections.                                    |
-| C4 Model             | Low      | Context and boundary awareness around the behavior.                                              |
-| 4+1 View Model       | High     | Scenario and use-case-oriented thinking.                                                         |
-| ADR                  | Medium   | Decisions related to behavior, rules, and tradeoffs.     
+| Practice | Affinity | Supports |
+| --- | --- | --- |
+| arc42 | Medium | <ul><li>Runtime behavior</li><li>Risks</li><li>Decisions</li><li>Glossary connections</li></ul> |
+| C4 Model | Low | Context and boundary awareness around the behavior. |
+| 4+1 Model | High | Scenario and use-case-oriented thinking. |
+| ADR | Medium | Decisions related to: <ul><li>Behavior</li><li>Rules</li><li>Tradeoffs</li></ul> 
 
 ## Related artifacts
 

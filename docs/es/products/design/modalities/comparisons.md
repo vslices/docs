@@ -134,15 +134,15 @@ VSlices Design usa modalidades para responder esa pregunta sin forzar a todos lo
 
 | Modalidad     | Usar cuando                                                            | Riesgo principal reducido                                |
 | ------------- | ---------------------------------------------------------------------- | -------------------------------------------------------- |
-| Context-First | el negocio/dominio es poco claro o fragmentado                         | construir la abstracción incorrecta                      |
-| Problem-First | el dominio existe, pero un problema específico necesita clarificación  | resolver síntomas en vez de causas                       |
-| Slice-First   | la incertidumbre se reduce mejor mediante *feedback* de implementación | planificar demasiado antes de contrastar con la realidad |
+| Context-First | el negocio/dominio es poco claro o<br/>fragmentado                         | construir la abstracción incorrecta                      |
+| Problem-First | el dominio existe, pero un problema<br/>específico necesita clarificación  | resolver síntomas en vez de causas                       |
+| Slice-First   | la incertidumbre se reduce mejor<br/>mediante *feedback* de implementación | planificar demasiado antes de<br/>contrastar con la realidad |
 
 | Si el equipo dice...                                                           | Considerar...              |
 | ------------------------------------------------------------------------------ | -------------------------- |
-| “Todavía no entendemos esta área de negocio.”                                  | Context-First              |
-| “Sabemos que algo duele, pero no estamos seguros de cuál es el problema real.” | Problem-First              |
-| “Entendemos lo suficiente para probar una pieza pequeña y aprender de ella.”   | Slice-First                |
-| “Seguimos descubriendo nuevos conceptos de negocio mientras construimos.”      | Volver hacia Context-First |
-| “Estamos construyendo *features* solicitadas, pero el dolor permanece.”        | Volver hacia Problem-First |
-| “Estamos discutiendo demasiado y validando muy poco.”                          | Movernos hacia Slice-First |
+| Todavía no entendemos esta área de negocio.                                  | Context-First              |
+| Sabemos que algo duele, pero no estamos seguros de cuál es<br/>el problema real. | Problem-First              |
+| Entendemos lo suficiente para probar una pieza pequeña y<br/>aprender de ella.   | Slice-First                |
+| Seguimos descubriendo nuevos conceptos de negocio<br/>mientras construimos.      | Volver hacia Context-First |
+| Estamos construyendo *features* solicitadas, pero el dolor permanece.        | Volver hacia Problem-First |
+| Estamos discutiendo demasiado y validando muy poco.                          | Movernos hacia Slice-First |

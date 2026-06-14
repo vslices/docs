@@ -60,9 +60,9 @@ _Alive Lab_ explica cómo puede surgir parte de esa guía.
 
 | Sección | Propósito |
 | --- | --- |
-| [Historias de proyecto](project-stories/index.md) | Preservar aprendizajes de proyectos concretos o escenarios similares a proyectos. |
+| [Historias de proyecto](project-stories/index.md) | Preservar aprendizajes de<br/>proyectos concretos o escenarios similares a proyectos. |
 | [Teorías](theories/index.md) | Explorar ideas más amplias que pueden influir en VSlices en el futuro. |
-| [Notas de campo](field-notes/index.md) | Preservar continuidad de experiencia desde proyectos reales de _software_ y experiencia profesional. |
+| [Notas de campo](field-notes/index.md) | Preservar continuidad de experiencia desde proyectos reales de _software_ y<br/>experiencia profesional. |
 
 Algunas secciones pueden permanecer intencionalmente limitadas hasta que exista suficiente material que valga la pena preservar.
 

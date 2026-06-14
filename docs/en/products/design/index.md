@@ -56,7 +56,7 @@ Those artifacts are useful, but they often appear after important domain questio
 
 VSlices Design helps teams pause before committing too early to a structure. 
 
-Its main question is: ``` Do we understand enough of the business material to safely shape the software?```
+Its main question is: _Do we understand enough of the business material to safely shape the software?_
 
 > Sometimes the answer requires broad contextual discovery. 
 > Sometimes it requires focused problem analysis. 
@@ -112,13 +112,10 @@ It connects with the other products, but it remains independent.
 
 The goal is continuity.
 
-Domain understanding should not disappear when the team starts documenting.
-
-Documentation should not become disconnected from architecture.
-
-Architecture should not become disconnected from implementation.
-
-Implementation should remain traceable to the business intent that justified it.
+- Domain understanding should not disappear when the team starts documenting.
+- Documentation should not become disconnected from architecture.
+- Architecture should not become disconnected from implementation.
+- Implementation should remain traceable to the business intent that justified it.
 
 ## Core principle
 

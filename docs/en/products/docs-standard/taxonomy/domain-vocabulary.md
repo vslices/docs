@@ -87,14 +87,14 @@ This document can support alignment with existing standards and documentation pr
 
 | Standard | Affinity | Supports |
 | -------------------- | -------- | -------- |
-| ISO/IEC/IEEE 29148 | Medium | Requirement terminology, definitions, ambiguity reduction, and traceability. | Formal requirements terminology controls and requirements management. |
-| ISO/IEC/IEEE 42010 | Medium | Consistent terms for stakeholders, concerns, views, decisions, and architecture descriptions. | Formal architecture description language or controlled vocabulary model. |
+| ISO/IEC/IEEE 29148 | Medium | <ul><li>Requirement terminology</li><li>Definitions</li><li>Ambiguity reduction</li><li>Traceability</li></ul> |
+| ISO/IEC/IEEE 42010 | Medium | Consistent terms for:<ul><li>Stakeholders</li><li>Concerns</li><li>Views</li><li>Decisions</li><li>Architecture descriptions</li></ul> |
 
 | Practice | Affinity | Supports |
 | -------------------- | -------- | -------- |
-| arc42 | High | Glossary, terminology, aliases, examples, and shared language. |
-| C4 Model | Low / Medium | Naming consistency for systems, containers, components, and boundaries. |
-| 4+1 View Model | Low / Medium | Shared language across scenarios and architecture views. |
+| arc42 | High | <ul><li>Glossary</li><li>Terminology</li><li>Aliases</li><li>Examples</li><li>Shared language</li></ul> |
+| C4 Model | Low / Medium | Naming consistency for:<ul><li>Systems</li><li>Containers</li><li>Components</li><li>Boundaries</li></ul> |
+| 4+1 Model | Low / Medium | Shared language across scenarios and<br/>architecture views. |
 | ADR | Low / Medium | Naming choices that may influence decisions. |
 
 ## Related artifacts
@@ -108,7 +108,7 @@ A Domain Vocabulary may support or be supported by:
 | [Use Case Document](use-case-document.md)     | Depends on clear terms to define expected behavior.                                    |
 | [Capability Document](capability-document.md) | May reuse vocabulary to name stable business abilities.                                |
 | [Decision Record](decision-record.md)         | May explain why one term or interpretation was chosen.                                 |
-| [Support Note](support-note.md)               | May capture early, uncertain, or disputed terms before they become vocabulary entries. |
+| [Support Note](support-note.md)               | May capture early, uncertain, or disputed terms before they<br/>become vocabulary entries. |
 
 
 ## Common mistakes

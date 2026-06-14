@@ -23,16 +23,16 @@ La documentación pierde valor cuando los documentos se vuelven aislados.
 Un camino de continuidad común puede verse así:
 
 ```text
-scenario
--> work line
--> work process
--> workflow
--> use case
--> capability
--> decision
--> implementation
--> validation
--> updated understanding
+escenario
+-> línea de trabajo
+-> proceso
+-> flujo 
+-> caso de uso
+-> capacidad
+-> decisión
+-> implementación
+-> validación
+-> actualización del conocimiento
 ```
 
 Este camino es descriptivo, no obligatorio. Un equipo puede comenzar desde un scenario, un problema, un workflow, un use case, una decisión o una pequeña implementación.

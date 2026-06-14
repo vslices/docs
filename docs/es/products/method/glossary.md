@@ -58,7 +58,7 @@ Estos términos ayudan a describir cómo los equipos avanzan a través de incert
 
 *VSlices Method* ayuda a los equipos a decidir cómo avanzar a través del trabajo mientras preservan continuidad.
 
-```text id="bnor3e"
+```text
 Work entry point
 -> Current uncertainty
 -> Smallest useful structure

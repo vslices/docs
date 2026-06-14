@@ -8,17 +8,10 @@ Cuando la incertidumbre cambia, puede que la modalidad también necesite cambiar
 
 ## Idea central
 
-Cambia de modalidad cuando la modalidad actual ya no está reduciendo la incertidumbre dominante. La pregunta no es:
+Cambia de modalidad cuando la modalidad actual ya no está reduciendo la incertidumbre dominante. 
 
-```text
-¿Tenemos permitido cambiar de modalidad?
-```
-
-La mejor pregunta es:
-
-```text
-¿Cambió el tipo de incertidumbre?
-```
+La pregunta no es: _¿Tenemos permitido cambiar de modalidad?_, si no 
+_¿Cambió el tipo de incertidumbre?_.
 
 _VSlices Method_ usa el cambio de modalidad para mantener al equipo alineado con la realidad, en vez de forzar que el trabajo continúe bajo el énfasis incorrecto.
 
@@ -28,9 +21,9 @@ Cada modalidad protege al equipo de un riesgo distinto.
 
 | Modalidad         | Ayuda a evitar                                         | Puede volverse riesgosa cuando                                                         |
 | ----------------- | ------------------------------------------------------ | -------------------------------------------------------------------------------------- |
-| **_Context-First_** | Construir desde un contexto mal entendido.             | El equipo sigue expandiendo entendimiento sin decidir qué validar.                     |
-| **_Problem-First_** | Resolver síntomas en vez de problemas.                 | El equipo aísla el problema del contexto más amplio que le da significado.             |
-| **_Slice-First_**   | Diseñar demasiado antes de aprender desde la realidad. | El equipo construye sin suficiente entendimiento de intención, riesgo o consecuencias. |
+| **_Context-First_** | Construir desde un contexto<br/>mal entendido.             | El equipo sigue expandiendo entendimiento sin<br/>decidir qué validar.                     |
+| **_Problem-First_** | Resolver síntomas en vez de<br/>problemas.                 | El equipo aísla el problema del contexto más amplio<br/>que le da significado.             |
+| **_Slice-First_**   | Diseñar demasiado antes de<br/>aprender desde la realidad. | El equipo construye sin suficiente entendimiento de<br/>intención, riesgo o consecuencias. |
 
 Cambiar de modalidad ayuda a evitar que un énfasis útil se convierta en complejidad accidental.
 
@@ -40,12 +33,12 @@ Un cambio no significa que la modalidad anterior estuviera mal. Significa que la
 
 | Cambio                             | Usar cuando                                                                                                      | Propósito                                                                 |
 | ---------------------------------- | ---------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------- |
-| **_Context-First_ -> _Problem-First_** | El equipo entiende suficiente del escenario como para enfocarse en un dolor, oportunidad o decisión concreta.    | Estrechar un contexto amplio hacia un problema que vale la pena resolver. |
-| **_Context-First_ -> _Slice-First_**   | El equipo entiende lo suficiente como para validar una parte pequeña y reversible del sistema.                   | Convertir aprendizaje contextual en evidencia práctica.                   |
-| **_Problem-First_ -> _Context-First_** | El problema depende de _workflows_, actores, lenguaje o restricciones circundantes que todavía no están claros.    | Recuperar el contexto necesario para evitar optimización local.           |
-| **_Problem-First_ -> _Slice-First_**   | El problema está lo suficientemente claro como para que una entrega pequeña pueda probar la mejora esperada.     | Validar si la dirección propuesta funciona en la realidad.                |
-| **_Slice-First_ -> _Problem-First_**   | Una _slice_ construida revela que el problema original estaba incompleto, mal ubicado o mal enmarcado.             | Reencuadrar el problema usando evidencia de la entrega.                   |
-| **_Slice-First_ -> _Context-First_**   | Construir revela contexto de dominio faltante, actores ocultos, límites poco claros o consecuencias inesperadas. | Reconstruir entendimiento antes de continuar la implementación.           |
+| **_Context-First_ -> _Problem-First_** | El equipo entiende suficiente del<br/>escenario como para enfocarse en<br/>un dolor, oportunidad o decisión<br/>concreta.    | Estrechar un contexto amplio<br/>hacia un problema que vale la<br/>pena resolver. |
+| **_Context-First_ -> _Slice-First_**   | El equipo entiende lo suficiente<br/>como para validar una parte<br/>pequeña y reversible del sistema.                   | Convertir aprendizaje<br/>contextual en evidencia<br/>práctica.                   |
+| **_Problem-First_ -> _Context-First_** | El problema depende de _workflows_,<br/>actores, lenguaje o restricciones<br/>circundantes que todavía no están<br/>claros.    | Recuperar el contexto<br/>necesario para evitar<br/>optimización local.           |
+| **_Problem-First_ -> _Slice-First_**   | El problema está lo suficientemente<br/>claro como para que una entrega<br/>pequeña pueda probar la mejora<br/>esperada.     | Validar si la dirección<br/>propuesta funciona en la<br/>realidad.                |
+| **_Slice-First_ -> _Problem-First_**   | Una _slice_ construida revela que<br/>el problema original estaba<br/>incompleto, mal ubicado o mal<br/>enmarcado.             | Reencuadrar el problema<br/>usando evidencia de la<br/>entrega.                   |
+| **_Slice-First_ -> _Context-First_**   | Construir revela contexto de<br/>dominio faltante, actores ocultos,<br/>límites poco claros o consecuencias<br/>inesperadas. | Reconstruir entendimiento<br/>antes de continuar la<br/>implementación.           |
 
 ## Señales de que puede necesitarse un cambio
 

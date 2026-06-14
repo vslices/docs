@@ -21,11 +21,11 @@ La versión actual debe leerse como una instantánea fundacional, no como una es
 
 | Área | Estado actual | Qué esperar |
 | --- | --- | --- |
-| VSlices Design | Beta prerelease | Las ideas principales de diseño, los principios y las modalidades de modelado están disponibles para comentarios tempranos. Algunas técnicas pueden seguir evolucionando a medida que se validan en proyectos reales. |
-| VSlices Docs Standard | Beta prerelease | El modelo de documentación, los tipos de documento y los principios de continuidad están disponibles para comentarios tempranos. Las plantillas y ejemplos pueden volverse más concretos con el tiempo. |
-| VSlices Method | Beta prerelease | El método conecta actualmente el razonamiento de diseño, la documentación y la intención de implementación. Sus modelos de colaboración y continuidad están disponibles para revisión y refinamiento. |
-| VSlices Framework | Experimental | La documentación de Framework está intencionalmente limitada mientras los conceptos de Design, Docs Standard y Method se revisan juntos. Su modelo de implementación puede cambiar a medida que mejore el alineamiento. |
-| Alive Lab | Exploratory | Las field notes, project stories, theories y decisiones preservan el aprendizaje en curso. Estos materiales pueden influir en VSlices, pero no todos son orientación oficial del producto. |
+| VSlices Design | Beta prerelease | Las ideas principales de diseño, los principios y las<br/>modalidades de modelado están disponibles para<br/>comentarios tempranos.<br/><br/>Algunas técnicas pueden seguir evolucionando a medida<br/>que se validan en proyectos reales. |
+| VSlices Docs Standard | Beta prerelease | El modelo de documentación, los tipos de documento y<br/>los principios de continuidad están disponibles para<br/>comentarios tempranos.<br/><br/>Las plantillas y ejemplos pueden volverse más concretos<br/>con el tiempo. |
+| VSlices Method | Beta prerelease | El método conecta actualmente el razonamiento de<br/>diseño, la documentación y la intención de<br/>implementación.<br/><br/>Sus modelos de colaboración y continuidad están<br/>disponibles para revisión y refinamiento. |
+| VSlices Framework | Experimental | La documentación de Framework está intencionalmente<br/>limitada mientras los conceptos de Design, Docs<br/>Standard y Method se revisan juntos.<br/><br/>Su modelo de implementación puede cambiar a medida<br/>que mejore el alineamiento. |
+| Alive Lab | Exploratory | Las field notes, project stories, theories y decisiones<br/>preservan el aprendizaje en curso.<br/><br/>Estos materiales pueden influir en VSlices, pero no todos<br/>son orientación oficial del producto. |
 
 El objetivo de este prerelease no es presentar VSlices como completo. Es hacer visible el pensamiento actual, recibir comentarios y mejorar la suite antes de expandir la documentación de Framework y traducir la documentación completa al español.
 

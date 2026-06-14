@@ -28,15 +28,15 @@ Support Notes may include:
 
 | Type                | When to use it                                                                        | Use                                                                                                       |
 | ------------------- | ------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------- |
-| Concept Note        | When an idea appears but is still<br/>immature.                                       | Captures an early concept before it<br/>becomes part of the Domain Vocabulary<br/>or another document.    |
+| Concept Note        | When an idea appears but is still<br/>immature.                                       | Captures an early concept before it<br/>becomes part of the Domain<br/>Vocabulary or another document.    |
 | Assumption Note     | When something seems true, but<br/>has not been validated yet.                        | Captures something the team believes<br/>to be true, but has not validated yet.                           |
-| Risk Note           | When something could fail, cause<br/>delay, or introduce accidental complexity.       | Captures a possible source of failure,<br/>misunderstanding, delay, rework, or<br/>accidental complexity. |
-| Open Question       | When the team still needs to<br/>understand something.                                | Captures something the team still needs<br/>to understand.                                                |
-| Feature Note        | When a *feature* idea appears before<br/>the use case, capability, or scope is clear. | Captures an early *feature* idea before<br/>its use case, capability, or scope is clear.                  |
-| Feedback Note       | When someone provides input that<br/>may change understanding or direction.           | Captures input from users, domain experts,<br/>stakeholders, implementation, or operation.                |
-| Implementation Note | When useful technical detail appears,<br/>but there is no decision yet.               | Captures useful technical detail that is<br/>not yet a Decision Record.                                   |
-| Scope Note          | When something may be included,<br/>excluded, postponed, or intentionally ignored.    | Captures what may be included, excluded,<br/>postponed, or intentionally ignored.                         |
-| Improvement Note    | When a possible improvement appears,<br/>but is not yet a planned change.             | Captures a possible improvement before<br/>it becomes a planned change.                                   |
+| Risk Note           | When something could fail, cause<br/>delay, or introduce accidental<br/>complexity.       | Captures a possible source of failure,<br/>misunderstanding, delay, rework, or<br/>accidental complexity. |
+| Open Question       | When the team still needs to<br/>understand something.                                | Captures something the team still<br/>needs to understand.                                                |
+| Feature Note        | When a *feature* idea appears<br/>before the use case, capability,<br/>or scope is clear. | Captures an early *feature* idea before<br/>its use case, capability, or scope is<br/>clear.                  |
+| Feedback Note       | When someone provides input<br/>that may change understanding<br/>or direction.           | Captures input from users, domain<br/>experts, stakeholders, implementation,<br/>or operation.                |
+| Implementation Note | When useful technical detail<br/>appears, but there is no decision<br/>yet.               | Captures useful technical detail that is<br/>not yet a Decision Record.                                   |
+| Scope Note          | When something may be included,<br/>excluded, postponed, or<br/>intentionally ignored.    | Captures what may be included,<br/>excluded, postponed, or intentionally<br/>ignored.                         |
+| Improvement Note    | When a possible improvement<br/>appears, but is not yet a planned<br/>change.             | Captures a possible improvement<br/>before it becomes a planned<br/>change.                                   |
 
 
 ## When to use it
@@ -96,17 +96,17 @@ Which documents, decisions, or notes are connected?
 
 This document can support alignment with existing standards and documentation practices. It does not make the documentation compliant by itself.
 
-| Standard or practice | Affinity | Supports |
-| -------------------- | -------- | -------- |
-| ISO/IEC/IEEE 29148 | Medium | Assumptions, risks, open questions, feedback, and early requirement inputs. |
-| ISO/IEC/IEEE 42010 | Medium | Early concerns, stakeholder notes, rationale inputs, and relationships. |
+| Standard | Affinity | Supports |
+| --- | --- | --- |
+| ISO/IEC/IEEE 29148 | Medium | <ul><li>Assumptions</li><li>Risks</li><li>Open questions</li><li>Feedback</li><li>Early requirement inputs</li></ul> |
+| ISO/IEC/IEEE 42010 | Medium | <ul><li>Early concerns</li><li>Stakeholder notes</li><li>Rationale inputs</li><li>Relationships</li></ul> |
 
-| Standard or practice | Affinity | Supports |
-| -------------------- | -------- | -------- |
-| arc42 | Medium | Risks, constraints, open questions, glossary candidates, and decision inputs. |
-| ADR | Medium | Early decision inputs, options, assumptions, and risks. |
-| C4 Model | Low | Early notes about boundaries, systems, and responsibilities. |
-| 4+1 View Model | Low | Early scenario, behavior, or view-related notes. |
+| Practice | Affinity | Supports |
+| --- | --- | --- |
+| arc42 | Medium | <ul><li>Risks</li><li>Constraints</li><li>Open questions</li><li>Glossary candidates</li><li>Decision inputs</li></ul> |
+| C4 Model | Low | Early notes about: <ul><li>Boundaries</li><li>Systems</li><li>Responsibilities</li></ul> |
+| 4+1 Model | Low | <ul><li>Early scenario</li><li>Behavior</li><li>View-related notes</li></ul> |
+| ADR | Medium | <ul><li>Early decision inputs</li><li>Options</li><li>Assumptions</li><li>Risks</li></ul> |
 
 ## Common mistakes
 

@@ -6,11 +6,7 @@ A Process Document preserves how a work line operates.
 
 Its purpose is to make responsibilities, roles, coordination rules, workflows, handoffs, and outcomes visible enough to support better design and implementation decisions.
 
-A Process Document answers:
-
-> How do we do it?
-> 
-> What is done?
+A Process Document answers: _How do we do it? What is done?_
 
 A Process Document is not a complete operational manual. It describes the process knowledge that matters for understanding, improving, automating, or preserving how work is performed.
 
@@ -91,7 +87,7 @@ What makes this process fragile, slow, unclear, or risky?
 
 Use the expanded version when the process is complex, risky, cross-functional, or likely to guide implementation.
 
-```md id="rhx9ii"
+```md
 # Process Document
 
 ## Work process
@@ -136,14 +132,14 @@ Use the expanded version when the process is complex, risky, cross-functional, o
 This document can support alignment with existing standards and documentation practices. It does not make the documentation compliant by itself.
 
 | Standard | Affinity | Supports |
-| -------------------- | -------- | -------- |
-| ISO/IEC/IEEE 29148 | Medium | Process-related requirements, assumptions, business rules, and validation inputs. |
-| ISO/IEC/IEEE 42010 | Medium | Concerns, relationships, and process constraints that may shape architecture. |
+| --- | --- | --- |
+| ISO/IEC/IEEE 29148 | Medium | Process-related: <ul><li>Requirements</li><li>Assumptions</li><li>Business rules</li><li>Validation inputs</li></ul> |
+| ISO/IEC/IEEE 42010 | Medium | <ul><li>Concerns</li><li>Relationships</li><li>Process constraints that may shape architecture</li></ul> |
 
 | Practice | Affinity | Supports |
 | -------------------- | -------- | -------- |
-| arc42 | Medium / High | Runtime behavior, process movement, risks, responsibilities, and operational concerns. |
-| 4+1 View Model | Medium | Process-oriented view thinking and scenario support. |
+| arc42 | Medium / High | <ul><li>Runtime behavior</li><li>Process movement</li><li>Risks</li><li>Responsibilities</li><li>Operational concerns</li></ul> |
+| 4+1 Model | Medium | Process-oriented view thinking and scenario support. |
 | C4 Model | Low / Medium | Boundary and interaction awareness. |
 | ADR | Low / Medium | Process constraints that may justify decisions. |
 

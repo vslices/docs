@@ -4,10 +4,10 @@ Problem-First gives more attention to Planning while keeping enough Understandin
 
 | Stage           | Emphasis      | Objective                                                                        |
 | --------------- | ------------- | -------------------------------------------------------------------------------- |
-| Understanding   | Medium        | Understand the problem and the domain concepts directly around it.               |
-| Contextualizing | Medium        | Place the problem inside its surrounding flow and responsibilities.              |
+| Understanding   | Medium        | Understand the problem and the domain concepts directly<br/>around it.               |
+| Contextualizing | Medium        | Place the problem inside its surrounding flow and<br/>responsibilities.              |
 | Planning        | High          | Define the most effective improvement and make risks explicit.                   |
-| Building        | Medium / High | Implement the improvement and validate whether the problem was actually reduced. |
+| Building        | Medium / High | Implement the improvement and validate whether the problem<br/>was actually reduced. |
 
 Problem-First does not require the broadest possible base.
 

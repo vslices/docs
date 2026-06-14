@@ -4,10 +4,10 @@ _Problem-First_ da más atención a Planning mientras mantiene suficiente Unders
 
 | Etapa           | Énfasis      | Objetivo                                                                      |
 | --------------- | ------------ | ----------------------------------------------------------------------------- |
-| Understanding   | Medio        | Entender el problema y los conceptos de dominio directamente alrededor de él. |
-| Contextualizing | Medio        | Ubicar el problema dentro de su flujo y responsabilidades circundantes.       |
+| Understanding   | Medio        | Entender el problema y los conceptos de dominio directamente<br/>alrededor de él. |
+| Contextualizing | Medio        | Ubicar el problema dentro de su flujo y responsabilidades<br/>circundantes.       |
 | Planning        | Alto         | Definir la mejora más efectiva y hacer explícitos los riesgos.                |
-| Building        | Medio / Alto | Implementar la mejora y validar si el problema realmente fue reducido.        |
+| Building        | Medio / Alto | Implementar la mejora y validar si el problema realmente fue<br/>reducido.        |
 
 _Problem-First_ no requiere la base más amplia posible.
 

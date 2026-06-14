@@ -28,18 +28,18 @@ But also if the knowledge is still early, uncertain, local, or temporary, it may
 
 ## Document taxonomy
 
-| Knowledge preserved | Document            | Main question                 | Examples                                                     |
+| Preserve            | Document            | Main question                 | Examples                                                     |
 | ------------------- | ------------------- | ----------------------------- | ------------------------------------------------------------ |
-| Language            | Domain Vocabulary   | What does this mean?          | Terms, aliases, conflicting meanings, examples               |
-| Scenario            | Context Document    | Where are we working?         | Organization, area, actors, boundaries, pain points          |
-| Work line           | Context Document    | What do we offer or operate?  | Departments, services, business lines, value streams         |
-| Work process        | Process Document    | How do we do it?              | Responsibilities, roles, coordination, operational structure |
-| Workflow            | Process Document    | What is done?                 | Steps, handoffs, decisions, responsible participants         |
-| Behavior            | Use Case Document   | What does this behavior mean? | Consequences, validations, expected errors, rules            |
-| Ability             | Capability Document | What must be possible?        | Stable business or system abilities                          |
-| Decision            | Decision Record     | Why did we choose this?       | Options, rationale, tradeoffs, consequences                  |
-| Learning            | Validation Note     | What did we learn?            | Evidence, results, feedback, next questions                  |
-| Emerging knowledge  | Support Note        | What should we not lose yet?  | Concepts, assumptions, risks, questions, feedback            |
+| Language            | Domain Vocabulary   | What does this<br/>mean?          | <ul><li>Terms</li><li>Aliases</li><li>Conflicting meanings</li><li>Examples</li></ul>               |
+| Scenario            | Context Document    | Where are we<br/>working?         | <ul><li>Organization</li><li>Area</li><li>Actors</li><li>Boundaries</li><li>Pain points</li></ul>          |
+| Work line           | Context Document    | What do we<br/>offer or operate?  | <ul><li>Departments</li><li>Services</li><li>Business lines</li><li>Value streams</li></ul>         |
+| Work process        | Process Document    | How do we do<br/>it?              | <ul><li>Responsibilities</li><li>Roles</li><li>Coordination</li><li>Operational structure</li></ul> |
+| Workflow            | Process Document    | What is done?                     | <ul><li>Steps</li><li>Handoffs</li><li>Decisions</li><li>Responsible participants</li></ul>         |
+| Behavior            | Use Case Document   | What does this<br/>behavior mean? | <ul><li>Consequences</li><li>Validations</li><li>Expected errors</li><li>Rules</li></ul>            |
+| Ability             | Capability Document | What must be<br/>possible?        | Stable business or system abilities                                    |
+| Decision            | Decision Record     | Why did we<br/>choose this?       | <ul><li>Options</li><li>Rationale</li><li>Tradeoffs</li><li>Consequences</li></ul>                  |
+| Learning            | Validation Note     | What did we<br/>learn?            | <ul><li>Evidence</li><li>Results</li><li>Feedback</li><li>Next questions</li></ul>                  |
+| Emerging<br/>knowledge  | Support Note        | What should<br/>we not lose yet?  | <ul><li>Concepts</li><li>Assumptions</li><li>Risks</li><li>Questions</li><li>Feedback</li></ul>           |
 
 ## Taxonomy groups
 
