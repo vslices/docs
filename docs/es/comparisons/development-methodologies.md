@@ -135,14 +135,14 @@ Waterfall suele preguntar: _¿Qué debería especificarse antes de que comience 
 
 ## Resumen comparativo
 
-| Enfoque | Preocupación principal | Relación con VSlices |
+| Enfoque | Preocupación | Relación con VSlices |
 | --- | --- | --- |
-| Agile | Entrega adaptativa | Compatible; añade continuidad entre conocimiento, documentación e implementación |
-| Scrum | Coordinación del equipo | Complementario; no lo reemplaza |
-| Extreme Programming | Calidad técnica y retroalimentación | Fuertemente alineado; extiende la continuidad más allá del código |
-| Lean | Reducción de desperdicio y aprendizaje | Fuertemente alineado; trata el conocimiento fragmentado como desperdicio |
-| Domain-Driven Design | Modelado del dominio | Profundamente compatible; preserva la intención del dominio a lo largo del ciclo de vida |
-| Waterfall | Especificación y entrega secuenciales | Baja alineación; VSlices prefiere continuidad viva |
+| Agile | Entrega adaptativa | Compatible, añade continuidad entre: <ul><li>Conocimiento</li><li>Documentación</li><li>implementación</li></ul> |
+| Scrum | Coordinación del<br/>equipo | Complementario, no lo reemplaza |
+| Extreme<br/>Programming | Calidad técnica y<br/>retroalimentación | Fuertemente alineado, extiende la continuidad<br/>más allá del código |
+| Lean | Reducción de<br/>desperdicio y<br/>aprendizaje | Fuertemente alineado, trata el conocimiento<br/>fragmentado como desperdicio |
+| Domain-Driven<br/>Design | Modelado del<br/>dominio | Profundamente compatible; preserva la intención del<br/>dominio a lo largo del ciclo de vida |
+| Waterfall | Especificación y<br/>entrega secuenciales | Baja alineación; VSlices prefiere continuidad viva |
 
 ## La posición de VSlices
 

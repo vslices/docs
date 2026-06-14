@@ -136,12 +136,12 @@ Waterfall tends to ask: _What should be specified before implementation begins?_
 
 | Approach                    | Main concern                          | VSlices relationship                                        |
 | --------------------------- | ------------------------------------- | ----------------------------------------------------------- |
-| Agile                       | Adaptive delivery                     | Compatible; adds continuity between knowledge, documentation, and implementation |
-| Scrum                       | Team coordination                     | Complementary; does not replace it                          |
-| Extreme Programming         | Technical quality and feedback        | Strongly aligned; extends continuity beyond code            |
-| Lean                        | Waste reduction and learning          | Strongly aligned; treats fragmented knowledge as waste      |
-| Domain-Driven Design        | Domain modeling                       | Deeply compatible; preserves domain intent across lifecycle |
-| Waterfall                   | Sequential specification and delivery | Low alignment; VSlices prefers living continuity            |
+| Agile                       | Adaptive delivery                     | Compatible, adds continuity between: <ul><li>Knowledge</li><li>Documentation</li><li>Implementation</li></ul> |
+| Scrum                       | Team coordination                     | Complementary, does not replace it                          |
+| Extreme<br/>Programming         | Technical quality<br/>and feedback        | Strongly aligned, extends continuity beyond code            |
+| Lean                        | Waste reduction<br/>and learning          | Strongly aligned, treats fragmented knowledge as waste      |
+| Domain-Driven<br/>Design        | Domain modeling                       | Deeply compatible, preserves domain intent across lifecycle |
+| Waterfall                   | Sequential<br/>specification and<br/>delivery | Low alignment, VSlices prefers living continuity            |
 
 ## The VSlices position
 
