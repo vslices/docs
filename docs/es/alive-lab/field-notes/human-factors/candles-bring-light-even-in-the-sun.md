@@ -1,8 +1,10 @@
+# Una vela brilla incluso en la oscuridad
+
 _Cuando el valor parece inválido porque el trabajo se siente natural_
 
 ## Definición
 
-> Un patrón en el que un ingeniero lucha por reconocer el valor de sus propias contribuciones porque el trabajo se siente natural, intuitivo o sin esfuerzo en comparación con el esfuerzo que aparentemente requiere de otros.
+> Un patrón en el que un ingeniero no puede reconocer correctamente el valor de sus propias contribuciones porque el trabajo se siente natural, intuitivo o sin esfuerzo en comparación con el que, aparentemente, otros requieren.
 >
 > El reconocimiento a menudo se cuestiona no por falta de competencia, sino porque el ingeniero asocia valor con esfuerzo en lugar de con resultados.
 >
@@ -111,8 +113,9 @@ Cuando la capacidad natural no se reconoce como un verdadero activo de ingenier�
 - Buscar crecimiento mediante aprendizaje intencional, no mediante autocastigo innecesario.
 - Proteger la capacidad sostenible rechazando usar el sobrecompromiso como prueba de valor.
 
-Una intervención útil es preguntar: "¿Qué se volvió más fácil porque yo intervine?"
-Esa pregunta desplaza la atención del esfuerzo al impacto, y de la justificación personal al valor de ingeniería.
+Una intervención útil es preguntar: "¿Qué se volvió más fácil porque yo intervine?".
+
+> Esa pregunta desplaza la atención del esfuerzo al impacto, y de la justificación personal al valor de ingeniería.
 
 ## Preguntas de reflexión
 
@@ -131,15 +134,13 @@ Una de las lecciones más difíciles de la vida profesional es darse cuenta de q
 Algunas personas pasan años desarrollando capacidades que eventualmente hacen que el trabajo difícil parezca sin esfuerzo. Otras tienen la suerte de descubrir ciertas capacidades antes. Ninguna de las dos cosas disminuye el valor creado.
 
 > Un equipo puede pasar meses construyendo una casa.
+>
 > Un equipo más experimentado puede construir una mansión en el mismo tiempo.
+>
 > Una persona particularmente talentosa puede construir una casa con sorprendente facilidad.
 
-Durante años, creí que si construir una casa se sentía fácil, la casa no podía valer mucho.
-
-Pero el problema no era la casa, era que nunca había notado que yo era capaz de construir mansiones.
+Durante años, creí que si construir una casa se sentía fácil, la casa no podía valer mucho. Pero el problema no era la casa, era que nunca había notado que yo era capaz de construir mansiones.
 
 La vela no deja de traer luz solo porque el sol ya esté brillando. Su contribución puede parecer pequeña en comparación. Pero la luz sigue siendo real.
 
-> Una vela que niega su propia luz no se vuelve humilde.
->
-> Simplemente deja una parte del mundo en oscuridad o sin hogar.
+> Una vela que niega su propia luz no se vuelve humilde. Simplemente deja una parte del mundo en oscuridad o sin hogar.

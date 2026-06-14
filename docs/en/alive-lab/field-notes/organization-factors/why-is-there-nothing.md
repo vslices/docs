@@ -128,7 +128,9 @@ When invisible engineering work is not made understandable, the organization lea
 - Review whether pressure for visibility is causing architectural shortcuts.
 - Treat progress communication as part of engineering work, not as a distraction from it.
 
-A useful intervention is to ask: "What must become true before visible progress can safely appear?". That question helps explain invisible work as preparation for delivery, not as absence of delivery.
+A useful intervention is to ask: "What must become true before visible progress can safely appear?".
+
+That question helps explain invisible work as preparation for delivery, not as absence of delivery.
 
 ## Reflection Questions
 

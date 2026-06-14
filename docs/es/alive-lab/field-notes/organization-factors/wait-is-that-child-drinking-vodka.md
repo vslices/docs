@@ -1,5 +1,7 @@
 # Espera, ¿ese niño está bebiendo vodka?
 
+> ¡¿Como que _otra vez_?!
+
 _Cuando el feedback incómodo llega demasiado tarde_
 
 ## Definición
@@ -112,7 +114,8 @@ Cuando una señal incómoda se ignora durante demasiado tiempo, el problema deja
 - Usar lenguaje claro en lugar de eufemismos cuando el problema ya es visible.
 - Aceptar que intervenir temprano suele parecer exagerado justo antes de volverse claramente correcto.
 
-Una intervención útil es preguntar: "¿Estamos siendo prudentes o solo estamos evitando el momento incómodo de admitir lo que ya sabemos?"
+Una intervención útil es preguntar: "¿Estamos siendo prudentes o solo estamos evitando el momento incómodo de admitir lo que ya sabemos?".
+
 Esa pregunta puede cortar la inercia antes de que la situación se agrave.
 
 ## Preguntas de reflexión

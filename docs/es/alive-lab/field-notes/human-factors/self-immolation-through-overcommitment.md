@@ -5,6 +5,7 @@ _Cuando el sacrificio personal se usa para compensar la desalineación_
 ## Definición
 
 > Un patrón en el que un ingeniero acepta repetidamente compromisos más allá de una capacidad sostenible en un intento de:
+> 
 > - ayudar a un miembro del equipo (más complejo de lo que parece)
 > - reducir la presión de los stakeholders
 > - acelerar resultados
@@ -12,20 +13,22 @@ _Cuando el sacrificio personal se usa para compensar la desalineación_
 > - sentirse indispensable
 >
 > Este comportamiento suele estar motivado por:
+> 
 > - empatía profunda y baja tolerancia a la incomodidad
 > - sentido ampliado de responsabilidad
 > - deseo genuino de contribuir
 >
 > Con el tiempo, los compromisos acumulados se vuelven imposibles de sostener, lo que resulta en:
+> 
 > - agotamiento y burnout
 > - menor previsibilidad
 > - entregas retrasadas (más de lo que habría implicado una renegociación temprana)
 
 ## Contexto
 
-Este patrón se observó dentro de una organización grande y altamente estructurada.
+Este patrón se observó dentro de una organización grande y altamente estructurada. El ingeniero involucrado estaba acostumbrado a entornos en los que cuestionar supuestos, proponer mejoras e impulsar cambios se alentaba activamente. 
 
-El ingeniero involucrado estaba acostumbrado a entornos en los que cuestionar supuestos, proponer mejoras e impulsar cambios se alentaba activamente. Sin embargo, la organización priorizaba:
+Sin embargo, la organización priorizaba:
 
 - previsibilidad
 - adherencia al proceso
@@ -108,7 +111,9 @@ Irónicamente, el intento de reducir la presión a menudo crea más presión des
 - El ingeniero se convierte en un amortiguador temporal entre la organización y la realidad.
 - El sistema acumula deuda técnica y emocional al mismo tiempo.
 
-Cuando el sobrecompromiso se convierte en la respuesta por defecto a la presión, la organización deja de recibir retroalimentación precisa. El proyecto puede parecer protegido durante un tiempo, pero la información necesaria para tomar mejores decisiones se está quemando junto con la persona que absorbe la presión.
+Cuando el sobrecompromiso se convierte en la respuesta por defecto a la presión, la organización deja de recibir retroalimentación precisa.
+
+El proyecto puede parecer protegido durante un tiempo, pero la información necesaria para tomar mejores decisiones se está quemando junto con la persona que absorbe la presión.
 
 ## Posibles intervenciones
 
@@ -129,7 +134,8 @@ Cuando el sobrecompromiso se convierte en la respuesta por defecto a la presión
 - Preferir la decepción temprana sobre el fallo tardío.
 
 Una intervención útil es decir: "Quiero ayudar, pero no quiero ocultar la forma real del problema."
-Esa frase preserva la empatía sin convertir al ingeniero en combustible.
+
+> Esa frase preserva la empatía sin convertir al ingeniero en combustible.
 
 ## Preguntas de reflexión
 
@@ -145,9 +151,10 @@ Esa frase preserva la empatía sin convertir al ingeniero en combustible.
 
 ## Reflexión final
 
-La lección más dolorosa de esta experiencia no fue el fuego. Fue darse cuenta de que querían una fogata, no una persona en llamas:
+La lección más dolorosa de esta experiencia no fue el fuego. Fue darse cuenta de que querían una fogata, no una _personata_:
 
 - El objetivo nunca fue entregar más rápido; el objetivo era reducir la presión sobre personas que ya estaban bajo presión.
-- El ingeniero intentó resolver un problema organizacional mediante sacrificio personal. Al final del día, el sacrificio fue real, pero el problema permaneció.
+- El ingeniero intentó resolver un problema organizacional mediante sacrificio personal.
+- Al final del día, el sacrificio fue real, pero el problema permaneció.
 
 Más esfuerzo puede compensar muchas cosas. Pero la mayoría de las veces, la desalineación no es una de ellas.

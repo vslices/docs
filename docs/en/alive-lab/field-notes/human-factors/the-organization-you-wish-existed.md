@@ -19,12 +19,12 @@ This pattern commonly appears when an engineer joins an organization with a stro
 
 The engineer often recognizes legitimate opportunities for improvement. However, the organization may be optimizing for objectives such as:
 
-- stability,
-- predictability,
-- operational continuity,
-- compliance,
-- risk reduction,
-- incremental evolution.
+- stability
+- predictability
+- operational continuity
+- compliance
+- risk reduction
+- incremental evolution
 
 The conflict rarely emerges because either side is wrong, but because each side is attempting to solve a different problem.
 
@@ -76,21 +76,23 @@ Possible indicators that this pattern is occurring:
 
 ### Short-Term
 
-- High motivation.
-- Strong engagement.
-- Valuable observations.
-- Identification of improvement opportunities.
+- High motivation
+- Strong engagement
+- Valuable observations
+- Identification of improvement opportunities
 
 ### Long-Term
 
-- Frustration.
-- Reduced alignment.
-- Emotional exhaustion.
-- Loss of trust in organizational decisions.
-- Growing sense of isolation.
-- Persistent feeling that effort is not producing meaningful change.
+- Frustration
+- Reduced alignment
+- Emotional exhaustion
+- Loss of trust in organizational decisions
+- Growing sense of isolation
+- Persistent feeling that effort is not producing meaningful change
 
-In some cases, the engineer concludes that the organization is the problem. In others, the organization concludes that the engineer is the problem. Neither conclusion is correct, just they weren't a good fit.
+In some cases, the engineer concludes that the organization is the problem. In others, the organization concludes that the engineer is the problem. 
+
+> Neither conclusion is correct, just they weren't a good fit.
 
 ## Engineering Impact
 
@@ -107,7 +109,9 @@ In some cases, the engineer concludes that the organization is the problem. In o
 - The organization may lose valuable improvement signals because they arrive wrapped in frustration.
 - The gap between personal standards and organizational priorities can turn legitimate engineering judgment into chronic dissatisfaction.
 
-When vision outruns organizational purpose, engineering effort starts solving for an imagined environment. The ideas may be good, but they are being offered to an organization that is not ready, willing or structured to use them.
+When vision outruns organizational purpose, engineering effort starts solving for an imagined environment.
+
+ The ideas may be good, but they are being offered to an organization that is not ready, willing or structured to use them.
 
 ## Posible intervertions
 
@@ -128,6 +132,7 @@ When vision outruns organizational purpose, engineering effort starts solving fo
 - Leave room for the possibility that the idea is good and the environment is still not the right place for it.
 
 A useful intervention is to ask: "Am I trying to improve this organization from within its purpose, or am I trying to replace its purpose with mine?"
+
 That question can prevent good engineering judgment from becoming a long fight against reality.
 
 ## Reflection Questions

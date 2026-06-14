@@ -19,12 +19,12 @@ Este patrón aparece comúnmente cuando un ingeniero se une a una organización 
 
 El ingeniero suele reconocer oportunidades legítimas de mejora. Sin embargo, la organización puede estar optimizando objetivos como:
 
-- estabilidad,
-- previsibilidad,
-- continuidad operativa,
-- cumplimiento,
-- reducción de riesgos,
-- evolución incremental.
+- estabilidad
+- previsibilidad
+- continuidad operativa
+- cumplimiento
+- reducción de riesgos
+- evolución incremental
 
 El conflicto rara vez surge porque una de las partes esté equivocada, sino porque cada una está intentando resolver un problema distinto.
 
@@ -76,21 +76,23 @@ Posibles indicadores de que este patrón está ocurriendo:
 
 ### Corto plazo
 
-- Alta motivación.
-- Fuerte compromiso.
-- Observaciones valiosas.
-- Identificación de oportunidades de mejora.
+- Alta motivación
+- Fuerte compromiso
+- Observaciones valiosas
+- Identificación de oportunidades de mejora
 
 ### Largo plazo
 
-- Frustración.
-- Menor alineación.
-- Agotamiento emocional.
-- Pérdida de confianza en las decisiones organizacionales.
-- Creciente sensación de aislamiento.
-- Sensación persistente de que el esfuerzo no está produciendo cambios significativos.
+- Frustración
+- Menor alineación
+- Agotamiento emocional
+- Pérdida de confianza en las decisiones organizacionales
+- Creciente sensación de aislamiento
+- Sensación persistente de que el esfuerzo no está produciendo cambios significativos
 
-En algunos casos, el ingeniero concluye que la organización es el problema. En otros, la organización concluye que el ingeniero es el problema. Ninguna conclusión es correcta; simplemente no encajaban bien.
+En algunos casos, el ingeniero concluye que la organización es el problema. En otros, la organización concluye que el ingeniero es el problema. 
+
+> Ninguna conclusión es correcta; simplemente no encajaban bien.
 
 ## Impacto en ingeniería
 
@@ -107,7 +109,9 @@ En algunos casos, el ingeniero concluye que la organización es el problema. En 
 - La organización puede perder señales valiosas de mejora porque llegan envueltas en frustración.
 - La brecha entre estándares personales y prioridades organizacionales puede convertir el juicio legítimo de ingeniería en insatisfacción crónica.
 
-Cuando la visión supera al propósito organizacional, el esfuerzo de ingeniería empieza a resolver para un entorno imaginado. Las ideas pueden ser buenas, pero se están ofreciendo a una organización que no está lista, dispuesta o estructurada para usarlas.
+Cuando la visión supera al propósito organizacional, el esfuerzo de ingeniería empieza a resolver para un entorno imaginado. 
+
+Las ideas pueden ser buenas, pero se están ofreciendo a una organización que no está lista, dispuesta o estructurada para usarlas.
 
 ## Posibles intervenciones
 
@@ -128,6 +132,7 @@ Cuando la visión supera al propósito organizacional, el esfuerzo de ingenierí
 - Dejar espacio para la posibilidad de que la idea sea buena y el entorno todavía no sea el lugar adecuado para ella.
 
 Una intervención útil es preguntar: "¿Estoy intentando mejorar esta organización desde dentro de su propósito, o estoy intentando reemplazar su propósito por el mío?"
+
 Esa pregunta puede evitar que un buen juicio de ingeniería se convierta en una larga pelea contra la realidad.
 
 ## Preguntas de reflexión

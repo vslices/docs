@@ -103,7 +103,9 @@ Irónicamente, cuanto más capaz se vuelve la persona, más fácil resulta exced
 - La documentación y el intercambio de conocimiento se posponen porque la coordinación inmediata consume el enfoque disponible.
 - El equipo puede confundir la capacidad de respuesta constante con productividad sostenible.
 
-Cuando una persona sostiene demasiados contextos activos, el sistema puede parecer coordinado, pero la coordinación se está ejecutando sobre atención humana en lugar de estructura explícita. Eso funciona durante un tiempo, hasta que la persona se vuelve más lenta, olvidadiza, reactiva o exhausta.
+Cuando una persona sostiene demasiados contextos activos, el sistema puede parecer coordinado, pero la coordinación se está ejecutando sobre atención humana en lugar de estructura explícita.
+
+Eso funciona durante un tiempo, hasta que la persona se vuelve más lenta, olvidadiza, reactiva o exhausta.
 
 ## Posibles intervenciones
 

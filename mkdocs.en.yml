@@ -25,8 +25,9 @@ nav:
         - Why VSlices exists: start-here/why-vslices-exists.md
         - Suite overview: start-here/suite-overview.md
         - Adoption paths: start-here/adoption-paths.md
- 
-    - Continuity of knowledge: philosophy/continuity-of-knowledge.md
+    
+    - Philosophy:
+        - Continuity of knowledge: philosophy/continuity-of-knowledge.md
 
     - Comparisons: 
         - With development methodologies: comparisons/development-methodologies.md

@@ -1,10 +1,12 @@
 # ¿Por qué no hay nada?
 
+> ¡¿Estás haciendo algo siquiera?!
+
 _Cuando la ausencia también comunica_
 
 ## Definición
 
-> Un patrón en el que una ausencia significativa —sin documentos, sin decisiones, sin contexto, sin seguimiento, sin respuesta o sin señales visibles— empieza a comunicar más que cualquier explicación explícita.
+> Un patrón en el que una ausencia significativa (sin documentos, sin decisiones, sin contexto, sin seguimiento, sin respuesta o sin señales visibles) empieza a comunicar más que cualquier explicación explícita.
 >
 > La falta de contenido se convierte en una señal en sí misma y a menudo revela desinterés, fragmentación, desalineación, agotamiento o incapacidad organizacional.
 
@@ -116,7 +118,8 @@ Cuando la ausencia domina, no solo falta información. También falta la señal 
 - Evitar asumir que la ausencia es neutral.
 - Nombrar cuándo "no hay nada" es en sí mismo un hallazgo importante.
 
-Una intervención útil es preguntar: "¿Qué está tratando de decirnos esta ausencia?"
+Una intervención útil es preguntar: "¿Qué está tratando de decirnos esta ausencia?".
+
 Esa pregunta convierte el vacío en una observación en lugar de un mero defecto.
 
 ## Preguntas de reflexión
