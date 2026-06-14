@@ -135,8 +135,9 @@ Este documento puede apoyar la alineación con estándares y prácticas de docum
 
 | Estándar           | Afinidad | Soporta                                                                                                                                |
 | ------------------ | -------- | -------------------------------------------------------------------------------------------------------------------------------------- |
-| ISO/IEC/IEEE 42010 | Alta     | <ul><li>Contexto</li><li>Intereses</li><li>Stakeholders</li><li>Límites</li><li>Relaciones</li><li>Entradas de justificación</li></ul> |
 | ISO/IEC/IEEE 29148 | Media    | <ul><li>Contexto para requisitos</li><li>Supuestos</li><li>Riesgos</li><li>Trazabilidad</li></ul>                                      |
+| ISO/IEC/IEEE 42010 | Alta     | <ul><li>Contexto</li><li>Intereses</li><li>Stakeholders</li><li>Límites</li><li>Relaciones</li><li>Entradas de justificación</li></ul> |
+
 
 | Práctica       | Afinidad     | Soporta                                                                                                                                |
 | -------------- | ------------ | -------------------------------------------------------------------------------------------------------------------------------------- |

@@ -18,7 +18,7 @@ Un Documento de capacidad ayuda al equipo a preservar:
 - __valor de negocio__: por qué importa esta capacidad.
 - __comportamiento soportado__: qué casos de uso o _workflows_ dependen de la capacidad.
 - __delimitaciones__: qué incluye y qué excluye la capacidad.
-- __reglas y contradicciones__: qué da forma o limita la capacidad.
+- __reglas y restricciones__: qué da forma o limita la capacidad.
 - __resultados esperados__: qué permite esta capacidad.
 - __independencia a implementación__: la capacidad puede entenderse antes de elegir una estructura de código.
 
@@ -127,8 +127,8 @@ Este documento puede apoyar la alineación con estándares y prácticas de docum
 
 | Estándar | Afinidad | Soporta |
 | --- | --- | --- |
-| ISO/IEC/IEEE<br/>42010 | Media / Alta | <ul><li>Intereses de arquitectura</li><li>Límites</li><li>Justificación</li><li>Relaciones entre capacidades y decisiones</li></ul> |
 | ISO/IEC/IEEE<br/>29148 | Media | <ul><li>Requisitos relacionados con capacidades</li><li>Restricciones</li><li>Resultados esperados</li><li>Trazabilidad</li></ul> |
+| ISO/IEC/IEEE<br/>42010 | Media / Alta | <ul><li>Intereses de arquitectura</li><li>Límites</li><li>Justificación</li><li>Relaciones entre capacidades y decisiones</li></ul> |
 
 | Práctica | Afinidad | Soporta |
 | --- | --- | --- |

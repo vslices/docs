@@ -113,14 +113,14 @@ Este documento puede apoyar la alineación con estándares y prácticas de docum
 
 | Estándar | Afinidad     | Soporta                                                                                                                                                                          |
 | ------------------- | ------------ | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| ISO/IEC/IEEE 42010  | Media / Alta | <ul><li>Justificación de arquitectura</li><li>Intereses</li><li>Decisiones</li><li>Relaciones</li><li>Consecuencias</li></ul>                                                    |
 | ISO/IEC/IEEE 29148  | Media        | <ul><li>Decisiones relacionadas con requisitos</li><li>Supuestos</li><li>Impacto de validación</li><li>Trazabilidad</li></ul>                                                    |
+| ISO/IEC/IEEE 42010  | Media / Alta | <ul><li>Justificación de arquitectura</li><li>Intereses</li><li>Decisiones</li><li>Relaciones</li><li>Consecuencias</li></ul>                                                    |
 
 | Práctica | Afinidad     | Soporta                                                                                                                                                                          |
 | ------------------- | ------------ | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | arc42               | Alta         | <ul><li>Decisiones de arquitectura</li><li>Riesgos</li><li>Restricciones</li><li>Justificación</li></ul>                                                                         |
-| 4+1 Model      | Media        | <ul><li>Decisiones que afectan escenarios</li><li>Estructura lógica</li><li>Procesos</li><li>Desarrollo</li><li>Vistas físicas</li></ul>                                         |
 | C4 Model            | Media        | Decisiones: <ul><li>Que pueden afectar diagramas de contexto</li><li>Sobre contenedores</li><li>Sobre componentes</li><li>Sobre código</li></ul> |
+| 4+1 Model      | Media        | <ul><li>Decisiones que afectan escenarios</li><li>Estructura lógica</li><li>Procesos</li><li>Desarrollo</li><li>Vistas físicas</li></ul>                                         |
 | ADR                 | Alta         | <ul><li>Decisión</li><li>Justificación</li><li>Opciones</li><li>*Tradeoffs*</li><li>Consecuencias</li><li>Condiciones de revisión</li></ul>                                      |## Artefactos relacionados
 
 Un Registro de decisión puede apoyar o ser apoyado por:
