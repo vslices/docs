@@ -21,7 +21,7 @@ Antes de que un patrón, estructura de documento, técnica de diseño o primitiv
 
 El objetivo es aprender antes de estandarizar.
 
-## Cómo leer Project Stories
+## Cómo leer Historias de proyecto
 
 Las Historias de proyecto deben leerse como evidencia, no como recetas universales.
 

@@ -91,3 +91,49 @@ nav:
         - VSlices Framework:
             - Introducción: products/framework/index.md
             - Glosario: products/framework/glossary.md
+
+    - Alive lab: 
+        - Overview: alive-lab/index.md
+        - Glossary: alive-lab/glossary.md
+        - Project stories:
+            - Overview: alive-lab/project-stories/index.md
+        - Field Notes:
+            - Overview: alive-lab/field-notes/index.md
+            - Human Factors:
+                - Overview: alive-lab/field-notes/human-factors/index.md
+                - Candles bring light even in the sun: alive-lab/field-notes/human-factors/candles-bring-light-even-in-the-sun.md
+                - Self immolation through overcommitment: alive-lab/field-notes/human-factors/self-immolation-through-overcommitment.md
+                - The organization you wish existed: alive-lab/field-notes/human-factors/the-organization-you-wish-existed.md
+                - RAM limits in the human brain: alive-lab/field-notes/human-factors/ram-limits-in-the-human-brain.md
+            - Organization factors:
+                - Overview: alive-lab/field-notes/organization-factors/index.md
+                - Wait.. Is that child drinking vodka?!: alive-lab/field-notes/organization-factors/wait-is-that-child-drinking-vodka.md
+                - Why is there nothing?: alive-lab/field-notes/organization-factors/why-is-there-nothing.md
+                - The human brain is not a database: alive-lab/field-notes/organization-factors/the-human-brain-is-not-a-database.md
+            - Team factors:
+                - Overview: alive-lab/field-notes/team-factors/index.md
+                - All the power in those hands...: alive-lab/field-notes/team-factors/all-the-power-in-those-hands.md
+                - Why aren't cookies in the jar anymore?: alive-lab/field-notes/team-factors/why-arent-cookies-in-the-jar-anymore.md
+            - Direction: alive-lab/field-notes/direction.md
+        - Theories:
+            - Overview: alive-lab/theories/index.md
+            - Relational surreal modeling:
+                - Latest: alive-lab/theories/relational-surreal-modeling/v1.md
+            - Knowledge geometry:
+                - Latest:  alive-lab/theories/knowledge-geometry/v2.md
+                - V1: alive-lab/theories/knowledge-geometry/v1.md
+            - PResolver, a methodology for problem resolution:
+                - Latest: alive-lab/theories/presolver/v1.md
+
+    - Decisiones:
+        - Introducción: decisions/index.md
+        - Primera iteración:
+            - Usar ReadTheDocs: decisions/first-iteration/0001-use-read-the-docs.md
+            - Repositorio Documentation-first: decisions/first-iteration/0002-documentation-first-repository.md
+            - Usar Domus Orbis como proyecto de validación: decisions/first-iteration/0003-use-domus-orbis-as-validation-project.md
+            - Mantener los productos separados, pero conectados: decisions/first-iteration/0004-keep-products-separated-but-connected.md
+            - Definición de soporte de lenguaje de primera clase: decisions/first-iteration/0005-first-class-language-support-definition.md
+            - PResolver como abstracción de VSlices: decisions/first-iteration/0006-presolver-as-an-abstraction-from-vslices.md
+            - Usar un proyecto de compañía de seguros como caso de adaptación: decisions/first-iteration/0007-use-insurance-company-project-as-adoption-case.md
+            - Usar generación de plantillas como ejemplo de Slice-First: decisions/first-iteration/0008-use-template-generation-as-slice-first-sample.md
+            - Finalizar Method antes de expandir documentos de Framework: decisions/first-iteration/0009-finish-method-before-expanding-framework-docs.md

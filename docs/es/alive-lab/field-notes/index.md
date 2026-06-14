@@ -1,6 +1,6 @@
 # Notas de campo
 
-Las Notas de campo es una colección de lecciones, observaciones, errores, realizaciones y patrones extraídos de proyectos reales de software y experiencia profesional.
+Las Notas de campo (_Field Notes_ en inglés) son una colección de lecciones, observaciones, errores, realizaciones y patrones extraídos de proyectos reales de software y experiencia profesional.
 
 A diferencia del resto de la suite VSlices, las Notas de campo no se centran en:
 
@@ -10,17 +10,17 @@ A diferencia del resto de la suite VSlices, las Notas de campo no se centran en:
 - documentación
 - proceso
 
-En cambio, se centran en las realidades que surgen cuando personas, equipos, organizaciones y software interactúan con el tiempo.
+En cambio, se centran en las realidades que surgen cuando personas, equipos, organizaciones y _software_ interactúan con el tiempo.
 
 ## Por qué existen las Notas de campo
 
-El software lo construyen personas.
+El _software_ lo construyen personas.
 
 - Las personas toman decisiones.
 - Las personas cometen errores.
 - Las personas llevan supuestos, ambiciones, miedos, fortalezas y limitaciones a cada proyecto que tocan.
 
-Muchos de los fallos más costosos observados a lo largo del desarrollo de software no son causados por la tecnología. Surgen de:
+Muchos de los fallos más costosos observados a lo largo del desarrollo de _software_ no son causados por la tecnología. Surgen de:
 
 - desalineación
 - expectativas irreales
