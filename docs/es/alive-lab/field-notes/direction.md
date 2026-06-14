@@ -1,10 +1,8 @@
-# Dirección futura: VSlices Exp Continuity
+# Dirección futura: VSlices Exp. Continuity
 
 ## Estado
 
-Trabajo en progreso
-
-No es un producto oficial de VSlices.
+Trabajo en progreso. No es un producto oficial de VSlices.
 
 ## Antecedentes
 

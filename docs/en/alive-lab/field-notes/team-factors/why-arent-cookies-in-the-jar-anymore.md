@@ -1,153 +1,155 @@
-# Why Aren't Cookies In The Jar Anymore?
+# ¿Por qué ya no hay galletas en el tarro?
 
-_When autonomy is granted without safety boundaries_
+*Cuando se concede autonomía sin límites de seguridad*
 
-## Definition
+## Definición
 
-> A pattern where inexperienced engineers are given responsibilities, permissions or autonomy beyond their current understanding without sufficient supervision, review or safety mechanisms.
+> Un patrón en el que ingenieros sin suficiente experiencia reciben responsabilidades, permisos o autonomía más allá de su entendimiento actual, sin supervisión, revisión o mecanismos de seguridad suficientes.
 >
-> When mistakes eventually occur, the focus often shifts toward the individual who made the mistake rather than the environment that made the mistake possible.
+> Cuando los errores finalmente ocurren, el foco suele desplazarse hacia la persona que cometió el error en lugar de mirar el entorno que hizo posible que el error ocurriera.
 >
-> The resulting failures are usually treated as surprises despite being entirely predictable.
+> Las fallas resultantes suelen tratarse como sorpresas a pesar de haber sido completamente predecibles.
 
-## Context
+## Contexto
 
-This pattern commonly appears when junior engineers begin receiving ownership over production systems, infrastructure, permissions or critical business processes. The intention is often positive:
+Este patrón suele aparecer cuando ingenieros junior comienzan a recibir propiedad sobre sistemas de producción, infraestructura, permisos o procesos críticos de negocio. La intención suele ser positiva:
 
-- Accelerate growth
-- Increase autonomy
-- Reduce dependency on senior engineers
+* acelerar el crecimiento
+* aumentar la autonomía
+* reducir la dependencia de ingenieros senior
 
-However, the level of responsibility frequently grows faster than the engineer's understanding of the system.
+Sin embargo, el nivel de responsabilidad frecuentemente crece más rápido que el entendimiento que el ingeniero tiene del sistema.
 
-The organization assumes competence and safety in the actions of the professional. Neither assumption was validated by another engineer with deep knowledge.
+La organización asume competencia y seguridad en las acciones del profesional. Ninguna de esas suposiciones fue validada por otro ingeniero con conocimiento profundo.
 
-## Observed Behavior
+## Comportamiento observado
 
-Several recurring patterns emerged:
+Se observaron varios patrones recurrentes:
 
-- Access was granted without clear boundaries.
-- Operations were executed without understanding their full impact.
-- Documentation was incomplete or unavailable.
-- Potential risks were not communicated.
-- Reviews were skipped for seemingly simple changes.
-- Existing safeguards were absent or insufficient.
+* Se concedía acceso sin límites claros.
+* Se ejecutaban operaciones sin entender su impacto completo.
+* La documentación estaba incompleta o no estaba disponible.
+* Los riesgos potenciales no se comunicaban.
+* Las revisiones se omitían para cambios aparentemente simples.
+* Las salvaguardas existentes estaban ausentes o eran insuficientes.
 
-The engineer knew enough to perform the task successfully. But not to predict its consequences.
+El ingeniero sabía lo suficiente para ejecutar la tarea exitosamente. Pero no para predecir sus consecuencias.
 
-## Common Signals
+## Señales comunes
 
-Possible indicators that this pattern is occurring:
+Posibles indicadores de que este patrón está ocurriendo:
 
-- "Just make the change, it will be a 5 minutes work, like half a story-point."
-    - "In fact, why is that a jira story? It does not merit that"
-- Production access granted early without supervision.
-- Lack of review for infrastructure or security changes.
-- Critical operations performed by a single inexperienced engineer.
-- No rollback strategy.
-- No staging environment.
-- Unclear ownership boundaries.
-- Dependence on tribal knowledge.
+* "Solo haz el cambio, es trabajo de 5 minutos, como medio *story point*."
 
-## Underlying Tensions
+  * "De hecho, ¿por qué eso es una historia de Jira? No amerita tanto."
+* Acceso a producción concedido temprano sin supervisión.
+* Falta de revisión para cambios de infraestructura o seguridad.
+* Operaciones críticas ejecutadas por un solo ingeniero sin suficiente experiencia.
+* Sin estrategia de *rollback*.
+* Sin ambiente de *staging*.
+* Límites de propiedad poco claros.
+* Dependencia de conocimiento tribal.
 
-### Autonomy vs Guidance
+## Tensiones subyacentes
 
-> Independence without support is not autonomy. It is abandonment.
+### Autonomía vs guía
 
-### Trust vs Verification
+> Independencia sin apoyo no es autonomía. Es abandono.
 
-> Trust should not eliminate review.
+### Confianza vs verificación
 
-### Responsibility vs Capability
+> La confianza no debería eliminar la revisión.
 
-> Responsibility can be assigned faster than competence can be developed.
+### Responsabilidad vs capacidad
 
-### Growth vs Safety
+> La responsabilidad puede asignarse más rápido de lo que la competencia puede desarrollarse.
 
-> Engineers learn through mistakes. Systems should be designed to survive them.
+### Crecimiento vs seguridad
 
-## Consequences
+> Los ingenieros aprenden a través de errores. Los sistemas deberían estar diseñados para sobrevivirlos.
 
-### Short-Term
+## Consecuencias
 
-- Unexpected incidents.
-- Emergency fixes.
-- Production instability.
-- Senior engineers pulled into recovery efforts.
+### Corto plazo
 
-### Long-Term
+* Incidentes inesperados.
+* Correcciones de emergencia.
+* Inestabilidad en producción.
+* Ingenieros senior arrastrados a esfuerzos de recuperación.
 
-- Loss of confidence.
-- Fear of making changes.
-- Reduced willingness to take ownership.
-- Knowledge silos.
-- Increased organizational risk.
+### Largo plazo
 
-Ironically, the engineer often learns the lesson, but the organization rarely learns its own.
+* Pérdida de confianza.
+* Miedo a hacer cambios.
+* Menor disposición a tomar propiedad.
+* Silos de conocimiento.
+* Mayor riesgo organizacional.
 
-## Engineering Impact
+Irónicamente, el ingeniero suele aprender la lección, pero la organización rara vez aprende la suya.
 
-- Production systems become fragile when critical actions can be performed without adequate review, context or safeguards.
-- Incidents become more likely when permissions are granted faster than understanding is developed.
-- Seemingly simple changes may produce unexpected consequences because hidden dependencies are not visible.
-- Junior engineers may lose confidence when normal learning mistakes create disproportionate damage.
-- Senior engineers are pulled into emergency recovery instead of planned mentoring or design work.
-- Teams may become more restrictive after incidents, reducing autonomy instead of improving safety.
-- Ownership becomes confusing when people are responsible for systems they do not yet understand deeply.
-- Reviews lose effectiveness when risky changes are treated as too small to deserve attention.
-- Operational knowledge remains tribal because the mistake reveals knowledge that should have been explicit earlier.
-- Delivery slows down after avoidable incidents because trust must be rebuilt.
-- The organization may blame the person who triggered the failure instead of fixing the system that allowed it to be dangerous.
-- Learning becomes associated with fear when mistakes are punished instead of contained.
+## Impacto en ingeniería
 
-When autonomy is granted without safety boundaries, the organization is not accelerating growth. It is increasing the blast radius of inexperience. The goal should not be to prevent junior engineers from making mistakes, but to prevent ordinary mistakes from becoming serious incidents.
+* Los sistemas de producción se vuelven frágiles cuando acciones críticas pueden ejecutarse sin revisión, contexto o salvaguardas adecuadas.
+* Los incidentes se vuelven más probables cuando los permisos se conceden más rápido de lo que se desarrolla el entendimiento.
+* Los cambios aparentemente simples pueden producir consecuencias inesperadas porque las dependencias ocultas no son visibles.
+* Los ingenieros junior pueden perder confianza cuando errores normales de aprendizaje generan daños desproporcionados.
+* Los ingenieros senior son arrastrados a recuperación de emergencia en lugar de mentoría planificada o trabajo de diseño.
+* Los equipos pueden volverse más restrictivos después de incidentes, reduciendo autonomía en lugar de mejorar seguridad.
+* La propiedad se vuelve confusa cuando las personas son responsables de sistemas que todavía no entienden profundamente.
+* Las revisiones pierden efectividad cuando los cambios riesgosos se tratan como demasiado pequeños para merecer atención.
+* El conocimiento operacional permanece tribal porque el error revela conocimiento que debió haberse vuelto explícito antes.
+* La entrega se ralentiza después de incidentes evitables porque la confianza debe reconstruirse.
+* La organización puede culpar a la persona que disparó la falla en lugar de arreglar el sistema que permitió que fuera peligrosa.
+* El aprendizaje se asocia con miedo cuando los errores se castigan en lugar de contenerse.
 
-## Posible intervertion
+Cuando se concede autonomía sin límites de seguridad, la organización no está acelerando el crecimiento. Está aumentando el radio de explosión de la inexperiencia. El objetivo no debería ser evitar que los ingenieros junior cometan errores, sino evitar que errores ordinarios se conviertan en incidentes graves.
 
-- Define which actions require supervision, review or approval before execution.
-- Grant permissions progressively according to understanding, recoverability and risk.
-- Use staging, sandboxes or test environments before allowing production changes.
-- Require rollback plans for infrastructure, data, security or production operations.
-- Add checklists for recurring risky tasks such as deployments, migrations or configuration changes.
-- Pair inexperienced engineers with senior engineers for high-impact changes.
-- Document hidden dependencies, operational constraints and known risks close to the affected system.
-- Treat "simple changes" as risky when their impact is not fully understood.
-- Make ownership boundaries explicit before assigning responsibility.
-- Use code review, change review or operational review as safety mechanisms, not as signs of distrust.
-- Design systems so common mistakes are recoverable.
-- After an incident, ask what guardrail would have reduced the blast radius.
-- Avoid granting access merely because someone needs to complete a task quickly.
-- Teach the consequences of actions before expecting independent execution.
-- Replace blame with system improvement: what made this mistake possible, dangerous or hard to detect?
+## Posibles intervenciones
 
-A useful intervention is to ask: "What is the worst reasonable outcome if this person makes a normal learning mistake here?"
-That question helps design autonomy with boundaries instead of autonomy through abandonment.
+* Definir qué acciones requieren supervisión, revisión o aprobación antes de ejecutarse.
+* Conceder permisos progresivamente según entendimiento, recuperabilidad y riesgo.
+* Usar *staging*, *sandboxes* o ambientes de prueba antes de permitir cambios en producción.
+* Requerir planes de *rollback* para operaciones de infraestructura, datos, seguridad o producción.
+* Agregar listas de verificación para tareas riesgosas recurrentes como despliegues, migraciones o cambios de configuración.
+* Emparejar ingenieros sin suficiente experiencia con ingenieros senior para cambios de alto impacto.
+* Documentar dependencias ocultas, restricciones operacionales y riesgos conocidos cerca del sistema afectado.
+* Tratar los "cambios simples" como riesgosos cuando su impacto no se entiende por completo.
+* Hacer explícitos los límites de propiedad antes de asignar responsabilidad.
+* Usar revisión de código, revisión de cambios o revisión operacional como mecanismos de seguridad, no como señales de desconfianza.
+* Diseñar sistemas para que los errores comunes sean recuperables.
+* Después de un incidente, preguntar qué barrera de seguridad habría reducido el radio de explosión.
+* Evitar conceder acceso solo porque alguien necesita completar una tarea rápidamente.
+* Enseñar las consecuencias de las acciones antes de esperar ejecución independiente.
+* Reemplazar la culpa por mejora del sistema: ¿qué hizo que este error fuera posible, peligroso o difícil de detectar?
 
-## Reflection Questions
+Una intervención útil es preguntar: "¿Cuál es el peor resultado razonable si esta persona comete aquí un error normal de aprendizaje?"
 
-- Who reviewed this decision?
-- What safeguards existed before the change?
-- Was the engineer prepared for this responsibility?
-- Would a senior engineer have made the same mistake without context?
-- What knowledge was assumed but never taught?
-- What prevented this mistake from being caught earlier?
-- If this failure was predictable, why was the system exposed to it?
+Esa pregunta ayuda a diseñar autonomía con límites en lugar de autonomía mediante abandono.
 
-## Final Reflection
+## Preguntas de reflexión
 
-Having your own junior engineer is like having a child, __don't abandon them__. When you aren't seeing them, they are eating cookies... I mean, breaking production.
+* ¿Quién revisó esta decisión?
+* ¿Qué salvaguardas existían antes del cambio?
+* ¿El ingeniero estaba preparado para esta responsabilidad?
+* ¿Un ingeniero senior habría cometido el mismo error sin contexto?
+* ¿Qué conocimiento se asumió pero nunca se enseñó?
+* ¿Qué impidió que este error se detectara antes?
+* Si esta falla era predecible, ¿por qué el sistema quedó expuesto a ella?
 
-Then immediate reaction is often:
+## Reflexión final
 
-> "Who made this change?"
+Tener tu propio ingeniero junior es como tener un hijo: **no lo abandones**. Cuando no lo estás mirando, está comiendo galletas... digo, rompiendo producción.
 
-A more useful question might be:
+La reacción inmediata suele ser:
 
-> "Why was this change possible in the first place?"
+> "¿Quién hizo este cambio?"
 
-The engineer made a mistake, the environment made that mistake dangerous. 
+Una pregunta más útil podría ser:
 
-Junior engineers are supposed to make mistakes. Systems, processes and teams should be designed with that reality in mind.
+> "¿Por qué este cambio era posible en primer lugar?"
 
-Because when the cookies disappear from the jar, the real mystery is rarely who ate them. The real mystery is why nobody was watching the kitchen.
+El ingeniero cometió un error; el entorno hizo que ese error fuera peligroso.
+
+Se supone que los ingenieros junior cometen errores. Los sistemas, procesos y equipos deberían diseñarse teniendo esa realidad en mente.
+
+Porque cuando las galletas desaparecen del tarro, el verdadero misterio rara vez es quién se las comió. El verdadero misterio es por qué nadie estaba mirando la cocina.

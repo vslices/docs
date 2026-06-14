@@ -1,137 +1,177 @@
-# Espera, ¿ese niño está bebiendo vodka?
+# Espera... ¿ese niño está bebiendo vodka?
 
-> ¡¿Como que _otra vez_?!
+> ¿Cómo que "*otra vez*"?
 
-_Cuando el feedback incómodo llega demasiado tarde_
+*Cuando la responsabilidad crece más rápido que la mentoría*
 
 ## Definición
 
-> Un patrón en el que una organización, equipo o persona ignora durante demasiado tiempo una señal problemática obvia porque la señal parece demasiado incómoda, absurda, vergonzosa o disruptiva como para enfrentarla de inmediato.
+> Un patrón en el que se espera que ingenieros sin suficiente experiencia tomen decisiones, operen sistemas, resuelvan problemas y asuman responsabilidades más allá de su nivel actual de entendimiento, sin la guía necesaria para desarrollar esas capacidades de forma segura.
 >
-> Cuando finalmente se reconoce el problema, la reacción suele ser sorpresa o incredulidad, a pesar de que la evidencia estuvo presente mucho antes.
+> Cuando los errores finalmente ocurren, el foco suele desplazarse hacia la persona en lugar de mirar el entorno que creó las condiciones para que el error ocurriera.
+>
+> Las fallas resultantes suelen tratarse como inesperadas, a pesar de ser completamente predecibles.
 
 ## Contexto
 
-Este patrón aparece cuando un problema visible existe durante un tiempo considerable, pero el entorno que lo rodea lo normaliza, minimiza o evita.
+Este patrón suele aparecer en organizaciones donde la presión por entregar toma prioridad de forma constante sobre la mentoría.
 
-Al principio, la señal puede parecer demasiado extraña para aceptarla:
+La organización suele creer que la transferencia de conocimiento, la incorporación y el acompañamiento pueden ocurrir orgánicamente mientras el trabajo normal continúa sin interrupciones. A diferencia del sueño de cualquier inversionista, eso no ocurre.
 
-- "Eso no puede estar pasando."
-- "Seguramente no es tan grave."
-- "Tal vez solo lo estamos interpretando mal."
-- "No queremos exagerar."
+Los ingenieros senior se vuelven cada vez más ocupados manteniendo compromisos de entrega, mientras los ingenieros junior reciben progresivamente más responsabilidad con progresivamente menos guía.
 
-La incomodidad retrasa la respuesta. La posterga hasta que la situación se vuelve demasiado obvia para negar.
+La intención rara vez es maliciosa. Las motivaciones comunes pueden incluir:
+
+* acelerar la entrega
+* reducir la dependencia de personas clave
+* aumentar la autonomía
+* reducir cuellos de botella
+* escalar la capacidad del equipo
+
+Lamentablemente, la capacidad rara vez crece a la misma velocidad que la responsabilidad.
 
 ## Comportamiento observado
 
 Se observaron varios patrones recurrentes:
 
-- Las señales de advertencia se veían temprano pero se trataban como ruido.
-- El malestar social superaba la disposición a intervenir.
-- La reacción solo llegaba después de que el problema se volvía innegable.
-- Las personas asumían que alguien más ya había intervenido.
-- El problema seguía creciendo mientras todos esperaban una señal más clara.
-- Cuando finalmente se actuaba, la respuesta se sentía tardía o exagerada.
+* Los ingenieros junior recibían responsabilidades para las que aún no estaban preparados.
+* El contexto importante existía solo en la mente de ingenieros senior.
+* La mentoría ocurría de forma reactiva en lugar de intencional.
+* Las preguntas se postergaban porque todo el mundo estaba ocupado.
+* La transferencia de conocimiento se volvía menos prioritaria que la entrega.
+* Se tomaban decisiones críticas sin contexto suficiente.
+* Los ingenieros aprendían a través de incidentes en producción en lugar de guía.
 
-La extrañeza del problema hacía que la gente dudara de sí misma incluso cuando la evidencia estaba frente a ellos.
+La organización esperaba crecimiento. El entorno entregaba exposición.
+
+No son lo mismo.
 
 ## Señales comunes
 
 Posibles indicadores de que este patrón está ocurriendo:
 
-- Sentir que algo anda mal, pero esperar a tener "más pruebas".
-- Ver una señal preocupante y no mencionarla para no incomodar.
-- Asumir que otra persona ya se encargó del problema.
-- Normalizar algo solo porque lleva tiempo ocurriendo.
-- Reírse nerviosamente de una situación que en realidad requiere intervención.
-- Sentir alivio cuando finalmente alguien más dice en voz alta lo que todos veían.
-- Confundir evitación social con prudencia.
+* "Ya lo va a resolver."
+* "Solo dale acceso."
+* "Ahora no tenemos tiempo para capacitación."
+* "Es un cambio simple."
+* "Pregunta si tienes dudas."
+* Conocimiento crítico concentrado en pocas personas.
+* Incorporación altamente dependiente de conocimiento tribal.
+* Ingenieros junior con miedo de hacer preguntas.
+* Ingenieros senior constantemente demasiado ocupados para mentorear.
+* Aprendizaje ocurriendo principalmente a través de errores.
 
 ## Tensiones subyacentes
 
-### Incomodidad vs intervención
+### Entrega vs mentoría
 
-> Las señales incómodas suelen ser precisamente las que requieren acción temprana.
+> Cada hora invertida en enseñar parece reducir la entrega de corto plazo. Hasta que la falta de enseñanza empieza a reducir la entrega mucho más.
 
-### Negación vs evidencia
+### Responsabilidad vs capacidad
 
-> Cuanto más obvio es un problema, más fácil puede ser seguir evitándolo por razones sociales.
+> La responsabilidad puede asignarse de inmediato. La capacidad requiere tiempo.
 
-### Claridad vs vergüenza
+### Autonomía vs abandono
 
-> Nombrar algo incómodo puede ser más útil que proteger la incomodidad del grupo.
+> Independencia sin apoyo no es empoderamiento. Es negligencia.
 
-### Tiempo vs costo
+### Exposición vs desarrollo
 
-> Los problemas ignorados suelen volverse más costosos antes de ser reconocidos.
+> La exposición crea oportunidades para aprender. El desarrollo requiere guía.
 
 ## Consecuencias
 
 ### Corto plazo
 
-- Evitación del conflicto.
-- Menor malestar inmediato.
-- Sensación temporal de normalidad.
+* Delegación de tareas más rápida.
+* Menor dependencia inmediata de ingenieros senior.
+* Mayor percepción de escalabilidad del equipo.
 
 ### Largo plazo
 
-- Problemas más grandes.
-- Pérdida de confianza.
-- Reacción tardía.
-- Mayor costo de corrección.
-- Frustración acumulada.
-- Sensación de obviedad retrospectiva.
+* Errores repetidos.
+* Sistemas frágiles.
+* Miedo a tomar propiedad.
+* Incorporación lenta.
+* Silos de conocimiento.
+* Sobrecarga de ingenieros senior.
+* Dependencia organizacional del conocimiento tribal.
 
-Irónicamente, el problema suele parecer ridículo solo después de que ya ha hecho daño.
+Irónicamente, la organización suele ahorrar tiempo evitando la mentoría. Después gasta mucho más tiempo recuperándose de las consecuencias.
 
 ## Impacto en ingeniería
 
-- Las señales de riesgo técnico, organizacional o humano pueden ser visibles mucho antes de que alguien actúe.
-- Los equipos pueden posponer conversaciones importantes porque el tema se siente demasiado incómodo o políticamente arriesgado.
-- Los defectos, malos hábitos o desalineaciones pueden normalizarse hasta que se vuelven parte del entorno.
-- La falta de intervención temprana aumenta el costo de corrección.
-- Las personas pueden confundir demora con cautela y cautela con sabiduría.
-- La organización puede perder credibilidad interna cuando la evidencia se ignora repetidamente.
-- Los problemas escalan porque nadie quiere ser la primera persona en decir lo obvio.
-- La respuesta tardía a menudo parece dramática porque llega después de un largo período de negación silenciosa.
-- La cultura puede enseñar a las personas a dudar de su propia percepción.
-- El trabajo de ingeniería se vuelve más difícil cuando la realidad tiene que volverse escandalosa antes de ser atendida.
+* Los cambios críticos se vuelven más riesgosos porque las personas que los ejecutan pueden no entender el contexto circundante.
+* Los errores se vuelven más probables cuando la responsabilidad se asigna sin conocimiento, revisión o apoyo equivalentes.
+* Los incidentes en producción pueden tratarse como fallas individuales, aunque el sistema los haya vuelto predecibles.
+* Los ingenieros senior permanecen sobrecargados porque la mentoría se postergó hasta que los problemas se volvieron urgentes.
+* Los ingenieros junior pueden desarrollar miedo a tomar propiedad después de quedar expuestos a consecuencias que no estaban preparados para manejar.
+* Los silos de conocimiento se fortalecen cuando los ingenieros senior están demasiado ocupados para enseñar y los ingenieros junior deben inferir contexto.
+* Las revisiones de código se vuelven insuficientes si quienes revisan asumen conocimiento que nunca fue enseñado.
+* La velocidad de entrega se vuelve frágil porque la delegación de corto plazo crea retrabajo de largo plazo.
+* La arquitectura se vuelve más difícil de evolucionar cuando solo unas pocas personas entienden por qué el sistema funciona como funciona.
+* La capacidad del equipo parece aumentar, pero la capacidad real permanece subdesarrollada.
+* La incorporación se vuelve inconsistente porque el crecimiento depende de suerte, cercanía y conversaciones informales.
+* La organización puede confundir exposición a responsabilidad con desarrollo de competencia.
 
-Cuando una señal incómoda se ignora durante demasiado tiempo, el problema deja de ser solo el problema inicial. También se convierte en un problema de percepción, confianza y valentía para nombrarlo.
+Cuando la mentoría está ausente, el sistema no deja de enseñar. Simplemente enseña a través de errores, incidentes, miedo y retrabajo. Ese tipo de aprendizaje es caro, desigual y muchas veces dañino.
 
 ## Posibles intervenciones
 
-- Nombrar la señal incómoda antes de que crezca más.
-- Diferenciar entre prudencia real y evitación social.
-- Preguntar qué evidencia ya sería suficiente para actuar.
-- Tratar la incomodidad como una razón para mirar con más atención, no con menos.
-- Escuchar a la persona que ve el problema antes que a la comodidad del grupo.
-- Hacer visibles los riesgos aunque la conversación se sienta incómoda.
-- Reducir el tiempo entre observación y reconocimiento.
-- Evitar esperar unanimidad antes de intervenir.
-- Preguntar qué daño puede ocurrir mientras todos esperan una mejor señal.
-- Usar lenguaje claro en lugar de eufemismos cuando el problema ya es visible.
-- Aceptar que intervenir temprano suele parecer exagerado justo antes de volverse claramente correcto.
+* Definir qué responsabilidades son seguras para que el ingeniero tome de forma independiente.
+* Identificar qué responsabilidades requieren *pairing*, revisión o supervisión.
+* Hacer de la mentoría una responsabilidad explícita, no un efecto secundario accidental de la entrega.
+* Crear niveles progresivos de responsabilidad en lugar de asignar propiedad crítica de una sola vez.
+* Emparejar ingenieros junior con ingenieros experimentados en trabajo de alto contexto o alto riesgo.
+* Documentar el contexto necesario para tomar decisiones seguras en áreas críticas.
+* Incentivar preguntas antes de que los errores se vuelvan la única fuente de *feedback*.
+* Reemplazar "pregunta si tienes dudas" por guía programada, puntos de control y momentos de revisión.
+* Tratar errores repetidos como señales de falta de apoyo, no solo como problemas de desempeño individual.
+* Dar acceso de forma progresiva y conectar el acceso con entendimiento, recuperabilidad y revisión.
+* Usar listas de verificación para operaciones peligrosas, despliegues, migraciones o cambios en producción.
+* Hacer visible la carga de mentoría de los ingenieros senior al planificar capacidad.
+* Proteger tiempo para enseñar antes de que la falta de enseñanza se convierta en retrabajo.
+* Después de un incidente, preguntar qué conocimiento, barrera de seguridad o guía habría hecho menos probable el error.
+* Medir el crecimiento por aumento de criterio, no solo por aumento de tareas asignadas.
 
-Una intervención útil es preguntar: "¿Estamos siendo prudentes o solo estamos evitando el momento incómodo de admitir lo que ya sabemos?".
+Una intervención útil es preguntar: "¿Qué necesitaría entender esta persona antes de que esta responsabilidad sea segura?"
 
-Esa pregunta puede cortar la inercia antes de que la situación se agrave.
+Esa pregunta desplaza el foco desde la culpa hacia el desarrollo de capacidad.
 
 ## Preguntas de reflexión
 
-- ¿Qué señal estoy viendo pero no estoy nombrando?
-- ¿Estoy esperando más evidencia o estoy evitando la incomodidad?
-- ¿Quién ya vio el problema y todavía no lo dijo?
-- ¿Qué daño podría ocurrir mientras seguimos esperando?
-- ¿Estoy confundiendo silencio con estabilidad?
-- ¿Qué sería más costoso: hablar ahora o hablar después?
-- ¿Qué estoy fingiendo no entender?
+* ¿Quién es responsable de enseñar a este ingeniero?
+* ¿Cuándo fue la última sesión de mentoría intencional?
+* ¿Qué conocimiento se asume pero nunca se explica?
+* ¿Qué decisiones críticas puede tomar este ingeniero de forma segura?
+* ¿Un error en esta área sería recuperable?
+* ¿La autonomía se está desarrollando o solo se está asignando?
+* ¿Qué pasaría si la persona que más sabe se fuera mañana?
+* ¿Estamos creando futuros seniors o consumiendo a los actuales?
 
 ## Reflexión final
 
-Uno de los errores más humanos en las organizaciones es esperar demasiado para reconocer lo obvio cuando lo obvio resulta incómodo.
+Cuando la gente ve a un niño bebiendo vodka, la reacción inmediata suele ser:
 
-El problema rara vez desaparece por ser ignorado. Solo se vuelve más raro, más caro y más difícil de explicar.
+> "¿Por qué ese niño está bebiendo vodka?"
 
-> Si te hace pensar "espera, ¿ese niño está bebiendo vodka?", probablemente no es el momento de seguir mirando hacia otro lado.
+Una pregunta más útil podría ser:
+
+> "¿Por qué el vodka estaba disponible para el niño en primer lugar?"
+
+Se supone que los ingenieros junior van a:
+
+* cometer errores
+* hacer preguntas
+* no saber cosas
+* pedir vodka
+
+  * incluso si estamos en horario laboral
+
+Nada de eso es una falla.
+
+La falla ocurre cuando una organización espera que la competencia emerja sin crear las condiciones necesarias para desarrollarla.
+
+Los niños no se vuelven adultos por accidente. Los ingenieros tampoco se vuelven seniors por accidente.
+
+> Si nadie tuvo tiempo para enseñar, eventualmente alguien tendrá tiempo para arreglar.
