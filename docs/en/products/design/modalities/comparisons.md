@@ -2,9 +2,7 @@
 
 VSlices Design provides different modalities for approaching software design depending on the kind of uncertainty the team is facing.
 
-These modalities are not competing methodologies.
-
-They are design strategies.
+These modalities are not competing methodologies. They are design strategies.
 
 A team does not need to permanently identify with one of them. The same project may use different modalities at different moments, depending on what is currently unclear.
 

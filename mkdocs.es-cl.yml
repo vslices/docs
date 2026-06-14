@@ -56,13 +56,16 @@ nav:
             - Modalidades:
                 - Context-first:
                     - Introducción: products/design/modalities/context-first/index.md
-                    - Énfasis: products/design/modalities/context-first/emphasis.md
+                    - Flujo de iteración: products/design/modalities/context-first/iteration-flow.md
+                    - Riesgos y relaciones: products/design/modalities/context-first/risks-and-relations.md
                 - Problem-first: 
                     - Introducción: products/design/modalities/problem-first/index.md
-                    - Énfasis: products/design/modalities/problem-first/emphasis.md
+                    - Flujo de iteración: products/design/modalities/problem-first/iteration-flow.md
+                    - Riesgos y relaciones: products/design/modalities/problem-first/risks-and-relations.md
                 - Slice-first:
                     - Introducción: products/design/modalities/slice-first/index.md
-                    - Énfasis: products/design/modalities/slice-first/emphasis.md
+                    - Flujo de iteración: products/design/modalities/slice-first/iteration-flow.md
+                    - Riesgos y relaciones: products/design/modalities/slice-first/risks-and-relations.md
                 - Comparaciones: products/design/modalities/comparisons.md
         
         - VSlices Docs Standard:
