@@ -8,13 +8,7 @@ That evidence may confirm the current direction, refine the context, challenge a
 
 A VSlices Method iteration follows the shared VSlices Design flow:
 
-```text
-Understanding
--> Contextualizing
--> Planning
--> Building
--> Understanding
-```
+{% include-markdown "shared/simple-design-iteration-flow.md" %}
 
 The final return to Understanding is intentional.
 
@@ -75,13 +69,13 @@ The goal is not to record everything. It is to avoid rediscovering the same lear
 
 Different documents may support the Learning Loop.
 
-* **Validation Notes** preserve evidence and learning.
-* **Decision Records** preserve decisions that were confirmed, challenged or changed.
-* **Use Case Documents** preserve behavior that became clearer after building.
-* **Capability Documents** preserve stable abilities revealed or refined by the iteration.
-* **Context Documents** preserve changes in the surrounding scenario.
-* **Process Documents** preserve workflow changes, exceptions or handoffs.
-* **Support Notes** preserve uncertain or local observations that are not mature yet.
+* **[Validation Notes](../../docs-standard/taxonomy/validation-note.md)** preserve evidence and learning.
+* **[Decision Records](../../docs-standard/taxonomy/decision-record.md)** preserve decisions that were confirmed, challenged or changed.
+* **[Use Case Documents](../../docs-standard/taxonomy/use-case-document.md)** preserve behavior that became clearer after building.
+* **[Capability Documents](../../docs-standard/taxonomy/capability-document.md)** preserve stable abilities revealed or refined by the iteration.
+* **[Context Documents](../../docs-standard/taxonomy/context-document.md)** preserve changes in the surrounding scenario.
+* **[Process Documents](../../docs-standard/taxonomy/process-document.md)** preserve workflow changes, exceptions or handoffs.
+* **[Support Notes](../../docs-standard/taxonomy/support-note.md)** preserve uncertain or local observations that are not mature yet.
 
 Use the lightest document that preserves the learning future work depends on.
 

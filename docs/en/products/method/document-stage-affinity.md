@@ -2,11 +2,11 @@
 
 Document Stage Affinity explains how VSlices Docs Standard documents may support each stage of a VSlices Design iteration.
 
-It does not make documents mandatory. It helps teams choose useful documentation without turning VSlices Method into a checklist. The shared iteration flow is:
+It does not make documents mandatory. It helps teams choose useful documentation without turning VSlices Method into a checklist.
 
-```text
-Understanding -> Contextualizing -> Planning -> Building -> Understanding
-```
+The shared iteration flow is:
+
+{% include-markdown "shared/simple-design-iteration-flow.md" %}
 
 ## Core idea
 

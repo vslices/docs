@@ -7,14 +7,30 @@ repo_name: vslices/docs
 docs_dir: docs/es 
 
 theme:
-    name: readthedocs
+    name: material
+    logo: https://raw.githubusercontent.com/vslices/icons/refs/heads/main/official/icon.svg
+    favicon: https://raw.githubusercontent.com/vslices/icons/refs/heads/main/favicons/favicon.ico
     locale: es
+    palette:
+        primary: deep purple
+        accent: purple
 
 plugins: 
     - search:
         lang: es
     - mermaid2:
         version: 10.0.2
+    - include-markdown
+
+markdown_extensions:
+    - admonition
+    - attr_list
+    - md_in_html
+    - pymdownx.tabbed:
+        alternate_style: true
+
+extra_css:
+    - stylesheets/extra.css
 
 nav:
     - Inicio: index.md
@@ -108,6 +124,13 @@ nav:
         - Glosario: alive-lab/glossary.md
         - Historias de proyectos:
             - Introducción: alive-lab/project-stories/index.md
+            - Domus Orbis:
+                - Introducción: alive-lab/project-stories/domus-orbis/index.md
+                - Iteración 0: 
+                    - Metodología: alive-lab/project-stories/domus-orbis/iteration-0/methodology.md
+                    - Historia: alive-lab/project-stories/domus-orbis/iteration-0/story.md
+                    - Conclusiones: alive-lab/project-stories/domus-orbis/iteration-0/conclusions.md
+
         - Notas de Campo:
             - Introducción: alive-lab/field-notes/index.md
             - Factores Humanos:

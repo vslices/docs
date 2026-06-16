@@ -6,7 +6,7 @@ _When human memory is expected to behave like structured storage_
 
 ## Synthetic Field Note
 
-This note was born from an interpretive error during the translation of [The Human Brain Is Not A Database](../organization-factors/the-human-brain-is-not-a-database).
+This note was born from an interpretive error during the translation of [The Human Brain Is Not A Database](../organization-factors/the-human-brain-is-not-a-database.md).
 
 It was preserved as a field note under the label "synthetic" because it captures a real and useful observation, even though it did not emerge from direct experience.
 

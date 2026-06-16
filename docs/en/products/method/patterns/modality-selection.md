@@ -6,23 +6,15 @@ The goal is not to choose the best modality in general. It is to choose the moda
 
 ## Core idea
 
-Choose the modality by the uncertainty that matters most right now. The question is not:
+Choose the modality by the uncertainty that matters most right now. 
 
-```text
-Which modality do we prefer?
-```
-
-The better question is:
-
-```text
-What kind of uncertainty would make the next decision unsafe?
-```
+The question is not: _Which modality do we prefer?_, it is: _What kind of uncertainty would make the next decision unsafe?_
 
 VSlices Method uses the modalities defined by VSlices Design:
 
-* **Context-First**, when the team needs broader understanding before deciding what to build.
-* **Problem-First**, when a clear problem exists, but its causes, impact or boundaries need clarification.
-* **Slice-First**, when the team can learn faster by building a small and reversible vertical slice.
+* __[Context-First](../../design/modalities/context-first/index.md)__, when the team needs broader understanding before deciding what to build.
+* __[Problem-First](../../design/modalities/problem-first/index.md)__, when a clear problem exists, but its causes, impact or boundaries need clarification.
+* __[Slice-First](../../design/modalities/slice-first/index.md)__, when the team can learn faster by building a small and reversible vertical slice.
 
 Method does not redefine these modalities. It helps decide which one should guide the current work.
 
@@ -77,9 +69,9 @@ A useful selection usually starts by naming the dominant uncertainty.
 
 | Current signal | Start with | Why |
 | --- | --- | --- |
-| The team does not understand the surrounding context. | __[Context-First](../../design/modalities/context-first/index.md)__ | The next decision needs broader understanding before choosing what to build. |
-| The team understands the area, but not the problem. | __[Problem-First](../../design/modalities/problem-first/index.md)__ | The next decision needs problem clarity before choosing a solution. |
-| The team understands enough to learn through delivery. | __[Slice-First](../../design/modalities/slice-first/index.md)__ | The next decision can be made safer by validating a small vertical slice. |
+| The team does not<br/>understand the<br/>surrounding context. | __[Context-First](../../design/modalities/context-first/index.md)__ | The next decision needs broader understanding before<br/>choosing what to build. |
+| The team understands<br/>the area, but not the<br/>problem. | __[Problem-First](../../design/modalities/problem-first/index.md)__ | The next decision needs problem clarity before choosing a<br/>solution. |
+| The team understands<br/>enough to learn<br/>through delivery. | __[Slice-First](../../design/modalities/slice-first/index.md)__ | The next decision can be made safer by validating a small<br/>vertical slice. |
 
 The selected modality should reduce uncertainty. It should not become the identity of the iteration.
 

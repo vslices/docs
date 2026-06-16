@@ -1,0 +1,86 @@
+:root {
+  --md-admonition-icon--principle: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2A10 10 0 0 0 2 12a10 10 0 0 0 10 10 10 10 0 0 0 10-10A10 10 0 0 0 12 2m4.14 5.86-2.12 5.66a1 1 0 0 1-.59.59l-5.57 2.03 2.03-5.57a1 1 0 0 1 .59-.59l5.66-2.12M12 11a1 1 0 0 0-1 1 1 1 0 0 0 1 1 1 1 0 0 0 1-1 1 1 0 0 0-1-1Z"/></svg>');
+  
+  --vslices-principle-color: #7e57c2;
+  --vslices-principle-bg: #f3edff;
+}
+
+.admonition.experimental {
+  border-left: 4px solid #c62828;
+  background-color: #ffebee;
+  padding: 0.8rem 1rem;
+  margin: 1rem 0;
+  border-radius: 4px;
+}
+
+.admonition.experimental .admonition-title {
+  color: #8e0000;
+  font-weight: 700;
+  margin: 0 0 0.4rem 0;
+}
+
+.admonition.experimental p:last-child {
+  margin-bottom: 0;
+}
+
+.vslices-hero {
+  display: flex;
+  align-items: flex-start;
+  gap: 2rem;
+  margin: 0rem 0 2rem;
+}
+
+.vslices-hero__icon {
+  width: 96px;
+  height: 96px;
+  flex: 0 0 auto;
+  margin-top: 2.25rem;
+}
+
+.vslices-hero__content h1 {
+  margin: 0 0 0.75rem;
+}
+
+.vslices-hero__content p {
+  margin: 0;
+  max-width: 42rem;
+  font-size: 1.15rem;
+  line-height: 1.45;
+}
+
+@media screen and (max-width: 600px) {
+  .vslices-hero {
+    gap: 0.75rem;
+    align-items: flex-start;
+    margin-top: 0rem;
+  }
+
+  .vslices-hero__icon {
+    width: 48px;
+    height: 48px;
+    margin-top: 0.5rem;
+  }
+
+  .vslices-hero__content p {
+    font-size: 0.95rem;
+    line-height: 1.35;
+  }
+}
+
+.md-typeset .admonition.principle,
+.md-typeset details.principle {
+  border-color: var(--vslices-principle-color);
+}
+
+.md-typeset .principle > .admonition-title,
+.md-typeset .principle > summary {
+  background-color: var(--vslices-principle-bg);
+}
+
+.md-typeset .principle > .admonition-title::before,
+.md-typeset .principle > summary::before {
+  background-color: var(--vslices-principle-color);
+  -webkit-mask-image: var(--md-admonition-icon--principle);
+  mask-image: var(--md-admonition-icon--principle);
+}
+

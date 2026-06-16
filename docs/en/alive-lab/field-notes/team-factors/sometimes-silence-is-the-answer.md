@@ -4,7 +4,7 @@
 
 ## Synthetic Field Note
 
-This note was born from an interpretive error during the translation of [Why Is There Nothing?](../organization-factors/why-is-there-nothing).
+This note was born from an interpretive error during the translation of [Why Is There Nothing?](../organization-factors/why-is-there-nothing.md).
 
 It was preserved as a field note under the label "synthetic" because it captures a real and useful observation, even though it did not emerge from direct experience.
 

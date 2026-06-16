@@ -1,6 +1,6 @@
 # Support Note
 
-> > You can access the [support note template here](https://github.com/vslices/docs-standard/blob/main/templates/support-note.md)
+> You can access the [support note template here](https://github.com/vslices/docs-standard/blob/main/templates/support-note.md)
 
 A Support Note preserves useful knowledge that is not ready or important enough to become a formal document.
 
@@ -59,38 +59,6 @@ A Support Note may be insufficient when:
 - __the note describes a process__: a Process Document may be better.
 - __the note validates something important__: a Validation Note may be needed.
 - __too many notes repeat the same topic__: the knowledge should probably be consolidated.
-
-## Suggested structure
-
-Use the smallest structure that preserves the note.
-
-```md
-# Support Note
-
-## Type
-
-Concept, assumption, risk, question, feedback, implementation, scope, or improvement.
-
-## Note
-
-What should be preserved?
-
-## Context
-
-Where did this appear?
-
-## Why it matters
-
-Why could this matter later?
-
-## Status
-
-Open, active, resolved, superseded, or archived.
-
-## Related artifacts
-
-Which documents, decisions, or notes are connected?
-```
 
 ## Standard affinity
 

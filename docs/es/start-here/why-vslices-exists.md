@@ -1,5 +1,15 @@
 # Por qué existe VSlices
 
+VSlices existe porque varios problemas de ingeniería de software tienden a aparecer juntos:
+
+| Problema | Qué provoca |
+| --- | --- |
+| [Brecha de conexión del conocimiento](#una-brecha-de-conexión-del-conocimiento) | Las personas aprenden conceptos por separado, pero les cuesta conectarlos en sistemas reales. |
+| [Problema de continuidad](#un-problema-de-continuidad) | El descubrimiento, la documentación, la arquitectura y la implementación se separan con el tiempo. |
+| [Problema de contexto con IA](#un-problema-de-contexto-de-ia) | La IA puede generar resultados rápidamente, pero un contexto débil hace que dependa de supuestos. |
+| [Problema de complejidad progresiva](#un-problema-de-complejidad-progresiva) | Los equipos agregan estructura demasiado temprano o la evitan durante demasiado tiempo. |
+| [Problema de comportamiento oculto](#un-problema-de-comportamiento-oculto) | El comportamiento importante del negocio se vuelve implícito, disperso o difícil de ver. |
+
 ## Una brecha de conexión del conocimiento
 
 El camino de la ingeniería de software no consiste solo en escribir código. Antes del código hay comprensión y, para que esa comprensión sea útil, se necesita educación.
@@ -10,9 +20,9 @@ Cuando alguien sale de la universidad, de un bootcamp o de cualquier otro entorn
 
 La arquitectura, el diseño, la documentación, las pruebas, el modelado del dominio, los paradigmas de programación, la infraestructura y la forma de pensar el producto pueden enseñarse o descubrirse como piezas separadas. Con el tiempo, la experiencia empieza a conectar esas piezas.
 
-Pero esa conexión suele ser personal, implícita y difícil de transferir; hay una diferencia entre saber y entender.
+Pero esa conexión suele ser personal, implícita y difícil de transferir. Hay una diferencia entre saber y entender.
 
-VSlices existe porque la propia ingeniería de software no es solo una secuencia de inventos completamente nuevos. También es una larga historia de descubrimientos, redescubrimientos, refinamientos y conexiones entre ideas que ya estaban ahí.
+VSlices existe porque la ingeniería de software no es solo una secuencia de inventos completamente nuevos. También es una larga historia de descubrimientos, redescubrimientos, refinamientos y conexiones entre ideas que ya estaban ahí.
 
 VSlices es un intento de hacer explícitas esas conexiones.
 
@@ -20,7 +30,7 @@ VSlices es un intento de hacer explícitas esas conexiones.
 
 Muchos proyectos de software sufren una brecha de continuidad. Los equipos descubren el dominio en un lugar, lo documentan en otro, discuten la arquitectura en otro y luego implementan el sistema en código que puede no preservar el razonamiento original.
 
-El resultado de esto puede no ser siempre visible al principio, pero con el tiempo el sistema se vuelve más difícil de explicar, más difícil de cambiar y más difícil de confiar.
+El resultado puede no ser visible al principio, pero con el tiempo el sistema se vuelve más difícil de explicar, más difícil de cambiar y más difícil de confiar.
 
 - La documentación puede alejarse de la implementación.
 - La arquitectura puede desconectarse de las necesidades reales del dominio.
@@ -37,7 +47,7 @@ Esto cambia cómo se produce el software, pero no elimina la necesidad de ingeni
 
 - su entrenamiento
 - la información disponible en el contexto actual
-- y las restricciones proporcionadas explícitamente
+- las restricciones proporcionadas explícitamente
 
 Cuando el conocimiento del dominio, la intención arquitectónica, las reglas de negocio y las decisiones de ingeniería son implícitos, fragmentados o no están documentados, los sistemas de IA se ven obligados a llenar los huecos usando supuestos. A veces esos supuestos son útiles y a veces no lo son.
 
@@ -47,16 +57,16 @@ VSlices existe para hacer esas intenciones más explícitas.
 
 ## Un problema de complejidad progresiva
 
-Los proyectos de software suelen moverse entre dos extremos.
+Los proyectos de software suelen moverse entre dos extremos:
 
-- Algunos proyectos introducen demasiada arquitectura demasiado pronto.
-> Comienzan con capas, patrones, abstracciones, convenciones y decisiones de infraestructura antes de que el dominio haya demostrado que esas decisiones son necesarias.
-- Otros proyectos evitan la estructura durante demasiado tiempo.
-> Comienzan simples, pero a medida que el sistema crece, el comportamiento se vuelve implícito, los límites se vuelven difusos y los cambios se vuelven más difíciles de razonar.
+| Extremo | Qué ocurre |
+| --- | --- |
+| Demasiada arquitectura demasiado temprano | Los equipos comienzan con capas, patrones, abstracciones, convenciones y decisiones de infraestructura antes de que el dominio demuestre que son necesarias. |
+| Muy poca estructura durante demasiado tiempo | Los equipos comienzan simple, pero a medida que el sistema crece, el comportamiento se vuelve implícito, los límites se vuelven difusos y los cambios se vuelven más difíciles de razonar. |
 
 La mayoría de las veces, el problema no es que los equipos tomen malas decisiones a propósito. El problema es que no pueden saber por completo cómo crecerá el dominio.
 
-Por supuesto, no podemos ver el futuro, pero sí podemos razonar sobre el uso esperado, la evolución probable, la presión operativa y cómo el sistema puede afectar a distintas partes de una organización en el corto y largo plazo.
+No podemos ver el futuro, pero sí podemos razonar sobre el uso esperado, la evolución probable, la presión operativa y cómo el sistema puede afectar a distintas partes de una organización en el corto y largo plazo.
 
 VSlices existe para apoyar la complejidad progresiva.
 

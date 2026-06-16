@@ -2,12 +2,12 @@
 
 VSlices es una suite de ingeniería de software compuesta por cuatro productos conectados:
 
-- VSlices Method
-- VSlices Design
-- VSlices Docs Standard
-- VSlices Framework
+- [VSlices Method](../products/method/index.md)
+- [VSlices Design](../products/design/index.md)
+- [VSlices Docs Standard](../products/docs-standard/index.md)
+- [VSlices Framework](../products/framework/index.md)
 
-Cada producto puede usarse de forma independiente, pero están diseñados para trabajar juntos alrededor del mismo modelo de continuidad.
+Cada producto puede usarse de forma independiente, pero todos están diseñados alrededor del mismo modelo de continuidad.
 
 El propósito de la suite es reducir la distancia entre lo que un equipo descubre, documenta, diseña, implementa, valida y evoluciona.
 
@@ -33,9 +33,7 @@ Los cuatro productos apoyan distintas partes de esa continuidad.
 
 ## Cómo se conecta la suite
 
-La suite está compuesta por cuatro productos conectados.
-
-VSlices Method proporciona la guía general de continuidad. VSlices Design ayuda a los equipos a razonar sobre sistemas, incertidumbre, límites y comportamiento de negocio. VSlices Docs Standard ayuda a preservar conocimiento mediante estructuras de documentación viva. VSlices Framework puede apoyar la implementación cuando se necesita software ejecutable, pero no es necesario para usar el resto de la suite.
+[VSlices Method](../products/method/index.md) proporciona la guía general de continuidad. [VSlices Design](../products/design/index.md) ayuda a razonar sobre sistemas, incertidumbre, límites y comportamiento de negocio. [VSlices Docs Standard](../products/docs-standard/index.md) ayuda a preservar conocimiento mediante estructuras de documentación viva. [VSlices Framework](../products/framework/index.md) puede apoyar la implementación cuando se necesita software ejecutable, pero no es necesario para usar el resto de la suite.
 
 ```mermaid
 flowchart LR
@@ -57,19 +55,28 @@ Esta relación es intencionalmente ligera. La suite está conectada por un model
 
 Un equipo puede usar VSlices Design sin VSlices Framework. Un equipo puede usar VSlices Docs Standard sin adoptar una arquitectura específica. VSlices Method puede guiar trabajo real incluso cuando la implementación usa .NET puro, otro framework o ningún framework de software.
 
+
 ## El ciclo de continuidad
 
 VSlices también puede entenderse como un ciclo de continuidad.
 
-```text
-Discovery
-  -> Design reasoning
-  -> Living documentation
-  -> Implementation
-  -> Validation
-  -> Evolution
-  -> Better understanding
-  -> More Discovery
+```mermaid
+flowchart TB
+    Discovery["Descubrimiento"]
+    Design["Razonamiento de diseño"]
+    Docs["Documentación viva"]
+    Implementation["Implementación"]
+    Validation["Validación"]
+    Evolution["Evolución"]
+    Understanding["Mejor entendimiento"]
+
+    Discovery --> Design
+    Design --> Docs
+    Docs --> Implementation
+    Implementation --> Validation
+    Validation --> Evolution
+    Evolution --> Understanding
+    Understanding --> Discovery
 ```
 
 Esto no es una secuencia rígida. Un equipo puede comenzar desde un contexto de negocio, un problema, un documento, una slice de implementación, una decisión o una pieza de feedback de validación.
@@ -78,66 +85,79 @@ La parte importante no es dónde comienza el equipo. Es que el conocimiento no s
 
 ## Roles de producto
 
-### VSlices Design
+Cada producto de VSlices apoya una parte distinta del mismo modelo de continuidad.
 
-VSlices Design ayuda a los equipos a entender el material de negocio antes de comprometerse demasiado pronto con la estructura del software.
+| Producto | Rol principal |
+| --- | --- |
+| [VSlices Design](../products/design/index.md) | Razonar sobre contexto, incertidumbre, límites y comportamiento de negocio. |
+| [VSlices Docs Standard](../products/docs-standard/index.md) | Preservar conocimiento importante mediante estructuras de documentación viva. |
+| [VSlices Method](../products/method/index.md) | Guiar cómo Design y Docs Standard se usan durante el trabajo real. |
+| [VSlices Framework](../products/framework/index.md) | Reflejar conocimiento orientado al dominio en software .NET ejecutable. |
 
-Proporciona modalidades de diseño, herramientas de razonamiento y heurísticas de modelado para trabajar con distintos tipos de incertidumbre. Design ayuda a responder preguntas como:
+Usa las pestañas siguientes para ver con más detalle qué aporta cada producto.
 
-* ¿En qué contexto de negocio estamos trabajando?
-* ¿Qué problema estamos resolviendo realmente?
-* ¿Entendemos lo suficiente para construir con seguridad?
-* ¿Debemos explorar ampliamente, analizar un problema específico o construir una pequeña slice para aprender?
+=== "VSlices Design"
 
-Design es intencionalmente independiente de VSlices Framework, Docs Standard y Method. Un equipo puede usar VSlices Design incluso si nunca usa el resto de la suite.
+    [VSlices Design](../products/design/index.md) ayuda a los equipos a entender el material de negocio antes de comprometerse demasiado pronto con la estructura del software.
 
-### VSlices Docs Standard
+    Proporciona modalidades de diseño, herramientas de razonamiento y heurísticas de modelado para trabajar con distintos tipos de incertidumbre. Ayuda a responder preguntas como:
 
-VSlices Docs Standard ayuda a preservar conocimiento importante mediante estructuras de documentación viva.
+    * ¿En qué contexto de negocio estamos trabajando?
+    * ¿Qué problema estamos resolviendo realmente?
+    * ¿Entendemos lo suficiente para construir con seguridad?
+    * ¿Debemos explorar ampliamente, analizar un problema específico o construir una pequeña slice para aprender?
 
-Define tipos de documento para conocimiento como:
+    VSlices Design es intencionalmente independiente de VSlices Framework, Docs Standard y Method. Un equipo puede usarlo incluso si nunca usa el resto de la suite.
 
-* lenguaje del dominio
-* contextos
-* procesos
-* casos de uso
-* capacidades
-* decisiones
-* validación
-* notas de soporte
+=== "VSlices Docs Standard"
 
-Docs Standard no existe para hacer que los equipos produzcan más documentos. Existe para ayudar a los equipos a preservar el conocimiento del que dependerá el trabajo futuro.
+    [VSlices Docs Standard](../products/docs-standard/index.md) ayuda a preservar conocimiento importante mediante estructuras de documentación viva.
 
-### VSlices Method
+    Define tipos de documento para conocimiento como:
 
-VSlices Method explica cómo Design y Docs Standard pueden usarse durante el trabajo real. Ayuda a los equipos a decidir:
+    * lenguaje del dominio
+    * contextos
+    * procesos
+    * casos de uso
+    * capacidades
+    * decisiones
+    * validación
+    * notas de soporte
 
-* qué tipo de contexto están abordando
-* qué modalidad de diseño encaja con la incertidumbre actual
-* qué conocimiento debe preservarse
-* cómo la documentación apoya las decisiones
-* cómo el feedback de la implementación vuelve al entendimiento
+    Docs Standard no existe para hacer que los equipos produzcan más documentos. Existe para ayudar a preservar el conocimiento del que dependerá el trabajo futuro.
 
-Method no es un proceso rígido. Proporciona guía para preservar la continuidad mientras el equipo avanza a través de la incertidumbre.
+=== "VSlices Method"
 
-### VSlices Framework
+    [VSlices Method](../products/method/index.md) explica cómo Design y Docs Standard pueden usarse durante el trabajo real. Ayuda a los equipos a decidir:
 
-VSlices Framework es el producto de implementación en .NET. Proporciona bibliotecas, primitivas y patrones para reflejar conocimiento orientado al dominio en software ejecutable.
+    * qué tipo de contexto están abordando
+    * qué modalidad de diseño encaja con la incertidumbre actual
+    * qué conocimiento debe preservarse
+    * cómo la documentación apoya las decisiones
+    * cómo el feedback de la implementación vuelve al entendimiento
 
-Framework puede incluir conceptos como:
+    Method no es un proceso rígido. Proporciona guía para preservar continuidad mientras el equipo avanza a través de la incertidumbre.
 
-* flows
-* features
-* explicit errors
-* runtime requirements
-* domain types
-* traits
-* capabilities
-* functional composition
+=== "VSlices Framework"
 
-Framework no debería ocultar los conceptos de ingeniería. Debería hacer más fáciles de componer, estandarizar, probar y evolucionar los patrones útiles.
+    [VSlices Framework](../products/framework/index.md) es el producto de implementación en .NET. Proporciona bibliotecas, primitivas y patrones para reflejar conocimiento orientado al dominio en software ejecutable.
 
-> VSlices Framework actualmente es experimental, y su documentación pública está intencionalmente limitada durante v0.1-beta.
+    Framework puede incluir conceptos como:
+
+    * flows
+    * features
+    * explicit errors
+    * runtime requirements
+    * domain types
+    * traits
+    * capabilities
+    * functional composition
+
+    Framework no debería ocultar los conceptos de ingeniería. Debería hacer más fáciles de componer, estandarizar, probar y evolucionar los patrones útiles.
+
+    !!! experimental "Experimental"
+
+        VSlices Framework actualmente es experimental, y su documentación pública está intencionalmente limitada durante v0.1-beta.
 
 ## Un ejemplo simplificado
 
@@ -154,11 +174,11 @@ Este es el ciclo de continuidad.
 
 ## Adopción independiente
 
-Un equipo no necesita adoptar toda la suite a la vez. Un equipo puede usar:
+Un equipo no necesita adoptar toda la suite a la vez. Puede usar:
 
-* VSlices Design para mejorar el descubrimiento y el modelado.
-* VSlices Docs Standard para mejorar la estructura de documentación.
-* VSlices Method para guiar la colaboración y el aprendizaje.
+* VSlices Design para mejorar descubrimiento y modelado.
+* VSlices Docs Standard para mejorar estructura documental.
+* VSlices Method para guiar colaboración y aprendizaje.
 * VSlices Framework para implementar software .NET orientado al dominio.
 
 La suite es progresiva y componible. La adopción debe seguir la necesidad real, no la completitud del producto.
@@ -167,8 +187,11 @@ La suite es progresiva y componible. La adopción debe seguir la necesidad real,
 
 Los cuatro productos comparten un principio:
 
-> Usa la estructura más pequeña útil que preserve el conocimiento del que depende el trabajo futuro.
+
+!!! principle "Principio- General"
+    
+    Usa la estructura más pequeña útil que preserve el conocimiento del que depende el trabajo futuro.
 
 VSlices no intenta hacer que todos los equipos sigan el mismo flujo de trabajo, arquitectura o proceso de documentación.
 
-Intenta ayudar a los equipos a mantener conectados la intención del dominio, las decisiones, la documentación, la implementación y el aprendizaje a medida que el sistema cambia.
+Intenta ayudar a mantener conectados la intención del dominio, las decisiones, la documentación, la implementación y el aprendizaje a medida que el sistema cambia.

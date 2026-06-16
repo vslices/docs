@@ -1,77 +1,74 @@
 # ¿Qué es VSlices?
 
-__VSlices__ es una suite progresiva de ingeniería de software enfocada en preservar continuidad entre el descubrimiento del dominio, la documentación, la arquitectura, la implementación y la evolución del sistema.
+__VSlices__ es una suite progresiva de ingeniería de software enfocada en preservar continuidad entre el descubrimiento del dominio, la documentación, el razonamiento de diseño, la arquitectura, la implementación, la validación y la evolución del sistema.
 
 Ayuda a los equipos a mantener el software estructuralmente cercano al dominio que representa.
 
 VSlices no es solo un framework para organizar código. Está compuesto por cuatro productos conectados:
 
-- __VSlices Method__
-- __VSlices Design__
-- __VSlices Docs Standard__
-- __VSlices Framework__
+- __[VSlices Method](../products/method/index.md)__: conecta descubrimiento, documentación, diseño, arquitectura, implementación, validación y evolución.
+- __[VSlices Design](../products/design/index.md)__: aporta razonamiento de diseño y técnicas de modelado.
+- __[VSlices Docs Standard](../products/docs-standard/index.md)__: define estructuras de documentación viva.
+- __[VSlices Framework](../products/framework/index.md)__: ofrece apoyo para la implementación.
 
 Cada producto puede usarse de forma independiente, pero están diseñados para trabajar juntos.
 
 ## Idea central
 
-Los sistemas de software a menudo se alejan del dominio que representan, y esta deriva suele aparecer cuando el descubrimiento, la documentación, la arquitectura y la implementación evolucionan como actividades separadas.
+Los sistemas de software a menudo se alejan del dominio que representan. Esta deriva suele aparecer cuando el descubrimiento, la documentación, el diseño, la arquitectura y la implementación evolucionan como actividades separadas.
 
 VSlices propone una dirección diferente:
 
-> El mismo lenguaje del dominio, los límites estructurales y la intención conductual deben permanecer visibles en la documentación, la arquitectura y el código.
+!!! quote "Core idea"
 
-El objetivo no es hacer que cada proyecto siga la misma arquitectura, __sino preservar la continuidad__.
+    El mismo lenguaje del dominio, los límites estructurales y la intención conductual deberían permanecer visibles en la documentación, la arquitectura y el código.
+
+El objetivo no es hacer que cada proyecto siga la misma arquitectura, __sino preservar continuidad__.
 
 ## Qué promueve VSlices
 
-VSlices promueve:
+VSlices promueve prácticas que mantienen visible la intención del dominio a medida que el sistema crece:
 
-- domain-driven design
-- vertical slices
-- modelado fuerte del dominio
-- comportamientos explícitos
-- errores esperados explícitos
-- capacidades componibles
-- arquitectura progresiva
-- baja ceremonia
+| Área | Qué enfatiza VSlices |
+| --- | --- |
+| Entendimiento del dominio | domain-driven design y modelado fuerte del dominio |
+| Estructura del sistema | vertical slices, capacidades componibles y arquitectura progresiva |
+| Claridad del comportamiento | comportamientos explícitos y errores esperados explícitos |
+| Estilo de adopción | baja ceremonia y estructura introducida solo cuando el dominio la necesita |
 
-VSlices no requiere que los equipos empiecen con un gran plano arquitectónico. En cambio, anima a los equipos a introducir estructura cuando el dominio demuestra que esa estructura es necesaria.
+VSlices no requiere que los equipos empiecen con un gran plano arquitectónico. En cambio, anima a introducir estructura cuando el dominio demuestra que esa estructura es necesaria.
 
 ## Qué no es VSlices
 
-VSlices no impone:
+VSlices no impone una arquitectura específica ni reemplaza el criterio de ingeniería.
 
-- CQRS,
-- Event Sourcing,
-- Clean Architecture,
-- microservices,
-- ni un estilo específico de infraestructura.
+| VSlices no impone... | Qué significa |
+| --- | --- |
+| CQRS | Los equipos pueden usarlo cuando el dominio o la complejidad lo justifican, pero VSlices no lo exige. |
+| Event Sourcing | El historial de eventos no se asume como estrategia predeterminada de persistencia o modelado. |
+| Clean Architecture | Las decisiones de capas deberían emerger de las necesidades del sistema, no de una plantilla obligatoria. |
+| microservices | El despliegue y los límites de servicios son decisiones arquitectónicas, no valores predeterminados de VSlices. |
+| un estilo específico de infraestructura | Las decisiones de infraestructura deberían apoyar al dominio en vez de definir la arquitectura desde el inicio. |
 
-Tampoco está pensado para ser:
+VSlices tampoco es:
 
-- low-code tooling,
-- automatic software generation,
-- ni software de imposición arquitectónica.
+* una herramienta low-code
+* un generador automatico de software
+* software de imposición arquitectónica
 
 VSlices debe apoyar las decisiones de ingeniería, no reemplazarlas.
 
 ## Los cuatro productos
 
-### VSlices Method
+VSlices está compuesto por cuatro productos que preservan continuidad desde distintos ángulos:
 
-El método conecta todo el ciclo de vida: descubrimiento, documentación, arquitectura, implementación y evolución, definiendo cómo se espera que los otros productos trabajen juntos.
+| Producto | Enfoque |
+| --- | --- |
+| [VSlices Method](../products/method/index.md) | Conecta descubrimiento, documentación, diseño, arquitectura, implementación, validación y evolución a lo largo del ciclo de vida del software. |
+| [VSlices Design](../products/design/index.md) | Proporciona conceptos, técnicas y lenguaje para razonar sobre el dominio y dar forma al sistema antes de implementar. |
+| [VSlices Docs Standard](../products/docs-standard/index.md) | Define estructuras de documentación viva que preservan la intención del sistema y mantienen la documentación conectada al diseño. |
+| [VSlices Framework](../products/framework/index.md) | Proporciona bibliotecas .NET, primitivas y patrones de desarrollo para implementar software orientado al dominio con baja ceremonia y arquitectura progresiva. |
 
-### VSlices Design
+!!! experimental "Experimental"
 
-Design se centra en el modelado y el razonamiento arquitectónico antes de la implementación, proporcionando conceptos, técnicas y lenguaje para entender el dominio y dar forma al sistema.
-
-### VSlices Docs Standard
-
-Docs Standard define estructuras de documentación que preservan la intención del sistema. El objetivo es hacer que la documentación sea parte del diseño, no un artefacto desconectado.
-
-### VSlices Framework
-
-Framework proporciona bibliotecas .NET, primitivas y patrones de desarrollo para implementar software orientado al dominio con baja ceremonia y arquitectura progresiva.
-
-> VSlices Framework actualmente es experimental, y su documentación pública está intencionalmente limitada durante v0.1-beta.
+    VSlices Framework actualmente es experimental, y su documentación pública está intencionalmente limitada durante v0.1-beta.

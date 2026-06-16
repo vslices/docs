@@ -1,16 +1,28 @@
 # VSlices Method
 
-VSlices Method explains how to apply VSlices Design and VSlices Docs Standard inside real work contexts. It focuses on preserving continuity between:
+VSlices Method explains how to apply VSlices Design and VSlices Docs Standard inside real work contexts. 
 
-```text
-domain discovery
--> documentation
--> design reasoning
--> architecture
--> implementation
--> validation
--> evolution
+```mermaid
+---
+title: VSlices Method preserves continuity between
+---
+flowchart LR
+  subgraph RW[Real Work Context]
+    direction LR
+
+    A[Domain Discovery]
+    B[Documentation]
+    C[Design Reasoning]
+    D[Architecture]
+    E[Implementation]
+    F[Validation]
+    G[Evolution]
+
+    A --> B --> C --> D --> E --> F --> G
+  
+  end
 ```
+<br/>
 
 VSlices Method does not define a rigid process.
 

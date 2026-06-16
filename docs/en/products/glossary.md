@@ -70,13 +70,39 @@ These terms help connect domain discovery, documentation, architecture, implemen
 
 The core terms usually move from broad context to concrete behavior:
 
-```text
-Scenario
--> Work Line
--> Work Process
--> Workflow
--> Use Case
+```mermaid
+
+graph LR
+  subgraph S[Logistics<br/><small>Scenario</small>]
+    direction LR
+    
+    subgraph BWL[Buy<br/><small>Work Line</small>]
+      direction TB
+
+      subgraph SMWP[Search Material<br/><small>Work Process</small>]
+        direction LR
+
+        PSWF[Page Search<br/><small>Work Flow</small>]
+        VBWF[Validate Buy<br/><small>Work Flow</small>]
+
+        PSWF -- scrapes to --> VBWF
+      end
+
+      PBWF[Prepare Buy<br/><small>Work Flow</small>]
+      BWP[Buy<br/><small>Work process</small>]
+
+      SMWP -- For --> PBWF -- To --> BWP
+
+    end
+
+    SWL[Sell<br/><small>Work line</small>]
+
+    BWL -- Gets materials for --> SWL
+
+  end
+
 ```
+<br/>
 
 This does not mean every iteration must document all levels. The sequence only describes how knowledge can become more specific.
 

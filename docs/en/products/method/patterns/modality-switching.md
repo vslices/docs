@@ -8,17 +8,9 @@ When the uncertainty changes, the modality may need to change too.
 
 ## Core idea
 
-Switch modality when the current modality is no longer reducing the dominant uncertainty. The question is not:
+Switch modality when the current modality is no longer reducing the dominant uncertainty. 
 
-```text
-Are we allowed to change modality?
-```
-
-The better question is:
-
-```text
-Has the kind of uncertainty changed?
-```
+The question is not: _Are we allowed to change modality?_, it is _Has the kind of uncertainty changed?_.
 
 VSlices Method uses modality switching to keep the team aligned with reality instead of forcing work to continue under the wrong emphasis.
 
@@ -28,9 +20,9 @@ Each modality protects the team from a different risk.
 
 | Modality          | Helps avoid                                      | Can become risky when                                                         |
 | ----------------- | ------------------------------------------------ | ----------------------------------------------------------------------------- |
-| **Context-First** | Building from misunderstood context.             | The team keeps expanding understanding without deciding what to validate.     |
-| **Problem-First** | Solving symptoms instead of problems.            | The team isolates the problem from the wider context that gives it meaning.   |
-| **Slice-First**   | Designing too much before learning from reality. | The team builds without enough understanding of intent, risk or consequences. |
+| __[Context-First](../../design/modalities/context-first/index.md)__ | Building from misunderstood<br/>context.             | The team keeps expanding understanding without<br/>deciding what to validate.     |
+| __[Problem-First](../../design/modalities/problem-first/index.md)__ | Solving symptoms instead of<br/>problems.            | The team isolates the problem from the wider<br/>context that gives it meaning.   |
+| __[Slice-First](../../design/modalities/slice-first/index.md)__   | Designing too much before<br/>learning from reality. | The team builds without enough understanding of<br/>intent, risk or consequences. |
 
 Switching modality helps avoid turning a useful emphasis into accidental complexity.
 
@@ -40,12 +32,12 @@ A switch does not mean the previous modality was wrong. It means the previous mo
 
 | Switch                             | Use when                                                                                               | Purpose                                                   |
 | ---------------------------------- | ------------------------------------------------------------------------------------------------------ | --------------------------------------------------------- |
-| **Context-First -> Problem-First** | The team understands enough of the scenario to focus on a concrete pain, opportunity or decision.      | Narrow broad context into a problem worth solving.        |
-| **Context-First -> Slice-First**   | The team understands enough to validate a small and reversible part of the system.                     | Turn contextual learning into practical evidence.         |
-| **Problem-First -> Context-First** | The problem depends on surrounding workflows, actors, language or constraints that are still unclear.  | Recover the context needed to avoid local optimization.   |
-| **Problem-First -> Slice-First**   | The problem is clear enough that a small delivery can test the intended improvement.                   | Validate whether the proposed direction works in reality. |
-| **Slice-First -> Problem-First**   | A built slice reveals that the original problem was incomplete, misplaced or poorly framed.            | Reframe the problem using evidence from delivery.         |
-| **Slice-First -> Context-First**   | Building reveals missing domain context, hidden actors, unclear boundaries or unexpected consequences. | Rebuild understanding before continuing implementation.   |
+| __[Context-First](../../design/modalities/context-first/index.md)__ -> __[Problem-First](../../design/modalities/problem-first/index.md)__ | The team understands enough<br/>of the scenario to focus on a<br/>concrete pain, opportunity or<br/>decision.      | Narrow broad context into a<br/>problem worth solving.        |
+| __[Context-First](../../design/modalities/context-first/index.md)__ -> __[Slice-First](../../design/modalities/slice-first/index.md)__   | The team understands enough<br/>to validate a small and reversible<br/>part of the system.                     | Turn contextual learning into<br/>practical evidence.         |
+| __[Problem-First](../../design/modalities/problem-first/index.md)__ -> __[Context-First](../../design/modalities/context-first/index.md)__ | The problem depends on<br/>surrounding workflows, actors,<br/>language or constraints that<br/>are still unclear.  | Recover the context needed to<br/>avoid local optimization.   |
+| __[Problem-First](../../design/modalities/problem-first/index.md)__ -> __[Slice-First](../../design/modalities/slice-first/index.md)__   | The problem is clear enough<br/>that a small delivery can test<br/>theintended improvement.                   | Validate whether the proposed<br/>direction works in reality. |
+| __[Slice-First](../../design/modalities/slice-first/index.md)__ -> __[Problem-First](../../design/modalities/problem-first/index.md)__   | A built slice reveals that the<br/>original problem was<br/>incomplete, misplaced or<br/>poorly framed.            | Reframe the problem using<br/>evidence from delivery.         |
+| __[Slice-First](../../design/modalities/slice-first/index.md)__ -> __[Context-First](../../design/modalities/context-first/index.md)__   | Building reveals missing<br/>domain context, hidden actors,<br/>unclear boundaries or<br/>unexpected consequences. | Rebuild understanding before<br/>continuing implementation.   |
 
 ## Signals that switching may be needed
 
@@ -83,12 +75,12 @@ The switch may be as simple as changing the next conversation, updating a docume
 
 Documents may help preserve why a modality changed. Use documentation only when the switch affects future work.
 
-* **Support Notes** can preserve early observations or uncertainty.
-* **Validation Notes** can preserve evidence that caused the switch.
-* **Decision Records** can preserve important direction changes.
-* **Context Documents** can preserve newly discovered surrounding context.
-* **Use Case Documents** can preserve behavior clarified after switching.
-* **Process Documents** can preserve workflow knowledge revealed by the switch.
+* **[Support Notes](../../docs-standard/taxonomy/support-note.md)** can preserve early observations or uncertainty.
+* **[Validation Notes](../../docs-standard/taxonomy/validation-note.md)** can preserve evidence that caused the switch.
+* **[Decision Records](../../docs-standard/taxonomy/decision-record.md)** can preserve important direction changes.
+* **[Context Documents](../../docs-standard/taxonomy/context-document.md)** can preserve newly discovered surrounding context.
+* **[Use Case Documents](../../docs-standard/taxonomy/use-case-document.md)** can preserve behavior clarified after switching.
+* **[Process Documents](../../docs-standard/taxonomy/process-document.md)** can preserve workflow knowledge revealed by the switch.
 
 The goal is not to document every switch. It is to avoid losing the learning that made the switch necessary.
 

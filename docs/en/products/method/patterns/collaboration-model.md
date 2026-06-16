@@ -37,20 +37,9 @@ In a small team, the same people may hold all responsibilities. In a larger orga
 
 The shared VSlices Design iteration flow is:
 
-```text
-Understanding
--> Contextualizing
--> Planning
--> Building
--> Understanding
-```
+{% include-markdown "shared/design-iteration-flow.md" %}
 
-> Collaboration should protect continuity across this flow.
-> Understanding should not produce disconnected notes.
-> Contextualizing should not produce documents that nobody uses.
-> Planning should not produce decisions without context.
-> Building should not implement behavior without intent.
-> Validation should not become isolated feedback that never changes future work.
+Collaboration should protect continuity across this flow
 
 Each stage should leave enough knowledge for the next stage to move responsibly.
 
