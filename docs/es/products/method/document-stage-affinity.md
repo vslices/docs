@@ -1,52 +1,55 @@
 # Afinidad documento-etapa
 
-La afinidad documento-etapa (_Document-Stage Affinity_ en inglés) explica cómo los documentos de _VSlices Docs Standard_ pueden apoyar cada etapa de una iteración de _VSlices Design_.
+La afinidad documento-etapa explica cómo los documentos de VSlices Docs Standard pueden apoyar cada etapa de una iteración de VSlices Design.
 
-No hace que los documentos sean obligatorios. Ayuda a los equipos a elegir documentación útil sin convertir _VSlices Method_ en una _checklist_. El flujo compartido de iteración es:
+No vuelve obligatorios los documentos. Ayuda a los equipos a elegir documentación útil sin convertir VSlices Method en una checklist.
 
-```text
-Understanding -> Contextualizing -> Planning -> Building -> Understanding
-```
+El flujo compartido de iteración es:
+
+{% include-markdown "shared/simple-design-iteration-flow.md" %}
 
 ## Idea central
 
-Cada etapa crea o cambia un tipo distinto de conocimiento. Algunos documentos apoyan naturalmente mejor algunas etapas que otras.
+Cada etapa crea o cambia un tipo distinto de conocimiento. Algunos documentos apoyan naturalmente mejor unas etapas que otras.
 
-Esta afinidad es solo una guía. Un equipo puede crear, actualizar, omitir, fusionar o volver a visitar documentos cuando la iteración lo requiera.
+Esta afinidad es solo una guía. Un equipo puede crear, actualizar, omitir, fusionar o revisitar documentos cuando la iteración lo requiera.
 
-La pregunta no es _¿Qué documentos requiere esta etapa?_, si no: **¿Qué conocimiento necesitamos preservar para tomar la siguiente decisión responsable?**.
+La pregunta no es: "*¿Qué documentos requiere esta etapa?*"
+
+La mejor pregunta es: "**¿Qué conocimiento necesitamos preservar para tomar la siguiente decisión responsable?**"
 
 ## Afinidad por etapa
 
-| Etapa                               | Conocimiento a manejar                                                                                                                                | Documentos útiles                                                                                                                                                                  | Riesgo evitado                                                              |
-| ----------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------- |
-| **Understanding**                   | <ul><li>Señales tempranas<br/>del dominio</li><li>Lenguaje</li><li>Supuestos</li><li>Riesgos</li><li>Preguntas abiertas</li></ul>                         | <ul><li>**Domain Vocabulary**</li><li>**Support Note**</li><li>**Context Document**<br/>temprano</li></ul>                                                                             | Diseñar artefactos<br/>de *software* antes<br/>de entender el mundo<br/>al que pertenecen.        |
-| **Contextualizing**                 | <ul><li>Escenario</li><li>Actores</li><li>Límites</li><li>Líneas de trabajo</li><li>*workflows*</li><li>Contexto circundante</li></ul>                | <ul><li>**Context Document**</li><li>**Process Document**</li><li>**Domain Vocabulary**</li><li>**Support Note**</li></ul>                                                         | Tratar un problema,<br/>caso de uso o *feature*<br/>como si estuviera<br/>aisladode su contexto. |
-| **Planning**                        | <ul><li>Mejora esperada</li><li>Comportamiento</li><li>Capacidades</li><li>Alcance</li><li>Decisiones</li><li>*tradeoffs*</li></ul>                   | <ul><li>**Use Case Document**</li><li>**Capability Document**</li><li>**Decision Record**</li><li>**Support Note**</li></ul>                                                       | Resolver un problema<br/>técnico atractivo en<br/>vez del problema de<br/>negocio relevante.      |
-| **Building**                        | <ul><li>Comportamiento de<br/>implementación</li><li>Validaciones</li><li>Errores esperados</li><li>Restricciones</li><li>*feedback* de entrega</li></ul> | <ul><li>**Use Case Document**</li><li>**Capability Document**</li><li>**Decision Record**</li><li>**Validation Note**</li><li>**Support Note**</li></ul>                           | Tratar la <br/>implementación como<br/>el final del<br/>aprendizaje.                               |
-| **Returning to<br/> Understanding** | <ul><li>Evidencia</li><li>Aprendizaje</li><li>Supuestos cambiados</li><li>Contexto actualizado</li><li>Nueva incertidumbre</li></ul>                  | <ul><li>**Validation Note**</li><li>**Context Document**</li><li>**Process Document**</li><li>**Use Case Document**</li><li>**Decision Record**</li><li>**Support Note**</li></ul> | Ignorar lo que el<br/>sistema enseñó<br/>después de ser<br/>construido.                           |
-
+| Etapa | Conocimiento que se está manejando | Documentos útiles | Riesgo principal que evita |
+| --- | --- | --- | --- |
+| **Understanding** | Señales tempranas del dominio, lenguaje, supuestos, riesgos y preguntas abiertas. | **[Domain Vocabulary](../docs-standard/taxonomy/domain-vocabulary.md)**, **[Support Note](../docs-standard/taxonomy/support-note.md)**, **[Context Document](../docs-standard/taxonomy/context-document.md)** temprano. | Diseñar artefactos de software antes de entender el mundo al que pertenecen. |
+| **Contextualizing** | Escenario, actores, límites, work lines, workflows y contexto circundante. | **[Context Document](../docs-standard/taxonomy/context-document.md)**, **[Process Document](../docs-standard/taxonomy/process-document.md)**, **[Domain Vocabulary](../docs-standard/taxonomy/domain-vocabulary.md)**, **[Support Note](../docs-standard/taxonomy/support-note.md)**. | Tratar un problema, caso de uso o feature como si estuviera aislado de su contexto. |
+| **Planning** | Mejora esperada, comportamiento, capacidades, alcance, decisiones y tradeoffs. | **[Use Case Document](../docs-standard/taxonomy/use-case-document.md)**, **[Capability Document](../docs-standard/taxonomy/capability-document.md)**, **[Decision Record](../docs-standard/taxonomy/decision-record.md)**, **[Support Note](../docs-standard/taxonomy/support-note.md)**. | Resolver un problema técnico atractivo en vez del problema de negocio relevante. |
+| **Building** | Comportamiento de implementación, validaciones, errores esperados, restricciones y feedback de entrega. | **[Use Case Document](../docs-standard/taxonomy/use-case-document.md)**, **[Capability Document](../docs-standard/taxonomy/capability-document.md)**, **[Decision Record](../docs-standard/taxonomy/decision-record.md)**, **[Validation Note](../docs-standard/taxonomy/validation-note.md)**, **[Support Note](../docs-standard/taxonomy/support-note.md)**. | Tratar la implementación como el final del aprendizaje. |
+| **Returning to Understanding** | Evidencia, aprendizaje, supuestos modificados, contexto actualizado y nueva incertidumbre. | **[Validation Note](../docs-standard/taxonomy/validation-note.md)**, **[Context Document](../docs-standard/taxonomy/context-document.md)**, **[Process Document](../docs-standard/taxonomy/process-document.md)**, **[Use Case Document](../docs-standard/taxonomy/use-case-document.md)**, **[Decision Record](../docs-standard/taxonomy/decision-record.md)**, **[Support Note](../docs-standard/taxonomy/support-note.md)**. | Ignorar lo que el sistema enseñó después de ser construido. |
 
 ## Afinidad por documento
 
-El mismo documento puede apoyar más de una etapa.
+Un mismo documento puede apoyar más de una etapa.
 
 | Documento | Afinidad más fuerte | Útil cuando |
 | --- | --- | --- |
-| [**Vocabulario de Dominio**](../docs-standard/taxonomy/domain-vocabulary.md) | **Understanding** y<br/>**Contextualizing**. | El lenguaje aparece, cambia, entra en<br/>conflicto o se vuelve importante para las<br/>decisiones. |
-| [**Documento de Contexto**](../docs-standard/taxonomy/context-document.md) | **Contextualizing**. | El equipo necesita preservar el escenario,<br/>los actores, los límites o la situación actual. |
-| [**Documento de Proceso**](../docs-standard/taxonomy/process-document.md) | **Contextualizing**. | El trabajo depende de responsabilidades,<br/>_workflows_, _handoffs_ u operaciones repetidas. |
-| [**Documento de Caso de Uso**](../docs-standard/taxonomy/use-case-document.md) | **Planning** y **Building**. | Comportamiento, consecuencias, validaciones<br/>o errores esperados necesitan guiar la<br/>implementación. |
-| [**Documento de Capacidad**](../docs-standard/taxonomy/capability-document.md) | **Planning** y **Building**. | Una capacidad estable de negocio o sistema<br/>necesita ser nombrada y preservada. |
-| [**Registro de decisión**](../docs-standard/taxonomy/decision-record.md) | **Planning** y **Building**. | Una dirección, _tradeoff_, riesgo aceptado u<br/>opción rechazada puede afectar trabajo<br/>futuro. |
-| [**Nota de Validación**](../docs-standard/taxonomy/validation-note.md) | **Building** y **Returning<br/>to Understanding**. | Evidencia desde implementación, revisión,<br/>uso u operación cambia lo que el equipo sabe. |
-| [**Nota de soporte**](../docs-standard/taxonomy/support-note.md) | Todas las etapas. | El conocimiento es útil, pero todavía<br/>temprano, local, incierto o temporal. |
+| [**Domain Vocabulary**](../docs-standard/taxonomy/domain-vocabulary.md) | Understanding y Contextualizing. | Aparece lenguaje, cambia, entra en conflicto o se vuelve importante para tomar decisiones. |
+| [**Context Document**](../docs-standard/taxonomy/context-document.md) | Contextualizing. | El equipo necesita preservar el escenario, los actores, los límites o la situación actual. |
+| [**Process Document**](../docs-standard/taxonomy/process-document.md) | Contextualizing. | El trabajo depende de responsabilidades, workflows, handoffs u operaciones repetidas. |
+| [**Use Case Document**](../docs-standard/taxonomy/use-case-document.md) | Planning y Building. | El comportamiento, las consecuencias, las validaciones o los errores esperados deben guiar la implementación. |
+| [**Capability Document**](../docs-standard/taxonomy/capability-document.md) | Planning y Building. | Una habilidad estable del negocio o del sistema necesita ser nombrada y preservada. |
+| [**Decision Record**](../docs-standard/taxonomy/decision-record.md) | Planning y Building. | Una dirección, tradeoff, riesgo aceptado u opción rechazada puede afectar trabajo futuro. |
+| [**Validation Note**](../docs-standard/taxonomy/validation-note.md) | Building y Returning to Understanding. | La evidencia desde implementación, revisión, uso u operación cambia lo que el equipo sabe. |
+| [**Support Note**](../docs-standard/taxonomy/support-note.md) | Todas las etapas. | El conocimiento es útil, pero todavía es temprano, local, incierto o temporal. |
 
 ## Uso de la afinidad
 
-La afinidad documental debería ayudar al equipo a decidir qué preservar. No debería decidir por el equipo. Usa un documento cuando ayude al equipo a:
+La afinidad documental debería ayudar al equipo a decidir qué preservar. No debería decidir por el equipo.
 
-* clarificar lenguaje
+Usa un documento cuando ayude al equipo a:
+
+* aclarar lenguaje
 * preservar contexto
 * explicar comportamiento
 * hacer visible una decisión
@@ -54,11 +57,11 @@ La afinidad documental debería ayudar al equipo a decidir qué preservar. No de
 * registrar evidencia
 * evitar redescubrir el mismo conocimiento más adelante
 
-Omite un documento cuando solo existe porque una etapa parece esperarlo.
+Omite un documento cuando existe solo porque una etapa parece esperarlo.
 
 ## Regla de Method
 
 Usa el documento que preserve el conocimiento necesario para la siguiente decisión responsable.
 
-* Si un documento ayuda al equipo a avanzar con más claridad, úsalo.
-* Si un documento crea ceremonia sin preservar conocimiento útil, omítelo.
+- Si un documento ayuda al equipo a avanzar con más claridad, úsalo.
+- Si un documento crea ceremonia sin preservar conocimiento útil, omítelo.

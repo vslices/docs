@@ -48,9 +48,9 @@ A digitalized scenario usually starts with **Context-First** or **Problem-First*
 
 | Situation                                                            | Useful modality   | Reason                                                                                  |
 | -------------------------------------------------------------------- | ----------------- | --------------------------------------------------------------------------------------- |
-| The system exists, but the surrounding<br/>business context is unclear.  | [**Context-First**](../../design/modalities/context-first/index.md) | The team needs to understand what<br/>the software is trying to represent.                  |
-| A clear pain exists in the current system,<br/>but the cause is unclear. | [**Problem-First**](../../design/modalities/problem-first/index.md) | The team needs to understand the<br/>problem before changing behavior.                      |
-| A small and safe improvement can<br/>reveal useful evidence.             | [**Slice-First**](../../design/modalities/slice-first/index.md)   | The team can learn through a narrow<br/>change without pretending to<br/>understand everything. |
+| The system exists, but the surrounding business context is unclear.  | [**Context-First**](../../design/modalities/context-first/index.md) | The team needs to understand what the software is trying to represent.                  |
+| A clear pain exists in the current system, but the cause is unclear. | [**Problem-First**](../../design/modalities/problem-first/index.md) | The team needs to understand the problem before changing behavior.                      |
+| A small and safe improvement can reveal useful evidence.             | [**Slice-First**](../../design/modalities/slice-first/index.md)   | The team can learn through a narrow change without pretending to understand everything. |
 
 Slice-First can be useful, but only when the change is small enough to avoid spreading misunderstood assumptions.
 

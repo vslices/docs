@@ -8,7 +8,7 @@ title: VSlices Method preserves continuity between
 ---
 flowchart LR
   subgraph RW[Real Work Context]
-    direction LR
+    direction TB
 
     A[Domain Discovery]
     B[Documentation]

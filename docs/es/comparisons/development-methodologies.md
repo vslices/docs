@@ -2,23 +2,11 @@
 
 ## Propósito
 
-Este documento explica cómo se relaciona VSlices con otras metodologías, prácticas y enfoques arquitectónicos de desarrollo de software.
+Este documento explica cómo VSlices se relaciona con metodologías, prácticas y enfoques de entrega de software.
 
-VSlices no es principalmente:
+VSlices no es una metodología ágil, un framework de gestión de proyectos, una arquitectura fija ni un reemplazo de las prácticas de ingeniería existentes.
 
-* una metodología ágil
-* un framework de gestión de proyectos
-* una arquitectura fija
-* un reemplazo de las prácticas de ingeniería existentes
-
-VSlices es una suite de ingeniería de software orientada a la continuidad. Su principal preocupación es preservar la alineación entre:
-
-* comprensión del dominio
-* documentación
-* razonamiento de diseño
-* arquitectura
-* implementación
-* evolución del sistema
+Es una suite de ingeniería de software orientada a la continuidad. Su principal preocupación es preservar la alineación entre comprensión del dominio, documentación, razonamiento de diseño, arquitectura, implementación y evolución del sistema.
 
 ## La diferencia central
 
@@ -30,125 +18,152 @@ La mayoría de las metodologías de desarrollo y enfoques de entrega tienen un c
 - Lean se enfoca en reducir desperdicio y mejorar el flujo.
 - Domain-Driven Design se enfoca en comprender y modelar el dominio.
 
-VSlices se enfoca en la continuidad. Las preguntas centrales no son solo:
+VSlices se enfoca en la continuidad entre esas preocupaciones.
 
-> ¿Cómo entregamos software?
->
-> ¿Cómo organizamos el código?
+Sus preguntas centrales no son solo:
 
-La pregunta central es:
+* ¿Cómo entregamos software?
+* ¿Cómo organizamos el código?
 
-> ¿Cómo preservamos la intención del dominio, el significado arquitectónico, el conocimiento documentado y el comportamiento ejecutable a medida que el sistema evoluciona?
+!!! note "Pregunta central para VSlices"
+
+    ¿Cómo preservamos la intención del dominio, el significado arquitectónico, el conocimiento documentado y el comportamiento ejecutable a medida que el sistema evoluciona?
 
 ## Alcance
 
-Este documento compara VSlices con metodologías de desarrollo y enfoques orientados a la entrega.
-
-No compara VSlices con estilos arquitectónicos ni patrones de implementación.
+| Este documento cubre | Este documento no cubre |
+| --- | --- |
+| Cómo VSlices se relaciona con metodologías de desarrollo y enfoques orientados a la entrega. | Cómo VSlices se relaciona con estilos arquitectónicos o patrones de implementación. |
 
 Enfoques arquitectónicos como Clean Architecture, Hexagonal Architecture, CQRS, Event Sourcing, microservices, modular monoliths o Vertical Slice Architecture deben discutirse por separado.
 
-## VSlices y Agile
+## VSlices y otras metodologías
 
-VSlices es altamente compatible con los principios de Agile. Ambos valoran:
+VSlices puede compararse con distintas metodologías y enfoques de entrega. Cada comparación mantiene el mismo foco: qué optimiza el otro enfoque, cómo se relaciona con VSlices y qué agrega VSlices mediante continuidad.
 
-* evolución incremental
-* adaptabilidad
-* retroalimentación
-* simplicidad
-* evitar complejidad innecesaria por adelantado
+=== "Agile"
 
-Sin embargo, Agile aborda principalmente cómo los equipos se adaptan y entregan valor con el tiempo.
+    **Relación:** Altamente compatible.
 
-VSlices aborda cómo el conocimiento, las decisiones, los límites, los comportamientos y la implementación permanecen conectados mientras ocurre esa entrega.
+    **Preocupaciones compartidas:**
 
-Mientras Agile pregunta: _¿Cómo respondemos al cambio?_, VSlices pregunta: _¿Cómo respondemos al cambio sin perder el significado del sistema?_.
+    * evolución incremental
+    * adaptabilidad
+    * retroalimentación
+    * simplicidad
+    * evitar complejidad innecesaria por adelantado
 
-## VSlices y Scrum
+    **Diferencia:** Agile se enfoca en adaptar la entrega. VSlices se enfoca en preservar continuidad mientras ocurre esa entrega.
 
-Scrum proporciona una estructura para la coordinación del equipo mediante roles, eventos, artefactos e iteraciones.
+    !!! note "Pregunta de VSlices"
 
-Y VSlices no intenta reemplazar Scrum, porque no define:
+        ¿Cómo respondemos al cambio sin perder el significado del sistema?
 
-* sprints
-* product owners
-* scrum masters
-* sprint reviews
-* reglas de gestión del backlog
+=== "Scrum"
 
-Un equipo que usa Scrum todavía podría usar VSlices para preservar la continuidad entre descubrimiento de producto, documentación, arquitectura e implementación.
+    **Relación:** Complementaria.
 
-Scrum ayuda a organizar el trabajo. VSlices ayuda a preservar el significado del trabajo.
+    **Scrum define:**
 
-## VSlices y Extreme Programming
+    * sprints
+    * product owners
+    * scrum masters
+    * sprint reviews
+    * reglas de gestión del backlog
 
-VSlices está fuertemente alineado con Extreme Programming. Ambos valoran:
+    **Diferencia:** Scrum ayuda a organizar el trabajo. VSlices ayuda a preservar el significado del trabajo.
 
-* simplicidad
-* retroalimentación
-* mejora continua
-* calidad técnica
-* refactorización
-* prácticas de ingeniería sostenibles
+    !!! note "Pregunta de VSlices"
 
-Extreme Programming se enfoca profundamente en cómo el software se construye de forma segura e incremental. VSlices extiende esta preocupación hacia la continuidad entre el código y el conocimiento que justifica el código.
+        ¿Cómo preservamos continuidad entre descubrimiento de producto, documentación, arquitectura e implementación?
 
-Mientras XP pregunta: _¿Cómo construimos software con alta calidad técnica y retroalimentación rápida?_, VSlices pregunta: _¿Cómo mantenemos esa calidad técnica conectada con la intención del dominio, las decisiones documentadas y la evolución arquitectónica?_.
+=== "Extreme Programming"
 
-## VSlices y Lean Software Development
+    **Relación:** Fuertemente alineada.
 
-VSlices está altamente alineado con el pensamiento Lean. Ambos se preocupan por:
+    **Preocupaciones compartidas:**
 
-* reducir desperdicio
-* retrasar decisiones innecesarias
-* amplificar el aprendizaje
-* evitar la sobreproducción
-* mejorar el flujo
+    * simplicidad
+    * retroalimentación
+    * mejora continua
+    * calidad técnica
+    * refactorización
+    * prácticas de ingeniería sostenibles
 
-VSlices aplica este pensamiento a la continuidad del conocimiento de software. Desde la perspectiva de VSlices, las abstracciones innecesarias, la documentación desactualizada, los tickets desconectados, las decisiones poco claras y la arquitectura desvinculada de las necesidades del dominio son formas de desperdicio.
+    **Diferencia:** Extreme Programming se enfoca en construir software de forma segura e incremental. VSlices extiende esa preocupación hacia la continuidad entre el código y el conocimiento que justifica ese código.
 
-Mientras Lean pregunta: _¿Cómo reducimos desperdicio y mejoramos el aprendizaje?_, VSlices pregunta: _¿Cómo reducimos el desperdicio causado por el conocimiento fragmentado y la intención arquitectónica perdida?_.
+    !!! note "Pregunta de VSlices"
 
-## VSlices y Domain-Driven Design
+        ¿Cómo mantenemos la calidad técnica conectada con la intención del dominio, las decisiones documentadas y la evolución arquitectónica?
 
-VSlices es profundamente compatible con Domain-Driven Design. Ambos se preocupan por:
+=== "Lean Software Development"
 
-* lenguaje del dominio
-* límites del dominio
-* significado de negocio
-* modelos explícitos
-* software moldeado por necesidades reales del negocio
+    **Relación:** Fuertemente alineada.
 
-Domain-Driven Design ayuda a los equipos a descubrir, comprender y modelar el dominio. VSlices intenta preservar esa comprensión a lo largo de la documentación, el diseño, la arquitectura, la implementación y la evolución.
+    **Preocupaciones compartidas:**
 
-Mientras DDD pregunta: _¿Cómo modelamos el software en torno al dominio?_, VSlices pregunta: ¿Cómo mantenemos alineados con el tiempo el modelo de dominio, el conocimiento documentado, la estructura arquitectónica y el comportamiento ejecutable?
+    * reducir desperdicio
+    * retrasar decisiones innecesarias
+    * amplificar el aprendizaje
+    * evitar la sobreproducción
+    * mejorar el flujo
 
-## VSlices y Waterfall
+    **Diferencia:** Lean se enfoca en reducir desperdicio y mejorar el aprendizaje. VSlices aplica esa preocupación a la continuidad del conocimiento de software, tratando el conocimiento fragmentado, la documentación desactualizada, las decisiones poco claras y la arquitectura desvinculada de las necesidades del dominio como formas de desperdicio.
 
-VSlices no está alineado con Waterfall tradicional como modelo secuencial de ciclo de vida. VSlices no asume que el descubrimiento, la documentación, el diseño, la implementación y la validación ocurren una sola vez en un orden fijo.
+    !!! note "Pregunta de VSlices"
 
-Sin embargo, VSlices no rechaza la documentación ni el pensamiento por adelantado. El problema no es la documentación. Es tratar la documentación como conocimiento congelado.
+        ¿Cómo reducimos el desperdicio causado por conocimiento fragmentado e intención arquitectónica perdida?
 
-VSlices prefiere documentación viva que evoluciona con la implementación y preserva el significado arquitectónico a lo largo del tiempo.
+=== "Domain-Driven Design"
 
-Waterfall suele preguntar: _¿Qué debería especificarse antes de que comience la implementación?_, VSlices pregunta: _¿Qué conocimiento debe seguir siendo visible y evolutivo mientras el sistema cambia?_.
+    **Relación:** Profundamente compatible.
+
+    **Preocupaciones compartidas:**
+
+    * lenguaje del dominio
+    * límites del dominio
+    * significado de negocio
+    * modelos explícitos
+    * software moldeado por necesidades reales del negocio
+
+    **Diferencia:** Domain-Driven Design ayuda a los equipos a descubrir, comprender y modelar el dominio. VSlices intenta preservar esa comprensión a lo largo de la documentación, el diseño, la arquitectura, la implementación y la evolución.
+
+    !!! note "Pregunta de VSlices"
+
+        ¿Cómo mantenemos alineados con el tiempo el modelo de dominio, el conocimiento documentado, la estructura arquitectónica y el comportamiento ejecutable?
+
+=== "Waterfall"
+
+    **Relación:** Baja alineación con Waterfall tradicional secuencial.
+
+    **Diferencia:** Waterfall trata el descubrimiento, la documentación, el diseño, la implementación y la validación como una secuencia que ocurre en un orden fijo. VSlices los trata como fuentes evolutivas de conocimiento.
+
+    !!! note "Pregunta de VSlices"
+
+        ¿Qué conocimiento debe permanecer visible y evolutivo mientras el sistema cambia?
 
 ## Resumen comparativo
 
-| Enfoque | Preocupación | Relación con VSlices |
+La siguiente tabla resume la relación principal entre cada enfoque y VSlices.
+
+| Enfoque | Preocupación principal | Relación con VSlices |
 | --- | --- | --- |
-| Agile | Entrega adaptativa | Compatible, añade continuidad entre: <ul><li>Conocimiento</li><li>Documentación</li><li>implementación</li></ul> |
-| Scrum | Coordinación del<br/>equipo | Complementario, no lo reemplaza |
-| Extreme<br/>Programming | Calidad técnica y<br/>retroalimentación | Fuertemente alineado, extiende la continuidad<br/>más allá del código |
-| Lean | Reducción de<br/>desperdicio y<br/>aprendizaje | Fuertemente alineado, trata el conocimiento<br/>fragmentado como desperdicio |
-| Domain-Driven<br/>Design | Modelado del<br/>dominio | Profundamente compatible; preserva la intención del<br/>dominio a lo largo del ciclo de vida |
-| Waterfall | Especificación y<br/>entrega secuenciales | Baja alineación; VSlices prefiere continuidad viva |
+| Agile | Entrega adaptativa | Compatible; añade continuidad entre conocimiento, documentación e implementación. |
+| Scrum | Coordinación del equipo | Complementario; no lo reemplaza. |
+| Extreme Programming | Calidad técnica y retroalimentación | Fuertemente alineado; extiende la continuidad más allá del código. |
+| Lean | Reducción de desperdicio y aprendizaje | Fuertemente alineado; trata el conocimiento fragmentado como desperdicio. |
+| Domain-Driven Design | Modelado del dominio | Profundamente compatible; preserva la intención del dominio a lo largo del ciclo de vida. |
+| Waterfall | Especificación y entrega secuenciales | Baja alineación; VSlices prefiere continuidad viva. |
 
 ## La posición de VSlices
 
-VSlices no es un reemplazo universal para metodologías existentes. Es una capa de continuidad para la ingeniería de software. Ayuda a los equipos a preguntar:
+VSlices no es un reemplazo universal para metodologías existentes. Es una capa de continuidad para la ingeniería de software.
 
-> ¿Nuestra comprensión del dominio, documentos, decisiones, arquitectura e implementación siguen describiendo el mismo sistema?
+Ayuda a los equipos a preguntar:
+
+!!! note "Pregunta de continuidad"
+
+    ¿Nuestra comprensión del dominio, documentos, decisiones, arquitectura e implementación siguen describiendo el mismo sistema?
 
 Cuando la respuesta es no, el sistema puede seguir funcionando, pero su significado ha empezado a fragmentarse.
 
@@ -158,14 +173,6 @@ VSlices existe para reducir esa fragmentación.
 
 VSlices puede trabajar con equipos ágiles, equipos de ingeniería disciplinados, equipos orientados al dominio y equipos que usan distintos estilos arquitectónicos.
 
-Su diferenciación no está en reemplazar esos enfoques. Está en preservar la continuidad entre ellos.
-
-VSlices se ocupa de lo que a menudo se pierde entre:
-
-* comprender el negocio
-* documentar el sistema
-* diseñar la solución
-* implementar el comportamiento
-* y evolucionar el software con el tiempo
+Su diferenciación no está en reemplazar esos enfoques. Está en preservar continuidad entre comprensión del negocio, documentación, diseño, implementación y evolución del software.
 
 Esa continuidad es el centro de VSlices.

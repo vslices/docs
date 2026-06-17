@@ -1,139 +1,143 @@
-# Escenario "Introducir Method"
+# Escenario "Digitalizado"
 
-Los escenarios donde puedes "introducir Method" (*Introducing Method Scenarios* en inglés) son contextos de trabajo donde un equipo u organización no usa actualmente *VSlices Method*, pero está abierto a mejorar cómo el conocimiento, las decisiones, la implementación y el *feedback* se mantienen conectados.
+Un escenario "Digitalizado" es un contexto de trabajo donde el software ya representa parte del negocio, proceso u organización.
 
-El objetivo no es adoptar todo el método de una vez. Es introducir una costura útil de continuidad.
+Esto no significa que el dominio ya esté entendido. El software existente es evidencia, no es automáticamente verdad del dominio.
 
 ## Idea central
 
-*VSlices Method* debería introducirse a través de trabajo real. Un equipo no debería comenzar cambiando todo su proceso. Debería comenzar preservando una pieza de conocimiento de la que depende el trabajo actual o futuro.
+En un escenario digitalizado, VSlices Method ayuda al equipo a separar tres cosas:
 
-La pregunta no es *¿Cómo adoptamos VSlices Method?*, es: **¿Dónde se está perdiendo continuidad actualmente?**
+* cómo ocurre realmente el trabajo
+* cómo el software actual representa ese trabajo
+* cómo las personas han adaptado su trabajo alrededor del software
+
+El objetivo no es hacer ingeniería inversa de todo el sistema. Es recuperar suficiente continuidad para tomar la siguiente decisión responsable.
 
 ## Cuándo aplica esta guía
 
 Usa esta guía cuando:
 
-* el trabajo ya está ocurriendo
-* el equipo tiene su propio proceso
-* existe documentación, pero está desconectada de la implementación
-* se toman decisiones, pero no se preservan
-* los *tickets* describen tareas sin suficiente intención
-* aparece *feedback*, pero no cambia el trabajo futuro
-* aparece confusión repetida entre personas o equipos
-* el equipo está abierto a una mejora liviana
+* ya existe software
+* los workflows están parcial o totalmente soportados por un sistema
+* las personas dependen de pantallas, reportes, formularios, APIs o automatizaciones actuales
+* el equipo necesita mejorar, reemplazar o extender comportamiento existente
+* la documentación falta, está desactualizada o está desconectada de la implementación
+* el conocimiento de negocio está oculto dentro de código, tickets o hábitos de usuario
 
-Esta guía no es para reemplazar cómo trabaja un equipo. Es para hacer que el trabajo existente sea más continuo.
+Esta guía puede aplicar aunque el proyecto ya use o no use VSlices Method.
 
 ## Riesgo principal
 
-El riesgo principal es intentar introducir *VSlices Method* como un proceso completo. Eso puede crear resistencia, ceremonia o falsa madurez.
+El riesgo principal es tratar el software existente como la verdad del dominio. Un sistema puede contener:
 
-Puede que un equipo no necesite nuevas etapas, reuniones o *templates*. Puede que solo necesite una mejor forma de preservar:
+* reglas reales de negocio
+* decisiones obsoletas
+* comportamiento de workaround
+* restricciones accidentales
+* compromisos técnicos
+* conceptos faltantes
+* nombres engañosos
+* comportamientos que los usuarios aprendieron a tolerar
 
-* por qué importa un cambio
-* qué contexto lo sostiene
-* qué decisión se tomó
-* qué sigue siendo incierto
-* qué *feedback* cambió
-* qué no debería redescubrir el trabajo futuro
-
-*Method* debería entrar a través de utilidad, no de doctrina.
+Si el equipo copia el sistema existente sin cuestionarlo, puede preservar complejidad accidental como si fuera conocimiento del dominio.
 
 ## Modalidad inicial útil
 
-Introducir *Method* normalmente comienza con *Problem-First* o *Slice-First*.
+Un escenario digitalizado normalmente comienza con **Context-First** o **Problem-First**.
 
-| Situación                                                                                   | Modalidad útil                                                        | Razón                                                                                |
-| ------------------------------------------------------------------------------------------- | --------------------------------------------------------------------- | ------------------------------------------------------------------------------------ |
-| El equipo siente un dolor repetido,<br/>pero no sabe dónde se está<br/>rompiendo la continuidad.    | [***Context-First***](../../design/modalities/context-first/index.md) | El equipo necesita entender la pérdida de<br/>continuidad antes de cambiar cómo trabaja. |
-| Un artefacto o práctica pequeña<br/>puede mejorar inmediatamente el<br/>trabajo en curso.           | [***Problem-First***](../../design/modalities/problem-first/index.md) | El equipo puede validar *Method* mediante<br/>una mejora acotada.                        |
-| El contexto de trabajo circundante<br/>es demasiado poco claro para<br/>intervenir de forma segura. | [***Slice-First***](../../design/modalities/slice-first/index.md)     | El equipo necesita un entendimiento más<br/>amplio antes de introducir un cambio.        |
+| Situación | Modalidad útil | Razón |
+| --- | --- | --- |
+| El sistema existe, pero el contexto de negocio circundante no está claro. | [**Context-First**](../../design/modalities/context-first/index.md) | El equipo necesita entender qué está intentando representar el software. |
+| Existe un dolor claro en el sistema actual, pero la causa no está clara. | [**Problem-First**](../../design/modalities/problem-first/index.md) | El equipo necesita entender el problema antes de cambiar el comportamiento. |
+| Una mejora pequeña y segura puede revelar evidencia útil. | [**Slice-First**](../../design/modalities/slice-first/index.md) | El equipo puede aprender mediante un cambio acotado sin pretender entenderlo todo. |
 
-La modalidad seleccionada debería coincidir con la incertidumbre de adopción, no con una preferencia personal.
+Slice-First puede ser útil, pero solo cuando el cambio es lo suficientemente pequeño como para evitar propagar supuestos mal entendidos.
 
 ## Qué observar primero
 
-Antes de sugerir prácticas de *Method*, observa cómo se mueve actualmente el trabajo. Algunas preguntas útiles incluyen:
+Antes de cambiar el sistema, observa cómo el trabajo actual se conecta con el software actual. Algunas preguntas útiles son:
 
-* ¿Dónde se pierde intención?
-* ¿Dónde las personas repiten las mismas explicaciones?
-* ¿Dónde se toman decisiones?
-* ¿Dónde se olvidan las decisiones?
-* ¿Dónde la documentación deja de coincidir con la realidad?
-* ¿Dónde la implementación pierde contexto de negocio?
-* ¿Dónde desaparece el *feedback*?
-* ¿Qué *handoffs* crean confusión?
-* ¿Qué pequeña mejora ayudaría inmediatamente al trabajo actual?
+* ¿Qué trabajo real apoya este software?
+* ¿Qué workflows dependen de él?
+* ¿Qué actores lo usan directa o indirectamente?
+* ¿Qué partes del sistema son confiables?
+* ¿Qué partes se evitan, se corrigen manualmente o se rodean?
+* ¿Qué términos de negocio aparecen en la interfaz, el código o la documentación?
+* ¿Qué comportamientos se esperan pero no son explícitos?
+* ¿Qué errores o excepciones ocurren repetidamente?
+* ¿Qué decisiones son históricas, técnicas o ya no se entienden?
 
-El objetivo no es juzgar el proceso del equipo. Es encontrar una brecha de continuidad que valga la pena mejorar.
+El objetivo no es hacer un análisis completo. Es encontrar dónde falta continuidad.
 
-## Puntos de continuidad
+## Conocimiento a preservar
 
-Un punto de continuidad (*continuity seam* en inglés) es un lugar pequeño donde *Method* puede conectar conocimiento que actualmente está desconectado. Algunas puntos útiles pueden incluir:
+Preserva conocimiento cuando afecta el siguiente cambio. El conocimiento útil puede incluir:
 
-* agregar contexto a un ítem de trabajo activo
-* registrar una decisión importante
-* clarificar un término de dominio ambiguo
-* preservar un resultado de validación
-* conectar un caso de uso con un cambio de implementación
-* documentar una excepción de *workflow*
-* capturar una incertidumbre antes de construir
-* revisar un supuesto obsoleto después de recibir *feedback*
+* términos del dominio encontrados en el sistema
+* diferencias entre el trabajo real y el comportamiento del software
+* workflows existentes afectados por el cambio
+* reglas ocultas dentro de la implementación
+* workarounds de usuarios
+* dolores actuales
+* restricciones creadas por integraciones o datos
+* decisiones que deberían mantenerse, cambiarse o cuestionarse
+* señales de validación desde usuarios, soporte u operación
 
-Un punto es útil cuando ayuda a que el trabajo real continúe con menos adivinanza.
+No documentes todo el sistema existente por defecto. Preserva lo que el trabajo futuro no debería tener que redescubrir.
 
-## Soporte documental
+## Apoyo documental
 
-Los documentos pueden apoyar la introducción de *Method*, pero solo cuando resuelven un problema actual de continuidad.
+Los documentos pueden ayudar a recuperar continuidad en un escenario digitalizado.
 
-| Brecha de continuidad                                          | Documento útil                                                                                                                                                                                                      |
-| -------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Las personas usan el mismo<br/>término con significados distintos. | Vocabulario de dominio — [Taxonomía](../../docs-standard/taxonomy/domain-vocabulary.md) · [Template](https://github.com/vslices/docs-standard/blob/main/templates/domain-vocabulary.md)       |
-| Una tarea carece de contexto<br/>circundante.                      | Documento de contexto — [Taxonomía](../../docs-standard/taxonomy/context-document.md) · [Template](https://github.com/vslices/docs-standard/blob/main/templates/context-document.md)           |
-| Un *workflow* o *handoff* se<br/>malentiende.                      | Documento de proceso — [Taxonomía](../../docs-standard/taxonomy/process-document.md) · [Template](https://github.com/vslices/docs-standard/blob/main/templates/process-document.md)            |
-| Un comportamiento necesita<br/>intención más clara.                | Documento de caso de uso — [Taxonomía](../../docs-standard/taxonomy/use-case-document.md) · [Template](https://github.com/vslices/docs-standard/blob/main/templates/use-case-document.md)     |
-| Una capacidad estable<br/>necesita ser nombrada.                   | Documento de capacidad — [Taxonomía](../../docs-standard/taxonomy/capability-document.md) · [Template](https://github.com/vslices/docs-standard/blob/main/templates/capability-document.md) |
-| Una decisión puede afectar<br/>el trabajo futuro.                  | Registro de decisión — [Taxonomía](../../docs-standard/taxonomy/decision-record.md) · [Template](https://github.com/vslices/docs-standard/blob/main/templates/decision-record.md)               |
-| El *feedback* debería cambiar<br/>lo que ocurre después.           | Nota de validación — [Taxonomía](../../docs-standard/taxonomy/validation-note.md) · [Template](https://github.com/vslices/docs-standard/blob/main/templates/validation-note.md)                 |
-| Una observación es útil, pero<br/>todavía incierta.                | Nota de soporte — [Taxonomía](../../docs-standard/taxonomy/support-note.md) · [Template](https://github.com/vslices/docs-standard/blob/main/templates/support-note.md)                             |
+| Necesidad de conocimiento | Documento útil |
+| --- | --- |
+| Los términos son ambiguos o inconsistentes. | Domain Vocabulary — [Taxonomy](../../docs-standard/taxonomy/domain-vocabulary.md) · [Template](https://github.com/vslices/docs-standard/blob/main/templates/domain-vocabulary.md) |
+| El escenario de negocio circundante no está claro. | Context Document — [Taxonomy](../../docs-standard/taxonomy/context-document.md) · [Template](https://github.com/vslices/docs-standard/blob/main/templates/context-document.md) |
+| El trabajo actual depende de workflows o handoffs. | Process Document — [Taxonomy](../../docs-standard/taxonomy/process-document.md) · [Template](https://github.com/vslices/docs-standard/blob/main/templates/process-document.md) |
+| Un comportamiento específico necesita cambiarse o preservarse. | Use Case Document — [Taxonomy](../../docs-standard/taxonomy/use-case-document.md) · [Template](https://github.com/vslices/docs-standard/blob/main/templates/use-case-document.md) |
+| Está emergiendo una habilidad estable del negocio. | Capability Document — [Taxonomy](../../docs-standard/taxonomy/capability-document.md) · [Template](https://github.com/vslices/docs-standard/blob/main/templates/capability-document.md) |
+| Debe elegirse una dirección bajo tradeoffs. | Decision Record — [Taxonomy](../../docs-standard/taxonomy/decision-record.md) · [Template](https://github.com/vslices/docs-standard/blob/main/templates/decision-record.md) |
+| Evidencia desde uso, operación o revisión cambia el entendimiento. | Validation Note — [Taxonomy](../../docs-standard/taxonomy/validation-note.md) · [Template](https://github.com/vslices/docs-standard/blob/main/templates/validation-note.md) |
+| Las observaciones todavía son locales, inciertas o temporales. | Support Note — [Taxonomy](../../docs-standard/taxonomy/support-note.md) · [Template](https://github.com/vslices/docs-standard/blob/main/templates/support-note.md) |
 
-No introduzcas documentos como paquete. Introduce el documento más pequeño que proteja el trabajo actualmente en riesgo.
+Usa el documento más liviano que proteja continuidad.
 
-> La afinidad documento-etapa (*Document-Stage affinity*) se describe en la página [afinidad documento-etapa](../document-stage-affinity.md).
+> La afinidad documental por etapa de iteración se describe en la página [Afinidad documento-etapa](../document-stage-affinity.md).
 
 ## Enfoque sugerido
 
-Comienza con trabajo en curso. No pauses el proyecto para introducir *Method*. Un enfoque útil es:
+Comienza seleccionando un área de cambio. No intentes entender primero todo el sistema.
 
-1. Elegir un ítem de trabajo, problema o decisión activa.
-2. Identificar dónde la continuidad es débil.
-3. Agregar la estructura útil más pequeña de *Method*.
-4. Usarla durante trabajo real.
-5. Observar si ayuda a las personas a tomar mejores decisiones.
-6. Preservar el aprendizaje.
-7. Decidir si vale la pena introducir otra costura.
+Un enfoque útil es:
 
-*Method* debería crecer solo donde siga demostrando utilidad.
+1. Identificar el dolor actual, la oportunidad o la solicitud de cambio.
+2. Ubicar los workflows, actores y comportamiento del sistema alrededor de eso.
+3. Comparar el comportamiento actual del software con el trabajo real.
+4. Nombrar qué se sabe, qué es incierto y qué es riesgoso.
+5. Preservar solo el conocimiento necesario para la siguiente decisión responsable.
+6. Elegir el cambio seguro más pequeño o la siguiente investigación.
+7. Usar feedback para actualizar el entendimiento.
+
+El equipo debería moverse entre entender y construir a medida que aparece evidencia.
 
 ## Errores comunes
 
-Introducir *Method* puede fallar cuando el método se vuelve más importante que el trabajo. Algunos errores comunes incluyen:
+Los escenarios digitalizados suelen fallar cuando los equipos asumen que el sistema se explica solo. Algunos errores comunes incluyen:
 
-* introducir demasiados documentos a la vez
-* pedir a las personas que cambien todo su proceso inmediatamente
-* explicar *Method* antes de resolver un problema real
-* tratar los *templates* como el valor
-* crear documentación que nadie usa
-* reemplazar conversación con artefactos
-* ignorar prácticas existentes del equipo
-* forzar terminología de *VSlices* antes de que ayude
-* medir adopción en vez de continuidad
+* copiar comportamiento existente sin entender por qué existe
+* rediseñarlo todo porque el sistema actual se ve desordenado
+* tratar nombres del código como lenguaje del dominio
+* ignorar workarounds de usuarios
+* documentar todo el sistema antes de mejorar algo
+* cambiar comportamiento sin saber quién depende de él
+* asumir que las decisiones antiguas siguen siendo válidas
+* asumir que las decisiones antiguas estaban mal solo porque son antiguas
 
-El primer objetivo no es adopción, es utilidad.
+El software existente debería respetarse como evidencia. No debería obedecerse como verdad.
 
 ## Principio guía
 
-Introduce *VSlices Method* mediante una costura útil de continuidad. Preserva una pieza de conocimiento de la que depende el trabajo futuro.
+Usa el sistema existente como una fuente de pistas. Recupera suficiente continuidad de dominio, proceso, comportamiento y decisión para cambiar el sistema con seguridad.
 
-Si eso ayuda, repite. Si no ayuda, reduce la estructura hasta que ayude.
+No preserves complejidad accidental a menos que el dominio todavía dependa de ella.

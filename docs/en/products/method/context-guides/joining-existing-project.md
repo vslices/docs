@@ -52,10 +52,10 @@ Joining an existing project does not always require choosing a new modality. Fir
 
 | Situation                                                                            | Useful modality               | Reason                                                                     |
 | ------------------------------------------------------------------------------------ | ----------------------------- | -------------------------------------------------------------------------- |
-| The project context, boundaries<br/>or history are unclear.                              | [**Context-First**](../../design/modalities/context-first/index.md)             | The team needs to understand the<br/>surrounding continuity before acting.     |
-| The current work is centered<br/>on a known pain or active decision.                     | [**Problem-First**](../../design/modalities/problem-first/index.md)             | The team needs to understand the<br/>problem behind the tasks.                 |
-| The project has enough context<br/>and a small contribution can safely<br/>produce feedback. | [**Slice-First**](../../design/modalities/slice-first/index.md)               | The team can learn by contributing<br/>a narrow change.                        |
-| The project already has an active<br/> modality.                                          | Continue the<br/> current modality | The team should join the current<br/>continuity path before changing<br/>emphasis. |
+| The project context, boundaries or history are unclear.                              | [**Context-First**](../../design/modalities/context-first/index.md)             | The team needs to understand the surrounding continuity before acting.     |
+| The current work is centered on a known pain or active decision.                     | [**Problem-First**](../../design/modalities/problem-first/index.md)             | The team needs to understand the problem behind the tasks.                 |
+| The project has enough context and a small contribution can safely produce feedback. | [**Slice-First**](../../design/modalities/slice-first/index.md)               | The team can learn by contributing a narrow change.                        |
+| The project already has an active  modality.                                          | Continue the  current modality | The team should join the current continuity path before changing emphasis. |
 
 The first responsibility is orientation. Changing modality too early may restart work unnecessarily.
 

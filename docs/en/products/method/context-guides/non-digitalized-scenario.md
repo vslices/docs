@@ -47,9 +47,9 @@ A non-digitalized scenario usually starts with **Context-First**.
 
 | Situation                                                         | Modality   | Reason                                                                         |
 | ----------------------------------------------------------------- | ----------------- | ------------------------------------------------------------------------------ |
-| The team does not understand how work<br/>currently happens.          | [**Context-First**](../../design/modalities/context-first/index.md) | The next decision needs broader<br/>domain and process understanding.              |
-| A clear pain exists inside the manual<br/>work.                       | [**Problem-First**](../../design/modalities/problem-first/index.md) | The team can focus on understanding<br/>the problem without assuming the<br/>solution. |
-| A small experiment can safely reveal how<br/>people react to support. | [**Slice-First**](../../design/modalities/slice-first/index.md)   | The team can learn through a narrow<br/>prototype or vertical slice.               |
+| The team does not understand how work currently happens.          | [**Context-First**](../../design/modalities/context-first/index.md) | The next decision needs broader domain and process understanding.              |
+| A clear pain exists inside the manual >work.                       | [**Problem-First**](../../design/modalities/problem-first/index.md) | The team can focus on understanding the problem without assuming the solution. |
+| A small experiment can safely reveal how people react to support. | [**Slice-First**](../../design/modalities/slice-first/index.md)   | The team can learn through a narrow prototype or vertical slice.               |
 
 Slice-First should be used carefully. A small slice is useful only when it helps learning without pretending the whole context is understood.
 

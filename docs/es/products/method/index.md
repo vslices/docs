@@ -1,56 +1,71 @@
 # VSlices Method
 
-*VSlices Method* explica cómo aplicar *VSlices Design* y *VSlices Docs Standard* dentro de contextos de trabajo reales. Se enfoca en preservar continuidad entre:
+VSlices Method explica cómo aplicar VSlices Design y VSlices Docs Standard dentro de contextos reales de trabajo.
 
-```text 
-descubrimiento del dominio
--> documentación
--> razonamiento de diseño
--> arquitectura
--> implementación
--> validación
--> evolución
-```
+```mermaid
+---
+title: VSlices Method preserva continuidad entre
+---
+flowchart LR
+  subgraph RW[Contexto real de trabajo]
+    direction TB
 
-*VSlices Method* no define un proceso rígido.
+    A[Descubrimiento del dominio]
+    B[Documentación]
+    C[Razonamiento de diseño]
+    D[Arquitectura]
+    E[Implementación]
+    F[Validación]
+    G[Evolución]
 
-Ayuda a los equipos a decidir cómo avanzar a través de incertidumbre, qué modo de trabajo calza con el contexto actual y qué conocimiento debería preservarse antes de avanzar.
+    A --> B --> C --> D --> E --> F --> G
+
+  end
+````
+
+<br/>
+
+VSlices Method no define un proceso rígido.
+
+Ayuda a los equipos a decidir cómo moverse a través de la incertidumbre, qué modo de trabajo encaja con el contexto actual y qué conocimiento debería preservarse antes de avanzar.
 
 ## Propósito
 
-*VSlices Method* existe para orientar cómo los equipos trabajan con contextos cambiantes. Ayuda a responder preguntas como:
+VSlices Method existe para guiar cómo los equipos trabajan con contextos cambiantes. Ayuda a responder preguntas como:
 
-* ¿En qué tipo de contexto estamos trabajando?
+* ¿Qué tipo de contexto estamos abordando?
 * ¿Qué modalidad de diseño debería guiar esta iteración?
 * ¿Qué conocimiento necesitamos antes de construir?
 * ¿Qué conocimiento debería preservarse mientras construimos?
-* ¿Cómo vuelve el *feedback* a la siguiente iteración?
+* ¿Cómo vuelve el feedback a la siguiente iteración?
 
-*Method* conecta razonamiento, documentación, colaboración y aprendizaje. No reemplaza el juicio.
+Method conecta razonamiento, documentación, colaboración y aprendizaje. No reemplaza el juicio.
 
 ## Idea central
 
-*VSlices Method* sigue un principio de trabajo: **usa la estructura de trabajo útil más pequeña que preserve el conocimiento del que depende el trabajo futuro**.
+VSlices Method sigue un principio de trabajo: **Usar la estructura de trabajo más pequeña que preserve el conocimiento del que dependerá el trabajo futuro**.
 
-Esto significa que *Method* no debería pedir a los equipos documentarlo todo. Debería ayudar a los equipos a notar qué conocimiento puede perderse si avanzan sin preservarlo.
+Esto significa que Method no debería pedir a los equipos que documenten todo. Debería ayudarles a notar qué conocimiento podría perderse si avanzan sin preservarlo.
 
-La pregunta no es: **¿Qué documentos requiere esta etapa?**, si no: **¿Qué conocimiento necesitamos preservar para tomar la siguiente decisión responsable?**
+La pregunta no es: **¿Qué documentos son requeridos por esta etapa?**
+
+La mejor pregunta es: **¿Qué conocimiento necesitamos preservar para tomar la siguiente decisión responsable?**
 
 ## Relación con otros productos de VSlices
 
-*VSlices Method* depende conceptualmente de:
+VSlices Method depende conceptualmente de:
 
 * **VSlices Design**, que define modalidades de diseño y el flujo compartido de iteración.
 * **VSlices Docs Standard**, que define tipos de documento para preservar conocimiento.
 
-*VSlices Framework* puede implementar algunas ideas en código más adelante, pero *Method* no depende de él. *Method* debería seguir siendo útil incluso cuando no haya código de *VSlices Framework* involucrado.
+VSlices Framework puede implementar algunas ideas en código más adelante, pero Method no depende de él. Method debería seguir siendo útil incluso cuando no hay código de VSlices Framework involucrado.
 
 ## Estructura
 
-*VSlices Method* se organiza alrededor de:
+VSlices Method está organizado alrededor de:
 
-* **afinidad documental**, para entender cómo los documentos pueden apoyar cada etapa del trabajo.
-* **patrones**, para decisiones recurrentes de *Method* como colaboración, selección de modalidad y loops de aprendizaje.
-* **guías de integración**, para aplicar *Method* en distintos contextos de trabajo.
+* **afinidad documento-etapa**, para entender cómo los documentos pueden apoyar cada etapa de trabajo.
+* **patrones**, para decisiones recurrentes de Method como colaboración, selección de modalidad y ciclos de aprendizaje.
+* **guías de integración**, para aplicar Method en distintos contextos de trabajo.
 
-Estas secciones son guías, no pasos obligatorios de proceso. Usa solo lo que ayude a preservar continuidad para el trabajo en cuestión.
+Estas secciones son guías, no pasos obligatorios de proceso. Usa solo lo que ayude a preservar continuidad para el trabajo en curso.

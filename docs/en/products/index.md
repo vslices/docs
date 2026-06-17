@@ -1,54 +1,60 @@
 # Products
 
-VSlices is composed of four connected products:
+VSlices is composed of four connected products.
 
-- **VSlices Method**
-- **VSlices Design**
-- **VSlices Docs Standard**
-- **VSlices Framework**
+Each product focuses on a different part of the software engineering lifecycle. This section contains the individual documentation for each product.
 
-Each product focuses on a different aspect of the software engineering lifecycle. This section contains the individual documentation for each product.
+## Product overview
+
+| Product | Main focus |
+| --- | --- |
+| [VSlices Method](method/index.md) | Connects discovery, documentation, design, architecture, implementation, and evolution. |
+| [VSlices Design](design/index.md) | Helps reason about domains, responsibilities, boundaries, processes, and uncertainty. |
+| [VSlices Docs Standard](docs-standard/index.md) | Helps preserve system intent and engineering reasoning through structured documentation. |
+| [VSlices Framework](framework/index.md) | Supports domain-oriented .NET implementation with explicit behavior, low ceremony, and progressive architecture. |
 
 ## VSlices Method
 
-The _overarching engineering_ method. Focuses on preserving continuity across discovery, documentation, architecture, implementation, and evolution.
+[VSlices Method](method/index.md) is the overarching engineering method.
 
-[Explore VSlices Method](method/index.md)
+It focuses on preserving continuity across discovery, documentation, design, architecture, implementation, and evolution.
 
 ## VSlices Design
 
-The _software design_ and _domain understanding_ product. Focuses on modeling, domain reasoning, responsibilities, boundaries, and processes. 
+[VSlices Design](design/index.md) is the software design and domain understanding product.
 
-[Explore VSlices Design](design/index.md)
+It focuses on modeling, domain reasoning, responsibilities, boundaries, processes, and uncertainty.
 
 ## VSlices Docs Standard
 
-The _documentation structure_ product. Focuses on preserving system intent and engineering reasoning through structured documentation.
+[VSlices Docs Standard](docs-standard/index.md) is the documentation structure product.
 
-[Explore VSlices Docs Standard](docs-standard/index.md)
+It focuses on preserving system intent and engineering reasoning through structured documentation.
 
 ## VSlices Framework
 
-The _.NET implementation_ product. Focuses on domain-oriented software, explicit behavior, low ceremony, and progressive architecture.
+[VSlices Framework](framework/index.md) is the .NET implementation product.
 
-[Explore VSlices Framework](framework/index.md)
+It focuses on domain-oriented software, explicit behavior, low ceremony, and progressive architecture.
+
+!!! experimental "Experimental"
+
+    VSlices Framework is currently experimental, and its public documentation is intentionally limited during v0.1-beta.
 
 ## Current state
 
-The products are still evolving and being validated through real work, especially through the Alive Lab and Domus Orbis.
+The products are still evolving and being validated through real work, especially through [Alive Lab](../alive-lab/index.md) and [Domus Orbis](../alive-lab/project-stories/domus-orbis/index.md).
 
-## Beyond The Products
+## Beyond the products
 
-VSlices also contains collections of observations, experiences and lessons learned from real projects or theory implementation.
+Not everything in VSlices is an official product.
 
-These collections are not official products and should not be considered methodologies or frameworks.
+The [Alive Lab](../alive-lab/index.md) preserves observations, project stories, theories, and lessons learned from real work. These materials help preserve learning and validate ideas before they become formal parts of the suite.
 
-Their purpose is to preserve knowledge, identify recurring patterns and validate ideas before they become formal parts of the suite. Current examples include:
+Current examples include:
 
-- [Field Notes](../alive-lab/field-notes/index.md)
-- [Project Stories](../alive-lab/project-stories/index.md)
-- [Theories](../alive-lab/theories/index.md)
+* [Field Notes](../alive-lab/field-notes/index.md)
+* [Project Stories](../alive-lab/project-stories/index.md)
+* [Theories](../alive-lab/theories/index.md)
 
-These efforts represent an important part of the VSlices philosophy:
-
-> Observe first, Formalize later.
+> Observe first. Formalize later.

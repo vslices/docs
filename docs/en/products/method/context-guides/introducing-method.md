@@ -46,9 +46,9 @@ Introducing Method usually starts with **Problem-First** or **Slice-First**.
 
 | Situation                                                                    | Useful modality   | Reason                                                                            |
 | ---------------------------------------------------------------------------- | ----------------- | --------------------------------------------------------------------------------- |
-| The team feels repeated pain<br/>but does not know where<br/>continuity is breaking. | [**Context-First**](../../design/modalities/context-first/index.md) | The team needs to understand<br/>the loss of continuity before<br/>changing how it works. |
-| One small artifact or practice<br/>can improve ongoing work<br/>immediately.         | [**Problem-First**](../../design/modalities/problem-first/index.md)   | The team can validate Method<br/>through a narrow improvement.                        |
-| The surrounding work context<br/>is too unclear to intervene<br/>safely.             | [**Slice-First**](../../design/modalities/slice-first/index.md) | The team needs broader<br/>understanding before introducing<br/>a change.                 |
+| The team feels repeated pain but does not know where continuity is breaking. | [**Context-First**](../../design/modalities/context-first/index.md) | The team needs to understand the loss of continuity before changing how it works. |
+| One small artifact or practice can improve ongoing work immediately.         | [**Problem-First**](../../design/modalities/problem-first/index.md)   | The team can validate Method through a narrow improvement.                        |
+| The surrounding work context is too unclear to intervene safely.             | [**Slice-First**](../../design/modalities/slice-first/index.md) | The team needs broader understanding before introducing a change.                 |
 
 The selected modality should match the adoption uncertainty, not personal preference.
 

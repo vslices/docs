@@ -58,7 +58,7 @@ nav:
                 - Overview: products/method/patterns/index.md
                 - Collaboration model: products/method/patterns/collaboration-model.md
                 - Modality selection: products/method/patterns/modality-selection.md
-                - Modality Switching: products/method/patterns/modality-switching.md
+                - Modality switching: products/method/patterns/modality-switching.md
                 - Learning loop: products/method/patterns/learning-loop.md
 
             - Context Guides:

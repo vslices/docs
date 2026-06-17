@@ -1,54 +1,60 @@
 # Productos
 
-VSlices se compone de cuatro productos conectados:
+VSlices está compuesto por cuatro productos conectados.
 
-- **VSlices Method**
-- **VSlices Design**
-- **VSlices Docs Standard**
-- **VSlices Framework**
+Cada producto se enfoca en una parte distinta del ciclo de vida de la ingeniería de software. Esta sección contiene la documentación individual de cada producto.
 
-Cada producto se enfoca en un aspecto distinto del ciclo de vida de la ingeniería de software. Esta sección contiene la documentación individual de cada producto.
+## Vista general de productos
+
+| Producto | Enfoque principal |
+| --- | --- |
+| [VSlices Method](method/index.md) | Conecta descubrimiento, documentación, diseño, arquitectura, implementación y evolución. |
+| [VSlices Design](design/index.md) | Ayuda a razonar sobre dominios, responsabilidades, límites, procesos e incertidumbre. |
+| [VSlices Docs Standard](docs-standard/index.md) | Ayuda a preservar la intención del sistema y el razonamiento de ingeniería mediante documentación estructurada. |
+| [VSlices Framework](framework/index.md) | Apoya la implementación .NET orientada al dominio con comportamiento explícito, baja ceremonia y arquitectura progresiva. |
 
 ## VSlices Method
 
-El método de ingeniería general. Se enfoca en preservar la continuidad entre descubrimiento, documentación, arquitectura, implementación y evolución.
+[VSlices Method](method/index.md) es el método general de ingeniería.
 
-[Explorar VSlices Method](method/index.md)
+Se enfoca en preservar continuidad entre descubrimiento, documentación, diseño, arquitectura, implementación y evolución.
 
 ## VSlices Design
 
-El producto de _diseño de software_ y _comprensión del dominio_. Se enfoca en modelado, razonamiento de dominio, responsabilidades, límites y procesos.
+[VSlices Design](design/index.md) es el producto de diseño de software y comprensión del dominio.
 
-[Explorar VSlices Design](design/index.md)
+Se enfoca en modelado, razonamiento de dominio, responsabilidades, límites, procesos e incertidumbre.
 
 ## VSlices Docs Standard
 
-El producto de _estructura de documentación_. Se enfoca en preservar la intención del sistema y el razonamiento de ingeniería mediante documentación estructurada.
+[VSlices Docs Standard](docs-standard/index.md) es el producto de estructura documental.
 
-[Explorar VSlices Docs Standard](docs-standard/index.md)
+Se enfoca en preservar la intención del sistema y el razonamiento de ingeniería mediante documentación estructurada.
 
 ## VSlices Framework
 
-El producto de _implementación en .NET_. Se enfoca en software orientado al dominio, comportamiento explícito, baja ceremonia y arquitectura progresiva.
+[VSlices Framework](framework/index.md) es el producto de implementación en .NET.
 
-[Explorar VSlices Framework](framework/index.md)
+Se enfoca en software orientado al dominio, comportamiento explícito, baja ceremonia y arquitectura progresiva.
+
+!!! experimental "Experimental"
+
+    VSlices Framework actualmente es experimental, y su documentación pública está intencionalmente limitada durante v0.1-beta.
 
 ## Estado actual
 
-Los productos todavía están evolucionando y siendo validados mediante trabajo real, especialmente a través de Alive Lab y Domus Orbis.
+Los productos todavía están evolucionando y siendo validados mediante trabajo real, especialmente a través de [Alive Lab](../alive-lab/index.md) y [Domus Orbis](../alive-lab/project-stories/domus-orbis/index.md).
 
 ## Más allá de los productos
 
-VSlices también contiene colecciones de observaciones, experiencias y lecciones aprendidas de proyectos reales o de implementación de teoría.
+No todo en VSlices es un producto oficial.
 
-Estas colecciones no son productos oficiales y no deben considerarse metodologías ni frameworks.
+El [Alive Lab](../alive-lab/index.md) preserva observaciones, project stories, theories y lecciones aprendidas desde trabajo real. Estos materiales ayudan a preservar aprendizaje y validar ideas antes de que se conviertan en partes formales de la suite.
 
-Su propósito es preservar conocimiento, identificar patrones recurrentes y validar ideas antes de que se conviertan en partes formales de la suite. Los ejemplos actuales incluyen:
+Ejemplos actuales:
 
-- [Field Notes](../alive-lab/field-notes/index.md)
-- [Project Stories](../alive-lab/project-stories/index.md)
-- [Theories](../alive-lab/theories/index.md)
+* [Field Notes](../alive-lab/field-notes/index.md)
+* [Project Stories](../alive-lab/project-stories/index.md)
+* [Theories](../alive-lab/theories/index.md)
 
-Estos esfuerzos representan una parte importante de la filosofía VSlices:
-
-> Observar primero, formalizar después.
+> Observar primero. Formalizar después.
