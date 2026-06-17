@@ -21,7 +21,7 @@ flowchart LR
     A --> B --> C --> D --> E --> F --> G
 
   end
-````
+```
 
 <br/>
 
