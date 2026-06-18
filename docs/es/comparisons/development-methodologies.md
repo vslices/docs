@@ -55,9 +55,10 @@ VSlices puede compararse con distintas metodologías y enfoques de entrega. Cada
 
     **Diferencia:** Agile se enfoca en adaptar la entrega. VSlices se enfoca en preservar continuidad mientras ocurre esa entrega.
 
-    !!! note "Pregunta de VSlices"
+    !!! note "Enfoque de VSlices"
 
         ¿Cómo respondemos al cambio sin perder el significado del sistema?
+
 
 === "Scrum"
 
@@ -73,7 +74,7 @@ VSlices puede compararse con distintas metodologías y enfoques de entrega. Cada
 
     **Diferencia:** Scrum ayuda a organizar el trabajo. VSlices ayuda a preservar el significado del trabajo.
 
-    !!! note "Pregunta de VSlices"
+    !!! note "Enfoque de VSlices"
 
         ¿Cómo preservamos continuidad entre descubrimiento de producto, documentación, arquitectura e implementación?
 
@@ -92,7 +93,7 @@ VSlices puede compararse con distintas metodologías y enfoques de entrega. Cada
 
     **Diferencia:** Extreme Programming se enfoca en construir software de forma segura e incremental. VSlices extiende esa preocupación hacia la continuidad entre el código y el conocimiento que justifica ese código.
 
-    !!! note "Pregunta de VSlices"
+    !!! note "Enfoque de VSlices"
 
         ¿Cómo mantenemos la calidad técnica conectada con la intención del dominio, las decisiones documentadas y la evolución arquitectónica?
 
@@ -110,7 +111,7 @@ VSlices puede compararse con distintas metodologías y enfoques de entrega. Cada
 
     **Diferencia:** Lean se enfoca en reducir desperdicio y mejorar el aprendizaje. VSlices aplica esa preocupación a la continuidad del conocimiento de software, tratando el conocimiento fragmentado, la documentación desactualizada, las decisiones poco claras y la arquitectura desvinculada de las necesidades del dominio como formas de desperdicio.
 
-    !!! note "Pregunta de VSlices"
+    !!! note "Enfoque de VSlices"
 
         ¿Cómo reducimos el desperdicio causado por conocimiento fragmentado e intención arquitectónica perdida?
 
@@ -128,7 +129,7 @@ VSlices puede compararse con distintas metodologías y enfoques de entrega. Cada
 
     **Diferencia:** Domain-Driven Design ayuda a los equipos a descubrir, comprender y modelar el dominio. VSlices intenta preservar esa comprensión a lo largo de la documentación, el diseño, la arquitectura, la implementación y la evolución.
 
-    !!! note "Pregunta de VSlices"
+    !!! note "Enfoque de VSlices"
 
         ¿Cómo mantenemos alineados con el tiempo el modelo de dominio, el conocimiento documentado, la estructura arquitectónica y el comportamiento ejecutable?
 
@@ -138,7 +139,7 @@ VSlices puede compararse con distintas metodologías y enfoques de entrega. Cada
 
     **Diferencia:** Waterfall trata el descubrimiento, la documentación, el diseño, la implementación y la validación como una secuencia que ocurre en un orden fijo. VSlices los trata como fuentes evolutivas de conocimiento.
 
-    !!! note "Pregunta de VSlices"
+    !!! note "Enfoque de VSlices"
 
         ¿Qué conocimiento debe permanecer visible y evolutivo mientras el sistema cambia?
 

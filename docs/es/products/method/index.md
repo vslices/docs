@@ -45,9 +45,7 @@ Method conecta razonamiento, documentación, colaboración y aprendizaje. No ree
 
 VSlices Method sigue un principio importante:
 
-!!! principle "Principio - General"
-
-    Usar la estructura de trabajo más pequeña que preserve el conocimiento del que dependerá el trabajo futuro. 
+{% include-markdown "shared/principles/minimal-useful-structure.md" %}
 
 Esto significa que Method no debería pedir a los equipos que documenten todo. Debería ayudarles a notar qué conocimiento podría perderse si avanzan sin preservarlo.
 

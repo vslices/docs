@@ -1,12 +1,10 @@
-# The Continuity of Knowledge
+# The continuity of knowledge
 
 ## Purpose
 
-This document explains one of the core philosophical foundations of VSlices:
+This document explains one of the central philosophical foundations of VSlices:
 
-!!! principle "Principle - Core"
-
-    Software decays when the knowledge that created it stops being visible, shared, and evolvable.
+{% include-markdown "shared/principles/software-degration-is-invisible-knowledge.md" %}
 
 VSlices exists because software is not built only from code. Software is built from:
 
@@ -19,7 +17,7 @@ VSlices exists because software is not built only from code. Software is built f
 * architectural intent
 * implementation constraints
 
-Code is one expression of that knowledge. It is not the whole knowledge.
+Code is an expression of that knowledge. It is not all the knowledge.
 
 ## Businesses operate through knowledge
 
@@ -29,16 +27,16 @@ Those elements are expressions of something deeper. A business operates through 
 
 * what the organization understands
 * what people decide
-* what rules must be followed
-* what constraints exist
+* which rules must be followed
+* which constraints exist
 * what customers need
-* what processes must happen
-* what risks are accepted
-* what intentions guide future change
+* which processes must happen
+* which risks are accepted
+* which intentions guide future changes
 
 Software becomes valuable when it preserves and executes part of that knowledge.
 
-It becomes fragile when that knowledge is lost.
+But it becomes fragile when that knowledge is lost.
 
 ## The problem
 
@@ -55,56 +53,64 @@ But if the team no longer understands:
 * why a boundary was drawn
 * why a process works the way it does
 
-At that point, the system becomes harder to evolve safely.
+then the system becomes harder to evolve safely.
 
-And, the team is not only maintaining software. The team is rediscovering forgotten knowledge.
+At that point, the team is not only maintaining software. The team is rediscovering forgotten knowledge.
 
-## Two ways knowledge is lost
+## Frozen knowledge
 
-Knowledge continuity usually fails in two opposite ways.
+One common failure is documenting everything upfront as if the domain will not change. This creates frozen knowledge.
 
-=== "Frozen knowledge"
+The documentation may be detailed, but it slowly stops representing reality:
 
-    One common failure is documenting everything upfront as if the domain will not change.
+* the business changes
+* the rules change
+* the language changes
+* the users change
+* the architecture changes
+* the software changes
 
-    The documentation may be detailed, but it slowly stops representing reality:
+But the documentation remains a picture of an older system.
 
-    * the business changes
-    * the rules change
-    * the language changes
-    * the users change
-    * the architecture changes
-    * the software changes
+In this case, documentation does not preserve continuity. It preserves a snapshot.
 
-    In this case, documentation does not preserve continuity. It preserves a snapshot.
+## Encapsulated knowledge
 
-=== "Encapsulated knowledge"
+The opposite failure is documenting nothing and trusting that code will be enough. This creates encapsulated knowledge: knowledge that still exists, but is locked inside:
 
-    The opposite failure is documenting nothing and trusting that code will be enough.
+* implementation details
+* implicit assumptions
+* naming conventions
+* ticket history
+* old conversations
+* the memory of people who may no longer be present
 
-    This creates knowledge that still exists, but is locked inside:
+Code can execute a decision, show what happens, and suggest how something works. But code rarely explains enough by itself:
 
-    * implementation details
-    * implicit assumptions
-    * naming conventions
-    * ticket history
-    * old conversations
-    * the memory of people who may no longer be present
-
-    Code can execute a decision, show what happens, and suggest how something works. But code rarely explains enough by itself.
-
-Both failures produce the same long-term problem: the team loses access to the intent behind the system.
+* why the decision exists
+* which alternatives were rejected
+* which business tension created it
+* which risk was accepted
+* which tradeoff was chosen
+* which future change should be handled carefully
 
 When the consequences of forgotten knowledge appear, the difference becomes visible:
 
 * instructing software is not the same as teaching people
-* coding is not the same as explaining
-* documentation is maintenance work, not a one-time artifact
+* programming is not the same as explaining
 * a programming language, even a simple one, is not a natural language
 
-## AI makes writing easier, but continuity still needs intent
+## AI makes writing easier, not continuity automatic
 
-The rise of AI makes documentation easier to produce than ever before. A team can now generate summaries, guides, diagrams, explanations, decision records, examples, and technical documentation with much less writing effort.
+The rise of AI makes documentation easier to produce than ever before. A team can now generate:
+
+* summaries
+* guides
+* diagrams
+* explanations
+* decision records
+* examples
+* technical documentation
 
 This is useful. But writing with less effort does not automatically create better knowledge continuity.
 
@@ -115,7 +121,7 @@ AI can help with writing, organization, and summarization. But it does not remov
 * what should be connected
 * what should be validated
 * what changed
-* what must remain visible during future evolution
+* what should remain visible during future evolution
 
 The problem is no longer only whether documentation can be produced.
 
@@ -125,14 +131,13 @@ The harder problem is whether documentation preserves the right knowledge, in th
 
 Modernization and reinvention are not the same thing.
 
-| Concept | Meaning |
-| --- | --- |
-| Modernization | The system evolves while preserving the knowledge that gives it meaning. |
-| Reinvention | The team must rediscover knowledge the organization already had. |
+Modernization happens when a system evolves while preserving the knowledge that gives it meaning.
 
-Many rewrites are not caused only by bad code, old frameworks, or obsolete infrastructure. They also happen because the system can no longer be understood.
+Reinvention happens when that knowledge was lost and the team must rediscover what the organization already knew.
 
-The business knowledge still exists somewhere, but it is fragmented across:
+Many rewrites do not happen only because of bad code, old frameworks, or obsolete infrastructure. They also happen because the system can no longer be understood.
+
+Business knowledge still exists somewhere, but it is fragmented across:
 
 * people
 * tickets history
@@ -149,36 +154,46 @@ When this happens, rebuilding the system becomes a knowledge recovery project di
 
 VSlices does not exist to create more documentation. VSlices exists to preserve continuity.
 
-The goal is not to document everything. It is to keep important knowledge connected across domain discovery, documentation, design, architecture, implementation, and evolution.
+The goal is not to document everything. It is to keep important knowledge connected across:
 
-!!! principle "Principle - Position"
+* domain discovery
+* documentation
+* design
+* architecture
+* implementation
+* evolution
 
-    VSlices treats:
+VSlices treats:
 
-    * documentation as living design
-    * implementation as executable knowledge
-    * architecture as an evolving structure close to the domain
-    * software evolution as a continuity problem
+* documentation as living design
+* implementation as executable knowledge
+* architecture as an evolutionary structure that should remain close to the domain
+* software evolution as a continuity problem, not only a delivery problem
 
 ## What VSlices tries to preserve
 
-VSlices attempts to preserve:
+VSlices tries to preserve:
 
-| Kind of knowledge | Examples |
-| --- | --- |
-| Domain meaning | domain intent, business language, expected behaviors |
-| Structural knowledge | architectural boundaries, capabilities, use cases, processes |
-| Evolution knowledge | important decisions, explicit errors, evolution paths |
+* domain intent
+* business language
+* expected behaviors
+* explicit errors
+* important decisions
+* architectural boundaries
+* capabilities
+* use cases
+* processes
+* evolution paths
 
-The objective is not perfect documentation. It is recoverable meaning.
+The goal is not perfect documentation. It is recoverable meaning.
 
-A future team should be able to understand not only what the system does, but why it became that way and how it can continue evolving without losing its original intent.
+A future team should be able to understand not only what the system does, but why it became that way and how it can keep evolving without losing its original intent.
 
 ## Conclusion
 
 Software is not only a technical artifact. Software is a living expression of accumulated knowledge.
 
-When that knowledge stops flowing, the system starts decaying.
+When that knowledge stops flowing, the system starts to degrade.
 
 When that knowledge remains visible, connected, and evolvable, the system can change without losing itself.
 

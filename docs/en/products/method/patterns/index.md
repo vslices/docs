@@ -38,6 +38,6 @@ If a pattern creates more ceremony than clarity, do not use it.
 
 Method Patterns follow the same principle as VSlices Method:
 
-> Use the smallest useful working structure that preserves the knowledge future work depends on.
+{% include-markdown "shared/principles/minimal-useful-structure.md" %}
 
 A pattern should make work clearer, safer or more continuous. It should not become a rule that teams follow without understanding why.

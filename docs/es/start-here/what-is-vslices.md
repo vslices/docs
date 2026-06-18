@@ -17,9 +17,7 @@ Cada producto puede usarse de forma independiente, pero están diseñados para t
 
 Los sistemas de software a menudo se alejan del dominio que representan. Esta deriva suele aparecer cuando el descubrimiento, la documentación, el diseño, la arquitectura y la implementación evolucionan como actividades separadas.
 
-VSlices propone una dirección diferente:
-
-!!! quote "Core idea"
+!!! principle "Principio - Continuidad"
 
     El mismo lenguaje del dominio, los límites estructurales y la intención conductual deberían permanecer visibles en la documentación, la arquitectura y el código.
 
@@ -69,6 +67,4 @@ VSlices está compuesto por cuatro productos que preservan continuidad desde dis
 | [VSlices Docs Standard](../products/docs-standard/index.md) | Define estructuras de documentación viva que preservan la intención del sistema y mantienen la documentación conectada al diseño. |
 | [VSlices Framework](../products/framework/index.md) | Proporciona bibliotecas .NET, primitivas y patrones de desarrollo para implementar software orientado al dominio con baja ceremonia y arquitectura progresiva. |
 
-!!! experimental "Experimental"
-
-    VSlices Framework actualmente es experimental, y su documentación pública está intencionalmente limitada durante v0.1-beta.
+{% include-markdown "shared/experimental/vslices-framework-v0.1beta.md" %}

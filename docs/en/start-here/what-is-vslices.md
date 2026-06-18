@@ -19,7 +19,7 @@ Software systems often drift away from the domain they represent.
 
 This drift usually appears when discovery, documentation, architecture, and implementation evolve as separate activities.
 
-!!! principle "Principle · Continuity"
+!!! principle "Principle - Continuity"
 
     The same domain language, structural boundaries, and behavioral intent should remain visible across documentation, architecture, and code.
 
@@ -69,6 +69,4 @@ VSlices is composed of four products that preserve continuity from different ang
 | [VSlices Docs Standard](../products/docs-standard/index.md) | Defines living documentation structures that preserve system intent and keep documentation connected to design. |
 | [VSlices Framework](../products/framework/index.md) | Provides .NET libraries, primitives, and development patterns for implementing domain-oriented software with low ceremony and progressive architecture. |
 
-!!! experimental "Experimental"
-
-    VSlices Framework is currently experimental, and its public documentation is intentionally limited during v0.1-beta.
+{% include-markdown "shared/experimental/vslices-framework-v0.1beta.md" %}

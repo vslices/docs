@@ -34,9 +34,9 @@ flowchart LR
 Este diagrama muestra una ruta de lectura, no un proceso obligatorio.
 
 * **[Conceptos de Method](#conceptos-de-method)**: describen cómo el trabajo avanza a través de incertidumbre.
-* **[Conceptos de orientación de trabajo](#conceptos-de-orientación-de-trabajo)**: describen desde dónde puede comenzar el trabajo.
+* **[Conceptos de orientación de trabajo](#conceptos-de-orientacion-de-trabajo)**: describen desde dónde puede comenzar el trabajo.
 * **[Conceptos de continuidad](#conceptos-de-continuidad)**: describen cómo el conocimiento permanece conectado en el tiempo.
-* **[Conceptos de adopción](#conceptos-de-adopción)**: describen cuánta estructura es útil en un contexto determinado.
+* **[Conceptos de adopción](#conceptos-de-adopcion)**: describen cuánta estructura es útil en un contexto determinado.
 
 Un equipo puede comenzar desde un contexto, un problema, una slice, un resultado de validación, una implementación existente o una preocupación de adopción. Lo importante es que el trabajo permanezca conectado al conocimiento que explica por qué existe y cómo debería evolucionar.
 

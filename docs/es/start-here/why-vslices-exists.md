@@ -4,7 +4,7 @@ VSlices existe porque varios problemas de ingeniería de software tienden a apar
 
 | Problema | Qué provoca |
 | --- | --- |
-| [Brecha de conexión del conocimiento](#una-brecha-de-conexión-del-conocimiento) | Las personas aprenden conceptos por separado, pero les cuesta conectarlos en sistemas reales. |
+| [Brecha de conexión del conocimiento](#una-brecha-de-conexion-del-conocimiento) | Las personas aprenden conceptos por separado, pero les cuesta conectarlos en sistemas reales. |
 | [Problema de continuidad](#un-problema-de-continuidad) | El descubrimiento, la documentación, la arquitectura y la implementación se separan con el tiempo. |
 | [Problema de contexto con IA](#un-problema-de-contexto-de-ia) | La IA puede generar resultados rápidamente, pero un contexto débil hace que dependa de supuestos. |
 | [Problema de complejidad progresiva](#un-problema-de-complejidad-progresiva) | Los equipos agregan estructura demasiado temprano o la evitan durante demasiado tiempo. |

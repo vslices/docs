@@ -1,6 +1,6 @@
 # Patrones de Method
 
-Los Patrones de _Method_ (_Method Patterns_ en ingles) describen patrones de trabajo y modelos de decisión recurrentes dentro de  _VSlices Method_.
+Los **Patrones de Method** (*Method Patterns*) describen patrones de trabajo y modelos de decisión recurrentes dentro de VSlices Method.
 
 Ayudan a los equipos a preservar continuidad mientras avanzan a través de incertidumbre, colaboración, documentación, implementación y feedback.
 
@@ -8,7 +8,7 @@ Un patrón no es un proceso obligatorio. Es una forma reutilizable de razonar so
 
 ## Propósito
 
-Los patrones de _VSlices Method_ ayudan a responder preguntas como:
+Los patrones ayudan a responder preguntas recurrentes como:
 
 * ¿Cómo deberíamos elegir una modalidad de diseño?
 * ¿Cuándo deberíamos cambiar de modalidad?
@@ -38,6 +38,6 @@ Si un patrón crea más ceremonia que claridad, no lo uses.
 
 Los Method Patterns siguen el mismo principio que VSlices Method:
 
-> Usa la estructura de trabajo útil más pequeña que preserve el conocimiento del que depende el trabajo futuro.
+{% include-markdown "shared/principles/minimal-useful-structure.md" %}
 
 Un patrón debería hacer que el trabajo sea más claro, más seguro o más continuo. No debería convertirse en una regla que los equipos siguen sin entender por qué.

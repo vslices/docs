@@ -4,9 +4,7 @@
 
 Este documento explica uno de los fundamentos filosóficos centrales de VSlices:
 
-!!! principle "Principio - Core"
-
-    El software se degrada cuando el conocimiento que lo creó deja de ser visible, compartido y evolutivo.
+{% include-markdown "shared/principles/software-degration-is-invisible-knowledge.md" %}
 
 VSlices existe porque el software no se construye solo a partir de código. El software se construye a partir de:
 

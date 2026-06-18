@@ -37,9 +37,7 @@ Se enfoca en preservar la intención del sistema y el razonamiento de ingenierí
 
 Se enfoca en software orientado al dominio, comportamiento explícito, baja ceremonia y arquitectura progresiva.
 
-!!! experimental "Experimental"
-
-    VSlices Framework actualmente es experimental, y su documentación pública está intencionalmente limitada durante v0.1-beta.
+{% include-markdown "shared/experimental/vslices-framework-v0.1beta.md" %}
 
 ## Estado actual
 

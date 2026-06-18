@@ -155,9 +155,7 @@ Usa las pestañas siguientes para ver con más detalle qué aporta cada producto
 
     Framework no debería ocultar los conceptos de ingeniería. Debería hacer más fáciles de componer, estandarizar, probar y evolucionar los patrones útiles.
 
-    !!! experimental "Experimental"
-
-        VSlices Framework actualmente es experimental, y su documentación pública está intencionalmente limitada durante v0.1-beta.
+    {% include-markdown "shared/experimental/vslices-framework-v0.1beta.md" %}
 
 ## Un ejemplo simplificado
 
@@ -187,9 +185,7 @@ La suite es progresiva y componible. La adopción debe seguir la necesidad real,
 
 Los cuatro productos comparten un principio:
 
-!!! principle "Principio - General"
-    
-    Usa la estructura más pequeña útil que preserve el conocimiento del que depende el trabajo futuro.
+{% include-markdown "shared/principles/minimal-useful-structure.md" %}
 
 VSlices no intenta hacer que todos los equipos sigan el mismo flujo de trabajo, arquitectura o proceso de documentación.
 

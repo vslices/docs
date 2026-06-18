@@ -45,10 +45,7 @@ Method connects reasoning, documentation, collaboration, and learning. It does n
 
 VSlices Method follows an important principle:
 
-!!! principle "Principle - General"
-
-    Use the smallest working structure that preserves the knowledge future work will depend on.
-
+{% include-markdown "shared/principles/minimal-useful-structure.md" %}
 
 This means Method should not ask teams to document everything. It should help teams notice what knowledge may be lost if they move forward without preserving it.
 

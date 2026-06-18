@@ -186,9 +186,8 @@ The suite is progressive and composable. Adoption should follow real need, not p
 
 The four products share one principle:
 
-!!! principle "Principle - General"
-    
-    Use the smallest useful structure that preserves the knowledge future work depends on.
+
+{% include-markdown "shared/principles/minimal-useful-structure.md" %}
 
 VSlices does not try to make every team follow the same workflow, architecture, or documentation process.
 

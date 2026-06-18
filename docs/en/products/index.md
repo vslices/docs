@@ -37,9 +37,7 @@ It focuses on preserving system intent and engineering reasoning through structu
 
 It focuses on domain-oriented software, explicit behavior, low ceremony, and progressive architecture.
 
-!!! experimental "Experimental"
-
-    VSlices Framework is currently experimental, and its public documentation is intentionally limited during v0.1-beta.
+{% include-markdown "shared/experimental/vslices-framework-v0.1beta.md" %}
 
 ## Current state
 
