@@ -17,10 +17,10 @@ Este orden presenta VSlices desde la idea general antes de avanzar hacia documen
 
 Después de la vista inicial, estas páginas explican el razonamiento más profundo detrás de VSlices:
 
-* **[La continuidad del conocimiento](continuity-of-knowledge.md)**  
+* **[La continuidad del conocimiento](../philosophy/continuity-of-knowledge.md)**  
   Explica por qué VSlices trata el software como un problema de continuidad entre conocimiento de negocio, documentación, arquitectura, implementación y evolución.
 
-* **[VSlices y las metodologías de desarrollo](vslices-and-development-methodologies.md)**  
+* **[VSlices y las metodologías de desarrollo](../comparisons/development-methodologies.md)**  
   Explica cómo VSlices se relaciona con Agile, Scrum, Extreme Programming, Lean, Domain-Driven Design, Waterfall y otros enfoques de desarrollo.
 
 Estas páginas no son obligatorias antes de leer la documentación de producto, pero ayudan a aclarar qué intenta preservar VSlices y cómo se diferencia de metodologías existentes.
@@ -31,8 +31,8 @@ Estas páginas no son obligatorias antes de leer la documentación de producto, 
 | --- | --- |
 | Entender VSlices desde el inicio | [¿Qué es VSlices?](what-is-vslices.md), luego [Por qué existe VSlices](why-vslices-exists.md) |
 | Entender la suite completa | [Vista general de la suite](suite-overview.md) |
-| Entender la base filosófica | [La continuidad del conocimiento](continuity-of-knowledge.md) |
-| Comparar VSlices con metodologías de desarrollo | [VSlices y las metodologías de desarrollo](vslices-and-development-methodologies.md) |
+| Entender la base filosófica | [La continuidad del conocimiento](../philosophy/continuity-of-knowledge.md) |
+| Comparar VSlices con metodologías de desarrollo | [VSlices y las metodologías de desarrollo](../comparisons/development-methodologies.md) |
 | Diseñar software antes de implementarlo | [VSlices Design](../products/design/index.md) |
 | Documentar un sistema | [VSlices Docs Standard](../products/docs-standard/index.md) |
 | Construir con .NET | [VSlices Framework](../products/framework/index.md) |

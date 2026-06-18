@@ -83,3 +83,13 @@
   -webkit-mask-image: var(--md-admonition-icon--principle);
   mask-image: var(--md-admonition-icon--principle);
 }
+
+.md-typeset .mermaid {
+  text-align: center;
+}
+
+.md-typeset .mermaid svg {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}

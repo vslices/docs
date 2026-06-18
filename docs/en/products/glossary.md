@@ -2,119 +2,148 @@
 
 This glossary defines shared terms used across VSlices products.
 
-Its purpose is to preserve a common language between [VSlices Design](design/index.md), [VSlices Docs Standard](docs-standard/index.md), [VSlices Method](method/index.md), and [VSlices Framework](framework/index.md).
+Its purpose is to preserve a common language between VSlices Design, VSlices Docs Standard, VSlices Method, and VSlices Framework.
 
-These terms help connect domain discovery, documentation, design, architecture, implementation, validation, and evolution without forcing every product to redefine the same concepts.
-
-## How to read this glossary
-
-The terms are grouped by the kind of knowledge they help describe:
-
-| Term family | What it helps describe |
-| --- | --- |
-| [Suite concepts](#suite-concepts) | Shared foundations of VSlices. |
-| [Core domain-to-software terms](#core-domain-to-software-terms) | How broad domain knowledge can become concrete software behavior. |
-| [Supporting concepts](#supporting-concepts) | Participants, responsibilities, boundaries, abilities, and movement. |
-| [Knowledge concepts](#knowledge-concepts) | Assumptions, risks, decisions, validation, and feedback. |
-
-This glossary is not a mandatory process. A team may start from a scenario, workflow, use case, decision, implementation, or validation result.
-
-The important part is to keep terms connected to the knowledge they preserve.
+These terms help connect domain discovery, documentation, architecture, implementation, and evolution without forcing each product to redefine the same concepts.
 
 ## Suite concepts
 
-- **Continuity**: the preservation of understanding across discovery, documentation, design, architecture, implementation, validation, and evolution.
+- __Continuity__: the preservation of understanding across discovery, documentation, design, architecture, implementation, validation, and evolution.
 
-- **Architectural intent**: the reasoning behind architectural structure, boundaries, decisions, and tradeoffs that should remain understandable as the system evolves.
+- __Architectural intent__: the reasoning behind architectural structure, boundaries, decisions, and tradeoffs that should remain understandable as the system evolves.
 
-- **Progressive architecture**: an approach where architectural structure is introduced gradually as the domain, risks, and implementation needs justify it.
+- __Progressive architecture__: an approach where architectural structure is introduced gradually as the domain, risks, and implementation needs justify it.
 
 ## Core domain-to-software terms
 
-- **Scenario**: answers _where are we working?_ It represents the business, organizational, operational, or system context where knowledge is being observed.
+- __Scenario__: answers _where are we working?_. It represents the business, organizational, operational, or system context where knowledge is being observed.
 
-    > A scenario may include companies, ecosystems, departments, systems, constraints, people, and surrounding conditions.
+    A scenario may include companies, ecosystems, departments, systems, constraints, people, and surrounding conditions.
 
-- **Work line**: answers _what do we offer or operate?_ It represents an area, department, service, business line, value stream, or stable offering inside a scenario.
+- __Work Line__: answers _what do we offer or operate?_. It represents an area, department, service, business line, value stream, or stable offering inside a scenario.
 
-    > A work line helps identify what the organization provides or maintains.
+    A work line helps identify what the organization provides or maintains.
 
-- **Work process**: answers _how do we do it?_ It represents the responsibilities, roles, coordination rules, and operational structure used to perform a work line.
+- __Work Process__: answers _how do we do it?_. It represents the responsibilities, roles, coordination rules, and operational structure used to execute a work line.
 
-    > A work process explains how people, areas, or systems organize work to produce value.
+    A work process explains how people, areas, or systems organize work to produce value.
 
-- **Workflow**: answers _what is done?_ It represents the concrete sequence of steps, decisions, handoffs, and responsible participants inside a work process.
+- __Workflow__: answers _what is done?_. It represents the concrete sequence of steps, decisions, handoffs, and responsible participants inside a work process.
 
-    > A workflow makes visible how work moves from one state, actor, system, or responsibility to another.
+    A workflow makes visible how work moves from one state, actor, system, or responsibility to another.
 
-- **Use case**: answers _what does this behavior mean?_ It represents the expected consequence, validations, rules, outcomes, and domain meaning of an interaction or operation.
+- __Use Case__: answers _what does this behavior mean?_. It represents the expected consequence, validations, rules, outcomes, and domain meaning of an interaction or operation.
 
-    > A use case explains why a behavior matters and what must be true for it to be valid.
+    A use case explains why a behavior matters and what must be true for it to be valid.
 
 ## Supporting concepts
 
-- **Actor**: a person, role, system, organization, or external participant that takes part in a scenario, work process, workflow, or use case.
+- __Actor__: a person, role, system, organization, or external participant that takes part in a scenario, work process, workflow, or use case.
 
-- **Responsibility**: an expected duty, decision, action, or ownership assigned to an actor, role, area, or system.
+- __Responsibility__: an expected duty, decision, action, or ownership assigned to an actor, role, area, or system.
 
-- **Handoff**: a point where work moves from one actor, role, area, system, or responsibility to another.
+- __Handoff__: a point where work moves from one actor, role, area, system, or responsibility to another.
 
-- **Boundary**: a limit that separates contexts, responsibilities, concepts, systems, decisions, or ownership areas.
+- __Boundary__: a limit that separates contexts, responsibilities, concepts, systems, decisions, or ownership areas.
 
-- **Capability**: a stable ability required by the business or system. A capability describes what must be possible, independently from the specific implementation that provides it.
+- __Capability__: a stable ability required by the business or system. A capability describes what must be possible, independently from the specific implementation that provides it.
 
-- **Feature**: a concrete behavior, action, or vertical slice that delivers value or supports a validated need inside a domain context.
+- __Feature__: a concrete behavior, action, or vertical slice that delivers value or supports a validated need inside a domain context.
 
-- **Flow**: a directed movement of work, data, behavior, or control through a system or process. In documentation, a flow may describe business movement. In implementation, it may become an executable structure.
+- __Flow__: a directed movement of work, data, behavior, or control through a system or process.
+
+!!! note "Consider the context"
+
+    In documentation, a flow may describe business movement.
+
+    In implementation, it may become an executable structure.
 
 ## Knowledge concepts
 
-- **Domain language**: the words and meanings used by people who understand or operate the domain.
+- __Domain Language__: the words and meanings used by people who understand or operate the domain.
 
-- **Assumption**: something the team currently believes to be true but has not fully validated.
+- __Assumption__: something the team currently believes to be true but has not fully validated.
 
-- **Risk**: a possible source of failure, misunderstanding, cost, delay, rework, or accidental complexity.
+- __Risk__: a possible source of failure, misunderstanding, cost, delay, rework, or accidental complexity.
 
-- **Decision**: a selected direction made under a specific context, with accepted tradeoffs and consequences.
+- __Decision__: a selected direction made under a specific context, with accepted tradeoffs and consequences.
 
-- **Validation**: evidence gathered to confirm, reject, or refine an assumption, decision, behavior, document, implementation, or product idea.
+- __Validation__: evidence gathered to confirm, reject, or refine an assumption, decision, behavior, document, implementation, or product idea.
 
-- **Feedback**: knowledge produced after a document, decision, feature, workflow, or implementation is used, reviewed, tested, or delivered.
+- __Feedback__: knowledge produced after a document, decision, feature, workflow, or implementation is used, reviewed, tested, or delivered.
 
 ## Relationship between the core terms
 
 The core terms usually move from broad context to concrete behavior:
 
 ```mermaid
-graph LR
-  subgraph S[Logistics<br/><small>Scenario</small>]
+flowchart LR
+
+  subgraph Scenario[Company scenario]
     direction LR
 
-    subgraph BWL[Buy<br/><small>Work line</small>]
-      direction TB
+    subgraph WorkLine1[Purchase line]
 
-      subgraph SMWP[Search material<br/><small>Work process</small>]
-        direction LR
+      WorkProcess1_1[Search process]
+      WorkProcess1_2[Purchase process]
 
-        PSWF[Page search<br/><small>Workflow</small>]
-        VBWF[Validate buy<br/><small>Workflow</small>]
+      WorkProcess1_1 --> WorkProcess1_2
 
-        PSWF -- scrapes to --> VBWF
-      end
-
-      PBWF[Prepare buy<br/><small>Workflow</small>]
-      BWP[Buy<br/><small>Work process</small>]
-
-      SMWP -- for --> PBWF -- to --> BWP
     end
 
-    SWL[Sell<br/><small>Work line</small>]
+    subgraph WorkLine2[Sales line]
 
-    BWL -- gets materials for --> SWL
+      WorkProcess2_1[Reception process]
+      WorkProcess2_2[Sales process]
+
+      WorkProcess2_1 --> WorkProcess2_2
+
+    end
+  end
+
+  WorkLine1 --> WorkLine2
+
+```
+
+```mermaid
+---
+title: Let's detail the search process...
+---
+flowchart LR
+  subgraph WorkProcessDetail1_1[Search process]
+    WorkFlow1_1_1_1[Page search flow]
+    WorkFlow1_1_1_2[In-person search flow]
+
+    WorkFlow1_1_2[Comparison flow]
+
+    WorkFlow1_1_3[Filtering flow]
+
+    WorkFlow1_1_1_1 & WorkFlow1_1_1_2 --> WorkFlow1_1_2
+    WorkFlow1_1_2 --> WorkFlow1_1_3
+
   end
 ```
 
-<br/>
+```mermaid
+---
+title: Let's detail the filtering flow...
+---
+flowchart LR
+
+  subgraph WorkFlowDetail1_1_3[Filtering flow]
+    Start(((Start)))
+
+    Step1[Use case: take the top 5]
+    Step2_1[Use case: select quality-price]
+    Step2_2[Use case: select quantity-price]
+    Step3[Use case: delivery]
+
+    End(((End)))
+
+    Start --> Step1 --> Step2_1 & Step2_2 --> Step3 --> End
+
+  end
+```
 
 This does not mean every iteration must document all levels. The sequence only describes how knowledge can become more specific.
 

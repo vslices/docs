@@ -4,7 +4,7 @@ VSlices Method explica cómo aplicar VSlices Design y VSlices Docs Standard dent
 
 ```mermaid
 ---
-title: VSlices Method preserva continuidad entre
+title: VSlices Method preserva continuidad entre etapas
 ---
 flowchart LR
   subgraph RW[Contexto real de trabajo]
@@ -43,20 +43,22 @@ Method conecta razonamiento, documentación, colaboración y aprendizaje. No ree
 
 ## Idea central
 
-VSlices Method sigue un principio de trabajo: **Usar la estructura de trabajo más pequeña que preserve el conocimiento del que dependerá el trabajo futuro**.
+VSlices Method sigue un principio importante:
+
+!!! principle "Principio - General"
+
+    Usar la estructura de trabajo más pequeña que preserve el conocimiento del que dependerá el trabajo futuro. 
 
 Esto significa que Method no debería pedir a los equipos que documenten todo. Debería ayudarles a notar qué conocimiento podría perderse si avanzan sin preservarlo.
 
-La pregunta no es: **¿Qué documentos son requeridos por esta etapa?**
-
-La mejor pregunta es: **¿Qué conocimiento necesitamos preservar para tomar la siguiente decisión responsable?**
+La pregunta no es: **¿Qué documentos son requeridos por esta etapa?**, si no: **¿Qué conocimiento necesitamos preservar para tomar la siguiente decisión responsable?**
 
 ## Relación con otros productos de VSlices
 
 VSlices Method depende conceptualmente de:
 
-* **VSlices Design**, que define modalidades de diseño y el flujo compartido de iteración.
-* **VSlices Docs Standard**, que define tipos de documento para preservar conocimiento.
+* **[VSlices Design](../design/index.md)**, que define modalidades de diseño y el flujo compartido de iteración.
+* **[VSlices Docs Standard](../docs-standard/index.md)**, que define tipos de documento para preservar conocimiento.
 
 VSlices Framework puede implementar algunas ideas en código más adelante, pero Method no depende de él. Method debería seguir siendo útil incluso cuando no hay código de VSlices Framework involucrado.
 
@@ -64,8 +66,8 @@ VSlices Framework puede implementar algunas ideas en código más adelante, pero
 
 VSlices Method está organizado alrededor de:
 
-* **afinidad documento-etapa**, para entender cómo los documentos pueden apoyar cada etapa de trabajo.
-* **patrones**, para decisiones recurrentes de Method como colaboración, selección de modalidad y ciclos de aprendizaje.
-* **guías de integración**, para aplicar Method en distintos contextos de trabajo.
+* **[afinidad documento-etapa](document-stage-affinity.md)**, para entender cómo los documentos pueden apoyar cada etapa de trabajo.
+* **[patrones](patterns/index.md)**, para decisiones recurrentes de Method como colaboración, selección de modalidad y ciclos de aprendizaje.
+* **[guías de integración](context-guides/index.md)**, para aplicar Method en distintos contextos de trabajo.
 
 Estas secciones son guías, no pasos obligatorios de proceso. Usa solo lo que ayude a preservar continuidad para el trabajo en curso.

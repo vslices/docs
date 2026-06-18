@@ -16,25 +16,25 @@ Estos términos ayudan a conectar el descubrimiento del dominio, la documentaci�
 
 ## Términos centrales de dominio a software
 
-- __Scenario__: responde _¿dónde estamos trabajando?_. Representa el contexto de negocio, organizacional, operativo o del sistema donde se está observando conocimiento. 
+- __Escenario (Scenario en inglés)__: responde _¿dónde estamos trabajando?_. Representa el contexto de negocio, organizacional, operativo o del sistema donde se está observando conocimiento. 
 
-> Un scenario puede incluir empresas, ecosistemas, departamentos, sistemas, restricciones, personas y condiciones circundantes.
+    Un escenario puede incluir empresas, ecosistemas, departamentos, sistemas, restricciones, personas y condiciones circundantes.
 
-- __Work Line__: responde _¿qué ofrecemos u operamos?_. Representa un área, departamento, servicio, línea de negocio, flujo de valor u oferta estable dentro de un scenario.
+- __Línea de trabajo (Work Line en inglés)__: responde _¿qué ofrecemos u operamos?_. Representa un área, departamento, servicio, línea de negocio, flujo de valor u oferta estable dentro de un scenario.
 
-> Un work line ayuda a identificar lo que la organización proporciona o mantiene.
+    Una línea de trabajo ayuda a identificar lo que la organización proporciona o mantiene.
 
-- __Work Process__: responde _¿cómo lo hacemos?_. Representa las responsabilidades, roles, reglas de coordinación y estructura operativa usadas para ejecutar un work line.
+- __Proceso de trabajo (Work Process en inglés)__: responde _¿cómo lo hacemos?_. Representa las responsabilidades, roles, reglas de coordinación y estructura operativa usadas para ejecutar un work line.
 
-> Un work process explica cómo personas, áreas o sistemas organizan el trabajo para producir valor.
+    Un proceso de trabajo explica cómo personas, áreas o sistemas organizan el trabajo para producir valor.
 
-- __Workflow__: responde _¿qué se hace?_. Representa la secuencia concreta de pasos, decisiones, transferencias y participantes responsables dentro de un work process. 
+- __Flujo de trabajo (Workflow en inglés)__: responde _¿qué se hace?_. Representa la secuencia concreta de pasos, decisiones, transferencias y participantes responsables dentro de un work process. 
 
-> Un workflow hace visible cómo el trabajo pasa de un estado, actor, sistema o responsabilidad a otro.
+    Un flujo de trabajo hace visible cómo el trabajo pasa de un estado, actor, sistema o responsabilidad a otro.
 
-- __Use Case__: responde _¿qué significa este comportamiento?_. Representa la consecuencia esperada, las validaciones, reglas, resultados y significado de dominio de una interacción u operación.
+- __Caso de uso (Use Case en inglés)__: responde _¿qué significa este comportamiento?_. Representa la consecuencia esperada, las validaciones, reglas, resultados y significado de dominio de una interacción u operación.
 
-> Un use case explica por qué un comportamiento importa y qué debe ser verdadero para que sea válido.
+    Un caso de uso explica por qué un comportamiento importa y qué debe ser verdadero para que sea válido.
 
 ## Conceptos de apoyo
 
@@ -52,8 +52,11 @@ Estos términos ayudan a conectar el descubrimiento del dominio, la documentaci�
 
 - __Flow__: un movimiento dirigido de trabajo, datos, comportamiento o control a través de un sistema o proceso. 
 
-> En documentación, un flow puede describir movimiento de negocio. 
-> En implementación, puede convertirse en una estructura ejecutable.
+!!! note "Considera el contexto"
+
+    En documentación, un flow puede describir movimiento de negocio. 
+    
+    En implementación, puede convertirse en una estructura ejecutable.
 
 ## Conceptos de conocimiento
 
@@ -73,12 +76,75 @@ Estos términos ayudan a conectar el descubrimiento del dominio, la documentaci�
 
 Los términos centrales normalmente se mueven desde el contexto amplio hacia el comportamiento concreto:
 
-```text
-Scenario
--> Work Line
--> Work Process
--> Workflow
--> Use Case
+```mermaid
+flowchart LR
+
+  subgraph Scenario[Escenario de empresa]
+    direction LR
+
+    subgraph WorkLine1[Linea de compra]
+
+      WorkProcess1_1[Proceso de busqueda]
+      WorkProcess1_2[Proceso de compra]
+
+      WorkProcess1_1 --> WorkProcess1_2
+
+    end
+
+    subgraph WorkLine2[Linea de ventas]
+      
+      WorkProcess2_1[Proceso de recepción]
+      WorkProcess2_2[Proceso de venta]
+
+      WorkProcess2_1 --> WorkProcess2_2
+
+    end
+  end
+
+  WorkLine1 --> WorkLine2
+
+```
+
+
+```mermaid
+---
+title: Detallemos proceso de busqueda...
+---
+flowchart LR
+  subgraph WorkProcessDetail1_1[Proceso de busqueda]
+    WorkFlow1_1_1_1[Flujo busqueda en paginas]
+    WorkFlow1_1_1_2[Flujo busqueda en persona]
+
+    WorkFlow1_1_2[Flujo de comparación]
+
+    WorkFlow1_1_3[Flujo de filtrado]
+
+    WorkFlow1_1_1_1 & WorkFlow1_1_1_2 --> WorkFlow1_1_2
+    WorkFlow1_1_2 --> WorkFlow1_1_3
+
+  end
+```
+
+
+```mermaid
+---
+title: Detallemos flujo de filtrado ...
+---
+flowchart LR
+
+  subgraph WorkFlowDetail1_1_3[Flujo de filtrado]
+    Inicio(((Inicio)))
+
+    Paso1[Caso de uso de tomar el top 5]
+    Paso2_1[Caso de uso de seleccionar calidad-precio]
+    Paso2_2[Caso de uso de seleccionar cantidad-precio]
+    Paso3[Caso de uso de entrega]
+    
+    Fin(((Fin)))
+
+    Inicio --> Paso1 --> Paso2_1 & Paso2_2 --> Paso3 --> Fin
+
+  end
 ```
 
 Esto no significa que cada iteración deba documentar todos los niveles. La secuencia solo describe cómo el conocimiento puede volverse más específico.

@@ -187,8 +187,7 @@ La suite es progresiva y componible. La adopción debe seguir la necesidad real,
 
 Los cuatro productos comparten un principio:
 
-
-!!! principle "Principio- General"
+!!! principle "Principio - General"
     
     Usa la estructura más pequeña útil que preserve el conocimiento del que depende el trabajo futuro.
 
