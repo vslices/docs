@@ -1,4 +1,3 @@
-````md
 # VSlices Method
 
 VSlices Method explains how to apply VSlices Design and VSlices Docs Standard inside real work contexts.
@@ -22,7 +21,7 @@ flowchart LR
     A --> B --> C --> D --> E --> F --> G
 
   end
-````
+```
 
 <br/>
 
@@ -48,9 +47,8 @@ VSlices Method follows an important principle:
 
 !!! principle "Principle - General"
 
-```
-Use the smallest working structure that preserves the knowledge future work will depend on.
-```
+    Use the smallest working structure that preserves the knowledge future work will depend on.
+
 
 This means Method should not ask teams to document everything. It should help teams notice what knowledge may be lost if they move forward without preserving it.
 
@@ -74,6 +72,3 @@ VSlices Method is organized around:
 * **[integration guides](context-guides/index.md)**, for applying Method in different working contexts.
 
 These sections are guides, not mandatory process steps. Use only what helps preserve continuity for the work at hand.
-
-```
-```
