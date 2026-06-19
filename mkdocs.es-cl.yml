@@ -1,8 +1,13 @@
 site_name: VSlices
-site_description: Suite de ingeniería de software progresiva
+site_description: Suite de ingeniería de software progresiva especializada en preservar la continuidad
 site_author: VSlices
+site_url: https://vslices.readthedocs.io/es/latest/
+
 repo_url: https://github.com/vslices/docs
 repo_name: vslices/docs
+
+extra:
+    social_card_image: https://raw.githubusercontent.com/vslices/icons/refs/heads/main/social/vslices-social-card-es.png
 
 docs_dir: docs/es 
 
@@ -10,17 +15,65 @@ theme:
     name: material
     logo: https://raw.githubusercontent.com/vslices/icons/refs/heads/main/official/icon.svg
     favicon: https://raw.githubusercontent.com/vslices/icons/refs/heads/main/favicons/favicon.ico
-    locale: es
+    language: es
+    features:
+        - navigation.tracking
+        - navigation.tabs
+        - navigation.tabs.sticky
+        - navigation.path
+        - navigation.top
+        - navigation.footer
+        - search.suggest
+        - search.highlight
+        - search.share
     palette:
-        primary: deep purple
-        accent: purple
+        # Palette toggle for automatic mode
+        - media: "(prefers-color-scheme)"
+          primary: indigo
+          accent: indigo
+          toggle:
+            icon: material/brightness-auto
+            name: Cmabiar al modo claro
+
+        # Palette toggle for light mode
+        - media: "(prefers-color-scheme: light)"
+          scheme: default
+          primary: indigo
+          accent: indigo
+          toggle:
+            icon: material/brightness-7
+            name: Cambiar al modo oscuro
+
+        # Palette toggle for dark mode
+        - media: "(prefers-color-scheme: dark)"
+          scheme: slate
+          primary: indigo
+          accent: indigo
+          toggle:
+            icon: material/brightness-4
+            name: Cambiar a preferencia del sistema
 
 plugins: 
     - search:
         lang: es
     - mermaid2:
         version: 10.0.2
+        arguments:
+            theme: base
+            themeVariables:
+                background: transparent
+                primaryColor: "#eef2ff"
+                primaryTextColor: "#1f2937"
+                primaryBorderColor: "#8b5cf6"
+                lineColor: "#8b5cf6"
+                secondaryColor: "#ede9fe"
+                tertiaryColor: "#ffffff"
+                clusterBkg: "#fefce8"
+                clusterBorder: "#c4b454"
+                edgeLabelBackground: "#ffffff"
     - include-markdown
+    - social:
+        enabled: !ENV [CI, false]
 
 markdown_extensions:
     - admonition
@@ -30,7 +83,11 @@ markdown_extensions:
         alternate_style: true
 
 extra_css:
-    - stylesheets/extra.css
+    - stylesheets/base.css
+    - stylesheets/admonition.experimental.css
+    - stylesheets/admonition.principle.css
+    - stylesheets/mermaid.css
+    - stylesheets/hero.css
 
 nav:
     - Inicio: index.md
@@ -43,6 +100,8 @@ nav:
         - Caminos de adopción: start-here/adoption-paths.md
     
     - Filosofía:
+        - Introducción: philosophy/index.md
+        - Manifiesto: philosophy/manifest.md
         - Continuidad del conocimiento: philosophy/continuity-of-knowledge.md
 
     - Comparaciones: 

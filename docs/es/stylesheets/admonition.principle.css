@@ -1,0 +1,27 @@
+.md-typeset .admonition.principle,
+.md-typeset details.principle {
+  border-color: var(--vslices-principle-color);
+}
+
+.md-typeset .principle > .admonition-title,
+.md-typeset .principle > summary {
+  background-color: var(--vslices-principle-bg);
+}
+
+.md-typeset .principle > .admonition-title::before,
+.md-typeset .principle > summary::before {
+  background-color: var(--vslices-principle-color);
+  -webkit-mask-image: var(--md-admonition-icon--principle);
+  mask-image: var(--md-admonition-icon--principle);
+}
+
+[data-md-color-scheme="slate"] .md-typeset .principle > .admonition-title,
+[data-md-color-scheme="slate"] .md-typeset .principle > summary {
+  background-color: color-mix(in srgb, var(--md-primary-fg-color) 24%, transparent);
+  color: var(--md-default-fg-color);
+}
+
+[data-md-color-scheme="slate"] .md-typeset .admonition.principle,
+[data-md-color-scheme="slate"] .md-typeset details.principle {
+  border-color: var(--md-primary-fg-color);
+}

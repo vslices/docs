@@ -10,7 +10,7 @@ Una iteración de VSlices Method sigue el flujo compartido de VSlices Design:
 
 {% include-markdown "shared/simple-design-iteration-flow.md" %}
 
-El retorno final a Understanding es intencional.
+El retorno final a **Understanding** es intencional.
 
 Un equipo no vuelve a Understanding porque la iteración falló. Un equipo vuelve porque construir, validar y usar software cambia lo que se sabe.
 
@@ -34,25 +34,27 @@ Lo importante no es de dónde viene el feedback. Lo importante es si cambia lo q
 
 Después de Building, el feedback puede producir distintos resultados.
 
-* **Confirmado** significa que la evidencia sostiene el entendimiento o la decisión actual.
-* **Refinado** significa que la dirección fue útil, pero algunos detalles necesitan ajuste.
-* **Cuestionado** significa que la evidencia contradice un supuesto, decisión o modelo.
-* **Dividido** significa que el feedback revela una work line o preocupación separada.
-* **Reemplazado** significa que el conocimiento anterior ya no representa la realidad actual.
+| Resultado | Significa que... |
+| --- | --- |
+| **Confirmado** | La evidencia sostiene el entendimiento o la decisión actual. |
+| **Refinado** | La dirección fue útil, pero algunos detalles necesitan ajuste. |
+| **Cuestionado** | La evidencia contradice un supuesto, decisión o modelo. |
+| **Dividido** | El feedback revela una work line o preocupación separada. |
+| **Reemplazado** | El conocimiento anterior ya no representa la realidad actual. |
 
-Cada resultado debería influir en lo que ocurre después.
+Cada resultado debería influir en lo que ocurre después:
 
-- Un resultado confirmado puede permitir que el equipo continúe.
-- Un resultado refinado puede actualizar un documento o detalle de implementación.
-- Un resultado cuestionado puede requerir volver a Planning o Contextualizing.
-- Un resultado dividido puede abrir una nueva Work Line.
-- Un resultado reemplazado puede requerir actualizar o sustituir conocimiento previo.
+* Un resultado confirmado puede permitir que el equipo continúe.
+* Un resultado refinado puede actualizar un documento o detalle de implementación.
+* Un resultado cuestionado puede requerir volver a Planning o Contextualizing.
+* Un resultado dividido puede abrir una nueva Work Line.
+* Un resultado reemplazado puede requerir actualizar o sustituir conocimiento previo.
 
 ## Qué debería preservarse
 
 El Ciclo de aprendizaje no requiere que cada señal de feedback se convierta en documentación. Preserva feedback cuando afecte trabajo futuro.
 
-El conocimiento útil a preservar puede incluir:
+El conocimiento útil para preservar puede incluir:
 
 * una decisión que fue confirmada o cuestionada
 * un comportamiento que funcionó distinto a lo esperado
@@ -69,13 +71,15 @@ El objetivo no es registrarlo todo. Es evitar redescubrir el mismo aprendizaje m
 
 Distintos documentos pueden apoyar el Ciclo de aprendizaje.
 
-* **[Validation Notes](../../docs-standard/taxonomy/validation-note.md)** preservan evidencia y aprendizaje.
-* **[Decision Records](../../docs-standard/taxonomy/decision-record.md)** preservan decisiones que fueron confirmadas, cuestionadas o cambiadas.
-* **[Use Case Documents](../../docs-standard/taxonomy/use-case-document.md)** preservan comportamiento que se volvió más claro después de construir.
-* **[Capability Documents](../../docs-standard/taxonomy/capability-document.md)** preservan habilidades estables reveladas o refinadas por la iteración.
-* **[Context Documents](../../docs-standard/taxonomy/context-document.md)** preservan cambios en el escenario circundante.
-* **[Process Documents](../../docs-standard/taxonomy/process-document.md)** preservan cambios de workflow, excepciones o handoffs.
-* **[Support Notes](../../docs-standard/taxonomy/support-note.md)** preservan observaciones inciertas o locales que todavía no están maduras.
+| Documento | Puede preservar |
+| --- | --- |
+| [Validation Notes](../../docs-standard/taxonomy/validation-note.md) | Evidencia y aprendizaje. |
+| [Decision Records](../../docs-standard/taxonomy/decision-record.md) | Decisiones confirmadas, cuestionadas o cambiadas. |
+| [Use Case Documents](../../docs-standard/taxonomy/use-case-document.md) | Comportamiento que se volvió más claro después de construir. |
+| [Capability Documents](../../docs-standard/taxonomy/capability-document.md) | Habilidades estables reveladas o refinadas por la iteración. |
+| [Context Documents](../../docs-standard/taxonomy/context-document.md) | Cambios en el escenario circundante. |
+| [Process Documents](../../docs-standard/taxonomy/process-document.md) | Cambios de workflow, excepciones o handoffs. |
+| [Support Notes](../../docs-standard/taxonomy/support-note.md) | Observaciones inciertas o locales que todavía no están maduras. |
 
 Usa el documento más liviano que preserve el aprendizaje del que depende el trabajo futuro.
 
@@ -111,6 +115,8 @@ El Ciclo de aprendizaje existe para hacer útil el feedback antes de que desapar
 
 ## Principio guía
 
-La realidad es parte del método.
+!!! principle "Principio de aprendizaje"
+
+    La realidad es parte del método.
 
 Usa el feedback para mejorar el entendimiento compartido del trabajo. Preserva solo el aprendizaje del que futuras decisiones, documentación, diseño o implementación puedan depender.

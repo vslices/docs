@@ -8,10 +8,9 @@ Estos términos ayudan a describir cómo los equipos avanzan a través de incert
 
 ## Cómo leer este glosario
 
+<p class="vslices-diagram-caption">Relación entre familias de términos</p>
+
 ```mermaid
----
-title: Relación entre familias de términos
----
 flowchart LR
   subgraph WC[Contexto de trabajo]
     direction LR

@@ -8,11 +8,11 @@ Cuando la incertidumbre cambia, la modalidad también puede necesitar cambiar.
 
 ## Idea central
 
-Cambia de modalidad cuando la modalidad actual ya no está reduciendo la incertidumbre dominante.
+!!! principle "Principio de cambio"
 
-La pregunta no es: _¿Tenemos permitido cambiar de modalidad?_
+    Cambia de modalidad cuando la modalidad actual ya no está reduciendo la incertidumbre dominante.
 
-La pregunta es: _¿Cambió el tipo de incertidumbre?_
+La pregunta no es: _¿Tenemos permitido cambiar de modalidad?_, sino _¿Cambió el tipo de incertidumbre?_
 
 VSlices Method usa el cambio de modalidad para mantener al equipo alineado con la realidad, en vez de forzar que el trabajo continúe bajo el énfasis equivocado.
 
@@ -20,7 +20,7 @@ VSlices Method usa el cambio de modalidad para mantener al equipo alineado con l
 
 Cada modalidad protege al equipo de un riesgo distinto.
 
-| Modalidad | Ayuda a evitar | Puede volverse riesgosa cuando |
+| Modalidad | Ayuda a evitar | Riesgo si se mantiene demasiado |
 | --- | --- | --- |
 | __[Context-First](../../design/modalities/context-first/index.md)__ | Construir desde un contexto mal entendido. | El equipo sigue expandiendo entendimiento sin decidir qué validar. |
 | __[Problem-First](../../design/modalities/problem-first/index.md)__ | Resolver síntomas en vez de problemas. | El equipo aísla el problema del contexto más amplio que le da significado. |
@@ -34,12 +34,12 @@ Un cambio no significa que la modalidad anterior estaba mal. Significa que la mo
 
 | Cambio | Usar cuando | Propósito |
 | --- | --- | --- |
-| __[Context-First](../../design/modalities/context-first/index.md)__ -> __[Problem-First](../../design/modalities/problem-first/index.md)__ | El equipo entiende suficiente del escenario como para enfocarse en un dolor, oportunidad o decisión concreta. | Acotar el contexto amplio hacia un problema que vale la pena resolver. |
-| __[Context-First](../../design/modalities/context-first/index.md)__ -> __[Slice-First](../../design/modalities/slice-first/index.md)__ | El equipo entiende suficiente como para validar una parte pequeña y reversible del sistema. | Convertir aprendizaje contextual en evidencia práctica. |
-| __[Problem-First](../../design/modalities/problem-first/index.md)__ -> __[Context-First](../../design/modalities/context-first/index.md)__ | El problema depende de workflows, actores, lenguaje o restricciones circundantes que todavía no están claros. | Recuperar el contexto necesario para evitar optimización local. |
-| __[Problem-First](../../design/modalities/problem-first/index.md)__ -> __[Slice-First](../../design/modalities/slice-first/index.md)__ | El problema está lo suficientemente claro como para que una entrega pequeña pruebe la mejora esperada. | Validar si la dirección propuesta funciona en la realidad. |
-| __[Slice-First](../../design/modalities/slice-first/index.md)__ -> __[Problem-First](../../design/modalities/problem-first/index.md)__ | Una slice construida revela que el problema original estaba incompleto, mal ubicado o mal formulado. | Reformular el problema usando evidencia de la entrega. |
-| __[Slice-First](../../design/modalities/slice-first/index.md)__ -> __[Context-First](../../design/modalities/context-first/index.md)__ | Construir revela contexto de dominio faltante, actores ocultos, límites poco claros o consecuencias inesperadas. | Reconstruir entendimiento antes de continuar con la implementación. |
+| __[Context-First](../../design/modalities/context-first/index.md)__ → __[Problem-First](../../design/modalities/problem-first/index.md)__ | El equipo entiende suficiente del escenario como para enfocarse en un dolor, oportunidad o decisión concreta. | Acotar el contexto amplio hacia un problema que vale la pena resolver. |
+| __[Context-First](../../design/modalities/context-first/index.md)__ → __[Slice-First](../../design/modalities/slice-first/index.md)__ | El equipo entiende suficiente como para validar una parte pequeña y reversible del sistema. | Convertir aprendizaje contextual en evidencia práctica. |
+| __[Problem-First](../../design/modalities/problem-first/index.md)__ → __[Context-First](../../design/modalities/context-first/index.md)__ | El problema depende de workflows, actores, lenguaje o restricciones circundantes que todavía no están claros. | Recuperar el contexto necesario para evitar optimización local. |
+| __[Problem-First](../../design/modalities/problem-first/index.md)__ → __[Slice-First](../../design/modalities/slice-first/index.md)__ | El problema está lo suficientemente claro como para que una entrega pequeña pruebe la mejora esperada. | Validar si la dirección propuesta funciona en la realidad. |
+| __[Slice-First](../../design/modalities/slice-first/index.md)__ → __[Problem-First](../../design/modalities/problem-first/index.md)__ | Una slice construida revela que el problema original estaba incompleto, mal ubicado o mal formulado. | Reformular el problema usando evidencia de la entrega. |
+| __[Slice-First](../../design/modalities/slice-first/index.md)__ → __[Context-First](../../design/modalities/context-first/index.md)__ | Construir revela contexto de dominio faltante, actores ocultos, límites poco claros o consecuencias inesperadas. | Reconstruir entendimiento antes de seguir implementando. |
 
 ## Señales de que puede hacer falta cambiar
 
@@ -58,10 +58,7 @@ Estas señales no requieren automáticamente un cambio. Indican que el equipo de
 
 ## Cambiar sin ceremonia
 
-El cambio de modalidad debería ser liviano.
-
-- Un equipo no necesita reiniciar la iteración.
-- Un equipo solo necesita reconocer qué cambió.
+El cambio de modalidad debería ser liviano. Un equipo no necesita reiniciar la iteración, solo necesita reconocer qué cambió.
 
 Algunas preguntas útiles son:
 
@@ -77,12 +74,14 @@ El cambio puede ser tan simple como cambiar la siguiente conversación, actualiz
 
 Los documentos pueden ayudar a preservar por qué cambió una modalidad. Usa documentación solo cuando el cambio afecte trabajo futuro.
 
-* **[Support Notes](../../docs-standard/taxonomy/support-note.md)** pueden preservar observaciones tempranas o incertidumbre.
-* **[Validation Notes](../../docs-standard/taxonomy/validation-note.md)** pueden preservar evidencia que causó el cambio.
-* **[Decision Records](../../docs-standard/taxonomy/decision-record.md)** pueden preservar cambios importantes de dirección.
-* **[Context Documents](../../docs-standard/taxonomy/context-document.md)** pueden preservar nuevo contexto circundante descubierto.
-* **[Use Case Documents](../../docs-standard/taxonomy/use-case-document.md)** pueden preservar comportamiento aclarado después del cambio.
-* **[Process Documents](../../docs-standard/taxonomy/process-document.md)** pueden preservar conocimiento de workflow revelado por el cambio.
+| Documento | Puede ayudar a preservar |
+| --- | --- |
+| [Support Notes](../../docs-standard/taxonomy/support-note.md) | Observaciones tempranas o incertidumbre. |
+| [Validation Notes](../../docs-standard/taxonomy/validation-note.md) | Evidencia que causó el cambio. |
+| [Decision Records](../../docs-standard/taxonomy/decision-record.md) | Cambios importantes de dirección. |
+| [Context Documents](../../docs-standard/taxonomy/context-document.md) | Nuevo contexto circundante descubierto. |
+| [Use Case Documents](../../docs-standard/taxonomy/use-case-document.md) | Comportamiento aclarado después del cambio. |
+| [Process Documents](../../docs-standard/taxonomy/process-document.md) | Conocimiento de workflow revelado por el cambio. |
 
 El objetivo no es documentar cada cambio. Es evitar perder el aprendizaje que hizo necesario el cambio.
 
@@ -100,6 +99,8 @@ Un cambio es útil cuando vuelve más segura la siguiente decisión.
 
 ## Principio guía
 
-Deja que la incertidumbre actual elija la modalidad. Cuando la incertidumbre cambia, cambia el énfasis.
+!!! principle "Principio de cambio"
+
+    Deja que la incertidumbre actual elija la modalidad. Cuando la incertidumbre cambia, cambia el énfasis.
 
 El método debería seguir el aprendizaje. No debería forzarse el aprendizaje para que encaje en el método.

@@ -1,4 +1,3 @@
-!!! principle "Principle - General"
-    
-    Use the smallest useful structure that preserves the knowledge future work depends on.
-    
+!!! principle "General principle"
+
+    Software degrades when the knowledge that created it stops being visible, shared, and evolvable.

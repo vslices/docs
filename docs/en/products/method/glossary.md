@@ -8,10 +8,9 @@ These terms help describe how teams move through uncertainty without forcing a r
 
 ## How to read this glossary
 
+<p class="vslices-diagram-caption">Term family group relations</p>
+
 ```mermaid
----
-title: Term family group relations
----
 flowchart LR
   subgraph WC[Work context]
     direction LR

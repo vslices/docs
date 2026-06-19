@@ -8,9 +8,11 @@ When the uncertainty changes, the modality may need to change too.
 
 ## Core idea
 
-Switch modality when the current modality is no longer reducing the dominant uncertainty. 
+!!! principle "Switching principle"
 
-The question is not: _Are we allowed to change modality?_, it is _Has the kind of uncertainty changed?_.
+    Switch modality when the current modality is no longer reducing the dominant uncertainty.
+
+The question is not: _Are we allowed to switch modality?_, but _Has the kind of uncertainty changed?_
 
 VSlices Method uses modality switching to keep the team aligned with reality instead of forcing work to continue under the wrong emphasis.
 
@@ -18,11 +20,11 @@ VSlices Method uses modality switching to keep the team aligned with reality ins
 
 Each modality protects the team from a different risk.
 
-| Modality          | Helps avoid                                      | Can become risky when                                                         |
-| ----------------- | ------------------------------------------------ | ----------------------------------------------------------------------------- |
-| __[Context-First](../../design/modalities/context-first/index.md)__ | Building from misunderstood context.             | The team keeps expanding understanding without deciding what to validate.     |
-| __[Problem-First](../../design/modalities/problem-first/index.md)__ | Solving symptoms instead of problems.            | The team isolates the problem from the wider context that gives it meaning.   |
-| __[Slice-First](../../design/modalities/slice-first/index.md)__   | Designing too much before learning from reality. | The team builds without enough understanding of intent, risk or consequences. |
+| Modality | Helps avoid | Risk if kept too long |
+| --- | --- | --- |
+| __[Context-First](../../design/modalities/context-first/index.md)__ | Building from misunderstood context. | The team keeps expanding understanding without deciding what to validate. |
+| __[Problem-First](../../design/modalities/problem-first/index.md)__ | Solving symptoms instead of problems. | The team isolates the problem from the wider context that gives it meaning. |
+| __[Slice-First](../../design/modalities/slice-first/index.md)__ | Designing too much before learning from reality. | The team builds without enough understanding of intent, risk, or consequences. |
 
 Switching modality helps avoid turning a useful emphasis into accidental complexity.
 
@@ -30,14 +32,14 @@ Switching modality helps avoid turning a useful emphasis into accidental complex
 
 A switch does not mean the previous modality was wrong. It means the previous modality produced enough learning for the work to need a different emphasis.
 
-| Switch                             | Use when                                                                                               | Purpose                                                   |
-| ---------------------------------- | ------------------------------------------------------------------------------------------------------ | --------------------------------------------------------- |
-| __[Context-First](../../design/modalities/context-first/index.md)__ -> __[Problem-First](../../design/modalities/problem-first/index.md)__ | The team understands enough of the scenario to focus on a concrete pain, opportunity or decision.      | Narrow broad context into a problem worth solving.        |
-| __[Context-First](../../design/modalities/context-first/index.md)__ -> __[Slice-First](../../design/modalities/slice-first/index.md)__   | The team understands enough to validate a small and reversible part of the system.                     | Turn contextual learning into practical evidence.         |
-| __[Problem-First](../../design/modalities/problem-first/index.md)__ -> __[Context-First](../../design/modalities/context-first/index.md)__ | The problem depends on surrounding workflows, actors, language or constraints that are still unclear.  | Recover the context needed to avoid local optimization.   |
-| __[Problem-First](../../design/modalities/problem-first/index.md)__ -> __[Slice-First](../../design/modalities/slice-first/index.md)__   | The problem is clear enough that a small delivery can test the intended improvement.                   | Validate whether the proposed direction works in reality. |
-| __[Slice-First](../../design/modalities/slice-first/index.md)__ -> __[Problem-First](../../design/modalities/problem-first/index.md)__   | A built slice reveals that the original problem was incomplete, misplaced or poorly framed.            | Reframe the problem using evidence from delivery.         |
-| __[Slice-First](../../design/modalities/slice-first/index.md)__ -> __[Context-First](../../design/modalities/context-first/index.md)__   | Building reveals missing domain context, hidden actors, unclear boundaries or unexpected consequences. | Rebuild understanding before continuing implementation.   |
+| Switch | Use when | Purpose |
+| --- | --- | --- |
+| __[Context-First](../../design/modalities/context-first/index.md)__ → __[Problem-First](../../design/modalities/problem-first/index.md)__ | The team understands enough of the scenario to focus on a concrete pain, opportunity, or decision. | Narrow broad context into a problem worth solving. |
+| __[Context-First](../../design/modalities/context-first/index.md)__ → __[Slice-First](../../design/modalities/slice-first/index.md)__ | The team understands enough to validate a small and reversible part of the system. | Turn contextual learning into practical evidence. |
+| __[Problem-First](../../design/modalities/problem-first/index.md)__ → __[Context-First](../../design/modalities/context-first/index.md)__ | The problem depends on surrounding workflows, actors, language, or constraints that are still unclear. | Recover the context needed to avoid local optimization. |
+| __[Problem-First](../../design/modalities/problem-first/index.md)__ → __[Slice-First](../../design/modalities/slice-first/index.md)__ | The problem is clear enough for a small delivery to test the expected improvement. | Validate whether the proposed direction works in reality. |
+| __[Slice-First](../../design/modalities/slice-first/index.md)__ → __[Problem-First](../../design/modalities/problem-first/index.md)__ | A built slice reveals that the original problem was incomplete, misplaced, or poorly framed. | Reframe the problem using evidence from delivery. |
+| __[Slice-First](../../design/modalities/slice-first/index.md)__ → __[Context-First](../../design/modalities/context-first/index.md)__ | Building reveals missing domain context, hidden actors, unclear boundaries, or unexpected consequences. | Rebuild understanding before continuing implementation. |
 
 ## Signals that switching may be needed
 
@@ -56,31 +58,30 @@ These signals do not automatically require a switch. They indicate that the team
 
 ## Switching without ceremony
 
-Modality switching should be lightweight.
-
-- A team does not need to restart the iteration.
-- A team only needs to acknowledge what changed.
+Modality switching should be lightweight. A team does not need to restart the iteration; it only needs to acknowledge what changed.
 
 Useful questions include:
 
 * What did we learn?
 * What uncertainty is now dominant?
-* Is our current modality still helping?
+* Is the current modality still helping?
 * What is the smallest next move that reduces this uncertainty?
 * What knowledge should be preserved before moving on?
 
-The switch may be as simple as changing the next conversation, updating a document, narrowing the next slice or reopening a decision.
+The switch may be as simple as changing the next conversation, updating a document, narrowing the next slice, or reopening a decision.
 
 ## Document support
 
 Documents may help preserve why a modality changed. Use documentation only when the switch affects future work.
 
-* **[Support Notes](../../docs-standard/taxonomy/support-note.md)** can preserve early observations or uncertainty.
-* **[Validation Notes](../../docs-standard/taxonomy/validation-note.md)** can preserve evidence that caused the switch.
-* **[Decision Records](../../docs-standard/taxonomy/decision-record.md)** can preserve important direction changes.
-* **[Context Documents](../../docs-standard/taxonomy/context-document.md)** can preserve newly discovered surrounding context.
-* **[Use Case Documents](../../docs-standard/taxonomy/use-case-document.md)** can preserve behavior clarified after switching.
-* **[Process Documents](../../docs-standard/taxonomy/process-document.md)** can preserve workflow knowledge revealed by the switch.
+| Document | Can help preserve |
+| --- | --- |
+| [Support Notes](../../docs-standard/taxonomy/support-note.md) | Early observations or uncertainty. |
+| [Validation Notes](../../docs-standard/taxonomy/validation-note.md) | Evidence that caused the switch. |
+| [Decision Records](../../docs-standard/taxonomy/decision-record.md) | Important direction changes. |
+| [Context Documents](../../docs-standard/taxonomy/context-document.md) | Newly discovered surrounding context. |
+| [Use Case Documents](../../docs-standard/taxonomy/use-case-document.md) | Behavior clarified after the switch. |
+| [Process Documents](../../docs-standard/taxonomy/process-document.md) | Workflow knowledge revealed by the switch. |
 
 The goal is not to document every switch. It is to avoid losing the learning that made the switch necessary.
 
@@ -91,13 +92,15 @@ Modality switching can fail when the team treats modalities as process stages.
 * Switching too often may prevent useful depth.
 * Refusing to switch may keep the team solving the wrong uncertainty.
 * Switching without preserving learning may make the team repeat the same confusion.
-* Treating switches as failure may discourage feedback.
+* Treating switches as failures may discourage feedback.
 * Treating switches as mandatory stages may create unnecessary ceremony.
 
 A switch is useful when it makes the next decision safer.
 
 ## Guiding principle
 
-Let the current uncertainty choose the modality. When the uncertainty changes, change the emphasis. 
+!!! principle "Switching principle"
 
-The method should follow the learning. It should not be forced to fit the method.
+    Let the current uncertainty choose the modality. When the uncertainty changes, change the emphasis.
+
+The method should follow the learning. Learning should not be forced to fit the method.

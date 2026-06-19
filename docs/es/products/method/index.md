@@ -2,10 +2,9 @@
 
 VSlices Method explica cómo aplicar VSlices Design y VSlices Docs Standard dentro de contextos reales de trabajo.
 
+<p class="vslices-diagram-caption">VSlices Method preserva continuidad entre etapas</p>
+
 ```mermaid
----
-title: VSlices Method preserva continuidad entre etapas
----
 flowchart LR
   subgraph RW[Contexto real de trabajo]
     direction TB

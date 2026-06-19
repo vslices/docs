@@ -13,9 +13,11 @@ Las etapas de una iteración de VSlices Design son responsabilidades de colabora
 - Un equipo pequeño puede asumir todas las responsabilidades en conjunto.
 - Una organización más grande puede distribuirlas entre distintas personas o equipos.
 
-La regla importante es la continuidad:
+La regla importante no es quién tiene cada responsabilidad, sino si la continuidad se preserva:
 
-> Cada responsabilidad debería preservar suficiente intención para que la siguiente responsabilidad pueda actuar sin adivinar por qué importa el trabajo.
+!!! principle "Principio de colaboración"
+
+    Cada responsabilidad debería preservar suficiente intención para que la siguiente responsabilidad pueda actuar sin adivinar por qué importa el trabajo.
 
 ## Responsabilidades comunes
 
@@ -41,7 +43,13 @@ El flujo compartido de iteración de VSlices Design es:
 
 La colaboración debería proteger la continuidad a través de este flujo.
 
-Cada etapa debería dejar suficiente conocimiento para que la siguiente etapa avance responsablemente.
+Cada etapa debería dejar suficiente conocimiento para que la siguiente pueda avanzar sin adivinar:
+
+* Understanding: no debería producir notas desconectadas.
+* Contextualizing: no debería producir documentos que nadie usa.
+* Planning: no debería producir decisiones sin contexto.
+* Building: no debería implementar comportamiento sin intención.
+* Validation: no debería convertirse en feedback aislado que nunca cambia el trabajo futuro.
 
 ## Handoffs
 
@@ -56,13 +64,13 @@ Un handoff no necesita ceremonia; necesita intención preservada. Los handoffs �
 * qué comportamiento se espera
 * qué feedback debería observarse
 
-El propósito de un handoff no es transferir documentos. El propósito es transferir suficiente entendimiento para que el trabajo continúe sin perder significado.
+El propósito de un handoff no es transferir documentos. Es transferir suficiente entendimiento para que el trabajo continúe sin perder significado.
 
 ## Equipos pequeños
 
 En un equipo pequeño, la colaboración puede ocurrir mediante conversación directa. La documentación puede mantenerse liviana.
 
-El riesgo principal es que el conocimiento permanezca implícito porque todos creen que el contexto está compartido. Los equipos pequeños deberían preservar conocimiento cuando:
+El riesgo principal es que el conocimiento permanezca implícito porque todos creen que el contexto ya está compartido. Los equipos pequeños deberían preservar conocimiento cuando:
 
 * una decisión afecta trabajo futuro
 * un término puede interpretarse de distintas maneras
@@ -70,17 +78,17 @@ El riesgo principal es que el conocimiento permanezca implícito porque todos cr
 * un workflow tiene excepciones
 * la validación cambia el entendimiento del problema
 
-Mientras más pequeño es el equipo, más tentador es depender solo de la memoria. VSlices Method debería ayudar a preservar las pocas cosas que el trabajo futuro no debería tener que redescubrir.
+Mientras más pequeño es el equipo, más tentador es depender solo de la memoria. VSlices Method debería ayudar a preservar las pocas piezas de conocimiento importantes que el trabajo futuro no debería tener que redescubrir.
 
 ## Organizaciones más grandes
 
-En una organización más grande, las responsabilidades pueden estar distribuidas. Un grupo puede:
+En una organización más grande, las responsabilidades pueden estar distribuidas entre distintos grupos. Por ejemplo:
 
-- descubrir señales del dominio
-- otro puede organizar contexto
-- otro puede planificar trabajo
-- otro puede construir
-- otro puede validar
+* un grupo puede descubrir señales del dominio
+* otro puede organizar contexto
+* otro puede planificar trabajo
+* otro puede construir
+* otro puede validar
 
 El riesgo principal es la optimización local. Cada grupo puede hacer correctamente su parte mientras la intención original desaparece entre etapas.
 
@@ -101,9 +109,11 @@ El Modelo de colaboración existe para hacer visibles estos riesgos antes de que
 
 ## Principio guía
 
-La estructura debería adaptarse a la organización. La organización no debería ser forzada a adaptarse al método.
+!!! principle "Principio de colaboración"
+
+    La estructura debería adaptarse a la organización. La organización no debería ser forzada a adaptarse al método.
 
 Usa la estructura de colaboración más pequeña que preserve la intención de la que depende el trabajo futuro.
 
-- Si la conversación directa preserva suficiente continuidad, usa conversación directa.
-- Si el trabajo cruza tiempo, personas, equipos o decisiones, preserva el conocimiento que no debería perderse.
+* Si la conversación directa preserva suficiente continuidad, usa conversación directa.
+* Si el trabajo cruza tiempo, personas, equipos o decisiones, preserva el conocimiento que no debería perderse.

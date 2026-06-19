@@ -1,0 +1,17 @@
+.admonition.experimental {
+  border-left: 4px solid #c62828;
+  background-color: #ffebee;
+  padding: 0.8rem 1rem;
+  margin: 1rem 0;
+  border-radius: 4px;
+}
+
+.admonition.experimental .admonition-title {
+  color: #8e0000;
+  font-weight: 700;
+  margin: 0 0 0.4rem 0;
+}
+
+.admonition.experimental p:last-child {
+  margin-bottom: 0;
+}

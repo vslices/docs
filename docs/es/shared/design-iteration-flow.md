@@ -14,11 +14,11 @@ graph TD
 
   S -.- understanding
 
-  understanding -- no debería producir<br/>notas desconectadas para --> contextualizing
-  contextualizing -- no debería producir<br/>documentos que<br/>nadie usa para --> planning
-  planning -- no debería producir<br/>decisiones sin<br/>contexto para --> building
-  building -- no debería implementar<br/>comportamiento sin<br/>intención futura para --> validation
-  validation -- no debería convertirse en<br/>feedback aislado<br/>que nunca cambia<br/>el trabajo futuro --> understanding
+  understanding --> contextualizing
+  contextualizing --> planning
+  planning --> building
+  building --> validation
+  validation --> understanding
 
   validation -.- F
 

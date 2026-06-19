@@ -6,72 +6,76 @@ The goal is not to choose the best modality in general. It is to choose the moda
 
 ## Core idea
 
-Choose the modality by the uncertainty that matters most right now. 
+!!! principle "Selection principle"
 
-The question is not: _Which modality do we prefer?_, it is: _What kind of uncertainty would make the next decision unsafe?_
+    Choose the modality based on the uncertainty that matters most right now.
+
+The question is not: _Which modality do we prefer?_, but: _What kind of uncertainty would make the next decision unsafe?_
 
 VSlices Method uses the modalities defined by VSlices Design:
 
 * __[Context-First](../../design/modalities/context-first/index.md)__, when the team needs broader understanding before deciding what to build.
-* __[Problem-First](../../design/modalities/problem-first/index.md)__, when a clear problem exists, but its causes, impact or boundaries need clarification.
+* __[Problem-First](../../design/modalities/problem-first/index.md)__, when a clear problem exists, but its causes, impact, or boundaries need clarification.
 * __[Slice-First](../../design/modalities/slice-first/index.md)__, when the team can learn faster by building a small and reversible vertical slice.
 
 Method does not redefine these modalities. It helps decide which one should guide the current work.
 
-## Context-First
+## Design modalities
 
-Use Context-First when the team cannot yet explain the scenario safely. This may happen when:
+=== "Context-First"
 
-* the domain is new or poorly understood
-* the work is mostly manual or implicit
-* several actors interpret the same process differently
-* the language is unstable or ambiguous
-* the workflow boundaries are unclear
-* the team does not know which problem matters most yet
+    Use Context-First when the team cannot yet explain the scenario safely. This may happen when:
 
-Context-First helps avoid building software around a misunderstood reality.
+    * the domain is new or poorly understood
+    * the work is mostly manual or implicit
+    * several actors interpret the same process differently
+    * the language is unstable or ambiguous
+    * workflow boundaries are unclear
+    * the team does not know which problem matters most yet
 
-The main risk is analysis without movement. Use Context-First only until the team has enough context to make a safer next decision.
+    Context-First helps avoid building software around a misunderstood reality.
 
-## Problem-First
+    The main risk is analysis without movement. Use Context-First only until the team has enough context to make a safer next decision.
 
-Use Problem-First when there is a visible problem, but the team does not yet understand it well enough to solve it responsibly. This may happen when:
+=== "Problem-First"
 
-* users report a repeated pain
-* a workflow has a known bottleneck
-* an existing feature fails to support real work
-* the business impact is visible but the cause is unclear
-* multiple solutions are being proposed before the problem is understood
-* the problem may cross several workflows or responsibilities
+    Use Problem-First when there is a visible problem, but the team does not yet understand it well enough to solve it responsibly. This may happen when:
 
-Problem-First helps avoid solving symptoms. The main risk is local optimization.
+    * users report a repeated pain
+    * a workflow has a known bottleneck
+    * an existing feature fails to support real work
+    * the business impact is visible, but the cause is unclear
+    * multiple solutions are proposed before the problem is understood
+    * the problem may cross several workflows or responsibilities
 
-Use Problem-First until the team can explain the problem, its context and the intended improvement.
+    Problem-First helps avoid solving symptoms. The main risk is local optimization.
 
-## Slice-First
+    Use Problem-First until the team can explain the problem, its context, and the expected improvement.
 
-Use Slice-First when the team can learn more safely by building a small piece of behavior. This may happen when:
+=== "Slice-First"
 
-* the context is understood enough to act
-* the risk is narrow and reversible
-* the team needs feedback from real use
-* implementation will reveal useful constraints
-* a small vertical slice can validate an assumption
-* more analysis would not significantly improve the next decision
+    Use Slice-First when the team can learn more safely by building a small piece of behavior. This may happen when:
 
-Slice-First helps avoid designing too much before reality can teach the team. The main risk is implementation without understanding.
+    * the context is understood enough to act
+    * the risk is narrow and reversible
+    * the team needs feedback from real use
+    * implementation will reveal useful constraints
+    * a small vertical slice can validate an assumption
+    * more analysis would not significantly improve the next decision
 
-Use Slice-First only when the slice is small enough to learn from without hiding important uncertainty.
+    Slice-First helps avoid designing too much before reality can teach the team. The main risk is implementation without understanding.
+
+    Use Slice-First only when the slice is small enough to learn from without hiding important uncertainty.
 
 ## Selection signals
 
 A useful selection usually starts by naming the dominant uncertainty.
 
-| Current signal | Start with | Why |
+| Current signal | Modality | Why |
 | --- | --- | --- |
 | The team does not understand the surrounding context. | __[Context-First](../../design/modalities/context-first/index.md)__ | The next decision needs broader understanding before choosing what to build. |
 | The team understands the area, but not the problem. | __[Problem-First](../../design/modalities/problem-first/index.md)__ | The next decision needs problem clarity before choosing a solution. |
-| The team understands enough to learn through delivery. | __[Slice-First](../../design/modalities/slice-first/index.md)__ | The next decision can be made safer by validating a small<br/>vertical slice. |
+| The team understands enough to learn through delivery. | __[Slice-First](../../design/modalities/slice-first/index.md)__ | The next decision can be made safer by validating a small vertical slice. |
 
 The selected modality should reduce uncertainty. It should not become the identity of the iteration.
 
@@ -85,16 +89,18 @@ Modality selection can fail when the team chooses based on habit instead of unce
 * Choosing Problem-First too early may isolate a symptom from its context.
 * Choosing Slice-First too early may produce implementation without intent.
 * Choosing the same modality repeatedly may hide that the context has changed.
-* Choosing a modality as a process rule may weaken judgement.
+* Choosing a modality as a process rule may weaken judgment.
 
 The modality is a guide for attention. It is not a fixed process.
 
 ## Guiding principle
 
-Choose the smallest modality emphasis that makes the next responsible decision safer.
+!!! principle "Selection principle"
 
-- If understanding is missing, widen the context.
-- If the problem is unclear, clarify the problem.
-- If learning requires reality, build a small slice.
+    Choose the smallest modality emphasis that makes the next responsible decision safer.
+
+* If understanding is missing, widen the context.
+* If the problem is unclear, clarify the problem.
+* If learning requires reality, build a small slice.
 
 The right modality is the one that helps the team preserve continuity while moving forward.

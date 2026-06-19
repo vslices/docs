@@ -17,7 +17,7 @@ Cada producto puede usarse de forma independiente, pero están diseñados para t
 
 Los sistemas de software a menudo se alejan del dominio que representan. Esta deriva suele aparecer cuando el descubrimiento, la documentación, el diseño, la arquitectura y la implementación evolucionan como actividades separadas.
 
-!!! principle "Principio - Continuidad"
+!!! principle "Principio de continuidad"
 
     El mismo lenguaje del dominio, los límites estructurales y la intención conductual deberían permanecer visibles en la documentación, la arquitectura y el código.
 
