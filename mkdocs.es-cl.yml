@@ -7,7 +7,7 @@ repo_url: https://github.com/vslices/docs
 repo_name: vslices/docs
 
 extra:
-    social_card_image: https://raw.githubusercontent.com/vslices/icons/refs/heads/main/social/vslices-social-card-es.png
+    social_card_image: https://raw.githubusercontent.com/vslices/icons/refs/heads/main/social/social-card-es.png
 
 docs_dir: docs/es 
 
@@ -86,6 +86,7 @@ extra_css:
     - stylesheets/base.css
     - stylesheets/admonition.experimental.css
     - stylesheets/admonition.principle.css
+    - stylesheets/admonition.risk.css
     - stylesheets/mermaid.css
     - stylesheets/hero.css
 
@@ -126,7 +127,7 @@ nav:
                 - Introducción: products/method/context-guides/index.md
                 - Escenario "No digitalizado": products/method/context-guides/non-digitalized-scenario.md
                 - Escenario "Digitalizado": products/method/context-guides/digitalized-scenario.md
-                - Escenario "Unirse a un proyecto existente": products/method/context-guides/joining-existing-project.md
+                - Escenario "Entrar a un proyecto existente": products/method/context-guides/joining-existing-project.md
                 - Escenario "Introducir Method en proyectos en curso": products/method/context-guides/introducing-method.md
 
             - Afinidad Documento-Etapa: products/method/document-stage-affinity.md
