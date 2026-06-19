@@ -17,10 +17,10 @@ This order introduces VSlices from the general idea before moving into product-s
 
 After the initial overview, these pages explain the deeper reasoning behind VSlices:
 
-* **[The Continuity of Knowledge](continuity-of-knowledge.md)**  
+* **[VSlices philosophy](../philosophy/index.md)**  
   Explains why VSlices treats software as a continuity problem between business knowledge, documentation, architecture, implementation, and evolution.
 
-* **[VSlices and Development Methodologies](vslices-and-development-methodologies.md)**  
+* **[VSlices and Development Methodologies](../comparisons/development-methodologies.md)**  
   Explains how VSlices relates to Agile, Scrum, Extreme Programming, Lean, Domain-Driven Design, Waterfall, and other development approaches.
 
 These pages are not required before reading the product documentation, but they help clarify what VSlices is trying to preserve and how it differs from existing methodologies.
@@ -31,8 +31,8 @@ These pages are not required before reading the product documentation, but they 
 | --- | --- |
 | Understand VSlices from the beginning | [What is VSlices?](what-is-vslices.md), then [Why VSlices exists](why-vslices-exists.md) |
 | Understand the full suite | [Suite overview](suite-overview.md) |
-| Understand the philosophical foundation | [The Continuity of Knowledge](continuity-of-knowledge.md) |
-| Compare VSlices with development methodologies | [VSlices and Development Methodologies](vslices-and-development-methodologies.md) |
+| Understand the philosophical foundation | [VSlices philosofy](../philosophy/index.md) |
+| Compare VSlices with development methodologies | [VSlices and Development Methodologies](../comparisons/development-methodologies.md) |
 | Design software before implementation | [VSlices Design](../products/design/index.md) |
 | Document a system | [VSlices Docs Standard](../products/docs-standard/index.md) |
 | Build with .NET | [VSlices Framework](../products/framework/index.md) |

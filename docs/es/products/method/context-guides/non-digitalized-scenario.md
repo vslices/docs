@@ -8,7 +8,7 @@ Esto no significa que el trabajo sea simple. Significa que el conocimiento neces
 
 ## Idea central
 
-!!! principle "No automatices lo que todavía no entiendes"
+!!! principle "Principio de continuidad"
 
     En un escenario no digitalizado, VSlices Method ayuda al equipo a entender cómo ocurre actualmente el trabajo antes de decidir qué debería convertirse en software.
 
@@ -103,7 +103,7 @@ El conocimiento útil puede incluir:
 * documentos, hojas de cálculo o mensajes usados como herramientas de coordinación
 * preguntas abiertas e incertidumbre
 
-!!! principle "Preserva lo que evita redescubrir"
+!!! principle "Principio de continuidad"
 
     No guardes cada observación.
   
@@ -127,7 +127,7 @@ Los documentos pueden ayudar a hacer visible el trabajo implícito.
 
 Usa documentos para preservar entendimiento, no para formalizar todo demasiado temprano.
 
-!!! abstract "Lectura recomendada"
+!!! reading "Lectura recomendada"
 
     La afinidad documental por etapa de iteración se describe en la página [Afinidad documento-etapa](../document-stage-affinity.md).
 

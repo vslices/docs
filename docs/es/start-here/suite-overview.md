@@ -58,7 +58,7 @@ Un equipo puede usar VSlices Design sin VSlices Framework. Un equipo puede usar 
 
 ## El ciclo de continuidad
 
-VSlices también puede entenderse como un ciclo de continuidad.
+<p class="vslices-diagram-caption">VSlices también puede entenderse como un ciclo de continuidad.</p>
 
 ```mermaid
 flowchart TB

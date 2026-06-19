@@ -14,7 +14,7 @@ docs_dir: docs/en
 theme:
     name: material
     logo: https://raw.githubusercontent.com/vslices/icons/refs/heads/main/official/icon.svg
-    favicon: https://raw.githubusercontent.com/vslices/icons/blob/main/favicons/favicon.ico
+    favicon: https://raw.githubusercontent.com/vslices/icons/refs/heads/main/favicons/favicon.ico
     language: en
     features:
         - navigation.tracking

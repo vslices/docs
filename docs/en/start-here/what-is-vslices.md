@@ -19,7 +19,7 @@ Software systems often drift away from the domain they represent.
 
 This drift usually appears when discovery, documentation, architecture, and implementation evolve as separate activities.
 
-!!! principle "Principle - Continuity"
+!!! principle "Continuity Principle"
 
     The same domain language, structural boundaries, and behavioral intent should remain visible across documentation, architecture, and code.
 

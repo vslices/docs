@@ -57,7 +57,7 @@ A team can use VSlices Design without VSlices Framework. A team can use VSlices 
 
 ## The continuity loop
 
-VSlices can also be understood as a continuity loop.
+<p class="vslices-diagram-caption">VSlices can also be understood as a continuity loop.</p>
 
 ```mermaid
 flowchart TD

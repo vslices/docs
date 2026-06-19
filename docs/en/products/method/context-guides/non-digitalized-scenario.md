@@ -8,7 +8,7 @@ This does not mean the work is simple. It means the knowledge needed to support 
 
 ## Core idea
 
-!!! principle "Do not automate what you do not understand yet"
+!!! principle "Continuity Principle"
 
     In a not digitized scenario, VSlices Method helps the team understand how the work currently happens before deciding what should become software.
 
@@ -104,7 +104,7 @@ Useful knowledge may include:
 * documents, spreadsheets, or messages used as coordination tools
 * open questions and uncertainty
 
-!!! principle "Preserve what avoids rediscovery"
+!!! principle "Continuity Principle"
 
     Do not keep every observation.
 
@@ -128,7 +128,7 @@ Documents can help make implicit work visible.
 
 Use documents to preserve understanding, not to formalize everything too early.
 
-!!! abstract "Recommended reading"
+!!! reading "Recommended reading"
 
     Document affinity by iteration stage is described in [Document-stage affinity](../document-stage-affinity.md).
 

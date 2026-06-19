@@ -105,10 +105,9 @@ flowchart LR
 
 ```
 
+<p class="vslices-diagram-caption">Let's detail the search process...</p>
+
 ```mermaid
----
-title: Let's detail the search process...
----
 flowchart LR
   subgraph WorkProcessDetail1_1[Search process]
     WorkFlow1_1_1_1[Page search flow]
@@ -124,10 +123,9 @@ flowchart LR
   end
 ```
 
+<p class="vslices-diagram-caption">Let's detail the filtering flow...</p>
+
 ```mermaid
----
-title: Let's detail the filtering flow...
----
 flowchart LR
 
   subgraph WorkFlowDetail1_1_3[Filtering flow]

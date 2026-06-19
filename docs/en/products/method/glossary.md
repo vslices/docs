@@ -96,10 +96,9 @@ These concepts help adjust the amount of structure without adding unnecessary ce
 
 ## Relationship between the terms
 
+<p class="vslices-diagram-caption">VSlices Methods helps teams to move through work contexts while preserving continuity</p>
+
 ```mermaid
----
-title: VSlices Methods helps teams to move through work contexts while preserving continuity
----
 flowchart TD
     A[Work entry point]
     B[Current uncertainty]
