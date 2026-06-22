@@ -127,10 +127,7 @@ Los documentos pueden ayudar a hacer visible el trabajo implícito.
 
 Usa documentos para preservar entendimiento, no para formalizar todo demasiado temprano.
 
-!!! reading "Lectura recomendada"
-
-    La afinidad documental por etapa de iteración se describe en la página [Afinidad documento-etapa](../document-stage-affinity.md).
-
+{% include-markdown "shared/readings/document-stage-affinity-admonition.md" %}
 
 ## Enfoque sugerido
 

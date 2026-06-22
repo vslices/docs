@@ -103,7 +103,7 @@ Documents may help recover continuity in a digitalized scenario.
 
 Use the lightest document that protects continuity.
 
-> Document affinity by iteration stage is described in the [Document-Stage affinity](../document-stage-affinity.md) page.
+{% include-markdown "shared/readings/document-stage-affinity-admonition.md" %}
 
 ## Suggested approach
 

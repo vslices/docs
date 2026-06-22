@@ -1,3 +1,8 @@
+---
+hide:
+  - navigation
+---
+
 <div class="vslices-hero">
   <img
     src="https://raw.githubusercontent.com/vslices/icons/refs/heads/main/official/icon.svg"

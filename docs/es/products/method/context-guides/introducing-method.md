@@ -1,90 +1,109 @@
-# Escenario "Digitalizado"
+# Escenario "Introducir method"
 
-Un escenario "Digitalizado" es un contexto de trabajo donde el software ya representa parte del negocio, proceso u organización.
+Un escenario "Introducir method" es un contexto de trabajo donde un equipo u organización no usa actualmente VSlices Method, pero está abierto a mejorar cómo mantiene conectado el conocimiento, las decisiones, la implementación y el feedback.
 
-Esto no significa que el dominio ya esté entendido. El software existente es evidencia, no es automáticamente verdad del dominio.
+El objetivo no es adoptar todo Method de una vez. Es introducir una costura útil de continuidad.
 
 ## Idea central
 
-En un escenario digitalizado, VSlices Method ayuda al equipo a separar tres cosas:
+!!! principle "Principio de continuidad"
 
-* cómo ocurre realmente el trabajo
-* cómo el software actual representa ese trabajo
-* cómo las personas han adaptado su trabajo alrededor del software
+    VSlices Method debería introducirse desde trabajo que ya está ocurriendo.
 
-El objetivo no es hacer ingeniería inversa de todo el sistema. Es recuperar suficiente continuidad para tomar la siguiente decisión responsable.
+Un equipo no debería comenzar cambiando todo su proceso. Debería comenzar preservando una pieza de conocimiento de la que depende el trabajo actual o futuro.
+
+La pregunta no es *¿Cómo adoptamos VSlices Method?*, sino *¿dónde se está perdiendo continuidad ahora?*.
 
 ## Cuándo aplica esta guía
 
 Usa esta guía cuando:
 
-* ya existe software
-* los workflows están parcial o totalmente soportados por un sistema
-* las personas dependen de pantallas, reportes, formularios, APIs o automatizaciones actuales
-* el equipo necesita mejorar, reemplazar o extender comportamiento existente
-* la documentación falta, está desactualizada o está desconectada de la implementación
-* el conocimiento de negocio está oculto dentro de código, tickets o hábitos de usuario
+* el trabajo ya está ocurriendo
+* el equipo ya tiene una forma de trabajo
+* existe documentación, pero está desconectada de la implementación
+* se toman decisiones, pero no se preservan
+* los tickets describen tareas sin intención suficiente
+* el feedback aparece, pero no cambia el trabajo futuro
+* aparece confusión repetida entre personas o equipos
+* el equipo está abierto a una mejora liviana
 
-Esta guía puede aplicar aunque el proyecto ya use o no use VSlices Method.
+Esta guía no busca reemplazar la forma de trabajo del equipo. Busca hacer que el trabajo existente sea más continuo.
 
 ## Riesgo principal
 
-El riesgo principal es tratar el software existente como la verdad del dominio. Un sistema puede contener:
+El riesgo principal es intentar introducir VSlices Method como un proceso completo.
 
-* reglas reales de negocio
-* decisiones obsoletas
-* comportamiento de workaround
-* restricciones accidentales
-* compromisos técnicos
-* conceptos faltantes
-* nombres engañosos
-* comportamientos que los usuarios aprendieron a tolerar
+Eso puede crear resistencia, ceremonia innecesaria o una sensación falsa de madurez.
 
-Si el equipo copia el sistema existente sin cuestionarlo, puede preservar complejidad accidental como si fuera conocimiento del dominio.
+Un equipo puede no necesitar nuevas etapas, reuniones o plantillas. Puede necesitar una mejor forma de preservar:
+
+* por qué importa un cambio
+* qué contexto lo sostiene
+* qué decisión fue tomada
+* qué permanece incierto
+* qué feedback cambió el trabajo
+* qué trabajo futuro no debería tener que redescubrir
+
+!!! risk "Riesgo a evitar"
+
+    Method debería entrar por utilidad, no por doctrina.
+
+Si no mejora una decisión real, una conversación real o un cambio real, probablemente se está introduciendo demasiado pronto o con demasiado peso.
 
 ## Modalidad inicial útil
 
-Un escenario digitalizado normalmente comienza con **Context-First** o **Problem-First**.
+Introducir Method en un proyecto en curso debería comenzar desde la incertidumbre que más está afectando el trabajo.
 
-| Situación | Modalidad útil | Razón |
-| --- | --- | --- |
-| El sistema existe, pero el contexto de negocio circundante no está claro. | [**Context-First**](../../design/modalities/context-first/index.md) | El equipo necesita entender qué está intentando representar el software. |
-| Existe un dolor claro en el sistema actual, pero la causa no está clara. | [**Problem-First**](../../design/modalities/problem-first/index.md) | El equipo necesita entender el problema antes de cambiar el comportamiento. |
-| Una mejora pequeña y segura puede revelar evidencia útil. | [**Slice-First**](../../design/modalities/slice-first/index.md) | El equipo puede aprender mediante un cambio acotado sin pretender entenderlo todo. |
+| Situación                                                                               | Modalidad útil                                                      | Razón                                                                                     |
+| --------------------------------------------------------------------------------------- | ------------------------------------------------------------------- | ----------------------------------------------------------------------------------------- |
+| El equipo siente dolor repetido, pero no sabe dónde se está rompiendo la continuidad.   | [**Context-First**](../../design/modalities/context-first/index.md) | El equipo necesita entender la pérdida de continuidad antes de cambiar cómo trabaja.      |
+| Un artefacto o práctica pequeña puede mejorar el trabajo en curso de inmediato.         | [**Problem-First**](../../design/modalities/problem-first/index.md) | El equipo puede validar Method mediante una mejora acotada y útil.                        |
+| El contexto de trabajo circundante es demasiado incierto para intervenir con seguridad. | [**Slice-First**](../../design/modalities/slice-first/index.md)     | El equipo necesita aprender mediante una intervención pequeña antes de ampliar el cambio. |
 
-Slice-First puede ser útil, pero solo cuando el cambio es lo suficientemente pequeño como para evitar propagar supuestos mal entendidos.
+!!! risk "Riesgo a evitar"
+
+    La modalidad elegida debería responder a la incertidumbre de adopción, no a la preferencia personal del equipo.
+
 
 ## Qué observar primero
 
-Antes de cambiar el sistema, observa cómo el trabajo actual se conecta con el software actual. Algunas preguntas útiles son:
+Antes de sugerir prácticas de Method, observa cómo se mueve actualmente el trabajo.
 
-* ¿Qué trabajo real apoya este software?
-* ¿Qué workflows dependen de él?
-* ¿Qué actores lo usan directa o indirectamente?
-* ¿Qué partes del sistema son confiables?
-* ¿Qué partes se evitan, se corrigen manualmente o se rodean?
-* ¿Qué términos de negocio aparecen en la interfaz, el código o la documentación?
-* ¿Qué comportamientos se esperan pero no son explícitos?
-* ¿Qué errores o excepciones ocurren repetidamente?
-* ¿Qué decisiones son históricas, técnicas o ya no se entienden?
+| Observa                                                    | Para entender                                                   |
+| ---------------------------------------------------------- | --------------------------------------------------------------- |
+| Dónde se pierde intención                                  | Qué parte del trabajo deja de explicar por qué importa.         |
+| Dónde las personas repiten las mismas explicaciones        | Qué conocimiento depende demasiado de memoria o conversación.   |
+| Dónde se toman decisiones                                  | Qué momentos necesitan preservar contexto.                      |
+| Dónde se olvidan decisiones                                | Qué continuidad se pierde entre decisión y trabajo futuro.      |
+| Dónde la documentación deja de coincidir con la realidad   | Qué documentos necesitan actualización, reducción o reemplazo.  |
+| Dónde la implementación pierde contexto de negocio         | Qué comportamiento necesita recuperar intención.                |
+| Dónde desaparece el feedback                               | Qué aprendizaje no está cambiando decisiones futuras.           |
+| Qué handoffs crean confusión                               | Dónde se rompe la continuidad entre personas, equipos o etapas. |
+| Qué pequeña mejora ayudaría al trabajo actual de inmediato | Dónde Method puede entrar con utilidad real y poco peso.        |
 
-El objetivo no es hacer un análisis completo. Es encontrar dónde falta continuidad.
+El objetivo no es juzgar el proceso del equipo. Es encontrar una brecha de continuidad que valga la pena mejorar.
 
-## Conocimiento a preservar
+## Costuras de continuidad
 
-Preserva conocimiento cuando afecta el siguiente cambio. El conocimiento útil puede incluir:
+Una costura de continuidad es un punto pequeño donde Method puede conectar conocimiento que hoy está desconectado.
 
-* términos del dominio encontrados en el sistema
-* diferencias entre el trabajo real y el comportamiento del software
-* workflows existentes afectados por el cambio
-* reglas ocultas dentro de la implementación
-* workarounds de usuarios
-* dolores actuales
-* restricciones creadas por integraciones o datos
-* decisiones que deberían mantenerse, cambiarse o cuestionarse
-* señales de validación desde usuarios, soporte u operación
+Una costura útil puede consistir en:
 
-No documentes todo el sistema existente por defecto. Preserva lo que el trabajo futuro no debería tener que redescubrir.
+* agregar contexto a un elemento de trabajo activo;
+* registrar una decisión importante;
+* aclarar un término ambiguo del dominio;
+* preservar un resultado de validación;
+* conectar un caso de uso con un cambio de implementación;
+* documentar una excepción de flujo de trabajo;
+* capturar una incertidumbre antes de construir;
+* revisar un supuesto desactualizado después de recibir feedback.
+
+!!! principle "Principio de Continuidad"
+
+    Una costura es útil cuando ayuda al trabajo real a continuar con menos suposiciones.
+
+    No necesita cambiar todo el proceso para mejorar la continuidad.
+
 
 ## Apoyo documental
 
@@ -103,41 +122,54 @@ Los documentos pueden ayudar a recuperar continuidad en un escenario digitalizad
 
 Usa el documento más liviano que proteja continuidad.
 
-> La afinidad documental por etapa de iteración se describe en la página [Afinidad documento-etapa](../document-stage-affinity.md).
+{% include-markdown "shared/readings/document-stage-affinity-admonition.md" %}
 
 ## Enfoque sugerido
 
-Comienza seleccionando un área de cambio. No intentes entender primero todo el sistema.
+Comienza con trabajo que ya está ocurriendo. No detengas el proyecto para introducir Method.
 
 Un enfoque útil es:
 
-1. Identificar el dolor actual, la oportunidad o la solicitud de cambio.
-2. Ubicar los workflows, actores y comportamiento del sistema alrededor de eso.
-3. Comparar el comportamiento actual del software con el trabajo real.
-4. Nombrar qué se sabe, qué es incierto y qué es riesgoso.
-5. Preservar solo el conocimiento necesario para la siguiente decisión responsable.
-6. Elegir el cambio seguro más pequeño o la siguiente investigación.
-7. Usar feedback para actualizar el entendimiento.
+1. Elegir un elemento de trabajo activo, problema o decisión.
+2. Identificar dónde la continuidad es débil.
+3. Agregar la estructura útil más pequeña de Method.
+4. Usarla durante trabajo real.
+5. Observar si ayuda a las personas a tomar mejores decisiones.
+6. Preservar el aprendizaje.
+7. Decidir si vale la pena introducir otra costura de continuidad.
 
-El equipo debería moverse entre entender y construir a medida que aparece evidencia.
+Method debería crecer solo donde sigue demostrando utilidad.
 
 ## Errores comunes
 
-Los escenarios digitalizados suelen fallar cuando los equipos asumen que el sistema se explica solo. Algunos errores comunes incluyen:
+Introducir Method puede fallar cuando el método se vuelve más importante que el trabajo.
 
-* copiar comportamiento existente sin entender por qué existe
-* rediseñarlo todo porque el sistema actual se ve desordenado
-* tratar nombres del código como lenguaje del dominio
-* ignorar workarounds de usuarios
-* documentar todo el sistema antes de mejorar algo
-* cambiar comportamiento sin saber quién depende de él
-* asumir que las decisiones antiguas siguen siendo válidas
-* asumir que las decisiones antiguas estaban mal solo porque son antiguas
+Algunos errores comunes incluyen:
 
-El software existente debería respetarse como evidencia. No debería obedecerse como verdad.
+* introducir demasiados documentos a la vez;
+* pedirle al equipo que cambie todo su proceso inmediatamente;
+* explicar Method antes de resolver un problema real;
+* tratar las plantillas como el valor;
+* crear documentación que nadie usa;
+* reemplazar conversaciones con artefactos;
+* ignorar prácticas existentes del equipo;
+* forzar terminología de VSlices antes de que ayude;
+* medir adopción en vez de continuidad.
+
+!!! risk "No confundas adopción con utilidad"
+
+    El primer objetivo no es que el equipo adopte Method.
+
+    Es que el trabajo gane continuidad suficiente para decidir, construir o aprender mejor.
+
 
 ## Principio guía
 
-Usa el sistema existente como una fuente de pistas. Recupera suficiente continuidad de dominio, proceso, comportamiento y decisión para cambiar el sistema con seguridad.
+!!! principle "Principio de Continuidad"
 
-No preserves complejidad accidental a menos que el dominio todavía dependa de ella.
+    Introduce VSlices Method mediante una costura útil de continuidad.
+
+Preserva una pieza de conocimiento de la que depende el trabajo futuro.
+
+Si ayuda, repite. Si no ayuda, reduce la estructura hasta que ayude.
+

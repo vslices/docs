@@ -2,81 +2,98 @@
 
 Un escenario "Digitalizado" es un contexto de trabajo donde el software ya representa parte del negocio, proceso u organización.
 
-Esto no significa que el dominio ya esté entendido. El software existente es evidencia, no es automáticamente verdad del dominio.
+Esto no significa que el dominio ya esté entendido. El software existente es evidencia, no es automáticamente la verdad del dominio.
 
 ## Idea central
 
-En un escenario digitalizado, VSlices Method ayuda al equipo a separar tres cosas:
+!!! principle "Principio de continuidad"
 
-* cómo ocurre realmente el trabajo
-* cómo el software actual representa ese trabajo
-* cómo las personas han adaptado su trabajo alrededor del software
+    En un escenario digitalizado, VSlices Method ayuda al equipo a separar tres cosas:
+
+    * cómo ocurre realmente el trabajo;
+    * cómo el software actual representa ese trabajo;
+    * cómo las personas han adaptado su trabajo alrededor del software.
 
 El objetivo no es hacer ingeniería inversa de todo el sistema. Es recuperar suficiente continuidad para tomar la siguiente decisión responsable.
+
 
 ## Cuándo aplica esta guía
 
 Usa esta guía cuando:
 
 * ya existe software
-* los workflows están parcial o totalmente soportados por un sistema
+* los flujos de trabajo están parcial o totalmente soportados por un sistema
 * las personas dependen de pantallas, reportes, formularios, APIs o automatizaciones actuales
 * el equipo necesita mejorar, reemplazar o extender comportamiento existente
 * la documentación falta, está desactualizada o está desconectada de la implementación
 * el conocimiento de negocio está oculto dentro de código, tickets o hábitos de usuario
 
-Esta guía puede aplicar aunque el proyecto ya use o no use VSlices Method.
+Esta guía puede aplicarse aunque el proyecto ya use o no use VSlices Method.
 
 ## Riesgo principal
 
-El riesgo principal es tratar el software existente como la verdad del dominio. Un sistema puede contener:
+El riesgo principal es tratar el software existente como la verdad del dominio.
+
+Un sistema puede contener:
 
 * reglas reales de negocio
 * decisiones obsoletas
-* comportamiento de workaround
+* workarounds convertidos en comportamiento
 * restricciones accidentales
 * compromisos técnicos
 * conceptos faltantes
 * nombres engañosos
 * comportamientos que los usuarios aprendieron a tolerar
 
-Si el equipo copia el sistema existente sin cuestionarlo, puede preservar complejidad accidental como si fuera conocimiento del dominio.
+
+!!! risk "Riesgo a evitar"
+
+    Si el equipo copia el sistema existente sin cuestionarlo, puede preservar complejidad accidental como si fuera conocimiento del dominio.
+
 
 ## Modalidad inicial útil
 
-Un escenario digitalizado normalmente comienza con **Context-First** o **Problem-First**.
+Un escenario digitalizado normalmente comienza con [**Context-First**](../../design/modalities/context-first/index.md) o [**Problem-First**](../../design/modalities/problem-first/index.md), porque el equipo necesita entender qué representa el sistema actual y qué problema conviene resolver primero.
 
-| Situación | Modalidad útil | Razón |
-| --- | --- | --- |
-| El sistema existe, pero el contexto de negocio circundante no está claro. | [**Context-First**](../../design/modalities/context-first/index.md) | El equipo necesita entender qué está intentando representar el software. |
-| Existe un dolor claro en el sistema actual, pero la causa no está clara. | [**Problem-First**](../../design/modalities/problem-first/index.md) | El equipo necesita entender el problema antes de cambiar el comportamiento. |
-| Una mejora pequeña y segura puede revelar evidencia útil. | [**Slice-First**](../../design/modalities/slice-first/index.md) | El equipo puede aprender mediante un cambio acotado sin pretender entenderlo todo. |
+| Situación                                                                 | Modalidad útil                                                      | Razón                                                                              |
+| ------------------------------------------------------------------------- | ------------------------------------------------------------------- | ---------------------------------------------------------------------------------- |
+| El sistema existe, pero el contexto de negocio circundante no está claro. | **Context-First** | El equipo necesita entender qué está intentando representar el software.           |
+| Existe un dolor claro en el sistema actual, pero la causa no está clara.  | **Problem-First** | El equipo necesita entender el problema antes de cambiar el comportamiento.        |
+| Una mejora pequeña y segura puede revelar evidencia útil.                 | [**Slice-First**](../../design/modalities/slice-first/index.md)     | El equipo puede aprender mediante un cambio acotado sin pretender entenderlo todo. |
 
-Slice-First puede ser útil, pero solo cuando el cambio es lo suficientemente pequeño como para evitar propagar supuestos mal entendidos.
+
+!!! risk "Riesgo a evitar"
+
+    Slice-First puede ser útil, pero solo cuando el cambio es lo suficientemente pequeño como para evitar propagar supuestos mal entendidos.
+
 
 ## Qué observar primero
 
-Antes de cambiar el sistema, observa cómo el trabajo actual se conecta con el software actual. Algunas preguntas útiles son:
+Antes de cambiar el sistema, observa cómo el trabajo actual se conecta con el software actual.
 
-* ¿Qué trabajo real apoya este software?
-* ¿Qué workflows dependen de él?
-* ¿Qué actores lo usan directa o indirectamente?
-* ¿Qué partes del sistema son confiables?
-* ¿Qué partes se evitan, se corrigen manualmente o se rodean?
-* ¿Qué términos de negocio aparecen en la interfaz, el código o la documentación?
-* ¿Qué comportamientos se esperan pero no son explícitos?
-* ¿Qué errores o excepciones ocurren repetidamente?
-* ¿Qué decisiones son históricas, técnicas o ya no se entienden?
+| Observa                                                                       | Para entender                                                    |
+| ----------------------------------------------------------------------------- | ---------------------------------------------------------------- |
+| Qué trabajo real apoya este software                                          | Qué parte del negocio está siendo representada o asistida.       |
+| Qué flujos de trabajo dependen de él                                          | Qué procesos podrían verse afectados por un cambio.              |
+| Qué actores lo usan directa o indirectamente                                  | Quiénes dependen del comportamiento actual.                      |
+| Qué partes del sistema son confiables                                         | Qué comportamiento puede tratarse como evidencia estable.        |
+| Qué partes se evitan, se corrigen manualmente o se rodean                     | Qué fricciones revelan límites del sistema actual.               |
+| Qué términos de negocio aparecen en la interfaz, el código o la documentación | Qué lenguaje puede revelar intención de dominio.                 |
+| Qué comportamientos se esperan pero no son explícitos                         | Qué conocimiento puede estar oculto en uso, soporte u operación. |
+| Qué errores o excepciones ocurren repetidamente                               | Qué fragilidades deberían entenderse antes de cambiar.           |
+| Qué decisiones son históricas, técnicas o ya no se entienden                  | Qué partes requieren recuperación de contexto antes de avanzar.  |
 
 El objetivo no es hacer un análisis completo. Es encontrar dónde falta continuidad.
 
 ## Conocimiento a preservar
 
-Preserva conocimiento cuando afecta el siguiente cambio. El conocimiento útil puede incluir:
+Preserva conocimiento cuando afecta el siguiente cambio.
+
+El conocimiento útil puede incluir:
 
 * términos del dominio encontrados en el sistema
 * diferencias entre el trabajo real y el comportamiento del software
-* workflows existentes afectados por el cambio
+* flujos de trabajo existentes afectados por el cambio
 * reglas ocultas dentro de la implementación
 * workarounds de usuarios
 * dolores actuales
@@ -84,7 +101,12 @@ Preserva conocimiento cuando afecta el siguiente cambio. El conocimiento útil p
 * decisiones que deberían mantenerse, cambiarse o cuestionarse
 * señales de validación desde usuarios, soporte u operación
 
-No documentes todo el sistema existente por defecto. Preserva lo que el trabajo futuro no debería tener que redescubrir.
+!!! principle "Principio de continuidad"
+
+    No documentes todo el sistema existente por defecto.
+
+    Preserva lo que el trabajo futuro no debería tener que redescubrir.
+
 
 ## Apoyo documental
 
@@ -103,7 +125,7 @@ Los documentos pueden ayudar a recuperar continuidad en un escenario digitalizad
 
 Usa el documento más liviano que proteja continuidad.
 
-> La afinidad documental por etapa de iteración se describe en la página [Afinidad documento-etapa](../document-stage-affinity.md).
+{% include-markdown "shared/readings/document-stage-affinity-admonition.md" %}
 
 ## Enfoque sugerido
 
@@ -111,19 +133,22 @@ Comienza seleccionando un área de cambio. No intentes entender primero todo el 
 
 Un enfoque útil es:
 
-1. Identificar el dolor actual, la oportunidad o la solicitud de cambio.
-2. Ubicar los workflows, actores y comportamiento del sistema alrededor de eso.
-3. Comparar el comportamiento actual del software con el trabajo real.
-4. Nombrar qué se sabe, qué es incierto y qué es riesgoso.
-5. Preservar solo el conocimiento necesario para la siguiente decisión responsable.
-6. Elegir el cambio seguro más pequeño o la siguiente investigación.
-7. Usar feedback para actualizar el entendimiento.
+1. Identificar el dolor actual, la oportunidad o la solicitud de cambio
+2. Ubicar los flujos de trabajo, actores y comportamiento del sistema alrededor de eso
+3. Comparar el comportamiento actual del software con el trabajo real
+4. Nombrar lo que se sabe, lo que es incierto y lo que es riesgoso
+5. Guardar solo el conocimiento necesario para la siguiente decisión responsable
+6. Elegir el cambio pequeño más seguro o la siguiente investigación
+7. Usar feedback para actualizar el entendimiento
 
 El equipo debería moverse entre entender y construir a medida que aparece evidencia.
 
+
 ## Errores comunes
 
-Los escenarios digitalizados suelen fallar cuando los equipos asumen que el sistema se explica solo. Algunos errores comunes incluyen:
+Los escenarios digitalizados suelen fallar cuando los equipos asumen que el sistema se explica solo.
+
+Algunos errores comunes incluyen:
 
 * copiar comportamiento existente sin entender por qué existe
 * rediseñarlo todo porque el sistema actual se ve desordenado
@@ -134,10 +159,19 @@ Los escenarios digitalizados suelen fallar cuando los equipos asumen que el sist
 * asumir que las decisiones antiguas siguen siendo válidas
 * asumir que las decisiones antiguas estaban mal solo porque son antiguas
 
-El software existente debería respetarse como evidencia. No debería obedecerse como verdad.
+!!! risk "No confundas evidencia con verdad"
+
+    El software existente debería respetarse como evidencia.
+
+    No debería obedecerse como verdad.
+
 
 ## Principio guía
 
-Usa el sistema existente como una fuente de pistas. Recupera suficiente continuidad de dominio, proceso, comportamiento y decisión para cambiar el sistema con seguridad.
+!!! principle "Principio - General"
 
-No preserves complejidad accidental a menos que el dominio todavía dependa de ella.
+    Usa el sistema existente como una fuente de pistas. 
+
+    No conserves complejidad accidental a menos que el dominio todavía dependa de ella.
+
+Recupera suficiente continuidad de dominio, proceso, comportamiento y decisión para cambiar el sistema con seguridad.

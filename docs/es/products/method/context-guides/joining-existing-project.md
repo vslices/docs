@@ -1,21 +1,20 @@
 # Escenario "Unirse a un proyecto existente"
 
-Un escenario "Unirse a un proyecto existente" es un contexto de trabajo donde una persona o equipo entra a un trabajo que ya está en curso. El proyecto puede usar VSlices Method, o puede usar otra forma de trabajo.
+Un escenario "Unirse a un proyecto existente" es un contexto de trabajo donde una persona o equipo entra a un trabajo que ya está en curso.
+
+El proyecto puede usar VSlices Method, o puede usar otra forma de trabajo.
 
 El objetivo no es reiniciar el proyecto. Es unirse al camino de continuidad actual antes de cambiar el trabajo.
 
 ## Idea central
 
-Unirse a un proyecto existente no debería comenzar solo desde tareas. Las tareas describen lo que alguien debería hacer, pero no siempre explican:
+!!! principle "Principio de Continuidad"
 
-- por qué importa el trabajo
-- qué contexto lo sostiene
-- qué decisiones le dieron forma
-- qué feedback lo cambió
+    Unirse a un proyecto existente no debería comenzar solo desde tareas.
 
-La pregunta no es _¿Qué tareas deberíamos tomar?_
+Las tareas describen lo que alguien debería hacer, pero no siempre explican por qué importa el trabajo, qué contexto lo sostiene, qué decisiones le dieron forma o qué feedback lo cambió.
 
-La pregunta es: __¿De qué camino de continuidad forman parte estas tareas?__
+La pregunta no es *¿Qué tareas deberíamos tomar?*, sino *¿de qué camino de continuidad forman parte estas tareas?*.
 
 ## Cuándo aplica esta guía
 
@@ -30,71 +29,86 @@ Usa esta guía cuando:
 * el proyecto tiene stakeholders, usuarios o restricciones operativas activas
 * el equipo necesita contribuir sin perder el contexto original
 
-Esta guía aplica tanto si el proyecto es nuevo para una persona como si es nuevo para todo el equipo.
+Esta guía aplica tanto cuando una persona se incorpora a un proyecto existente como cuando un equipo completo entra a trabajo ya iniciado.
 
 ## Riesgo principal
 
-El riesgo principal es entrar por ejecución sin entender la intención. Esto puede crear:
+El riesgo principal es entrar por ejecución sin entender la intención.
+
+Esto puede crear:
 
 * cambios que resuelven una tarea, pero no el problema
 * descubrimiento duplicado
 * decisiones repetidas
-* implementación que viola el contexto previo
+* implementación que contradice el contexto previo
 * documentación que ignora conocimiento existente
 * feedback desconectado del trabajo actual
 * mejoras locales que debilitan el sistema completo
 
 Un proyecto en curso ya tiene historia. Parte de esa historia es conocimiento útil; otra parte puede estar desactualizada o ser accidental.
 
-El equipo debería entender lo suficiente para distinguir la diferencia.
+!!! risk "Riesgo a evitar"
+
+    Antes de contribuir, el equipo necesita distinguir qué continuidad debe respetarse, qué decisiones deben revisarse y qué complejidad no debería heredarse.
+
 
 ## Modalidad inicial útil
 
-Unirse a un proyecto existente no siempre requiere elegir una nueva modalidad. Primero, identifica el contexto de trabajo actual.
+Introducir Method en un proyecto en curso debería comenzar desde la incertidumbre que más está afectando el trabajo.
 
-| Situación | Modalidad útil | Razón |
-| --- | --- | --- |
-| El contexto, los límites o la historia del proyecto no están claros. | [**Context-First**](../../design/modalities/context-first/index.md) | El equipo necesita entender la continuidad circundante antes de actuar. |
-| El trabajo actual está centrado en un dolor conocido o una decisión activa. | [**Problem-First**](../../design/modalities/problem-first/index.md) | El equipo necesita entender el problema detrás de las tareas. |
-| El proyecto tiene suficiente contexto y una contribución pequeña puede producir feedback de forma segura. | [**Slice-First**](../../design/modalities/slice-first/index.md) | El equipo puede aprender contribuyendo con un cambio acotado. |
-| El proyecto ya tiene una modalidad activa. | Continuar la modalidad actual | El equipo debería unirse al camino de continuidad actual antes de cambiar el énfasis. |
+| Situación                                                                  | Modalidad útil                                                      | Razón                                                                          |
+| -------------------------------------------------------------------------- | ------------------------------------------------------------------- | ------------------------------------------------------------------------------ |
+| El equipo no entiende dónde se está perdiendo continuidad.                 | [**Context-First**](../../design/modalities/context-first/index.md) | El equipo necesita entender el contexto antes de cambiar cómo trabaja.         |
+| Existe un dolor claro en la forma actual de trabajar.                      | [**Problem-First**](../../design/modalities/problem-first/index.md) | El equipo puede introducir Method resolviendo una fricción concreta.           |
+| Una práctica pequeña puede mejorar el trabajo sin cambiar todo el proceso. | [**Slice-First**](../../design/modalities/slice-first/index.md)     | El equipo puede validar Method mediante una intervención acotada y observable. |
 
-La primera responsabilidad es orientarse. Cambiar de modalidad demasiado temprano puede reiniciar trabajo innecesariamente.
+!!! risk "Riesgo a evitar"
+
+    La modalidad elegida debería responder a la incertidumbre de adopción, no a la preferencia personal del equipo.
+
 
 ## Qué observar primero
 
-Antes de contribuir, observa cómo está conectado el trabajo actual. Algunas preguntas útiles son:
+Antes de sugerir prácticas de Method, observa cómo se mueve actualmente el trabajo.
 
-* ¿Qué escenario o work line está activo?
-* ¿Qué problema u oportunidad se está abordando?
-* ¿Qué decisiones ya dan forma a la dirección actual?
-* ¿Qué documentos o conversaciones preservan el contexto actual?
-* ¿Qué implementación ya existe?
-* ¿Qué feedback ha cambiado recientemente el trabajo?
-* ¿Qué permanece incierto?
-* ¿Quién depende del comportamiento actual?
-* ¿Qué restricciones son técnicas, de negocio u operativas?
-* ¿Qué partes del trabajo todavía están siendo validadas?
+| Observa                                                    | Para entender                                                   |
+| ---------------------------------------------------------- | --------------------------------------------------------------- |
+| Dónde se pierde intención                                  | Qué parte del trabajo deja de explicar por qué importa.         |
+| Dónde las personas repiten las mismas explicaciones        | Qué conocimiento depende demasiado de memoria o conversación.   |
+| Dónde se toman decisiones                                  | Qué momentos necesitan preservar contexto.                      |
+| Dónde se olvidan decisiones                                | Qué continuidad se pierde entre decisión y trabajo futuro.      |
+| Dónde la documentación deja de coincidir con la realidad   | Qué documentos necesitan actualización, reducción o reemplazo.  |
+| Dónde la implementación pierde contexto de negocio         | Qué comportamiento necesita recuperar intención.                |
+| Dónde desaparece el feedback                               | Qué aprendizaje no está cambiando decisiones futuras.           |
+| Qué handoffs crean confusión                               | Dónde se rompe la continuidad entre personas, equipos o etapas. |
+| Qué pequeña mejora ayudaría al trabajo actual de inmediato | Dónde Method puede entrar con utilidad real y poco peso.        |
 
-El objetivo no es aprender todo el proyecto. Es entender el camino de continuidad del trabajo al que se está entrando.
+El objetivo no es juzgar el proceso del equipo. Es encontrar una brecha de continuidad que valga la pena mejorar.
 
 ## Conocimiento a preservar
 
 Unirse a un proyecto existente puede revelar continuidad ausente o frágil.
 
-Preserva conocimiento cuando ayude a nuevos contribuyentes o al trabajo futuro a evitar suposiciones. El conocimiento útil puede incluir:
+Preserva conocimiento cuando ayude a quienes se incorporan o al trabajo futuro a evitar suposiciones.
+
+El conocimiento útil puede incluir:
 
 * vocabulario del proyecto que no es obvio
 * decisiones que explican la implementación actual
 * supuestos activos
 * restricciones conocidas
-* límites actuales de workflow o caso de uso
+* límites actuales de flujo de trabajo o caso de uso
 * resultados de validación que dieron forma a la dirección actual
 * diferencias entre la intención documentada y la implementación real
 * preguntas de onboarding que revelan conocimiento oculto
 * conocimiento desactualizado que debería revisarse
 
-Las personas nuevas suelen exponer conocimiento implícito. Esas preguntas no deberían tratarse como interrupciones. Son señales de __dónde la continuidad puede necesitar apoyo__.
+!!! principle "Principio de Continuidad"
+
+    Las personas nuevas suelen exponer conocimiento implícito.
+
+    Sus preguntas no deberían tratarse como interrupciones. Son señales de dónde la continuidad puede necesitar apoyo.
+
 
 ## Apoyo documental
 
@@ -111,7 +125,7 @@ Las personas nuevas suelen exponer conocimiento implícito. Esas preguntas no de
 
 Usa documentos para unirte al trabajo, no para auditar todo el proyecto.
 
-> La afinidad documental por etapa de iteración se describe en la página [Afinidad documento-etapa](../document-stage-affinity.md).
+{% include-markdown "shared/readings/document-stage-affinity-admonition.md" %}
 
 ## Enfoque sugerido
 
@@ -119,12 +133,12 @@ Comienza con el trabajo activo. No intentes entenderlo todo antes de contribuir.
 
 Un enfoque útil es:
 
-1. Identificar el work item, caso de uso, capability o work line actual.
+1. Identificar el elemento de trabajo, caso de uso, capacidad o línea de trabajo actual.
 2. Encontrar el contexto y las decisiones que explican por qué existe.
 3. Entender la etapa actual de la iteración.
 4. Aclarar qué se sabe, qué es incierto y qué ya fue decidido.
 5. Contribuir a una parte pequeña del trabajo.
-6. Preservar cualquier conocimiento faltante descubierto mientras te incorporas.
+6. Preservar el conocimiento faltante descubierto durante la incorporación.
 7. Devolver el feedback al contexto compartido.
 
 El equipo debería entrar por continuidad y luego contribuir mediante entrega.
@@ -147,6 +161,10 @@ Los proyectos existentes necesitan respeto y curiosidad. No obediencia ciega. No
 
 ## Principio guía
 
-Únete al camino de continuidad antes de unirte a la lista de tareas. Entiende suficiente contexto, decisiones, comportamiento y feedback para contribuir sin romper la intención.
+!!! principle "Principio de Continuidad"
+
+    Únete al camino de continuidad antes de unirte a la lista de tareas.
+
+Entiende suficiente contexto, decisiones, comportamiento y feedback para contribuir sin romper la intención.
 
 Preserva el conocimiento que te ayudó a incorporarte, para que la siguiente persona no tenga que redescubrirlo.

@@ -128,9 +128,7 @@ Documents can help make implicit work visible.
 
 Use documents to preserve understanding, not to formalize everything too early.
 
-!!! reading "Recommended reading"
-
-    Document affinity by iteration stage is described in [Document-stage affinity](../document-stage-affinity.md).
+{% include-markdown "shared/readings/document-stage-affinity-admonition.md" %}
 
 ## Suggested approach
 

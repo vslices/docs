@@ -86,6 +86,7 @@ extra_css:
     - stylesheets/base.css
     - stylesheets/admonition.experimental.css
     - stylesheets/admonition.principle.css
+    - stylesheets/admonition.reading.css
     - stylesheets/admonition.risk.css
     - stylesheets/mermaid.css
     - stylesheets/hero.css
@@ -123,11 +124,11 @@ nav:
 
             - Context Guides:
                 - Overview: products/method/context-guides/index.md
-                - Start in a non-digitalized scenario: products/method/context-guides/non-digitalized-scenario.md
-                - Start in a digitalized scenario: products/method/context-guides/digitalized-scenario.md
-                - Joining existing project: products/method/context-guides/joining-existing-project.md
-                - Introducing Method in on-going projects: products/method/context-guides/introducing-method.md
-                
+                - "\"Non-digitalized\" scenario": products/method/context-guides/non-digitalized-scenario.md
+                - "\"Digitalized\" scenario": products/method/context-guides/digitalized-scenario.md
+                - "\"Joining project\" scenario": products/method/context-guides/joining-existing-project.md
+                - "\"Introducing method\" scenario": products/method/context-guides/introducing-method.md
+
             - Document-Stage affinity: products/method/document-stage-affinity.md
         - VSlices Design:
             - Overview: products/design/index.md

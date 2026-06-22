@@ -109,7 +109,7 @@ Newcomers often expose implicit knowledge. Those questions should not be treated
 
 Use documents to join the work, not to audit the whole project.
 
-> Document affinity by iteration stage is described in the [Document-Stage affinity](../document-stage-affinity.md) page.
+{% include-markdown "shared/readings/document-stage-affinity-admonition.md" %}
 
 ## Suggested approach
 
