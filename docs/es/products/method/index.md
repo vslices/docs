@@ -78,7 +78,6 @@ Method debería seguir siendo útil incluso cuando no hay código de VSlices Fra
 
 VSlices Method está organizado alrededor de:
 
-* **[afinidad documento-etapa](document-stage-affinity.md)**, para entender cómo los documentos pueden apoyar cada etapa de trabajo
 * **[patrones](patterns/index.md)**, para decisiones recurrentes de Method como colaboración, selección de modalidad y ciclos de aprendizaje
 * **[guías de integración](context-guides/index.md)**, para aplicar Method en distintos contextos de trabajo
 

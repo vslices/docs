@@ -56,14 +56,49 @@ Introducing Method into an ongoing project should start from the uncertainty tha
 
 | Situation                                                                     | Useful modality                                                     | Reason                                                                            |
 | ----------------------------------------------------------------------------- | ------------------------------------------------------------------- | --------------------------------------------------------------------------------- |
-| The team feels repeated pain, but does not know where continuity is breaking. | [**Context-First**](../../design/modalities/context-first/index.md) | The team needs to understand the loss of continuity before changing how it works. |
-| A small artifact or practice can improve ongoing work immediately.            | [**Problem-First**](../../design/modalities/problem-first/index.md) | The team can validate Method through a bounded and useful improvement.            |
-| The surrounding work context is too uncertain to intervene safely.            | [**Slice-First**](../../design/modalities/slice-first/index.md)     | The team needs to learn through a small intervention before expanding the change. |
+| The team feels repeated pain, but does not know where continuity is breaking. | [**Context-First**](../../../design/modalities/context-first/index.md) | The team needs to understand the loss of continuity before changing how it works. |
+| A small artifact or practice can improve ongoing work immediately.            | [**Problem-First**](../../../design/modalities/problem-first/index.md) | The team can validate Method through a bounded and useful improvement.            |
+| The surrounding work context is too uncertain to intervene safely.            | [**Slice-First**](../../../design/modalities/slice-first/index.md)     | The team needs to learn through a small intervention before expanding the change. |
 
 !!! risk "Risk to avoid"
 
     The selected modality should respond to adoption uncertainty, not to the team's personal preference.
 
+
+## Affinity with continuity paths
+
+Introducing Method usually has affinity with the path where continuity is being lost most visibly.
+
+This is not about presenting every continuity path to the team.
+
+It is about finding a small and useful entry point.
+
+| Continuity path | Typical affinity | Use in this context |
+| --- | --- | --- |
+| Business scenario | Medium | Useful when the team loses context about why the work exists or what operational reality it is trying to improve. |
+| Domain context | High | Useful when language, rules, boundaries, or concepts become confused across people, documents, tickets, or code. |
+| Software project | High | Useful when decisions, technical changes, or implementation boundaries become disconnected from the context that originated them. |
+| Client product | Low | Useful when the team needs to connect current work with visible behavior for users or clients. |
+| Consumable service | Low | Useful when continuity loss happens around APIs, integrations, dependencies between systems, or shared capabilities. |
+
+!!! principle "Affinity principle"
+
+    Introduce Method through the path where continuity loss most affects real work.
+
+In this scenario, the primary path should be chosen according to the continuity seam the team needs now.
+
+| Observed loss | Path worth prioritizing |
+| --- | --- |
+| The team does not understand why the current work matters. | Business scenario |
+| The team uses ambiguous or inconsistent terms. | Domain context |
+| Technical decisions are made, but not preserved. | Software project |
+| Tickets or documents do not explain the expected visible behavior. | Client product |
+| Integrations change without clarity about capabilities, contracts, or dependencies. | Consumable service |
+
+!!! risk "Heavy adoption risk"
+
+    If introducing Method requires explaining every path, you are probably introducing too much. Start from the seam that already hurts.
+    
 
 ## What to observe first
 
@@ -111,14 +146,14 @@ Documents can help recover continuity in a digitized scenario.
 
 | Knowledge need                                                     | Useful document                                                                                                                                                                         |
 | ------------------------------------------------------------------ | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Terms are ambiguous or inconsistent.                               | Domain Vocabulary — [Taxonomy](../../docs-standard/taxonomy/domain-vocabulary.md) · [Template](https://github.com/vslices/docs-standard/blob/main/templates/domain-vocabulary.md)       |
-| The surrounding business scenario is unclear.                      | Context Document — [Taxonomy](../../docs-standard/taxonomy/context-document.md) · [Template](https://github.com/vslices/docs-standard/blob/main/templates/context-document.md)          |
-| The current work depends on workflows or handoffs.                 | Process Document — [Taxonomy](../../docs-standard/taxonomy/process-document.md) · [Template](https://github.com/vslices/docs-standard/blob/main/templates/process-document.md)          |
-| A specific behavior needs to be changed or preserved.              | Use Case Document — [Taxonomy](../../docs-standard/taxonomy/use-case-document.md) · [Template](https://github.com/vslices/docs-standard/blob/main/templates/use-case-document.md)       |
-| A stable business ability is emerging.                             | Capability Document — [Taxonomy](../../docs-standard/taxonomy/capability-document.md) · [Template](https://github.com/vslices/docs-standard/blob/main/templates/capability-document.md) |
-| A direction must be chosen under tradeoffs.                        | Decision Record — [Taxonomy](../../docs-standard/taxonomy/decision-record.md) · [Template](https://github.com/vslices/docs-standard/blob/main/templates/decision-record.md)             |
-| Evidence from use, operation, or review changes the understanding. | Validation Note — [Taxonomy](../../docs-standard/taxonomy/validation-note.md) · [Template](https://github.com/vslices/docs-standard/blob/main/templates/validation-note.md)             |
-| Observations are still local, uncertain, or temporary.             | Support Note — [Taxonomy](../../docs-standard/taxonomy/support-note.md) · [Template](https://github.com/vslices/docs-standard/blob/main/templates/support-note.md)                      |
+| Terms are ambiguous or inconsistent.                               | Domain Vocabulary — [Taxonomy](../../../docs-standard/taxonomy/domain-vocabulary.md) · [Template](https://github.com/vslices/docs-standard/blob/main/templates/domain-vocabulary.md)       |
+| The surrounding business scenario is unclear.                      | Context Document — [Taxonomy](../../../docs-standard/taxonomy/context-document.md) · [Template](https://github.com/vslices/docs-standard/blob/main/templates/context-document.md)          |
+| The current work depends on workflows or handoffs.                 | Process Document — [Taxonomy](../../../docs-standard/taxonomy/process-document.md) · [Template](https://github.com/vslices/docs-standard/blob/main/templates/process-document.md)          |
+| A specific behavior needs to be changed or preserved.              | Use Case Document — [Taxonomy](../../../docs-standard/taxonomy/use-case-document.md) · [Template](https://github.com/vslices/docs-standard/blob/main/templates/use-case-document.md)       |
+| A stable business ability is emerging.                             | Capability Document — [Taxonomy](../../../docs-standard/taxonomy/capability-document.md) · [Template](https://github.com/vslices/docs-standard/blob/main/templates/capability-document.md) |
+| A direction must be chosen under tradeoffs.                        | Decision Record — [Taxonomy](../../../docs-standard/taxonomy/decision-record.md) · [Template](https://github.com/vslices/docs-standard/blob/main/templates/decision-record.md)             |
+| Evidence from use, operation, or review changes the understanding. | Validation Note — [Taxonomy](../../../docs-standard/taxonomy/validation-note.md) · [Template](https://github.com/vslices/docs-standard/blob/main/templates/validation-note.md)             |
+| Observations are still local, uncertain, or temporary.             | Support Note — [Taxonomy](../../../docs-standard/taxonomy/support-note.md) · [Template](https://github.com/vslices/docs-standard/blob/main/templates/support-note.md)                      |
 
 Use the lightest document that protects continuity.
 

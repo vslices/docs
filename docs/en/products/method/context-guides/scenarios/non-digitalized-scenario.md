@@ -51,19 +51,53 @@ A not digitized scenario may contain:
 
 ## Useful initial modality
 
-A not digitized scenario usually starts with [**Context-First**](../../design/modalities/context-first/index.md), because the team still needs to understand how the work happens before deciding what should become software.
+A not digitized scenario usually starts with [**Context-First**](../../../design/modalities/context-first/index.md), because the team still needs to understand how the work happens before deciding what should become software.
 
 | Situation                                                    | Useful modality                                                     | Reason                                                                         |
 | ------------------------------------------------------------ | ------------------------------------------------------------------- | ------------------------------------------------------------------------------ |
 | The team does not understand how the work currently happens. | **Context-First**                                                   | The next decision needs a broader understanding of the domain and process.     |
-| There is a clear pain inside the manual work.                | [**Problem-First**](../../design/modalities/problem-first/index.md) | The team can focus on understanding the problem without assuming the solution. |
-| A small experiment can reveal how people react to support.   | [**Slice-First**](../../design/modalities/slice-first/index.md)     | The team can learn through a bounded prototype or a vertical slice.            |
+| There is a clear pain inside the manual work.                | [**Problem-First**](../../../design/modalities/problem-first/index.md) | The team can focus on understanding the problem without assuming the solution. |
+| A small experiment can reveal how people react to support.   | [**Slice-First**](../../../design/modalities/slice-first/index.md)     | The team can learn through a bounded prototype or a vertical slice.            |
 
 !!! risk "Risk to avoid"
 
     Slice-First should be used carefully in this scenario.
 
     A small slice is useful only when it helps the team learn without pretending that the whole context is already understood.
+
+
+## Affinity with continuity paths
+
+A non-digitalized scenario usually has stronger affinity with the paths that help understand the current reality before representing it in software.
+
+Not every path appears with the same strength at the beginning.
+
+| Continuity path | Typical affinity | Use in this context |
+| --- | --- | --- |
+| Business scenario | High | Understand where the work happens, who participates, what activates it, and why it matters. |
+| Domain context | High | Preserve language, rules, responsibilities, decisions, and meanings that still live in people or habits. |
+| Client product | Medium | Appears when the team starts imagining visible behavior that could support users or clients. |
+| Software project | Low at the beginning | Increases when understanding starts becoming a concrete technical initiative. |
+| Consumable service | Low at the beginning | Increases if the work needs to expose, consume, or coordinate capabilities between systems. |
+
+!!! principle "Affinity principle"
+
+    Start from the paths that explain the current reality. Do not make a software idea the primary path too early.
+
+
+In this scenario, the primary path should be chosen according to which part of the manual reality still needs to be understood.
+
+| Observed situation | Path worth prioritizing |
+| --- | --- |
+| It is not clear where the work happens or why it matters. | Business scenario |
+| People use different language to explain the same thing. | Domain context |
+| The team is already defining a first experience or software-supported flow. | Client product |
+| There is already a concrete technical initiative to implement support. | Software project |
+| The solution will depend on integrations, APIs, or shared capabilities. | Consumable service |
+
+!!! risk "Premature solution risk"
+
+    If Software project or Client product dominate too early, the team may start designing the solution before understanding the work.
 
 
 ## What to observe first
@@ -117,14 +151,14 @@ Documents can help make implicit work visible.
 
 | Knowledge need                                            | Useful document                                                                                                                                                                         |
 | --------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| People use terms inconsistently.                          | Domain Vocabulary — [Taxonomy](../../docs-standard/taxonomy/domain-vocabulary.md) · [Template](https://github.com/vslices/docs-standard/blob/main/templates/domain-vocabulary.md)       |
-| The surrounding scenario needs to be understood.          | Context Document — [Taxonomy](../../docs-standard/taxonomy/context-document.md) · [Template](https://github.com/vslices/docs-standard/blob/main/templates/context-document.md)          |
-| The work depends on steps, handoffs, or responsibilities. | Process Document — [Taxonomy](../../docs-standard/taxonomy/process-document.md) · [Template](https://github.com/vslices/docs-standard/blob/main/templates/process-document.md)          |
-| A behavior should be supported by software.               | Use Case Document — [Taxonomy](../../docs-standard/taxonomy/use-case-document.md) · [Template](https://github.com/vslices/docs-standard/blob/main/templates/use-case-document.md)       |
-| A stable business ability is emerging.                    | Capability Document — [Taxonomy](../../docs-standard/taxonomy/capability-document.md) · [Template](https://github.com/vslices/docs-standard/blob/main/templates/capability-document.md) |
-| A direction must be chosen under tradeoffs.               | Decision Record — [Taxonomy](../../docs-standard/taxonomy/decision-record.md) · [Template](https://github.com/vslices/docs-standard/blob/main/templates/decision-record.md)             |
-| Early evidence changes what the team believes.            | Validation Note — [Taxonomy](../../docs-standard/taxonomy/validation-note.md) · [Template](https://github.com/vslices/docs-standard/blob/main/templates/validation-note.md)             |
-| Observations are still uncertain, local, or temporary.    | Support Note — [Taxonomy](../../docs-standard/taxonomy/support-note.md) · [Template](https://github.com/vslices/docs-standard/blob/main/templates/support-note.md)                      |
+| People use terms inconsistently.                          | Domain Vocabulary — [Taxonomy](../../../docs-standard/taxonomy/domain-vocabulary.md) · [Template](https://github.com/vslices/docs-standard/blob/main/templates/domain-vocabulary.md)       |
+| The surrounding scenario needs to be understood.          | Context Document — [Taxonomy](../../../docs-standard/taxonomy/context-document.md) · [Template](https://github.com/vslices/docs-standard/blob/main/templates/context-document.md)          |
+| The work depends on steps, handoffs, or responsibilities. | Process Document — [Taxonomy](../../../docs-standard/taxonomy/process-document.md) · [Template](https://github.com/vslices/docs-standard/blob/main/templates/process-document.md)          |
+| A behavior should be supported by software.               | Use Case Document — [Taxonomy](../../../docs-standard/taxonomy/use-case-document.md) · [Template](https://github.com/vslices/docs-standard/blob/main/templates/use-case-document.md)       |
+| A stable business ability is emerging.                    | Capability Document — [Taxonomy](../../../docs-standard/taxonomy/capability-document.md) · [Template](https://github.com/vslices/docs-standard/blob/main/templates/capability-document.md) |
+| A direction must be chosen under tradeoffs.               | Decision Record — [Taxonomy](../../../docs-standard/taxonomy/decision-record.md) · [Template](https://github.com/vslices/docs-standard/blob/main/templates/decision-record.md)             |
+| Early evidence changes what the team believes.            | Validation Note — [Taxonomy](../../../docs-standard/taxonomy/validation-note.md) · [Template](https://github.com/vslices/docs-standard/blob/main/templates/validation-note.md)             |
+| Observations are still uncertain, local, or temporary.    | Support Note — [Taxonomy](../../../docs-standard/taxonomy/support-note.md) · [Template](https://github.com/vslices/docs-standard/blob/main/templates/support-note.md)                      |
 
 Use documents to preserve understanding, not to formalize everything too early.
 

@@ -68,7 +68,7 @@ This Project Story has used these products:
 
 * **[VSlices Method](../../../products/method/index.md)**
 
-  * Used the [Non-digitalized scenario](../../../products/method/context-guides/non-digitalized-scenario.md) context guide in:
+  * Used the [Non-digitalized scenario](../../../products/method/context-guides/scenarios/non-digitalized-scenario.md) context guide in:
 
     * a small case
     * a more relaxed environment

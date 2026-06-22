@@ -123,15 +123,18 @@ nav:
                 - Selección de modalidad: products/method/patterns/modality-selection.md
                 - Cambio de modalidad: products/method/patterns/modality-switching.md
                 - Bucle de aprendizaje: products/method/patterns/learning-loop.md
+            
 
-            - Guías de contexto:
+            - Guías de implementación:
                 - Introducción: products/method/context-guides/index.md
-                - Escenario "No digitalizado": products/method/context-guides/non-digitalized-scenario.md
-                - Escenario "Digitalizado": products/method/context-guides/digitalized-scenario.md
-                - Escenario "Entrar a un proyecto": products/method/context-guides/joining-existing-project.md
-                - Escenario "Introducir method": products/method/context-guides/introducing-method.md
+                - Afinidad Contexto-Camino: products/method/context-guides/context-path-affinity.md
+                - Afinidad Documento-Etapa: products/method/context-guides/document-stage-affinity.md
+                - Escenarios:
+                    - No digitalizado: products/method/context-guides/scenarios/non-digitalized-scenario.md
+                    - Digitalizado: products/method/context-guides/scenarios/digitalized-scenario.md
+                    - Entrar a un proyecto: products/method/context-guides/scenarios/joining-existing-project.md
+                    - Introducir Method: products/method/context-guides/scenarios/introducing-method.md
 
-            - Afinidad Documento-Etapa: products/method/document-stage-affinity.md
 
         - VSlices Design:
             - Introducción: products/design/index.md

@@ -52,17 +52,50 @@ A system may contain:
 
 ## Useful initial modality
 
-A digitized scenario usually starts with [**Context-First**](../../design/modalities/context-first/index.md) or [**Problem-First**](../../design/modalities/problem-first/index.md), because the team needs to understand what the current system represents and which problem should be solved first.
+A digitized scenario usually starts with [**Context-First**](../../../design/modalities/context-first/index.md) or [**Problem-First**](../../../design/modalities/problem-first/index.md), because the team needs to understand what the current system represents and which problem should be solved first.
 
 | Situation                                                              | Useful modality                                                 | Reason                                                                                   |
 | ---------------------------------------------------------------------- | --------------------------------------------------------------- | ---------------------------------------------------------------------------------------- |
 | The system exists, but the surrounding business context is unclear.    | **Context-First**                                               | The team needs to understand what the software is trying to represent.                   |
 | There is a clear pain in the current system, but the cause is unclear. | **Problem-First**                                               | The team needs to understand the problem before changing the behavior.                   |
-| A small and safe improvement can reveal useful evidence.               | [**Slice-First**](../../design/modalities/slice-first/index.md) | The team can learn through a bounded change without pretending to understand everything. |
+| A small and safe improvement can reveal useful evidence.               | [**Slice-First**](../../../design/modalities/slice-first/index.md) | The team can learn through a bounded change without pretending to understand everything. |
 
 !!! risk "Risk to avoid"
 
     Slice-First can be useful, but only when the change is small enough to avoid spreading misunderstood assumptions.
+
+## Affinity with continuity paths
+
+A digitalized scenario usually has stronger affinity with the paths that help recover continuity between the real work, the existing software, and the next change decision.
+
+Not every path should be walked with the same depth.
+
+| Continuity path    | Typical affinity | Use in this context                                                                                                                   |
+| ------------------ | ---------------- | ------------------------------------------------------------------------------------------------------------------------------------- |
+| Business scenario  | High             | Understand what real work the current software represents or supports.                                                                |
+| Domain context     | High             | Separate domain language, rules, and meanings from accidental system names, constraints, or decisions.                                |
+| Software project   | High             | Locate the technical initiative, change boundaries, existing dependencies, and implementation risks.                                  |
+| Client product     | Medium           | Understand visible behavior for users when the change affects screens, forms, reports, or usage flows.                                |
+| Consumable service | Medium           | Understand exposed or consumed capabilities when the change affects APIs, integrations, automations, or dependencies between systems. |
+
+!!! principle "Affinity principle"
+
+    Start from the path that best explains the continuity at risk. Do not force every digitalized scenario to walk every path.
+
+
+In a digitalized scenario, the primary path usually depends on the type of change.
+
+| Observed change                                                      | Path worth prioritizing |
+| -------------------------------------------------------------------- | ----------------------- |
+| The system does not properly reflect how the work currently happens. | Business scenario       |
+| The system terms do not match the business language.                 | Domain context          |
+| The team needs to safely modify an existing codebase.                | Software project        |
+| Visible behavior for users needs to change.                          | Client product          |
+| An API, integration, or automation needs to change.                  | Consumable service      |
+
+!!! risk "Over-recovery risk"
+
+    Recovering continuity does not mean documenting the whole existing system. It means preserving what is needed to change it without losing intent.
 
 
 ## What to observe first
@@ -112,14 +145,14 @@ Documents can help recover continuity in a digitized scenario.
 
 | Knowledge need                                                     | Useful document                                                                                                                                                                         |
 | ------------------------------------------------------------------ | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Terms are ambiguous or inconsistent.                               | Domain Vocabulary — [Taxonomy](../../docs-standard/taxonomy/domain-vocabulary.md) · [Template](https://github.com/vslices/docs-standard/blob/main/templates/domain-vocabulary.md)       |
-| The surrounding business scenario is unclear.                      | Context Document — [Taxonomy](../../docs-standard/taxonomy/context-document.md) · [Template](https://github.com/vslices/docs-standard/blob/main/templates/context-document.md)          |
-| The current work depends on workflows or handoffs.                 | Process Document — [Taxonomy](../../docs-standard/taxonomy/process-document.md) · [Template](https://github.com/vslices/docs-standard/blob/main/templates/process-document.md)          |
-| A specific behavior needs to be changed or preserved.              | Use Case Document — [Taxonomy](../../docs-standard/taxonomy/use-case-document.md) · [Template](https://github.com/vslices/docs-standard/blob/main/templates/use-case-document.md)       |
-| A stable business ability is emerging.                             | Capability Document — [Taxonomy](../../docs-standard/taxonomy/capability-document.md) · [Template](https://github.com/vslices/docs-standard/blob/main/templates/capability-document.md) |
-| A direction must be chosen under tradeoffs.                        | Decision Record — [Taxonomy](../../docs-standard/taxonomy/decision-record.md) · [Template](https://github.com/vslices/docs-standard/blob/main/templates/decision-record.md)             |
-| Evidence from use, operation, or review changes the understanding. | Validation Note — [Taxonomy](../../docs-standard/taxonomy/validation-note.md) · [Template](https://github.com/vslices/docs-standard/blob/main/templates/validation-note.md)             |
-| Observations are still local, uncertain, or temporary.             | Support Note — [Taxonomy](../../docs-standard/taxonomy/support-note.md) · [Template](https://github.com/vslices/docs-standard/blob/main/templates/support-note.md)                      |
+| Terms are ambiguous or inconsistent.                               | Domain Vocabulary — [Taxonomy](../../../docs-standard/taxonomy/domain-vocabulary.md) · [Template](https://github.com/vslices/docs-standard/blob/main/templates/domain-vocabulary.md)       |
+| The surrounding business scenario is unclear.                      | Context Document — [Taxonomy](../../../docs-standard/taxonomy/context-document.md) · [Template](https://github.com/vslices/docs-standard/blob/main/templates/context-document.md)          |
+| The current work depends on workflows or handoffs.                 | Process Document — [Taxonomy](../../../docs-standard/taxonomy/process-document.md) · [Template](https://github.com/vslices/docs-standard/blob/main/templates/process-document.md)          |
+| A specific behavior needs to be changed or preserved.              | Use Case Document — [Taxonomy](../../../docs-standard/taxonomy/use-case-document.md) · [Template](https://github.com/vslices/docs-standard/blob/main/templates/use-case-document.md)       |
+| A stable business ability is emerging.                             | Capability Document — [Taxonomy](../../../docs-standard/taxonomy/capability-document.md) · [Template](https://github.com/vslices/docs-standard/blob/main/templates/capability-document.md) |
+| A direction must be chosen under tradeoffs.                        | Decision Record — [Taxonomy](../../../docs-standard/taxonomy/decision-record.md) · [Template](https://github.com/vslices/docs-standard/blob/main/templates/decision-record.md)             |
+| Evidence from use, operation, or review changes the understanding. | Validation Note — [Taxonomy](../../../docs-standard/taxonomy/validation-note.md) · [Template](https://github.com/vslices/docs-standard/blob/main/templates/validation-note.md)             |
+| Observations are still local, uncertain, or temporary.             | Support Note — [Taxonomy](../../../docs-standard/taxonomy/support-note.md) · [Template](https://github.com/vslices/docs-standard/blob/main/templates/support-note.md)                      |
 
 Use the lightest document that protects continuity.
 

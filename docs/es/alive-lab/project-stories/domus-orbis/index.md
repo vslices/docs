@@ -67,7 +67,7 @@ A la vez permite validar elementos como celulas paralelas, en un mismo contexto:
 Este Project Story ha hecho uso de estos productos:
 
 - __[VSlices Method](../../../products/method/index.md)__
-    - Hizo uso de la guia de contexto de [Escenario "no digitalizado"](../../../products/method/context-guides/non-digitalized-scenario.md) en:
+    - Hizo uso de la guia de contexto de [Escenario "no digitalizado"](../../../products/method/context-guides/scenarios/non-digitalized-scenario.md) en:
         - un caso pequeño
         - un entorno más relajado
 

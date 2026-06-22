@@ -79,7 +79,6 @@ Method should remain useful even when no VSlices Framework code is involved.
 
 VSlices Method is organized around:
 
-* **[document-stage affinity](document-stage-affinity.md)**, for understanding how documents can support each work stage
 * **[patterns](patterns/index.md)**, for recurring Method decisions such as collaboration, modality selection, and learning cycles
 * **[integration guides](context-guides/index.md)**, for applying Method in different work contexts
 
