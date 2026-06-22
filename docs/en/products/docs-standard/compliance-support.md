@@ -1,53 +1,92 @@
-# Compliance Support
+# Compliance support
 
-VSlices Docs Standard prioritizes knowledge continuity over formal compliance. It is not a certified implementation of any external standard.
+VSlices Docs Standard prioritizes knowledge continuity over formal compliance.
 
-It can, however, help teams prepare documentation that is easier to map toward established standards, architecture documentation practices, and compliance-oriented reviews.
+It is not a certified implementation of any external standard and does not declare conformity with specific frameworks, standards, audits, or regulations. It can help prepare documentation that is easier to map to established standards, internal policies, audits, or compliance-oriented reviews.
 
-Teams that require formal compliance should use VSlices Docs Standard as a continuity layer, then add the specific artifacts, controls, reviews, evidence, and approval mechanisms required by their target standard.
+!!! principle "Compliance principle"
+
+    Preserve engineering knowledge first. Add compliance controls when the context requires them.
+
+
+Teams that need formal compliance should use VSlices Docs Standard as a continuity layer and then add the artifacts, controls, reviews, evidence, and approval mechanisms required by their target standard.
 
 ## Position
 
-VSlices Docs Standard is influenced by existing documentation and architecture practices.
+VSlices Docs Standard is influenced by existing documentation, architecture, and traceability practices.
 
-It does not directly implement them. It is to be honest about:
+It does not implement them directly.
 
-* **what VSlices supports**: areas where VSlices documents already provide useful structure.
-* **what VSlices partially supports**: areas where VSlices provides related knowledge, but not the full required form.
-* **what VSlices does not provide**: areas that require additional compliance-specific artifacts or controls.
+This page helps distinguish:
 
-## Standard/Practice support overview
+* **what VSlices can support**: areas where VSlices documentation already provides a useful structure
+* **what VSlices can partially support**: areas where VSlices preserves related knowledge, but not the full required form
+* **what needs to be added**: areas that require specific artifacts, controls, approvals, or evidence
 
-| Standard               | Supports                                                                                                       | Partially supports                                            | Does not provide                                       |
-| ---------------------- | -------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------- | ------------------------------------------------------ |
-| ISO/IEC/IEEE<br/>42010 | <ul><li>Context</li><li>Concerns</li><li>Rationale</li><li>Decisions</li><li>Relationships</li></ul>           | <ul><li>Viewpoints</li><li>Views</li><li>Correspondences</li><li>Architecture<br/>descriptions</li><ul> | Full conforming architecture<br/>description framework     |
-| ISO/IEC/IEEE<br/>29148 | <ul><li>Behavior</li><li>Validation</li><li>Assumptions</li><li>Expected errors</li><li>Traceability</li></ul> | <ul><li>Requirement quality<br/>attributes</li><li>Verification links</li><ul>         | Full requirements specification<br/>and management process |
+## Support summary
 
-| Practice           | Supports                                                                                     | Partially supports                                                                  | Does not provide                               |
-| ------------------ | -------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------- | ----------------------------------------------- |
-| arc42              | <ul><li>Context</li><li>Decisions</li><li>Risks</li><li>Glossary</li><li>Continuity</li><ul> | <ul><li>Runtime</li><li>Deployment</li><li>Building block views</li><ul>            | Complete arc42 structure<br/>by default         |
-| C4 Model           | <ul><li>Context-level thinking</li><li>Boundary awareness</li></ul>                          | <ul><li>Container</li><li>Component</li><li>Code views</li></ul>                    | Diagram notation and visual<br/>model hierarchy |
-| ADR                | <ul><li>Decision reasoning</li><li>Tradeoffs</li><li>Consequences</li></ul>                  | <ul><li>Architecture-specific<br/>decision lifecycle</li><ul>                       | A strict ADR template or<br/>governance process |
-| 4+1 View<br/>Model | <ul><li>Scenarios</li><li>Use-case<br/>oriented thinking</li><ul>                            | <ul><li>Logical</li><li>Process</li><li>Development</li><li>Physical views</li><ul> | Complete 4+1 architecture<br/>view model        |
+The following table does not declare conformity.
+
+It only shows areas where VSlices documents can serve as a basis for preparing, mapping, or complementing documentation required by external references.
+
+!!! risk "Risk to avoid"
+
+    Do not use this table as automatic evidence of formal compliance.
+
+
+| External reference | Can support                                                                    | Can partially support                                                 | Needs to add                                                            |
+| ------------------ | ------------------------------------------------------------------------------ | --------------------------------------------------------------------- | ----------------------------------------------------------------------- |
+| ISO/IEC/IEEE 42010 | Context, concerns, rationale, decisions, and documentary relationships.        | Viewpoints, views, correspondences, and architecture descriptions.    | Conformant architecture description framework.                          |
+| ISO/IEC/IEEE 29148 | Expected behavior, assumptions, expected errors, and lightweight traceability. | Quality attributes, verification, and formal requirements management. | Formal process for specification, review, verification, and management. |
+| arc42              | Context, decisions, risks, glossary, and documentary continuity.               | Runtime, deployment, and building block views.                        | Complete arc42 structure.                                               |
+| C4 Model           | System context and boundary awareness.                                         | Container, component, and code views.                                 | Complete C4 notation, visual hierarchy, and conventions.                |
+| ADR                | Decision rationale, tradeoffs, and consequences.                               | Formal lifecycle for architecture decisions.                          | Strict ADR template, governance, or approval process.                   |
+| 4+1 Model          | Scenarios and use case-oriented reasoning.                                     | Logical, process, development, and physical views.                    | Complete 4+1 architectural view model.                                  |
 
 ## How to use this
 
-Use this document to understand how VSlices Docs Standard can support alignment with external standards, architecture templates, customer policies, audit expectations, or regulatory requirements.
+Use this document to understand how VSlices Docs Standard can support alignment with external standards, architecture templates, client policies, audit expectations, or regulatory requirements.
 
-VSlices documents may contain knowledge that those external requirements also need. However, VSlices Docs Standard does not make that knowledge compliant by itself.
+VSlices can preserve knowledge that those external requirements may also need, but it does not make that knowledge conformant by itself.
 
 When a team needs to align with an external requirement:
 
-- __start with VSlices Docs Standard__: preserve the real engineering knowledge first, including context, processes, behavior, capabilities, decisions, validation, and evolution.
-- __identify the target requirement__: clarify which standard, framework, customer policy, audit expectation, or regulatory requirement must be satisfied.
-- __map existing documents__: connect VSlices documents to the artifacts requested by the target requirement.
-- __identify missing evidence or controls__: find what the target requirement needs that VSlices does not provide by default, such as approvals, review cycles, formal traceability, required diagrams, audit evidence, or specific formats.
-- __extend without disconnecting__: add the required compliance material while keeping it linked to the original engineering knowledge.
+1. **Start with VSlices Docs Standard**
+   Preserve the real engineering knowledge first: context, processes, behavior, capabilities, decisions, validation, and evolution.
 
-The purpose is to reuse VSlices documentation as a continuity base. It is not to claim compliance automatically.
+2. **Identify the target requirement**
+   Clarify which standard, framework, client policy, audit expectation, or regulatory requirement must be satisfied.
 
-## Principle
+3. **Map existing documents**
+   Connect VSlices documents with the artifacts requested by the target requirement.
 
-VSlices Docs Standard should help teams become more prepared for compliance. It should not pretend to replace compliance.
+4. **Identify missing evidence or controls**
+   Find what the target requirement needs and VSlices does not provide by default, such as approvals, review cycles, formal traceability, required diagrams, audit evidence, or specific formats.
 
-> Preserve knowledge first. Add compliance controls when the context requires them.
+5. **Extend without disconnecting**
+   Add the required compliance material while keeping it linked to the original engineering knowledge.
+
+## What this page should not do
+
+This page should not be used to claim that VSlices Docs Standard complies with an external standard.
+
+It also does not replace:
+
+* legal review
+* compliance review
+* formal audit
+* architecture approval
+* organizational controls
+* specific regulatory evidence
+* mandatory templates from a client or industry
+
+Its purpose is to show how VSlices documentation can serve as a continuity basis for preparing that work.
+
+## Usage rule
+
+!!! principle "Compliance principle"
+
+    Do not use it as a substitute for review, evidence, approval, or formal conformity.
+
+
+Use VSlices Docs Standard to preserve engineering knowledge that can support compliance work.
