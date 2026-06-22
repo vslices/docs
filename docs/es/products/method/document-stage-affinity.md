@@ -2,21 +2,28 @@
 
 La afinidad documento-etapa explica cómo los documentos de VSlices Docs Standard pueden apoyar cada etapa de una iteración de VSlices Design.
 
-No vuelve obligatorios los documentos. Ayuda a los equipos a elegir documentación útil sin convertir VSlices Method en una checklist.
+!!! principle "Principio de Documentación"
 
-El flujo compartido de iteración es:
+    La afinidad documento-etapa ayuda a elegir documentación útil según la etapa de trabajo.
+
+    No convierte los documentos en requisitos obligatorios ni transforma VSlices Method en una checklist.
+
+Esta página usa el siguiente flujo base de iteración:
+
+<p class="vslices-diagram-caption">Flujo base de iteración usado para organizar la afinidad documental.</p>
 
 {% include-markdown "shared/simple-design-iteration-flow.md" %}
 
 ## Idea central
 
-Cada etapa crea o cambia un tipo distinto de conocimiento. Algunos documentos apoyan naturalmente mejor unas etapas que otras.
+Cada etapa crea o cambia un tipo distinto de conocimiento.
 
-Esta afinidad es solo una guía. Un equipo puede crear, actualizar, omitir, fusionar o revisitar documentos cuando la iteración lo requiera.
+Algunos documentos apoyan naturalmente mejor unas etapas que otras, pero esta afinidad es solo una guía. Un equipo puede crear, actualizar, omitir, fusionar o revisitar documentos cuando la iteración lo requiera.
 
-La pregunta no es: "*¿Qué documentos requiere esta etapa?*"
+!!! principle "Principio de Documentación"
 
-La mejor pregunta es: "**¿Qué conocimiento necesitamos preservar para tomar la siguiente decisión responsable?**"
+    La pregunta no es _¿qué documentos requiere esta etapa?_, sino _¿qué conocimiento necesitamos preservar para tomar la siguiente decisión responsable?_
+
 
 ## Afinidad por etapa
 
@@ -45,7 +52,7 @@ Un mismo documento puede apoyar más de una etapa.
 
 ## Uso de la afinidad
 
-La afinidad documental debería ayudar al equipo a decidir qué preservar. No debería decidir por el equipo.
+La afinidad documental debería ayudar al equipo a decidir qué conocimiento preservar. No debería decidir por el equipo.
 
 Usa un documento cuando ayude al equipo a:
 
@@ -57,11 +64,18 @@ Usa un documento cuando ayude al equipo a:
 * registrar evidencia
 * evitar redescubrir el mismo conocimiento más adelante
 
-Omite un documento cuando existe solo porque una etapa parece esperarlo.
+!!! risk "Riesgo a evitar"
+
+    Omite un documento cuando existe solo porque una etapa parece esperarlo.
+
 
 ## Regla de Method
 
-Usa el documento que preserve el conocimiento necesario para la siguiente decisión responsable.
+!!! principle "Usa documentación solo cuando preserve continuidad"
 
-- Si un documento ayuda al equipo a avanzar con más claridad, úsalo.
-- Si un documento crea ceremonia sin preservar conocimiento útil, omítelo.
+    Usa el documento que preserve el conocimiento necesario para la siguiente decisión responsable.
+
+
+Si un documento ayuda al equipo a avanzar con más claridad, úsalo.
+
+Si un documento crea ceremonia sin preservar conocimiento útil, omítelo.
