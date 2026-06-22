@@ -170,7 +170,14 @@ nav:
                 - Decision record: products/docs-standard/taxonomy/decision-record.md
                 - Validation note: products/docs-standard/taxonomy/validation-note.md
                 - Support note: products/docs-standard/taxonomy/support-note.md
-            - Continuity: products/docs-standard/continuity-paths.md
+            - Continuity paths: 
+                - Overview: products/docs-standard/continuity-paths/index.md
+                - Perspectives: 
+                    - Business Scenario: products/docs-standard/continuity-paths/perspectives/business-scenario.md
+                    - Domain Context: products/docs-standard/continuity-paths/perspectives/domain-context.md
+                    - Software Project: products/docs-standard/continuity-paths/perspectives/software-project.md
+                    - Consumable Service: products/docs-standard/continuity-paths/perspectives/consumable-service.md
+                    - Client Product: products/docs-standard/continuity-paths/perspectives/client-product.md
             - Compliance support: products/docs-standard/compliance-support.md
         
         - VSlices Framework:
