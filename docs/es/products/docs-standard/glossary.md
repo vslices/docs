@@ -8,55 +8,89 @@ Este glosario no redefine cada tipo de documento. Los tipos de documento especí
 
 Estos términos ayudan a describir qué tipo de conocimiento debe documentarse, por qué importa y cómo los documentos pueden seguir conectados con el trabajo real.
 
+## Cómo leer este glosario
+
+Este glosario está organizado alrededor del conocimiento que la documentación debe preservar.
+
+Primero define conceptos básicos de documentación, luego conceptos de conexión entre documentos, después conceptos de uso documental y finalmente conceptos de calidad del conocimiento.
+
+<p class="vslices-diagram-caption">Ruta de lectura para los términos de VSlices Docs Standard</p>
+
+```mermaid
+flowchart LR
+    A[Conceptos de<br/>documentación]
+    B[Conexión<br/>documental]
+    C[Uso y madurez<br/>documental]
+    D[Calidad del<br/>conocimiento]
+
+    A --> B --> C --> D
+
+    click A "#conceptos-de-documentacion" "Ir a Conceptos de documentación"
+    click B "#conexion-documental" "Ir a Conexión documental"
+    click C "#uso-y-madurez-documental" "Ir a Uso y madurez documental"
+    click D "#calidad-del-conocimiento" "Ir a Calidad del conocimiento"
+```
+
+Este diagrama muestra una forma útil de leer los términos. No representa una secuencia obligatoria de trabajo.
+
 ## Conceptos de documentación
 
-- __Documentación viva (_Living Documentation_ en inglés)__: documentación que evoluciona junto con el sistema, las decisiones, la comprensión del dominio, la implementación, la validación y el _feedback_.
+* **Documentación viva**: documentación que evoluciona junto con el sistema, las decisiones, la comprensión del dominio, la implementación, la validación y el feedback.
 
-- __Estructura de documento (_Document Structure_ en inglés)__: la forma esperada de un documento, incluyendo su propósito, secciones, relaciones y uso previsto.
+* **Estructura de documento**: la forma esperada de un documento, incluyendo su propósito, secciones, relaciones y uso previsto.
 
-- __Tipo de documento (_Document Type_ en inglés)__: una forma reutilizable de documentación usada para preservar un tipo específico de conocimiento, como contexto, proceso, comportamiento, capacidad, decisión o validación.
+* **Tipo de documento**: una forma reutilizable de documentación usada para preservar un tipo específico de conocimiento, como contexto, proceso, comportamiento, capacidad, decisión o validación.
 
-- __Artefacto de conocimiento (_Knowledge Artifact_ en inglés)__: una pieza de conocimiento preservada de la que el trabajo futuro puede depender, como un documento, una nota, un diagrama, una decisión, un ejemplo o un resultado de validación.
+* **Artefacto de conocimiento**: una pieza de conocimiento preservada de la que el trabajo futuro puede depender, como un documento, una nota, un diagrama, una decisión, un ejemplo o un resultado de validación.
 
-- __Límite de documentación (_Documentation Boundary_ en inglés)__: el límite que define qué debe explicar un documento y qué debe dejarse a otro documento.
+* **Límite de documentación**: el límite que define qué debe explicar un documento y qué debe dejarse a otro documento.
 
-## Conceptos de relación
+## Conexión documental
 
-- __Relación de documento (_Document Relationship_ en inglés)__: una conexión entre documentos que ayuda a preservar trazabilidad entre contexto, decisiones, procesos, comportamientos, capacidades, validación e implementación.
+* **Relación de documento**: una conexión entre documentos que ayuda a preservar trazabilidad entre contexto, decisiones, procesos, comportamientos, capacidades, validación e implementación.
 
-- __Referencia (_Reference_ en inglés)__: un enlace explícito desde un documento hacia otro documento, concepto, decisión, comportamiento o artefacto.
+* **Referencia**: un enlace explícito desde un documento hacia otro documento, concepto, decisión, comportamiento o artefacto.
 
-- __Trazabilidad (_Traceability_ en inglés)__: la capacidad de seguir cómo el conocimiento se mueve entre descubrimiento, documentación, diseño, arquitectura, implementación, validación y evolución.
+* **Trazabilidad**: la capacidad de seguir cómo el conocimiento se mueve entre descubrimiento, documentación, diseño, arquitectura, implementación, validación y evolución.
 
-- __Etapa de documento (_Document Stage_ en inglés)__: el nivel de madurez, estabilidad o confianza que representa actualmente un documento.
+## Uso y madurez documental
 
-- __Afinidad de documento (_Document Affinity_ en inglés)__: la relación natural entre un tipo de documento y el tipo de trabajo, conocimiento, incertidumbre o etapa del ciclo de vida que mejor apoya.
+* **Etapa de documento**: el nivel de madurez, estabilidad o confianza que representa actualmente un documento.
 
-## Conceptos de calidad del conocimiento
+* **Afinidad de documento**: la relación natural entre un tipo de documento y el tipo de trabajo, conocimiento, incertidumbre o etapa del ciclo de vida que mejor apoya.
 
-- __Conocimiento útil (_Useful Knowledge_ en inglés)__: conocimiento que ayuda al trabajo futuro a entender, decidir, implementar, validar, mantener o evolucionar algo con más seguridad.
+## Calidad del conocimiento
 
-- __Intención preservada (_Preserved Intent_ en inglés)__: el razonamiento, significado, propósito y restricciones que deberían seguir siendo comprensibles después de que la discusión o decisión original haya pasado.
+* **Conocimiento útil**: conocimiento que ayuda al trabajo futuro a entender, decidir, implementar, validar, mantener o evolucionar algo con más seguridad.
 
-- __Deriva de documentación (_Documentation Drift_ en inglés)__: la distancia que aparece cuando la documentación y el comportamiento real del sistema evolucionan por separado.
+* **Intención preservada**: el razonamiento, significado, propósito y restricciones que deberían seguir siendo comprensibles después de que la discusión o decisión original haya pasado.
 
-- __Conocimiento desactualizado (_Outdated Knowledge_ en inglés)__: conocimiento documentado que ya no refleja la comprensión, el comportamiento, la decisión o la implementación actuales.
+* **Deriva de documentación**: la distancia que aparece cuando la documentación y el comportamiento real del sistema evolucionan por separado.
 
-- __Deuda de documentación (_Documentation Debt_ en inglés)__: brechas de documentación acumuladas, explicaciones desactualizadas, decisiones faltantes o conocimiento desconectado que hacen más difícil el trabajo futuro.
+* **Conocimiento desactualizado**: conocimiento documentado que ya no refleja la comprensión, el comportamiento, la decisión o la implementación actuales.
+
+* **Deuda de documentación**: brechas de documentación acumuladas, explicaciones desactualizadas, decisiones faltantes o conocimiento desconectado que hacen más difícil el trabajo futuro.
 
 ## Relación entre los términos
 
 VSlices Docs Standard ayuda a los equipos a preservar conocimiento usando la estructura de documento más pequeña útil.
 
-```text
-Useful knowledge
--> Document type
--> Document structure
--> Document relationship
--> Traceability
--> Living documentation
+<p class="vslices-diagram-caption">Relación entre conocimiento útil, estructura documental y documentación viva</p>
+
+```mermaid
+flowchart TB
+    A[Conocimiento útil]
+    B[Tipo de documento]
+    C[Estructura de documento]
+    D[Relación de documento]
+    E[Trazabilidad]
+    F[Documentación viva]
+
+    A --> B --> C --> D --> E --> F
 ```
 
-Esto no es un requisito para documentarlo todo. Un equipo debe documentar el conocimiento del que depende el trabajo futuro, usando la estructura más pequeña que preserve suficiente significado, contexto e intención.
+Esto no es un requisito para documentarlo todo.
+
+Un equipo debe documentar el conocimiento del que depende el trabajo futuro, usando la estructura más pequeña que preserve suficiente significado, contexto e intención.
 
 El objetivo no es más documentación. El objetivo es menos pérdida de conocimiento.
