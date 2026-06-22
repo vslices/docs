@@ -36,8 +36,8 @@ El objetivo no es aplicar Method completamente. Es preservar suficiente continui
 | --------------------------------------------------- | -------------------------------------------------------------------------- |
 | [Escenario "No digitalizado"](non-digitalized-scenario.md)                         | El trabajo todavía no está representado por software.                      |
 | [Escenario "Digitalizado"](digitalized-scenario.md)                            | El software existente ya representa parte del negocio.                     |
-| [Escenario "Entrar a un proyecto existente"](joining-existing-project.md)          | El equipo necesita incorporarse a trabajo en curso sin romper continuidad. |
-| [Escenario "Introducir Method en proyectos en curso"](introducing-method.md) | Method debe introducirse mediante pequeñas costuras útiles de continuidad. |
+| [Escenario "Entrar a un proyecto"](joining-existing-project.md)          | El equipo necesita incorporarse a trabajo en curso sin romper continuidad. |
+| [Escenario "Introducir method"](introducing-method.md) | Method debe introducirse mediante pequeñas costuras útiles de continuidad. |
 
 ## Principio guía
 

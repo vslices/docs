@@ -37,8 +37,8 @@ The goal is not to apply Method completely. It is to preserve enough continuity 
 | ---------------------------------------------------------------------------- | ------------------------------------------------------------------- |
 | [Scenario "Not digitized"](non-digitalized-scenario.md)                        | The work is not yet represented by software.                        |
 | [Scenario "Digitized"](digitalized-scenario.md)                              | Existing software already represents part of the business.          |
-| [Scenario "Joining an existing project"](joining-existing-project.md)        | The team needs to join ongoing work without breaking continuity.    |
-| [Scenario "Introducing Method into ongoing projects"](introducing-method.md) | Method must be introduced through small useful seams of continuity. |
+| [Scenario "Joining an project"](joining-existing-project.md)        | The team needs to join ongoing work without breaking continuity.    |
+| [Scenario "Introducing method"](introducing-method.md) | Method must be introduced through small useful seams of continuity. |
 
 ## Guiding principle
 

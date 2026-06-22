@@ -89,14 +89,14 @@ Una costura de continuidad es un punto pequeño donde Method puede conectar cono
 
 Una costura útil puede consistir en:
 
-* agregar contexto a un elemento de trabajo activo;
-* registrar una decisión importante;
-* aclarar un término ambiguo del dominio;
-* preservar un resultado de validación;
-* conectar un caso de uso con un cambio de implementación;
-* documentar una excepción de flujo de trabajo;
-* capturar una incertidumbre antes de construir;
-* revisar un supuesto desactualizado después de recibir feedback.
+* agregar contexto a un elemento de trabajo activo
+* registrar una decisión importante
+* aclarar un término ambiguo del dominio
+* preservar un resultado de validación
+* conectar un caso de uso con un cambio de implementación
+* documentar una excepción de flujo de trabajo
+* capturar una incertidumbre antes de construir
+* revisar un supuesto desactualizado después de recibir feedback
 
 !!! principle "Principio de Continuidad"
 

@@ -1,19 +1,21 @@
-# "Joining Existing Project" Scenario
+# Scenario "Joining an existing project"
 
-A "Joining existing project" scenario is a working context where a person or team enters work that is already in progress. The project may already use VSlices Method, or it may use another way of working.
+A "Joining an existing project" scenario is a work context where a person or team enters work that is already in progress.
+
+The project may use VSlices Method, or it may use another way of working.
 
 The goal is not to restart the project. It is to join the current continuity path before changing the work.
 
 ## Core idea
 
-Joining an existing project should not start only from tasks. Tasks describe what someone should do. But, they do not always explain:
+!!! principle "Continuity principle"
 
-- Why the work matters
-- What context supports it
-- What decisions shaped it
-- What feedback changed it
+    Joining an existing project should not start only from tasks.
 
-The question is not _What tasks should we take?_, it is: __What continuity path are these tasks part of?__.
+
+Tasks describe what someone should do, but they do not always explain why the work matters, what context supports it, which decisions shaped it, or what feedback changed it.
+
+The question is not *Which tasks should we take?*, but *which continuity path are these tasks part of?*
 
 ## When this guide applies
 
@@ -21,91 +23,105 @@ Use this guide when:
 
 * a new person joins a project
 * a new team joins an ongoing initiative
-* work is already planned or in progress
-* existing decisions affect the current work
-* documentation exists but needs interpretation
-* implementation exists but intent is unclear
-* the project has active stakeholders, users or operational constraints
+* the work is already planned or in progress
+* decisions exist that affect the current work
+* documentation exists, but needs interpretation
+* implementation exists, but the intent is not clear
+* the project has active stakeholders, users, or operational constraints
 * the team needs to contribute without losing the original context
 
-This guide applies whether the project is new to the person or new to the whole team.
+This guide applies both when one person joins an existing project and when a whole team enters work that has already started.
 
 ## Main risk
 
-The main risk is entering through execution without understanding intent. This may create:
+The main risk is entering through execution without understanding intent.
 
-* changes that solve a task but not the problem
+This can create:
+
+* changes that solve a task, but not the problem
 * duplicated discovery
 * repeated decisions
-* implementation that violates previous context
+* implementation that contradicts previous context
 * documentation that ignores existing knowledge
-* feedback that is disconnected from current work
+* feedback disconnected from the current work
 * local improvements that weaken the whole system
 
-A project in progress already has history, some of that history is useful knowledge, some of it may be outdated or accidental.
+An ongoing project already has history. Part of that history is useful knowledge; another part may be outdated or accidental.
 
-The team should understand enough to tell the difference.
+!!! risk "Risk to avoid"
 
-## Useful starting modality
+    Before contributing, the team needs to distinguish which continuity should be respected, which decisions should be reviewed, and which complexity should not be inherited.
 
-Joining an existing project does not always require choosing a new modality. First, identify the current work context.
 
-| Situation                                                                            | Useful modality               | Reason                                                                     |
-| ------------------------------------------------------------------------------------ | ----------------------------- | -------------------------------------------------------------------------- |
-| The project context, boundaries or history are unclear.                              | [**Context-First**](../../design/modalities/context-first/index.md)             | The team needs to understand the surrounding continuity before acting.     |
-| The current work is centered on a known pain or active decision.                     | [**Problem-First**](../../design/modalities/problem-first/index.md)             | The team needs to understand the problem behind the tasks.                 |
-| The project has enough context and a small contribution can safely produce feedback. | [**Slice-First**](../../design/modalities/slice-first/index.md)               | The team can learn by contributing a narrow change.                        |
-| The project already has an active  modality.                                          | Continue the  current modality | The team should join the current continuity path before changing emphasis. |
+## Useful initial modality
 
-The first responsibility is orientation. Changing modality too early may restart work unnecessarily.
+Introducing Method into an ongoing project should start from the uncertainty that is most affecting the work.
+
+| Situation                                                                 | Useful modality                                                     | Reason                                                                      |
+| ------------------------------------------------------------------------- | ------------------------------------------------------------------- | --------------------------------------------------------------------------- |
+| The team does not understand where continuity is being lost.              | [**Context-First**](../../design/modalities/context-first/index.md) | The team needs to understand the context before changing how it works.      |
+| There is a clear pain in the current way of working.                      | [**Problem-First**](../../design/modalities/problem-first/index.md) | The team can introduce Method by solving a concrete friction.               |
+| A small practice can improve the work without changing the whole process. | [**Slice-First**](../../design/modalities/slice-first/index.md)     | The team can validate Method through a bounded and observable intervention. |
+
+!!! risk "Risk to avoid"
+
+    The selected modality should respond to adoption uncertainty, not to the team's personal preference.
+
 
 ## What to observe first
 
-Before contributing, observe how current work is connected. Useful questions include:
+Before suggesting Method practices, observe how work currently moves.
 
-* What scenario or work line is active?
-* What problem or opportunity is being addressed?
-* What decisions already shape the current direction?
-* What documents or discussions preserve the current context?
-* What implementation already exists?
-* What feedback has recently changed the work?
-* What remains uncertain?
-* Who depends on the current behavior?
-* Which constraints are technical, business or operational?
-* Which parts of the work are still being validated?
+| Observe                                                     | To understand                                               |
+| ----------------------------------------------------------- | ----------------------------------------------------------- |
+| Where intent is lost                                        | Which part of the work stops explaining why it matters.     |
+| Where people repeat the same explanations                   | Which knowledge depends too much on memory or conversation. |
+| Where decisions are made                                    | Which moments need to preserve context.                     |
+| Where decisions are forgotten                               | Which continuity is lost between decision and future work.  |
+| Where documentation stops matching reality                  | Which documents need to be updated, reduced, or replaced.   |
+| Where implementation loses business context                 | Which behavior needs to recover intent.                     |
+| Where feedback disappears                                   | Which learning is not changing future decisions.            |
+| Which handoffs create confusion                             | Where continuity breaks between people, teams, or stages.   |
+| Which small improvement would help current work immediately | Where Method can enter with real usefulness and low weight. |
 
-The objective is not to learn the whole project. Is to understand the continuity path of the work being joined.
+The goal is not to judge the team's process. It is to find a continuity gap worth improving.
 
 ## Knowledge to preserve
 
-Joining an existing project may reveal missing or fragile continuity. 
+Joining an existing project can reveal missing or fragile continuity.
 
-Preserve knowledge when it helps new contributors or future work avoid guessing. Useful knowledge may include:
+Preserve knowledge when it helps newcomers or future work avoid assumptions.
+
+Useful knowledge may include:
 
 * project vocabulary that is not obvious
-* decisions that explain current implementation
+* decisions that explain the current implementation
 * active assumptions
 * known constraints
 * current workflow or use case boundaries
 * validation results that shaped the current direction
-* differences between documented intent and actual implementation
+* differences between documented intent and real implementation
 * onboarding questions that reveal hidden knowledge
 * outdated knowledge that should be reviewed
 
-Newcomers often expose implicit knowledge. Those questions should not be treated as interruptions. They are signals of __where continuity may need support__.
+!!! principle "Continuity principle"
 
-## Document support
+    New people often expose implicit knowledge.
 
-| Knowledge need                                      | Useful document                                                                                                                                                                         |
-| --------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Terms are unclear to newcomers.                     | Domain Vocabulary — [Taxonomy](../../docs-standard/taxonomy/domain-vocabulary.md) · [Template](https://github.com/vslices/docs-standard/blob/main/templates/domain-vocabulary.md)       |
-| The surrounding scenario needs orientation.         | Context Document — [Taxonomy](../../docs-standard/taxonomy/context-document.md) · [Template](https://github.com/vslices/docs-standard/blob/main/templates/context-document.md)          |
-| Current work depends on workflows or handoffs.      | Process Document — [Taxonomy](../../docs-standard/taxonomy/process-document.md) · [Template](https://github.com/vslices/docs-standard/blob/main/templates/process-document.md)          |
-| A behavior needs intent and consequences clarified. | Use Case Document — [Taxonomy](../../docs-standard/taxonomy/use-case-document.md) · [Template](https://github.com/vslices/docs-standard/blob/main/templates/use-case-document.md)       |
-| A stable ability explains several related changes.  | Capability Document — [Taxonomy](../../docs-standard/taxonomy/capability-document.md) · [Template](https://github.com/vslices/docs-standard/blob/main/templates/capability-document.md) |
-| Existing direction depends on past tradeoffs.       | Decision Record — [Taxonomy](../../docs-standard/taxonomy/decision-record.md) · [Template](https://github.com/vslices/docs-standard/blob/main/templates/decision-record.md)             |
-| Recent feedback changed current understanding.      | Validation Note — [Taxonomy](../../docs-standard/taxonomy/validation-note.md) · [Template](https://github.com/vslices/docs-standard/blob/main/templates/validation-note.md)             |
-| Questions or observations are still uncertain.      | Support Note — [Taxonomy](../../docs-standard/taxonomy/support-note.md) · [Template](https://github.com/vslices/docs-standard/blob/main/templates/support-note.md)                      |
+    Their questions should not be treated as interruptions. They are signals of where continuity may need support.
+
+## Documentation support
+
+| Knowledge need                                       | Useful document                                                                                                                                                                         |
+| ---------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Terms are not clear to newcomers.                    | Domain Vocabulary — [Taxonomy](../../docs-standard/taxonomy/domain-vocabulary.md) · [Template](https://github.com/vslices/docs-standard/blob/main/templates/domain-vocabulary.md)       |
+| The surrounding scenario needs orientation.          | Context Document — [Taxonomy](../../docs-standard/taxonomy/context-document.md) · [Template](https://github.com/vslices/docs-standard/blob/main/templates/context-document.md)          |
+| The current work depends on workflows or handoffs.   | Process Document — [Taxonomy](../../docs-standard/taxonomy/process-document.md) · [Template](https://github.com/vslices/docs-standard/blob/main/templates/process-document.md)          |
+| A behavior needs to clarify intent and consequences. | Use Case Document — [Taxonomy](../../docs-standard/taxonomy/use-case-document.md) · [Template](https://github.com/vslices/docs-standard/blob/main/templates/use-case-document.md)       |
+| A stable ability explains several related changes.   | Capability Document — [Taxonomy](../../docs-standard/taxonomy/capability-document.md) · [Template](https://github.com/vslices/docs-standard/blob/main/templates/capability-document.md) |
+| The existing direction depends on past tradeoffs.    | Decision Record — [Taxonomy](../../docs-standard/taxonomy/decision-record.md) · [Template](https://github.com/vslices/docs-standard/blob/main/templates/decision-record.md)             |
+| Recent feedback changed the current understanding.   | Validation Note — [Taxonomy](../../docs-standard/taxonomy/validation-note.md) · [Template](https://github.com/vslices/docs-standard/blob/main/templates/validation-note.md)             |
+| Questions or observations are still uncertain.       | Support Note — [Taxonomy](../../docs-standard/taxonomy/support-note.md) · [Template](https://github.com/vslices/docs-standard/blob/main/templates/support-note.md)                      |
 
 Use documents to join the work, not to audit the whole project.
 
@@ -113,21 +129,25 @@ Use documents to join the work, not to audit the whole project.
 
 ## Suggested approach
 
-Start with the active work. Do not try to understand everything before contributing. A useful approach is:
+Start with the active work. Do not try to understand everything before contributing.
 
-1. Identify the current work item, use case, capability or work line.
+A useful approach is:
+
+1. Identify the current work item, use case, capability, or work line.
 2. Find the context and decisions that explain why it exists.
 3. Understand the current stage of the iteration.
-4. Clarify what is known, uncertain and already decided.
+4. Clarify what is known, what is uncertain, and what has already been decided.
 5. Contribute to a small part of the work.
-6. Preserve any missing knowledge discovered while joining.
+6. Preserve missing knowledge discovered during onboarding.
 7. Return feedback to the shared context.
 
-The team should enter through continuity, then contribute through delivery.
+The team should enter through continuity and then contribute through delivery.
 
 ## Common mistakes
 
-Joining existing work commonly fails when execution starts before orientation. Common mistakes include:
+Joining existing work often fails when execution starts before orientation.
+
+Common mistakes include:
 
 * starting from tickets without understanding intent
 * rewriting context that already exists
@@ -143,6 +163,11 @@ Existing projects need respect and curiosity. Not blind obedience. Not heroic re
 
 ## Guiding principle
 
-Join the continuity path before joining the task list. Understand enough context, decisions, behavior and feedback to contribute without breaking intent.
+!!! principle "Continuity principle"
 
-Preserve the knowledge that helped you join, so the next person does not need to rediscover it.
+    Join the continuity path before joining the task list.
+
+
+Understand enough context, decisions, behavior, and feedback to contribute without breaking intent.
+
+Preserve the knowledge that helped you onboard, so the next person does not have to rediscover it.

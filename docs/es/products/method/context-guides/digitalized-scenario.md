@@ -6,15 +6,16 @@ Esto no significa que el dominio ya esté entendido. El software existente es ev
 
 ## Idea central
 
+En un escenario digitalizado, VSlices Method ayuda al equipo a separar tres cosas:
+
+* cómo ocurre realmente el trabajo;
+* cómo el software actual representa ese trabajo;
+* cómo las personas han adaptado su trabajo alrededor del software.
+
 !!! principle "Principio de continuidad"
 
-    En un escenario digitalizado, VSlices Method ayuda al equipo a separar tres cosas:
+    El objetivo no es hacer ingeniería inversa de todo el sistema. Es recuperar suficiente continuidad para tomar la siguiente decisión responsable.
 
-    * cómo ocurre realmente el trabajo;
-    * cómo el software actual representa ese trabajo;
-    * cómo las personas han adaptado su trabajo alrededor del software.
-
-El objetivo no es hacer ingeniería inversa de todo el sistema. Es recuperar suficiente continuidad para tomar la siguiente decisión responsable.
 
 
 ## Cuándo aplica esta guía

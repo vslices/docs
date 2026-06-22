@@ -37,12 +37,12 @@ That may create resistance, unnecessary ceremony, or a false sense of maturity.
 
 A team may not need new stages, meetings, or templates. It may need a better way to preserve:
 
-* why a change matters;
-* what context supports it;
-* what decision was made;
-* what remains uncertain;
-* what feedback changed the work;
-* what future work should not have to rediscover.
+* why a change matters
+* what context supports it
+* what decision was made
+* what remains uncertain
+* what feedback changed the work
+* what future work should not have to rediscover
 
 !!! risk "Risk to avoid"
 
