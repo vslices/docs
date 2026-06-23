@@ -40,47 +40,6 @@ A Domain Vocabulary may be unnecessary when:
 - __the vocabulary would become exhaustive__: the team is trying to document every word instead of the terms that matter.
 - __the language is still too unstable__: a Support Note may be enough until the term proves useful.
 
-## Minimal version
-
-Use the minimal version when the team only needs a lightweight shared reference.
-
-```md
-# Domain Vocabulary
-
-## Terms
-
-- __Term__: short meaning, example usage, related terms.
-```
-
-Example:
-
-```md
-- __Reservation__: temporary hold on a resource before confirmation. Related terms: booking, availability.
-- __Booking__: confirmed reservation that creates a customer commitment. Related terms: reservation, cancellation.
-```
-
-## Expanded version
-
-Use the expanded version when terms are ambiguous, reused, business-critical, or likely to influence implementation.
-
-```md
-# Domain Vocabulary
-
-## Terms
-
-### Term name
-
-- __Meaning__: what the term means in this context.
-- __Used by__: people, teams, roles, systems, or documents that use this term.
-- __Examples__: situations where the term applies.
-- __Counterexamples__: situations where the term does not apply.
-- __Aliases__: alternative words used for the same or similar concept.
-- __Conflicting meanings__: meanings used elsewhere that may cause confusion.
-- __Related terms__: nearby concepts.
-- __Implementation notes__: possible naming or modeling implications.
-- __Status__: draft, active, superseded, or archived.
-```
-
 ## Standard affinity
 
 This document can support alignment with existing standards and documentation practices. It does not make the documentation compliant by itself.

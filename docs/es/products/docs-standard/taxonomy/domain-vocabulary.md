@@ -40,47 +40,6 @@ Un Vocabulario de dominio puede ser innecesario cuando:
 * **el vocabulario se volvería exhaustivo**: el equipo intenta documentar cada palabra en lugar de los términos que importan.
 * **el lenguaje todavía es demasiado inestable**: una Nota de soporte puede ser suficiente hasta que el término demuestre ser útil.
 
-## Versión mínima
-
-Usa la versión mínima cuando el equipo solo necesite una referencia compartida ligera.
-
-```md
-# Domain Vocabulary
-
-## Terms
-
-- __Term__: significado corto, ejemplo de uso, términos relacionados.
-```
-
-Ejemplo:
-
-```md
-- __Reservation__: retención temporal de un recurso antes de la confirmación. Términos relacionados: booking, availability.
-- __Booking__: reserva confirmada que crea un compromiso con el cliente. Términos relacionados: reservation, cancellation.
-```
-
-## Versión ampliada
-
-Usa la versión ampliada cuando los términos sean ambiguos, reutilizados, críticos para el negocio o probables de influir en la implementación.
-
-```md
-# Domain Vocabulary
-
-## Terms
-
-### Term name
-
-- __Meaning__: qué significa el término en este contexto.
-- __Used by__: personas, equipos, roles, sistemas o documentos que usan este término.
-- __Examples__: situaciones donde el término aplica.
-- __Counterexamples__: situaciones donde el término no aplica.
-- __Aliases__: palabras alternativas usadas para el mismo concepto o uno similar.
-- __Conflicting meanings__: significados usados en otros lugares que pueden causar confusión.
-- __Related terms__: conceptos cercanos.
-- __Implementation notes__: posibles implicancias de nombrado o modelado.
-- __Status__: draft, active, superseded, or archived.
-```
-
 ## Afinidad con estándares
 
 Este documento puede apoyar la alineación con estándares y prácticas de documentación existentes. No vuelve la documentación conforme por sí mismo.

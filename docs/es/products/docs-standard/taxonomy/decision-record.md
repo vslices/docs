@@ -45,68 +45,6 @@ Un Registro de decisión puede ser innecesario cuando:
 * **la decisión todavía no está clara**: una Nota de soporte puede ser mejor hasta que las opciones se entiendan.
 * **el registro se usa como teatro de aprobación**: el documento existe para parecer formal, no para preservar razonamiento.
 
-## Versión mínima
-
-Usa la versión mínima cuando el equipo solo necesite preservar el razonamiento central.
-
-```md
-# Decision Record
-
-## Decision
-
-¿Qué elegimos?
-
-## Context
-
-¿Por qué se necesitaba esta decisión?
-
-## Rationale
-
-¿Por qué elegimos esta dirección?
-
-## Consequences
-
-¿Qué cambia debido a esta decisión?
-
-## Status
-
-Borrador, activo, superado o archivado.
-```
-
-## Versión ampliada
-
-Usa la versión ampliada cuando la decisión sea riesgosa, disputada, arquitectónica o probable de afectar la evolución futura.
-
-```md
-# Decision Record
-
-## Decision
-
-## Status
-
-## Context
-
-## Problem or tension
-
-## Options considered
-
-## Selected option
-
-## Rationale
-
-## Tradeoffs
-
-## Consequences
-
-## Accepted risks
-
-## Rejected alternatives
-
-## Related artifacts
-
-## Review conditions
-```
-
 ## Afinidad con estándares
 
 Este documento puede apoyar la alineación con estándares y prácticas de documentación existentes. No vuelve la documentación conforme por sí mismo.

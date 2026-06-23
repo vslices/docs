@@ -24,8 +24,6 @@ El objetivo es preservar conocimiento útil sin forzar estructura prematura.
 
 ## Tipos comunes
 
-## Tipos comunes
-
 Las Notas de soporte pueden incluir:
 
 | Tipo                      | Cuándo usarla                                                                                   | Uso                                                                                                    |
@@ -60,38 +58,6 @@ Una Nota de soporte puede ser insuficiente cuando:
 * **la nota describe un proceso**: un Documento de proceso puede ser mejor.
 * **la nota valida algo importante**: puede necesitarse una Nota de validación.
 * **demasiadas notas repiten el mismo tema**: probablemente el conocimiento debería consolidarse.
-
-## Estructura sugerida
-
-Usa la estructura más pequeña que preserve la nota.
-
-```md
-# Support Note
-
-## Type
-
-Concepto, supuesto, riesgo, pregunta, retroalimentación, implementación, alcance o mejora.
-
-## Note
-
-¿Qué debería preservarse?
-
-## Context
-
-¿Dónde apareció esto?
-
-## Why it matters
-
-¿Por qué podría importar más adelante?
-
-## Status
-
-Abierta, activa, resuelta, superada o archivada.
-
-## Related artifacts
-
-¿Qué documentos, decisiones o notas están conectados?
-```
 
 ## Afinidad con estándares
 
