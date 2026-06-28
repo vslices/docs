@@ -103,27 +103,6 @@ Por ejemplo:
 * ¿Qué señales permiten distinguir pérdida histórica, dispersión activa, concentración personal y escape inicial de continuidad?
 * ¿Qué mecanismos ayudan en un escenario, pero podrían agregar ceremonia innecesaria en otro?
 
-## Relación con otras preguntas
-
-RQ-001 funciona como pregunta raíz.
-
-De ella derivan preguntas más específicas:
-
-* [RQ-002 — Documentación mínima para preservar continuidad sin burocracia](rq-002-documentacion-mínima.md)
-* [RQ-003 — Continuity paths como mecanismo de preservación conceptual](rq-003-continuity-paths.md)
-
-También abre preguntas futuras sobre:
-
-* continuidad entre líneas paralelas de trabajo
-* transferencia de conocimiento durante salidas o cambios de rol
-* descubrimiento de conocimiento tácito en contextos no digitalizados
-* señales tempranas de ruptura o escape de continuidad
-* mecanismos mínimos para preservar continuidad sin convertir VSlices en ceremonia
-
-Estas preguntas derivadas no deben tratarse automáticamente como resueltas por RQ-001.
-
-RQ-001 solo establece el problema fundacional y el marco inicial de investigación.
-
 ## Studies relacionados
 
 * [STU-001 — Pérdida de continuidad en un ecosistema legacy empresarial](../studies/stu-001-legacy-ecosystem.md)
