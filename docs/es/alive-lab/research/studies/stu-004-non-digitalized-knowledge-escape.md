@@ -191,7 +191,7 @@ Por esta razón, debe tratarse como evidencia inicial, no como validación fuert
 
 ## Finding candidato producido
 
-* FND-0004 — La continuidad de conocimiento puede romperse antes de existir software cuando el conocimiento tácito de un contexto no digitalizado no es explorado suficientemente.
+* [FND-0004 — La continuidad de conocimiento puede romperse antes de existir software cuando el conocimiento tácito de un contexto no digitalizado no es explorado suficientemente.](../findings/fnd-0004-continuidad-rota-antes-software-conocimiento-tacito-no-explorado.md)
 
 ## Interpretación inicial
 
