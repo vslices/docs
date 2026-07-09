@@ -1,37 +1,5 @@
 # Camino de continuidad "Responsabilidad" de <tema>
 
-## Organización
-
-```mermaid
-flowchart LR
-    R["Camino de continuidad<br/><small>¿Cómo exploramos este recorrido?</small>"]
-
-    B1["Objeto de navegación<br/><small>¿Qué camino de continuidad vamos a recorrer?</small>"]
-    B2["Propósito del recorrido<br/><small>¿Para qué necesitamos recorrer este path?</small>"]
-    B3["Punto de entrada<br/><small>¿Por dónde conviene empezar?</small>"]
-    B4["Diagrama de continuidad<br/><small>¿Qué mapa vamos a recorrer?</small>"]
-    B5["Lectura del diagrama<br/><small>¿Cómo se interpreta el mapa?</small>"]
-    B6["Recorrido recomendado<br/><small>¿Qué ruta conviene seguir primero?</small>"]
-    B7["Criterio de navegación<br/><small>¿Por qué este recorrido preserva continuidad?</small>"]
-    B8["Señales de orientación<br/><small>¿Cómo sabemos qué hacer con cada nodo?</small>"]
-    B9["Cambio de path<br/><small>¿Cuándo conviene cambiar de perspectiva?</small>"]
-    B10["Resultado esperado<br/><small>¿Qué debería entenderse al terminar?</small>"]
-    B11["Riesgos de navegación<br/><small>¿Qué puede malinterpretarse si se recorre mal?</small>"]
-
-    R --> B1 & B2 & B3 & B4 & B5 & B6 & B7 & B8 & B10
-    R -.-> B9 & B11
-```
-
-## Objeto de navegación
-
-<!--
-¿Qué camino de continuidad vamos a recorrer?
-
-Indicar que este documento orienta la lectura del Ownership Continuity Path asociado a un concepto, decisión, artifact, producto, servicio, proceso, capacidad o parte del sistema.
--->
-
-Este documento orienta la lectura del Camino de continuidad de Responsabilidad para `<tema>`.
-
 ## Propósito del recorrido
 
 <!--
@@ -125,15 +93,6 @@ flowchart LR
     P6 -.-> I1
 ```
 
-## Lectura del diagrama
-
-| Forma       | Significado                                           | Qué hacer al encontrarla                                                                       |
-| ----------- | ----------------------------------------------------- | ---------------------------------------------------------------------------------------------- |
-| `[[texto]]` | Concepto documentado                                  | Revisar los artifacts asociados si ayudan a entender responsabilidad, ownership o conocimiento |
-| `[texto]`   | Pregunta orientadora u orientación definida           | Usarla para decidir qué tipo de responsabilidad revisar                                        |
-| `>texto]`   | Concepto identificado sin necesidad documental actual | Mantenerlo visible sin documentarlo todavía                                                    |
-| `{{texto}}` | Concepto identificado con necesidad documental        | Evaluar si debe documentarse para no perder ownership, decisión, validación u operación        |
-
 ## Recorrido recomendado
 
 | Orden | Nodo, artifact o concepto                | Por qué revisarlo                                                            |
@@ -145,38 +104,6 @@ flowchart LR
 | 5     | Responsable de mantenimiento u operación | Permite entender quién sostiene el elemento en el tiempo                     |
 | 6     | Conocimiento tácito                      | Permite detectar riesgo de pérdida de continuidad                            |
 | 7     | Impacto por cambio de responsabilidad    | Permite entender qué podría romperse si el ownership cambia                  |
-
-## Criterio de navegación
-
-Este recorrido preserva continuidad porque conecta un elemento con las personas, roles, equipos o áreas que sostienen su comprensión, decisión, validación, operación y evolución.
-
-Ayuda a evitar que el conocimiento quede disponible solo de forma implícita o dependiente de memoria individual.
-
-## Señales de orientación
-
-| Señal                                                            | Acción sugerida                         |
-| ---------------------------------------------------------------- | --------------------------------------- |
-| Nadie puede explicar claramente el elemento                      | Revisar Context Document o Support Note |
-| La responsabilidad de decisión no está clara                     | Evaluar Decision Record                 |
-| La validación depende de una persona específica                  | Evaluar Support Note kind: validation   |
-| La operación depende de conocimiento tácito                      | Evaluar Support Note o Context Document |
-| El mantenimiento requiere entender estructura técnica            | Cambiar hacia Software Project          |
-| El cambio de ownership afecta otros elementos                    | Cambiar hacia Impact                    |
-| La responsabilidad necesita reconstruirse desde origen y destino | Cambiar hacia Traceability              |
-
-## Cambio de path
-
-| Señal                                                                  | Path sugerido       |
-| ---------------------------------------------------------------------- | ------------------- |
-| La pregunta pasa a ser dónde ocurre el trabajo                         | Business Scenario   |
-| La pregunta pasa a ser por qué importa intervenir                      | Business Driver     |
-| La pregunta pasa a ser qué lenguaje o reglas deben protegerse          | Domain Context      |
-| La pregunta pasa a ser qué iniciativa contiene esta responsabilidad    | Software Initiative |
-| La pregunta pasa a ser cómo vive técnicamente el elemento              | Software Project    |
-| La pregunta pasa a ser qué otros elementos se ven afectados            | Impact              |
-| La pregunta pasa a ser de dónde viene y dónde terminó materializándose | Traceability        |
-
-## Resultado esperado
 
 Al terminar este recorrido debería entenderse:
 
@@ -190,21 +117,15 @@ Al terminar este recorrido debería entenderse:
 * qué riesgo existe si la responsabilidad cambia
 * qué documentación podría preservar continuidad
 
-## Riesgos de navegación
+## Conceptos complementarios
 
-| Riesgo de navegación                                   | Consecuencia                                              |
-| ------------------------------------------------------ | --------------------------------------------------------- |
-| Confundir ownership con organigrama                    | Se documentan cargos sin preservar responsabilidad real   |
-| Confundir responsable con única fuente de verdad       | Se mantiene dependencia individual en vez de reducirla    |
-| Documentar personas cuando bastaba con roles o equipos | Se vuelve frágil ante cambios organizacionales            |
-| Ocultar conocimiento tácito                            | Se pierde continuidad cuando alguien cambia de rol o sale |
-| Interpretar `{{texto}}` como obligación inmediata      | Se genera documentación prematura                         |
-| Usar ownership para bloquear decisiones                | Se burocratiza la evolución del sistema                   |
+<!--
+¿Qué elementos relacionados ayudan a entender este escenario sin pertenecer necesariamente a la ruta principal?
 
-## Principio de continuidad
+Usar esta sección solo cuando existan elementos relevantes para preservar continuidad.
+No convertirla en lista exhaustiva.
+-->
 
-!!! principle "Principio de Continuidad"
-
-```
-La perspectiva de responsabilidad debería ayudar a preservar quién entiende, decide, valida, mantiene u opera un elemento sin convertir ownership en organigrama ni dependencia individual.
-```
+| Concepto complementario | Relación con el escenario | Path o artifact sugerido |
+| ----------------------- | ------------------------- | ------------------------ |
+| <concepto>              | <relación>                | <path o artifact>        |

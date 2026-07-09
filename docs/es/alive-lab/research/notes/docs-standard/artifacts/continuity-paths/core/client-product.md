@@ -1,37 +1,5 @@
 # Camino de continuidad "Producto al cliente" de <tema>
 
-## Organización
-
-```mermaid
-flowchart LR
-    R["Camino de continuidad<br/><small>¿Cómo exploramos este recorrido?</small>"]
-
-    B1["Objeto de navegación<br/><small>¿Qué camino de continuidad vamos a recorrer?</small>"]
-    B2["Propósito del recorrido<br/><small>¿Para qué necesitamos recorrer este path?</small>"]
-    B3["Punto de entrada<br/><small>¿Por dónde conviene empezar?</small>"]
-    B4["Diagrama de continuidad<br/><small>¿Qué mapa vamos a recorrer?</small>"]
-    B5["Lectura del diagrama<br/><small>¿Cómo se interpreta el mapa?</small>"]
-    B6["Recorrido recomendado<br/><small>¿Qué ruta conviene seguir primero?</small>"]
-    B7["Criterio de navegación<br/><small>¿Por qué este recorrido preserva continuidad?</small>"]
-    B8["Señales de orientación<br/><small>¿Cómo sabemos qué hacer con cada nodo?</small>"]
-    B9["Cambio de path<br/><small>¿Cuándo conviene cambiar de perspectiva?</small>"]
-    B10["Resultado esperado<br/><small>¿Qué debería entenderse al terminar?</small>"]
-    B11["Riesgos de navegación<br/><small>¿Qué puede malinterpretarse si se recorre mal?</small>"]
-
-    R --> B1 & B2 & B3 & B4 & B5 & B6 & B7 & B8 & B10
-    R -.-> B9 & B11
-```
-
-## Objeto de navegación
-
-<!--
-¿Qué camino de continuidad vamos a recorrer?
-
-Indicar que este documento orienta la lectura del Client Product Continuity Path asociado a un producto, experiencia, pantalla, flujo visible, acción visible, comportamiento expuesto, feedback, validación o superficie usada por clientes o usuarios.
--->
-
-Este documento orienta la lectura del Camino de continuidad de Producto al cliente para `<tema>`.
-
 ## Propósito del recorrido
 
 <!--
@@ -60,25 +28,6 @@ Esto es importante porque el producto al cliente puede cambiar para bien o para 
 
 Indicar el producto, experiencia, flujo, pantalla, acción visible, comportamiento expuesto, feedback, validación o parte visible del sistema desde donde parte el recorrido.
 -->
-
-El recorrido debería comenzar desde el producto o parte visible del producto que se quiere entender o seguir.
-
-Ese punto de entrada puede ser:
-
-* un producto al cliente
-* una experiencia de usuario
-* una pantalla
-* un flujo visible
-* una acción visible
-* una funcionalidad visible
-* una interacción
-* una notificación
-* una promesa de valor
-* una mejora de experiencia
-* un feedback recibido
-* una validación realizada
-* un cambio observado en uso
-* una parte del producto afectada por una iniciativa
 
 ## Diagrama de continuidad
 
@@ -179,112 +128,15 @@ Describir el recorrido principal recomendado para entender el path sin duplicar 
 | 7     | Decisiones de alcance o experiencia | Permiten entender por qué el producto ofrece, omite o limita ciertas acciones        |
 | 8     | Feedback o validación               | Permite entender qué aprendizaje confirmó, corrigió o cambió la experiencia esperada |
 
-## Criterio de navegación
+## Conceptos complementarios
 
 <!--
-¿Por qué este recorrido preserva continuidad?
+¿Qué elementos relacionados ayudan a entender este escenario sin pertenecer necesariamente a la ruta principal?
 
-Explicar la lógica del recorrido recomendado y qué pérdida de intención ayuda a evitar.
+Usar esta sección solo cuando existan elementos relevantes para preservar continuidad.
+No convertirla en lista exhaustiva.
 -->
 
-Este recorrido preserva continuidad porque conecta el producto visible con el escenario de negocio que responde, las personas que lo usan, las acciones que permite, los flujos que ayuda a ejecutar, los servicios que coordina y el aprendizaje que cambia su experiencia.
-
-Ayuda a evitar que una pantalla, funcionalidad o flujo sea diseñado como elemento aislado, sin recordar qué trabajo permite realizar, qué expectativa debe cumplir, qué servicio lo habilita o qué feedback modificó su comportamiento esperado.
-
-## Señales de orientación
-
-<!--
-¿Cómo sabemos qué hacer con cada nodo?
-
-Registrar señales que ayudan a decidir si conviene seguir, detenerse, documentar, ignorar temporalmente o cambiar de path.
--->
-
-| Señal                                                                | Acción sugerida                                                                             |
-| -------------------------------------------------------------------- | ------------------------------------------------------------------------------------------- |
-| El producto no tiene escenario de negocio claro                      | Revisar Business Scenario                                                                   |
-| El producto no tiene motivación visible clara                        | Revisar Business Driver                                                                     |
-| El usuario o actor no está claro                                     | Evaluar Context Document o Business Scenario                                                |
-| Una acción visible aparece como `{{texto}}`                          | Evaluar si necesita Behavior Document                                                       |
-| Un proceso o flujo soportado aparece como `{{texto}}`                | Evaluar si necesita Structure Document, Behavior Document o validación                      |
-| Un servicio sostiene una parte del producto                          | Cambiar hacia Consumable Service si la pregunta pasa a contrato, entrada, salida o garantía |
-| Una decisión de alcance o experiencia aparece como `{{texto}}`       | Evaluar si necesita Decision Record                                                         |
-| El producto cambia por feedback externo                              | Revisar o crear Feedback Document                                                           |
-| Una validación cambia la comprensión del producto                    | Revisar o crear Support Note kind: validation                                               |
-| Un feedback contradice el comportamiento esperado                    | Evaluar Behavior Document, Decision Record o nueva validación                               |
-| La pregunta pasa a cómo vive técnicamente el producto en un proyecto | Cambiar hacia Software Project                                                              |
-| La pregunta pasa a qué iniciativa contiene este producto             | Cambiar hacia Software Initiative                                                           |
-
-## Cambio de path
-
-<!--
-¿Cuándo conviene cambiar de perspectiva?
-
-Indicar señales que sugieren que otro Continuity Path podría preservar mejor la continuidad buscada.
--->
-
-| Señal                                                                                     | Path sugerido       |
-| ----------------------------------------------------------------------------------------- | ------------------- |
-| La pregunta principal pasa a ser dónde ocurre el trabajo                                  | Business Scenario   |
-| La pregunta principal pasa a ser por qué importa intervenir                               | Business Driver     |
-| La pregunta principal pasa a ser qué lenguaje, reglas o límites pertenecen al negocio     | Domain Context      |
-| La pregunta principal pasa a ser qué iniciativa de software aborda esta parte del trabajo | Software Initiative |
-| La pregunta principal pasa a ser cómo vive un elemento dentro de un proyecto técnico      | Software Project    |
-| La pregunta principal pasa a ser qué contrato, entrada, salida o garantía ofrece          | Consumable Service  |
-| La pregunta principal pasa a ser quién entiende, decide, valida o mantiene el producto    | Ownership           |
-| La pregunta principal pasa a ser qué otros elementos se ven afectados                     | Impact              |
-| La pregunta principal pasa a ser de dónde viene y dónde terminó materializándose          | Traceability        |
-
-## Resultado esperado
-
-<!--
-¿Qué debería entenderse al terminar?
-
-Indicar qué claridad, orientación o comprensión debería obtenerse después de recorrer el path.
--->
-
-Al terminar este recorrido debería entenderse:
-
-* qué producto o parte visible del producto se está siguiendo
-* qué parte del escenario de negocio responde
-* qué usuarios, clientes, áreas o actores interactúan con el producto
-* qué acciones visibles permite realizar
-* qué procesos o flujos ayuda a ejecutar
-* qué servicios consumibles necesita coordinar
-* qué capacidades usa, combina o expone a través de la experiencia
-* qué decisiones explican su alcance o experiencia
-* qué feedback o validación confirmó, corrigió o cambió su comportamiento esperado
-* qué conocimiento ya está documentado
-* qué conocimiento requiere documentación
-* qué conocimiento fue identificado pero no requiere documentación todavía
-* cuándo conviene detenerse o cambiar de path
-
-## Riesgos de navegación
-
-<!--
-¿Qué puede malinterpretarse si se recorre mal?
-
-Registrar riesgos de usar el path como documento detallado, leer nodos como obligaciones, documentar demasiado pronto o asumir trazabilidad formal innecesaria.
--->
-
-| Riesgo de navegación                                       | Consecuencia                                                                                      |
-| ---------------------------------------------------------- | ------------------------------------------------------------------------------------------------- |
-| Confundir producto al cliente con iniciativa completa      | Se reduce la iniciativa a una superficie visible y se pierden servicios, capacidades o decisiones |
-| Confundir producto con proyecto técnico                    | Se baja demasiado rápido hacia implementación y se pierde la experiencia de uso                   |
-| Confundir pantalla con producto                            | Se documenta una interfaz aislada sin preservar acción, flujo, valor o comportamiento             |
-| Confundir acción visible con componente visual             | Se describe la interfaz sin explicar qué puede hacer realmente el usuario                         |
-| Confundir comportamiento visible con contrato de servicio  | Se mezclan expectativas de usuario con garantías consumibles                                      |
-| Diseñar experiencia sin escenario de negocio claro         | El producto puede optimizar una interacción sin responder al trabajo real                         |
-| Diseñar acciones visibles sin feedback ni validación       | El producto puede preservar una experiencia incorrecta o insuficiente                             |
-| Usar feedback aislado como decisión definitiva             | Se sobrerreacciona a señales insuficientes                                                        |
-| Ocultar qué servicios consumibles sostienen la experiencia | Se pierde continuidad entre experiencia visible y capacidades reales                              |
-| Documentar todos los flujos visibles                       | Se genera documentación prematura y difícil de mantener                                           |
-| Interpretar `{{texto}}` como obligación inmediata          | Se genera documentación prematura                                                                 |
-| Interpretar `>texto]` como deuda documental                | Se burocratizan conceptos que solo necesitaban visibilidad                                        |
-
-## Principio de continuidad
-
-!!! principle "Principio de Continuidad"
-
-```
-La perspectiva de producto al cliente debería ayudar a preservar la continuidad entre escenario de negocio, acciones visibles, experiencia de uso, servicios coordinados y aprendizaje obtenido desde feedback o validación.
-```
+| Concepto complementario | Relación con el escenario | Path o artifact sugerido |
+| ----------------------- | ------------------------- | ------------------------ |
+| <concepto>              | <relación>                | <path o artifact>        |

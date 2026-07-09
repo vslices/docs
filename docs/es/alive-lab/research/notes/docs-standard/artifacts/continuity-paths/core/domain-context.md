@@ -1,37 +1,5 @@
 # Camino de continuidad "Contexto de dominio" de <tema>
 
-## Organización
-
-```mermaid
-flowchart LR
-    R["Camino de continuidad<br/><small>¿Cómo exploramos este recorrido?</small>"]
-
-    B1["Objeto de navegación<br/><small>¿Qué camino de continuidad vamos a recorrer?</small>"]
-    B2["Propósito del recorrido<br/><small>¿Para qué necesitamos recorrer este path?</small>"]
-    B3["Punto de entrada<br/><small>¿Por dónde conviene empezar?</small>"]
-    B4["Diagrama de continuidad<br/><small>¿Qué mapa vamos a recorrer?</small>"]
-    B5["Lectura del diagrama<br/><small>¿Cómo se interpreta el mapa?</small>"]
-    B6["Recorrido recomendado<br/><small>¿Qué ruta conviene seguir primero?</small>"]
-    B7["Criterio de navegación<br/><small>¿Por qué este recorrido preserva continuidad?</small>"]
-    B8["Señales de orientación<br/><small>¿Cómo sabemos qué hacer con cada nodo?</small>"]
-    B9["Cambio de path<br/><small>¿Cuándo conviene cambiar de perspectiva?</small>"]
-    B10["Resultado esperado<br/><small>¿Qué debería entenderse al terminar?</small>"]
-    B11["Riesgos de navegación<br/><small>¿Qué puede malinterpretarse si se recorre mal?</small>"]
-
-    R --> B1 & B2 & B3 & B4 & B5 & B6 & B7 & B8 & B10
-    R -.-> B9 & B11
-```
-
-## Objeto de navegación
-
-<!--
-¿Qué camino de continuidad vamos a recorrer?
-
-Indicar que este documento orienta la lectura del Domain Context Continuity Path asociado a una parte del negocio, zona conceptual, lenguaje, reglas, comportamientos, capacidades o límites semánticos.
--->
-
-Este documento orienta la lectura del Camino de continuidad de Contexto de dominio para `<tema>`.
-
 ## Propósito del recorrido
 
 <!--
@@ -131,21 +99,6 @@ flowchart LR
     P6 -.-> D1 & D2
 ```
 
-## Lectura del diagrama
-
-<!--
-¿Cómo se interpreta el mapa?
-
-Explicar brevemente cómo leer la semántica visual del Diagrama de Camino de Continuidad.
--->
-
-| Forma       | Significado                                           | Qué hacer al encontrarla                                                                                   |
-| ----------- | ----------------------------------------------------- | ---------------------------------------------------------------------------------------------------------- |
-| `[[texto]]` | Concepto documentado                                  | Revisar los artifacts asociados si son relevantes para entender el lenguaje, reglas o límites del contexto |
-| `[texto]`   | Pregunta orientadora u orientación definida           | Usarla para decidir qué aspecto semántico del dominio revisar                                              |
-| `>texto]`   | Concepto identificado sin necesidad documental actual | Mantenerlo visible sin documentarlo todavía                                                                |
-| `{{texto}}` | Concepto identificado con necesidad documental        | Evaluar si debe documentarse para no perder significado, regla, comportamiento o límite conceptual         |
-
 ## Recorrido recomendado
 
 <!--
@@ -164,111 +117,15 @@ Describir el recorrido principal recomendado para entender el path sin duplicar 
 | 6     | Productos o servicios que usan el contexto | Permite entender qué piezas dependen de este significado                                                     |
 | 7     | Decisiones de límite                       | Permite entender por qué ciertos conceptos, nombres o responsabilidades pertenecen aquí y no a otro contexto |
 
-## Criterio de navegación
+## Conceptos complementarios
 
 <!--
-¿Por qué este recorrido preserva continuidad?
+¿Qué elementos relacionados ayudan a entender este escenario sin pertenecer necesariamente a la ruta principal?
 
-Explicar la lógica del recorrido recomendado y qué pérdida de intención ayuda a evitar.
+Usar esta sección solo cuando existan elementos relevantes para preservar continuidad.
+No convertirla en lista exhaustiva.
 -->
 
-Este recorrido preserva continuidad porque conecta una parte del negocio con su lenguaje propio, sus reglas, sus comportamientos, sus capacidades derivadas y los límites que explican dónde ese significado aplica.
-
-Ayuda a evitar que el mismo término sea usado con sentidos distintos sin hacerlo visible, que una regla quede separada del contexto donde aplica o que una capacidad, producto o servicio se diseñe sin preservar el significado de negocio que lo sostiene.
-
-## Señales de orientación
-
-<!--
-¿Cómo sabemos qué hacer con cada nodo?
-
-Registrar señales que ayudan a decidir si conviene seguir, detenerse, documentar, ignorar temporalmente o cambiar de path.
--->
-
-| Señal                                                      | Acción sugerida                                                                             |
-| ---------------------------------------------------------- | ------------------------------------------------------------------------------------------- |
-| Un término cambia de significado entre contextos           | Revisar o crear Domain Vocabulary                                                           |
-| Un término aparece como `{{texto}}`                        | Evaluar si necesita Domain Vocabulary                                                       |
-| Una regla aparece sin límite de aplicación claro           | Evaluar si necesita Consistency Document o Context Document                                 |
-| Una invariante aparece como `{{texto}}`                    | Evaluar si necesita Consistency Document                                                    |
-| Un comportamiento mezcla reglas de varios contextos        | Revisar límites del Domain Context                                                          |
-| Un comportamiento aparece como `{{texto}}`                 | Evaluar si necesita Behavior Document                                                       |
-| Una capacidad nace desde reglas estables del dominio       | Evaluar qué artifact responde mejor: Scope Document, Structure Document o Behavior Document |
-| Una frontera conceptual está en discusión                  | Evaluar si necesita Decision Record                                                         |
-| Un producto usa conceptos del contexto                     | Cambiar hacia Client Product si la pregunta pasa a experiencia o acciones visibles          |
-| Un servicio expone conceptos del contexto                  | Cambiar hacia Consumable Service si la pregunta pasa a contrato, consumo o garantías        |
-| El path empieza a hablar de módulos, carpetas o despliegue | Cambiar hacia Software Project o detener el recorrido técnico prematuro                     |
-
-## Cambio de path
-
-<!--
-¿Cuándo conviene cambiar de perspectiva?
-
-Indicar señales que sugieren que otro Continuity Path podría preservar mejor la continuidad buscada.
--->
-
-| Señal                                                                                     | Path sugerido       |
-| ----------------------------------------------------------------------------------------- | ------------------- |
-| La pregunta principal pasa a ser dónde ocurre el trabajo                                  | Business Scenario   |
-| La pregunta principal pasa a ser por qué importa intervenir                               | Business Driver     |
-| La pregunta principal pasa a ser qué iniciativa de software aborda esta parte del trabajo | Software Initiative |
-| La pregunta principal pasa a ser cómo vive un elemento dentro de un proyecto técnico      | Software Project    |
-| La pregunta principal pasa a ser qué puede hacer una persona usuaria con el sistema       | Client Product      |
-| La pregunta principal pasa a ser qué contrato, entrada, salida o garantía ofrece          | Consumable Service  |
-| La pregunta principal pasa a ser quién entiende, decide, valida o mantiene el contexto    | Ownership           |
-| La pregunta principal pasa a ser qué otros elementos se ven afectados                     | Impact              |
-| La pregunta principal pasa a ser de dónde viene y dónde terminó materializándose          | Traceability        |
-
-## Resultado esperado
-
-<!--
-¿Qué debería entenderse al terminar?
-
-Indicar qué claridad, orientación o comprensión debería obtenerse después de recorrer el path.
--->
-
-Al terminar este recorrido debería entenderse:
-
-* qué contexto de dominio se está siguiendo
-* qué parte del negocio necesita lenguaje propio
-* qué conceptos pertenecen juntos
-* qué términos tienen significado específico dentro del contexto
-* qué términos cambian de significado fuera de este contexto
-* qué reglas o invariantes deben protegerse
-* qué comportamientos pertenecen realmente a este contexto
-* qué capacidades podrían surgir desde este dominio
-* qué productos o servicios usan conceptos de este contexto
-* qué decisiones explican sus límites conceptuales
-* qué conocimiento ya está documentado
-* qué conocimiento requiere documentación
-* qué conocimiento fue identificado pero no requiere documentación todavía
-* cuándo conviene detenerse o cambiar de path
-
-## Riesgos de navegación
-
-<!--
-¿Qué puede malinterpretarse si se recorre mal?
-
-Registrar riesgos de usar el path como documento detallado, leer nodos como obligaciones, documentar demasiado pronto o asumir trazabilidad formal innecesaria.
--->
-
-| Riesgo de navegación                                                   | Consecuencia                                                                                         |
-| ---------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------- |
-| Confundir contexto de dominio con estructura técnica                   | Se convierte una zona semántica del negocio en módulo, carpeta, servicio o despliegue prematuramente |
-| Confundir contexto de dominio con escenario de negocio completo        | Se asume que toda operación comparte un único lenguaje o límite conceptual                           |
-| Usar nombres técnicos antes de entender el lenguaje del negocio        | El software empieza a nombrar el dominio desde implementación y no desde significado                 |
-| Mezclar términos que significan cosas distintas en contextos distintos | Se pierde precisión semántica y aparecen reglas ambiguas                                             |
-| Documentar todos los términos detectados                               | Se genera vocabulario prematuro y difícil de mantener                                                |
-| Documentar reglas sin explicar dónde aplican                           | Las reglas pierden su límite de validez dentro del negocio                                           |
-| Ocultar ambigüedades semánticas detrás de nombres genéricos            | Se preserva confusión como si fuera conocimiento estable                                             |
-| Tratar el vocabulario como glosario decorativo                         | Se pierde su función como límite de significado                                                      |
-| Interpretar `{{texto}}` como obligación inmediata                      | Se genera documentación prematura                                                                    |
-| Interpretar `>texto]` como deuda documental                            | Se burocratizan conceptos que solo necesitaban visibilidad                                           |
-| Saltar desde dominio a implementación demasiado pronto                 | Se pierde intención conceptual antes de diseñar o construir                                          |
-
-## Principio de continuidad
-
-!!! principle "Principio de Continuidad"
-
-```
-La perspectiva de contexto de dominio debería ayudar a preservar el lenguaje, las reglas, los comportamientos y los límites conceptuales de una parte del negocio antes de convertirlos en productos, servicios, capacidades o software.
-```
+| Concepto complementario | Relación con el escenario | Path o artifact sugerido |
+| ----------------------- | ------------------------- | ------------------------ |
+| <concepto>              | <relación>                | <path o artifact>        |
