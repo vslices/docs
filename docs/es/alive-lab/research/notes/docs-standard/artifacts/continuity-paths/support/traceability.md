@@ -21,32 +21,10 @@ Significa reconstruir las conexiones necesarias para entender origen, transforma
 ## Punto de entrada
 
 <!--
-¿Por dónde conviene empezar?
+¿Por dónde empieza este camino?
 
-Indicar el concepto, decisión, artifact, comportamiento, feature, servicio, producto o implementación cuyo recorrido se quiere reconstruir.
+Indicar el concepto, decisión, artifact, comportamiento, feature, servicio, producto, implementación, feedback, validación, cambio o materialización cuyo recorrido se quiere reconstruir.
 -->
-
-El recorrido debería comenzar desde el elemento cuya historia se quiere reconstruir.
-
-Ese punto de entrada puede ser:
-
-* una necesidad
-* una oportunidad
-* una regla
-* una decisión
-* una feature
-* un comportamiento
-* un artifact
-* un producto al cliente
-* un servicio consumible
-* una capacidad
-* una implementación
-* una validación
-* un feedback
-* un cambio observado
-* una actualización documental
-* una exclusión o postergación
-* una materialización que perdió contexto
 
 ## Diagrama de continuidad
 
@@ -61,56 +39,37 @@ El diagrama debe mostrar preguntas de orientación, conceptos relacionados y est
 flowchart LR
     A[["<b>Traceable Element</b><br/>[Elemento trazado]<br/><small><a href='link'>Traceability Path</a></small>"]]
 
-    P1["¿Cuál fue su origen?"]
-    P2["¿Qué decisiones lo transformaron?"]
-    P3["¿Qué artifacts preservan su intención?"]
-    P4["¿Dónde se materializó?"]
-    P5["¿Qué validaciones o feedback cambiaron su forma?"]
-    P6["¿Qué quedó pendiente, excluido o reemplazado?"]
-    P7["¿Qué evolución explica su estado actual?"]
+    A --> P1["¿Cuál fue su origen?"]
+    A --> P2["¿Qué decisiones lo transformaron?"]
+    A --> P3["¿Qué artifacts preservan su intención?"]
+    A --> P4["¿Dónde se materializó?"]
+    A -.-> P5["¿Qué validaciones o feedback cambiaron su forma?"]
+    A -.-> P6["¿Qué quedó pendiente, excluido o reemplazado?"]
+    A -.-> P7["¿Qué evolución explica su estado actual?"]
 
-    O1[["<b>Business Driver</b><br/>[Motivación de origen]<br/><small><a href='link'>Business Driver Path</a></small>"]]
-    O2[["<b>Domain Context</b><br/>[Origen conceptual]<br/><small><a href='link'>Domain Context Path</a></small>"]]
-    O3>"<b>Observed Need</b><br/>[Necesidad observada]"]
+    P1 --> O1[["<b>Business Driver</b><br/>[Motivación de origen]<br/><small><a href='link'>Business Driver Path</a></small>"]]
+    P1 --> O2[["<b>Domain Context</b><br/>[Origen conceptual]<br/><small><a href='link'>Domain Context Path</a></small>"]]
+    P1 --> O3>"<b>Observed Need</b><br/>[Necesidad observada]"]
 
-    D1[["<b>Decision</b><br/>[Decisión documentada]<br/><small><a href='link'>Decision Record</a></small>"]]
-    D2{{"<b>Decision Gap</b><br/>[Decisión no documentada]<br/><small>Decision Record</small>"}}
+    P2 --> D1[["<b>Decision</b><br/>[Decisión documentada]<br/><small><a href='link'>Decision Record</a></small>"]]
+    P2 --> D2{{"<b>Decision Gap</b><br/>[Decisión no documentada]<br/><small>Decision Record</small>"}}
 
-    A1[["<b>Artifact</b><br/>[Artifact relacionado]<br/><small><a href='link'>Context Document</a><br/><a href='link'>Behavior Document</a></small>"]]
-    A2>"<b>Support Note</b><br/>[Nota relacionada]"]
+    P3 --> AR1[["<b>Artifact</b><br/>[Artifact relacionado]<br/><small><a href='link'>Context Document</a><br/><a href='link'>Behavior Document</a></small>"]]
+    P3 --> AR2>"<b>Support Note</b><br/>[Nota relacionada]"]
 
-    M1[["<b>Client Product</b><br/>[Materialización visible]<br/><small><a href='link'>Client Product Path</a></small>"]]
-    M2[["<b>Consumable Service</b><br/>[Materialización consumible]<br/><small><a href='link'>Consumable Service Path</a></small>"]]
-    M3[["<b>Software Project</b><br/>[Materialización técnica]<br/><small><a href='link'>Software Project Path</a></small>"]]
+    P4 --> M1[["<b>Client Product</b><br/>[Materialización visible]<br/><small><a href='link'>Client Product Path</a></small>"]]
+    P4 --> M2[["<b>Visible Flow</b><br/>[Flujo visible materializado]<br/><small><a href='link'>Mockup Flow</a><br/><a href='link'>Behavior Document</a></small>"]]
+    P4 --> M3[["<b>Consumable Service</b><br/>[Materialización consumible]<br/><small><a href='link'>Consumable Service Path</a></small>"]]
+    P4 --> M4[["<b>Consumption Model</b><br/>[Forma de consumo materializada]<br/><small><a href='link'>Structure Document</a><br/><a href='link'>Behavior Document</a></small>"]]
+    P4 --> M5[["<b>Software Project</b><br/>[Materialización técnica]<br/><small><a href='link'>Software Project Path</a></small>"]]
 
-    V1[["<b>Feedback</b><br/>[Feedback documentado]<br/><small><a href='link'>Feedback Document</a></small>"]]
-    V2{{"<b>Validation</b><br/>[Validación relevante]<br/><small>Support Note kind: validation</small>"}}
+    P5 -.-> V1[["<b>Feedback</b><br/>[Feedback documentado]<br/><small><a href='link'>Feedback Document</a></small>"]]
+    P5 -.-> V2{{"<b>Validation</b><br/>[Validación relevante]<br/><small>Support Note kind: validation</small>"}}
 
-    PND{{"<b>Pending / Excluded / Replaced</b><br/>[Pendiente, excluido o reemplazado]<br/><small>Scope Document<br/>Update Document<br/>Decision Record</small>"}}
+    P6 -.-> PND{{"<b>Pending / Excluded / Replaced</b><br/>[Pendiente, excluido o reemplazado]<br/><small>Scope Document<br/>Update Document<br/>Decision Record</small>"}}
 
-    E1[["<b>Evolution</b><br/>[Evolución documentada]<br/><small><a href='link'>Evolution Path</a></small>"]]
-    E2>"<b>Scope Change</b><br/>[Cambio de alcance identificado]"]
-
-    A --> P1
-    P1 --> O1 & O2 & O3
-
-    A --> P2
-    P2 --> D1 & D2
-
-    A --> P3
-    P3 --> A1 & A2
-
-    A --> P4
-    P4 --> M1 & M2 & M3
-
-    A -.-> P5
-    P5 -.-> V1 & V2
-
-    A -.-> P6
-    P6 -.-> PND
-
-    A -.-> P7
-    P7 -.-> E1 & E2
+    P7 -.-> E1[["<b>Evolution</b><br/>[Evolución documentada]<br/><small><a href='link'>Evolution Path</a></small>"]]
+    P7 -.-> E2>"<b>Scope Change</b><br/>[Cambio de alcance identificado]"]
 ```
 
 ## Recorrido recomendado
@@ -132,15 +91,34 @@ Describir el recorrido principal recomendado para entender el path sin duplicar 
 | 7     | Pendiente, excluido o reemplazado | Permite entender qué no se materializó y por qué                 |
 | 8     | Evolución relevante               | Permite entender qué cambios explican su estado actual           |
 
+## Origen, transformación y materialización
+
+<!--
+¿Cómo se distingue trazabilidad de impacto, evolución o actualización?
+
+Usar esta sección para evitar que Traceability se convierta en una matriz exhaustiva de relaciones.
+-->
+
+| Concepto        | Cómo se interpreta                                                          | Cuándo usarlo                                                                          |
+| --------------- | --------------------------------------------------------------------------- | -------------------------------------------------------------------------------------- |
+| Traceability    | Recorrido entre origen, transformación y materialización                    | Cuando necesitamos reconstruir la historia de continuidad de un elemento               |
+| Origin          | Lugar donde nace la necesidad, concepto, regla, decisión o intención        | Cuando necesitamos entender de dónde viene algo                                        |
+| Transformation  | Decisión, cambio, aprendizaje o ajuste que modificó la forma del elemento   | Cuando necesitamos entender por qué algo cambió                                        |
+| Artifact        | Documento, nota, diagrama, mockup o path que preserva parte de la intención | Cuando necesitamos encontrar dónde quedó explicado                                     |
+| Materialization | Lugar donde el elemento terminó viviendo o expresándose                     | Cuando necesitamos conectar intención con producto, servicio, proyecto o documentación |
+| Evolution       | Cambio en el tiempo que explica el estado actual                            | Cuando necesitamos entender cómo algo cambió sin perder intención                      |
+| Impact          | Elementos afectados por una modificación                                    | Cuando necesitamos entender qué se ve afectado por un cambio                           |
+| Update Document | Artifact que explica qué debe actualizarse                                  | Cuando la trazabilidad muestra que algo quedó desalineado                              |
+
 ## Conceptos complementarios
 
 <!--
-¿Qué elementos relacionados ayudan a entender este escenario sin pertenecer necesariamente a la ruta principal?
+¿Qué elementos relacionados ayudan a entender esta trazabilidad sin pertenecer necesariamente a la ruta principal?
 
 Usar esta sección solo cuando existan elementos relevantes para preservar continuidad.
 No convertirla en lista exhaustiva.
 -->
 
-| Concepto complementario | Relación con el escenario | Path o artifact sugerido |
-| ----------------------- | ------------------------- | ------------------------ |
-| <concepto>              | <relación>                | <path o artifact>        |
+| Concepto complementario | Relación con la trazabilidad | Path o artifact sugerido |
+| ----------------------- | ---------------------------- | ------------------------ |
+| <concepto>              | <relación>                   | <path o artifact>        |

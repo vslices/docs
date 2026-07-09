@@ -18,28 +18,15 @@ Este path no intenta documentar todo lo que alguien sabe.
 
 Intenta identificar qué conocimiento, si se pierde, afecta continuidad operativa, técnica, de producto, de dominio o de decisión.
 
+Es especialmente útil cuando existe una salida del equipo, cambio de célula, rotación de ownership, transición operacional, cierre de participación o pérdida de disponibilidad de una persona clave.
+
 ## Punto de entrada
 
 <!--
-¿Por dónde conviene empezar?
+¿Por dónde empieza este camino?
 
-Indicar desde qué situación concreta nace el handoff.
+Indicar la situación concreta que genera el handoff: salida, cambio de rol, traspaso, rotación de ownership, transición operacional o pérdida de disponibilidad.
 -->
-
-El recorrido debería comenzar desde la situación concreta que genera el traspaso.
-
-Ejemplos:
-
-* salida de una persona del equipo
-* cambio de célula
-* reemplazo de responsable técnico
-* cierre de participación en un proyecto
-* traspaso entre equipos
-* rotación de ownership
-* pérdida de disponibilidad de una persona clave
-* transición operacional
-* entrega de conocimiento antes de una fecha límite
-* preparación de soporte para continuidad futura
 
 ## Diagrama de continuidad
 
@@ -50,66 +37,42 @@ Incluir el Diagrama de Camino de Continuidad asociado a Knowledge Handoff.
 El diagrama debe mostrar preguntas de orientación, conceptos relacionados y estado documental de los conceptos conectados.
 -->
 
-```mermaid id="kh-path"
+```mermaid
 flowchart LR
     A[["<b>Knowledge Handoff</b><br/>[Traspaso de conocimiento]<br/><small><a href='link'>Knowledge Handoff Path</a></small>"]]
 
-    P1["¿Qué conocimiento debe transferirse?"]
-    P2["¿Quién necesita recibirlo?"]
-    P3["¿Qué riesgo aparece si no queda disponible?"]
-    P4["¿Qué debe priorizarse por tiempo limitado?"]
-    P5["¿Qué decisiones o criterios deben preservarse?"]
-    P6["¿Qué partes técnicas deben poder navegarse?"]
-    P7["¿Qué comportamientos deben entenderse?"]
-    P8["¿Qué queda pendiente, incompleto o fuera del traspaso?"]
+    A --> P1["¿Qué conocimiento debe transferirse?"]
+    A --> P2["¿Quién necesita recibirlo?"]
+    A --> P3["¿Qué riesgo aparece si no queda disponible?"]
+    A --> P4["¿Qué debe priorizarse por tiempo limitado?"]
+    A -.-> P5["¿Qué decisiones o criterios deben preservarse?"]
+    A -.-> P6["¿Qué partes técnicas deben poder navegarse?"]
+    A -.-> P7["¿Qué comportamientos deben entenderse?"]
+    A -.-> P8["¿Qué queda pendiente, incompleto o fuera del traspaso?"]
 
-    K1[["<b>Knowledge Area</b><br/>[Área de conocimiento documentada]<br/><small><a href='link'>Context Document</a><br/><a href='link'>Navigation Document</a></small>"]]
-    K2{{"<b>Tacit Knowledge</b><br/>[Conocimiento tácito relevante]<br/><small>Support Note<br/>Context Document</small>"}}
+    P1 --> K1[["<b>Knowledge Area</b><br/>[Área de conocimiento documentada]<br/><small><a href='link'>Context Document</a><br/><a href='link'>Navigation Document</a></small>"]]
+    P1 --> K2{{"<b>Tacit Knowledge</b><br/>[Conocimiento tácito relevante]<br/><small>Support Note<br/>Context Document</small>"}}
 
-    O1[["<b>Receiver / Owner</b><br/>[Responsable receptor]<br/><small><a href='link'>Ownership Path</a></small>"]]
-    O2>"<b>Receiver</b><br/>[Persona, rol o equipo identificado]"]
+    P2 --> O1[["<b>Receiver / Owner</b><br/>[Responsable receptor]<br/><small><a href='link'>Ownership Path</a></small>"]]
+    P2 --> O2>"<b>Receiver</b><br/>[Persona, rol o equipo identificado]"]
 
-    I1{{"<b>Continuity Risk</b><br/>[Riesgo de pérdida de continuidad]<br/><small>Impact Path<br/>Support Note</small>"}}
-    I2>"<b>Operational Impact</b><br/>[Impacto operativo identificado]"]
+    P3 --> I1{{"<b>Continuity Risk</b><br/>[Riesgo de pérdida de continuidad]<br/><small>Impact Path<br/>Support Note</small>"}}
+    P3 --> I2>"<b>Operational Impact</b><br/>[Impacto operativo identificado]"]
 
-    V1[["<b>Viability</b><br/>[Priorización viable]<br/><small><a href='link'>Viability Path</a><br/><a href='link'>Viability Document kind: temporal</a></small>"]]
-    S1{{"<b>Handoff Scope</b><br/>[Alcance del traspaso]<br/><small>Scope Document</small>"}}
+    P4 --> V1[["<b>Viability</b><br/>[Priorización viable]<br/><small><a href='link'>Viability Path</a><br/><a href='link'>Viability Document kind: temporal</a></small>"]]
+    P4 --> S1{{"<b>Handoff Scope</b><br/>[Alcance del traspaso]<br/><small>Scope Document</small>"}}
 
-    D1[["<b>Decision</b><br/>[Decisión documentada]<br/><small><a href='link'>Decision Record</a></small>"]]
-    D2{{"<b>Decision Criteria</b><br/>[Criterio no documentado]<br/><small>Decision Record<br/>Support Note</small>"}}
+    P5 -.-> D1[["<b>Decision</b><br/>[Decisión documentada]<br/><small><a href='link'>Decision Record</a></small>"]]
+    P5 -.-> D2{{"<b>Decision Criteria</b><br/>[Criterio no documentado]<br/><small>Decision Record<br/>Support Note</small>"}}
 
-    T1[["<b>Software Project Area</b><br/>[Zona técnica documentada]<br/><small><a href='link'>Software Project Path</a><br/><a href='link'>Structure Document</a></small>"]]
-    T2{{"<b>Technical Entry Point</b><br/>[Punto técnico crítico]<br/><small>Structure Document<br/>Navigation Document</small>"}}
+    P6 -.-> T1[["<b>Software Project Area</b><br/>[Zona técnica documentada]<br/><small><a href='link'>Software Project Path</a><br/><a href='link'>Structure Document</a></small>"]]
+    P6 -.-> T2{{"<b>Technical Entry Point</b><br/>[Punto técnico crítico]<br/><small>Structure Document<br/>Navigation Document</small>"}}
 
-    B1[["<b>Behavior</b><br/>[Comportamiento documentado]<br/><small><a href='link'>Behavior Document</a></small>"]]
-    B2{{"<b>Expected Behavior</b><br/>[Comportamiento relevante]<br/><small>Behavior Document<br/>Support Note kind: testing-spec</small>"}}
+    P7 -.-> B1[["<b>Behavior</b><br/>[Comportamiento documentado]<br/><small><a href='link'>Behavior Document</a></small>"]]
+    P7 -.-> B2{{"<b>Expected Behavior</b><br/>[Comportamiento relevante]<br/><small>Behavior Document<br/>Support Note kind: testing-spec</small>"}}
 
-    PND{{"<b>Pending / Incomplete</b><br/>[Pendiente o incompleto]<br/><small>Support Note<br/>Update Document</small>"}}
-    EXC>"<b>Out of Handoff Scope</b><br/>[Fuera del traspaso actual]"]
-
-    A --> P1
-    P1 --> K1 & K2
-
-    A --> P2
-    P2 --> O1 & O2
-
-    A --> P3
-    P3 --> I1 & I2
-
-    A --> P4
-    P4 --> V1 & S1
-
-    A -.-> P5
-    P5 -.-> D1 & D2
-
-    A -.-> P6
-    P6 -.-> T1 & T2
-
-    A -.-> P7
-    P7 -.-> B1 & B2
-
-    A -.-> P8
-    P8 -.-> PND & EXC
+    P8 -.-> PND{{"<b>Pending / Incomplete</b><br/>[Pendiente o incompleto]<br/><small>Support Note<br/>Update Document</small>"}}
+    P8 -.-> EXC>"<b>Out of Handoff Scope</b><br/>[Fuera del traspaso actual]"]
 ```
 
 ## Recorrido recomendado
@@ -133,15 +96,34 @@ Describir el recorrido principal recomendado para organizar el handoff sin inten
 | 9     | Comportamientos relevantes | Permite entender qué debe ocurrir y cómo reconocer fallos                      |
 | 10    | Pendientes e incompletos   | Permite dejar claro qué no alcanzó a transferirse                              |
 
+## Handoff, ownership y continuidad
+
+<!--
+¿Cómo se distingue Knowledge Handoff de Ownership, Impact o documentación general?
+
+Usar esta sección para evitar que el handoff intente documentar todo lo que una persona sabe.
+-->
+
+| Concepto              | Cómo se interpreta                                                               | Cuándo usarlo                                                                           |
+| --------------------- | -------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------- |
+| Knowledge Handoff     | Traspaso priorizado de conocimiento relevante bajo restricciones reales          | Cuando una persona, rol o equipo deja de estar disponible o cambia su responsabilidad   |
+| Knowledge Area        | Área de conocimiento que necesita quedar disponible                              | Cuando el equipo debe poder navegar una parte del negocio, producto, servicio o sistema |
+| Tacit Knowledge       | Conocimiento relevante que vive en personas y no está suficientemente preservado | Cuando perderlo puede afectar continuidad                                               |
+| Receiver / Owner      | Persona, rol o equipo que recibe o sostiene el conocimiento                      | Cuando el handoff necesita receptor claro                                               |
+| Continuity Risk       | Riesgo producido por no transferir cierto conocimiento                           | Cuando hay que priorizar qué traspasar primero                                          |
+| Handoff Scope         | Límite de lo que entra, queda fuera o queda pendiente en el traspaso             | Cuando el tiempo o capacidad no permiten transferir todo                                |
+| Technical Entry Point | Punto técnico que permite navegar una zona crítica del proyecto                  | Cuando el receptor necesita ubicarse rápidamente en la solución                         |
+| Pending / Incomplete  | Conocimiento o artifact que no alcanzó a cerrarse                                | Cuando debe quedar explícito qué no fue transferido completamente                       |
+
 ## Conceptos complementarios
 
 <!--
-¿Qué elementos relacionados ayudan a entender este escenario sin pertenecer necesariamente a la ruta principal?
+¿Qué elementos relacionados ayudan a entender este handoff sin pertenecer necesariamente a la ruta principal?
 
 Usar esta sección solo cuando existan elementos relevantes para preservar continuidad.
 No convertirla en lista exhaustiva.
 -->
 
-| Concepto complementario | Relación con el escenario | Path o artifact sugerido |
-| ----------------------- | ------------------------- | ------------------------ |
-| <concepto>              | <relación>                | <path o artifact>        |
+| Concepto complementario | Relación con el handoff | Path o artifact sugerido |
+| ----------------------- | ----------------------- | ------------------------ |
+| <concepto>              | <relación>              | <path o artifact>        |
