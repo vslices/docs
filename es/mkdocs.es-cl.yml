@@ -9,7 +9,7 @@ repo_name: vslices/docs
 extra:
     social_card_image: https://raw.githubusercontent.com/vslices/icons/refs/heads/main/social/social-card-es.png
 
-docs_dir: docs/es 
+docs_dir: .
 
 theme:
     name: material
