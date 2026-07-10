@@ -4,7 +4,7 @@ artifact:
   type: service-consumption
   scope: service
   target: <service-or-operation-name>
-  language: <es|en>
+  language: <es>
 
 metadata:
   status: <draft|candidate|active|deprecated|superseded>

@@ -4,7 +4,7 @@ artifact:
   type: consistency
   scope: <concept|rule|invariant|behavior|capability|service|product|domain-context|project>
   target: <target-name>
-  language: <es|en>
+  language: <es>
 
 metadata:
   status: <draft|candidate|active|deprecated|superseded>

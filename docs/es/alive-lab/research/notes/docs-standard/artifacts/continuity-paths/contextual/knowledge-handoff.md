@@ -4,7 +4,7 @@ artifact:
   type: knowledge-handoff
   scope: handoff
   target: <handoff-situation-name>
-  language: <es|en>
+  language: <es>
 
 metadata:
   status: <draft|candidate|active|deprecated|superseded>

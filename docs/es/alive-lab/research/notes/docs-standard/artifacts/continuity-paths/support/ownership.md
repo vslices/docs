@@ -4,7 +4,7 @@ artifact:
   type: ownership
   scope: <concept|capability|artifact|product|service|project|operation>
   target: <owned-element-name>
-  language: <es|en>
+  language: <es>
 
 metadata:
   status: <draft|candidate|active|deprecated|superseded>

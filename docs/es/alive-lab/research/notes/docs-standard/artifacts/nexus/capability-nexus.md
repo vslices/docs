@@ -4,7 +4,7 @@ artifact:
   type: capability
   scope: capability
   target: <capability-name>
-  language: <es|en>
+  language: <es>
 
 metadata:
   status: <draft|candidate|active|deprecated|superseded>

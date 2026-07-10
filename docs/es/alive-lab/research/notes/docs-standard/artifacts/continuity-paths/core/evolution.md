@@ -4,7 +4,7 @@ artifact:
   type: evolution
   scope: <concept|behavior|capability|scope|product|service|project|artifact>
   target: <evolving-element-name>
-  language: <es|en>
+  language: <es>
 
 metadata:
   status: <draft|candidate|active|deprecated|superseded>

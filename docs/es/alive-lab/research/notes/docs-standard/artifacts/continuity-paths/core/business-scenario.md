@@ -4,7 +4,7 @@ artifact:
   type: business-scenario
   scope: business-scenario
   target: <business-scenario-name>
-  language: <es|en>
+  language: <es>
 
 metadata:
   status: <draft|candidate|active|deprecated|superseded>

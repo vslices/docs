@@ -4,7 +4,7 @@ artifact:
   type: external
   scope: <artifact|document|service|operation|integration|dependency|specification|contract|schema|repository|tool|dashboard|runbook>
   target: <external-reference-name>
-  language: <es|en>
+  language: <es>
 
 metadata:
   status: <draft|candidate|active|deprecated|superseded>

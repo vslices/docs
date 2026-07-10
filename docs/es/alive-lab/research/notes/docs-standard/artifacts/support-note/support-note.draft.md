@@ -4,7 +4,7 @@ artifact:
   type: draft
   scope: <concept|artifact|document|decision|behavior|capability|initiative|product|service|project|handoff|change>
   target: <supported-object-name>
-  language: <es|en>
+  language: <es>
 
 metadata:
   status: <draft|candidate|active|deprecated|superseded>

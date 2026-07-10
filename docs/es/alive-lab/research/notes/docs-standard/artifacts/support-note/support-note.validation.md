@@ -4,7 +4,7 @@ artifact:
   type: validation
   scope: <concept|artifact|document|behavior|decision|result|feedback|product|service|project|capability|viability|handoff>
   target: <evaluated-result-name>
-  language: <es|en>
+  language: <es>
 
 metadata:
   status: <draft|candidate|active|deprecated|superseded>

@@ -4,7 +4,7 @@ artifact:
   type: navigation
   scope: <artifact-set|collection|path|project|iteration|handoff|organization|domain-context|research-case>
   target: <navigation-target-name>
-  language: <es|en>
+  language: <es>
 
 metadata:
   status: <draft|candidate|active|deprecated|superseded>
@@ -14,7 +14,8 @@ metadata:
 
 document:
   question: ¿Cómo exploramos?
-  mode: <reading-path|index|map|handoff-route|artifact-set|orientation>
+  navigation:
+    mode: <reading-path|index|map|handoff-route|artifact-set|orientation>
 
 tooling:
   schema:

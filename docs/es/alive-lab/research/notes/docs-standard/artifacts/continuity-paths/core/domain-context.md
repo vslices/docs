@@ -4,7 +4,7 @@ artifact:
   type: domain-context
   scope: domain-context
   target: <domain-context-name>
-  language: <es|en>
+  language: <es>
 
 metadata:
   status: <draft|candidate|active|deprecated|superseded>

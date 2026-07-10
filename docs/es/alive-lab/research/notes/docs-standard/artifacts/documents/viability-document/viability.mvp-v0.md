@@ -4,7 +4,7 @@ artifact:
   type: viability
   scope: <concept|feature|capability|initiative|product|service|project|change|decision|handoff|experiment|artifact>
   target: <target-name>
-  language: <es|en>
+  language: <es>
 
 metadata:
   status: <draft|candidate|active|deprecated|superseded>
@@ -14,7 +14,8 @@ metadata:
 
 document:
   question: ¿Es viable?
-  kind: <economic|technical|operational|temporal|organizational|adoption>
+  viability:
+    kind: <economic|technical|operational|temporal|organizational|adoption>
 
 tooling:
   schema:

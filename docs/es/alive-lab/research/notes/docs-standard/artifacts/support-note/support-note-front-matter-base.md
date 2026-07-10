@@ -9,7 +9,7 @@ artifact:
   type: <draft|result|validation|testing-spec|risk|external>
   scope: <%type-scopes%>
   target: <target-name>
-  language: <es|en>
+  language: <es>
 
 metadata:
   status: <draft|candidate|active|deprecated|superseded>

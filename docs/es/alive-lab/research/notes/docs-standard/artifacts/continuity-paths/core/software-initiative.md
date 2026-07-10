@@ -4,7 +4,7 @@ artifact:
   type: software-initiative
   scope: software-initiative
   target: <software-initiative-name>
-  language: <es|en>
+  language: <es>
 
 metadata:
   status: <draft|candidate|active|deprecated|superseded>

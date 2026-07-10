@@ -9,7 +9,7 @@ artifact:
   type: <capability|service-consumption>
   scope: <%type-scopes%>
   target: <target-name>
-  language: <es|en>
+  language: <es>
 
 metadata:
   status: <draft|candidate|active|deprecated|superseded>

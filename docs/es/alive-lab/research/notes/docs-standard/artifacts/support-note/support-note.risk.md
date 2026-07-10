@@ -4,7 +4,7 @@ artifact:
   type: risk
   scope: <concept|artifact|document|decision|behavior|capability|initiative|product|service|project|handoff|ownership|impact|change|operation|integration>
   target: <risk-subject-name>
-  language: <es|en>
+  language: <es>
 
 metadata:
   status: <draft|candidate|active|deprecated|superseded>

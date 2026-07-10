@@ -9,7 +9,7 @@ artifact:
   type: <business-scenario|business-driver|domain-context|viability|evolution|software-initiative|client-product|consumable-service|software-project|ownership|impact|traceability|knowledge-handoff>
   scope: <%type-scopes%>
   target: <target-name>
-  language: <es|en>
+  language: <es>
 
 metadata:
   status: <draft|candidate|active|deprecated|superseded>

@@ -4,7 +4,7 @@ artifact:
   type: traceability
   scope: traceability
   target: <traceable-element-name>
-  language: <es|en>
+  language: <es>
 
 metadata:
   status: <draft|candidate|active|deprecated|superseded>

@@ -4,7 +4,7 @@ artifact:
   type: viability
   scope: <feature|capability|initiative|product|service|project|decision|change|artifact>
   target: <viability-subject-name>
-  language: <es|en>
+  language: <es>
 
 metadata:
   status: <draft|candidate|active|deprecated|superseded>

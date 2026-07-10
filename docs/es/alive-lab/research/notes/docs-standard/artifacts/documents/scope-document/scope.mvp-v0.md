@@ -4,7 +4,7 @@ artifact:
   type: scope
   scope: <concept|feature|capability|initiative|product|service|project|iteration|handoff|change|artifact>
   target: <target-name>
-  language: <es|en>
+  language: <es>
 
 metadata:
   status: <draft|candidate|active|deprecated|superseded>

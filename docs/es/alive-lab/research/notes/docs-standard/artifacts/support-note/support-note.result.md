@@ -4,7 +4,7 @@ artifact:
   type: result
   scope: <concept|artifact|document|behavior|decision|experiment|test|validation|product|service|project|handoff|iteration>
   target: <observed-object-name>
-  language: <es|en>
+  language: <es>
 
 metadata:
   status: <draft|candidate|active|deprecated|superseded>

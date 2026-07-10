@@ -4,7 +4,7 @@ artifact:
   type: update
   scope: <artifact|document|template|diagram|nexus|continuity-path|artifact-set|iteration>
   target: <artifact-to-update-name>
-  language: <es|en>
+  language: <es>
 
 metadata:
   status: <draft|candidate|active|deprecated|superseded>
@@ -14,7 +14,8 @@ metadata:
 
 document:
   question: ¿Qué se actualizará?
-  application: <immediate|iteration-close|before-publication|after-decision|during-review|conditional>
+  update:
+    application: <immediate|iteration-close|before-publication|after-decision|during-review|conditional>
 
 tooling:
   schema:

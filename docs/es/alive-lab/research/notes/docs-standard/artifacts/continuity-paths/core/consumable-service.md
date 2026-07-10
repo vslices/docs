@@ -4,7 +4,7 @@ artifact:
   type: consumable-service
   scope: service
   target: <consumable-service-name>
-  language: <es|en>
+  language: <es>
 
 metadata:
   status: <draft|candidate|active|deprecated|superseded>

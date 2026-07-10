@@ -4,7 +4,7 @@ artifact:
   type: software-project
   scope: project
   target: <software-project-name>
-  language: <es|en>
+  language: <es>
 
 metadata:
   status: <draft|candidate|active|deprecated|superseded>

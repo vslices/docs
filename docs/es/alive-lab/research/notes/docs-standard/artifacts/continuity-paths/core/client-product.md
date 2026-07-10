@@ -4,7 +4,7 @@ artifact:
   type: client-product
   scope: product
   target: <client-product-name>
-  language: <es|en>
+  language: <es>
 
 metadata:
   status: <draft|candidate|active|deprecated|superseded>

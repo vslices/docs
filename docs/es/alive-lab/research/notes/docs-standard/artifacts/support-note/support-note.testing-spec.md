@@ -4,7 +4,7 @@ artifact:
   type: testing-spec
   scope: <behavior|feature|capability|service|product|flow|integration|operation|rule|expected-error>
   target: <behavior-to-test-name>
-  language: <es|en>
+  language: <es>
 
 metadata:
   status: <draft|candidate|active|deprecated|superseded>

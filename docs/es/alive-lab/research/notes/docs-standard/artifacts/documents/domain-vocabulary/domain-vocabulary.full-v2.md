@@ -4,7 +4,7 @@ artifact:
   type: domain-vocabulary
   scope: <domain-context|business-scenario|project|product|service|organization>
   target: <vocabulary-target-name>
-  language: <es|en>
+  language: <es>
 
 metadata:
   status: <draft|candidate|active|deprecated|superseded>

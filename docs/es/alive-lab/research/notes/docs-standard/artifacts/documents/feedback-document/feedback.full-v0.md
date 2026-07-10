@@ -4,7 +4,7 @@ artifact:
   type: feedback
   scope: <artifact|document|behavior|feature|product|service|initiative|experiment|decision|flow>
   target: <target-name>
-  language: <es|en>
+  language: <es>
 
 metadata:
   status: <draft|candidate|active|deprecated|superseded>
@@ -14,7 +14,8 @@ metadata:
 
 document:
   question: ¿Qué recibimos al aplicar algo?
-  source: <user|stakeholder|team|client|system|reviewer|ai|community|operation|usage>
+  feedback:
+    source: <user|stakeholder|team|client|system|reviewer|ai|community|operation|usage>
 
 tooling:
   schema:

@@ -4,7 +4,7 @@ artifact:
   type: context
   scope: <concept|process|flow|feature|capability|initiative|product|service|project|organization|domain-context|handoff>
   target: <target-name>
-  language: <es|en>
+  language: <es>
 
 metadata:
   status: <draft|candidate|active|deprecated|superseded>

@@ -4,7 +4,7 @@ artifact:
   type: business-driver
   scope: business-driver
   target: <business-driver-name>
-  language: <es|en>
+  language: <es>
 
 metadata:
   status: <draft|candidate|active|deprecated|superseded>

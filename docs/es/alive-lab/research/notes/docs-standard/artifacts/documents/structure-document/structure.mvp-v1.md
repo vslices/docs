@@ -4,7 +4,7 @@ artifact:
   type: structure
   scope: <concept|process|flow|capability|product|service|project|solution|module|artifact-set|organization>
   target: <target-name>
-  language: <es|en>
+  language: <es>
 
 metadata:
   status: <draft|candidate|active|deprecated|superseded>

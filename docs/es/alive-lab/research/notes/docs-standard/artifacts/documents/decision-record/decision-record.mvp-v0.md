@@ -4,7 +4,7 @@ artifact:
   type: decision-record
   scope: <concept|domain-context|feature|capability|initiative|product|service|project|architecture|scope|viability|ownership|handoff>
   target: <decision-name>
-  language: <es|en>
+  language: <es>
 
 metadata:
   status: <draft|candidate|active|deprecated|superseded>
@@ -14,7 +14,8 @@ metadata:
 
 document:
   question: ¿Qué se decidió?
-  decision_status: <proposed|accepted|active|rejected|superseded|archived>
+  decision:
+    status: <proposed|accepted|active|rejected|superseded|archived>
 
 tooling:
   schema:

@@ -9,7 +9,7 @@ artifact:
   type: <context|structure|behavior|consistency|scope|viability|feedback|decision-record|navigation|domain-vocabulary|update>
   scope: <%type-scopes%>
   target: <target-name>
-  language: <es|en>
+  language: <es>
 
 metadata:
   status: <draft|candidate|active|deprecated|superseded>

@@ -4,7 +4,7 @@ artifact:
   type: behavior
   scope: <concept|process|flow|feature|capability|product|service|operation|integration|rule>
   target: <target-name>
-  language: <es|en>
+  language: <es>
 
 metadata:
   status: <draft|candidate|active|deprecated|superseded>
