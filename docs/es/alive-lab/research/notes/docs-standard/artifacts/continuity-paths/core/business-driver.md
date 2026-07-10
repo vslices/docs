@@ -1,3 +1,30 @@
+---
+artifact:
+  kind: continuity-path
+  type: business-driver
+  scope: business-driver
+  target: <business-driver-name>
+  language: <es|en>
+
+metadata:
+  status: <draft|candidate|active|deprecated|superseded>
+  relates: []
+
+continuity:
+  question: ¿Qué situación de negocio origina, justifica o condiciona esto?
+  preserves: business-motivation-continuity
+  connects:
+    - artifact: <artifact-id>
+      role: <business-scenario|business-need|business-consequence|business-constraint|decision|software-initiative|viability|update>
+
+tooling:
+  schema:
+    version: 0.1.0
+  template:
+    name: business-driver.continuity-path
+    version: 0.1.0
+---
+
 # Camino de continuidad "Motivación de negocio" de <tema>
 
 ## Propósito del recorrido

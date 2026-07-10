@@ -1,3 +1,30 @@
+---
+artifact:
+  kind: continuity-path
+  type: consumable-service
+  scope: service
+  target: <consumable-service-name>
+  language: <es|en>
+
+metadata:
+  status: <draft|candidate|active|deprecated|superseded>
+  relates: []
+
+continuity:
+  question: ¿Qué capacidad ofrece este servicio y cómo debe consumirse?
+  preserves: service-consumption-continuity
+  connects:
+    - artifact: <artifact-id>
+      role: <capability|consumer|consumer-risk|consumption-model|external-reference|service-consumption-nexus|domain-concept|domain-rule|service-guarantee|expected-error|domain-representation-risk|client-product|software-initiative|software-project|impact|decision|update>
+
+tooling:
+  schema:
+    version: 0.1.0
+  template:
+    name: consumable-service.continuity-path
+    version: 0.1.0
+---
+
 # Camino de continuidad "Servicio consumible" de <tema>
 
 ## Propósito del recorrido

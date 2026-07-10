@@ -1,3 +1,27 @@
+---
+artifact:
+  kind: document
+  type: viability
+  scope: <concept|feature|capability|initiative|product|service|project|change|decision|handoff|experiment|artifact>
+  target: <target-name>
+  language: <es|en>
+
+metadata:
+  status: <draft|candidate|active|deprecated|superseded>
+  relates: []
+
+document:
+  question: ¿Es viable?
+  kind: <economic|technical|operational|temporal|organizational|adoption>
+
+tooling:
+  schema:
+    version: 0.1.0
+  template:
+    name: viability.document
+    version: 0.1.0
+---
+
 # Documento de Viabilidad - <tema>
 
 ## Organización

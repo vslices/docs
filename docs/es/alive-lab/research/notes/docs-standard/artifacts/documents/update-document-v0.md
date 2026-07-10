@@ -1,3 +1,27 @@
+---
+artifact:
+  kind: document
+  type: update
+  scope: <artifact|document|template|diagram|nexus|continuity-path|artifact-set|iteration>
+  target: <artifact-to-update-name>
+  language: <es|en>
+
+metadata:
+  status: <draft|candidate|active|deprecated|superseded>
+  relates: []
+
+document:
+  question: ¿Qué se actualizará?
+  application: <immediate|iteration-close|before-publication|after-decision|during-review|conditional>
+
+tooling:
+  schema:
+    version: 0.1.0
+  template:
+    name: update.document
+    version: 0.1.0
+---
+
 # Documento de Actualización - <tema>
 
 ## Organización

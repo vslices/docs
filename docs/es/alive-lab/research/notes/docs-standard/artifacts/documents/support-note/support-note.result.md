@@ -1,3 +1,27 @@
+---
+artifact:
+  kind: support-note
+  type: result
+  scope: <concept|artifact|document|behavior|decision|experiment|test|validation|product|service|project|handoff|iteration>
+  target: <observed-object-name>
+  language: <es|en>
+
+metadata:
+  status: <draft|candidate|active|deprecated|superseded>
+  relates: []
+
+support:
+  question: ¿Qué obtuvimos?
+  supports: <artifact-id>
+
+tooling:
+  schema:
+    version: 0.1.0
+  template:
+    name: support-note.result
+    version: 0.1.0
+---
+
 # Nota de Soporte - Resultado - <tema>
 
 ## Organización

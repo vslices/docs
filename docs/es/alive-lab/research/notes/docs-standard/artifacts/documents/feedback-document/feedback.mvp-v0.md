@@ -1,3 +1,27 @@
+---
+artifact:
+  kind: document
+  type: feedback
+  scope: <artifact|document|behavior|feature|product|service|initiative|experiment|decision|flow>
+  target: <target-name>
+  language: <es|en>
+
+metadata:
+  status: <draft|candidate|active|deprecated|superseded>
+  relates: []
+
+document:
+  question: ¿Qué recibimos al aplicar algo?
+  source: <user|stakeholder|team|client|system|reviewer|ai|community|operation|usage>
+
+tooling:
+  schema:
+    version: 0.1.0
+  template:
+    name: feedback.document
+    version: 0.1.0
+---
+
 # Documento de Feedback - <tema>
 
 ## Organización

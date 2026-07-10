@@ -1,3 +1,27 @@
+---
+artifact:
+  kind: support-note
+  type: risk
+  scope: <concept|artifact|document|decision|behavior|capability|initiative|product|service|project|handoff|ownership|impact|change|operation|integration>
+  target: <risk-subject-name>
+  language: <es|en>
+
+metadata:
+  status: <draft|candidate|active|deprecated|superseded>
+  relates: []
+
+support:
+  question: ¿Qué podría salir mal?
+  supports: <artifact-id>
+
+tooling:
+  schema:
+    version: 0.1.0
+  template:
+    name: support-note.risk
+    version: 0.1.0
+---
+
 # Nota de Soporte - Riesgo - <tema>
 
 ## Objeto soportado

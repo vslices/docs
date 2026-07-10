@@ -1,3 +1,30 @@
+---
+artifact:
+  kind: continuity-path
+  type: evolution
+  scope: evolution
+  target: <evolving-element-name>
+  language: <es|en>
+
+metadata:
+  status: <draft|candidate|active|deprecated|superseded>
+  relates: []
+
+continuity:
+  question: ¿Cómo cambió esto sin perder su intención?
+  preserves: change-continuity
+  connects:
+    - artifact: <artifact-id>
+      role: <original-intent|change|change-reason|preserved-intent|scope-change|update|learning|impact>
+
+tooling:
+  schema:
+    version: 0.1.0
+  template:
+    name: evolution.continuity-path
+    version: 0.1.0
+---
+
 # Camino de continuidad "Evolución" de <tema>
 
 ## Propósito del recorrido

@@ -1,3 +1,27 @@
+---
+artifact:
+  kind: document
+  type: decision-record
+  scope: <concept|domain-context|feature|capability|initiative|product|service|project|architecture|scope|viability|ownership|handoff>
+  target: <decision-name>
+  language: <es|en>
+
+metadata:
+  status: <draft|candidate|active|deprecated|superseded>
+  relates: []
+
+document:
+  question: ¿Qué se decidió?
+  decision_status: <proposed|accepted|active|rejected|superseded|archived>
+
+tooling:
+  schema:
+    version: 0.1.0
+  template:
+    name: decision-record.document
+    version: 0.1.0
+---
+
 # Decision Record - <tema>
 
 ## Organización

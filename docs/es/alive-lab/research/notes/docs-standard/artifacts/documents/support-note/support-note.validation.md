@@ -1,3 +1,27 @@
+---
+artifact:
+  kind: support-note
+  type: validation
+  scope: <concept|artifact|document|behavior|decision|result|feedback|product|service|project|capability|viability|handoff>
+  target: <evaluated-result-name>
+  language: <es|en>
+
+metadata:
+  status: <draft|candidate|active|deprecated|superseded>
+  relates: []
+
+support:
+  question: ¿Qué significa lo obtenido frente a un criterio?
+  supports: <artifact-id>
+
+tooling:
+  schema:
+    version: 0.1.0
+  template:
+    name: support-note.validation
+    version: 0.1.0
+---
+
 # Nota de Soporte - Validación - <tema>
 
 ## Organización

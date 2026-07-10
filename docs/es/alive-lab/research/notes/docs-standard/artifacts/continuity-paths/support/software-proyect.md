@@ -1,3 +1,30 @@
+---
+artifact:
+  kind: continuity-path
+  type: software-project
+  scope: project
+  target: <software-project-name>
+  language: <es|en>
+
+metadata:
+  status: <draft|candidate|active|deprecated|superseded>
+  relates: []
+
+continuity:
+  question: ¿Cómo está organizada esta solución de software?
+  preserves: technical-organization-continuity
+  connects:
+    - artifact: <artifact-id>
+      role: <software-initiative|client-product|consumable-service|project-origin|solution-structure|software-part|technical-responsibility|responsibility-gap|domain-context|domain-concept|behavior|capability|domain-alignment-risk|adapter|dependency|integration|service-consumption-nexus|decision|viability|impact|evolution|update>
+
+tooling:
+  schema:
+    version: 0.1.0
+  template:
+    name: software-project.continuity-path
+    version: 0.1.0
+---
+
 # Camino de continuidad "Proyecto de software" de <tema>
 
 ## Propósito del recorrido

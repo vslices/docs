@@ -1,3 +1,26 @@
+---
+artifact:
+  kind: document
+  type: context
+  scope: <concept|process|flow|feature|capability|initiative|product|service|project|organization|domain-context|handoff>
+  target: <target-name>
+  language: <es|en>
+
+metadata:
+  status: <draft|candidate|active|deprecated|superseded>
+  relates: []
+
+document:
+  question: ¿Dónde existe?
+
+tooling:
+  schema:
+    version: 0.1.0
+  template:
+    name: context.document
+    version: 0.1.0
+---
+
 # Documento de Contexto - <tema>
 
 ## Organización

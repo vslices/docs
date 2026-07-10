@@ -1,3 +1,30 @@
+---
+artifact:
+  kind: continuity-path
+  type: software-initiative
+  scope: software-initiative
+  target: <software-initiative-name>
+  language: <es|en>
+
+metadata:
+  status: <draft|candidate|active|deprecated|superseded>
+  relates: []
+
+continuity:
+  question: ¿Qué intenta cubrir esta iniciativa y qué piezas participan?
+  preserves: software-coverage-continuity
+  connects:
+    - artifact: <artifact-id>
+      role: <business-scenario|business-driver|work-line|initiative-scope|client-product|consumable-service|capability|decision|software-project|viability|feedback|result|update|evolution>
+
+tooling:
+  schema:
+    version: 0.1.0
+  template:
+    name: software-initiative.continuity-path
+    version: 0.1.0
+---
+
 # Camino de continuidad "Iniciativa de software" de <tema>
 
 ## Propósito del recorrido

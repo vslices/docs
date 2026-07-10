@@ -1,3 +1,30 @@
+---
+artifact:
+  kind: continuity-path
+  type: traceability
+  scope: traceability
+  target: <traceable-element-name>
+  language: <es|en>
+
+metadata:
+  status: <draft|candidate|active|deprecated|superseded>
+  relates: []
+
+continuity:
+  question: ¿De dónde viene esto, qué lo transformó y dónde terminó materializándose?
+  preserves: origin-transformation-materialization-continuity
+  connects:
+    - artifact: <artifact-id>
+      role: <business-driver|business-scenario|domain-context|observed-need|origin-gap|decision|decision-gap|transformation|artifact|support-note|nexus|artifact-set|client-product|visible-flow|consumable-service|consumption-model|software-project|service-consumption-nexus|capability|feedback|validation|learning|pending-excluded-replaced|impact|evolution|scope-change|update>
+
+tooling:
+  schema:
+    version: 0.1.0
+  template:
+    name: traceability.continuity-path
+    version: 0.1.0
+---
+
 # Camino de continuidad "Trazabilidad" de <tema>
 
 ## Propósito del recorrido

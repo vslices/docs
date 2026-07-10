@@ -1,3 +1,28 @@
+---
+artifact:
+  kind: nexus
+  type: capability
+  scope: capability
+  target: <capability-name>
+  language: <es|en>
+
+metadata:
+  status: <draft|candidate|active|deprecated|superseded>
+  relates: []
+
+composition:
+  composes:
+    - artifact: <artifact-id>
+      role: <boundary|expected-behavior|organization|rules|feasibility|decision|support>
+
+tooling:
+  schema:
+    version: 0.1.0
+  template:
+    name: capability.nexus
+    version: 0.1.0
+---
+
 # Nexus artifact "Capability" de <tema>
 
 ## Propósito del nexus
@@ -55,19 +80,19 @@ flowchart LR
     P1 --> S2>"<b>Scope</b><br/>[Alcance identificado]"]
 
     P2 --> B1[["<b>Behavior</b><br/>[Comportamiento esperado]<br/><small>Behavior Document</small>"]]
-    P2 --> B2>{{"<b>Behavior</b><br/>[Comportamiento que requiere documentación]<br/><small>Behavior Document<br/>Support Note kind: testing-spec</small>"}}
+    P2 --> B2{{"<b>Behavior</b><br/>[Comportamiento que requiere documentación]<br/><small>Behavior Document<br/>Support Note kind: testing-spec</small>"}}
 
     P3 --> ST1[["<b>Structure</b><br/>[Organización de la capacidad]<br/><small>Structure Document</small>"]]
     P3 --> ST2>"<b>Structure</b><br/>[Estructura identificada]"]
 
     P4 --> C1[["<b>Consistency</b><br/>[Reglas o invariantes]<br/><small>Consistency Document</small>"]]
-    P4 --> C2>{{"<b>Consistency</b><br/>[Regla que requiere documentación]<br/><small>Consistency Document<br/>Behavior Document</small>"}}
+    P4 --> C2{{"<b>Consistency</b><br/>[Regla que requiere documentación]<br/><small>Consistency Document<br/>Behavior Document</small>"}}
 
     P5 -.-> V1[["<b>Viability</b><br/>[Viabilidad evaluada]<br/><small>Viability Document</small>"]]
-    P5 -.-> V2>{{"<b>Viability</b><br/>[Viabilidad pendiente]<br/><small>Viability Document<br/>Support Note kind: validation</small>"}}
+    P5 -.-> V2{{"<b>Viability</b><br/>[Viabilidad pendiente]<br/><small>Viability Document<br/>Support Note kind: validation</small>"}}
 
     P6 -.-> D1[["<b>Decision</b><br/>[Decisión documentada]<br/><small>Decision Record</small>"]]
-    P6 -.-> D2>{{"<b>Decision</b><br/>[Decisión pendiente]<br/><small>Decision Record<br/>Support Note kind: draft</small>"}}
+    P6 -.-> D2{{"<b>Decision</b><br/>[Decisión pendiente]<br/><small>Decision Record<br/>Support Note kind: draft</small>"}}
 
     P7 -.-> N1[["<b>Support Note</b><br/>[Nota de soporte]<br/><small>Support Note kind: draft<br/>Support Note kind: result<br/>Support Note kind: validation<br/>Support Note kind: testing-spec<br/>Support Note kind: risk</small>"]]
     P7 -.-> F1[["<b>Feedback</b><br/>[Feedback relacionado]<br/><small>Feedback Document</small>"]]

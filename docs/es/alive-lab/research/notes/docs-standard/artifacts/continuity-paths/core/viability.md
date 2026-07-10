@@ -1,3 +1,30 @@
+---
+artifact:
+  kind: continuity-path
+  type: viability
+  scope: viability
+  target: <viability-subject-name>
+  language: <es|en>
+
+metadata:
+  status: <draft|candidate|active|deprecated|superseded>
+  relates: []
+
+continuity:
+  question: ¿Puede sostenerse esto bajo las condiciones actuales?
+  preserves: viability-continuity
+  connects:
+    - artifact: <artifact-id>
+      role: <evaluated-object|viability-kind|viability-criterion|necessary-condition|known-restriction|initial-evaluation|inviability-risk|viability-alternative|review-condition>
+
+tooling:
+  schema:
+    version: 0.1.0
+  template:
+    name: viability.continuity-path
+    version: 0.1.0
+---
+
 # Camino de continuidad "Viabilidad" de <tema>
 
 ## Propósito del recorrido

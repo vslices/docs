@@ -1,3 +1,30 @@
+---
+artifact:
+  kind: continuity-path
+  type: business-scenario
+  scope: business-scenario
+  target: <business-scenario-name>
+  language: <es|en>
+
+metadata:
+  status: <draft|candidate|active|deprecated|superseded>
+  relates: []
+
+continuity:
+  question: ¿Dónde ocurre el trabajo y qué elementos ayudan a entender este escenario?
+  preserves: operational-continuity
+  connects:
+    - artifact: <artifact-id>
+      role: <work-line|process|flow|behavior|domain-context|business-driver|software-initiative|client-product|consumable-service|impact>
+
+tooling:
+  schema:
+    version: 0.1.0
+  template:
+    name: business-scenario.continuity-path
+    version: 0.1.0
+---
+
 # Camino de continuidad "Escenario de negocio" de <tema>
 
 ## Propósito del recorrido

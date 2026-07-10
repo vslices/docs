@@ -1,3 +1,27 @@
+---
+artifact:
+  kind: support-note
+  type: testing-spec
+  scope: <behavior|feature|capability|service|product|flow|integration|operation|rule|expected-error>
+  target: <behavior-to-test-name>
+  language: <es|en>
+
+metadata:
+  status: <draft|candidate|active|deprecated|superseded>
+  relates: []
+
+support:
+  question: ¿Cómo probaremos este comportamiento?
+  supports: <artifact-id>
+
+tooling:
+  schema:
+    version: 0.1.0
+  template:
+    name: support-note.testing-spec
+    version: 0.1.0
+---
+
 # Nota de Soporte - Especificación de Testing - <tema>
 
 ## Organización

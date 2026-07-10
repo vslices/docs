@@ -1,3 +1,30 @@
+---
+artifact:
+  kind: continuity-path
+  type: domain-context
+  scope: domain-context
+  target: <domain-context-name>
+  language: <es|en>
+
+metadata:
+  status: <draft|candidate|active|deprecated|superseded>
+  relates: []
+
+continuity:
+  question: ¿Qué lenguaje, conceptos, reglas y comportamientos pertenecen a este contexto?
+  preserves: semantic-continuity
+  connects:
+    - artifact: <artifact-id>
+      role: <language|domain-concept|domain-invariant|behavior|capability|client-product|consumable-service|decision|boundary>
+
+tooling:
+  schema:
+    version: 0.1.0
+  template:
+    name: domain-context.continuity-path
+    version: 0.1.0
+---
+
 # Camino de continuidad "Contexto de dominio" de <tema>
 
 ## Propósito del recorrido

@@ -1,3 +1,26 @@
+---
+artifact:
+  kind: document
+  type: behavior
+  scope: <concept|process|flow|feature|capability|product|service|operation|integration|rule>
+  target: <target-name>
+  language: <es|en>
+
+metadata:
+  status: <draft|candidate|active|deprecated|superseded>
+  relates: []
+
+document:
+  question: ¿Qué debe ocurrir?
+
+tooling:
+  schema:
+    version: 0.1.0
+  template:
+    name: behavior.document
+    version: 0.1.0
+---
+
 # Documento de Comportamiento - <tema>
 
 ## Organización

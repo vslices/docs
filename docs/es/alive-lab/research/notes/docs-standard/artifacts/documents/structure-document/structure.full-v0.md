@@ -1,3 +1,26 @@
+---
+artifact:
+  kind: document
+  type: structure
+  scope: <concept|process|flow|capability|product|service|project|solution|module|artifact-set|organization>
+  target: <target-name>
+  language: <es|en>
+
+metadata:
+  status: <draft|candidate|active|deprecated|superseded>
+  relates: []
+
+document:
+  question: ¿Cómo se organiza?
+
+tooling:
+  schema:
+    version: 0.1.0
+  template:
+    name: structure.document
+    version: 0.1.0
+---
+
 # Documento de Estructura - <tema>
 
 ## Organización

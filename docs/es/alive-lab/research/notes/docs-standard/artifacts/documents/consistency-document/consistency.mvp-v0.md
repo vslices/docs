@@ -1,3 +1,26 @@
+---
+artifact:
+  kind: document
+  type: consistency
+  scope: <concept|rule|invariant|behavior|capability|service|product|domain-context|project>
+  target: <target-name>
+  language: <es|en>
+
+metadata:
+  status: <draft|candidate|active|deprecated|superseded>
+  relates: []
+
+document:
+  question: ¿Qué debe respetar?
+
+tooling:
+  schema:
+    version: 0.1.0
+  template:
+    name: consistency.document
+    version: 0.1.0
+---
+
 # Documento de Consistencia - <tema>
 
 ## Organización

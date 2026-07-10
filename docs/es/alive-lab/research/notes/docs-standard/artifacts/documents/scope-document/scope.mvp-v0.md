@@ -1,3 +1,26 @@
+---
+artifact:
+  kind: document
+  type: scope
+  scope: <concept|feature|capability|initiative|product|service|project|iteration|handoff|change|artifact>
+  target: <target-name>
+  language: <es|en>
+
+metadata:
+  status: <draft|candidate|active|deprecated|superseded>
+  relates: []
+
+document:
+  question: ¿Hasta dónde llega?
+
+tooling:
+  schema:
+    version: 0.1.0
+  template:
+    name: scope.document
+    version: 0.1.0
+---
+
 # Documento de Alcance - <tema>
 
 ## Organización

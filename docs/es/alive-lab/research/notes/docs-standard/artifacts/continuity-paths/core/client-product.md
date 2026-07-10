@@ -1,3 +1,30 @@
+---
+artifact:
+  kind: continuity-path
+  type: client-product
+  scope: product
+  target: <client-product-name>
+  language: <es|en>
+
+metadata:
+  status: <draft|candidate|active|deprecated|superseded>
+  relates: []
+
+continuity:
+  question: ¿Qué experiencia visible ofrece este producto y qué aprendizaje la cambia o confirma?
+  preserves: product-experience-continuity
+  connects:
+    - artifact: <artifact-id>
+      role: <business-scenario|actor|visible-flow|mockup-flow|consumable-service|coordination-risk|decision|product-scope|feedback|result|validation|update|impact>
+
+tooling:
+  schema:
+    version: 0.1.0
+  template:
+    name: client-product.continuity-path
+    version: 0.1.0
+---
+
 # Camino de continuidad "Producto al cliente" de <tema>
 
 ## Propósito del recorrido

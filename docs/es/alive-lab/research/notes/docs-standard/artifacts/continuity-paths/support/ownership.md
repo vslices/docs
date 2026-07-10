@@ -1,3 +1,30 @@
+---
+artifact:
+  kind: continuity-path
+  type: ownership
+  scope: ownership
+  target: <owned-element-name>
+  language: <es|en>
+
+metadata:
+  status: <draft|candidate|active|deprecated|superseded>
+  relates: []
+
+continuity:
+  question: ¿Quién entiende, decide, valida, mantiene u opera esto?
+  preserves: responsibility-continuity
+  connects:
+    - artifact: <artifact-id>
+      role: <knowledge-owner|knowledge-source|knowledge-gap|decision-owner|decision-gap|validation-owner|validation-source|validation-gap|maintenance-owner|operational-responsibility|operational-viability|tacit-knowledge|knowledge-handoff|ownership-impact|ownership-transfer|evolution>
+
+tooling:
+  schema:
+    version: 0.1.0
+  template:
+    name: ownership.continuity-path
+    version: 0.1.0
+---
+
 # Camino de continuidad "Responsabilidad" de <tema>
 
 ## Propósito del recorrido
@@ -35,7 +62,8 @@ Incluir el Diagrama de Camino de Continuidad asociado a Ownership.
 El diagrama debe mostrar preguntas de orientación, conceptos relacionados y estado documental de los conceptos conectados.
 -->
 
-```mermaidflowchart LR
+```mermaid
+flowchart LR
     A[["<b>Owned Element</b><br/>[Elemento seguido]<br/><small><a href='link'>Context Document</a><br/><a href='link'>Scope Document</a><br/><a href='link'>Ownership Path</a></small>"]]
 
     A --> P1["¿Quién lo entiende?"]

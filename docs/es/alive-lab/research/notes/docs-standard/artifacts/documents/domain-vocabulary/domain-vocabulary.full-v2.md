@@ -1,3 +1,26 @@
+---
+artifact:
+  kind: document
+  type: domain-vocabulary
+  scope: <domain-context|business-scenario|project|product|service|organization>
+  target: <vocabulary-target-name>
+  language: <es|en>
+
+metadata:
+  status: <draft|candidate|active|deprecated|superseded>
+  relates: []
+
+document:
+  question: ¿Cómo hablamos?
+
+tooling:
+  schema:
+    version: 0.1.0
+  template:
+    name: domain-vocabulary.document
+    version: 0.1.0
+---
+
 # Vocabulario de dominio - <tema>
 
 ## Organización

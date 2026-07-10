@@ -1,3 +1,27 @@
+---
+artifact:
+  kind: support-note
+  type: external
+  scope: <artifact|document|service|operation|integration|dependency|specification|contract|schema|repository|tool|dashboard|runbook>
+  target: <external-reference-name>
+  language: <es|en>
+
+metadata:
+  status: <draft|candidate|active|deprecated|superseded>
+  relates: []
+
+support:
+  question: ¿Dónde vive el artifact externo y cómo debe usarse?
+  supports: <artifact-id>
+
+tooling:
+  schema:
+    version: 0.1.0
+  template:
+    name: support-note.external
+    version: 0.1.0
+---
+
 # Nota de Soporte - Externa - <tema>
 
 ## Objeto soportado

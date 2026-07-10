@@ -1,3 +1,28 @@
+---
+artifact:
+  kind: nexus
+  type: service-consumption
+  scope: service
+  target: <service-or-operation-name>
+  language: <es|en>
+
+metadata:
+  status: <draft|candidate|active|deprecated|superseded>
+  relates: []
+
+composition:
+  composes:
+    - artifact: <artifact-id>
+      role: <external-reference|capability|consumption-model|expected-behavior|rules|boundary|decision|testing|validation|result|risk|vocabulary|update>
+
+tooling:
+  schema:
+    version: 0.1.0
+  template:
+    name: service-consumption.nexus
+    version: 0.1.0
+---
+
 # Nexus artifact "Service Consumption" de <tema>
 
 ## Propósito del nexus
@@ -71,16 +96,16 @@ flowchart LR
     P2 --> C2>"<b>Capability</b><br/>[Capacidad identificada]"]
 
     P3 --> ST1[["<b>Structure</b><br/>[Modelo de consumo]<br/><small>Structure Document</small>"]]
-    P3 --> ST2>{{"<b>Consumption Model</b><br/>[Forma de consumo que requiere documentación]<br/><small>Structure Document<br/>Support Note kind: external</small>"}}
+    P3 --> ST2{{"<b>Consumption Model</b><br/>[Forma de consumo que requiere documentación]<br/><small>Structure Document<br/>Support Note kind: external</small>"}}
 
     P4 --> B1[["<b>Behavior</b><br/>[Comportamiento esperado]<br/><small>Behavior Document</small>"]]
-    P4 --> B2>{{"<b>Behavior</b><br/>[Comportamiento que requiere documentación]<br/><small>Behavior Document<br/>Support Note kind: testing-spec</small>"}}
+    P4 --> B2{{"<b>Behavior</b><br/>[Comportamiento que requiere documentación]<br/><small>Behavior Document<br/>Support Note kind: testing-spec</small>"}}
 
     P5 --> CNR1[["<b>Consistency</b><br/>[Reglas o garantías]<br/><small>Consistency Document</small>"]]
-    P5 --> CNR2>{{"<b>Expected Error</b><br/>[Error, límite o fallo esperado]<br/><small>Behavior Document<br/>Consistency Document<br/>Support Note kind: testing-spec</small>"}}
+    P5 --> CNR2{{"<b>Expected Error</b><br/>[Error, límite o fallo esperado]<br/><small>Behavior Document<br/>Consistency Document<br/>Support Note kind: testing-spec</small>"}}
 
     P6 -.-> D1[["<b>Decision</b><br/>[Decisión documentada]<br/><small>Decision Record</small>"]]
-    P6 -.-> D2>{{"<b>Service Decision</b><br/>[Decisión pendiente]<br/><small>Decision Record<br/>Support Note kind: draft</small>"}}
+    P6 -.-> D2{{"<b>Service Decision</b><br/>[Decisión pendiente]<br/><small>Decision Record<br/>Support Note kind: draft</small>"}}
 
     P7 -.-> N1[["<b>Support Note</b><br/>[Soporte auxiliar]<br/><small>Support Note kind: risk<br/>Support Note kind: validation<br/>Support Note kind: testing-spec<br/>Support Note kind: result</small>"]]
     P7 -.-> U1[["<b>Update</b><br/>[Actualización requerida]<br/><small>Update Document</small>"]]

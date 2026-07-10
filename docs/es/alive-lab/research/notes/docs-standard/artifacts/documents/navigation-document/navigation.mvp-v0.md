@@ -1,3 +1,27 @@
+---
+artifact:
+  kind: document
+  type: navigation
+  scope: <artifact-set|collection|path|project|iteration|handoff|organization|domain-context|research-case>
+  target: <navigation-target-name>
+  language: <es|en>
+
+metadata:
+  status: <draft|candidate|active|deprecated|superseded>
+  relates: []
+
+document:
+  question: ¿Cómo exploramos?
+  mode: <reading-path|index|map|handoff-route|artifact-set|orientation>
+
+tooling:
+  schema:
+    version: 0.1.0
+  template:
+    name: navigation.document
+    version: 0.1.0
+---
+
 # Documento de Navegación - <tema>
 
 ## Organización

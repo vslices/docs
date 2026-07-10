@@ -1,3 +1,30 @@
+---
+artifact:
+  kind: continuity-path
+  type: impact
+  scope: impact
+  target: <impact-source-name>
+  language: <es|en>
+
+metadata:
+  status: <draft|candidate|active|deprecated|superseded>
+  relates: []
+
+continuity:
+  question: ¿Qué se ve afectado si esto cambia, falla, aparece, se elimina o evoluciona?
+  preserves: impact-continuity
+  connects:
+    - artifact: <artifact-id>
+      role: <domain-concept|domain-rule|domain-invariant|domain-update|client-product|visible-flow|product-update|consumable-service|consumption-model|service-consumption-nexus|software-project|technical-structure|technical-dependency|external-dependency|decision|viability|documentation-update|affected-artifact-set|validation|feedback>
+
+tooling:
+  schema:
+    version: 0.1.0
+  template:
+    name: impact.continuity-path
+    version: 0.1.0
+---
+
 # Camino de continuidad "Impacto" de <tema>
 
 ## Propósito del recorrido

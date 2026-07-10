@@ -1,3 +1,30 @@
+---
+artifact:
+  kind: continuity-path
+  type: knowledge-handoff
+  scope: handoff
+  target: <handoff-situation-name>
+  language: <es|en>
+
+metadata:
+  status: <draft|candidate|active|deprecated|superseded>
+  relates: []
+
+continuity:
+  question: ¿Qué conocimiento debe quedar disponible para que el equipo pueda continuar?
+  preserves: handoff-continuity
+  connects:
+    - artifact: <artifact-id>
+      role: <knowledge-area|tacit-knowledge|external-knowledge-source|receiver-owner|receiver|receiver-gap|continuity-risk|operational-impact|risk-validation|viability|handoff-scope|decision|decision-criteria|consistency-criteria|software-project-area|technical-entry-point|service-consumption|behavior|expected-behavior|critical-capability|pending-incomplete|out-of-handoff-scope>
+
+tooling:
+  schema:
+    version: 0.1.0
+  template:
+    name: knowledge-handoff.continuity-path
+    version: 0.1.0
+---
+
 # Camino de continuidad "Knowledge Handoff" de <tema>
 
 ## Propósito del recorrido

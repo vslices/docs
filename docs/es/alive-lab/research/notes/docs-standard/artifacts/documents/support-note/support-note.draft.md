@@ -1,3 +1,27 @@
+---
+artifact:
+  kind: support-note
+  type: draft
+  scope: <concept|artifact|document|decision|behavior|capability|initiative|product|service|project|handoff|change>
+  target: <supported-object-name>
+  language: <es|en>
+
+metadata:
+  status: <draft|candidate|active|deprecated|superseded>
+  relates: []
+
+support:
+  question: ¿Qué estamos esbozando?
+  supports: <artifact-id>
+
+tooling:
+  schema:
+    version: 0.1.0
+  template:
+    name: support-note.draft
+    version: 0.1.0
+---
+
 # Nota de Soporte - Borrador - <tema>
 
 ## Organización
