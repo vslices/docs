@@ -239,7 +239,7 @@ Regla:
 
 ## Relación con metadata y cuerpo
 
-La composición pertenece principalmente a metadata porque conecta artifacts.
+La composición pertenece principalmente a metadata porque conecta artifacts. De igual manera se agregará en el front-matter para facilitar la relación entre VSlices Tooling y Surreal Atlas locales
 
 El cuerpo del Nexus debe explicar solo lo mínimo necesario para orientar la lectura.
 

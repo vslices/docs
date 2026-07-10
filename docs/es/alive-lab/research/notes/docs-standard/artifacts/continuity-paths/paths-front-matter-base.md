@@ -9,12 +9,12 @@ artifact:
   type: <business-scenario|business-driver|domain-context|viability|evolution|software-initiative|client-product|consumable-service|software-project|ownership|impact|traceability|knowledge-handoff>
   scope: <%type-scopes%>
   target: <target-name>
-  language: <es>
+  language: es
 
 metadata:
   status: <draft|candidate|active|deprecated|superseded>
   relates: 
-    - relation: <references/referenced-by|complements|depends-on|owned-by|derived-from|updates|supersedes/superseded-by>
+    - relation: <references|referenced-by|complements|depends-on|owned-by|derived-from|updates|supersedes|superseded-by>
       target: <artifact-id>
 
 continuity:
@@ -45,7 +45,7 @@ Esta sección responde:
 
 * `artifact.kind`: clase general del artifact. Para este grupo siempre debe ser `continuity-path`.
 * `artifact.type`: tipo específico del continuity path.
-* `artifact.scope`: representa la naturaleza o escala del elemento objetivo sobre el que aplica el artifact.
+* `artifact.scope`: identifica la clase, naturaleza o escala del elemento declarado en artifact.target.
 * `artifact.target`: elemento, situación, trayectoria o foco concreto cuya continuidad se quiere seguir.
 * `artifact.language`: idioma principal del artifact. Debe usar valores simples como `es` o `en`.
 

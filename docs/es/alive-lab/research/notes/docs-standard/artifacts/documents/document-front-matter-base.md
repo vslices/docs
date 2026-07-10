@@ -9,12 +9,12 @@ artifact:
   type: <context|structure|behavior|consistency|scope|viability|feedback|decision-record|navigation|domain-vocabulary|update>
   scope: <%type-scopes%>
   target: <target-name>
-  language: <es>
+  language: es
 
 metadata:
   status: <draft|candidate|active|deprecated|superseded>
   relates: 
-    - relation: <references/referenced-by|complements|depends-on|owned-by|derived-from|updates|supersedes/superseded-by>
+    - relation: <references|referenced-by|complements|depends-on|owned-by|derived-from|updates|supersedes|superseded-by>
       target: <artifact-id>
 
 document:
@@ -41,7 +41,7 @@ Esta sección responde:
 
 * `artifact.kind`: clase general del artifact. Para este grupo siempre debe ser `document`.
 * `artifact.type`: tipo específico de documento.
-* `artifact.scope`: escala, naturaleza o contexto principal donde aplica el documento.
+* `artifact.scope`: identifica la clase, naturaleza o escala del elemento declarado en artifact.target.
 * `artifact.target`: elemento concreto que el documento explica.
 * `artifact.language`: idioma principal del documento. Debe usar valores simples como `es` o `en`.
 
@@ -65,6 +65,13 @@ Esta sección responde:
 > ¿Qué pregunta intenta responder este documento?
 
 * `document.question`: pregunta principal que orienta el contenido del documento.
+* 
+
+Todos los Document artifacts declaran document.question.
+
+Cuando un tipo necesita metadata documental específica, la declara bajo una subcategoría anidada en document.
+
+La estructura de esa subcategoría depende de artifact.type.
 
 No debe incluir resumen, propósito largo, conclusiones ni contenido explicativo. Eso pertenece al cuerpo del documento.
 

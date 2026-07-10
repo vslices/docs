@@ -4,12 +4,12 @@ artifact:
   type: result
   scope: <concept|artifact|document|behavior|decision|experiment|test|validation|product|service|project|handoff|iteration>
   target: <observed-object-name>
-  language: <es>
+  language: es
 
 metadata:
   status: <draft|candidate|active|deprecated|superseded>
   relates: 
-    - relation: <references/referenced-by|complements|depends-on|owned-by|derived-from|updates|supersedes/superseded-by>
+    - relation: <references|referenced-by|complements|depends-on|owned-by|derived-from|updates|supersedes|superseded-by>
       target: <artifact-id>
 
 support:

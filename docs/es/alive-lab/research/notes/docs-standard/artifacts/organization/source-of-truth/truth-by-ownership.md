@@ -152,7 +152,7 @@ Este modelo depende naturalmente de proyecciones navegables.
 Un artifact puede vivir en su pertenencia primaria y aparecer referenciado desde otras organizaciones.
 
 ```mermaid
-treeView-Beta
+treeView-beta
   "Release v0.1"
     "Iniciativa incluida"
       "initiatives/monthly-shopping-automation/navigation.md"

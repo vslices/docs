@@ -4,12 +4,12 @@ artifact:
   type: feedback
   scope: <artifact|document|behavior|feature|product|service|initiative|experiment|decision|flow>
   target: <target-name>
-  language: <es>
+  language: es
 
 metadata:
   status: <draft|candidate|active|deprecated|superseded>
   relates: 
-    - relation: <references/referenced-by|complements|depends-on|owned-by|derived-from|updates|supersedes/superseded-by>
+    - relation: <references|referenced-by|complements|depends-on|owned-by|derived-from|updates|supersedes|superseded-by>
       target: <artifact-id>
 
 document:

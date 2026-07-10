@@ -4,12 +4,12 @@ artifact:
   type: viability
   scope: <feature|capability|initiative|product|service|project|decision|change|artifact>
   target: <viability-subject-name>
-  language: <es>
+  language: es
 
 metadata:
   status: <draft|candidate|active|deprecated|superseded>
   relates: 
-    - relation: <references/referenced-by|complements|depends-on|owned-by|derived-from|updates|supersedes/superseded-by>
+    - relation: <references|referenced-by|complements|depends-on|owned-by|derived-from|updates|supersedes|superseded-by>
       target: <artifact-id>
 
 continuity:

@@ -4,12 +4,12 @@ artifact:
   type: structure
   scope: <concept|process|flow|capability|product|service|project|solution|module|artifact-set|organization>
   target: <target-name>
-  language: <es>
+  language: es
 
 metadata:
   status: <draft|candidate|active|deprecated|superseded>
   relates: 
-    - relation: <references/referenced-by|complements|depends-on|owned-by|derived-from|updates|supersedes/superseded-by>
+    - relation: <references|referenced-by|complements|depends-on|owned-by|derived-from|updates|supersedes|superseded-by>
       target: <artifact-id>
 
 document:

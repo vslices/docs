@@ -9,12 +9,12 @@ artifact:
   type: <capability|service-consumption>
   scope: <%type-scopes%>
   target: <target-name>
-  language: <es>
+  language: es
 
 metadata:
   status: <draft|candidate|active|deprecated|superseded>
   relates:
-    - relation: <references/referenced-by|complements|depends-on|owned-by|derived-from|updates|supersedes/superseded-by>
+    - relation: <references|referenced-by|complements|depends-on|owned-by|derived-from|updates|supersedes|superseded-by>
       target: <artifact-id>
 
 composition:
@@ -45,7 +45,7 @@ No debe incluir información derivada que pueda calcularse por tooling, como `id
 
 * `artifact.kind`: clase general del artifact dentro de VSlices Docs Standard. Para este grupo siempre debe ser `nexus`.
 * `artifact.type`: variante específica del nexus. Para este grupo puede ser `capability` o `service-consumption`.
-* `artifact.scope`: escala, naturaleza o contexto principal donde aplica el nexus. Su valor depende del tipo de nexus.
+* `artifact.scope`: identifica la clase, naturaleza o escala del elemento declarado en artifact.target.
 * `artifact.target`: elemento concreto que el nexus compone o ayuda a entender.
 * `artifact.language`: idioma principal del artifact. Debe usar valores simples como `es` o `en`.
 
