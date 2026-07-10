@@ -42,7 +42,7 @@ El diagrama debe mostrar preguntas de orientación, conceptos relacionados y est
 
 ```mermaid
 flowchart LR
-    A[["<b>Software Project</b><br/>[Proyecto o solución de software]<br/><small><a href='link'>Structure Document</a><br/><a href='link'>Software Project Path</a></small>"]]
+    A[["<b>Software Project</b><br/>[Proyecto o solución de software]<br/><small><a href='link'>Structure Document</a><br/><a href='link'>Scope Document</a><br/><a href='link'>Software Project Path</a></small>"]]
 
     A --> P1["¿Qué iniciativa, producto o servicio lo origina?"]
     A --> P2["¿Qué partes componen la solución?"]
@@ -55,27 +55,33 @@ flowchart LR
     P1 --> SI1[["<b>Software Initiative</b><br/>[Iniciativa relacionada]<br/><small><a href='link'>Software Initiative Path</a></small>"]]
     P1 --> CP1[["<b>Client Product</b><br/>[Producto relacionado]<br/><small><a href='link'>Client Product Path</a></small>"]]
     P1 --> CS1[["<b>Consumable Service</b><br/>[Servicio relacionado]<br/><small><a href='link'>Consumable Service Path</a></small>"]]
+    P1 -.-> OR1{{"<b>Project Origin</b><br/>[Origen no claro]<br/><small>Context Document<br/>Support Note kind: draft<br/>Support Note kind: risk</small>"}}
 
     P2 --> S1[["<b>Solution Structure</b><br/>[Estructura documentada]<br/><small><a href='link'>Structure Document</a></small>"]]
-    P2 --> S2{{"<b>Software Part</b><br/>[Parte que requiere documentación]<br/><small>Structure Document</small>"}}
+    P2 --> S2{{"<b>Software Part</b><br/>[Parte que requiere documentación]<br/><small>Structure Document<br/>Scope Document<br/>Support Note kind: draft</small>"}}
     P2 --> S3>"<b>Software Part</b><br/>[Parte identificada]"]
 
-    P3 --> R1[["<b>Technical Responsibility</b><br/>[Responsabilidad documentada]<br/><small><a href='link'>Structure Document</a></small>"]]
-    P3 --> R2{{"<b>Responsibility Gap</b><br/>[Responsabilidad no clara]<br/><small>Structure Document<br/>Decision Record</small>"}}
+    P3 --> R1[["<b>Technical Responsibility</b><br/>[Responsabilidad documentada]<br/><small><a href='link'>Structure Document</a><br/><a href='link'>Scope Document</a></small>"]]
+    P3 --> R2{{"<b>Responsibility Gap</b><br/>[Responsabilidad no clara]<br/><small>Structure Document<br/>Scope Document<br/>Decision Record<br/>Consistency Document<br/>Support Note kind: risk</small>"}}
 
     P4 --> D1[["<b>Domain Context</b><br/>[Contexto de dominio relacionado]<br/><small><a href='link'>Domain Context Path</a></small>"]]
     P4 --> DC1[["<b>Domain Concept</b><br/>[Concepto materializado]<br/><small><a href='link'>Domain Vocabulary</a><br/><a href='link'>Context Document</a></small>"]]
     P4 --> B1[["<b>Behavior</b><br/>[Comportamiento implementado]<br/><small><a href='link'>Behavior Document</a></small>"]]
+    P4 -.-> CAP1{{"<b>Capability</b><br/>[Capacidad materializada]<br/><small>Capability Nexus<br/>Behavior Document<br/>Structure Document<br/>Consistency Document</small>"}}
+    P4 -.-> AL1{{"<b>Domain Alignment Risk</b><br/>[Riesgo de desalineación]<br/><small>Support Note kind: risk<br/>Support Note kind: validation</small>"}}
 
     P5 -.-> AD1[["<b>Adapter</b><br/>[Adapter documentado]<br/><small><a href='link'>Structure Document</a></small>"]]
     P5 -.-> DP1>"<b>Dependency</b><br/>[Dependencia identificada]"]
-    P5 -.-> IN1{{"<b>Integration</b><br/>[Integración que requiere documentación]<br/><small>Structure Document<br/>Decision Record</small>"}}
+    P5 -.-> IN1{{"<b>Integration</b><br/>[Integración que requiere documentación]<br/><small>Structure Document<br/>Decision Record<br/>Support Note kind: external<br/>Support Note kind: testing-spec<br/>Support Note kind: risk</small>"}}
+    P5 -.-> SCN1{{"<b>Service Consumption</b><br/>[Consumo compuesto]<br/><small>Service Consumption Nexus</small>"}}
 
     P6 -.-> DEC1[["<b>Technical Decision</b><br/>[Decisión documentada]<br/><small><a href='link'>Decision Record</a></small>"]]
-    P6 -.-> DEC2{{"<b>Technical Decision</b><br/>[Decisión pendiente]<br/><small>Decision Record</small>"}}
+    P6 -.-> DEC2{{"<b>Technical Decision</b><br/>[Decisión pendiente]<br/><small>Decision Record<br/>Support Note kind: draft<br/>Support Note kind: risk</small>"}}
+    P6 -.-> VD1{{"<b>Technical Viability</b><br/>[Viabilidad técnica dudosa]<br/><small>Viability Document<br/>Support Note kind: validation</small>"}}
 
-    P7 -.-> IMP1{{"<b>Technical Impact</b><br/>[Impacto a revisar]<br/><small>Impact Path<br/>Update Document</small>"}}
+    P7 -.-> IMP1{{"<b>Technical Impact</b><br/>[Impacto a revisar]<br/><small>Impact Path<br/>Update Document<br/>Support Note kind: risk</small>"}}
     P7 -.-> EVO1[["<b>Evolution</b><br/>[Evolución relacionada]<br/><small><a href='link'>Evolution Path</a></small>"]]
+    P7 -.-> UP1{{"<b>Project Update</b><br/>[Actualización requerida]<br/><small>Update Document<br/>Decision Record<br/>Navigation Document</small>"}}
 ```
 
 ## Recorrido recomendado

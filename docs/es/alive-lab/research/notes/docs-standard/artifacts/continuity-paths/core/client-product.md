@@ -43,7 +43,7 @@ flowchart LR
     A[["<b>Client Product</b><br/>[Producto al cliente]<br/><small><a href='link'>Context Document</a><br/><a href='link'>Client Product Path</a></small>"]]
 
     A --> P1["¿Qué parte del escenario responde?"]
-    A --> P2["¿Qué usuarios o actores interactúan?"]
+    A --> P2["¿Qué actores interactúan con la experiencia?"]
     A --> P3["¿Qué flujos visibles permite recorrer?"]
     A -.-> P4["¿Qué servicios consumibles necesita coordinar?"]
     A -.-> P5["¿Qué decisiones explican su alcance o experiencia?"]
@@ -51,25 +51,31 @@ flowchart LR
 
     P1 --> BS1[["<b>Business Scenario</b><br/>[Escenario respondido]<br/><small><a href='link'>Business Scenario Path</a></small>"]]
     BS1 --> WL1>"<b>Work Line</b><br/>[Línea de trabajo relacionada]"]
-    WL1 --> PR1{{"<b>Process / Flow</b><br/>[Proceso o flujo soportado]<br/><small>Structure Document<br/>Behavior Document</small>"}}
+    WL1 --> PR1{{"<b>Process / Flow</b><br/>[Proceso o flujo soportado]<br/><small>Structure Document<br/>Behavior Document<br/>Scope Document</small>"}}
 
-    P2 --> U1[["<b>User / Actor</b><br/>[Usuario documentado]<br/><small><a href='link'>Context Document</a></small>"]]
-    P2 --> U2>"<b>User / Actor</b><br/>[Actor identificado]"]
+    P2 --> U1[["<b>Actor</b><br/>[Actor documentado]<br/><small><a href='link'>Context Document</a><br/><a href='link'>Domain Vocabulary</a></small>"]]
+    P2 --> U2>"<b>Actor</b><br/>[Actor identificado]"]
+    P2 -.-> U3{{"<b>Actor Assumption</b><br/>[Supuesto sobre actor]<br/><small>Support Note kind: draft<br/>Support Note kind: validation</small>"}}
 
-    P3 --> VF1[["<b>Visible Flow</b><br/>[Flujo visible documentado]<br/><small><a href='link'>Mockup Flow</a><br/><a href='link'>Behavior Document</a></small>"]]
-    P3 --> VF2{{"<b>Visible Flow</b><br/>[Flujo visible que requiere documentación]<br/><small>Mockup Flow<br/>Behavior Document</small>"}}
+    P3 --> VF1[["<b>Visible Flow</b><br/>[Flujo visible documentado]<br/><small><a href='link'>Mockup Flow</a><br/><a href='link'>Behavior Document</a><br/><a href='link'>Scope Document</a></small>"]]
+    P3 --> VF2{{"<b>Visible Flow</b><br/>[Flujo visible que requiere documentación]<br/><small>Mockup Flow<br/>Behavior Document<br/>Support Note kind: testing-spec</small>"}}
 
     VF1 --> MF1[["<b>Mockup Flow</b><br/>[Secuencia de mockups]<br/><small><a href='link'>Mockup 1</a><br/><a href='link'>Mockup 2</a></small>"]]
     VF2 --> MF2{{"<b>Mockup Flow</b><br/>[Secuencia visual pendiente]<br/><small>Mockups</small>"}}
 
     P4 -.-> S1[["<b>Consumable Service</b><br/>[Servicio coordinado]<br/><small><a href='link'>Consumable Service Path</a></small>"]]
     P4 -.-> S2>"<b>Consumable Service</b><br/>[Servicio identificado]"]
+    P4 -.-> S3{{"<b>Coordination Risk</b><br/>[Riesgo de coordinación]<br/><small>Support Note kind: risk<br/>Support Note kind: testing-spec</small>"}}
 
     P5 -.-> D1[["<b>Decision</b><br/>[Decisión documentada]<br/><small><a href='link'>Decision Record</a></small>"]]
-    P5 -.-> D2{{"<b>Experience Decision</b><br/>[Decisión pendiente]<br/><small>Decision Record</small>"}}
+    P5 -.-> D2{{"<b>Experience Decision</b><br/>[Decisión pendiente]<br/><small>Decision Record<br/>Support Note kind: draft</small>"}}
+    P5 -.-> SC1{{"<b>Product Scope</b><br/>[Alcance de experiencia]<br/><small>Scope Document</small>"}}
 
     P6 -.-> FB1[["<b>Feedback</b><br/>[Feedback documentado]<br/><small><a href='link'>Feedback Document</a></small>"]]
+    P6 -.-> R1[["<b>Result</b><br/>[Resultado observado]<br/><small>Support Note kind: result</small>"]]
     P6 -.-> V1{{"<b>Validation</b><br/>[Validación pendiente]<br/><small>Support Note kind: validation</small>"}}
+    P6 -.-> U1{{"<b>Product Update</b><br/>[Actualización requerida]<br/><small>Update Document<br/>Decision Record</small>"}}
+    P6 -.-> I1{{"<b>Experience Impact</b><br/>[Impacto potencial]<br/><small>Impact Path<br/>Support Note kind: risk</small>"}}
 ```
 
 ## Recorrido recomendado

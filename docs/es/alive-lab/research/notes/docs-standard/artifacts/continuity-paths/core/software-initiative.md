@@ -38,33 +38,48 @@ El diagrama debe mostrar preguntas de orientación, conceptos relacionados y est
 
 ```mermaid
 flowchart LR
-    A[["<b>Software Initiative</b><br/>[Iniciativa de software]<br/><small><a href='link'>Context Document</a><br/><a href='link'>Software Initiative Path</a></small>"]]
+    A[["<b>Software Initiative</b><br/>[Iniciativa de software]<br/><small><a href='link'>Context Document</a><br/><a href='link'>Scope Document</a><br/><a href='link'>Software Initiative Path</a></small>"]]
 
     A --> P1["¿Qué parte del escenario aborda?"]
     A --> P2["¿Qué líneas de trabajo incluye, excluye o posterga?"]
     A --> P3["¿Qué productos o servicios participan?"]
     A --> P4["¿Qué capacidades requiere?"]
     A -.-> P5["¿Qué decisiones explican su alcance?"]
-    A -.-> P6["¿Qué proyectos de software originó?"]
+    A -.-> P6["¿Qué proyectos de software originó o podría originar?"]
+    A -.-> P7["¿Es viable abordar esta iniciativa ahora?"]
+    A -.-> P8["¿Qué aprendizaje o cambio afecta su cobertura?"]
 
     P1 --> BS1[["<b>Business Scenario</b><br/>[Escenario de negocio]<br/><small><a href='link'>Business Scenario Path</a></small>"]]
     P1 --> BS2>"<b>Business Scenario</b><br/>[Escenario mencionado]"]
+    P1 -.-> BD1[["<b>Business Driver</b><br/>[Motivación relacionada]<br/><small><a href='link'>Business Driver Path</a></small>"]]
 
-    P2 --> WL1[["<b>Work Line</b><br/>[Línea incluida]<br/><small><a href='link'>Context Document</a></small>"]]
+    P2 --> WL1[["<b>Work Line</b><br/>[Línea incluida]<br/><small><a href='link'>Context Document</a><br/><a href='link'>Scope Document</a></small>"]]
     P2 --> WL2>"<b>Work Line</b><br/>[Línea excluida o postergada]"]
+    P2 --> SC1{{"<b>Initiative Scope</b><br/>[Cobertura de la iniciativa]<br/><small>Scope Document<br/>Decision Record</small>"}}
 
     P3 --> CP1[["<b>Client Product</b><br/>[Producto al cliente]<br/><small><a href='link'>Client Product Path</a></small>"]]
     P3 --> CS1[["<b>Consumable Service</b><br/>[Servicio consumible]<br/><small><a href='link'>Consumable Service Path</a></small>"]]
     P3 --> CS2>"<b>Consumable Service</b><br/>[Servicio identificado]"]
+    P3 -.-> PX1{{"<b>Participation Gap</b><br/>[Participación no clara]<br/><small>Support Note kind: draft<br/>Support Note kind: validation</small>"}}
 
-    P4 --> C1{{"<b>Capability</b><br/>[Capacidad requerida]<br/><small>Scope Document<br/>Behavior Document<br/>Structure Document</small>"}}
+    P4 --> C1{{"<b>Capability</b><br/>[Capacidad requerida]<br/><small>Capability Nexus<br/>Scope Document<br/>Behavior Document<br/>Structure Document<br/>Consistency Document<br/>Viability Document</small>"}}
     P4 --> C2>"<b>Capability</b><br/>[Capacidad identificada]"]
+    P4 -.-> C3{{"<b>Capability Risk</b><br/>[Riesgo de capacidad]<br/><small>Support Note kind: risk<br/>Viability Document</small>"}}
 
     P5 -.-> D1[["<b>Decision</b><br/>[Decisión documentada]<br/><small><a href='link'>Decision Record</a></small>"]]
-    P5 -.-> D2{{"<b>Scope Decision</b><br/>[Decisión pendiente]<br/><small>Decision Record</small>"}}
+    P5 -.-> D2{{"<b>Scope Decision</b><br/>[Decisión pendiente]<br/><small>Decision Record<br/>Support Note kind: draft</small>"}}
 
     P6 -.-> SP1[["<b>Software Project</b><br/>[Proyecto originado]<br/><small><a href='link'>Software Project Path</a></small>"]]
     P6 -.-> SP2>"<b>Software Project</b><br/>[Proyecto candidato]"]
+    P6 -.-> SP3{{"<b>Technical Materialization</b><br/>[Materialización técnica pendiente]<br/><small>Software Project Path<br/>Structure Document<br/>Decision Record</small>"}}
+
+    P7 -.-> V1[["<b>Viability</b><br/>[Viabilidad evaluada]<br/><small><a href='link'>Viability Path</a><br/><a href='link'>Viability Document</a></small>"]]
+    P7 -.-> V2{{"<b>Viability Gap</b><br/>[Viabilidad no clara]<br/><small>Viability Document<br/>Support Note kind: validation<br/>Support Note kind: risk</small>"}}
+
+    P8 -.-> FB1[["<b>Feedback</b><br/>[Feedback documentado]<br/><small><a href='link'>Feedback Document</a></small>"]]
+    P8 -.-> R1[["<b>Result</b><br/>[Resultado observado]<br/><small>Support Note kind: result</small>"]]
+    P8 -.-> UP1{{"<b>Initiative Update</b><br/>[Actualización de cobertura]<br/><small>Update Document<br/>Decision Record<br/>Scope Document</small>"}}
+    P8 -.-> EV1[["<b>Evolution</b><br/>[Evolución relacionada]<br/><small><a href='link'>Evolution Path</a></small>"]]
 ```
 
 !!! note "¿Qué proyectos originó?"

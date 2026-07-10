@@ -39,7 +39,7 @@ El diagrama debe mostrar preguntas de orientación, conceptos relacionados y est
 
 ```mermaid
 flowchart LR
-    A[["<b>Knowledge Handoff</b><br/>[Traspaso de conocimiento]<br/><small><a href='link'>Knowledge Handoff Path</a></small>"]]
+    A[["<b>Knowledge Handoff</b><br/>[Traspaso de conocimiento]<br/><small><a href='link'>Knowledge Handoff Path</a><br/>Scope Document<br/>Navigation Document</small>"]]
 
     A --> P1["¿Qué conocimiento debe transferirse?"]
     A --> P2["¿Quién necesita recibirlo?"]
@@ -51,28 +51,35 @@ flowchart LR
     A -.-> P8["¿Qué queda pendiente, incompleto o fuera del traspaso?"]
 
     P1 --> K1[["<b>Knowledge Area</b><br/>[Área de conocimiento documentada]<br/><small><a href='link'>Context Document</a><br/><a href='link'>Navigation Document</a></small>"]]
-    P1 --> K2{{"<b>Tacit Knowledge</b><br/>[Conocimiento tácito relevante]<br/><small>Support Note<br/>Context Document</small>"}}
+    P1 --> K2{{"<b>Tacit Knowledge</b><br/>[Conocimiento tácito relevante]<br/><small>Support Note kind: draft<br/>Support Note kind: risk<br/>Context Document<br/>Domain Vocabulary</small>"}}
+    P1 -.-> K3{{"<b>External Knowledge Source</b><br/>[Fuente externa de conocimiento]<br/><small>Support Note kind: external<br/>Navigation Document</small>"}}
 
     P2 --> O1[["<b>Receiver / Owner</b><br/>[Responsable receptor]<br/><small><a href='link'>Ownership Path</a></small>"]]
     P2 --> O2>"<b>Receiver</b><br/>[Persona, rol o equipo identificado]"]
+    P2 -.-> O3{{"<b>Receiver Gap</b><br/>[Receptor no claro]<br/><small>Ownership Path<br/>Support Note kind: risk<br/>Viability Document kind: organizational</small>"}}
 
-    P3 --> I1{{"<b>Continuity Risk</b><br/>[Riesgo de pérdida de continuidad]<br/><small>Impact Path<br/>Support Note</small>"}}
+    P3 --> I1{{"<b>Continuity Risk</b><br/>[Riesgo de pérdida de continuidad]<br/><small>Impact Path<br/>Support Note kind: risk<br/>Viability Document kind: operational</small>"}}
     P3 --> I2>"<b>Operational Impact</b><br/>[Impacto operativo identificado]"]
+    P3 -.-> I3{{"<b>Risk Validation</b><br/>[Riesgo a validar]<br/><small>Support Note kind: validation<br/>Support Note kind: result</small>"}}
 
-    P4 --> V1[["<b>Viability</b><br/>[Priorización viable]<br/><small><a href='link'>Viability Path</a><br/><a href='link'>Viability Document kind: temporal</a></small>"]]
-    P4 --> S1{{"<b>Handoff Scope</b><br/>[Alcance del traspaso]<br/><small>Scope Document</small>"}}
+    P4 --> V1[["<b>Viability</b><br/>[Priorización viable]<br/><small><a href='link'>Viability Path</a><br/><a href='link'>Viability Document kind: temporal</a><br/>Viability Document kind: organizational</small>"]]
+    P4 --> S1{{"<b>Handoff Scope</b><br/>[Alcance del traspaso]<br/><small>Scope Document<br/>Support Note kind: risk</small>"}}
 
     P5 -.-> D1[["<b>Decision</b><br/>[Decisión documentada]<br/><small><a href='link'>Decision Record</a></small>"]]
-    P5 -.-> D2{{"<b>Decision Criteria</b><br/>[Criterio no documentado]<br/><small>Decision Record<br/>Support Note</small>"}}
+    P5 -.-> D2{{"<b>Decision Criteria</b><br/>[Criterio no documentado]<br/><small>Decision Record<br/>Support Note kind: draft<br/>Support Note kind: risk</small>"}}
+    P5 -.-> C1{{"<b>Consistency Criteria</b><br/>[Regla o criterio a preservar]<br/><small>Consistency Document<br/>Behavior Document</small>"}}
 
     P6 -.-> T1[["<b>Software Project Area</b><br/>[Zona técnica documentada]<br/><small><a href='link'>Software Project Path</a><br/><a href='link'>Structure Document</a></small>"]]
-    P6 -.-> T2{{"<b>Technical Entry Point</b><br/>[Punto técnico crítico]<br/><small>Structure Document<br/>Navigation Document</small>"}}
+    P6 -.-> T2{{"<b>Technical Entry Point</b><br/>[Punto técnico crítico]<br/><small>Structure Document<br/>Navigation Document<br/>Support Note kind: external<br/>Support Note kind: risk</small>"}}
+    P6 -.-> T3{{"<b>Service Consumption</b><br/>[Consumo técnico crítico]<br/><small>Service Consumption Nexus<br/>Consumable Service Path<br/>Support Note kind: external</small>"}}
 
     P7 -.-> B1[["<b>Behavior</b><br/>[Comportamiento documentado]<br/><small><a href='link'>Behavior Document</a></small>"]]
-    P7 -.-> B2{{"<b>Expected Behavior</b><br/>[Comportamiento relevante]<br/><small>Behavior Document<br/>Support Note kind: testing-spec</small>"}}
+    P7 -.-> B2{{"<b>Expected Behavior</b><br/>[Comportamiento relevante]<br/><small>Behavior Document<br/>Support Note kind: testing-spec<br/>Support Note kind: validation<br/>Support Note kind: risk</small>"}}
+    P7 -.-> B3{{"<b>Critical Capability</b><br/>[Capacidad crítica a entender]<br/><small>Capability Nexus</small>"}}
 
-    P8 -.-> PND{{"<b>Pending / Incomplete</b><br/>[Pendiente o incompleto]<br/><small>Support Note<br/>Update Document</small>"}}
+    P8 -.-> PND{{"<b>Pending / Incomplete</b><br/>[Pendiente o incompleto]<br/><small>Support Note kind: draft<br/>Support Note kind: risk<br/>Support Note kind: result<br/>Update Document</small>"}}
     P8 -.-> EXC>"<b>Out of Handoff Scope</b><br/>[Fuera del traspaso actual]"]
+    P8 -.-> OS1{{"<b>Out of Handoff Scope</b><br/>[Exclusión explícita]<br/><small>Scope Document<br/>Decision Record</small>"}}
 ```
 
 ## Recorrido recomendado

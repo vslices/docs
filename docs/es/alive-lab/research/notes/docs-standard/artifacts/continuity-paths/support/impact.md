@@ -37,7 +37,7 @@ El diagrama debe mostrar preguntas de orientación, conceptos relacionados y est
 
 ```mermaid
 flowchart LR
-    A[["<b>Impact Source</b><br/>[Elemento que genera impacto]<br/><small><a href='link'>Impact Path</a></small>"]]
+    A[["<b>Impact Source</b><br/>[Elemento que genera impacto]<br/><small><a href='link'>Impact Path</a><br/>Support Note kind: risk</small>"]]
 
     A --> P1["¿Qué conceptos o reglas del dominio afecta?"]
     A --> P2["¿Qué productos o flujos visibles afecta?"]
@@ -47,26 +47,33 @@ flowchart LR
     A -.-> P6["¿Qué documentación debe actualizarse?"]
     A -.-> P7["¿Qué validación necesita repetirse?"]
 
-    P1 --> D1[["<b>Domain Concept</b><br/>[Concepto afectado]<br/><small><a href='link'>Domain Context Path</a></small>"]]
+    P1 --> D1[["<b>Domain Concept</b><br/>[Concepto afectado]<br/><small><a href='link'>Domain Context Path</a><br/>Domain Vocabulary<br/>Context Document</small>"]]
     P1 --> D2>"<b>Domain Rule</b><br/>[Regla afectada]"]
-    P1 --> D3{{"<b>Domain Invariant</b><br/>[Invariante afectada]<br/><small>Consistency Document</small>"}}
+    P1 --> D3{{"<b>Domain Invariant</b><br/>[Invariante afectada]<br/><small>Consistency Document<br/>Behavior Document<br/>Support Note kind: validation<br/>Support Note kind: risk</small>"}}
+    P1 -.-> DU1{{"<b>Domain Update</b><br/>[Actualización de dominio requerida]<br/><small>Update Document<br/>Decision Record</small>"}}
 
     P2 --> Pdt1[["<b>Client Product</b><br/>[Producto afectado]<br/><small><a href='link'>Client Product Path</a></small>"]]
-    P2 --> VF1{{"<b>Visible Flow</b><br/>[Flujo visible afectado]<br/><small>Mockup Flow<br/>Behavior Document</small>"}}
+    P2 --> VF1{{"<b>Visible Flow</b><br/>[Flujo visible afectado]<br/><small>Mockup Flow<br/>Behavior Document<br/>Scope Document<br/>Support Note kind: validation<br/>Support Note kind: risk</small>"}}
+    P2 -.-> FU1{{"<b>Product Update</b><br/>[Actualización de producto requerida]<br/><small>Update Document<br/>Feedback Document</small>"}}
 
     P3 --> S1[["<b>Consumable Service</b><br/>[Servicio afectado]<br/><small><a href='link'>Consumable Service Path</a></small>"]]
-    P3 --> CM1{{"<b>Consumption Model</b><br/>[Forma de consumo afectada]<br/><small>Structure Document<br/>Behavior Document</small>"}}
+    P3 --> CM1{{"<b>Consumption Model</b><br/>[Forma de consumo afectada]<br/><small>Structure Document<br/>Behavior Document<br/>Consistency Document<br/>Support Note kind: external<br/>Support Note kind: risk</small>"}}
     P3 --> DE1>"<b>Domain Element</b><br/>[Elemento de dominio representado]"]
+    P3 -.-> SCN1{{"<b>Service Consumption</b><br/>[Consumo compuesto afectado]<br/><small>Service Consumption Nexus<br/>Support Note kind: external<br/>Update Document</small>"}}
 
     P4 -.-> SP1[["<b>Software Project</b><br/>[Proyecto afectado]<br/><small><a href='link'>Software Project Path</a></small>"]]
-    P4 -.-> TS1{{"<b>Technical Structure</b><br/>[Estructura técnica afectada]<br/><small>Structure Document</small>"}}
+    P4 -.-> TS1{{"<b>Technical Structure</b><br/>[Estructura técnica afectada]<br/><small>Structure Document<br/>Decision Record<br/>Update Document<br/>Support Note kind: risk</small>"}}
     P4 -.-> TD1>"<b>Technical Dependency</b><br/>[Dependencia afectada]"]
+    P4 -.-> EX1{{"<b>External Dependency</b><br/>[Dependencia externa afectada]<br/><small>Support Note kind: external<br/>Support Note kind: risk</small>"}}
 
-    P5 -.-> DEC1{{"<b>Decision</b><br/>[Decisión a revisar]<br/><small>Decision Record</small>"}}
+    P5 -.-> DEC1{{"<b>Decision</b><br/>[Decisión a revisar]<br/><small>Decision Record<br/>Support Note kind: draft<br/>Support Note kind: risk<br/>Update Document</small>"}}
+    P5 -.-> VI1{{"<b>Viability</b><br/>[Viabilidad a reevaluar]<br/><small>Viability Document<br/>Support Note kind: validation</small>"}}
 
-    P6 -.-> UP1{{"<b>Documentation Update</b><br/>[Documento a actualizar]<br/><small>Update Document</small>"}}
+    P6 -.-> UP1{{"<b>Documentation Update</b><br/>[Documento a actualizar]<br/><small>Update Document<br/>Navigation Document<br/>Support Note kind: risk</small>"}}
+    P6 -.-> AS1>"<b>Affected Artifact Set</b><br/>[Conjunto de artifacts afectados]"]
 
-    P7 -.-> V1{{"<b>Validation</b><br/>[Validación a repetir]<br/><small>Support Note kind: validation</small>"}}
+    P7 -.-> V1{{"<b>Validation</b><br/>[Validación a repetir]<br/><small>Support Note kind: validation<br/>Support Note kind: testing-spec<br/>Support Note kind: result<br/>Support Note kind: risk</small>"}}
+    P7 -.-> FB1{{"<b>Feedback</b><br/>[Feedback a revisar]<br/><small>Feedback Document</small>"}}
 ```
 
 ## Recorrido recomendado

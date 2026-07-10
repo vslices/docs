@@ -36,9 +36,9 @@ Incluir el Diagrama de Camino de Continuidad asociado a Viability.
 El diagrama debe mostrar preguntas de orientación, conceptos relacionados y estado documental de los conceptos conectados.
 -->
 
-```mermaid id="6xbmp9"
+```mermaid
 flowchart LR
-    A[["<b>Viability Subject</b><br/>[Objeto evaluado]<br/><small><a href='link'>Viability Document</a><br/><a href='link'>Viability Path</a></small>"]]
+    A[["<b>Viability Subject</b><br/>[Objeto evaluado]<br/><small>Viability Path<br/>Viability Document<br/>Context Document<br/>Support Note kind: draft<br/>Decision Record</small>"]]
 
     A --> P1["¿Qué estamos evaluando?"]
     A --> P2["¿Qué kind de viabilidad aplica?"]
@@ -50,30 +50,30 @@ flowchart LR
     A -.-> P8["¿Qué alternativa lo haría más viable?"]
     A -.-> P9["¿Cuándo debe reevaluarse?"]
 
-    P1 --> O1[["<b>Evaluated Object</b><br/>[Objeto evaluado]<br/><small><a href='link'>Viability Document</a></small>"]]
-    P1 --> O2>"<b>Candidate Object</b><br/>[Objeto identificado]"]
+    P1 --> O1[["<b>Evaluated Object</b><br/>[Objeto evaluado]<br/><small>Viability Document<br/>Context Document<br/>Scope Document</small>"]]
+    P1 --> O2>"<b>Candidate Object</b><br/>[Objeto identificado]<br/><small>Support Note kind: draft<br/>Context Document<br/>Scope Document</small>"]
 
-    P2 --> K1[["<b>Viability Kind</b><br/>[Kind definido]<br/><small><a href='link'>Viability Document</a></small>"]]
-    P2 --> K2{{"<b>Viability Kind</b><br/>[Kind no claro]<br/><small>Viability Document</small>"}}
+    P2 --> K1[["<b>Viability Kind</b><br/>[Kind definido]<br/><small>Viability Document</small>"]]
+    P2 --> K2{{"<b>Viability Kind</b><br/>[Kind no claro]<br/><small>Viability Document<br/>Decision Record<br/>Support Note kind: draft</small>"}}
 
-    P3 --> VC1[["<b>Viability Criterion</b><br/>[Criterio definido]<br/><small><a href='link'>Viability Document</a></small>"]]
-    P3 --> VC2{{"<b>Viability Criterion</b><br/>[Criterio no claro]<br/><small>Viability Document<br/>Decision Record</small>"}}
+    P3 --> VC1[["<b>Viability Criterion</b><br/>[Criterio definido]<br/><small>Viability Document<br/>Consistency Document</small>"]]
+    P3 --> VC2{{"<b>Viability Criterion</b><br/>[Criterio no claro]<br/><small>Viability Document<br/>Decision Record<br/>Support Note kind: validation</small>"}}
 
-    P4 --> C1[["<b>Necessary Condition</b><br/>[Condición documentada]<br/><small><a href='link'>Viability Document</a></small>"]]
-    P4 --> C2{{"<b>Necessary Condition</b><br/>[Condición que requiere definición]<br/><small>Viability Document</small>"}}
+    P4 --> C1[["<b>Necessary Condition</b><br/>[Condición documentada]<br/><small>Viability Document<br/>Scope Document<br/>Structure Document</small>"]]
+    P4 --> C2{{"<b>Necessary Condition</b><br/>[Condición que requiere definición]<br/><small>Viability Document<br/>Scope Document<br/>Support Note kind: draft</small>"}}
 
-    P5 --> R1[["<b>Known Restriction</b><br/>[Restricción documentada]<br/><small><a href='link'>Viability Document</a></small>"]]
-    P5 --> R2>"<b>Known Restriction</b><br/>[Restricción identificada]"]
+    P5 --> R1[["<b>Known Restriction</b><br/>[Restricción documentada]<br/><small>Viability Document<br/>Scope Document<br/>Context Document</small>"]]
+    P5 --> R2>"<b>Known Restriction</b><br/>[Restricción identificada]<br/><small>Context Document<br/>Scope Document<br/>Support Note kind: draft</small>"]
 
-    P6 --> E1[["<b>Initial Evaluation</b><br/>[Evaluación inicial]<br/><small><a href='link'>Viability Document</a></small>"]]
-    P6 --> E2{{"<b>Evaluation Gap</b><br/>[Evaluación insuficiente]<br/><small>Viability Document<br/>Support Note kind: validation</small>"}}
+    P6 --> E1[["<b>Initial Evaluation</b><br/>[Evaluación inicial]<br/><small>Viability Document<br/>Support Note kind: result<br/>Support Note kind: validation<br/>Decision Record</small>"]]
+    P6 --> E2{{"<b>Evaluation Gap</b><br/>[Evaluación insuficiente]<br/><small>Viability Document<br/>Support Note kind: validation<br/>Support Note kind: draft<br/>Feedback Document</small>"}}
 
-    P7 -.-> IV1{{"<b>Inviability Risk</b><br/>[Riesgo de inviabilidad]<br/><small>Viability Document<br/>Risk Note</small>"}}
+    P7 -.-> IV1{{"<b>Inviability Risk</b><br/>[Riesgo de inviabilidad]<br/><small>Viability Document<br/>Support Note kind: validation<br/>Support Note kind: risk<br/>Decision Record<br/>Scope Document</small>"}}
 
-    P8 -.-> ALT1>"<b>Viability Alternative</b><br/>[Alternativa identificada]"]
-    P8 -.-> ALT2{{"<b>Smaller Alternative</b><br/>[Alternativa más pequeña]<br/><small>Scope Document<br/>Decision Record</small>"}}
+    P8 -.-> ALT1>"<b>Viability Alternative</b><br/>[Alternativa identificada]<br/><small>Scope Document<br/>Support Note kind: draft<br/>Viability Document</small>"]
+    P8 -.-> ALT2{{"<b>Smaller Alternative</b><br/>[Alternativa más pequeña]<br/><small>Scope Document<br/>Decision Record<br/>Viability Document</small>"}}
 
-    P9 -.-> RV1{{"<b>Review Condition</b><br/>[Condición de revisión]<br/><small>Viability Document<br/>Update Document</small>"}}
+    P9 -.-> RV1{{"<b>Review Condition</b><br/>[Condición de revisión]<br/><small>Viability Document<br/>Update Document<br/>Decision Record<br/>Support Note kind: validation</small>"}}
 ```
 
 ## Recorrido recomendado

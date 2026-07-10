@@ -35,9 +35,8 @@ Incluir el Diagrama de Camino de Continuidad asociado a Ownership.
 El diagrama debe mostrar preguntas de orientación, conceptos relacionados y estado documental de los conceptos conectados.
 -->
 
-```mermaid
-flowchart LR
-    A[["<b>Owned Element</b><br/>[Elemento seguido]<br/><small><a href='link'>Context Document</a><br/><a href='link'>Ownership Path</a></small>"]]
+```mermaidflowchart LR
+    A[["<b>Owned Element</b><br/>[Elemento seguido]<br/><small><a href='link'>Context Document</a><br/><a href='link'>Scope Document</a><br/><a href='link'>Ownership Path</a></small>"]]
 
     A --> P1["¿Quién lo entiende?"]
     A --> P2["¿Quién decide sobre esto?"]
@@ -46,21 +45,27 @@ flowchart LR
     A -.-> P5["¿Qué conocimiento depende de personas específicas?"]
     A -.-> P6["¿Qué cambia si la responsabilidad se mueve?"]
 
-    P1 --> K1[["<b>Knowledge Owner</b><br/>[Responsable de conocimiento]<br/><small><a href='link'>Context Document</a></small>"]]
+    P1 --> K1[["<b>Knowledge Owner</b><br/>[Responsable de conocimiento]<br/><small><a href='link'>Context Document</a><br/>Navigation Document</small>"]]
     P1 --> K2>"<b>Knowledge Source</b><br/>[Persona, rol o equipo identificado]"]
+    P1 -.-> K3{{"<b>Knowledge Gap</b><br/>[Conocimiento no claro]<br/><small>Support Note kind: draft<br/>Support Note kind: risk</small>"}}
 
-    P2 --> D1[["<b>Decision Owner</b><br/>[Responsable de decisión]<br/><small><a href='link'>Decision Record</a></small>"]]
-    P2 --> D2{{"<b>Decision Gap</b><br/>[Responsabilidad de decisión no clara]<br/><small>Decision Record<br/>Support Note</small>"}}
+    P2 --> D1[["<b>Decision Owner</b><br/>[Responsable de decisión]<br/><small><a href='link'>Decision Record</a><br/>Scope Document</small>"]]
+    P2 --> D2{{"<b>Decision Gap</b><br/>[Responsabilidad de decisión no clara]<br/><small>Decision Record<br/>Scope Document<br/>Support Note kind: draft<br/>Support Note kind: risk</small>"}}
 
-    P3 --> V1[["<b>Validation Owner</b><br/>[Responsable de validación]<br/><small><a href='link'>Support Note kind: validation</a></small>"]]
+    P3 --> V1[["<b>Validation Owner</b><br/>[Responsable de validación]<br/><small><a href='link'>Support Note kind: validation</a><br/>Feedback Document</small>"]]
     P3 --> V2>"<b>Validation Source</b><br/>[Fuente de validación identificada]"]
+    P3 -.-> V3{{"<b>Validation Gap</b><br/>[Fuente de validación no clara]<br/><small>Support Note kind: validation<br/>Support Note kind: risk<br/>Support Note kind: testing-spec</small>"}}
 
-    P4 --> M1[["<b>Maintenance Owner</b><br/>[Responsable de mantenimiento]<br/><small><a href='link'>Structure Document</a></small>"]]
-    P4 --> M2{{"<b>Operational Responsibility</b><br/>[Responsabilidad operativa pendiente]<br/><small>Context Document<br/>Decision Record</small>"}}
+    P4 --> M1[["<b>Maintenance Owner</b><br/>[Responsable de mantenimiento]<br/><small><a href='link'>Structure Document</a><br/>Context Document</small>"]]
+    P4 --> M2{{"<b>Operational Responsibility</b><br/>[Responsabilidad operativa pendiente]<br/><small>Context Document<br/>Scope Document<br/>Decision Record<br/>Support Note kind: risk<br/>Support Note kind: external</small>"}}
+    P4 -.-> OPV{{"<b>Operational Viability</b><br/>[Operación no clara o no sostenible]<br/><small>Viability Document kind: operational<br/>Viability Document kind: organizational</small>"}}
 
-    P5 -.-> T1{{"<b>Tacit Knowledge</b><br/>[Conocimiento tácito]<br/><small>Support Note<br/>Domain Vocabulary</small>"}}
+    P5 -.-> T1{{"<b>Tacit Knowledge</b><br/>[Conocimiento tácito]<br/><small>Support Note kind: risk<br/>Support Note kind: draft<br/>Domain Vocabulary<br/>Context Document</small>"}}
+    P5 -.-> KH1[["<b>Knowledge Handoff</b><br/>[Traspaso requerido]<br/><small><a href='link'>Knowledge Handoff Path</a></small>"]]
 
-    P6 -.-> I1{{"<b>Ownership Impact</b><br/>[Impacto por cambio de responsabilidad]<br/><small>Impact Path</small>"}}
+    P6 -.-> I1{{"<b>Ownership Impact</b><br/>[Impacto por cambio de responsabilidad]<br/><small>Impact Path<br/>Update Document<br/>Decision Record<br/>Support Note kind: risk</small>"}}
+    P6 -.-> KH2{{"<b>Ownership Transfer</b><br/>[Traspaso de responsabilidad]<br/><small>Knowledge Handoff Path<br/>Scope Document<br/>Support Note kind: validation</small>"}}
+    P6 -.-> EVO1[["<b>Ownership Evolution</b><br/>[Evolución de responsabilidad]<br/><small>Evolution Path</small>"]]
 ```
 
 ## Recorrido recomendado

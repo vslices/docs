@@ -34,7 +34,7 @@ El diagrama debe mostrar preguntas de orientación, conceptos relacionados y est
 
 ```mermaid
 flowchart TD
-    CR[["<b>Business Scenario</b><br/>[Escenario de negocio]<br/><small><a href='link'>Context Document</a></small>"]]
+    CR[["<b>Business Scenario</b><br/>[Escenario de negocio]<br/><small>Context Document<br/>Navigation Document<br/>Support Note kind: draft</small>"]]
 
     P1["¿Qué líneas de trabajo existen dentro del escenario?"]
     P2["¿Qué conceptos complementan este escenario?"]
@@ -42,13 +42,13 @@ flowchart TD
     CR --> P1
     CR -.-> P2
 
-    WL1[["<b>Work Line</b><br/>[Línea de trabajo documentada]<br/><small><a href='link'>Context Document</a><br/><a href='link'>Structure Document</a></small>"]]
+    WL1[["<b>Work Line</b><br/>[Línea de trabajo documentada]<br/><small>Context Document<br/>Structure Document<br/>Scope Document</small>"]]
     WL2>"<b>Work Line</b><br/>[Línea de trabajo identificada]"]
 
     P1 --> WL1 & WL2
 
-    CO1[["<b>Domain Context</b><br/>[Contexto de dominio relacionado]<br/><small><a href='link'>Domain Context Path</a></small>"]]
-    CO2[["<b>Business Driver</b><br/>[Motivación relacionada]<br/><small><a href='link'>Business Driver Path</a></small>"]]
+    CO1[["<b>Domain Context</b><br/>[Contexto de dominio relacionado]<br/><small>Domain Context Path<br/>Domain Vocabulary<br/>Consistency Document<br/>Behavior Document</small>"]]
+    CO2[["<b>Business Driver</b><br/>[Motivación relacionada]<br/><small>Business Driver Path<br/>Context Document<br/>Decision Record<br/>Viability Document</small>"]]
 
     P2 -.-> CO1 & CO2
 
@@ -58,13 +58,13 @@ flowchart TD
     WL1 --> P3
     WL1 -.-> P4
 
-    PR1[["<b>Process</b><br/>[Proceso documentado]<br/><small><a href='link'>Structure Document</a></small>"]]
-    PR2{{"<b>Process</b><br/>[Proceso que requiere documentación]<br/><small>Structure Document<br/>Behavior Document</small>"}}
+    PR1[["<b>Process</b><br/>[Proceso documentado]<br/><small>Structure Document<br/>Behavior Document<br/>Context Document</small>"]]
+    PR2{{"<b>Process</b><br/>[Proceso que requiere documentación]<br/><small>Structure Document<br/>Behavior Document<br/>Context Document</small>"}}
 
     P3 --> PR1 & PR2
 
-    SI1[["<b>Software Initiative</b><br/>[Iniciativa relacionada]<br/><small><a href='link'>Software Initiative Path</a></small>"]]
-    VI1{{"<b>Viability</b><br/>[Viabilidad identificada]<br/><small>Viability Path</small>"}}
+    SI1[["<b>Software Initiative</b><br/>[Iniciativa relacionada]<br/><small>Software Initiative Path<br/>Scope Document<br/>Context Document<br/>Decision Record</small>"]]
+    VI1{{"<b>Viability</b><br/>[Viabilidad identificada]<br/><small>Viability Path<br/>Viability Document<br/>Support Note kind: validation</small>"}}
 
     P4 -.-> SI1 & VI1
 
@@ -75,20 +75,21 @@ flowchart TD
     PR1 -.-> P6
 
     FL1>"<b>Flow</b><br/>[Flujo identificado]"]
-    FL2{{"<b>Flow</b><br/>[Flujo que requiere documentación]<br/><small>Behavior Document</small>"}}
+    FL2{{"<b>Flow</b><br/>[Flujo que requiere documentación]<br/><small>Behavior Document<br/>Mockup Flow<br/>Support Note kind: testing-spec</small>"}}
 
     P5 --> FL1 & FL2
 
-    CP1[["<b>Client Product</b><br/>[Producto relacionado]<br/><small><a href='link'>Client Product Path</a></small>"]]
-    CS1[["<b>Consumable Service</b><br/>[Servicio relacionado]<br/><small><a href='link'>Consumable Service Path</a></small>"]]
+    CP1[["<b>Client Product</b><br/>[Producto relacionado]<br/><small>Client Product Path<br/>Behavior Document<br/>Mockup Flow<br/>Feedback Document<br/>Scope Document</small>"]]
+    CS1[["<b>Consumable Service</b><br/>[Servicio relacionado]<br/><small>Consumable Service Path<br/>Structure Document<br/>Behavior Document<br/>Consistency Document<br/>Domain Vocabulary</small>"]]
+    IMP1{{"<b>Impact</b><br/>[Impacto potencial]<br/><small>Impact Path<br/>Update Document<br/>Support Note kind: validation</small>"}}
 
-    P6 -.-> CP1 & CS1
+    P6 -.-> CP1 & CS1 & IMP1
 
     P7["¿Qué comportamientos específicos aparecen en este flujo?"]
 
     FL2 --> P7
 
-    BH1[["<b>Behavior</b><br/>[Comportamiento documentado]<br/><small><a href='link'>Behavior Document</a></small>"]]
+    BH1[["<b>Behavior</b><br/>[Comportamiento documentado]<br/><small>Behavior Document<br/>Consistency Document<br/>Support Note kind: testing-spec<br/>Support Note kind: validation</small>"]]
     BH2>"<b>Behavior</b><br/>[Comportamiento identificado]"]
 
     P7 --> BH1 & BH2

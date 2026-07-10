@@ -35,9 +35,9 @@ Incluir el Diagrama de Camino de Continuidad asociado a Evolution.
 El diagrama debe mostrar preguntas de orientación, conceptos relacionados y estado documental de los conceptos conectados.
 -->
 
-```mermaid id="j0iwe5"
+```mermaid
 flowchart LR
-    A[["<b>Evolving Element</b><br/>[Elemento que evoluciona]<br/><small><a href='link'>Evolution Path</a></small>"]]
+    A[["<b>Evolving Element</b><br/>[Elemento que evoluciona]<br/><small>Evolution Path<br/>Context Document<br/>Decision Record<br/>Support Note kind: draft</small>"]]
 
     A --> P1["¿Cuál era su intención original?"]
     A --> P2["¿Qué cambió?"]
@@ -48,29 +48,29 @@ flowchart LR
     A -.-> P7["¿Qué aprendizaje confirma o corrige la evolución?"]
     A -.-> P8["¿Qué impacto genera el cambio?"]
 
-    P1 --> O1[["<b>Original Intent</b><br/>[Intención original]<br/><small><a href='link'>Business Driver Path</a><br/><a href='link'>Domain Context Path</a></small>"]]
-    P1 --> O2>"<b>Initial Assumption</b><br/>[Supuesto inicial]"]
+    P1 --> O1[["<b>Original Intent</b><br/>[Intención original]<br/><small>Business Driver Path<br/>Domain Context Path<br/>Context Document<br/>Behavior Document<br/>Decision Record</small>"]]
+    P1 --> O2>"<b>Initial Assumption</b><br/>[Supuesto inicial]<br/><small>Support Note kind: draft<br/>Support Note kind: validation<br/>Context Document<br/>Decision Record</small>"]
 
-    P2 --> C1[["<b>Change</b><br/>[Cambio documentado]<br/><small><a href='link'>Update Document</a></small>"]]
-    P2 --> C2{{"<b>Change</b><br/>[Cambio que requiere documentación]<br/><small>Update Document<br/>Decision Record</small>"}}
+    P2 --> C1[["<b>Change</b><br/>[Cambio documentado]<br/><small>Update Document<br/>Decision Record<br/>Support Note kind: result</small>"]]
+    P2 --> C2{{"<b>Change</b><br/>[Cambio que requiere documentación]<br/><small>Update Document<br/>Decision Record<br/>Support Note kind: result</small>"}}
 
-    P3 --> R1[["<b>Change Reason</b><br/>[Razón documentada]<br/><small><a href='link'>Decision Record</a></small>"]]
-    P3 --> R2{{"<b>Change Reason</b><br/>[Razón no clara]<br/><small>Decision Record<br/>Support Note</small>"}}
+    P3 --> R1[["<b>Change Reason</b><br/>[Razón documentada]<br/><small>Decision Record<br/>Context Document<br/>Support Note kind: validation<br/>Feedback Document</small>"]]
+    P3 --> R2{{"<b>Change Reason</b><br/>[Razón no clara]<br/><small>Decision Record<br/>Support Note kind: validation<br/>Feedback Document</small>"}}
 
-    P4 --> PI1[["<b>Preserved Intent</b><br/>[Intención preservada]<br/><small><a href='link'>Context Document</a><br/><a href='link'>Behavior Document</a></small>"]]
-    P4 --> PC1>"<b>Preserved Constraint</b><br/>[Restricción preservada]"]
+    P4 --> PI1[["<b>Preserved Intent</b><br/>[Intención preservada]<br/><small>Context Document<br/>Behavior Document<br/>Consistency Document</small>"]]
+    P4 --> PC1>"<b>Preserved Constraint</b><br/>[Restricción preservada]<br/><small>Consistency Document<br/>Scope Document<br/>Decision Record</small>"]
 
-    P5 --> SC1{{"<b>Scope Change</b><br/>[Cambio de alcance]<br/><small>Scope Document<br/>Update Document<br/>Decision Record</small>"}}
-    P5 --> DS1>"<b>Deferred Scope</b><br/>[Alcance postergado]"]
-    P5 --> ES1>"<b>Excluded Scope</b><br/>[Alcance excluido]"]
+    P5 --> SC1{{"<b>Scope Change</b><br/>[Cambio de alcance]<br/><small>Scope Document<br/>Update Document<br/>Decision Record<br/>Support Note kind: draft</small>"}}
+    P5 --> DS1>"<b>Deferred Scope</b><br/>[Alcance postergado]<br/><small>Scope Document<br/>Update Document<br/>Decision Record<br/>Support Note kind: draft</small>"]
+    P5 --> ES1>"<b>Excluded Scope</b><br/>[Alcance excluido]<br/><small>Scope Document<br/>Update Document<br/>Decision Record<br/>Support Note kind: draft</small>"]
 
-    P6 -.-> U1{{"<b>Documentation Update</b><br/>[Documento a actualizar]<br/><small>Update Document</small>"}}
-    P6 -.-> U2>"<b>Implementation Update</b><br/>[Implementación a ajustar]"]
+    P6 -.-> U1{{"<b>Documentation Update</b><br/>[Documento a actualizar]<br/><small>Update Document<br/>Decision Record<br/>Support Note kind: draft</small>"}}
+    P6 -.-> U2>"<b>Implementation Update</b><br/>[Implementación a ajustar]<br/><small>Update Document<br/>Decision Record<br/>Behavior Document<br/>Structure Document</small>"]
 
-    P7 -.-> L1[["<b>Learning</b><br/>[Aprendizaje documentado]<br/><small><a href='link'>Feedback Document</a><br/><a href='link'>Support Note kind: validation</a></small>"]]
-    P7 -.-> L2{{"<b>Validation</b><br/>[Validación necesaria]<br/><small>Support Note kind: validation</small>"}}
+    P7 -.-> L1[["<b>Learning</b><br/>[Aprendizaje documentado]<br/><small>Feedback Document<br/>Support Note kind: validation<br/>Decision Record<br/>Update Document</small>"]]
+    P7 -.-> L2{{"<b>Validation</b><br/>[Validación necesaria]<br/><small>Support Note kind: validation<br/>Feedback Document<br/>Decision Record</small>"}}
 
-    P8 -.-> I1{{"<b>Impact</b><br/>[Impacto a revisar]<br/><small>Impact Path</small>"}}
+    P8 -.-> I1{{"<b>Impact</b><br/>[Impacto a revisar]<br/><small>Impact Path<br/>Update Document<br/>Decision Record<br/>Support Note kind: risk<br/>Support Note kind: validation</small>"}} 
 ```
 
 ## Recorrido recomendado

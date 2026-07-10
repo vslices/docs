@@ -38,7 +38,7 @@ El diagrama debe mostrar preguntas de orientación, conceptos relacionados y est
 
 ```mermaid
 flowchart LR
-    A[["<b>Domain Context</b><br/>[Contexto de dominio]<br/><small><a href='link'>Context Document</a><br/><a href='link'>Domain Context Path</a></small>"]]
+    A[["<b>Domain Context</b><br/>[Contexto de dominio]<br/><small>Domain Context Path<br/>Context Document<br/>Domain Vocabulary<br/>Scope Document<br/>Support Note kind: draft</small>"]]
 
     A --> P1["¿Qué lenguaje pertenece a este contexto?"]
     A --> P2["¿Qué conceptos abarca?"]
@@ -47,23 +47,23 @@ flowchart LR
     A -.-> P5["¿Qué productos o servicios usan este significado?"]
     A -.-> P6["¿Qué decisiones delimitan este contexto?"]
 
-    P1 --> L1[["<b>Domain Vocabulary</b><br/>[Definiciones de términos]<br/><small><a href='link'>Domain Vocabulary</a></small>"]]
+    P1 --> L1[["<b>Domain Vocabulary</b><br/>[Definiciones de términos]<br/><small>Domain Vocabulary<br/>Support Note kind: draft<br/>Support Note kind: risk<br/>Decision Record</small>"]]
 
-    P2 --> C1[["<b>Domain Concept</b><br/>[Concepto documentado]<br/><small><a href='link'>Domain Vocabulary</a><br/><a href='link'>Context Document</a></small>"]]
-    P2 --> C2{{"<b>Domain Concept</b><br/>[Concepto que requiere definición]<br/><small>Domain Vocabulary<br/>Context Document</small>"}}
-    P2 --> I1{{"<b>Domain Invariant</b><br/>[Invariante que requiere documentación]<br/><small>Consistency Document</small>"}}
+    P2 --> C1[["<b>Domain Concept</b><br/>[Concepto documentado]<br/><small>Domain Vocabulary<br/>Context Document<br/>Consistency Document</small>"]]
+    P2 --> C2{{"<b>Domain Concept</b><br/>[Concepto que requiere definición]<br/><small>Domain Vocabulary<br/>Context Document<br/>Scope Document<br/>Consistency Document<br/>Support Note kind: draft<br/>Support Note kind: risk</small>"}}
+    P2 --> I1{{"<b>Domain Invariant</b><br/>[Invariante que requiere documentación]<br/><small>Consistency Document<br/>Behavior Document<br/>Decision Record<br/>Support Note kind: validation<br/>Support Note kind: risk</small>"}}
 
-    P3 --> B1[["<b>Behavior</b><br/>[Comportamiento documentado]<br/><small><a href='link'>Behavior Document</a></small>"]]
+    P3 --> B1[["<b>Behavior</b><br/>[Comportamiento documentado]<br/><small>Behavior Document<br/>Consistency Document<br/>Support Note kind: testing-spec<br/>Support Note kind: validation<br/>Support Note kind: risk</small>"]]
     P3 --> B2>"<b>Behavior</b><br/>[Comportamiento identificado]"]
 
-    P4 --> CA1{{"<b>Capability</b><br/>[Capacidad candidata]<br/><small>Scope Document<br/>Structure Document<br/>Behavior Document</small>"}}
+    P4 --> CA1{{"<b>Capability</b><br/>[Capacidad candidata]<br/><small>Capability Nexus<br/>Scope Document<br/>Behavior Document<br/>Structure Document<br/>Consistency Document<br/>Viability Document<br/>Decision Record<br/>Support Note kind: draft<br/>Support Note kind: risk</small>"}}
     P4 --> CA2>"<b>Capability</b><br/>[Capacidad identificada]"]
 
-    P5 -.-> Pdt[["<b>Client Product</b><br/>[Producto al cliente]<br/><small><a href='link'>Client Product Path</a></small>"]]
-    P5 -.-> Svc[["<b>Consumable Service</b><br/>[Servicio consumible]<br/><small><a href='link'>Consumable Service Path</a></small>"]]
+    P5 -.-> Pdt[["<b>Client Product</b><br/>[Producto al cliente]<br/><small>Client Product Path<br/>Context Document<br/>Behavior Document<br/>Mockup Flow<br/>Feedback Document<br/>Domain Vocabulary</small>"]]
+    P5 -.-> Svc[["<b>Consumable Service</b><br/>[Servicio consumible]<br/><small>Consumable Service Path<br/>Structure Document<br/>Behavior Document<br/>Consistency Document<br/>Domain Vocabulary<br/>Decision Record</small>"]]
 
-    P6 -.-> D1[["<b>Decision</b><br/>[Decisión documentada]<br/><small><a href='link'>Decision Record</a></small>"]]
-    P6 -.-> D2{{"<b>Domain Boundary Decision</b><br/>[Decisión pendiente]<br/><small>Decision Record</small>"}}
+    P6 -.-> D1[["<b>Decision</b><br/>[Decisión documentada]<br/><small>Decision Record<br/>Scope Document<br/>Context Document<br/>Update Document</small>"]]
+    P6 -.-> D2{{"<b>Domain Boundary Decision</b><br/>[Decisión pendiente]<br/><small>Decision Record<br/>Scope Document<br/>Context Document<br/>Update Document<br/>Support Note kind: draft<br/>Support Note kind: risk</small>"}}
 ```
 
 ## Recorrido recomendado

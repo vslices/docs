@@ -32,7 +32,7 @@ El diagrama debe mostrar preguntas de orientación, conceptos relacionados y est
 
 ```mermaid
 flowchart LR
-    CR[["<b>Business Driver</b><br/>[Motivación de negocio]<br/><small><a href='link'>Context Document</a><br/><a href='link'>Business Driver Path</a></small>"]]
+    CR[["<b>Business Driver</b><br/>[Motivación de negocio]<br/><small>Business Driver Path<br/>Context Document<br/>Scope Document<br/>Support Note kind: draft<br/>Decision Record</small>"]]
 
     CR --> P1["¿Qué situación de negocio lo origina?"]
     CR --> P2["¿Qué dolor, necesidad u oportunidad intenta responder?"]
@@ -40,18 +40,18 @@ flowchart LR
     CR --> P4["¿Qué restricción condiciona la respuesta?"]
     CR --> P5["¿Qué decisión o iniciativa se justifica por esto?"]
 
-    P1 --> S1[["<b>Business Scenario</b><br/>[Escenario observado]<br/><small><a href='link'>Context Document</a><br/><a href='link'>Business Scenario Path</a></small>"]]
+    P1 --> S1[["<b>Business Scenario</b><br/>[Escenario observado]<br/><small>Business Scenario Path<br/>Context Document<br/>Navigation Document<br/>Support Note kind: draft</small>"]]
 
-    P2 --> N1{{"<b>Business Need</b><br/>[Necesidad, dolor u oportunidad]<br/><small>Context Document<br/>Scope Document</small>"}}
+    P2 --> N1{{"<b>Business Need</b><br/>[Necesidad, dolor u oportunidad]<br/><small>Context Document<br/>Scope Document<br/>Feedback Document<br/>Support Note kind: draft</small>"}}
 
-    P3 --> C1>"<b>Business Consequence</b><br/>[Consecuencia identificada]"]
-    P3 --> C2{{"<b>Relevant Consequence</b><br/>[Consecuencia que condiciona prioridad]<br/><small>Viability Document<br/>Decision Record</small>"}}
+    P3 --> C1>"<b>Business Consequence</b><br/>[Consecuencia identificada]<br/><small>Context Document<br/>Support Note kind: result</small>"]
+    P3 --> C2{{"<b>Relevant Consequence</b><br/>[Consecuencia que condiciona prioridad]<br/><small>Viability Document<br/>Decision Record<br/>Support Note kind: validation<br/>Update Document</small>"}}
 
-    P4 --> R1>"<b>Business Constraint</b><br/>[Restricción identificada]"]
-    P4 --> R2{{"<b>Viability Constraint</b><br/>[Restricción que condiciona viabilidad]<br/><small>Viability Document</small>"}}
+    P4 --> R1>"<b>Business Constraint</b><br/>[Restricción identificada]<br/><small>Context Document<br/>Scope Document<br/>Support Note kind: draft</small>"]
+    P4 --> R2{{"<b>Viability Constraint</b><br/>[Restricción que condiciona viabilidad]<br/><small>Viability Document<br/>Scope Document<br/>Decision Record</small>"}}
 
-    P5 --> D1[["<b>Decision</b><br/>[Decisión relacionada]<br/><small><a href='link'>Decision Record</a></small>"]]
-    P5 --> I1[["<b>Software Initiative</b><br/>[Iniciativa relacionada]<br/><small><a href='link'>Software Initiative Path</a></small>"]]
+    P5 --> D1[["<b>Decision</b><br/>[Decisión relacionada]<br/><small>Decision Record<br/>Scope Document<br/>Update Document</small>"]]
+    P5 --> I1[["<b>Software Initiative</b><br/>[Iniciativa relacionada]<br/><small>Software Initiative Path<br/>Context Document<br/>Scope Document<br/>Viability Document<br/>Decision Record</small>"]]
 
     C2 -.-> P5
     R2 -.-> P5

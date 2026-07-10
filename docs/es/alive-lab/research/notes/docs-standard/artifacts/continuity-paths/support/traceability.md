@@ -37,7 +37,7 @@ El diagrama debe mostrar preguntas de orientación, conceptos relacionados y est
 
 ```mermaid
 flowchart LR
-    A[["<b>Traceable Element</b><br/>[Elemento trazado]<br/><small><a href='link'>Traceability Path</a></small>"]]
+    A[["<b>Traceable Element</b><br/>[Elemento trazado]<br/><small><a href='link'>Traceability Path</a><br/>Support Note kind: risk</small>"]]
 
     A --> P1["¿Cuál fue su origen?"]
     A --> P2["¿Qué decisiones lo transformaron?"]
@@ -48,28 +48,38 @@ flowchart LR
     A -.-> P7["¿Qué evolución explica su estado actual?"]
 
     P1 --> O1[["<b>Business Driver</b><br/>[Motivación de origen]<br/><small><a href='link'>Business Driver Path</a></small>"]]
-    P1 --> O2[["<b>Domain Context</b><br/>[Origen conceptual]<br/><small><a href='link'>Domain Context Path</a></small>"]]
-    P1 --> O3>"<b>Observed Need</b><br/>[Necesidad observada]"]
+    P1 --> O2[["<b>Business Scenario</b><br/>[Situación de origen]<br/><small><a href='link'>Business Scenario Path</a></small>"]]
+    P1 --> O3[["<b>Domain Context</b><br/>[Origen conceptual]<br/><small><a href='link'>Domain Context Path</a></small>"]]
+    P1 --> O4>"<b>Observed Need</b><br/>[Necesidad observada]"]
+    P1 -.-> O5{{"<b>Origin Gap</b><br/>[Origen no claro]<br/><small>Context Document<br/>Support Note kind: draft<br/>Support Note kind: result<br/>Support Note kind: risk</small>"}}
 
     P2 --> D1[["<b>Decision</b><br/>[Decisión documentada]<br/><small><a href='link'>Decision Record</a></small>"]]
-    P2 --> D2{{"<b>Decision Gap</b><br/>[Decisión no documentada]<br/><small>Decision Record</small>"}}
+    P2 --> D2{{"<b>Decision Gap</b><br/>[Decisión no documentada]<br/><small>Decision Record<br/>Support Note kind: draft<br/>Support Note kind: risk</small>"}}
+    P2 -.-> T1{{"<b>Transformation</b><br/>[Transformación relevante]<br/><small>Decision Record<br/>Update Document<br/>Evolution Path</small>"}}
 
-    P3 --> AR1[["<b>Artifact</b><br/>[Artifact relacionado]<br/><small><a href='link'>Context Document</a><br/><a href='link'>Behavior Document</a></small>"]]
-    P3 --> AR2>"<b>Support Note</b><br/>[Nota relacionada]"]
+    P3 --> AR1[["<b>Artifact</b><br/>[Artifact que preserva intención]<br/><small><a href='link'>Context Document</a><br/><a href='link'>Scope Document</a><br/><a href='link'>Behavior Document</a><br/><a href='link'>Consistency Document</a><br/><a href='link'>Decision Record</a></small>"]]
+    P3 --> AR2[["<b>Support Note</b><br/>[Nota relacionada]<br/><small>Support Note kind: draft<br/>Support Note kind: result<br/>Support Note kind: validation<br/>Support Note kind: risk<br/>Support Note kind: external</small>"]]
+    P3 -.-> NX1{{"<b>Nexus</b><br/>[Composición que preserva intención]<br/><small>Capability Nexus<br/>Service Consumption Nexus</small>"}}
+    P3 -.-> NAV1{{"<b>Artifact Set</b><br/>[Conjunto de artifacts relacionados]<br/><small>Navigation Document</small>"}}
 
     P4 --> M1[["<b>Client Product</b><br/>[Materialización visible]<br/><small><a href='link'>Client Product Path</a></small>"]]
     P4 --> M2[["<b>Visible Flow</b><br/>[Flujo visible materializado]<br/><small><a href='link'>Mockup Flow</a><br/><a href='link'>Behavior Document</a></small>"]]
     P4 --> M3[["<b>Consumable Service</b><br/>[Materialización consumible]<br/><small><a href='link'>Consumable Service Path</a></small>"]]
-    P4 --> M4[["<b>Consumption Model</b><br/>[Forma de consumo materializada]<br/><small><a href='link'>Structure Document</a><br/><a href='link'>Behavior Document</a></small>"]]
+    P4 --> M4[["<b>Consumption Model</b><br/>[Forma de consumo materializada]<br/><small><a href='link'>Structure Document</a><br/><a href='link'>Behavior Document</a><br/>Support Note kind: external</small>"]]
     P4 --> M5[["<b>Software Project</b><br/>[Materialización técnica]<br/><small><a href='link'>Software Project Path</a></small>"]]
+    P4 -.-> M6{{"<b>Service Consumption</b><br/>[Consumo compuesto materializado]<br/><small>Service Consumption Nexus</small>"}}
+    P4 -.-> M7{{"<b>Capability</b><br/>[Capacidad materializada]<br/><small>Capability Nexus</small>"}}
 
     P5 -.-> V1[["<b>Feedback</b><br/>[Feedback documentado]<br/><small><a href='link'>Feedback Document</a></small>"]]
-    P5 -.-> V2{{"<b>Validation</b><br/>[Validación relevante]<br/><small>Support Note kind: validation</small>"}}
+    P5 -.-> V2{{"<b>Validation</b><br/>[Validación relevante]<br/><small>Support Note kind: validation<br/>Support Note kind: result<br/>Support Note kind: testing-spec</small>"}}
+    P5 -.-> V3{{"<b>Learning</b><br/>[Aprendizaje que cambió la forma]<br/><small>Decision Record<br/>Update Document<br/>Evolution Path</small>"}}
 
-    P6 -.-> PND{{"<b>Pending / Excluded / Replaced</b><br/>[Pendiente, excluido o reemplazado]<br/><small>Scope Document<br/>Update Document<br/>Decision Record</small>"}}
+    P6 -.-> PND{{"<b>Pending / Excluded / Replaced</b><br/>[Pendiente, excluido o reemplazado]<br/><small>Scope Document<br/>Update Document<br/>Decision Record<br/>Support Note kind: draft<br/>Support Note kind: risk</small>"}}
+    P6 -.-> IMP1{{"<b>Impact</b><br/>[Impacto de exclusión o reemplazo]<br/><small>Impact Path</small>"}}
 
     P7 -.-> E1[["<b>Evolution</b><br/>[Evolución documentada]<br/><small><a href='link'>Evolution Path</a></small>"]]
     P7 -.-> E2>"<b>Scope Change</b><br/>[Cambio de alcance identificado]"]
+    P7 -.-> E3{{"<b>Update</b><br/>[Actualización relacionada]<br/><small>Update Document<br/>Decision Record</small>"}}
 ```
 
 ## Recorrido recomendado
