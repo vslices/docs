@@ -2,188 +2,252 @@
 
 ## Propósito
 
-Este documento define conceptos base para entender cómo VSlices Docs Standard separa:
+Este documento define los conceptos usados para separar:
 
 * dónde vive el contenido canónico de un artifact
-* cómo se ordenan artifacts documentales
-* cómo se pueden proyectar organizaciones navegables sin duplicar contenido
+* según qué criterio se ordenan artifacts
+* cómo se muestra ese orden sin mover ni duplicar contenido
+* cómo se explica un recorrido recomendado
 
-Su objetivo es evitar que una organización documental sea confundida con una estructura obligatoria de carpetas.
+Su objetivo es evitar que una organización documental se confunda con una estructura obligatoria de carpetas.
 
-VSlices Docs Standard no impone una única forma física de organizar documentos.
+VSlices Docs Standard no impone una arquitectura física universal.
 
-Define criterios para preservar continuidad sin duplicar conocimiento ni agregar ceremonia innecesaria.
+Define criterios para preservar continuidad, reducir duplicación y mantener los artifacts navegables con baja ceremonia.
 
 ## Fuente de verdad documental
 
-Una fuente de verdad documental es el artifact canónico donde se mantiene el contenido principal de un documento, diagrama, mockup, nota, decisión, continuity path u otro artifact documental.
+Una fuente de verdad documental es el lugar canónico donde se mantiene el contenido vigente de un artifact.
 
-La fuente de verdad responde:
+Responde:
 
-> ¿Dónde se mantiene el contenido que debe considerarse vigente?
+> ¿Dónde se mantiene el contenido que debe considerarse canónico?
 
-Un artifact puede aparecer referenciado desde varias organizaciones documentales, pero su contenido principal debería mantenerse en una fuente de verdad clara.
+Un artifact puede aparecer en múltiples organizaciones o proyecciones, pero debería tener una fuente de verdad identificable.
 
-La fuente de verdad puede estar determinada por:
+La fuente de verdad puede determinarse mediante:
 
-* una ubicación física
-* una pertenencia principal
-* una convención de nombres
+* ubicación física
+* pertenencia primaria
+* convención de nombres
 * metadata
-* una estructura centralizada
-* una decisión explícita del equipo
+* almacenamiento centralizado
+* decisión explícita del equipo
 
 VSlices Docs Standard no exige una estrategia única.
 
-La regla importante es que debe ser posible identificar dónde vive el contenido canónico.
+La regla importante es que podamos identificar dónde debe mantenerse el contenido.
 
 ## Organización documental
 
-Una organización documental es una estrategia para ordenar artifacts según pertenencia, secuencia, estado, etapa, colección o narrativa mayor.
+Una organización documental es un criterio para ordenar artifacts.
 
-La organización documental responde:
+Responde:
 
-> ¿Cómo se agrupan o recorren estos artifacts?
+> ¿Según qué perspectiva o criterio se relacionan estos artifacts?
 
-Una organización documental puede ordenar artifacts sin poseerlos físicamente.
+Puede ordenar según:
 
-Puede materializarse como:
+* pertenencia
+* secuencia
+* estado
+* etapa
+* colección
+* tema
+* narrativa
+* responsabilidad
+* evolución
+
+Una organización documental puede incluir artifacts que viven en distintas fuentes de verdad.
+
+No necesita poseerlos físicamente.
+
+Tampoco define por sí sola cómo se mostrará o recorrerá el orden resultante.
+
+## Proyección navegable
+
+Una proyección navegable es una representación concreta de una organización documental mediante referencias a artifacts existentes.
+
+Responde:
+
+> ¿Cómo mostramos esta organización sin mover ni duplicar sus artifacts?
+
+Puede materializarse mediante:
 
 * carpetas
 * índices
 * tablas de artifacts
-* metadata
-* referencias
 * diagramas TreeView
-* documentos de navegación
-* una combinación de las anteriores
+* referencias
+* enlaces
+* metadata procesada
+* Navigation Documents
+* una combinación de estas formas
 
-La organización documental no explica el contenido detallado de los artifacts.
+Una proyección navegable no debería copiar el contenido principal de los artifacts que referencia.
 
-Solo ayuda a ubicarlos, agruparlos o recorrerlos.
+Su responsabilidad es mostrar:
 
-## Proyección navegable
-
-Una proyección navegable es una vista que representa una organización documental mediante referencias a artifacts existentes.
-
-La proyección navegable responde:
-
-> ¿Cómo mostramos una forma de recorrer artifacts sin moverlos ni duplicarlos?
-
-Una proyección navegable puede usar:
-
-* un diagrama TreeView
-* un índice
-* una tabla de lectura
-* un Navigation Document
-* referencias entre artifacts
-* metadata procesada por tooling
-
-Una proyección navegable no debería duplicar el contenido principal de los artifacts que referencia.
-
-Su responsabilidad es mostrar orden, recorrido o pertenencia.
+* orden
+* pertenencia
+* relación
+* ubicación
+* recorrido posible
 
 No reemplaza la fuente de verdad documental.
 
-## Diferencia entre fuente de verdad y proyección
+## Navigation Document
 
-| Concepto                    | Pregunta                                         | Responsabilidad                                   |
-| --------------------------- | ------------------------------------------------ | ------------------------------------------------- |
-| Fuente de verdad documental | ¿Dónde vive el contenido canónico?               | Mantener el contenido principal del artifact      |
-| Organización documental     | ¿Cómo agrupamos o recorremos artifacts?          | Ordenar artifacts según una perspectiva           |
-| Proyección navegable        | ¿Cómo mostramos esa organización?                | Representar una organización mediante referencias |
-| Navigation Document         | ¿Cómo exploramos esta organización?              | Explicar el recorrido recomendado                 |
-| Continuity Path             | ¿Cómo se conecta un concepto entre perspectivas? | Conectar artifacts, conceptos y superficies       |
+Un Navigation Document explica cómo recorrer una organización, proyección o colección de artifacts.
 
-## Qué pretende VSlices Docs Standard
+Responde:
 
-VSlices Docs Standard pretende preservar continuidad documental sin imponer una arquitectura única de carpetas.
+> ¿Cómo conviene explorar este conjunto?
 
-Para eso distingue entre:
+Puede explicar:
 
-* el lugar donde vive un artifact
-* las organizaciones desde las que puede ser recorrido
-* las proyecciones que muestran esas organizaciones
-* los documentos que explican el conocimiento
-* los paths que conectan continuidad
+* por dónde comenzar
+* qué artifacts son principales
+* qué artifacts son auxiliares
+* en qué orden conviene leerlos
+* por qué aparecen en la proyección
+* cuándo cambiar de perspectiva
+* cuándo detener el recorrido
 
-Esta separación permite que un artifact pueda participar en más de una organización sin ser copiado.
+La proyección muestra una organización.
 
-Por ejemplo, un Documento de Alcance puede ser relevante para:
+El Navigation Document explica cómo recorrerla.
 
+## Diferencias principales
+
+| Concepto                    | Pregunta                                          | Responsabilidad                           |
+| --------------------------- | ------------------------------------------------- | ----------------------------------------- |
+| Fuente de verdad documental | ¿Dónde vive el contenido canónico?                | Mantener el contenido vigente             |
+| Organización documental     | ¿Según qué criterio ordenamos artifacts?          | Definir el orden conceptual               |
+| Proyección navegable        | ¿Cómo mostramos esa organización?                 | Representar el orden mediante referencias |
+| Navigation Document         | ¿Cómo exploramos esta organización?               | Explicar el recorrido recomendado         |
+| Continuity Path             | ¿Cómo preservamos continuidad entre perspectivas? | Conectar y orientar continuidad           |
+| Nexus                       | ¿Qué artifacts explican juntos este elemento?     | Declarar composición                      |
+
+## Ejemplo
+
+Un Scope Document puede tener como fuente de verdad:
+
+```text
+initiatives/
+  monthly-shopping/
+    scope.md
+```
+
+El mismo artifact puede participar en:
+
+* una organización por iniciativa
+* una organización por iteración
+* una organización por release
+* una colección de cambios de alcance
+
+Una proyección por release podría mostrarlo así:
+
+```text
+releases/
+  v0.1/
+    navigation.md
+    initiative-scope -> initiatives/monthly-shopping/scope.md
+```
+
+La proyección referencia el Scope Document.
+
+No crea una segunda copia de su contenido.
+
+## Participación múltiple
+
+Un artifact puede participar en varias organizaciones al mismo tiempo.
+
+Por ejemplo, un Decision Record puede ser relevante para:
+
+* una capability
 * una iniciativa de software
-* una iteración
-* un milestone
-* una colección navegable
-* un continuity path
+* un proyecto
+* una release
+* un Continuity Path de Evolution
+* un Nexus
 
-Pero su contenido principal debería mantenerse en una fuente de verdad clara.
+Esta participación múltiple no implica múltiples fuentes de verdad.
 
-## Regla semántica base
+Cada organización ofrece una perspectiva distinta sobre el mismo artifact canónico.
+
+## Regla semántica
 
 VSlices Docs Standard mantiene esta separación:
 
-* Los documentos explican.
-* Los continuity paths conectan.
+* Los Documents explican.
+* Las Support Notes apoyan, registran o referencian.
+* Los Nexus componen.
+* Los Continuity Paths conectan y orientan continuidad.
 * Los diagramas muestran.
 * Los mockups representan.
-* La organización documental ordena.
-* Las proyecciones navegables representan organizaciones mediante referencias.
-* Las fuentes de verdad preservan contenido canónico.
+* Las organizaciones documentales ordenan.
+* Las proyecciones navegables representan organizaciones.
+* Las fuentes de verdad mantienen contenido canónico.
 
 ## Principio de no duplicación
 
-Una organización documental no debería copiar el contenido principal de los artifacts que ordena.
-
-Puede incluir:
+Una proyección navegable puede incluir:
 
 * nombre del artifact
-* tipo de artifact
+* tipo
 * estado
 * propósito breve
-* referencia o link
-* razón de aparición en la organización
-* orden recomendado de lectura
+* referencia
+* razón de aparición
+* rol dentro de la organización
+* orden recomendado
 
-Pero no debería repetir el contenido que pertenece al artifact canónico.
+No debería repetir el contenido que pertenece al artifact canónico.
+
+Una organización o proyección deja de cumplir su responsabilidad cuando comienza a competir con la fuente de verdad.
 
 ## Libertad de organización
 
 Un equipo puede organizar sus artifacts de la forma que mejor preserve continuidad en su contexto.
 
-VSlices Docs Standard no impone una estructura física obligatoria.
+VSlices Docs Standard no obliga a usar:
 
-Sus recomendaciones buscan ayudar a decidir:
+* una estructura específica de carpetas
+* un índice central
+* una organización única
+* una proyección generada automáticamente
+* una relación uno a uno entre ubicación y pertenencia
 
-* dónde mantener fuentes de verdad
-* cómo evitar duplicación
-* cómo crear proyecciones navegables
-* cómo separar orden documental de contenido documental
-* cómo mantener artifacts recorribles a medida que el sistema evoluciona
+La solución más pequeña que permita identificar, mantener y recorrer los artifacts es suficiente.
 
-## Relación con tooling futuro
+## Relación con Tooling
 
-Las proyecciones navegables pueden ser creadas manualmente al inicio.
+Las organizaciones y proyecciones pueden crearse manualmente.
 
-En el futuro, VSlices Tooling podría ayudar a generarlas desde:
+VSlices Tooling podrá ayudar a generarlas desde:
 
+* identidad de artifacts
 * metadata
 * referencias
-* identificadores documentales
-* relaciones entre artifacts
+* relaciones
 * estados documentales
-* continuity paths
+* composición de Nexus
+* conexiones de Continuity Paths
+* convenciones de ubicación
 
-Esto no debe asumirse como requisito inicial.
+Tooling no debería definir por sí solo qué organización es correcta.
 
-La prioridad es preservar claridad documental antes de automatizarla.
+Debe materializar o validar una intención documental ya definida.
 
 ## Regla de cierre
 
 Una fuente de verdad mantiene contenido.
 
-Una organización documental ordena artifacts.
+Una organización documental define un criterio de orden.
 
-Una proyección navegable muestra una organización.
+Una proyección navegable muestra ese orden.
 
-Si una organización empieza a duplicar contenido, deja de ordenar y comienza a competir con los documentos que debería referenciar.
+Un Navigation Document explica cómo recorrerlo.
+
+Si una proyección duplica el contenido canónico, deja de orientar y comienza a crear una segunda fuente de verdad.

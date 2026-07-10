@@ -2,320 +2,333 @@
 
 ## Propósito
 
-Este documento introduce el concepto de **Continuity Paths** dentro de VSlices Docs Standard.
+Este documento introduce el concepto de **Continuity Path** dentro de VSlices Docs Standard.
 
-Su objetivo es preparar la lectura de la familia de caminos de continuidad sin entrar todavía en el detalle de cada path específico.
+Su objetivo es preparar la lectura de esta familia de artifacts sin reemplazar la definición específica de cada path.
 
-Los Continuity Paths existen para preservar continuidad cuando un concepto no vive en un solo documento, una sola decisión, una sola estructura o una sola superficie del sistema.
+Los Continuity Paths existen para preservar continuidad cuando un target aparece a través de distintas perspectivas, artifacts, decisiones o superficies del sistema.
 
 ## Problema que resuelven
 
-En proyectos de software, un mismo concepto puede aparecer en muchas partes:
+Un mismo elemento puede aparecer:
 
-* en una conversación de negocio
-* en una decisión
+* en una situación de negocio
 * en un contexto de dominio
-* en una feature
-* en un producto visible
+* en una decisión
+* en una iniciativa de software
+* en un producto
 * en un servicio consumible
 * en una estructura técnica
-* en una validación
-* en un cambio de alcance
-* en documentación futura
+* en feedback o validaciones
+* en cambios de alcance
+* en artifacts posteriores
 
 Cuando esas conexiones no son visibles, el conocimiento se fragmenta.
 
-El equipo puede saber qué se implementó, pero perder:
+Podemos saber qué se implementó y aun así perder:
 
 * por qué importaba
-* dónde apareció originalmente
-* qué significado tenía en el dominio
+* dónde apareció
+* qué significado tenía
 * qué decisión lo transformó
-* qué alcance se redujo o postergó
-* qué producto o servicio lo materializó
-* qué efectos produjo
-* quién lo valida o mantiene
-
-Los Continuity Paths ayudan a que esas conexiones no dependan únicamente de memoria informal.
+* qué alcance cambió
+* dónde se materializó
+* qué impacto produjo
+* quién lo sostiene
 
 ## Qué es un Continuity Path
 
-Un **Continuity Path** es una estructura de navegación que conecta un concepto a través de una o más perspectivas de continuidad.
+Un Continuity Path es un artifact que conecta y orienta continuidad alrededor de un target.
 
-No es, por sí solo, un documento detallado.
+Declara:
 
-Su responsabilidad principal es conectar.
-
-Un Continuity Path puede apoyarse en:
-
-* diagramas
-* documentos
-* referencias
-* metadata
-* notas de soporte
-* decisiones
-* feedback
-* validaciones
-* artifacts relacionados
+* una pregunta de continuidad
+* el foco que intenta preservar
+* los artifacts o paths conectados
+* el rol que cumple cada conexión
 
 Definición compacta:
 
-> Un Continuity Path conecta un concepto a través de perspectivas relevantes para preservar continuidad.
+> Un Continuity Path conecta un target a través de perspectivas relevantes para preservar continuidad.
 
-## Qué no es un Continuity Path
-
-Un Continuity Path no debería confundirse con:
-
-* una explicación completa del concepto
-* una matriz de trazabilidad obligatoria
-* una arquitectura de carpetas
-* un proceso de gestión de proyecto
-* una lista exhaustiva de documentos requeridos
-* una regla para documentar todo
-* un grafo vivo obligatorio
-* una auditoría formal
+No reemplaza los artifacts conectados.
 
 El path orienta el recorrido.
 
-Los artifacts conectados preservan el detalle.
+Los artifacts preservan el detalle.
 
-## Regla semántica base
+## Qué no es
 
-VSlices Docs Standard separa responsabilidades:
+Un Continuity Path no es:
 
-* Los **documentos** explican.
-* Los **continuity paths** conectan.
-* Los **diagramas** muestran.
-* Los **mockups** representan.
-* La **organización documental** ordena.
+* una explicación completa del target
+* una matriz de trazabilidad obligatoria
+* una estructura de carpetas
+* un proceso de gestión
+* una lista exhaustiva de documentos
+* una regla para documentar cada nodo
+* un grafo vivo obligatorio
+* una auditoría formal
+* un Nexus
+* un Navigation Document
 
-Esta separación evita que un solo artifact intente hacerlo todo.
+## Separación de responsabilidades
 
-## Cómo se lee un Continuity Path
+VSlices Docs Standard mantiene esta separación:
 
-Un Continuity Path normalmente se lee como un mapa.
+* Los Documents explican.
+* Las Support Notes apoyan, registran o referencian.
+* Los Nexus componen.
+* Los Continuity Paths conectan y orientan continuidad.
+* Los diagramas muestran.
+* Los mockups representan.
+* La organización documental ordena.
+* Las proyecciones navegables muestran organizaciones.
+* Los Navigation Documents explican recorridos.
 
-El mapa no reemplaza los lugares que conecta.
+Un Continuity Path puede ser mostrado mediante un diagrama.
 
-Ayuda a saber:
+Eso no convierte al diagrama en el path completo.
 
-* por dónde empezar
-* qué preguntas seguir
+## Cómo se lee
+
+Un Continuity Path se lee como un mapa de continuidad.
+
+Ayuda a identificar:
+
+* por dónde comenzar
+* qué pregunta seguir
 * qué artifacts revisar
-* qué conceptos están documentados
-* qué conceptos fueron identificados pero no necesitan documentación ahora
-* qué conceptos podrían requerir documentación
+* qué relaciones son principales
+* qué elementos ya están documentados
+* qué elementos solo necesitan visibilidad
+* qué elementos podrían requerir documentación
 * cuándo cambiar de perspectiva
-* cuándo detener el recorrido
+* cuándo detenerse
 
 La metáfora útil es una ciudad:
 
-* el path muestra rutas
-* los documentos son lugares visitables
-* los diagramas muestran relaciones
-* la organización documental ordena barrios, colecciones o recorridos mayores
+* el path identifica rutas
+* los artifacts son lugares consultables
+* el diagrama muestra el mapa
+* el Navigation Document explica cómo recorrerlo
+* la organización documental ordena barrios o colecciones
 
-## Semántica visual recomendada
+## Semántica visual
 
-Los diagramas de Continuity Paths pueden usar una semántica visual simple:
+Los diagramas pueden usar esta semántica inicial:
 
 | Forma       | Significado                                           |
 | ----------- | ----------------------------------------------------- |
-| `[[texto]]` | Concepto documentado                                  |
-| `[texto]`   | Pregunta orientadora u orientación definida           |
-| `>texto]`   | Concepto identificado sin necesidad documental actual |
-| `{{texto}}` | Concepto identificado con necesidad documental        |
+| `[[texto]]` | Elemento documentado                                  |
+| `[texto]`   | Pregunta u orientación                                |
+| `>texto]`   | Elemento identificado sin necesidad documental actual |
+| `{{texto}}` | Elemento con posible necesidad documental             |
 
-Regla importante:
+> `{{texto}}` no obliga a documentar inmediatamente.
+> Señala una necesidad que debe evaluarse.
 
-> `{{texto}}` no significa obligación inmediata de documentar.
-> Significa que existe una posible necesidad documental que debe evaluarse.
-
-## Tipos de relaciones
-
-Los diagramas pueden usar relaciones con distinta intención:
+Las relaciones pueden distinguir intención:
 
 | Relación | Significado                                        |
 | -------- | -------------------------------------------------- |
 | `-->`    | Camino principal o relación directa                |
 | `-.->`   | Camino auxiliar, contextual, secundario u opcional |
 
-La diferencia ayuda a evitar que todo parezca igual de importante.
+## Categorías de Continuity Paths
+
+Los Continuity Paths se agrupan inicialmente en tres categorías.
+
+| Categoría  | Responsabilidad                                     |
+| ---------- | --------------------------------------------------- |
+| Core       | Observar perspectivas principales de continuidad    |
+| Supporting | Observar preocupaciones transversales               |
+| Contextual | Preservar continuidad ante una situación específica |
+
+Estas categorías orientan el uso.
+
+No constituyen una taxonomía cerrada.
 
 ## Core Continuity Paths
 
-Los **Core Continuity Paths** observan un concepto desde perspectivas principales de continuidad.
-
-| Path                | Pregunta central                                                                      |
-| ------------------- | ------------------------------------------------------------------------------------- |
-| Business Scenario   | ¿Dónde estoy trabajando?                                                              |
-| Business Driver     | ¿Por qué importa intervenir?                                                          |
-| Domain Context      | ¿Qué lenguaje, reglas y límites pertenecen a esta parte del negocio?                  |
-| Viability           | ¿Es viable abordar esto bajo las condiciones actuales?                                |
-| Evolution           | ¿Cómo cambia este elemento en el tiempo sin perder su intención?                      |
-| Software Initiative | ¿Qué herramientas de software tengo o necesito para abordar esta parte del trabajo?   |
-| Client Product      | ¿Qué puede hacer el usuario con este sistema y qué aprendimos sobre esa experiencia?  |
-| Consumable Service  | ¿Qué puede consumir otro sistema o producto, y qué garantías debe recibir al hacerlo? |
+| Path                | Perspectiva            |
+| ------------------- | ---------------------- |
+| Business Scenario   | Escenario de negocio   |
+| Business Driver     | Motivación de negocio  |
+| Domain Context      | Contexto de dominio    |
+| Viability           | Viabilidad             |
+| Evolution           | Evolución              |
+| Software Initiative | Iniciativa de software |
+| Client Product      | Producto al cliente    |
+| Consumable Service  | Servicio consumible    |
 
 ## Supporting Continuity Paths
 
-Los **Supporting Continuity Paths** observan preocupaciones transversales.
+| Path             | Perspectiva          |
+| ---------------- | -------------------- |
+| Software Project | Proyecto de software |
+| Ownership        | Responsabilidad      |
+| Impact           | Impacto              |
+| Traceability     | Trazabilidad         |
 
-No reemplazan a los core paths.
+Los Supporting Continuity Paths no reemplazan a los Core.
 
-Los complementan cuando la pregunta principal cambia hacia responsabilidad, impacto, trazabilidad o materialización técnica.
+Los complementan cuando necesitamos seguir materialización técnica, responsabilidad, impacto o trazabilidad.
 
-| Path             | Pregunta central                                          |
-| ---------------- | --------------------------------------------------------- |
-| Software Project | ¿Cómo vive este concepto dentro del proyecto de software? |
-| Ownership        | ¿Quién lo entiende, decide, valida, mantiene u opera?     |
-| Impact           | ¿Qué otros elementos se ven afectados?                    |
-| Traceability     | ¿De dónde viene y dónde terminó materializándose?         |
+## Contextual Continuity Paths
+
+Los Contextual Continuity Paths aparecen frente a una situación concreta.
+
+Primer candidato:
+
+| Path              | Situación                                         |
+| ----------------- | ------------------------------------------------- |
+| Knowledge Handoff | Transferencia o pérdida potencial de conocimiento |
+
+Un path contextual no necesita convertirse en Core por ser valioso.
 
 ## Cómo elegir un path
 
-La elección del path depende de la pregunta que necesitamos responder.
+La elección depende de la pregunta actual.
 
-| Pregunta actual                                                   | Path sugerido       |
-| ----------------------------------------------------------------- | ------------------- |
-| Necesitamos entender dónde ocurre el trabajo                      | Business Scenario   |
-| Necesitamos entender por qué importa intervenir                   | Business Driver     |
-| Necesitamos entender lenguaje, reglas o límites del dominio       | Domain Context      |
-| Necesitamos saber si algo puede abordarse bajo condiciones reales | Viability           |
-| Necesitamos entender cómo algo cambia sin perder intención        | Evolution           |
-| Necesitamos entender qué esfuerzo de software aborda el trabajo   | Software Initiative |
-| Necesitamos entender qué puede hacer un usuario                   | Client Product      |
-| Necesitamos entender qué puede consumir otro sistema o producto   | Consumable Service  |
-| Necesitamos entender cómo algo vive técnicamente                  | Software Project    |
-| Necesitamos entender quién entiende, decide, valida o mantiene    | Ownership           |
-| Necesitamos entender qué se ve afectado                           | Impact              |
-| Necesitamos reconstruir origen y materialización                  | Traceability        |
+| Necesidad                                                 | Path sugerido       |
+| --------------------------------------------------------- | ------------------- |
+| Entender dónde ocurre el trabajo                          | Business Scenario   |
+| Entender por qué importa intervenir                       | Business Driver     |
+| Entender lenguaje, reglas o límites del dominio           | Domain Context      |
+| Evaluar si algo puede sostenerse                          | Viability           |
+| Seguir cambios sin perder intención                       | Evolution           |
+| Entender qué esfuerzo de software aborda el trabajo       | Software Initiative |
+| Entender la experiencia visible                           | Client Product      |
+| Entender qué consume otro sistema                         | Consumable Service  |
+| Entender la materialización técnica                       | Software Project    |
+| Entender quién sostiene el conocimiento o responsabilidad | Ownership           |
+| Entender qué se ve afectado                               | Impact              |
+| Reconstruir origen y materialización                      | Traceability        |
+| Preservar conocimiento durante una transferencia          | Knowledge Handoff   |
 
-## Relación con documentos
+No necesitamos recorrer todos los paths.
 
-Un Continuity Path no obliga a crear documentos nuevos.
+Elegimos el que reduce la incertidumbre actual.
 
-Puede conectar artifacts existentes o señalar necesidades documentales candidatas.
+## Relación con otros artifacts
 
-Por ejemplo:
+Un Continuity Path puede conectar:
 
-* Business Driver puede conectar Context Document, Scope Document o Decision Record.
-* Domain Context puede conectar Domain Vocabulary, Consistency Document o Behavior Document.
-* Viability puede conectar Viability Document, Scope Document o Support Note kind: validation.
-* Evolution puede conectar Update Document, Decision Record, Feedback Document o Scope Document.
-* Client Product puede conectar Behavior Document, Feedback Document, mockups o decisiones de experiencia.
-* Consumable Service puede conectar Structure Document, Behavior Document o Consistency Document.
-* Software Project puede conectar Structure Document, Decision Record o artifacts técnicos.
-* Traceability puede conectar origen, decisión, cambio y materialización.
+* Documents
+* Support Notes
+* Nexus
+* otros Continuity Paths
+* diagramas
+* mockups
+* referencias externas
+* artifacts técnicos
 
-La pregunta no es:
+No obliga a crear artifacts nuevos.
 
-> ¿Qué documentos obliga este path a crear?
+Puede conectar artifacts existentes o señalar una necesidad documental candidata.
+
+La pregunta correcta no es:
+
+> ¿Qué documentos exige este path?
 
 La pregunta correcta es:
 
-> ¿Qué artifacts ayudan a preservar continuidad alrededor de este concepto?
+> ¿Qué artifacts ayudan a preservar esta continuidad?
 
-## Relación con Viability
+## Viability y Evolution
 
-Viability es un path core porque una idea puede ser valiosa, deseable o técnicamente interesante y aun así no ser viable bajo las condiciones actuales.
+Viability preserva continuidad entre una intención y las condiciones que permiten o impiden sostenerla.
 
-El Documento de Viabilidad responde:
+Puede conectarse con:
 
-> ¿Es viable?
+* Viability Document
+* Scope Document
+* Decision Record
+* Support Note `validation`
+* Support Note `risk`
 
-El `kind` define la dimensión evaluada:
+Evolution preserva continuidad entre estados de un mismo elemento.
 
-* economic
-* technical
-* operational
-* temporal
-* organizational
-* adoption
+Puede conectarse con:
 
-Esto permite evaluar viabilidad sin crear un documento distinto para cada dimensión.
-
-## Relación con Evolution
-
-Evolution es un path core porque los sistemas cambian.
-
-El cambio puede venir de:
-
-* feedback
-* validación
-* cambio de alcance
-* nueva restricción
-* aprendizaje
-* decisión de producto
-* decisión técnica
-* reducción de alcance
-* postergación
-* exclusión
-* reemplazo
+* Update Document
+* Decision Record
+* Feedback Document
+* Scope Document
+* Impact
+* Traceability
 
 Evolution no reemplaza al Update Document.
 
 Evolution conecta la historia del cambio.
 
-Update Document explica qué se actualizará.
+Update Document explica qué debe actualizarse.
 
-## Relación entre Software Initiative y Software Project
+## Software Initiative y Software Project
 
-Software Initiative y Software Project no son lo mismo.
+Software Initiative observa el esfuerzo organizado de software:
 
-**Software Initiative** es core.
+* qué intenta cubrir
+* qué capacidades necesita
+* qué productos o servicios participan
+* qué proyectos puede originar
 
-Observa qué esfuerzo de software aborda una parte del trabajo, qué piezas necesita, qué productos o servicios puede involucrar y qué proyectos puede originar.
+Software Project observa su materialización técnica:
 
-**Software Project** es support.
+* estructura
+* implementación
+* dependencias
+* adapters
+* decisiones técnicas
+* evolución del código
 
-Observa cómo un concepto vive técnicamente dentro del proyecto de software: estructura, implementación, decisiones técnicas, dependencias, adapters y evolución del código.
-
-Regla simple:
-
-> Software Initiative mira el esfuerzo de software.
+> Software Initiative mira la cobertura del esfuerzo.
 > Software Project mira la materialización técnica.
 
 ## Cuándo detenerse
-
-Un Continuity Path debe ayudar a preservar continuidad, no a producir documentación infinita.
 
 Conviene detener el recorrido cuando:
 
 * la pregunta inicial ya fue respondida
 * los artifacts relevantes ya están identificados
-* no hay pérdida real de continuidad
+* no existe pérdida real de continuidad
+* una relación no aporta orientación, decisión ni aprendizaje
 * documentar más agregaría ceremonia
-* el concepto solo necesitaba visibilidad
-* una relación no aporta decisión, orientación ni aprendizaje
+* el target solo necesitaba visibilidad
 
 ## Riesgos comunes
 
-| Riesgo                                           | Consecuencia                                     |
-| ------------------------------------------------ | ------------------------------------------------ |
-| Usar paths como checklist obligatorio            | Se genera documentación prematura                |
-| Intentar recorrer todos los paths siempre        | Se pierde foco                                   |
-| Confundir path con documento detallado           | Se duplica contenido                             |
-| Convertir cada nodo en artifact                  | Se infla la taxonomía                            |
-| Confundir soporte con core                       | Se sobredimensionan preocupaciones transversales |
-| Confundir diagramas con explicación completa     | Se pierde contexto                               |
-| Confundir navegación con organización documental | Se mezclan responsabilidades                     |
-| Documentar antes de observar necesidad real      | Se resuelve Iteración 5 en Iteración 1           |
+| Riesgo                               | Consecuencia                           |
+| ------------------------------------ | -------------------------------------- |
+| Usar paths como checklist            | Documentación prematura                |
+| Recorrer todos los paths siempre     | Pérdida de foco                        |
+| Confundir path con explicación       | Duplicación de contenido               |
+| Convertir cada nodo en artifact      | Inflación de la taxonomía              |
+| Confundir Nexus con path             | Mezcla entre composición y continuidad |
+| Confundir navegación con continuidad | Solapamiento de responsabilidades      |
+| Automatizar antes de validar         | Complejidad prematura                  |
+| Documentar necesidades futuras       | Resolver Iteración 5 en Iteración 1    |
 
 ## Estado de validación
 
-Esta familia de Continuity Paths debe entenderse como candidata.
+Esta familia debe entenderse como candidata.
 
-Fue definida a partir de observaciones de diseño documental, modelado de dominio, continuidad entre negocio y software, y necesidades detectadas durante la evolución de VSlices Docs Standard.
+Surge de observaciones sobre continuidad entre negocio, dominio, documentación, arquitectura e implementación.
 
-Todavía debe validarse mediante casos reales, uso aplicado y aprendizaje dentro de VSlices Research.
+Debe validarse mediante:
 
-Hasta que exista evidencia suficiente, estos paths no deben tratarse como una taxonomía cerrada u obligatoria.
+* proyectos reales
+* casos de VSlices Research
+* uso aplicado
+* aprendizaje dentro de Domus Orbis y otros laboratorios
+
+Hasta reunir suficiente evidencia, los Continuity Paths no deben tratarse como una taxonomía cerrada u obligatoria.
 
 ## Principio de continuidad
 
 !!! principle "Principio de Continuidad"
 
 ```
-Los Continuity Paths deberían ayudar a preservar conexiones relevantes entre intención, contexto, dominio, viabilidad, evolución, software, producto, servicio y evidencia sin convertir la documentación en una obligación exhaustiva.
+Los Continuity Paths deberían preservar conexiones relevantes entre intención, contexto, dominio, viabilidad, evolución, software, producto, servicio y evidencia sin convertir la documentación en una obligación exhaustiva.
 ```

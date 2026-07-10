@@ -1,6 +1,6 @@
 # Modelo conceptual base de VSlices Docs Standard
 
-## 1. Propósito del modelo
+## Propósito
 
 VSlices Docs Standard define una forma de preservar conocimiento relevante durante el ciclo de vida de un sistema.
 
@@ -16,372 +16,308 @@ Su objetivo no es producir documentación por ceremonia, sino mantener continuid
 * viabilidad
 * evolución
 * evidencia
+* composición
 * navegación del conocimiento
 
 Docs Standard no reemplaza implementación, testing, operación ni tooling.
 
-Su responsabilidad principal es explicar, conectar, ordenar y preservar conocimiento para que el sistema pueda evolucionar sin perder intención.
+Su responsabilidad es ofrecer estructuras documentales que permitan explicar, apoyar, componer, conectar y organizar conocimiento sin perder intención.
 
-## 2. Términos
+## Conceptos generales
 
-### 2.1. Generales
+| Concepto              | Definición                                                                                                             |
+| --------------------- | ---------------------------------------------------------------------------------------------------------------------- |
+| Concepto              | Unidad de significado que puede ser explicada, apoyada, compuesta, conectada, mostrada, representada u organizada      |
+| Estructura documental | Forma propuesta para preservar conocimiento mediante una responsabilidad explícita                                     |
+| Artifact              | Materialización concreta de una estructura documental que puede preservarse, referenciarse, organizarse y relacionarse |
+| Target                | Elemento concreto sobre el que aplica un artifact                                                                      |
+| Scope                 | Clase, naturaleza o escala del target                                                                                  |
+| Metadata              | Información estructurada que describe estado y relaciones generales de un artifact                                     |
+| Referencia            | Relación explícita entre artifacts o elementos relevantes                                                              |
 
-| Concepto                  | Definición                                                                                                                                                                 |
-| ------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Concepto                  | Unidad de significado que puede ser explicada, conectada, mostrada, representada, organizada o trazada.                                                                    |
-| Estructura de explicación | Forma propuesta por Docs Standard para explicar, conectar, mostrar, representar u ordenar conocimiento.                                                                    |
-| Artifact                  | Materialización concreta de una estructura de explicación. Al ser concreto, puede preservarse, referenciarse, organizarse, versionarse o relacionarse con otros artifacts. |
+## Familias formalizadas de artifacts
 
-### 2.2. Estructuras de explicación
+VSlices Docs Standard distingue inicialmente cuatro familias.
 
-| Concepto                | Definición                                                                                                  |
-| ----------------------- | ----------------------------------------------------------------------------------------------------------- |
-| Documento               | Estructura textual que explica conocimiento desde una pregunta documental principal.                        |
-| Camino de continuidad   | Estructura que conecta un concepto a través de varias perspectivas de continuidad, artifacts o superficies. |
-| Diagrama                | Estructura visual que muestra relaciones, estructuras, flujos o caminos.                                    |
-| Mockup                  | Estructura visual que representa una experiencia, vista o superficie de producto.                           |
-| Organización documental | Estructura de orden según pertenencia, secuencia, estado, etapa, colección o narrativa mayor.               |
+| Familia         | Responsabilidad principal                                        |
+| --------------- | ---------------------------------------------------------------- |
+| Document        | Explica conocimiento desde una pregunta documental principal     |
+| Support Note    | Apoya, registra o referencia conocimiento auxiliar               |
+| Nexus           | Compone artifacts alrededor de un elemento compuesto             |
+| Continuity Path | Conecta y orienta continuidad entre artifacts, conceptos o paths |
 
-### 2.3. Conceptos de apoyo
+Regla semántica:
 
-| Concepto                | Definición                                                                                                     |
-| ----------------------- | -------------------------------------------------------------------------------------------------------------- |
-| Tipo de documento       | Categoría documental definida por la pregunta principal que responde un documento.                             |
-| Pregunta documental     | Pregunta central que orienta el propósito, alcance y contenido esperado de un documento.                       |
-| Metadata                | Información estructurada que describe identidad, estado, relaciones o clasificación de un artifact.            |
-| Referencia              | Relación explícita entre artifacts, documentos, conceptos, estructuras o caminos de continuidad.               |
-| Nota de soporte         | Documento liviano para conocimiento auxiliar que todavía no justifica un documento más estable o específico.   |
-| Documento de navegación | Documento que explica cómo recorrer un conjunto de artifacts, conceptos, estructuras o caminos de continuidad. |
+> Los Documents explican.
+> Las Support Notes apoyan, registran o referencian.
+> Los Nexus componen.
+> Los Continuity Paths conectan y orientan continuidad.
 
-## 3. Reglas semánticas base
+Estas responsabilidades no son intercambiables.
 
-| Elemento                | Responsabilidad principal         |
-| ----------------------- | --------------------------------- |
-| Documento               | Explica                           |
-| Camino de continuidad   | Conecta                           |
-| Diagrama                | Muestra                           |
-| Mockup                  | Representa                        |
-| Organización documental | Ordena                            |
-| Metadata                | Clasifica y habilita trazabilidad |
-| Referencia              | Relaciona explícitamente          |
+Un artifact debería mantener una responsabilidad principal clara.
 
-Regla central:
+## Modelo de Document
 
-Los documentos no deberían intentar hacer todo.
+Un Document explica conocimiento desde una pregunta documental principal.
 
-* Un documento explica conocimiento desde una pregunta principal.
-* Un camino conecta perspectivas.
-* Un diagrama muestra una relación.
-* Un mockup representa una experiencia.
-* Una organización documental ordena artifacts dentro de una narrativa o estructura mayor.
+Cuando se materializa, declara:
 
-## 4. Modelo de Documento
-
-Un Documento es una estructura textual de explicación.
-
-Cuando se materializa, produce un artifact documental orientado a preservar conocimiento.
-
-Todo Documento debería definir:
-
-| Elemento   | Propósito                                                                   |
-| ---------- | --------------------------------------------------------------------------- |
-| Tema       | Concepto, situación, capacidad, decisión o cambio que el documento explica. |
-| Tipo       | Tipo documental al que pertenece.                                           |
-| Pregunta   | Pregunta principal que responde.                                            |
-| Alcance    | Límite de lo que el documento intenta cubrir.                               |
-| Estado     | Estado documental del artifact materializado.                               |
-| Relaciones | Referencias hacia otros artifacts relevantes.                               |
-| Contenido  | Explicación preservada.                                                     |
+| Elemento  | Propósito                                                 |
+| --------- | --------------------------------------------------------- |
+| Type      | Tipo documental definido por la pregunta principal        |
+| Scope     | Clase, naturaleza o escala del target                     |
+| Target    | Elemento concreto que se explica                          |
+| Question  | Pregunta documental principal                             |
+| Status    | Estado del artifact dentro de su ciclo de vida documental |
+| Relations | Relaciones generales con otros artifacts                  |
+| Content   | Explicación preservada                                    |
 
 Definición compacta:
 
-> Un Documento explica un Tema desde una Pregunta documental dentro de un Alcance determinado.
+> Un Document explica un target desde una pregunta documental principal.
 
-Ejemplo:
+El límite del contenido no debe confundirse con `artifact.scope`.
 
-> Un Documento de Contexto explica dónde existe un concepto, problema, sistema, proyecto, capacidad, decisión o situación observada.
+`artifact.scope` clasifica el target.
 
-## 5. Modelo de Tipo de Documento
+Los límites, inclusiones o exclusiones pertenecen al contenido o a un Scope Document.
 
-Un Tipo de Documento no existe principalmente por formato.
+## Tipos de Document
 
-Existe porque responde una pregunta documental distinta.
+Un tipo documental no existe principalmente por su formato.
 
-| Tipo de Documento           | Pregunta principal              |
-| --------------------------- | ------------------------------- |
-| Documento de Navegación     | ¿Cómo exploramos?               |
-| Vocabulario de Dominio      | ¿Cómo hablamos?                 |
-| Documento de Contexto       | ¿Dónde existe?                  |
-| Documento de Estructura     | ¿Cómo se organiza?              |
-| Documento de Comportamiento | ¿Qué debe ocurrir?              |
-| Documento de Consistencia   | ¿Qué debe respetar?             |
-| Documento de Alcance        | ¿Hasta dónde llega?             |
-| Documento de Viabilidad     | ¿Es viable?                     |
-| Documento de Actualización  | ¿Qué se actualizará?            |
-| Documento de Feedback       | ¿Qué recibimos al aplicar algo? |
-| Registro de Decisión        | ¿Qué se decidió?                |
-| Nota de Soporte             | ¿Qué se necesita?               |
+Existe porque responde una pregunta distinta.
 
-Regla:
+| Tipo              | Pregunta principal              |
+| ----------------- | ------------------------------- |
+| Navigation        | ¿Cómo exploramos?               |
+| Domain Vocabulary | ¿Cómo hablamos?                 |
+| Context           | ¿Dónde existe?                  |
+| Structure         | ¿Cómo se organiza?              |
+| Behavior          | ¿Qué debe ocurrir?              |
+| Consistency       | ¿Qué debe respetar?             |
+| Scope             | ¿Hasta dónde llega?             |
+| Viability         | ¿Es viable?                     |
+| Update            | ¿Qué se actualizará?            |
+| Feedback          | ¿Qué recibimos al aplicar algo? |
+| Decision Record   | ¿Qué se decidió?                |
 
-> Si dos documentos responden la misma pregunta principal, probablemente pertenecen al mismo tipo o necesitan diferenciar mejor su intención.
+> Si dos tipos responden la misma pregunta principal, probablemente pertenecen al mismo tipo o necesitan diferenciar mejor su intención.
 
-## 6. Modelo de Nota de Soporte
+Cada Document declara `document.question`.
 
-Nota de Soporte es un Documento liviano.
+Cuando necesita metadata específica del tipo, la declara bajo una subcategoría propia dentro de `document`.
 
-Su propósito es capturar conocimiento auxiliar sin forzar la creación prematura de un documento más formal.
+## Modelo de Support Note
 
-Una Nota de Soporte puede registrar:
+Una Support Note captura conocimiento auxiliar sin obligar a crear prematuramente un Document.
 
-* dudas
-* bloqueos
+Es una familia propia de artifacts.
+
+No es un tipo de Document.
+
+Puede registrar:
+
 * borradores
-* evidencia liviana
 * resultados
 * validaciones
-* necesidades
-* hipótesis incompletas
-* especificaciones livianas de prueba
+* especificaciones de prueba
+* riesgos
+* referencias externas
+* conocimiento incompleto
 
-Nota de Soporte se especializa mediante `kind`.
+Tipos iniciales:
 
-Kinds iniciales:
+| Tipo           | Pregunta                                            |
+| -------------- | --------------------------------------------------- |
+| `draft`        | ¿Qué estamos esbozando?                             |
+| `result`       | ¿Qué obtuvimos?                                     |
+| `validation`   | ¿Qué significa lo obtenido frente a un criterio?    |
+| `testing-spec` | ¿Cómo probaremos este comportamiento?               |
+| `risk`         | ¿Qué podría salir mal?                              |
+| `external`     | ¿Dónde vive el artifact externo y cómo debe usarse? |
 
-| Kind         | Pregunta                                         | Uso                                                                                             |
-| ------------ | ------------------------------------------------ | ----------------------------------------------------------------------------------------------- |
-| draft        | ¿Qué estamos esbozando?                          | Ideas, hipótesis o conocimiento incompleto.                                                     |
-| result       | ¿Qué obtuvimos?                                  | Resultado observado al aplicar, probar, usar o revisar algo.                                    |
-| validation   | ¿Qué significa lo obtenido frente a un criterio? | Interpretación de un resultado contra una expectativa o criterio.                               |
-| testing-spec | ¿Cómo probaremos este comportamiento?            | Traducción liviana, normalmente BDD, de criterios de comportamiento hacia escenarios de prueba. |
+> Si una Support Note crece hasta responder una pregunta documental principal, debería promoverse a Document.
 
-Regla:
+## Resultado, Validación y Feedback
 
-> Nota de Soporte existe para evitar sobreingeniería documental temprana.
+Estos conceptos separan ocurrencia, interpretación y respuesta externa.
 
-## 7. Modelo de Documento de Viabilidad
-
-Documento de Viabilidad es un Documento que evalúa si algo puede abordarse bajo condiciones actuales.
-
-Su pregunta principal es:
-
-> ¿Es viable?
-
-El Documento de Viabilidad no define una única dimensión universal.
-
-Se especializa mediante `kind`.
-
-Kinds iniciales de viabilidad:
-
-| Kind           | Pregunta orientadora                                                   |
-| -------------- | ---------------------------------------------------------------------- |
-| economic       | ¿El costo, inversión o esfuerzo se justifica por el valor esperado?    |
-| technical      | ¿Esto es viable con las capacidades técnicas actuales?                 |
-| operational    | ¿Esto puede sostenerse en la operación real?                           |
-| temporal       | ¿Esto cabe en el tiempo, calendario o capacidad disponible?            |
-| organizational | ¿Tenemos personas, roles, coordinación u ownership para hacerlo?       |
-| adoption       | ¿Esto puede ser adoptado por usuarios, equipos o actores involucrados? |
-
-Regla:
-
-> El Documento de Viabilidad responde si algo es viable.
-> El kind define desde qué dimensión se evalúa esa viabilidad.
-
-## 8. Patrón Resultado / Validación / Feedback
-
-Estos tres conceptos separan ocurrencia, interpretación y respuesta externa.
-
-| Concepto   | Definición                                  | Artifact recomendado             |
-| ---------- | ------------------------------------------- | -------------------------------- |
-| Resultado  | Registra lo ocurrido                        | Nota de Soporte kind: result     |
-| Validación | Interpreta lo ocurrido frente a un criterio | Nota de Soporte kind: validation |
-| Feedback   | Registra una respuesta externa recibida     | Documento de Feedback            |
-
-Fórmulas:
-
-| Concepto   | Fórmula                                             |
-| ---------- | --------------------------------------------------- |
-| Resultado  | objeto aplicado + resultado observado               |
-| Validación | resultado + criterio                                |
-| Feedback   | respuesta externa al objeto, resultado o validación |
-
-Regla:
+| Concepto   | Definición                                   | Artifact recomendado      |
+| ---------- | -------------------------------------------- | ------------------------- |
+| Resultado  | Registra lo ocurrido                         | Support Note `result`     |
+| Validación | Interpreta un resultado frente a un criterio | Support Note `validation` |
+| Feedback   | Registra una respuesta externa               | Feedback Document         |
 
 > Resultado no interpreta.
 > Validación interpreta.
-> Feedback registra respuesta externa.
+> Feedback registra una respuesta externa.
 
-## 9. Modelo de Camino de Continuidad
+## Modelo de Nexus
 
-Un Camino de Continuidad conecta conocimiento.
+Un Nexus compone artifacts que explican juntos un elemento compuesto.
 
-No es, por sí solo, un documento detallado.
+Su responsabilidad es declarar:
 
-Su propósito es permitir seguir un concepto cuando impacta varias perspectivas, artifacts o superficies del sistema.
-
-Un Camino de Continuidad puede estar:
-
-* representado por un diagrama
-* explicado mediante texto de navegación
-* apoyado por metadata y referencias
-* conectado con documentos específicos
+* qué target compuesto se intenta entender
+* qué artifacts participan
+* qué rol cumple cada artifact dentro de la composición
 
 Definición compacta:
 
-> Un Camino de Continuidad conecta un Concepto a través de una o más perspectivas de continuidad.
+> Un Nexus compone artifacts alrededor de un target sin duplicar su contenido.
 
-Regla:
+La composición se declara en `composition.composes`.
 
-> El Camino de Continuidad define el recorrido.
-> El diagrama suele mostrar el camino.
-> El texto de navegación explica cómo recorrerlo sin reemplazar los artifacts conectados.
+Las relaciones generales que no forman parte de la composición se declaran en `metadata.relates`.
 
-## 10. Tipos de Caminos de Continuidad
+Nexus candidatos iniciales:
 
-Los Caminos de Continuidad se dividen inicialmente en dos grupos:
+* Capability Nexus
+* Service Consumption Nexus
 
-| Grupo       | Rol                                                                                                                                            |
-| ----------- | ---------------------------------------------------------------------------------------------------------------------------------------------- |
-| Principales | Observan un concepto desde perspectivas principales de continuidad del negocio, dominio, viabilidad, evolución, software, producto o servicio. |
-| Soporte     | Observan un concepto desde preocupaciones transversales.                                                                                       |
+Si un solo Document preserva suficiente intención, no necesitamos un Nexus.
 
-Los Caminos de Continuidad principales son estos:
+## Modelo de Continuity Path
 
-| Camino              | Perspectiva            | Pregunta                                                                              |
-| ------------------- | ---------------------- | ------------------------------------------------------------------------------------- |
-| Business Scenario   | Escenario de negocio   | ¿Dónde estoy trabajando?                                                              |
-| Business Driver     | Motivación de negocio  | ¿Por qué importa intervenir?                                                          |
-| Domain Context      | Contexto de dominio    | ¿Qué lenguaje, reglas y límites pertenecen a esta parte del negocio?                  |
-| Viability           | Viabilidad             | ¿Es viable abordar esto bajo las condiciones actuales?                                |
-| Evolution           | Evolución              | ¿Cómo cambia este elemento en el tiempo sin perder su intención?                      |
-| Software Initiative | Iniciativa de software | ¿Qué herramientas de software tengo o necesito para abordar esta parte del trabajo?   |
-| Client Product      | Producto al cliente    | ¿Qué puede hacer el usuario con este sistema y qué aprendimos sobre esa experiencia?  |
-| Consumable Service  | Servicio consumible    | ¿Qué puede consumir otro sistema o producto, y qué garantías debe recibir al hacerlo? |
+Un Continuity Path conecta un target a través de perspectivas, artifacts o paths relevantes.
 
-Los Caminos de Continuidad de soporte son estos:
+No es una explicación completa ni una lista obligatoria de documentos.
 
-| Camino           | Perspectiva          | Pregunta                                                  |
-| ---------------- | -------------------- | --------------------------------------------------------- |
-| Software Project | Proyecto de software | ¿Cómo vive este concepto dentro del proyecto de software? |
-| Ownership        | Responsabilidad      | ¿Quién lo entiende, decide, valida, mantiene u opera?     |
-| Impact           | Impacto              | ¿Qué otros elementos se ven afectados?                    |
-| Traceability     | Trazabilidad         | ¿De dónde viene y dónde terminó materializándose?         |
-
-Regla:
-
-> Los Caminos de Continuidad de soporte no reemplazan a los principales. Los complementan.
-
-## 11. Modelo de Documento de Navegación
-
-Un Documento de Navegación explica cómo recorrer conocimiento.
-
-Puede explicar cómo explorar:
-
-* una colección documental
-* un camino de continuidad
-* un conjunto de artifacts
-* un concepto complejo
-* una iteración
-* un proyecto
-* una release
-* un caso de investigación
-
-No debería repetir todo el contenido de los artifacts que conecta.
+Su responsabilidad es preservar continuidad visible.
 
 Definición compacta:
 
-> Un Documento de Navegación explica cómo recorrer un conjunto de artifacts o caminos sin reemplazar el contenido de ellos.
+> Un Continuity Path conecta y orienta continuidad alrededor de un target.
 
-Regla:
+El path declara:
 
-> Documento de Navegación orienta; no duplica.
+* la pregunta de continuidad
+* el foco que intenta preservar
+* los artifacts o paths conectados
+* el rol que cada conexión cumple
 
-## 12. Modelo de Organización Documental
+El diagrama muestra el recorrido.
 
-Organización Documental define dónde viven los artifacts y cómo deberían recorrerse dentro de una estructura mayor.
+Los artifacts conectados preservan el detalle.
 
-No explica el conocimiento en detalle.
+## Categorías de Continuity Paths
 
-Puede ordenar artifacts por:
+Los Continuity Paths se agrupan inicialmente en tres categorías.
 
-* producto
-* proyecto
-* iteración
-* etapa
-* concepto
-* dominio o bounded context
-* capability o feature
-* servicio consumible
-* superficie de producto
-* milestone o release
-* caso de investigación
-* experimento o validación
-* estado documental
-* versiones anteriores
-* colección navegable
+| Categoría  | Rol                                                         |
+| ---------- | ----------------------------------------------------------- |
+| Core       | Perspectivas principales de continuidad                     |
+| Supporting | Preocupaciones transversales                                |
+| Contextual | Situaciones específicas que requieren preservar continuidad |
 
-Definición compacta:
+Core iniciales:
 
-> Organización Documental ordena artifacts según pertenencia, secuencia, estado, etapa, colección o narrativa mayor.
+* Business Scenario
+* Business Driver
+* Domain Context
+* Viability
+* Evolution
+* Software Initiative
+* Client Product
+* Consumable Service
 
-Regla:
+Supporting iniciales:
 
-> La organización documental no reemplaza la explicación documental.
+* Software Project
+* Ownership
+* Impact
+* Traceability
 
-## 13. Modelo de relaciones
+Contextual inicial:
 
-El modelo conceptual puede leerse como estas relaciones:
+* Knowledge Handoff
 
-* Un Concepto es explicado por uno o varios Documentos.
-* Un Documento tiene un Tipo de Documento.
-* Un Tipo de Documento responde a una Pregunta Documental.
-* Una Nota de Soporte es una forma liviana de Documento.
-* Una Nota de Soporte tiene un kind.
-* Un Documento de Viabilidad tiene un kind de viabilidad.
-* Un Resultado puede ser interpretado por un criterio, formando una Validación.
-* Un Feedback responde a un Resultado o Validación.
-* Un Camino de Continuidad conecta Conceptos.
-* Un Documento de Navegación explica recorridos documentales.
-* Un Diagrama puede mostrar visualmente un Camino de Continuidad.
-* Una Organización documental agrupa Artifacts según un criterio.
-* La metadata describe los Artifacts, su identidad, estado o relaciones.
-* Las Referencias conectan Artifacts.
+Estas categorías orientan el uso.
 
-## 14. Lectura completa del modelo
+No constituyen una taxonomía cerrada ni obligatoria.
 
-La lectura completa sería:
+## Representaciones asociadas
 
-* VSlices Docs Standard preserva conocimiento mediante estructuras de explicación materializadas como artifacts.
-* Un concepto puede ser explicado, conectado, mostrado, representado, organizado o trazado.
-* Cada documento explica un concepto desde una pregunta documental.
-* Los tipos de documento existen porque responden preguntas distintas.
-* Las notas de soporte permiten capturar conocimiento auxiliar sin inflar la taxonomía.
-* El Documento de Viabilidad permite evaluar si algo puede abordarse bajo condiciones actuales.
-* Los resultados registran ocurrencias.
-* Las validaciones interpretan resultados contra criterios.
-* Los documentos de feedback preservan respuestas externas.
-* Los caminos de continuidad conectan conceptos entre perspectivas.
-* Los documentos de navegación explican cómo recorrer caminos de continuidad o colecciones.
-* Los diagramas muestran relaciones.
-* Los mockups representan superficies visibles.
-* La organización documental ordena artifacts dentro de una estructura o narrativa mayor.
-* La metadata y las referencias habilitan trazabilidad futura sin exigir automatización temprana.
+Algunas estructuras ayudan a materializar o mostrar conocimiento, aunque todavía no formen parte de las familias formalizadas mediante schema.
 
-## 15. Límites del modelo
+| Representación | Responsabilidad                                            |
+| -------------- | ---------------------------------------------------------- |
+| Diagram        | Muestra relaciones, estructuras, flujos o caminos          |
+| Mockup         | Representa una experiencia, vista o superficie de producto |
+
+Un diagrama no reemplaza la explicación preservada en otros artifacts.
+
+Un mockup no reemplaza la definición del comportamiento esperado.
+
+## Fuente de verdad y organización documental
+
+Estos conceptos tienen responsabilidades distintas.
+
+| Concepto                    | Pregunta                                  | Responsabilidad                                    |
+| --------------------------- | ----------------------------------------- | -------------------------------------------------- |
+| Fuente de verdad documental | ¿Dónde vive el contenido canónico?        | Mantener el contenido vigente                      |
+| Organización documental     | ¿Según qué criterio se ordenan artifacts? | Definir pertenencia, secuencia, estado o narrativa |
+| Proyección navegable        | ¿Cómo se muestra esa organización?        | Representar el orden mediante referencias          |
+| Navigation Document         | ¿Cómo recorremos esa organización?        | Explicar el recorrido recomendado                  |
+
+Una organización documental no define necesariamente la ubicación física de un artifact.
+
+Una proyección navegable no cambia su fuente de verdad.
+
+Un mismo artifact puede aparecer en varias organizaciones sin duplicar su contenido.
+
+## Modelo de relaciones
+
+El modelo puede leerse mediante estas relaciones:
+
+* Un Artifact tiene un kind, type, scope y target.
+* Un Document responde una pregunta documental.
+* Una Support Note apoya un artifact o elemento principal.
+* Un Nexus compone artifacts mediante roles explícitos.
+* Un Continuity Path conecta artifacts o paths mediante roles de continuidad.
+* Metadata describe estado y relaciones generales.
+* Un Diagram puede mostrar un Nexus o Continuity Path.
+* Una Organización documental ordena artifacts según un criterio.
+* Una Proyección navegable muestra una organización mediante referencias.
+* Un Navigation Document explica cómo recorrer una colección o proyección.
+
+Las relaciones especializadas no deberían duplicarse en `metadata.relates`.
+
+## Lectura completa del modelo
+
+VSlices Docs Standard preserva conocimiento mediante artifacts con responsabilidades explícitas.
+
+Un target puede:
+
+* ser explicado por Documents
+* recibir apoyo mediante Support Notes
+* ser entendido como composición mediante Nexus
+* seguirse entre perspectivas mediante Continuity Paths
+* mostrarse mediante diagramas
+* representarse mediante mockups
+* ordenarse mediante organizaciones documentales
+* aparecer en proyecciones navegables sin duplicar su fuente de verdad
+
+La metadata ayuda a preservar estado y relaciones sin convertir Docs Standard en un grafo obligatorio.
+
+## Límites del modelo
 
 Docs Standard puede definir:
 
 * intención documental
-* tipos de documentos
+* familias y tipos de artifacts
 * preguntas principales
-* relaciones entre artifacts
+* relaciones documentales
+* composición
+* continuidad
 * formas de navegación
 * organización documental
 * evidencia preservable
-* viabilidad documentalmente evaluable
-* reglas de trazabilidad documental
+* reglas para tooling documental
 
-Docs Standard no debería intentar asumir directamente:
+Docs Standard no asume directamente:
 
 * ejecución
 * testing automático
@@ -392,18 +328,21 @@ Docs Standard no debería intentar asumir directamente:
 * contratos ejecutables
 * grafos dinámicos obligatorios
 
-Cuando esas necesidades aparecen, Docs Standard puede definir la intención y la estructura documental, pero la responsabilidad pasa a implementación, testing, operación o VSlices Tooling.
+Cuando estas necesidades aparecen, Docs Standard preserva su intención documental.
 
-## 16. Principio de simplicidad
+La ejecución corresponde a implementación, testing, operación o VSlices Tooling.
+
+## Principio de simplicidad
 
 El modelo debe mantenerse pequeño.
 
-* No todo necesita documento propio.
-* No todo path necesita automatización.
-* No toda relación necesita grafo.
+* No todo necesita Document.
+* No todo conocimiento auxiliar debe formalizarse.
+* No todo elemento compuesto necesita Nexus.
+* No todo concepto necesita recorrer todos los Continuity Paths.
+* No toda relación necesita un grafo.
+* No toda organización necesita una estructura física.
 * No toda evidencia necesita validación formal.
-* No toda viabilidad necesita evaluación completa.
-* No todo cambio necesita camino de evolución.
 
 Primero preservamos intención y continuidad.
 

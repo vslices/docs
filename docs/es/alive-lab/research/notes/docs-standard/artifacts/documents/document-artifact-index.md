@@ -1,68 +1,66 @@
-# Artifacts documentales y ramificación de preguntas
+# Document artifacts y ramificación de preguntas
 
 ## Propósito
 
-Este documento introduce la sección de VSlices Docs Standard dedicada al diseño de artifacts documentales mediante preguntas principales, ramificación de preguntas y propuestas de materialización.
+Este documento introduce la familia **Document** de VSlices Docs Standard.
 
-Su objetivo es entregar el contexto necesario para entender, analizar y extender los documentos definidos en esta sección sin perder la intención original del modelo.
+Su objetivo es explicar cómo diseñamos tipos documentales mediante:
 
-Esta sección no busca imponer plantillas rígidas.
+* una pregunta principal
+* preguntas derivadas
+* diagramas de ramificación
+* segmentos documentales
+* un punto de partida recomendado
 
-Busca definir una forma progresiva de diseñar artifacts documentales que preserven conocimiento útil sin agregar ceremonia innecesaria.
+No busca imponer plantillas rígidas.
+
+Busca preservar intención documental mientras cada artifact incorpora únicamente la complejidad que necesita.
 
 ## Idea central
 
-VSlices Docs Standard define estructuras de explicación.
+Un Document artifact explica conocimiento desde una pregunta documental principal.
 
-Un artifact es la materialización concreta de una estructura de explicación.
+La pregunta principal define la identidad del tipo documental.
 
-Cada documento existe porque responde una pregunta documental principal.
+Las preguntas derivadas organizan las distintas aristas que pueden necesitar explicación.
 
 Por ejemplo:
 
-* Un Documento de Contexto responde: ¿Dónde existe?
-* Un Documento de Estructura responde: ¿Cómo se organiza?
-* Un Documento de Comportamiento responde: ¿Qué debe ocurrir?
-* Un Documento de Consistencia responde: ¿Qué debe respetar?
-* Un Documento de Alcance responde: ¿Hasta dónde llega?
-* Un Documento de Navegación responde: ¿Cómo exploramos?
-* Un Documento de Feedback responde: ¿Qué recibimos al aplicar algo?
-* Un Documento de Actualización responde: ¿Qué se actualizará?
-* Un Decision Record responde: ¿Qué se decidió?
-* Una Nota de Soporte responde: ¿Qué se necesita?
+| Tipo                 | Pregunta principal              |
+| -------------------- | ------------------------------- |
+| Navigation Document  | ¿Cómo exploramos?               |
+| Domain Vocabulary    | ¿Cómo hablamos?                 |
+| Context Document     | ¿Dónde existe?                  |
+| Structure Document   | ¿Cómo se organiza?              |
+| Behavior Document    | ¿Qué debe ocurrir?              |
+| Consistency Document | ¿Qué debe respetar?             |
+| Scope Document       | ¿Hasta dónde llega?             |
+| Viability Document   | ¿Es viable?                     |
+| Update Document      | ¿Qué se actualizará?            |
+| Feedback Document    | ¿Qué recibimos al aplicar algo? |
+| Decision Record      | ¿Qué se decidió?                |
 
-La pregunta principal define la identidad del documento.
+## Límites de la familia
 
-Las preguntas derivadas ayudan a organizarlo.
+Un Document artifact explica.
 
-## Modelo base
+No reemplaza otras familias:
 
-VSlices Docs Standard distingue entre:
+* Support Note apoya, registra o referencia conocimiento auxiliar.
+* Nexus compone artifacts alrededor de un elemento compuesto.
+* Continuity Path conecta y orienta continuidad.
+* Diagram muestra relaciones o estructuras.
+* Mockup representa una experiencia o superficie.
 
-* **Concepto**: unidad de significado que puede ser explicada, conectada, mostrada, representada, organizada o trazada.
-* **Estructura de explicación**: forma propuesta para explicar, conectar, mostrar, representar u ordenar conocimiento.
-* **Artifact**: materialización concreta de una estructura de explicación.
-* **Documento**: estructura textual que explica conocimiento desde una pregunta documental principal.
-* **Continuity Path**: estructura que conecta un concepto a través de perspectivas, artifacts o superficies.
-* **Diagrama**: estructura visual que muestra relaciones, estructuras, flujos o caminos.
-* **Mockup**: estructura visual que representa una experiencia, vista o superficie de producto.
-* **Organización documental**: estructura de orden según pertenencia, secuencia, estado, etapa, colección o narrativa mayor.
-
-Regla base:
-
-> Los documentos explican.
-> Los paths conectan.
-> Los diagramas muestran.
-> Los mockups representan.
-> La organización documental ordena.
+Si una necesidad no consiste principalmente en explicar una pregunta documental, probablemente pertenece a otra familia.
 
 ## Diagrama de ramificación
 
-El Diagrama de ramificación organiza preguntas derivadas desde una pregunta documental principal.
+Un Diagrama de ramificación organiza preguntas derivadas desde la pregunta principal de un tipo documental.
 
-Su objetivo es orientar cómo puede organizarse un artifact.
+Su objetivo es mostrar el espacio de preguntas conocido.
 
-No prescribe obligatoriamente su formato.
+No prescribe el formato final del artifact.
 
 Una rama puede materializarse como:
 
@@ -77,349 +75,290 @@ Una rama puede materializarse como:
 * sección narrativa
 * placeholder
 * referencia
-* cualquier otra forma adecuada
+* omisión consciente
 
-Regla central:
-
-> La ramificación organiza conocimiento.
+> La ramificación organiza preguntas.
 > No impone formato documental.
 
-Por lo tanto, no se debe asumir que cada rama del diagrama debe convertirse automáticamente en un heading.
+Una rama no debe convertirse automáticamente en heading.
 
-## Formato visual recomendado
+## Formato visual
 
-Usamos Mermaid `flowchart LR`.
+La representación inicial usa Mermaid `flowchart LR`.
 
-La raíz representa el tipo de documento y su pregunta principal.
-
-Formato base:
+La raíz representa el tipo documental y su pregunta principal.
 
 ```mermaid
 flowchart LR
-    R["Tipo de documento<br/><small>Pregunta principal</small>"]
-```
-
-Cada nodo puede contener:
-
-* nombre organizacional
-* pregunta que responde
-
-Ejemplo:
-
-```mermaid
-flowchart LR
-    R["Documento de Contexto<br/><small>¿Dónde existe?</small>"]
+    R["Context Document<br/><small>¿Dónde existe?</small>"]
     B1["Escenario<br/><small>¿En qué situación aparece?</small>"]
     B2["Situación actual<br/><small>¿Qué ocurre hoy?</small>"]
 
     R --> B1 & B2
 ```
 
-## Semántica inicial de líneas
+Cada nodo puede incluir:
 
-La línea indica relevancia o naturaleza de la relación.
+* un nombre organizacional
+* la pregunta que responde
 
-* `-->`: rama principal de contenido.
-* `-.->`: rama de apoyo, gobernanza, mantenimiento, contexto auxiliar o exploración secundaria.
+## Semántica de relaciones
 
-Esta semántica puede evolucionar si el uso real lo justifica.
+Las líneas indican relevancia o naturaleza de la rama.
 
-## Esfuerzo y costo
+| Relación | Significado                                      |
+| -------- | ------------------------------------------------ |
+| `-->`    | Rama principal                                   |
+| `-.->`   | Rama auxiliar, contextual, secundaria u opcional |
 
-La forma del nodo puede indicar esfuerzo o costo de incorporación.
+Esta semántica es candidata y puede evolucionar con evidencia real.
 
-Esta convención todavía es candidata.
+## Mapa completo y segmentos
 
-La regla conceptual es:
+Cada tipo documental puede tener un mapa completo de preguntas conocidas.
 
-> La línea expresa relevancia o naturaleza.
-> La forma expresa esfuerzo o costo de incorporación.
+Ese mapa no representa un documento que deba completarse.
 
-Una rama puede ser importante pero costosa.
+Representa el espacio que hoy sabemos que podría ser relevante.
 
-Una rama puede ser simple pero secundaria.
+Cada pregunta o agrupación de preguntas constituye un segmento documental candidato.
 
-Una rama puede ser útil para Full pero no razonable para MVP.
+Un artifact concreto activa únicamente los segmentos que necesita.
 
-Importancia no significa incorporación inmediata.
+## Punto de partida recomendado
 
-## MVP, Full y propuestas de materialización
+Cada tipo puede definir un conjunto inicial de segmentos recomendados.
 
-Para cada tipo documental se pueden proponer materializaciones MVP y Full.
-
-### MVP
-
-El MVP representa una materialización seria, mínima y publicable.
-
-Debe buscar:
+Este punto de partida busca:
 
 * alto valor documental
 * bajo esfuerzo razonable
 * baja ceremonia
 * claridad para humanos
-* utilidad para IA y tooling
+* utilidad para Tooling e IA
 * bajo riesgo de sobreingeniería
 
-El MVP debe evitar absorber todas las preguntas posibles.
+El punto de partida recomendado no es un nivel.
 
-Debe seleccionar solo las preguntas que entregan mayor valor para el caso actual.
+Tampoco es un tipo distinto de template.
 
-### Full
+Es la selección inicial de segmentos que normalmente entrega suficiente valor.
 
-El Full explora el espacio amplio del artifact.
+## Full como mapa de investigación
+
+Full representa el mapa amplio de preguntas conocidas para un tipo documental.
 
 Sirve para:
 
-* descubrir aristas posibles
-* entender profundidad documental potencial
-* detectar necesidades futuras de VSlices Tooling
-* explorar soporte para IA
-* analizar cómo podría evolucionar el artifact
-* encontrar preguntas candidatas para futuras materializaciones
+* explorar aristas posibles
+* descubrir responsabilidades documentales
+* detectar solapamientos entre tipos
+* identificar necesidades futuras de Tooling
+* observar preguntas todavía no validadas
+* evaluar qué segmentos podrían incorporarse más adelante
 
-Full no es necesariamente publicable.
+Full no representa un artifact final obligatorio.
 
-Full no debe convertirse automáticamente en estándar.
+No debe convertirse automáticamente en estándar.
 
-## Sobre v0, v1 y v2
+## Representación progresiva
 
-Las etiquetas `v0`, `v1` y `v2` no deben entenderse como versionado obligatorio del documento.
+Tooling podrá generar un único diagrama por tipo documental.
 
-No significan que todos los artifacts deban pasar por las mismas versiones.
+En ese diagrama:
 
-No significan que la ramificación documental sea fija.
+* los segmentos recomendados aparecen sólidos
+* las preguntas Full no activadas aparecen translúcidas
+* los segmentos adicionales aparecen sólidos cuando el caso los incorpora
+* las preguntas compartidas entre el punto recomendado y Full conservan una sola representación
 
-Estas etiquetas funcionan como propuestas de materialización pensadas en balance valor-tiempo.
+El artifact no evoluciona desde MVP hacia Full.
 
-La ramificación puede cambiar según la necesidad documental.
+Evoluciona incorporando los segmentos que necesita.
 
-La selección de preguntas puede cambiar según:
+## Sobre `v0`, `v1` y `v2`
 
-* tipo de artifact
-* scope definido en metadata
-* uso real
-* costo documental
+Las etiquetas `v0`, `v1` y `v2` identifican iteraciones de investigación del mapa o de sus propuestas.
+
+No representan:
+
+* niveles documentales
+* etapas obligatorias
+* versiones por las que deba pasar un artifact
+* una progresión universal de profundidad
+
+Pueden representar cambios en:
+
+* preguntas conocidas
+* agrupación de segmentos
+* punto de partida recomendado
+* convenciones visuales
+* aprendizaje obtenido mediante validación
+
+Estas etiquetas pertenecen al trabajo de investigación.
+
+No deberían filtrarse como obligación al artifact generado.
+
+## Materialización del artifact
+
+El artifact final materializa solo los segmentos necesarios para su target.
+
+La selección puede depender de:
+
+* `artifact.type`
+* `artifact.scope`
+* naturaleza del target
+* pregunta actual
 * riesgo de ambigüedad
-* necesidad de continuidad
-* madurez del concepto
 * evidencia disponible
+* necesidad de continuidad
+* costo documental
 
-Por lo tanto:
+Una rama puede permanecer translúcida indefinidamente.
 
-* `v0` puede representar una materialización mínima útil.
-* `v1` puede representar una mejora de precisión o valor.
-* `v2` puede representar una materialización más completa cuando el uso lo justifica.
-* Ninguna etiqueta es una obligación metodológica.
-* Ninguna propuesta reemplaza el juicio de diseño documental.
+Eso no significa que el artifact esté incompleto.
 
-## Relación entre ramificación y artifact final
+Significa que esa pregunta no necesita respuesta en el caso actual.
 
-La ramificación muestra preguntas posibles.
+## Front-matter y cuerpo
 
-El artifact final materializa solo las preguntas necesarias.
-
-Una pregunta puede materializarse como:
-
-* sección visible
-* tabla
-* columna
-* comentario guía
-* metadata
-* placeholder
-* ejemplo
-* referencia
-* diagrama
-* omisión consciente
-
-Una pregunta también puede quedar solo en Full, sin entrar al MVP.
-
-Esto es válido si su costo es alto o si todavía no existe evidencia suficiente para hacerla parte del artifact recomendado.
-
-## Regla sobre metadata y cuerpo del documento
-
-No todo debe vivir en el cuerpo del documento.
-
-Algunas relaciones, estados o clasificaciones pertenecen mejor a front matter o metadata.
+No todo conocimiento pertenece al cuerpo.
 
 Regla práctica:
 
-* Si algo clasifica el artifact, probablemente pertenece a metadata.
-* Si algo explica conocimiento, probablemente pertenece al cuerpo.
-* Si algo conecta artifacts, probablemente pertenece a metadata o referencias.
-* Si algo orienta una lectura humana, puede vivir en un Documento de Navegación.
-* Si algo define un recorrido conceptual, puede vivir en un Continuity Path.
+* Si clasifica el artifact, pertenece a `artifact`.
+* Si expresa estado o relaciones generales, pertenece a `metadata`.
+* Si declara la pregunta principal, pertenece a `document.question`.
+* Si agrega metadata específica del tipo, pertenece a `document.<categoría>`.
+* Si explica conocimiento, pertenece al cuerpo.
+* Si compone artifacts, pertenece a un Nexus.
+* Si conecta continuidad, pertenece a un Continuity Path.
+* Si apoya conocimiento auxiliar, puede pertenecer a una Support Note.
 
-Evitar duplicar fuentes de verdad entre metadata y cuerpo.
+No debemos duplicar fuentes de verdad entre front-matter y cuerpo.
 
 ## Scope
 
-El `scope` en metadata no cambia la identidad del tipo documental.
+`artifact.scope` identifica la clase, naturaleza o escala de `artifact.target`.
 
-Cambia la escala desde la cual se interpreta el contenido.
+No define:
 
-Por ejemplo, un Documento de Contexto siempre responde:
+* profundidad documental
+* nivel de detalle
+* cantidad de segmentos activos
+* límite temático del contenido
 
-> ¿Dónde existe?
+El tipo documental define la pregunta principal.
 
-Pero el contenido cambia si el scope es:
+El scope ayuda a interpretar sobre qué clase de elemento se responde.
 
-* stage
-* iteration
-* service
-* product
-* bounded-context
-* project
-* organization
+## Relación con Support Note
 
-Regla:
+Support Note no es un tipo de Document.
 
-> El tipo documental define la pregunta principal.
-> El scope define la escala de interpretación.
+Es una familia separada para conocimiento auxiliar.
 
-## Documentos trabajados en esta sección
+Puede registrar:
 
-Esta sección cubre los documentos principales de VSlices Docs Standard:
+* `draft`
+* `result`
+* `validation`
+* `testing-spec`
+* `risk`
+* `external`
 
-* Documento de Navegación
-* Vocabulario de Dominio
-* Documento de Contexto
-* Documento de Estructura
-* Documento de Comportamiento
-* Documento de Consistencia
-* Documento de Alcance
-* Documento de Actualización
-* Documento de Feedback
-* Decision Record
-* Nota de Soporte
+Si una Support Note crece hasta responder una pregunta documental principal, puede promoverse a Document.
 
-Cada documento debe entenderse desde:
+## Result, Validation, Feedback y Testing Spec
 
-* su pregunta principal
-* sus preguntas derivadas
-* su posible ramificación
-* su materialización MVP
-* su exploración Full cuando aporte valor
-* su relación con otros artifacts
-* sus límites para no invadir responsabilidades ajenas
+Estos conceptos separan responsabilidades.
 
-## Nota de Soporte y kind
-
-Nota de Soporte es un documento liviano.
-
-Su propósito es capturar conocimiento auxiliar sin forzar la creación prematura de documentos más estables o específicos.
-
-Kinds iniciales:
-
-* `draft`: ¿Qué estamos esbozando?
-* `result`: ¿Qué obtuvimos?
-* `validation`: ¿Qué significa lo obtenido frente a un criterio?
-* `testing-spec`: ¿Cómo probaremos este comportamiento?
-
-En Nota de Soporte, el `kind` cambia la intención interna del artifact, pero no convierte cada kind en un documento formal separado.
-
-Regla:
-
-> Support Note evita sobreingeniería documental temprana.
-
-## Relación entre Result, Validation, Feedback y Testing Spec
-
-Estos artifacts separan responsabilidades:
-
-* `result` registra lo ocurrido.
-* `validation` interpreta lo ocurrido frente a un criterio.
-* `feedback` registra una respuesta externa recibida.
-* `testing-spec` traduce criterios de comportamiento hacia escenarios de prueba, normalmente BDD.
+| Concepto     | Responsabilidad                                             |
+| ------------ | ----------------------------------------------------------- |
+| Result       | Registrar lo ocurrido                                       |
+| Validation   | Interpretar un resultado frente a un criterio               |
+| Feedback     | Preservar una respuesta externa                             |
+| Testing Spec | Traducir comportamiento esperado hacia escenarios de prueba |
 
 Cadena posible:
 
 ```text
 Behavior Document
-  -> Support Note kind: testing-spec
-  -> Support Note kind: result
-  -> Support Note kind: validation
+  -> Support Note type: testing-spec
+  -> Support Note type: result
+  -> Support Note type: validation
   -> Feedback Document
 ```
 
 Esta cadena no es obligatoria.
 
-Solo muestra una posible continuidad entre comportamiento, prueba, resultado, interpretación y respuesta externa.
+Solo muestra una continuidad posible entre comportamiento, prueba, resultado, interpretación y respuesta externa.
 
-## Reglas para extender documentos
+## Reglas para extender un Document
 
-Al extender un documento:
+Al incorporar un segmento:
 
-1. Identificar la pregunta principal.
-2. Verificar que la nueva rama siga respondiendo esa pregunta.
-3. Revisar si la rama invade otro tipo documental.
-4. Decidir si la pregunta pertenece al cuerpo, metadata, navegación, path o soporte.
+1. Identificar la pregunta principal del tipo.
+2. Verificar que la nueva pregunta siga perteneciendo a esa responsabilidad.
+3. Revisar si invade otro tipo o familia.
+4. Decidir dónde debe materializarse.
 5. Evaluar valor contra costo documental.
-6. Separar lo útil ahora de lo útil después.
-7. Mantener MVP pequeño.
-8. Usar Full como laboratorio, no como estándar automático.
-9. Evitar duplicar relaciones que ya viven en front matter.
-10. Evitar convertir dudas futuras en estructura obligatoria.
+6. Incorporar solo lo necesario para el caso.
+7. Evitar duplicar información ya preservada.
+8. Mantener visibles las preguntas no activadas sin convertirlas en deuda.
+9. Validar la nueva rama mediante uso real.
+10. Actualizar el mapa de investigación solo si el aprendizaje es reutilizable.
 
 ## Señales de sobreingeniería
 
-Una propuesta probablemente está agregando complejidad prematura si:
+Existe complejidad prematura cuando una propuesta:
 
-* exige completar información que rara vez se tiene
-* transforma toda pregunta en heading obligatorio
+* obliga a completar todo el mapa
+* transforma cada pregunta en heading
+* confunde Full con artifact final
+* introduce niveles documentales
 * duplica metadata en el cuerpo
 * mezcla comportamiento con testing
 * mezcla contexto con alcance
 * mezcla estructura con implementación
 * mezcla feedback con decisión
-* mezcla update con patch automático
-* convierte una nota liviana en documento formal
-* obliga a usar todos los artifacts para casos simples
+* convierte soporte auxiliar en Document
+* crea segmentos sin una necesidad observada
 
-La complejidad debe aparecer cuando el dominio o el uso real la requieran.
+La complejidad debe aparecer cuando el caso la requiere.
 
 No antes.
 
 ## Utilidad para VSlices Tooling e IA
 
-La ramificación de preguntas abre una posibilidad importante para VSlices Tooling e integraciones con IA.
+La ramificación permite:
 
-Permite:
-
-* sugerir upgrades de materialización
-* cambiar formato sin perder intención
-* centralizar contenido con formatos custom
-* detectar preguntas no respondidas
-* proponer migraciones entre templates
-* generar Navigation Documents
-* conectar artifacts con Continuity Paths
-* traducir Behavior Documents hacia testing-spec
-* distinguir contenido principal de contenido auxiliar
-* ayudar a IA a navegar conocimiento sin inferirlo todo desde texto libre
+* generar diagramas con segmentos sólidos y translúcidos
+* recomendar un punto de partida
+* detectar preguntas respondidas o pendientes
+* activar segmentos sin cambiar la identidad del template
+* cambiar la representación sin perder intención
+* preservar la relación entre preguntas y contenido
+* distinguir conocimiento principal de soporte auxiliar
+* conectar Documents con Nexus y Continuity Paths
+* orientar revisiones asistidas por IA
 
 La potencia no está en imponer un formato único.
 
-La potencia está en preservar la intención de cada segmento, incluso cuando la materialización cambia.
+Está en preservar la intención de cada segmento aunque su representación cambie.
 
 ## Regla de cierre
 
-Esta sección no define documentos para producir más documentación.
+Esta familia no existe para producir más documentación.
 
-Define artifacts para preservar continuidad.
+Existe para explicar conocimiento mediante preguntas claras.
 
-El objetivo es reducir pérdida de intención entre:
+Todo segmento nuevo debe preguntarse:
 
-* descubrimiento del dominio
-* documentación
-* arquitectura
-* implementación
-* validación
-* evolución
+* ¿Resuelve una necesidad actual?
+* ¿Sigue perteneciendo a la pregunta principal?
+* ¿Fue observado en un caso real?
+* ¿Existe una forma más pequeña de incorporarlo?
+* ¿Preserva continuidad o agrega ceremonia?
 
-Toda extensión debe preguntarse:
-
-* ¿Esto resuelve un problema actual?
-* ¿Esto fue observado o anticipado con evidencia suficiente?
-* ¿Estamos agregando complejidad demasiado pronto?
-* ¿Existe una versión más pequeña que podamos validar primero?
-* ¿Esta rama preserva continuidad o solo agrega ceremonia?
-
-Si una solución más pequeña preserva suficiente intención, preferimos la solución más pequeña.
+Si una selección menor de segmentos preserva suficiente intención, preferimos esa selección.
