@@ -2,13 +2,15 @@
 artifact:
   kind: continuity-path
   type: viability
-  scope: viability
+  scope: <feature|capability|initiative|product|service|project|decision|change|artifact>
   target: <viability-subject-name>
   language: <es|en>
 
 metadata:
   status: <draft|candidate|active|deprecated|superseded>
-  relates: []
+  relates: 
+    - relation: <references/referenced-by|complements|depends-on|owned-by|derived-from|updates|supersedes/superseded-by>
+      target: <artifact-id>
 
 continuity:
   question: ¿Puede sostenerse esto bajo las condiciones actuales?

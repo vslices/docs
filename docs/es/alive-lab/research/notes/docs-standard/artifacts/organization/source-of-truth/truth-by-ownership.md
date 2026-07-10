@@ -35,7 +35,7 @@ Otras organizaciones pueden referenciar ese artifact sin copiarlo.
 
 Por ejemplo:
 
-```text id="f03cdd"
+```text
 domains/
   docs-standard/
     vocabulary.md
@@ -65,7 +65,7 @@ En vez de centralizar todo o encerrar el artifact en la primera organización qu
 
 Un artifact puede vivir en su lugar de pertenencia primaria.
 
-```text id="vphjbe"
+```text
 domains/
   household-supply/
     vocabulary.md
@@ -74,7 +74,7 @@ domains/
 
 Una iniciativa puede referenciarlo desde una proyección.
 
-```text id="cbwu1j"
+```text
 initiatives/
   monthly-shopping-automation/
     navigation.md
@@ -83,8 +83,8 @@ initiatives/
 
 La proyección puede verse así:
 
-```mermaid id="w00zne"
-tree
+```mermaid
+treeView-beta
   "Iniciativa: Automatización de compra mensual"
     "Contexto"
       "context.monthly-shopping-automation.md"
@@ -151,8 +151,8 @@ Este modelo depende naturalmente de proyecciones navegables.
 
 Un artifact puede vivir en su pertenencia primaria y aparecer referenciado desde otras organizaciones.
 
-```mermaid id="p630t5"
-tree
+```mermaid
+treeView-Beta
   "Release v0.1"
     "Iniciativa incluida"
       "initiatives/monthly-shopping-automation/navigation.md"
@@ -245,7 +245,7 @@ Este modelo se usa mal cuando el equipo convierte la elección de pertenencia pr
 
 Por ejemplo:
 
-```text id="50m5qs"
+```text
 ¿Este documento vive en dominio, iniciativa, proyecto, release o feature?
 ```
 

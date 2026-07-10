@@ -2,7 +2,7 @@
 
 ## Template
 
-```yaml id="3ka6nu"
+```yaml
 ---
 artifact:
   kind: support-note
@@ -13,7 +13,9 @@ artifact:
 
 metadata:
   status: <draft|candidate|active|deprecated|superseded>
-  relates: []
+  relates: 
+    - relation: <references/referenced-by|complements|depends-on|owned-by|derived-from|updates|supersedes/superseded-by>
+      target: <artifact-id>
 
 support:
   question: <%type-question%>
@@ -116,13 +118,13 @@ Estos campos no deberían escribirse manualmente:
 
 La identidad canónica puede derivarse con una regla como:
 
-```text id="sxd2pq"
+```text
 <artifact.kind>.<artifact.type>.<artifact.scope>.<artifact.target>
 ```
 
 Ejemplo:
 
-```text id="rhknfl"
+```text
 support-note.risk.service.payment-api-consumption
 ```
 

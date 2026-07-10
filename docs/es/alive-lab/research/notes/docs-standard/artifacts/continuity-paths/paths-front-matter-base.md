@@ -13,7 +13,9 @@ artifact:
 
 metadata:
   status: <draft|candidate|active|deprecated|superseded>
-  relates: []
+  relates: 
+    - relation: <references/referenced-by|complements|depends-on|owned-by|derived-from|updates|supersedes/superseded-by>
+      target: <artifact-id>
 
 continuity:
   question: <main-continuity-question>
@@ -43,7 +45,7 @@ Esta sección responde:
 
 * `artifact.kind`: clase general del artifact. Para este grupo siempre debe ser `continuity-path`.
 * `artifact.type`: tipo específico del continuity path.
-* `artifact.scope`: escala, naturaleza o contexto principal donde aplica el path. Su valor depende del tipo específico.
+* `artifact.scope`: representa la naturaleza o escala del elemento objetivo sobre el que aplica el artifact.
 * `artifact.target`: elemento, situación, trayectoria o foco concreto cuya continuidad se quiere seguir.
 * `artifact.language`: idioma principal del artifact. Debe usar valores simples como `es` o `en`.
 

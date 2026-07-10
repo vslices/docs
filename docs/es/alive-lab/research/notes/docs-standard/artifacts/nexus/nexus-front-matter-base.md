@@ -13,7 +13,9 @@ artifact:
 
 metadata:
   status: <draft|candidate|active|deprecated|superseded>
-  relates: []
+  relates:
+    - relation: <references/referenced-by|complements|depends-on|owned-by|derived-from|updates|supersedes/superseded-by>
+      target: <artifact-id>
 
 composition:
   composes:

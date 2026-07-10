@@ -2,13 +2,21 @@
 artifact:
   kind: continuity-path
   type: evolution
-  scope: evolution
+  scope: <concept|behavior|capability|scope|product|service|project|artifact>
   target: <evolving-element-name>
   language: <es|en>
 
 metadata:
   status: <draft|candidate|active|deprecated|superseded>
-  relates: []
+  relates: 
+    - relation: <references/referenced-by|complements|depends-on|owned-by|derived-from|updates|supersedes/superseded-by>
+      target: <artifact-id>
+    - relation: <references/referenced-by|complements|depends-on|owned-by|derived-from|updates|supersedes/superseded-by>
+      target: <artifact-id>
+    - relation: <references/referenced-by|complements|depends-on|owned-by|derived-from|updates|supersedes/superseded-by>
+      target: <artifact-id>
+    - relation: <references/referenced-by|complements|depends-on|owned-by|derived-from|updates|supersedes/superseded-by>
+      target: <artifact-id>
 
 continuity:
   question: ¿Cómo cambió esto sin perder su intención?

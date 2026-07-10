@@ -2,13 +2,15 @@
 artifact:
   kind: continuity-path
   type: ownership
-  scope: ownership
+  scope: <concept|capability|artifact|product|service|project|operation>
   target: <owned-element-name>
   language: <es|en>
 
 metadata:
   status: <draft|candidate|active|deprecated|superseded>
-  relates: []
+  relates: 
+    - relation: <references/referenced-by|complements|depends-on|owned-by|derived-from|updates|supersedes/superseded-by>
+      target: <artifact-id>
 
 continuity:
   question: ¿Quién entiende, decide, valida, mantiene u opera esto?
