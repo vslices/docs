@@ -424,3 +424,35 @@ Queda fuera de alcance:
 * demostrar que Docs Standard funciona en cualquier handoff empresarial
 
 El valor del estudio está en observar una situación real de transferencia de conocimiento, con documentación redactada o simplificada y feedback de lectores reales.
+
+## Uso de asistencia de IA
+
+Este estudio puede utilizar asistencia de IA para apoyar la producción, revisión, síntesis y organización de artifacts documentales asociados al handoff.
+
+La IA puede apoyar:
+
+- estructuración inicial de Documents
+- síntesis de conocimiento transferible
+- identificación de gaps documentales
+- propuesta de Continuity Paths
+- redacción de Support Notes
+- simplificación o redacción de artifacts privados
+- generación inicial de diagramas
+- revisión de claridad para lectores
+
+La IA no debe usarse como fuente de evidencia.
+
+Toda salida asistida por IA debe revisarse contra evidencia disponible, conocimiento humano responsable o feedback de lectores.
+
+En este estudio, la asistencia de IA debe respetar la política `private-redacted` y evitar incluir información sensible, nombres internos, datos operacionales o detalles confidenciales en prompts, outputs o artifacts publicables.
+
+## Riesgo metodológico asociado a IA
+
+El uso de IA puede mejorar velocidad, estructura y claridad documental, pero también puede introducir relaciones no verificadas, lenguaje excesivamente convincente, simplificación indebida o pérdida de trazabilidad.
+
+Por eso, cualquier artifact asistido por IA debe distinguir entre:
+
+- evidencia observada
+- interpretación humana
+- propuesta generada o refinada con IA
+- contenido validado por lectores o responsables del contexto
