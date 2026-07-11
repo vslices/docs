@@ -4,6 +4,7 @@ state: candidate
 code: STU-007
 visibility: private-redacted
 evidence_policy: summarized
+study_scope: bounded
 
 related_questions:
 * RQ-001
@@ -416,3 +417,138 @@ Este estudio debe mantenerse en estado `candidate` mientras no se haya revisado 
 El caso es metodológicamente valioso porque permite contrastar sistemas construidos en distintas etapas de madurez técnica y documental.
 
 Sin embargo, por su carácter privado, institucional y parcialmente retrospectivo, sus conclusiones deben formularse con especial prudencia y distinguir claramente entre evidencia observada, reconstrucción inferida e interpretación local.
+
+## Alcance del estudio
+
+Este estudio cubre un caso institucional con alcance actualizable mes a mes.
+
+El alcance inicial incluye:
+
+* documentación de aplicaciones legacy para permitir un entendimiento más profundo
+* análisis de continuidad entre sistemas heredados y una adopción parcial de VSlices Framework
+* uso de VSlices Docs Standard para documentar conocimiento existente
+* uso de Continuity Paths para recorrer relaciones entre contexto, sistema, comportamiento, estructura e implementación
+* uso de Support Notes para registrar incertidumbre, riesgos, hipótesis o evidencia incompleta
+* uso de diagramas simplificados cuando ayuden a representar relaciones, estructura o evolución
+* revisión progresiva de necesidades documentales según avance el trabajo mensual
+
+Este estudio puede actualizarse mes a mes si aparecen nuevas actividades de documentación, soporte, revisión, mejora o análisis sobre los sistemas existentes.
+
+Su foco actual no es cubrir el desarrollo completo de nuevos módulos, sino mantener una línea viva de observación sobre continuidad en sistemas existentes y en soporte institucional.
+
+## Relación con módulos o sistemas futuros
+
+A partir de noviembre se espera retomar comunicación para generación de nuevos módulos o sistemas.
+
+Cuando aparezca un nuevo módulo o sistema con alcance propio, duración significativa o proceso completo de descubrimiento, documentación, desarrollo y validación, ese trabajo no debería absorberse dentro de `STU-007`.
+
+En esos casos se deberá crear un nuevo Study independiente.
+
+La regla candidata es:
+
+> `STU-007` observa continuidad en puntos especificos solicitados por PO, incluyendo en un inicio una documentación sistemas existentes.
+> 
+> Cada nuevo módulo o sistema con ciclo propio de desarrollo debe generar su propio Study.
+
+Esto es importante porque los nuevos módulos suelen implicar varios meses de trabajo y pueden activar toda la suite VSlices:
+
+* VSlices Design
+* VSlices Docs Standard
+* VSlices Method
+* VSlices Framework
+* VSlices Tooling
+
+Cada nuevo módulo puede producir evidencia suficiente para una pregunta local propia, artifacts propios, decisiones propias y findings locales propios.
+
+Por lo tanto, `STU-007` puede actuar como study base, pero no debe convertirse en contenedor de todos los futuros módulos.
+
+## Studies derivados esperados
+
+Este estudio puede generar a futuro una familia de studies derivados.
+
+La estructura candidata es:
+
+```text
+STU-007
+  Caso base actualizable mes a mes
+  Continuidad, documentación, soporte y entendimiento de sistemas existentes
+
+STU-XXX
+  Contrato de soporte Serviu, una vez finalizada la documentación inicial del STU-007.
+
+STU-YYY
+  Nuevo módulo o sistema 1
+
+STU-ZZZ
+  Nuevo módulo o sistema 2
+
+STU-NNN
+  Nuevo módulo o sistema N
+```
+
+El patrón esperado es:
+
+```text
+1 + N studies derivados
+```
+
+Donde:
+
+* `1` corresponde al study dedicado al contrato de soporte
+* `N` corresponde a la cantidad de nuevos módulos o sistemas desarrollados posteriormente
+
+Esta separación evita mezclar soporte continuo, documentación de sistemas existentes y desarrollo de nuevos módulos en un solo artifact de investigación.
+
+## Diferencia con el STU-006
+
+Este caso se parece parcialmente al caso de Hual que se cubrire en los [STU-011](./stu-011-digitalizacion-escenario-uso-vslices.md) y [STU-012](./stu-012-mejora-capacidad-limitada-uso-vslices.md) sobre módulos nuevos y mejora continua, pero tiene una diferencia contractual importante.
+
+En esos STU, el escenario esperado combina:
+
+```text
+Mejoras continuas + soporte
+dentro de una bolsa limitada de 25 horas mensuales
+```
+
+En Serviu, el escenario esperado se separa en dos líneas:
+
+```text
+Digitalización continua
+por un lado
+
+Contrato de soporte con bolsa ilimitada de horas
+por otro lado
+```
+
+Esto cambia la naturaleza de la investigación.
+
+En Hual, la restricción principal es maximizar valor con capacidad mensual limitada.
+
+En Serviu, la tensión principal puede aparecer entre soporte abierto, continuidad institucional, nuevos módulos de larga duración y convivencia entre sistemas legacy y sistemas nuevos.
+
+Por eso, el contrato de soporte de Serviu debería tratarse como un study.
+
+## Ajuste al límite del estudio
+
+Este estudio debe mantenerse como un caso vivo y actualizable mes a mes.
+
+Sus conclusiones deben interpretarse según el alcance observado en cada período.
+
+`STU-007` no debe absorber automáticamente nuevos módulos, nuevos sistemas o el contrato de soporte completo.
+
+Cuando aparezcan líneas de trabajo con alcance propio, especialmente desarrollos de varios meses o soporte institucional continuo, deberán abrirse studies derivados.
+
+El valor de `STU-007` está en funcionar como caso base para observar continuidad en sistemas existentes, documentación de aplicaciones legacy, adopción parcial de VSlices Framework y evolución mensual del conocimiento disponible.
+
+## Fuera de alcance
+
+Queda fuera de alcance:
+
+* juzgar los sistemas legacy con criterios actuales como si hubieran nacido con VSlices
+* demostrar que VSlices Framework es superior por definición
+* publicar detalles internos completos de los sistemas
+* reconstruir toda la historia técnica de las aplicaciones
+* convertir inferencias retrospectivas en evidencia directa
+* validar universalmente la relación entre Framework y continuidad documental
+
+El valor del estudio está en observar diferencias locales de continuidad entre sistemas heredados, documentación para entendimiento profundo y una Proof of Concept más cercana a VSlices.

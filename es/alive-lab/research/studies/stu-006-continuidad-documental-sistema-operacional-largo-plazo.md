@@ -4,6 +4,7 @@ state: candidate
 code: STU-006
 visibility: private-redacted
 evidence_policy: summarized
+study_scope: bounded
 
 related_questions:
 * RQ-001
@@ -29,7 +30,6 @@ related_findings:
 affects:
 * VSlices Research
 * VSlices Docs Standard
-* VSlices Method
 * VSlices Tooling
 ---
 
@@ -137,7 +137,7 @@ La continuidad puede romperse por varias razones:
 
 ## Pregunta local del estudio
 
-¿Cómo evoluciona la continuidad documental en un sistema operacional mantenido durante largo plazo cuando se pasa desde una documentación prototipo hacia mecanismos más formales de VSlices Docs Standard?
+¿Cómo ayuda VSlices Docs Standard a documentar y preservar continuidad de conocimiento en un sistema operacional ya construido y mantenido durante largo plazo?
 
 ## RQs relacionadas
 
@@ -412,3 +412,42 @@ Este estudio debe mantenerse en estado `candidate` mientras no se haya revisado 
 El caso es metodológicamente valioso porque permite observar documentación y continuidad en un sistema real, operacional y de largo plazo.
 
 Sin embargo, por su carácter privado y por la existencia de documentación prototipo previa, sus conclusiones deben formularse con prudencia y distinguir claramente entre evidencia observada, interpretación local y posible ajuste a Docs Standard.
+
+## Alcance del estudio
+
+Este estudio cubre únicamente la documentación de un sistema existente, actualmente en mantención de largo plazo, empleando VSlices Docs Standard.
+
+El foco no está en desarrollar nuevas funcionalidades ni en observar el ciclo completo de VSlices Suite.
+
+El alcance principal incluye:
+
+* revisar conocimiento existente del sistema
+* documentar el sistema actual usando mecanismos de VSlices Docs Standard
+* identificar qué conocimiento está vigente, incompleto, disperso o implícito
+* crear o adaptar Document artifacts necesarios
+* usar Continuity Paths cuando ayuden a recorrer conocimiento existente
+* usar Support Notes para dudas, riesgos, hallazgos o evidencia auxiliar
+* usar diagramas documentales si ayudan a representar estructura, recorrido o continuidad
+* organizar artifacts para facilitar lectura y mantenimiento
+* observar si Docs Standard ayuda a preservar continuidad documental en un sistema ya construido
+
+El estudio no cubre el desarrollo de nuevos módulos ni la evolución funcional futura del sistema.
+
+Su valor está en observar cómo VSlices Docs Standard puede aplicarse a documentación de un sistema real de largo plazo, sin asumir que todo el proceso de VSlices Suite está siendo aplicado.
+
+## Fuera de alcance
+
+Queda fuera de alcance:
+
+* desarrollar nuevos módulos
+* observar el proceso completo de descubrimiento, diseño, documentación, implementación y validación de una nueva funcionalidad
+* evaluar la compatibilidad completa de VSlices con metodologías ágiles en este contexto
+* estudiar mejora continua mensual bajo restricción de horas
+* documentar exhaustivamente todo el historial del sistema
+* reconstruir todas las decisiones pasadas
+* validar toda la suite VSlices mediante este caso
+* asumir que documentar un sistema existente equivale a aplicar VSlices Method completo
+
+Si aparece la necesidad de digitalizar o desarrollar un nuevo módulo, ese proceso deberá registrarse como un nuevo Study independiente.
+
+Si aparece una línea de mejora continua mensual, esa dinámica deberá registrarse como un Study separado y evolutivo.

@@ -4,6 +4,7 @@ state: candidate
 code: STU-008
 visibility: public
 evidence_policy: direct
+study_scope: bounded
 
 related_questions:
 * RQ-001
@@ -443,3 +444,39 @@ Este estudio debe mantenerse en estado `candidate` mientras no se haya revisado 
 El caso es metodológicamente valioso porque nace desde cero, es real y puede publicarse con bastante transparencia.
 
 Sin embargo, sus conclusiones deben formularse con prudencia porque el dominio es personal, el producto está en construcción y la investigación forma parte activa del proceso de diseño.
+
+
+## Alcance del estudio
+
+Este estudio cubre una versión inicial acotada de Domus Orbis.
+
+El alcance actual corresponde a una v0.N del producto, no al producto completo.
+
+Hasta ahora, Domus Orbis tiene definidas funcionalidades suficientes para aproximadamente tres o cuatro iteraciones iniciales.
+
+El estudio observa principalmente:
+
+* descubrimiento de dominio doméstico
+* artifacts iniciales de planificación y compra
+* automatización y simplificación de procesos
+* decisiones documentales y de dominio
+* continuidad entre observación doméstica, artifact, documentación y software inicial
+* evolución de una primera base de producto
+
+El estudio no busca validar Domus Orbis como SaaS completo ni como producto terminado.
+
+Su foco está en observar cómo VSlices ayuda o no ayuda durante la construcción progresiva de una versión temprana del producto.
+
+## Fuera de alcance
+
+Queda fuera de alcance:
+
+* validar el producto completo
+* cubrir todas las funcionalidades futuras de Domus Orbis
+* generalizar el dominio doméstico a todos los hogares
+* asumir que las primeras iteraciones representan la arquitectura final
+* convertir artifacts YAML iniciales en modelo definitivo
+* evaluar escalamiento comercial o adopción masiva
+* validar todo VSlices Framework, Method o Tooling mediante este caso
+
+El valor del estudio está en observar una v0.N real, acotada y publicable, donde conocimiento doméstico, documentación, decisiones y software evolucionan juntos.

@@ -4,6 +4,7 @@ state: candidate
 code: STU-009
 visibility: internal-publicable
 evidence_policy: direct-redacted
+study_scope: bounded
 
 related_questions:
 * RQ-001
@@ -412,3 +413,41 @@ Este estudio debe mantenerse en estado `candidate` mientras no se haya revisado 
 El caso es metodológicamente valioso porque transforma Docs Standard en práctica operativa.
 
 Sin embargo, sus conclusiones deben formularse con prudencia porque Tooling puede reforzar tanto las partes valiosas como las partes inmaduras del estándar.
+
+
+## Alcance del estudio
+
+Este estudio cubre VSlices Tooling hasta una base equivalente a la v1.0 de la suite.
+
+El alcance no se define por una cantidad fija de iteraciones, sino por las iteraciones necesarias para cubrir los mecanismos principales que VSlices necesita sostener en su primera versión estable.
+
+El alcance actual incluye:
+
+* soporte para artifacts de Docs Standard
+* generación o mantenimiento de templates
+* front-matter base
+* metadata fuente de verdad y campos derivados
+* validaciones mínimas
+* soporte inicial para Documents
+* soporte inicial para Support Notes
+* soporte inicial para Nexus
+* soporte inicial para Continuity Paths
+* soporte inicial para organizaciones documentales
+* soporte candidato para diagramas
+* outputs que puedan alimentar Surreal Atlas locales
+
+Existe contenido e ideas para una v1.N posterior, pero ese contenido queda fuera del alcance actual del estudio.
+
+## Fuera de alcance
+
+Queda fuera de alcance:
+
+* implementar todo el roadmap futuro de Tooling
+* validar features de una v1.N
+* automatizar conceptos que todavía estén demasiado inmaduros
+* asumir que todo Docs Standard debe ser generado por herramientas
+* cerrar prematuramente reglas que siguen en estado candidate
+* construir Surreal Atlas como parte del alcance principal de Tooling
+* convertir Tooling en requisito obligatorio para usar Docs Standard
+
+El valor del estudio está en observar qué partes de VSlices pueden ser asistidas por herramientas hasta una base v1.0 sin volver rígido el estándar ni automatizar exploraciones demasiado temprano.

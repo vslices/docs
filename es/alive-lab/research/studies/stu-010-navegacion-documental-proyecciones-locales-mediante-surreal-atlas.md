@@ -4,6 +4,7 @@ state: candidate
 code: STU-010
 visibility: public
 evidence_policy: direct
+study_scope: bounded
 
 related_questions:
 * RQ-001
@@ -512,3 +513,38 @@ Este estudio debe mantenerse en estado `candidate` mientras no se haya revisado 
 El caso es metodológicamente valioso porque permite observar Docs Standard desde navegación, proyección, visualización y producto.
 
 Sin embargo, sus conclusiones deben formularse con prudencia porque Surreal Atlas está construido junto a VSlices, puede reforzar sus supuestos y puede hacer que relaciones candidatas parezcan más maduras de lo que realmente son.
+
+
+## Alcance del estudio
+
+Este estudio cubre Surreal Atlas como producto de navegación documental y proyecciones locales, pero su avance depende de una base previa de VSlices Tooling.
+
+Surreal Atlas puede avanzar conceptualmente en paralelo, pero su validación práctica requiere que Tooling tenga definida una base suficiente para generar, mantener o exponer artifacts, metadata, relaciones y proyecciones.
+
+El alcance inicial de este estudio incluye:
+
+* exploración de navegación documental
+* proyecciones locales
+* visualización de relaciones entre artifacts
+* consumo de outputs generados o preparados por Tooling
+* navegación de Documents, Support Notes, Nexus y Continuity Paths
+* representación visual de organizaciones documentales
+* exploración de atlas locales
+* relación entre fuente de verdad y visualización
+* validación progresiva de Surreal Atlas como capa SaaS sobre capacidades habilitadas por Tooling
+
+Surreal Atlas se entiende como una capa de producto más cercana al SaaS, mientras Tooling actúa como base operativa para preparar la información que el atlas puede navegar o visualizar.
+
+## Fuera de alcance
+
+Queda fuera de alcance:
+
+* validar Surreal Atlas antes de contar con una base suficiente de Tooling
+* asumir que toda visualización documental requiere Surreal Atlas
+* convertir Surreal Atlas en fuente de verdad documental
+* forzar metadata en Docs Standard solo para alimentar visualizaciones
+* validar un SaaS empresarial completo en la primera etapa
+* cubrir todos los posibles sabores o flavors de atlas
+* evaluar adopción empresarial amplia antes de validar navegación local básica
+
+El valor del estudio está en observar cómo Surreal Atlas puede construir sobre Tooling para navegar, proyectar y visualizar continuidad documental sin reemplazar los artifacts que preservan el conocimiento.

@@ -4,6 +4,7 @@ state: candidate
 code: STU-005
 visibility: private-redacted
 evidence_policy: summarized
+study_scope: bounded
 
 related_questions:
 * RQ-001
@@ -391,3 +392,35 @@ Este estudio debe mantenerse en estado `candidate` mientras la transferencia est
 El caso es metodológicamente valioso porque ocurre en una situación real, con lectores reales y necesidad concreta de continuidad.
 
 Sin embargo, por su carácter privado y por la participación directa de VSlices Research en el proceso, sus conclusiones deben formularse con especial prudencia.
+
+## Alcance del estudio
+
+Este estudio cubre la entrega de documentación orientada a transferencia de conocimiento durante el proceso de handoff.
+
+El alcance principal incluye:
+
+* preparación de documentación para transferencia
+* uso de Knowledge Handoff Path
+* uso de Continuity Paths asociados cuando sean necesarios
+* creación o adaptación de Documents
+* uso de Support Notes para dudas, riesgos o conocimiento auxiliar
+* uso de diagramas simplificados si ayudan a orientar la transferencia
+* organización de artifacts para lectura por parte del equipo receptor
+* posibles revisiones posteriores realizadas a partir de feedback de lectores
+
+El estudio no busca observar la evolución completa del ecosistema después del handoff.
+
+Su foco está en la transferencia inicial y en las revisiones directamente asociadas a esa entrega.
+
+## Fuera de alcance
+
+Queda fuera de alcance:
+
+* evaluar la evolución completa del sistema después de la salida
+* validar mantenimiento documental a largo plazo
+* publicar documentación interna completa
+* reconstruir todo el ecosistema técnico
+* analizar todas las decisiones históricas del sistema
+* demostrar que Docs Standard funciona en cualquier handoff empresarial
+
+El valor del estudio está en observar una situación real de transferencia de conocimiento, con documentación redactada o simplificada y feedback de lectores reales.
