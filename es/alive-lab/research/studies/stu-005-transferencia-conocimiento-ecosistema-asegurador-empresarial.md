@@ -1,10 +1,15 @@
 ---
 type: study
 state: candidate
+mode: restricted-retrospective
 code: STU-005
+case: transferencia-de-conocimiento-ecosistema-asegurador-empresarial
+title: Transferencia de conocimiento en un ecosistema asegurador empresarial
+lifecycle: closed
+closure: not-implemented
+
 visibility: private-redacted
-evidence_policy: summarized
-study_scope: bounded
+evidence_policy: no-study-evidence
 
 related_questions:
 * RQ-001
@@ -15,14 +20,6 @@ related_questions:
 * RQ-006
 * RQ-007
 
-related_notes:
-* RN-0001
-* RN-0002
-* RN-0003
-
-related_synthesis:
-* SYN-0001
-
 related_findings:
 * FND-0003
 
@@ -32,427 +29,91 @@ affects:
 * VSlices Method
 ---
 
-# STU-005 — Transferencia de conocimiento en un ecosistema asegurador empresarial
+# Study — Transferencia de conocimiento en un ecosistema asegurador empresarial
 
-## Estado
+## Tipo
+
+study
+
+## Estado de conocimiento
 
 candidate
 
-## Visibilidad
+## Estado operativo
 
-private-redacted
+closed — not-implemented
 
-## Política de evidencia
+## Caso
 
-Este estudio trabaja con un caso real ocurrido en un ecosistema empresarial asegurador.
+Transferencia de conocimiento planificada tras la salida de una persona clave de un ecosistema empresarial asegurador.
 
-Por restricciones de privacidad, confidencialidad y responsabilidad profesional, el estudio no debe publicar documentos internos completos, nombres sensibles de sistemas, detalles operacionales específicos, información de negocio, diagramas completos ni material que permita reconstruir información privada del contexto.
+## Modo de observación
 
-La evidencia podrá utilizarse en forma de:
+restricted-retrospective
 
-* descripciones generales
-* artifacts redactados
-* diagramas simplificados
-* ejemplos sintéticos derivados
-* observaciones metodológicas
-* resultados agregados
-* feedback general de personas que leen o producen documentación
+## Preguntas relacionadas
 
-Los Continuity Paths podrán mostrarse cuando no expongan información sensible o cuando hayan sido simplificados suficientemente.
+* [RQ-001 — Problema fundacional de VSlices Research](../questions/rq-001-problema-fundacional-vslices.md)
+* [RQ-002 — Caminos de Continuidad](../questions/rq-002-continuity-paths.md)
+* [RQ-003 — Nexos Documentales](../questions/rq-003-document-nexus.md)
+* [RQ-004 — Documentos](../questions/rq-004-documents.md)
+* [RQ-005 — Organizaciones Documentales](../questions/rq-005-documental-organization.md)
+* [RQ-006 — Notas de Soporte](../questions/rq-006-support-notes.md)
+* [RQ-007 — Diagramas Documentales](../questions/rq-007-diagrams.md)
 
 ## Contexto
 
-Este estudio ocurre durante una transferencia de conocimiento posterior a la salida de una persona clave en un ecosistema asegurador empresarial.
+Este estudio fue propuesto para observar una transferencia de conocimiento posterior a la salida de una persona clave de un ecosistema asegurador empresarial.
 
-El caso aparece en una situación real: una persona con conocimiento relevante del sistema, sus decisiones, flujos, relaciones técnicas y contexto histórico deja su rol, pero realiza una transferencia de conocimiento más completa como apoyo al equipo y como oportunidad para observar mecanismos de continuidad documental.
+El riesgo identificado era real: parte del conocimiento relevante podía permanecer concentrado en una persona, disperso entre documentación, conversaciones, decisiones históricas, prácticas de equipo y sistemas activos. El estudio se relacionaba con [FND-0003](../findings/fnd-0003-conocimiento-critico-concentrado-persona-clave.md), que registra el riesgo de continuidad asociado a esa concentración.
 
-El ecosistema ya cuenta con documentación existente, pero esa documentación fue producida mediante metodologías o prácticas que no corresponden directamente a VSlices.
+Por confidencialidad, la evidencia pública habría debido mantenerse redactada, agregada o sintetizada.
 
-Esto permite observar una situación especialmente útil para VSlices Research:
+## Diseño original
 
-> ¿Qué ocurre cuando se intenta aplicar mecanismos de VSlices Docs Standard sobre un contexto real que ya tiene documentación, conocimiento distribuido y lectores reales?
+La intención era observar si un Knowledge Handoff Path —apoyado selectivamente por Documents, Support Notes, Nexus, organizaciones documentales y diagramas— podía ayudar a priorizar y recorrer conocimiento crítico durante la transferencia.
 
-## Situación observada
+El foco previsto incluía:
 
-La salida o reducción de disponibilidad de una persona clave puede poner en riesgo la continuidad de conocimiento.
+* preparar artifacts orientados a handoff;
+* usar paths asociados solo cuando aportaran continuidad real;
+* registrar dudas, riesgos y conocimiento incompleto;
+* recibir feedback de lectores del equipo receptor;
+* distinguir artifacts útiles de burocracia documental;
+* publicar únicamente evidencia compatible con la política `private-redacted`.
 
-En este caso, el conocimiento relevante no necesariamente está perdido.
+El estudio no pretendía demostrar que Docs Standard funcionara en general ni atribuir el resultado de una transferencia exclusivamente a sus mecanismos.
 
-Parte del conocimiento puede existir en:
+## Cierre
 
-* documentos existentes
-* conversaciones
-* memoria de personas
-* decisiones históricas
-* prácticas de equipo
-* convenciones técnicas
-* sistemas en producción
-* criterios implícitos
-* flujos conocidos por experiencia
+La implementación prevista no se realizó.
 
-El riesgo principal es que ese conocimiento quede incompleto, disperso o difícil de recorrer para quienes deben continuar manteniendo, modificando o entendiendo el sistema.
+No se crearon artifacts de handoff bajo este diseño, no se levantó feedback de lectores, no se produjeron observaciones propias y no se recopiló evidencia publicable o privada suficiente para evaluar los mecanismos propuestos.
 
-Este caso se relaciona con `FND-0003`, donde se observa que la continuidad de conocimiento puede romperse cuando conocimiento crítico permanece concentrado en una persona clave durante una transición.
+Por lo tanto, este estudio no aporta evidencia empírica sobre la utilidad de Knowledge Handoff Paths, Documents, Support Notes, Nexus, organizaciones documentales ni diagramas en este contexto.
 
-## Problema de continuidad
+## Resultado
 
-El problema central no es solo producir más documentación.
+El resultado del estudio es **no implementado**.
 
-El problema es preservar continuidad suficiente para que otras personas puedan:
+Se preserva como antecedente de una oportunidad de observación que no llegó a ejecutarse, no como un caso que confirme o contradiga las hipótesis de Docs Standard.
 
-* entender qué existe
-* saber por dónde empezar
-* reconocer áreas críticas
-* ubicar decisiones relevantes
-* distinguir conocimiento vigente de conocimiento histórico
-* conectar sistemas, flujos, artifacts y responsabilidades
-* continuar trabajando sin depender exclusivamente de la persona saliente
-* identificar qué conocimiento falta o requiere validación posterior
+No produjo:
 
-La transferencia de conocimiento debe evitar dos extremos:
+* Observations;
+* Tensions;
+* Findings;
+* artifacts documentales evaluados;
+* feedback de lectores;
+* comparación con documentación previa;
+* recomendaciones derivadas para VSlices.
 
-* entregar documentación demasiado superficial
-* producir una carga documental excesiva que nadie pueda leer o mantener
+## Límites
 
-## Pregunta local del estudio
+Este cierre no permite inferir que el problema de transferencia de conocimiento no existiera, ni que los mecanismos propuestos fueran inútiles, excesivos o adecuados.
 
-¿Cómo ayuda un Knowledge Handoff Path, apoyado por Documents, Support Notes, Nexus, organizaciones documentales y diagramas, a transferir conocimiento crítico durante la salida de una persona clave en un ecosistema empresarial asegurador?
+Solo permite afirmar que esta instancia particular no llegó a convertirse en un caso de observación.
 
-## RQs relacionadas
+## Reapertura posible
 
-Este estudio puede alimentar varias preguntas de investigación de Docs Standard.
-
-| RQ                                   | Relación con el estudio                                                                                    |
-| ------------------------------------ | ---------------------------------------------------------------------------------------------------------- |
-| [RQ-002 — Caminos de Continuidad](../questions/rq-002-continuity-paths.md)      | Observa el uso de Knowledge Handoff y otros paths asociados para recorrer conocimiento crítico             |
-| [RQ-003 — Nexos Documentales](../questions/rq-003-document-nexus.md)          | Puede observar si ciertos elementos compuestos requieren composición de artifacts                          |
-| [RQ-004 — Documentos](../questions/rq-004-documents.md)                  | Observa si Documents definidos por preguntas principales ayudan a explicar conocimiento transferible       |
-| [RQ-005 — Organizaciones Documentales](../questions/rq-005-documental-organization.md) | Observa cómo ordenar y proyectar artifacts para lectura de handoff                                         |
-| [RQ-006 — Notas de Soporte](../questions/rq-006-support-notes.md)            | Observa si notas auxiliares ayudan a capturar dudas, riesgos, resultados o referencias sin sobreformalizar |
-| [RQ-007 — Diagramas Documentales](../questions/rq-007-diagrams.md)      | Observa si diagramas simplificados ayudan a representar recorridos, relaciones o necesidades documentales  |
-
-Aunque el caso puede alimentar varias RQs, no debe intentar validarlas todas con el mismo peso.
-
-Su foco principal debería ser `RQ-002`, `RQ-004`, `RQ-006` y `RQ-007`.
-
-## Mecanismos de Docs Standard observados
-
-### Knowledge Handoff Path
-
-El mecanismo principal observado es el uso de un camino de continuidad orientado a transferencia de conocimiento.
-
-Este path intenta preservar continuidad alrededor de preguntas como:
-
-* ¿Qué conocimiento debe quedar disponible para que el equipo pueda continuar?
-* ¿Qué sistemas, flujos o conceptos requieren explicación prioritaria?
-* ¿Qué decisiones históricas siguen afectando el trabajo?
-* ¿Qué riesgos aparecen si la persona saliente deja de estar disponible?
-* ¿Qué artifacts ayudan a transferir el conocimiento sin sobrecargar al equipo?
-
-### Continuity Paths asociados
-
-El Knowledge Handoff Path puede requerir otros paths de apoyo, por ejemplo:
-
-* Software Project
-* Ownership
-* Impact
-* Traceability
-* Evolution
-* Domain Context
-* Consumable Service
-* Client Product
-
-Estos paths deben usarse solo si ayudan a preservar continuidad real.
-
-No deben convertirse en checklist obligatorio.
-
-### Document artifacts
-
-El estudio puede producir o adaptar Documents como:
-
-* Context Document
-* Navigation Document
-* Behavior Document
-* Structure Document
-* Decision Record
-* Scope Document
-* Consistency Document
-* Update Document
-
-La selección de Documents debe depender de las preguntas reales de transferencia, no del catálogo completo de Docs Standard.
-
-### Support Notes
-
-El estudio puede usar Support Notes para preservar:
-
-* dudas abiertas
-* riesgos
-* referencias externas o internas
-* resultados de revisión
-* validaciones preliminares
-* conocimiento incompleto
-* notas de transición
-* hipótesis que requieren confirmación posterior
-
-Las Support Notes deben evitar que todo conocimiento auxiliar se convierta en documento principal.
-
-### Nexus artifacts
-
-El estudio puede observar si ciertos elementos requieren Nexus.
-
-Por ejemplo:
-
-* una capability relevante
-* un servicio interno consumido
-* una integración importante
-* un flujo crítico que depende de varios artifacts
-* una zona del sistema que reúne decisiones, comportamiento, estructura y riesgos
-
-El Nexus solo debería aparecer si reduce fragmentación real.
-
-### Organizaciones documentales
-
-El estudio puede observar cómo organizar artifacts para facilitar lectura de handoff.
-
-Posibles organizaciones:
-
-* por sistema
-* por flujo
-* por capability
-* por riesgo
-* por prioridad de transferencia
-* por ownership
-* por estado de conocimiento
-* por orden recomendado de lectura
-
-La organización debe ayudar a recorrer conocimiento sin duplicar la fuente de verdad.
-
-### Diagramas documentales
-
-El estudio puede usar diagramas para representar:
-
-* recorrido de handoff
-* relación entre sistemas o componentes
-* artifacts existentes y faltantes
-* zonas críticas de conocimiento
-* ownership
-* impacto
-* trazabilidad entre decisión, comportamiento e implementación
-* orden recomendado de lectura
-
-Los diagramas deben mantenerse redactados o simplificados si existe riesgo de exponer información sensible.
-
-## Evidencia disponible
-
-La evidencia inicial esperada puede incluir:
-
-* documentación existente no creada con VSlices
-* artifacts nuevos o adaptados durante la transferencia
-* paths creados para orientar el handoff
-* diagramas simplificados
-* notas de soporte
-* decisiones registradas
-* observaciones durante el proceso
-* feedback de personas que leen documentación
-* feedback de personas que producen o mantienen documentación
-* comparación entre documentación previa y artifacts orientados por VSlices
-* señales de qué conocimiento quedó mejor conectado
-* señales de qué conocimiento siguió siendo difícil de transferir
-
-La evidencia publicada deberá ser resumida, redactada o transformada en ejemplos sintéticos cuando corresponda.
-
-## Observaciones esperadas
-
-Este estudio podría permitir observar:
-
-* si un Knowledge Handoff Path ayuda a priorizar conocimiento
-* si los paths asociados ayudan a no perder relaciones importantes
-* si los Documents por pregunta principal son más fáciles de leer que documentación general
-* si los diagramas hacen más claro el recorrido de transferencia
-* si las Support Notes permiten capturar conocimiento incompleto sin sobreformalizar
-* si un Nexus reduce fragmentación en elementos compuestos
-* si una organización documental mejora la lectura
-* si el feedback real de lectores confirma o contradice la utilidad esperada
-* si la privacidad obliga a transformar evidencia sin perder valor metodológico
-
-## Evidencia faltante
-
-Todavía falta observar:
-
-* qué artifacts se crearán efectivamente
-* qué paths se usarán
-* qué documentos existentes se reutilizarán
-* qué documentos nuevos serán necesarios
-* qué feedback entregarán los lectores
-* qué conocimiento quedará todavía sin transferir
-* qué partes del modelo Docs Standard se sentirán útiles
-* qué partes se sentirán excesivas
-* qué diagramas serán comprensibles
-* qué artifacts podrán publicarse redactados
-* qué evidencia deberá mantenerse privada
-
-## Criterios iniciales de observación
-
-El estudio puede considerar señales positivas si:
-
-* los lectores encuentran más rápido el conocimiento necesario
-* el equipo identifica mejor qué revisar primero
-* se reducen preguntas repetidas sobre el mismo contexto
-* los paths ayudan a recorrer conocimiento crítico
-* los documentos tienen responsabilidades claras
-* las notas de soporte preservan dudas o riesgos sin crear burocracia
-* los diagramas orientan sin reemplazar explicación
-* la organización documental facilita navegación
-* el proceso deja claro qué conocimiento sigue faltando
-
-El estudio puede considerar señales problemáticas si:
-
-* los paths se perciben como checklist
-* los documentos duplican información existente
-* los diagramas requieren demasiada explicación
-* las Support Notes se vuelven cajón de sastre
-* la organización documental agrega más fricción que claridad
-* la transferencia depende todavía de explicaciones orales no preservadas
-* los artifacts redactados pierden demasiado contexto para ser útiles en investigación
-* el esfuerzo documental supera el beneficio percibido por lectores reales
-
-## Riesgos metodológicos
-
-### Riesgo de sesgo por participación directa
-
-La persona que realiza la transferencia también participa en VSlices Research.
-
-Esto puede introducir sesgo positivo hacia los mecanismos de Docs Standard.
-
-El estudio debe registrar tanto lo que funcionó como lo que resultó excesivo, ambiguo o innecesario.
-
-### Riesgo de confidencialidad
-
-El caso contiene información empresarial privada.
-
-La necesidad de redactar evidencia puede limitar la verificabilidad externa del estudio.
-
-### Riesgo de atribuir éxito solo a Docs Standard
-
-Una transferencia puede funcionar por múltiples razones:
-
-* experiencia de la persona saliente
-* conocimiento previo del equipo
-* documentación existente
-* calidad de las conversaciones
-* disponibilidad de lectores
-* cultura del equipo
-* urgencia del contexto
-
-Docs Standard puede haber contribuido, pero no debe asumirse como única causa.
-
-### Riesgo de sobrevalidar por feedback positivo
-
-Feedback positivo de lectores no demuestra validación universal.
-
-Solo aporta evidencia local sobre utilidad percibida en este contexto.
-
-### Riesgo de exceso documental por cierre laboral
-
-Una transferencia de salida puede motivar documentación más intensa que la que un equipo mantendría normalmente.
-
-El estudio debe distinguir utilidad de handoff y sostenibilidad posterior.
-
-## Límites del estudio
-
-Este estudio no puede demostrar que Docs Standard funciona en general.
-
-No puede publicar toda la evidencia directa.
-
-No puede asegurar que los artifacts se mantendrán vivos después de la transferencia.
-
-No puede aislar completamente el efecto de VSlices frente a experiencia previa, documentación existente o colaboración directa.
-
-No debe concluir que todos los handoffs empresariales requieren el mismo conjunto de artifacts.
-
-Su valor está en observar un caso real de riesgo de continuidad por salida de persona clave y documentar cómo mecanismos candidatos de Docs Standard ayudan o no ayudan a preservar conocimiento transferible.
-
-## Resultado esperado
-
-El resultado esperado no es una validación completa.
-
-El resultado esperado es producir evidencia suficiente para derivar:
-
-* Observations sobre transferencia de conocimiento
-* Tensions entre handoff, privacidad, completitud y costo documental
-* Findings locales sobre utilidad o límites de paths, documents, notes y diagrams
-* ajustes candidatos a Docs Standard
-* criterios para futuros handoffs
-* límites explícitos sobre evidencia privada redactada
-
-## Límite actual
-
-Este estudio debe mantenerse en estado `candidate` mientras la transferencia esté en curso o mientras no se haya revisado evidencia suficiente.
-
-El caso es metodológicamente valioso porque ocurre en una situación real, con lectores reales y necesidad concreta de continuidad.
-
-Sin embargo, por su carácter privado y por la participación directa de VSlices Research en el proceso, sus conclusiones deben formularse con especial prudencia.
-
-## Alcance del estudio
-
-Este estudio cubre la entrega de documentación orientada a transferencia de conocimiento durante el proceso de handoff.
-
-El alcance principal incluye:
-
-* preparación de documentación para transferencia
-* uso de Knowledge Handoff Path
-* uso de Continuity Paths asociados cuando sean necesarios
-* creación o adaptación de Documents
-* uso de Support Notes para dudas, riesgos o conocimiento auxiliar
-* uso de diagramas simplificados si ayudan a orientar la transferencia
-* organización de artifacts para lectura por parte del equipo receptor
-* posibles revisiones posteriores realizadas a partir de feedback de lectores
-
-El estudio no busca observar la evolución completa del ecosistema después del handoff.
-
-Su foco está en la transferencia inicial y en las revisiones directamente asociadas a esa entrega.
-
-## Fuera de alcance
-
-Queda fuera de alcance:
-
-* evaluar la evolución completa del sistema después de la salida
-* validar mantenimiento documental a largo plazo
-* publicar documentación interna completa
-* reconstruir todo el ecosistema técnico
-* analizar todas las decisiones históricas del sistema
-* demostrar que Docs Standard funciona en cualquier handoff empresarial
-
-El valor del estudio está en observar una situación real de transferencia de conocimiento, con documentación redactada o simplificada y feedback de lectores reales.
-
-## Uso de asistencia de IA
-
-Este estudio puede utilizar asistencia de IA para apoyar la producción, revisión, síntesis y organización de artifacts documentales asociados al handoff.
-
-La IA puede apoyar:
-
-- estructuración inicial de Documents
-- síntesis de conocimiento transferible
-- identificación de gaps documentales
-- propuesta de Continuity Paths
-- redacción de Support Notes
-- simplificación o redacción de artifacts privados
-- generación inicial de diagramas
-- revisión de claridad para lectores
-
-La IA no debe usarse como fuente de evidencia.
-
-Toda salida asistida por IA debe revisarse contra evidencia disponible, conocimiento humano responsable o feedback de lectores.
-
-En este estudio, la asistencia de IA debe respetar la política `private-redacted` y evitar incluir información sensible, nombres internos, datos operacionales o detalles confidenciales en prompts, outputs o artifacts publicables.
-
-## Riesgo metodológico asociado a IA
-
-El uso de IA puede mejorar velocidad, estructura y claridad documental, pero también puede introducir relaciones no verificadas, lenguaje excesivamente convincente, simplificación indebida o pérdida de trazabilidad.
-
-Por eso, cualquier artifact asistido por IA debe distinguir entre:
-
-- evidencia observada
-- interpretación humana
-- propuesta generada o refinada con IA
-- contenido validado por lectores o responsables del contexto
+Si aparece un futuro handoff con permiso, tiempo y evidencia suficiente, deberá abrirse un estudio nuevo o reabrirse este con un diseño y alcance explícitos para esa instancia. La evidencia futura no debe atribuirse retrospectivamente a este estudio cerrado.
