@@ -7,31 +7,31 @@ evidence_policy: summarized
 study_scope: bounded
 
 related_questions:
-* RQ-001
-* RQ-002
-* RQ-003
-* RQ-004
-* RQ-005
-* RQ-006
-* RQ-007
+- RQ-001
+- RQ-002
+- RQ-003
+- RQ-004
+- RQ-005
+- RQ-006
+- RQ-007
 
 related_notes:
-* RN-0001
-* RN-0002
-* RN-0003
+- RN-0001
+- RN-0002
+- RN-0003
 
 related_synthesis:
-* SYN-0001
+- SYN-0001
 
 related_findings:
-* FND-0001
-* FND-0002
+- FND-0001
+- FND-0002
 
 affects:
-* VSlices Research
-* VSlices Docs Standard
-* VSlices Method
-* VSlices Framework
+- VSlices Research
+- VSlices Docs Standard
+- VSlices Method
+- VSlices Framework
 * VSlices Tooling
 ---
 
@@ -420,19 +420,29 @@ Sin embargo, por su carácter privado, institucional y parcialmente retrospectiv
 
 ## Alcance del estudio
 
-Este estudio cubre un caso institucional con alcance actualizable mes a mes.
+Este estudio observa la continuidad de un sistema institucional existente durante una adopción parcial de VSlices Framework.
 
-El alcance inicial incluye:
+Su alcance incluye la recuperación y organización del conocimiento necesario para evolucionar productos ya realizados, y la migración progresiva hacia una arquitectura de Productos y Servicios. La migración no se considera un caso independiente: constituye una fase de la misma adopción, orientada a preservar, clarificar y extender la continuidad de las responsabilidades ya existentes.
 
-* documentación de aplicaciones legacy para permitir un entendimiento más profundo
-* análisis de continuidad entre sistemas heredados y una adopción parcial de VSlices Framework
-* uso de VSlices Docs Standard para documentar conocimiento existente
-* uso de Continuity Paths para recorrer relaciones entre contexto, sistema, comportamiento, estructura e implementación
-* uso de Support Notes para registrar incertidumbre, riesgos, hipótesis o evidencia incompleta
-* uso de diagramas simplificados cuando ayuden a representar relaciones, estructura o evolución
-* revisión progresiva de necesidades documentales según avance el trabajo mensual
+En particular, se observará:
 
-Este estudio puede actualizarse mes a mes si aparecen nuevas actividades de documentación, soporte, revisión, mejora o análisis sobre los sistemas existentes.
+* cómo se identifican y preservan límites semánticos, responsabilidades y autoridad al reorganizar productos existentes;
+* cómo una división semántica puede preceder —sin exigir— una separación física de repositorios, procesos, bases de datos o despliegues;
+* la realización progresiva de productos, comenzando por gestión de cuentas, y las fases posteriores de pavimentación y gestión de solicitudes;
+* las dependencias e integraciones que aparezcan entre productos y servicios;
+* las tensiones entre desacoplamiento, coordinación y preservación de una fuente de verdad autoritativa;
+* la continuidad entre intención, comportamiento, estructura, decisiones e implementación durante la evolución.
+
+La evidencia se registrará de forma anonimizada o sintética cuando sea necesario.
+
+## Fuera de alcance
+
+Este estudio no busca demostrar que una arquitectura de Productos y Servicios sea universalmente adecuada ni comparar exhaustivamente todas las arquitecturas posibles.
+
+Tampoco evalúa una migración institucional completa, una separación obligatoria hacia microservicios, ni independencia física por defecto. Las decisiones de despliegue, persistencia, repositorio o proceso se observarán sólo cuando las fuerzas reales del caso las vuelvan relevantes.
+
+El estudio no trata cada producto realizado como un caso independiente mientras su propósito principal siga siendo dar continuidad al sistema y a los productos preexistentes.
+existentes.
 
 Su foco actual no es cubrir el desarrollo completo de nuevos módulos, sino mantener una línea viva de observación sobre continuidad en sistemas existentes y en soporte institucional.
 
