@@ -14,6 +14,7 @@ related_questions:
 - RQ-005
 - RQ-006
 - RQ-007
+- RQ-008
 
 related_notes:
 - RN-0001
@@ -137,10 +138,10 @@ Este estudio puede alimentar varias preguntas de investigación de Docs Standard
 | [RQ-005 — Organizaciones Documentales](../questions/rq-005-documental-organization.md) | Observa cómo organizar artifacts de varios sistemas sin duplicar contenido                      |
 | [RQ-006 — Notas de Soporte](../questions/rq-006-support-notes.md)            | Observa si notas auxiliares ayudan a capturar incertidumbre, riesgos o validaciones parciales   |
 | [RQ-007 — Diagramas Documentales](../questions/rq-007-diagrams.md)      | Observa si diagramas ayudan a comparar recorridos, estructuras o diferencias de continuidad     |
-
+| [RQ-008 — Realización semántica en VSlices Framework](../questions/rq-008-realizacion-semantica-vslices-framework.md) | Contrasta cómo Framework preserva intención, límites y autoridad durante la migración |\n
 Aunque el caso puede alimentar varias RQs, no debe intentar validarlas todas con el mismo peso.
 
-Su foco principal debería ser `RQ-004`, `RQ-002`, `RQ-005` y `RQ-007`.
+Su foco principal debería ser `RQ-008`, junto con `RQ-004`, `RQ-002`, `RQ-005` y `RQ-007` como preguntas complementarias de continuidad documental.
 
 ## Mecanismos de Docs Standard observados
 
@@ -249,6 +250,63 @@ El estudio puede usar diagramas para representar:
 * composición de capabilities o servicios
 
 Los diagramas deben mantenerse simplificados y redactados si existe riesgo de exponer información sensible.
+
+## Conceptos de Framework observados
+
+Este estudio contrasta conceptos provisionales de VSlices Framework en una migración real. No busca verificarlos como reglas universales: observa bajo qué condiciones preservan continuidad, dónde requieren precisión y qué costos o tensiones producen.
+
+### Realización semántica
+
+Se observa si la migración permite conservar una relación explicable entre intención preservada, decisiones, arquitectura, implementación y evolución, reduciendo interpretaciones incompatibles sin asumir que la documentación se convierte automáticamente en código.
+
+### Arquitecturas y límites
+
+Se observa la distinción entre:
+
+* arquitectura de proyecto, que organiza una pieza internamente;
+* arquitectura de solución, que organiza responsabilidades y relaciones entre piezas;
+* arquitectura de despliegue, que las materializa operacionalmente.
+
+La migración contrasta la regla de que la división semántica debe preceder a la física. Un límite lógico no implica por sí solo repositorio, proceso, almacenamiento, despliegue o comunicación de red independientes.
+
+### Productos y Servicios
+
+Se observa Productos y Servicios como arquitectura de solución candidata:
+
+* los Productos organizan líneas de trabajo, experiencias, consultas y representaciones;
+* los Servicios poseen conceptos, reglas, datos y capacidades delimitadas;
+* las Dependencies encapsulan capacidades técnicas reutilizables y cohesionadas;
+* los Nexus componen escenarios operacionales sin apropiarse de la lógica de negocio de sus componentes.
+
+La observación debe distinguir estas responsabilidades lógicas de cualquier realización física concreta.
+
+### Autoridad y consistencia
+
+Se observa si cada responsabilidad mantiene ownership explícito sobre sus reglas, datos e invariantes, y si reducir acoplamiento evita duplicar autoridad, reglas o fuentes de verdad.
+
+Cuando resulte relevante, el estudio puede analizar límites de consistencia: qué contenido e invariantes pertenecen a una misma unidad, qué autoridad los preserva y qué queda fuera de ella.
+
+### Criterios de organización arquitectónica
+
+Las fronteras se observan mediante criterios complementarios:
+
+* **coherencia:** la pieza representa correctamente su propósito;
+* **cohesión:** reúne elementos que pertenecen juntos;
+* **acoplamiento:** sus relaciones son necesarias, explícitas y administrables.
+
+Estos criterios son lentes de evaluación contextual, no métricas mecánicas ni pruebas de corrección.
+
+## Preguntas operativas de Framework
+
+Durante la migración, el estudio puede preguntar:
+
+* ¿Qué intención, responsabilidad y autoridad permite explicar cada producto, servicio, dependency o nexus?
+* ¿Qué frontera es semántica y cuál es solamente una decisión de realización actual?
+* ¿Qué dependencias son necesarias y cuál es su razón semántica?
+* ¿La separación propuesta conserva coherencia, cohesión y un acoplamiento administrable?
+* ¿Alguna reducción de dependencia duplica reglas, datos o autoridad?
+* ¿Qué presiones reales justificarían —o aún no justificarían— una separación física?
+* ¿La reorganización preserva continuidad con el conocimiento y productos heredados?
 
 ## Evidencia disponible
 
@@ -418,145 +476,31 @@ Sin embargo, por su carácter privado, institucional y parcialmente retrospectiv
 
 ## Alcance del estudio
 
-Este estudio observa la continuidad de un sistema institucional existente durante una adopción parcial de VSlices Framework.
+Este estudio observa la continuidad de sistemas institucionales existentes durante una adopción parcial de VSlices Framework.
 
-Su alcance incluye la recuperación y organización del conocimiento necesario para evolucionar productos ya realizados, y la migración progresiva hacia una arquitectura de Productos y Servicios. La migración no se considera un caso independiente: constituye una fase de la misma adopción, orientada a preservar, clarificar y extender la continuidad de las responsabilidades ya existentes.
+Su alcance incluye recuperar y organizar el conocimiento necesario para evolucionar productos ya realizados, y migrarlos progresivamente hacia una arquitectura de Productos y Servicios. Esta migración no constituye un caso independiente: es una fase de la misma adopción, orientada a preservar, clarificar y extender responsabilidades preexistentes.
 
 En particular, se observará:
 
-* cómo se identifican y preservan límites semánticos, responsabilidades y autoridad al reorganizar productos existentes;
+* cómo se identifican y preservan límites semánticos, responsabilidades, autoridad e invariantes al reorganizar productos existentes;
 * cómo una división semántica puede preceder —sin exigir— una separación física de repositorios, procesos, bases de datos o despliegues;
 * la realización progresiva de productos, comenzando por gestión de cuentas, y las fases posteriores de pavimentación y gestión de solicitudes;
-* las dependencias e integraciones que aparezcan entre productos y servicios;
+* las dependencias e integraciones que aparezcan entre productos, servicios, dependencies y nexus;
 * las tensiones entre desacoplamiento, coordinación y preservación de una fuente de verdad autoritativa;
-* la continuidad entre intención, comportamiento, estructura, decisiones e implementación durante la evolución.
+* la continuidad entre intención, comportamiento, estructura, decisiones, implementación y evolución.
 
 La evidencia se registrará de forma anonimizada o sintética cuando sea necesario.
 
 ## Fuera de alcance
 
-Este estudio no busca demostrar que una arquitectura de Productos y Servicios sea universalmente adecuada ni comparar exhaustivamente todas las arquitecturas posibles.
+Este estudio no busca demostrar que Productos y Servicios sea una arquitectura universal ni comparar exhaustivamente todas las arquitecturas posibles.
 
-Tampoco evalúa una migración institucional completa, una separación obligatoria hacia microservicios, ni independencia física por defecto. Las decisiones de despliegue, persistencia, repositorio o proceso se observarán sólo cuando las fuerzas reales del caso las vuelvan relevantes.
+Tampoco evalúa una migración institucional completa, una separación obligatoria hacia microservicios ni independencia física por defecto. Las decisiones de despliegue, persistencia, repositorio o proceso se observarán sólo cuando fuerzas reales del caso las vuelvan relevantes.
 
-El estudio no trata cada producto realizado como un caso independiente mientras su propósito principal siga siendo dar continuidad al sistema y a los productos preexistentes.
-existentes.
+El estudio no trata cada producto realizado como un caso independiente mientras su propósito principal siga siendo dar continuidad al sistema y a los productos preexistentes. Si en el futuro aparece un caso cuyo problema práctico central deje de ser esa continuidad y requiera evidencia propia, su frontera podrá revisarse entonces.
 
-Su foco actual no es cubrir el desarrollo completo de nuevos módulos, sino mantener una línea viva de observación sobre continuidad en sistemas existentes y en soporte institucional.
+## Límite actual
 
-## Relación con módulos o sistemas futuros
+Este estudio se mantiene en estado `candidate` mientras no exista evidencia suficiente.
 
-A partir de noviembre se espera retomar comunicación para generación de nuevos módulos o sistemas.
-
-Cuando aparezca un nuevo módulo o sistema con alcance propio, duración significativa o proceso completo de descubrimiento, documentación, desarrollo y validación, ese trabajo no debería absorberse dentro de `STU-007`.
-
-En esos casos se deberá crear un nuevo Study independiente.
-
-La regla candidata es:
-
-> `STU-007` observa continuidad en puntos especificos solicitados por PO, incluyendo en un inicio una documentación sistemas existentes.
-> 
-> Cada nuevo módulo o sistema con ciclo propio de desarrollo debe generar su propio Study.
-
-Esto es importante porque los nuevos módulos suelen implicar varios meses de trabajo y pueden activar toda la suite VSlices:
-
-* VSlices Design
-* VSlices Docs Standard
-* VSlices Method
-* VSlices Framework
-* VSlices Tooling
-
-Cada nuevo módulo puede producir evidencia suficiente para una pregunta local propia, artifacts propios, decisiones propias y findings locales propios.
-
-Por lo tanto, `STU-007` puede actuar como study base, pero no debe convertirse en contenedor de todos los futuros módulos.
-
-## Studies derivados esperados
-
-Este estudio puede generar a futuro una familia de studies derivados.
-
-La estructura candidata es:
-
-```text
-STU-007
-  Caso base actualizable mes a mes
-  Continuidad, documentación, soporte y entendimiento de sistemas existentes
-
-STU-XXX
-  Contrato de soporte Serviu, una vez finalizada la documentación inicial del STU-007.
-
-STU-YYY
-  Nuevo módulo o sistema 1
-
-STU-ZZZ
-  Nuevo módulo o sistema 2
-
-STU-NNN
-  Nuevo módulo o sistema N
-```
-
-El patrón esperado es:
-
-```text
-1 + N studies derivados
-```
-
-Donde:
-
-* `1` corresponde al study dedicado al contrato de soporte
-* `N` corresponde a la cantidad de nuevos módulos o sistemas desarrollados posteriormente
-
-Esta separación evita mezclar soporte continuo, documentación de sistemas existentes y desarrollo de nuevos módulos en un solo artifact de investigación.
-
-## Diferencia con el STU-006
-
-Este caso se parece parcialmente al caso de Hual que se cubrire en los [STU-011](./stu-011-digitalizacion-escenario-uso-vslices.md) y [STU-012](./stu-012-mejora-capacidad-limitada-uso-vslices.md) sobre módulos nuevos y mejora continua, pero tiene una diferencia contractual importante.
-
-En esos STU, el escenario esperado combina:
-
-```text
-Mejoras continuas + soporte
-dentro de una bolsa limitada de 25 horas mensuales
-```
-
-En Serviu, el escenario esperado se separa en dos líneas:
-
-```text
-Digitalización continua
-por un lado
-
-Contrato de soporte con bolsa ilimitada de horas
-por otro lado
-```
-
-Esto cambia la naturaleza de la investigación.
-
-En Hual, la restricción principal es maximizar valor con capacidad mensual limitada.
-
-En Serviu, la tensión principal puede aparecer entre soporte abierto, continuidad institucional, nuevos módulos de larga duración y convivencia entre sistemas legacy y sistemas nuevos.
-
-Por eso, el contrato de soporte de Serviu debería tratarse como un study.
-
-## Ajuste al límite del estudio
-
-Este estudio debe mantenerse como un caso vivo y actualizable mes a mes.
-
-Sus conclusiones deben interpretarse según el alcance observado en cada período.
-
-`STU-007` no debe absorber automáticamente nuevos módulos, nuevos sistemas o el contrato de soporte completo.
-
-Cuando aparezcan líneas de trabajo con alcance propio, especialmente desarrollos de varios meses o soporte institucional continuo, deberán abrirse studies derivados.
-
-El valor de `STU-007` está en funcionar como caso base para observar continuidad en sistemas existentes, documentación de aplicaciones legacy, adopción parcial de VSlices Framework y evolución mensual del conocimiento disponible.
-
-## Fuera de alcance
-
-Queda fuera de alcance:
-
-* juzgar los sistemas legacy con criterios actuales como si hubieran nacido con VSlices
-* demostrar que VSlices Framework es superior por definición
-* publicar detalles internos completos de los sistemas
-* reconstruir toda la historia técnica de las aplicaciones
-* convertir inferencias retrospectivas en evidencia directa
-* validar universalmente la relación entre Framework y continuidad documental
-
-El valor del estudio está en observar diferencias locales de continuidad entre sistemas heredados, documentación para entendimiento profundo y una Proof of Concept más cercana a VSlices.
+Por su carácter institucional, privado y parcialmente retrospectivo, sus conclusiones deberán distinguir con especial prudencia entre evidencia observada, reconstrucción inferida e interpretación local. El estudio contrasta conceptos candidatos de Docs Standard y Framework; no los valida universalmente ni atribuye por defecto toda diferencia observada a VSlices.
