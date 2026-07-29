@@ -28,11 +28,9 @@ related_findings:
 - FND-0002
 
 affects:
-- VSlices Research
 - VSlices Docs Standard
-- VSlices Method
 - VSlices Framework
-* VSlices Tooling
+- VSlices Tooling
 ---
 
 # STU-007 — Continuidad entre sistemas heredados y adopción parcial de VSlices Framework
