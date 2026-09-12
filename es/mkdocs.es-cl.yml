@@ -108,6 +108,7 @@ nav:
 
     - Comparaciones: 
         - Con metodologías de desarrollo: comparisons/development-methodologies.md
+        - Con Effect: comparisons/effect.md
 
     - Productos:
         - Introducción: products/index.md
@@ -163,7 +164,7 @@ nav:
             - Introducción: products/docs-standard/index.md
             - Glosario: products/docs-standard/glossary.md
             - Cómo utilizar:
-                - Principios: products/docs-standard/how-to-use/principles.md
+                - Introducción: products/docs-standard/how-to-use/principles.md
                 - Modelado: products/docs-standard/how-to-use/modeling.md
                 - Reglas anti burocracia: products/docs-standard/how-to-use/anti-bureaucracy-rules.md
             - Taxonomía:
