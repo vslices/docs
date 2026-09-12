@@ -164,7 +164,7 @@ nav:
             - Introducción: products/docs-standard/index.md
             - Glosario: products/docs-standard/glossary.md
             - Cómo utilizar:
-                - Introducción: products/docs-standard/how-to-use/principles.md
+                - Principios: products/docs-standard/how-to-use/principles.md
                 - Modelado: products/docs-standard/how-to-use/modeling.md
                 - Reglas anti burocracia: products/docs-standard/how-to-use/anti-bureaucracy-rules.md
             - Taxonomía:
