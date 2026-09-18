@@ -125,6 +125,32 @@ Una formulación útil es:
 
 La evolución reciente sugiere una separación más clara de responsabilidades.
 
+### Independencia de los productos y rol de Method
+
+Una propiedad importante de la suite es que sus productos deberían conservar valor independiente dentro de su propia responsabilidad.
+
+En particular:
+
+- VSlices Design puede utilizarse sin adoptar VSlices Method, Docs Standard o Framework;
+- VSlices Docs Standard puede utilizarse para organizar y preservar conocimiento sin requerir Method o Framework;
+- VSlices Framework puede utilizarse para modelar y materializar semántica de software sin exigir la adopción de Method o Docs Standard;
+- VSlices Tooling puede utilizarse para operar capacidades soportadas de otros productos sin depender de Method.
+
+VSlices Method es la excepción intencional.
+
+Su responsabilidad es actuar como nexo metodológico entre los demás productos durante trabajo real: seleccionar, combinar y navegar sus capacidades según la incertidumbre, el conocimiento disponible y las necesidades del esfuerzo.
+
+Esto tampoco implica que Method deba utilizar todos los productos en cada caso. Puede coordinar sólo los que aporten valor en una situación concreta.
+
+Una regla candidata es:
+
+> Cada producto de VSlices debería proporcionar valor independientemente dentro de su responsabilidad. VSlices Method es la excepción intencional porque su responsabilidad consiste en componer y navegar los demás productos durante trabajo real.
+
+Tooling tampoco debe interpretarse como subordinado a Method.
+
+Method conecta productos desde la organización del trabajo humano. Tooling operacionaliza capacidades soportadas directamente allí donde corresponda.
+
+
 ### VSlices Design
 
 VSlices Design define estructuras, modalidades y herramientas de razonamiento que permiten organizar cómo abordar un problema de ingeniería.
@@ -162,7 +188,7 @@ Design
 Method
     -> selecciona, combina y navega esas formas durante trabajo real
     -> aplica técnicas como Semantic Pressure
-    -> coordina el uso de Docs Standard y Framework
+    -> coordina el uso de los productos que resulten necesarios
 ```
 
 ### VSlices Docs Standard
@@ -196,6 +222,30 @@ La realización .NET es actualmente un laboratorio especialmente importante para
 ### VSlices Tooling
 
 VSlices Tooling hace operables, repetibles y verificables mecanismos soportados por la suite.
+
+Su relación con los demás productos es transversal y no pasa necesariamente por Method.
+
+Actualmente esta relación es especialmente visible con:
+
+- **VSlices Docs Standard**, donde Tooling puede apoyar generación, validación, navegación, visualización, identidad, relaciones, metadata y otras operaciones sobre artifacts documentales;
+- **VSlices Framework**, donde Tooling puede apoyar VSIR, Rulesets, lowering, rebase, validación, target context y materialización;
+- otras superficies de la suite cuando aparezcan capacidades operables suficientemente definidas y exista evidencia para automatizarlas.
+
+Tooling puede apoyar un producto sin convertirse en dueño de su semántica.
+
+La autoridad permanece en el producto o superficie que define el concepto; Tooling implementa o coordina mecanismos que lo hacen operable.
+
+Una relación útil es:
+
+```text
+Method
+    -> connects products through human engineering work
+
+Tooling
+    -> operationalizes supported capabilities across products
+```
+
+Por lo tanto, Tooling no debería modelarse como una dependencia subordinada a Method.
 
 Tooling no debería convertirse en la fuente de semántica únicamente porque automatiza una operación.
 
