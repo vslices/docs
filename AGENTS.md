@@ -564,3 +564,39 @@ Report:
 * unresolved questions
 
 Do not commit changes automatically unless explicitly asked.
+
+
+## Blog editorial surface
+
+The blog under:
+
+```text
+es/blog/
+```
+
+is an editorial surface, not canonical product documentation and not part of the strict 1:1 translation contract described above.
+
+For blog content:
+
+- preserve the declared author or authors and their intended voice;
+- do not require an English counterpart before publishing a Spanish post;
+- do not create a Spanish translation merely because an English post exists unless that translation is explicitly requested;
+- treat posts as stories, arguments, experiments, reflections, and reconstructed design trajectories;
+- distinguish current canonical VSlices claims from historical positions, hypotheses, experiments, and author interpretation;
+- link to canonical documentation, Alive Lab evidence, decisions, or source code when those artifacts materially support the story;
+- do not silently promote a blog conclusion into canonical VSlices documentation.
+
+The intended separation is:
+
+```text
+Canonical documentation
+    current maintained understanding
+
+Alive Lab
+    evidence, research and learning in progress
+
+Blog
+    editorial narrative about ideas, experiments and trajectories
+```
+
+A blog post may influence later documentation or decisions, but publishing the post does not by itself change the canonical state of VSlices.
