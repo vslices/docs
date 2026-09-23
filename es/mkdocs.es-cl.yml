@@ -53,9 +53,11 @@ theme:
             icon: material/brightness-4
             name: Cambiar a preferencia del sistema
 
-plugins: 
+plugins:
     - search:
         lang: es
+    - blog:
+        blog_dir: blog
     - mermaid2:
         version: 10.0.2
         arguments:
@@ -190,6 +192,9 @@ nav:
         - VSlices Framework:
             - Introducción: products/framework/index.md
             - Glosario: products/framework/glossary.md
+
+    - Blog:
+        - blog/index.md
 
     - Alive lab: 
         - Introducción: alive-lab/index.md
