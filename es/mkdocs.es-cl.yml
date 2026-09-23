@@ -58,6 +58,7 @@ plugins:
         lang: es
     - blog:
         blog_dir: blog
+        authors_profiles: true
     - mermaid2:
         version: 10.0.2
         arguments:
