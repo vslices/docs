@@ -1,13 +1,32 @@
 # Future steps
 
-Esta ruta conserva superficies que todavía no tienen un repositorio canónico propio.
+Esta ruta conserva pasos transitorios que todavía no tienen una superficie canónica propia.
 
-Actualmente su responsabilidad principal es alojar temporalmente la definición candidata de **VSlices como suite** mientras se crea el repositorio dedicado.
+No debe utilizarse como backlog genérico ni como lugar para definir semántica transversal de VSlices.
 
-La superficie activa es:
+## VSlices Suite
 
-- [`suite/`](suite/README.md)
+La definición candidata de suite que antes estaba siendo preparada aquí fue promovida a una superficie dedicada:
 
-No debe utilizarse como backlog genérico ni como lugar para depositar cualquier idea futura.
+- https://github.com/vslices/vslices-suite
 
-Cuando exista `vslices/suite`, el contenido de `future-steps/suite/` debería poder migrarse con una reinterpretación mínima y esta ruta podrá volver a quedar disponible para otros pasos transitorios explícitos.
+El antiguo documento:
+
+`future-steps/internal-knowledge-organization.md`
+
+fue trasladado como evidencia histórica de bootstrap al nuevo repositorio.
+
+La definición activa de fundamentos, mecanismos, relaciones, responsabilidades de productos, lifecycle, forces y preguntas abiertas de ownership debe reconstruirse desde `vslices/vslices-suite`, no desde esta carpeta.
+
+## Regla
+
+```text
+future step without canonical surface
+    -> may live here temporarily
+
+canonical surface exists
+    -> move definition there
+    -> leave only the minimum navigation/history needed here
+```
+
+La documentación pública sigue viviendo en este repositorio, pero la estructura pública no debe convertirse accidentalmente en la autoridad semántica de la suite.
